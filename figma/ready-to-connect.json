@@ -1,0 +1,144 @@
+{
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "nodeId": "1531:25362",
+  "clientFrameworks": "react",
+  "clientLanguages": "typescript,css",
+  "mappings": [
+    {
+      "componentName": "Button",
+      "nodeId": "1531:25362",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Button.tsx",
+      "template": "const figma = require('figma');\nconst instance = figma.selectedInstance;\nconst hierarchy = instance.getEnum('Hierarchy', { \"Primary\": \"primary\", \"Secondary\": \"secondary\", \"Tertiary\": \"tertiary\", \"Tonal\": \"tonal\", \"Text\": \"text\" });\nconst tone = instance.getEnum('Tone', { \"Default\": \"default\", \"Confirmation\": \"confirmation\", \"Warning\": \"warning\", \"Error\": \"error\", \"Neutral\": \"neutral\" });\nconst state = instance.getEnum('State', { \"Default\": \"default\", \"Hover\": \"hover\", \"Pressed\": \"pressed\", \"Focused\": \"focused\", \"Disabled\": \"disabled\" });\nconst layoutdirection = instance.getEnum('Layout direction', { \"LTR\": \"ltr\", \"RTL\": \"rtl\" });\nconst label = instance.getString('Label');\nconst leading = instance.getBoolean('Show leading icon') ? instance.getInstanceSwap('Leading icon') : undefined;\nconst trailing = instance.getBoolean('Show trailing icon') ? instance.getInstanceSwap('Trailing icon') : undefined;\nconst leadingCode = leading && leading.type === 'INSTANCE' ? leading.executeTemplate().example : undefined;\nconst trailingCode = trailing && trailing.type === 'INSTANCE' ? trailing.executeTemplate().example : undefined;\nconst showLabel = instance.getBoolean('Show label');\nconst selected = instance.getBoolean('Selected');\n// Hover, pressed and focus variants are handled by CSS and browser interaction.\nexport default { example: figma.code `<Button hierarchy=\"${hierarchy}\" tone=\"${tone}\" dir=\"${layoutdirection}\" ${state === 'disabled' ? 'disabled' : ''} ${selected ? 'selected' : ''} ${leadingCode ? figma.code `leadingIcon={${leadingCode}}` : ''} ${trailingCode ? figma.code `trailingIcon={${trailingCode}}` : ''} ${!showLabel ? figma.code `aria-label=${JSON.stringify(label)}` : ''}>${showLabel ? figma.code `{${JSON.stringify(label)}}` : ''}</Button>`, imports: ['import { Button } from \"@wardo/design-system\"'], id: 'button', metadata: { nestable: true } };\n",
+      "templateDataJson": "{\"nestable\":true,\"isParserless\":true}"
+    },
+    {
+      "componentName": "ActionChip",
+      "nodeId": "1531:20475",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/ActionChip.tsx",
+      "template": "const figma = require('figma');\nconst instance = figma.selectedInstance;\nconst hierarchy = instance.getEnum('Hierarchy', { \"Tonal\": \"tonal\", \"Text\": \"text\", \"Primary\": \"primary\", \"Secondary\": \"secondary\", \"Tertiary\": \"tertiary\" });\nconst tone = instance.getEnum('Tone', { \"Default\": \"default\", \"Confirmation\": \"confirmation\", \"Warning\": \"warning\", \"Error\": \"error\" });\nconst state = instance.getEnum('State', { \"Default\": \"default\", \"Hover\": \"hover\", \"Pressed\": \"pressed\", \"Focused\": \"focused\", \"Disabled\": \"disabled\" });\nconst layoutdirection = instance.getEnum('Layout direction', { \"LTR\": \"ltr\", \"RTL\": \"rtl\" });\nconst label = instance.getString('Label');\nconst leading = instance.getBoolean('Show leading icon') ? instance.getInstanceSwap('Leading icon') : undefined;\nconst trailing = instance.getBoolean('Show trailing icon') ? instance.getInstanceSwap('Trailing icon') : undefined;\nconst leadingCode = leading && leading.type === 'INSTANCE' ? leading.executeTemplate().example : undefined;\nconst trailingCode = trailing && trailing.type === 'INSTANCE' ? trailing.executeTemplate().example : undefined;\nconst busy = instance.getEnum('Busy', { \"False\": false, \"True\": true });\n// Hover, pressed and focus variants are handled by CSS and browser interaction.\nexport default { example: figma.code `<ActionChip hierarchy=\"${hierarchy}\" tone=\"${tone}\" dir=\"${layoutdirection}\" ${state === 'disabled' ? 'disabled' : ''} ${busy ? 'busy' : ''} ${leadingCode ? figma.code `leadingIcon={${leadingCode}}` : ''} ${trailingCode ? figma.code `trailingIcon={${trailingCode}}` : ''}>{${JSON.stringify(label)}}</ActionChip>`, imports: ['import { ActionChip } from \"@wardo/design-system\"'], id: 'actionchip', metadata: { nestable: true } };\n",
+      "templateDataJson": "{\"nestable\":true,\"isParserless\":true}"
+    },
+    {
+      "componentName": "Accordion",
+      "nodeId": "2601:7933",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Accordion.tsx"
+    },
+    {
+      "componentName": "AccordionGroup",
+      "nodeId": "2886:32415",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Accordion.tsx"
+    },
+    {
+      "componentName": "TextField",
+      "nodeId": "1531:153013",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/TextField.tsx"
+    },
+    {
+      "componentName": "TextArea",
+      "nodeId": "1531:154760",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/TextField.tsx"
+    },
+    {
+      "componentName": "PasswordField",
+      "nodeId": "1531:156521",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/TextField.tsx"
+    },
+    {
+      "componentName": "SearchField",
+      "nodeId": "1531:158362",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/TextField.tsx"
+    },
+    {
+      "componentName": "NumberField",
+      "nodeId": "1531:160340",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/TextField.tsx"
+    },
+    {
+      "componentName": "Select",
+      "nodeId": "1531:166415",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/TextField.tsx"
+    },
+    {
+      "componentName": "Checkbox",
+      "nodeId": "1531:161900",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Selection.tsx"
+    },
+    {
+      "componentName": "Switch",
+      "nodeId": "1531:163992",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Selection.tsx"
+    },
+    {
+      "componentName": "RadioGroup",
+      "nodeId": "1531:162601",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Selection.tsx"
+    },
+    {
+      "componentName": "Slider",
+      "nodeId": "1531:176245",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Selection.tsx"
+    },
+    {
+      "componentName": "ContentCard",
+      "nodeId": "2601:7762",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Content.tsx"
+    },
+    {
+      "componentName": "MetadataTag",
+      "nodeId": "2601:7659",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Content.tsx"
+    },
+    {
+      "componentName": "Divider",
+      "nodeId": "2598:7033",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Content.tsx"
+    },
+    {
+      "componentName": "Link",
+      "nodeId": "1531:24320",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Content.tsx"
+    },
+    {
+      "componentName": "Icon",
+      "nodeId": "906:5837",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Icon.tsx",
+      "template": "const figma = require('figma');\nexport default { example: figma.code `<Icon name=\"plus\" />`, imports: ['import { Icon } from \"@wardo/design-system\"'], id: 'iconplus', metadata: { nestable: true } };\n",
+      "templateDataJson": "{\"nestable\":true,\"isParserless\":true}"
+    },
+    {
+      "componentName": "Icon",
+      "nodeId": "906:5839",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Icon.tsx",
+      "template": "const figma = require('figma');\nexport default { example: figma.code `<Icon name=\"arrow-right\" />`, imports: ['import { Icon } from \"@wardo/design-system\"'], id: 'iconarrowright', metadata: { nestable: true } };\n",
+      "templateDataJson": "{\"nestable\":true,\"isParserless\":true}"
+    },
+    {
+      "componentName": "Icon",
+      "nodeId": "906:5841",
+      "label": "React",
+      "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/main/src/components/Icon.tsx",
+      "template": "const figma = require('figma');\nexport default { example: figma.code `<Icon name=\"chevron-down\" />`, imports: ['import { Icon } from \"@wardo/design-system\"'], id: 'iconchevrondown', metadata: { nestable: true } };\n",
+      "templateDataJson": "{\"nestable\":true,\"isParserless\":true}"
+    }
+  ]
+}
