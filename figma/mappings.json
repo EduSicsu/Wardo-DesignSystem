@@ -1,0 +1,135 @@
+{
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "repository": "https://github.com/EduSicsu/Wardo-DesignSystem",
+  "framework": "React",
+  "components": [
+    {
+      "componentName": "Button",
+      "nodeId": "1531:25362",
+      "source": "src/components/Button.tsx",
+      "templateFile": "figma/Button.figma.ts"
+    },
+    {
+      "componentName": "ActionChip",
+      "nodeId": "1531:20475",
+      "source": "src/components/ActionChip.tsx",
+      "templateFile": "figma/ActionChip.figma.ts"
+    },
+    {
+      "componentName": "Accordion",
+      "nodeId": "2601:7933",
+      "source": "src/components/Accordion.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "AccordionGroup",
+      "nodeId": "2886:32415",
+      "source": "src/components/Accordion.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "TextField",
+      "nodeId": "1531:153013",
+      "source": "src/components/TextField.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "TextArea",
+      "nodeId": "1531:154760",
+      "source": "src/components/TextField.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "PasswordField",
+      "nodeId": "1531:156521",
+      "source": "src/components/TextField.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "SearchField",
+      "nodeId": "1531:158362",
+      "source": "src/components/TextField.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "NumberField",
+      "nodeId": "1531:160340",
+      "source": "src/components/TextField.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "Select",
+      "nodeId": "1531:166415",
+      "source": "src/components/TextField.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "Checkbox",
+      "nodeId": "1531:161900",
+      "source": "src/components/Selection.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "Switch",
+      "nodeId": "1531:163992",
+      "source": "src/components/Selection.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "RadioGroup",
+      "nodeId": "1531:162601",
+      "source": "src/components/Selection.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "Slider",
+      "nodeId": "1531:176245",
+      "source": "src/components/Selection.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "ContentCard",
+      "nodeId": "2601:7762",
+      "source": "src/components/Content.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "MetadataTag",
+      "nodeId": "2601:7659",
+      "source": "src/components/Content.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "Divider",
+      "nodeId": "2598:7033",
+      "source": "src/components/Content.tsx",
+      "templateFile": null
+    },
+    {
+      "componentName": "Link",
+      "nodeId": "1531:24320",
+      "source": "src/components/Content.tsx",
+      "templateFile": null
+    }
+  ],
+  "icons": [
+    {
+      "componentName": "Icon",
+      "nodeId": "906:5837",
+      "source": "src/components/Icon.tsx",
+      "templateFile": "figma/IconPlus.figma.ts"
+    },
+    {
+      "componentName": "Icon",
+      "nodeId": "906:5839",
+      "source": "src/components/Icon.tsx",
+      "templateFile": "figma/IconArrowRight.figma.ts"
+    },
+    {
+      "componentName": "Icon",
+      "nodeId": "906:5841",
+      "source": "src/components/Icon.tsx",
+      "templateFile": "figma/IconChevronDown.figma.ts"
+    }
+  ]
+}

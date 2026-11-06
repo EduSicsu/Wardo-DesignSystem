@@ -1,0 +1,920 @@
+/* Generated from Figma. Edit tokens/*.figma.json, then npm run tokens. */
+:root, [data-wardo-theme="wardo-light"] {
+  --color-background-default: #f8f2ec;
+  --color-background-raised: #efe6dd;
+  --color-background-brand: #bad101;
+  --color-text-primary: #161615;
+  --color-text-secondary: #2b2926;
+  --color-text-brand: #3c4406;
+  --color-border-default: #534e48a6;
+  --color-action-primary: #bad101;
+  --color-action-primary-foreground: #161615;
+  --color-background-sunken: #e6d9cc;
+  --color-background-inverse: #2b2926;
+  --color-background-brand-hover: #e7f268;
+  --color-text-tertiary: #534e48;
+  --color-text-inverse: #fffdfc;
+  --color-text-link: #194a91;
+  --color-border-subtle: #91867b8d;
+  --color-border-strong: #2b29268d;
+  --color-border-focus: #66730457;
+  --color-action-primary-hover: #90a203;
+  --color-action-secondary: #dde3c6;
+  --color-action-secondary-foreground: #202514;
+  --color-state-disabled-background: #2424221f;
+  --color-state-disabled-foreground: #24242261;
+  --color-feedback-success-background: #cdefd9;
+  --color-feedback-success-foreground: #10472a;
+  --color-feedback-error-background: #ffd9d6;
+  --color-feedback-error-foreground: #6b2021;
+  --color-feedback-warning-background: #ffd0a6;
+  --color-feedback-warning-foreground: #853007;
+  --color-feedback-info-background: #d1e5ff;
+  --color-feedback-info-foreground: #123568;
+  --color-overlay-scrim: #0000007a;
+  --color-overlay-subtle: #24242214;
+  --color-state-hover: #2424220d;
+  --color-state-pressed: #2424221f;
+  --color-state-selected: #d9f4001f;
+  --color-separator-default: #a49f9957;
+  --color-background-subtle: #efe6dd;
+  --color-text-on-brand: #252b02;
+  --color-background-tertiary: #f4e6c3;
+  --color-text-on-inverse: #fffdfc;
+  --color-action-neutral: #161615;
+  --color-action-neutral-foreground: #fffdfc;
+  --color-background-message-received: #d8c7b8;
+  --color-icon-brand: #667304;
+  --color-text-on-media: #ffffff;
+  --component-button-foreground-secondary-default-hover: #161615;
+  --component-button-foreground-secondary-default-pressed: #161615;
+  --component-button-foreground-text-default-hover: #161615;
+  --component-button-foreground-text-default-pressed: #161615;
+  --color-state-selected-indicator: #3c4406;
+  --component-input-focus: #161615;
+  --color-text-visionos-on-selected: #161615;
+  --color-card-shadow-raised: #0809081f;
+  --color-card-shadow-floating: #08090829;
+  --color-card-state-hover: #1616150a;
+  --color-card-state-pressed: #16161514;
+  --color-card-state-dragged: #1616151f;
+  --color-code-keyword: #194a91;
+  --color-code-string: #176139;
+  --color-code-number: #932c2e;
+  --color-code-function: #602b8d;
+  --color-code-inverse-keyword: #abceff;
+  --color-code-inverse-string: #a4deb9;
+  --color-code-inverse-number: #ffb7b0;
+  --color-code-inverse-function: #e1b0ff;
+  --color-skeleton-surface: #e6d9cc;
+  --color-card-filled-surface: #e5dfda;
+  --color-card-filled-border: #b4b0ab;
+  --color-action-transparent-foreground: #3c4406;
+  --color-feedback-success-readable: #10472a;
+  --color-feedback-success-text: #10472a;
+  --color-feedback-warning-readable: #853007;
+  --color-feedback-warning-text: #853007;
+  --color-feedback-error-readable: #6b2021;
+  --color-feedback-error-text: #6b2021;
+  --color-feedback-info-readable: #123568;
+  --color-feedback-info-text: #123568;
+  color-scheme: light;
+}
+[data-wardo-theme="wardo-dark"] {
+  --color-background-default: #161615;
+  --color-background-raised: #2b2926;
+  --color-background-brand: #edf196;
+  --color-text-primary: #fffdfc;
+  --color-text-secondary: #efe6dd;
+  --color-text-brand: #e7f268;
+  --color-border-default: #e6d9cca6;
+  --color-action-primary: #e7f268;
+  --color-action-primary-foreground: #161615;
+  --color-background-sunken: #161615;
+  --color-background-inverse: #fffdfc;
+  --color-background-brand-hover: #3c4406;
+  --color-text-tertiary: #e6d9cc;
+  --color-text-inverse: #2b2926;
+  --color-text-link: #abceff;
+  --color-border-subtle: #534e488d;
+  --color-border-strong: #efe6dd8d;
+  --color-border-focus: #e7f26857;
+  --color-action-primary-hover: #edf196;
+  --color-action-secondary: #30371c;
+  --color-action-secondary-foreground: #f0f2e2;
+  --color-state-disabled-background: #ffffff1f;
+  --color-state-disabled-foreground: #ffffff61;
+  --color-feedback-success-background: #0b321e;
+  --color-feedback-success-foreground: #cdefd9;
+  --color-feedback-error-background: #4c1618;
+  --color-feedback-error-foreground: #ffd9d6;
+  --color-feedback-warning-background: #591d03;
+  --color-feedback-warning-foreground: #ffd0a6;
+  --color-feedback-info-background: #0c254a;
+  --color-feedback-info-foreground: #d1e5ff;
+  --color-overlay-scrim: #00000099;
+  --color-overlay-subtle: #ffffff14;
+  --color-state-hover: #ffffff0d;
+  --color-state-pressed: #ffffff29;
+  --color-state-selected: #e7f26833;
+  --color-separator-default: #f9f2ea57;
+  --color-background-subtle: #2b2926;
+  --color-text-on-brand: #f3f1c4;
+  --color-background-tertiary: #454137;
+  --color-text-on-inverse: #2b2926;
+  --color-action-neutral: #fffdfc;
+  --color-action-neutral-foreground: #2b2926;
+  --color-background-message-received: #534e48;
+  --color-icon-brand: #e7f268;
+  --color-text-on-media: #ffffff;
+  --component-button-foreground-secondary-default-hover: #e7f268;
+  --component-button-foreground-secondary-default-pressed: #e7f268;
+  --component-button-foreground-text-default-hover: #e7f268;
+  --component-button-foreground-text-default-pressed: #e7f268;
+  --color-state-selected-indicator: #e7f268;
+  --component-input-focus: #e7f26857;
+  --color-text-visionos-on-selected: #2b2926;
+  --color-card-shadow-raised: #0809081f;
+  --color-card-shadow-floating: #08090829;
+  --color-card-state-hover: #fffdfc0a;
+  --color-card-state-pressed: #fffdfc14;
+  --color-card-state-dragged: #fffdfc1f;
+  --color-code-keyword: #abceff;
+  --color-code-string: #a4deb9;
+  --color-code-number: #ffb7b0;
+  --color-code-function: #e1b0ff;
+  --color-code-inverse-keyword: #194a91;
+  --color-code-inverse-string: #176139;
+  --color-code-inverse-number: #932c2e;
+  --color-code-inverse-function: #602b8d;
+  --color-skeleton-surface: #2b2926;
+  --color-card-filled-surface: #2d2d2c;
+  --color-card-filled-border: #50504f;
+  --color-action-transparent-foreground: #e7f268;
+  --color-feedback-success-readable: #cdefd9;
+  --color-feedback-success-text: #cdefd9;
+  --color-feedback-warning-readable: #ffd0a6;
+  --color-feedback-warning-text: #ffd0a6;
+  --color-feedback-error-readable: #ffd9d6;
+  --color-feedback-error-text: #ffd9d6;
+  --color-feedback-info-readable: #d1e5ff;
+  --color-feedback-info-text: #d1e5ff;
+  color-scheme: dark;
+}
+[data-wardo-theme="ocean-light"] {
+  --color-background-default: #f5f7f9;
+  --color-background-raised: #fcfcfd;
+  --color-background-brand: #eaf3ff;
+  --color-text-primary: #15181e;
+  --color-text-secondary: #313745;
+  --color-text-brand: #123568;
+  --color-border-default: #454c5ea6;
+  --color-action-primary: #2061bc;
+  --color-action-primary-foreground: #f9fcff;
+  --color-background-sunken: #e5e9ef;
+  --color-background-inverse: #15181e;
+  --color-background-brand-hover: #d1e5ff;
+  --color-text-tertiary: #454c5e;
+  --color-text-inverse: #fcfcfd;
+  --color-text-link: #123568;
+  --color-border-subtle: #e5e9ef8d;
+  --color-border-strong: #3137458d;
+  --color-border-focus: #12356857;
+  --color-action-primary-hover: #194a91;
+  --color-action-secondary: #eaf3ff;
+  --color-action-secondary-foreground: #041427;
+  --color-state-disabled-background: #15181e1f;
+  --color-state-disabled-foreground: #15181e61;
+  --color-feedback-success-background: #cdefd9;
+  --color-feedback-success-foreground: #10472a;
+  --color-feedback-error-background: #ffd9d6;
+  --color-feedback-error-foreground: #6b2021;
+  --color-feedback-warning-background: #ffd0a6;
+  --color-feedback-warning-foreground: #853007;
+  --color-feedback-info-background: #d1e5ff;
+  --color-feedback-info-foreground: #123568;
+  --color-overlay-scrim: #00000099;
+  --color-overlay-subtle: #15181e14;
+  --color-state-hover: #15181e0d;
+  --color-state-pressed: #15181e1f;
+  --color-state-selected: #2061bc1f;
+  --color-separator-default: #454c5e57;
+  --color-background-subtle: #f5f7f9;
+  --color-text-on-brand: #041427;
+  --color-background-tertiary: #e8f8fc;
+  --color-text-on-inverse: #fcfcfd;
+  --color-action-neutral: #15181e;
+  --color-action-neutral-foreground: #fcfcfd;
+  --color-background-message-received: #e5e9ef;
+  --color-icon-brand: #123568;
+  --color-text-on-media: #fcfcfd;
+  --component-button-foreground-secondary-default-hover: #123568;
+  --component-button-foreground-secondary-default-pressed: #123568;
+  --component-button-foreground-text-default-hover: #123568;
+  --component-button-foreground-text-default-pressed: #123568;
+  --color-state-selected-indicator: #123568;
+  --component-input-focus: #12356857;
+  --color-text-visionos-on-selected: #041427;
+  --color-card-shadow-raised: #0809081f;
+  --color-card-shadow-floating: #08090829;
+  --color-card-state-hover: #15181e0a;
+  --color-card-state-pressed: #15181e14;
+  --color-card-state-dragged: #15181e1f;
+  --color-code-keyword: #194a91;
+  --color-code-string: #176139;
+  --color-code-number: #932c2e;
+  --color-code-function: #602b8d;
+  --color-code-inverse-keyword: #abceff;
+  --color-code-inverse-string: #a4deb9;
+  --color-code-inverse-number: #ffb7b0;
+  --color-code-inverse-function: #e1b0ff;
+  --color-skeleton-surface: #e5e9ef;
+  --color-card-filled-surface: #e2e4e6;
+  --color-card-filled-border: #b2b4b7;
+  --color-action-transparent-foreground: #123568;
+  --color-feedback-success-readable: #10472a;
+  --color-feedback-success-text: #10472a;
+  --color-feedback-warning-readable: #853007;
+  --color-feedback-warning-text: #853007;
+  --color-feedback-error-readable: #6b2021;
+  --color-feedback-error-text: #6b2021;
+  --color-feedback-info-readable: #123568;
+  --color-feedback-info-text: #123568;
+  color-scheme: light;
+}
+[data-wardo-theme="ocean-dark"] {
+  --color-background-default: #15181e;
+  --color-background-raised: #232731;
+  --color-background-brand: #0c254a;
+  --color-text-primary: #fcfcfd;
+  --color-text-secondary: #e5e9ef;
+  --color-text-brand: #d1e5ff;
+  --color-border-default: #a6afc3a6;
+  --color-action-primary: #abceff;
+  --color-action-primary-foreground: #041427;
+  --color-background-sunken: #15181e;
+  --color-background-inverse: #fcfcfd;
+  --color-background-brand-hover: #123568;
+  --color-text-tertiary: #cdd4e0;
+  --color-text-inverse: #15181e;
+  --color-text-link: #d1e5ff;
+  --color-border-subtle: #3137458d;
+  --color-border-strong: #e5e9ef8d;
+  --color-border-focus: #d1e5ff57;
+  --color-action-primary-hover: #d1e5ff;
+  --color-action-secondary: #0c254a;
+  --color-action-secondary-foreground: #f9fcff;
+  --color-state-disabled-background: #fcfcfd1f;
+  --color-state-disabled-foreground: #fcfcfd61;
+  --color-feedback-success-background: #0b321e;
+  --color-feedback-success-foreground: #eaf9f0;
+  --color-feedback-error-background: #4c1618;
+  --color-feedback-error-foreground: #fff0ef;
+  --color-feedback-warning-background: #591d03;
+  --color-feedback-warning-foreground: #ffe9d8;
+  --color-feedback-info-background: #0c254a;
+  --color-feedback-info-foreground: #eaf3ff;
+  --color-overlay-scrim: #00000099;
+  --color-overlay-subtle: #fcfcfd14;
+  --color-state-hover: #fcfcfd0d;
+  --color-state-pressed: #fcfcfd29;
+  --color-state-selected: #abceff33;
+  --color-separator-default: #e5e9ef57;
+  --color-background-subtle: #232731;
+  --color-text-on-brand: #f9fcff;
+  --color-background-tertiary: #0a313f;
+  --color-text-on-inverse: #15181e;
+  --color-action-neutral: #fcfcfd;
+  --color-action-neutral-foreground: #15181e;
+  --color-background-message-received: #313745;
+  --color-icon-brand: #d1e5ff;
+  --color-text-on-media: #fcfcfd;
+  --component-button-foreground-secondary-default-hover: #d1e5ff;
+  --component-button-foreground-secondary-default-pressed: #d1e5ff;
+  --component-button-foreground-text-default-hover: #d1e5ff;
+  --component-button-foreground-text-default-pressed: #d1e5ff;
+  --color-state-selected-indicator: #d1e5ff;
+  --component-input-focus: #d1e5ff57;
+  --color-text-visionos-on-selected: #fcfcfd;
+  --color-card-shadow-raised: #0809081f;
+  --color-card-shadow-floating: #08090829;
+  --color-card-state-hover: #fcfcfd0a;
+  --color-card-state-pressed: #fcfcfd14;
+  --color-card-state-dragged: #fcfcfd1f;
+  --color-code-keyword: #abceff;
+  --color-code-string: #a4deb9;
+  --color-code-number: #ffb7b0;
+  --color-code-function: #e1b0ff;
+  --color-code-inverse-keyword: #194a91;
+  --color-code-inverse-string: #176139;
+  --color-code-inverse-number: #932c2e;
+  --color-code-inverse-function: #602b8d;
+  --color-skeleton-surface: #232731;
+  --color-card-filled-surface: #2c2f34;
+  --color-card-filled-border: #4f5156;
+  --color-action-transparent-foreground: #d1e5ff;
+  --color-feedback-success-readable: #eaf9f0;
+  --color-feedback-success-text: #eaf9f0;
+  --color-feedback-warning-readable: #ffe9d8;
+  --color-feedback-warning-text: #ffe9d8;
+  --color-feedback-error-readable: #fff0ef;
+  --color-feedback-error-text: #fff0ef;
+  --color-feedback-info-readable: #eaf3ff;
+  --color-feedback-info-text: #eaf3ff;
+  color-scheme: dark;
+}
+[data-wardo-theme="orchid-light"] {
+  --color-background-default: #f6f6f9;
+  --color-background-raised: #fcfcfd;
+  --color-background-brand: #faedff;
+  --color-text-primary: #17171f;
+  --color-text-secondary: #353545;
+  --color-text-brand: #451e68;
+  --color-border-default: #494a5ea6;
+  --color-action-primary: #7b39b5;
+  --color-action-primary-foreground: #fef9ff;
+  --color-background-sunken: #e8e7ef;
+  --color-background-inverse: #17171f;
+  --color-background-brand-hover: #f1d5ff;
+  --color-text-tertiary: #494a5e;
+  --color-text-inverse: #fcfcfd;
+  --color-text-link: #123568;
+  --color-border-subtle: #e8e7ef8d;
+  --color-border-strong: #3535458d;
+  --color-border-focus: #451e6857;
+  --color-action-primary-hover: #602b8d;
+  --color-action-secondary: #f0efff;
+  --color-action-secondary-foreground: #110c2f;
+  --color-state-disabled-background: #17171f1f;
+  --color-state-disabled-foreground: #17171f61;
+  --color-feedback-success-background: #cdefd9;
+  --color-feedback-success-foreground: #10472a;
+  --color-feedback-error-background: #ffd9d6;
+  --color-feedback-error-foreground: #6b2021;
+  --color-feedback-warning-background: #ffd0a6;
+  --color-feedback-warning-foreground: #853007;
+  --color-feedback-info-background: #d1e5ff;
+  --color-feedback-info-foreground: #123568;
+  --color-overlay-scrim: #00000099;
+  --color-overlay-subtle: #17171f14;
+  --color-state-hover: #17171f0d;
+  --color-state-pressed: #17171f1f;
+  --color-state-selected: #7b39b51f;
+  --color-separator-default: #494a5e57;
+  --color-background-subtle: #f6f6f9;
+  --color-text-on-brand: #21092f;
+  --color-background-tertiary: #f9e6c4;
+  --color-text-on-inverse: #fcfcfd;
+  --color-action-neutral: #17171f;
+  --color-action-neutral-foreground: #fcfcfd;
+  --color-background-message-received: #e8e7ef;
+  --color-icon-brand: #451e68;
+  --color-text-on-media: #fcfcfd;
+  --component-button-foreground-secondary-default-hover: #451e68;
+  --component-button-foreground-secondary-default-pressed: #451e68;
+  --component-button-foreground-text-default-hover: #451e68;
+  --component-button-foreground-text-default-pressed: #451e68;
+  --color-state-selected-indicator: #451e68;
+  --component-input-focus: #451e6857;
+  --color-text-visionos-on-selected: #21092f;
+  --color-card-shadow-raised: #0809081f;
+  --color-card-shadow-floating: #08090829;
+  --color-card-state-hover: #17171f0a;
+  --color-card-state-pressed: #17171f14;
+  --color-card-state-dragged: #17171f1f;
+  --color-code-keyword: #194a91;
+  --color-code-string: #176139;
+  --color-code-number: #932c2e;
+  --color-code-function: #602b8d;
+  --color-code-inverse-keyword: #abceff;
+  --color-code-inverse-string: #a4deb9;
+  --color-code-inverse-number: #ffb7b0;
+  --color-code-inverse-function: #e1b0ff;
+  --color-skeleton-surface: #e8e7ef;
+  --color-card-filled-surface: #e3e3e6;
+  --color-card-filled-border: #b3b3b8;
+  --color-action-transparent-foreground: #451e68;
+  --color-feedback-success-readable: #10472a;
+  --color-feedback-success-text: #10472a;
+  --color-feedback-warning-readable: #853007;
+  --color-feedback-warning-text: #853007;
+  --color-feedback-error-readable: #6b2021;
+  --color-feedback-error-text: #6b2021;
+  --color-feedback-info-readable: #123568;
+  --color-feedback-info-text: #123568;
+  color-scheme: light;
+}
+[data-wardo-theme="orchid-dark"] {
+  --color-background-default: #17171f;
+  --color-background-raised: #252630;
+  --color-background-brand: #301546;
+  --color-text-primary: #fcfcfd;
+  --color-text-secondary: #e8e7ef;
+  --color-text-brand: #f1d5ff;
+  --color-border-default: #acacc3a6;
+  --color-action-primary: #e1b0ff;
+  --color-action-primary-foreground: #21092f;
+  --color-background-sunken: #17171f;
+  --color-background-inverse: #fcfcfd;
+  --color-background-brand-hover: #451e68;
+  --color-text-tertiary: #d1d1e0;
+  --color-text-inverse: #17171f;
+  --color-text-link: #d1e5ff;
+  --color-border-subtle: #3535458d;
+  --color-border-strong: #e8e7ef8d;
+  --color-border-focus: #f1d5ff57;
+  --color-action-primary-hover: #f1d5ff;
+  --color-action-secondary: #211b4b;
+  --color-action-secondary-foreground: #fbfaff;
+  --color-state-disabled-background: #fcfcfd1f;
+  --color-state-disabled-foreground: #fcfcfd61;
+  --color-feedback-success-background: #0b321e;
+  --color-feedback-success-foreground: #eaf9f0;
+  --color-feedback-error-background: #4c1618;
+  --color-feedback-error-foreground: #fff0ef;
+  --color-feedback-warning-background: #591d03;
+  --color-feedback-warning-foreground: #ffe9d8;
+  --color-feedback-info-background: #0c254a;
+  --color-feedback-info-foreground: #eaf3ff;
+  --color-overlay-scrim: #00000099;
+  --color-overlay-subtle: #fcfcfd14;
+  --color-state-hover: #fcfcfd0d;
+  --color-state-pressed: #fcfcfd29;
+  --color-state-selected: #e1b0ff33;
+  --color-separator-default: #e8e7ef57;
+  --color-background-subtle: #252630;
+  --color-text-on-brand: #fef9ff;
+  --color-background-tertiary: #463306;
+  --color-text-on-inverse: #17171f;
+  --color-action-neutral: #fcfcfd;
+  --color-action-neutral-foreground: #17171f;
+  --color-background-message-received: #353545;
+  --color-icon-brand: #f1d5ff;
+  --color-text-on-media: #fcfcfd;
+  --component-button-foreground-secondary-default-hover: #f1d5ff;
+  --component-button-foreground-secondary-default-pressed: #f1d5ff;
+  --component-button-foreground-text-default-hover: #f1d5ff;
+  --component-button-foreground-text-default-pressed: #f1d5ff;
+  --color-state-selected-indicator: #f1d5ff;
+  --component-input-focus: #f1d5ff57;
+  --color-text-visionos-on-selected: #fcfcfd;
+  --color-card-shadow-raised: #0809081f;
+  --color-card-shadow-floating: #08090829;
+  --color-card-state-hover: #fcfcfd0a;
+  --color-card-state-pressed: #fcfcfd14;
+  --color-card-state-dragged: #fcfcfd1f;
+  --color-code-keyword: #abceff;
+  --color-code-string: #a4deb9;
+  --color-code-number: #ffb7b0;
+  --color-code-function: #e1b0ff;
+  --color-code-inverse-keyword: #194a91;
+  --color-code-inverse-string: #176139;
+  --color-code-inverse-number: #932c2e;
+  --color-code-inverse-function: #602b8d;
+  --color-skeleton-surface: #252630;
+  --color-card-filled-surface: #2e2e35;
+  --color-card-filled-border: #505057;
+  --color-action-transparent-foreground: #f1d5ff;
+  --color-feedback-success-readable: #eaf9f0;
+  --color-feedback-success-text: #eaf9f0;
+  --color-feedback-warning-readable: #ffe9d8;
+  --color-feedback-warning-text: #ffe9d8;
+  --color-feedback-error-readable: #fff0ef;
+  --color-feedback-error-text: #fff0ef;
+  --color-feedback-info-readable: #eaf3ff;
+  --color-feedback-info-text: #eaf3ff;
+  color-scheme: dark;
+}
+[data-wardo-theme="ember-light"] {
+  --color-background-default: #f7f6f7;
+  --color-background-raised: #fcfcfc;
+  --color-background-brand: #ffe9d8;
+  --color-text-primary: #1a171c;
+  --color-text-secondary: #3f363e;
+  --color-text-brand: #853007;
+  --color-border-default: #564b55a6;
+  --color-action-primary: #b3440d;
+  --color-action-primary-foreground: #fff8f2;
+  --color-background-sunken: #e9e7e9;
+  --color-background-inverse: #1a171c;
+  --color-background-brand-hover: #ffd0a6;
+  --color-text-tertiary: #564b55;
+  --color-text-inverse: #fcfcfc;
+  --color-text-link: #123568;
+  --color-border-subtle: #e9e7e98d;
+  --color-border-strong: #3f363e8d;
+  --color-border-focus: #85300757;
+  --color-action-primary-hover: #853007;
+  --color-action-secondary: #fff0ef;
+  --color-action-secondary-foreground: #32090b;
+  --color-state-disabled-background: #1a171c1f;
+  --color-state-disabled-foreground: #1a171c61;
+  --color-feedback-success-background: #cdefd9;
+  --color-feedback-success-foreground: #10472a;
+  --color-feedback-error-background: #ffd9d6;
+  --color-feedback-error-foreground: #6b2021;
+  --color-feedback-warning-background: #ffd0a6;
+  --color-feedback-warning-foreground: #853007;
+  --color-feedback-info-background: #d1e5ff;
+  --color-feedback-info-foreground: #123568;
+  --color-overlay-scrim: #00000099;
+  --color-overlay-subtle: #1a171c14;
+  --color-state-hover: #1a171c0d;
+  --color-state-pressed: #1a171c1f;
+  --color-state-selected: #b3440d1f;
+  --color-separator-default: #564b5557;
+  --color-background-subtle: #f7f6f7;
+  --color-text-on-brand: #341000;
+  --color-background-tertiary: #fbe7e1;
+  --color-text-on-inverse: #fcfcfc;
+  --color-action-neutral: #1a171c;
+  --color-action-neutral-foreground: #fcfcfc;
+  --color-background-message-received: #e9e7e9;
+  --color-icon-brand: #853007;
+  --color-text-on-media: #fcfcfc;
+  --component-button-foreground-secondary-default-hover: #853007;
+  --component-button-foreground-secondary-default-pressed: #853007;
+  --component-button-foreground-text-default-hover: #853007;
+  --component-button-foreground-text-default-pressed: #853007;
+  --color-state-selected-indicator: #853007;
+  --component-input-focus: #85300757;
+  --color-text-visionos-on-selected: #1a171c;
+  --color-card-shadow-raised: #0809081f;
+  --color-card-shadow-floating: #08090829;
+  --color-card-state-hover: #1a171c0a;
+  --color-card-state-pressed: #1a171c14;
+  --color-card-state-dragged: #1a171c1f;
+  --color-code-keyword: #194a91;
+  --color-code-string: #176139;
+  --color-code-number: #932c2e;
+  --color-code-function: #602b8d;
+  --color-code-inverse-keyword: #abceff;
+  --color-code-inverse-string: #a4deb9;
+  --color-code-inverse-number: #ffb7b0;
+  --color-code-inverse-function: #e1b0ff;
+  --color-skeleton-surface: #e9e7e9;
+  --color-card-filled-surface: #e4e3e4;
+  --color-card-filled-border: #b5b3b5;
+  --color-action-transparent-foreground: #853007;
+  --color-feedback-success-readable: #10472a;
+  --color-feedback-success-text: #10472a;
+  --color-feedback-warning-readable: #853007;
+  --color-feedback-warning-text: #853007;
+  --color-feedback-error-readable: #6b2021;
+  --color-feedback-error-text: #6b2021;
+  --color-feedback-info-readable: #123568;
+  --color-feedback-info-text: #123568;
+  color-scheme: light;
+}
+[data-wardo-theme="ember-dark"] {
+  --color-background-default: #1a171c;
+  --color-background-raised: #2b262c;
+  --color-background-brand: #591d03;
+  --color-text-primary: #fcfcfc;
+  --color-text-secondary: #e9e7e9;
+  --color-text-brand: #ffd0a6;
+  --color-border-default: #b2acb8a6;
+  --color-action-primary: #ffad6c;
+  --color-action-primary-foreground: #341000;
+  --color-background-sunken: #1a171c;
+  --color-background-inverse: #fcfcfc;
+  --color-background-brand-hover: #853007;
+  --color-text-tertiary: #d4d1d7;
+  --color-text-inverse: #1a171c;
+  --color-text-link: #d1e5ff;
+  --color-border-subtle: #3f363e8d;
+  --color-border-strong: #e9e7e98d;
+  --color-border-focus: #ffd0a657;
+  --color-action-primary-hover: #ffd0a6;
+  --color-action-secondary: #4c1618;
+  --color-action-secondary-foreground: #fffaf9;
+  --color-state-disabled-background: #fcfcfc1f;
+  --color-state-disabled-foreground: #fcfcfc61;
+  --color-feedback-success-background: #0b321e;
+  --color-feedback-success-foreground: #eaf9f0;
+  --color-feedback-error-background: #4c1618;
+  --color-feedback-error-foreground: #fff0ef;
+  --color-feedback-warning-background: #591d03;
+  --color-feedback-warning-foreground: #ffe9d8;
+  --color-feedback-info-background: #0c254a;
+  --color-feedback-info-foreground: #eaf3ff;
+  --color-overlay-scrim: #00000099;
+  --color-overlay-subtle: #fcfcfc14;
+  --color-state-hover: #fcfcfc0d;
+  --color-state-pressed: #fcfcfc29;
+  --color-state-selected: #ffad6c33;
+  --color-separator-default: #e9e7e957;
+  --color-background-subtle: #2b262c;
+  --color-text-on-brand: #fff8f2;
+  --color-background-tertiary: #3d190f;
+  --color-text-on-inverse: #1a171c;
+  --color-action-neutral: #fcfcfc;
+  --color-action-neutral-foreground: #1a171c;
+  --color-background-message-received: #3f363e;
+  --color-icon-brand: #ffd0a6;
+  --color-text-on-media: #fcfcfc;
+  --component-button-foreground-secondary-default-hover: #ffd0a6;
+  --component-button-foreground-secondary-default-pressed: #ffd0a6;
+  --component-button-foreground-text-default-hover: #ffd0a6;
+  --component-button-foreground-text-default-pressed: #ffd0a6;
+  --color-state-selected-indicator: #ffd0a6;
+  --component-input-focus: #ffd0a657;
+  --color-text-visionos-on-selected: #fcfcfc;
+  --color-card-shadow-raised: #0809081f;
+  --color-card-shadow-floating: #08090829;
+  --color-card-state-hover: #fcfcfc0a;
+  --color-card-state-pressed: #fcfcfc14;
+  --color-card-state-dragged: #fcfcfc1f;
+  --color-code-keyword: #abceff;
+  --color-code-string: #a4deb9;
+  --color-code-number: #ffb7b0;
+  --color-code-function: #e1b0ff;
+  --color-code-inverse-keyword: #194a91;
+  --color-code-inverse-string: #176139;
+  --color-code-inverse-number: #932c2e;
+  --color-code-inverse-function: #602b8d;
+  --color-skeleton-surface: #2b262c;
+  --color-card-filled-surface: #312e32;
+  --color-card-filled-border: #535054;
+  --color-action-transparent-foreground: #ffd0a6;
+  --color-feedback-success-readable: #eaf9f0;
+  --color-feedback-success-text: #eaf9f0;
+  --color-feedback-warning-readable: #ffe9d8;
+  --color-feedback-warning-text: #ffe9d8;
+  --color-feedback-error-readable: #fff0ef;
+  --color-feedback-error-text: #fff0ef;
+  --color-feedback-info-readable: #eaf3ff;
+  --color-feedback-info-text: #eaf3ff;
+  color-scheme: dark;
+}
+[data-wardo-theme="cloud-light"] {
+  --color-background-default: #f7f7f7;
+  --color-background-raised: #ffffff;
+  --color-background-brand: #e8e8e8;
+  --color-text-primary: #121212;
+  --color-text-secondary: #333333;
+  --color-text-brand: #242424;
+  --color-border-default: #767676a6;
+  --color-action-primary: #242424;
+  --color-action-primary-foreground: #ffffff;
+  --color-background-sunken: #e8e8e8;
+  --color-background-inverse: #121212;
+  --color-background-brand-hover: #d2d2d2;
+  --color-text-tertiary: #484848;
+  --color-text-inverse: #ffffff;
+  --color-text-link: #333333;
+  --color-border-subtle: #e8e8e88d;
+  --color-border-strong: #3333338d;
+  --color-border-focus: #24242457;
+  --color-action-primary-hover: #333333;
+  --color-action-secondary: #e8e8e8;
+  --color-action-secondary-foreground: #121212;
+  --color-state-disabled-background: #1212121f;
+  --color-state-disabled-foreground: #12121261;
+  --color-feedback-success-background: #cdefd9;
+  --color-feedback-success-foreground: #10472a;
+  --color-feedback-error-background: #ffd9d6;
+  --color-feedback-error-foreground: #6b2021;
+  --color-feedback-warning-background: #ffd0a6;
+  --color-feedback-warning-foreground: #853007;
+  --color-feedback-info-background: #d1e5ff;
+  --color-feedback-info-foreground: #123568;
+  --color-overlay-scrim: #00000099;
+  --color-overlay-subtle: #12121214;
+  --color-state-hover: #1212120d;
+  --color-state-pressed: #1212121f;
+  --color-state-selected: #1212121f;
+  --color-separator-default: #48484857;
+  --color-background-subtle: #f7f7f7;
+  --color-text-on-brand: #121212;
+  --color-background-tertiary: #f7f7f7;
+  --color-text-on-inverse: #ffffff;
+  --color-action-neutral: #121212;
+  --color-action-neutral-foreground: #ffffff;
+  --color-background-message-received: #e8e8e8;
+  --color-icon-brand: #333333;
+  --color-text-on-media: #ffffff;
+  --component-button-foreground-secondary-default-hover: #242424;
+  --component-button-foreground-secondary-default-pressed: #242424;
+  --component-button-foreground-text-default-hover: #242424;
+  --component-button-foreground-text-default-pressed: #242424;
+  --color-state-selected-indicator: #242424;
+  --component-input-focus: #24242457;
+  --color-text-visionos-on-selected: #121212;
+  --color-card-shadow-raised: #0809081f;
+  --color-card-shadow-floating: #08090829;
+  --color-card-state-hover: #1212120a;
+  --color-card-state-pressed: #12121214;
+  --color-card-state-dragged: #1212121f;
+  --color-code-keyword: #194a91;
+  --color-code-string: #176139;
+  --color-code-number: #932c2e;
+  --color-code-function: #602b8d;
+  --color-code-inverse-keyword: #abceff;
+  --color-code-inverse-string: #a4deb9;
+  --color-code-inverse-number: #ffb7b0;
+  --color-code-inverse-function: #e1b0ff;
+  --color-skeleton-surface: #e8e8e8;
+  --color-card-filled-surface: #e4e4e4;
+  --color-card-filled-border: #b2b2b2;
+  --color-action-transparent-foreground: #242424;
+  --color-feedback-success-readable: #10472a;
+  --color-feedback-success-text: #10472a;
+  --color-feedback-warning-readable: #853007;
+  --color-feedback-warning-text: #853007;
+  --color-feedback-error-readable: #6b2021;
+  --color-feedback-error-text: #6b2021;
+  --color-feedback-info-readable: #123568;
+  --color-feedback-info-text: #123568;
+  color-scheme: light;
+}
+[data-wardo-theme="cloud-dark"] {
+  --color-background-default: #121212;
+  --color-background-raised: #242424;
+  --color-background-brand: #333333;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e8e8e8;
+  --color-text-brand: #f7f7f7;
+  --color-border-default: #767676a6;
+  --color-action-primary: #f7f7f7;
+  --color-action-primary-foreground: #121212;
+  --color-background-sunken: #121212;
+  --color-background-inverse: #ffffff;
+  --color-background-brand-hover: #484848;
+  --color-text-tertiary: #d2d2d2;
+  --color-text-inverse: #121212;
+  --color-text-link: #e8e8e8;
+  --color-border-subtle: #3333338d;
+  --color-border-strong: #e8e8e88d;
+  --color-border-focus: #f7f7f757;
+  --color-action-primary-hover: #e8e8e8;
+  --color-action-secondary: #333333;
+  --color-action-secondary-foreground: #ffffff;
+  --color-state-disabled-background: #ffffff1f;
+  --color-state-disabled-foreground: #ffffff61;
+  --color-feedback-success-background: #0b321e;
+  --color-feedback-success-foreground: #eaf9f0;
+  --color-feedback-error-background: #4c1618;
+  --color-feedback-error-foreground: #fff0ef;
+  --color-feedback-warning-background: #591d03;
+  --color-feedback-warning-foreground: #ffe9d8;
+  --color-feedback-info-background: #0c254a;
+  --color-feedback-info-foreground: #eaf3ff;
+  --color-overlay-scrim: #00000099;
+  --color-overlay-subtle: #ffffff14;
+  --color-state-hover: #ffffff0d;
+  --color-state-pressed: #ffffff29;
+  --color-state-selected: #ffffff33;
+  --color-separator-default: #e8e8e857;
+  --color-background-subtle: #242424;
+  --color-text-on-brand: #ffffff;
+  --color-background-tertiary: #242424;
+  --color-text-on-inverse: #121212;
+  --color-action-neutral: #ffffff;
+  --color-action-neutral-foreground: #121212;
+  --color-background-message-received: #333333;
+  --color-icon-brand: #e8e8e8;
+  --color-text-on-media: #ffffff;
+  --component-button-foreground-secondary-default-hover: #f7f7f7;
+  --component-button-foreground-secondary-default-pressed: #f7f7f7;
+  --component-button-foreground-text-default-hover: #f7f7f7;
+  --component-button-foreground-text-default-pressed: #f7f7f7;
+  --color-state-selected-indicator: #f7f7f7;
+  --component-input-focus: #f7f7f757;
+  --color-text-visionos-on-selected: #ffffff;
+  --color-card-shadow-raised: #0809081f;
+  --color-card-shadow-floating: #08090829;
+  --color-card-state-hover: #ffffff0a;
+  --color-card-state-pressed: #ffffff14;
+  --color-card-state-dragged: #ffffff1f;
+  --color-code-keyword: #abceff;
+  --color-code-string: #a4deb9;
+  --color-code-number: #ffb7b0;
+  --color-code-function: #e1b0ff;
+  --color-code-inverse-keyword: #194a91;
+  --color-code-inverse-string: #176139;
+  --color-code-inverse-number: #932c2e;
+  --color-code-inverse-function: #602b8d;
+  --color-skeleton-surface: #242424;
+  --color-card-filled-surface: #2a2a2a;
+  --color-card-filled-border: #4d4d4d;
+  --color-action-transparent-foreground: #f7f7f7;
+  --color-feedback-success-readable: #eaf9f0;
+  --color-feedback-success-text: #eaf9f0;
+  --color-feedback-warning-readable: #ffe9d8;
+  --color-feedback-warning-text: #ffe9d8;
+  --color-feedback-error-readable: #fff0ef;
+  --color-feedback-error-text: #fff0ef;
+  --color-feedback-info-readable: #eaf3ff;
+  --color-feedback-info-text: #eaf3ff;
+  color-scheme: dark;
+}
+:root, [data-wardo-size="M"] {
+  --control-size-min-height: 3rem;
+  --control-spacing-content: 0.5rem;
+  --control-type-label-font-size: 1rem;
+  --control-type-label-line-height: 1.2rem;
+}
+[data-wardo-size="XS"] {
+  --control-size-min-height: 2rem;
+  --control-spacing-content: 0.25rem;
+  --control-type-label-font-size: 0.75rem;
+  --control-type-label-line-height: 0.9rem;
+}
+[data-wardo-size="S"] {
+  --control-size-min-height: 2.5rem;
+  --control-spacing-content: 0.25rem;
+  --control-type-label-font-size: 0.875rem;
+  --control-type-label-line-height: 1.05rem;
+}
+[data-wardo-size="L"] {
+  --control-size-min-height: 4rem;
+  --control-spacing-content: 0.5rem;
+  --control-type-label-font-size: 1.25rem;
+  --control-type-label-line-height: 1.5rem;
+}
+[data-wardo-size="XL"] {
+  --control-size-min-height: 4.5rem;
+  --control-spacing-content: 0.75rem;
+  --control-type-label-font-size: 1.5rem;
+  --control-type-label-line-height: 1.8rem;
+}
+[data-wardo-size="2XL"] {
+  --control-size-min-height: 5.5rem;
+  --control-spacing-content: 0.75rem;
+  --control-type-label-font-size: 2rem;
+  --control-type-label-line-height: 2.4rem;
+}
+[data-wardo-size="Chonky"] {
+  --control-size-min-height: 6.25rem;
+  --control-spacing-content: 1rem;
+  --control-type-label-font-size: 2.25rem;
+  --control-type-label-line-height: 2.7rem;
+  --control-theme-radius: 16rem;
+}
+[data-wardo-size="Hero"] {
+  --control-size-min-height: 7.25rem;
+  --control-spacing-content: 1rem;
+  --control-type-label-font-size: 2.5rem;
+  --control-type-label-line-height: 3rem;
+}
+:root { --control-content-padding-x: 1.5rem; --control-content-padding-y: .75rem; --control-theme-radius: .5rem; --font-heading: "Geologica Variable", "Geologica", system-ui, sans-serif; --font-body: "Source Serif 4 Variable", "Source Serif 4", Georgia, serif; }
+[data-wardo-condition="serious"] { --control-theme-radius: .25rem; }
+[data-wardo-condition="chonky"] { --control-theme-radius: 16rem; }
+
+/* Wardo web components. Fonts are supplied by the consuming application. */
+.wardo-button,.wardo-field,.wardo-selection,.wardo-accordion,.wardo-card,.wardo-tag,.wardo-radio-group { box-sizing:border-box; color:var(--color-text-primary); }
+.wardo-button *, .wardo-field *, .wardo-accordion *, .wardo-card * {box-sizing:border-box}
+.wardo-button { --action-bg:var(--color-action-primary); --action-fg:var(--color-action-primary-foreground); display:inline-flex;align-items:center;justify-content:center;gap:var(--control-spacing-content);min-height:var(--control-size-min-height);padding:.65em calc(1.5em - 1px);border:1px solid transparent;border-radius:var(--control-theme-radius);font:500 var(--control-type-label-font-size)/1.2 var(--font-heading);background:var(--action-bg);color:var(--action-fg);cursor:pointer;text-decoration:none;vertical-align:middle;position:relative;isolation:isolate;transition:background-color .15s,color .15s,box-shadow .15s; }
+.wardo-button::after{content:'';position:absolute;inset:0;border-radius:inherit;z-index:-1;pointer-events:none}
+.wardo-button[data-tone=confirmation]{--action-bg:var(--color-feedback-success-background);--action-fg:var(--color-feedback-success-readable)}
+.wardo-button[data-tone=warning]{--action-bg:var(--color-feedback-warning-background);--action-fg:var(--color-feedback-warning-readable)}
+.wardo-button[data-tone=error]{--action-bg:var(--color-feedback-error-background);--action-fg:var(--color-feedback-error-readable)}
+.wardo-button[data-tone=neutral]{--action-bg:var(--color-action-neutral);--action-fg:var(--color-action-neutral-foreground)}
+.wardo-button[data-hierarchy=secondary],.wardo-button[data-hierarchy=tertiary],.wardo-button[data-hierarchy=text]{background:transparent;color:var(--color-action-transparent-foreground)}
+.wardo-button[data-hierarchy=secondary]{border-color:var(--color-border-strong)}
+.wardo-button[data-hierarchy=tertiary]{border-color:var(--color-border-subtle)}
+.wardo-button[data-hierarchy=tonal]{background:var(--color-action-secondary);color:var(--color-action-secondary-foreground)}
+.wardo-button:not([data-tone=default]):not([data-hierarchy=primary]){color:var(--action-fg)}
+.wardo-button:not([data-tone=default])[data-hierarchy=tonal]{background:var(--action-bg)}
+.wardo-button:not(:disabled):hover::after{background:var(--color-state-hover)}
+.wardo-button[data-hierarchy=primary][data-tone=default]:not(:disabled):hover{background:var(--color-action-primary-hover)}
+.wardo-button:not(:disabled):active::after{background:var(--color-state-pressed)}
+.wardo-button[aria-pressed=true]{box-shadow:inset 0 0 0 2px currentColor}
+.wardo-button:disabled{background:var(--color-state-disabled-background);color:var(--color-state-disabled-foreground);border-color:transparent;cursor:not-allowed}
+.wardo-button[data-icon-only=true]{padding:.65em;aspect-ratio:1}
+.wardo-button:focus-visible,.wardo-field input:focus-visible,.wardo-field textarea:focus-visible,.wardo-field select:focus-visible,.wardo-selection input:focus-visible,.wardo-accordion button:focus-visible,.wardo-link:focus-visible{outline:3px solid var(--color-text-brand);outline-offset:3px}
+.wardo-icon{display:inline-flex;align-items:center;justify-content:center;flex:none}.wardo-icon svg{width:1.25em;height:1.25em}
+.wardo-spinner{width:1em;height:1em;border:2px solid currentColor;border-inline-end-color:transparent;border-radius:50%;animation:wardo-spin .8s linear infinite;flex:none}
+@keyframes wardo-spin{to{transform:rotate(360deg)}}
+.wardo-chip{border-radius:var(--control-theme-radius)}
+.wardo-field{display:grid;gap:.5rem;min-width:0;font:400 1rem/1.5 var(--font-body)}
+.wardo-field label{font-weight:500;font-size:.875rem}.wardo-field-control{display:flex;align-items:center;gap:.5rem;background:var(--color-background-default);border:1px solid var(--color-border-strong);border-radius:var(--control-theme-radius);padding-inline:.875rem;min-width:0}
+.wardo-field-control:focus-within{border-color:var(--color-action-transparent-foreground)}
+.wardo-field input:not([type=range]),.wardo-field textarea,.wardo-field select{color:var(--color-text-primary);font:400 var(--control-type-label-font-size)/1.5 var(--font-body);width:100%;min-width:0;min-height:var(--control-size-min-height);border:0;background:transparent;border-radius:inherit;padding:.65rem 0}
+.wardo-field textarea,.wardo-field select{padding:.75rem;border:1px solid var(--color-border-strong);border-radius:var(--control-theme-radius);background:var(--color-background-default)}
+.wardo-field textarea{resize:vertical;min-height:7rem}.wardo-field input::placeholder,.wardo-field textarea::placeholder{color:var(--color-text-secondary);opacity:1}
+.wardo-field input:disabled,.wardo-field textarea:disabled,.wardo-field select:disabled{color:var(--color-state-disabled-foreground);cursor:not-allowed}
+.wardo-field[data-appearance=filled] .wardo-field-control,.wardo-field[data-appearance=filled] textarea,.wardo-field[data-appearance=filled] select{background:var(--color-background-subtle)}
+.wardo-field-message{font-size:.875rem;color:var(--color-text-secondary)}.wardo-field[data-invalid=true] .wardo-field-message{color:var(--color-feedback-error-text)}
+.wardo-field[data-invalid=true] .wardo-field-control,.wardo-field[data-invalid=true] textarea,.wardo-field[data-invalid=true] select{border-color:var(--color-feedback-error-readable)}
+.wardo-selection{display:flex;align-items:center;gap:.75rem;min-height:2.75rem;font:400 1rem/1.5 var(--font-body);cursor:pointer}
+.wardo-selection input{flex:none;width:1.25rem;height:1.25rem;accent-color:var(--color-text-brand);margin:0;cursor:inherit}.wardo-selection:has(input:disabled){color:var(--color-state-disabled-foreground);cursor:not-allowed}.wardo-selection small{display:block;font-size:.875rem;color:var(--color-text-secondary)}
+.wardo-switch input{appearance:none;position:relative;width:2.75rem;height:1.625rem;border-radius:2rem;background:var(--color-border-strong);border:2px solid transparent;transition:background-color .15s}
+.wardo-switch input::before{content:'';display:block;width:1.125rem;height:1.125rem;margin:.125rem;border-radius:50%;background:var(--color-background-default);transition:transform .15s}.wardo-switch input:checked{background:var(--color-text-brand)}.wardo-switch input:checked::before{transform:translateX(1.125rem)}[dir=rtl] .wardo-switch input:checked::before{transform:translateX(-1.125rem)}.wardo-switch input:disabled{opacity:.45}
+.wardo-radio-group{border:0;padding:0;margin:0;font-family:var(--font-body)}.wardo-radio-group legend{font-size:.875rem;font-weight:500;margin-bottom:.5rem}.wardo-slider{width:100%;accent-color:var(--color-text-brand);min-height:2.75rem}
+.wardo-accordion-group{display:grid;min-width:0}.wardo-accordion{font:400 1rem/1.5 var(--font-body);min-width:0}.wardo-accordion[data-separator=true]{border-block-end:1px solid var(--color-separator-default)}
+.wardo-accordion-heading{display:flex;align-items:center;gap:1rem}.wardo-accordion h3{margin:0;flex:1;min-width:0}.wardo-accordion h3 button{width:100%;display:flex;align-items:center;gap:.75rem;min-height:var(--control-size-min-height);padding:1rem 0;border:0;background:transparent;text-align:start;cursor:pointer;color:inherit;font:500 var(--control-type-label-font-size)/1.4 var(--font-heading);border-radius:.25rem}
+.wardo-accordion h3 button:disabled{color:var(--color-state-disabled-foreground);cursor:not-allowed}.wardo-accordion-label{display:grid;gap:.25rem;flex:1}.wardo-accordion-subtitle{font:400 .875rem/1.5 var(--font-body);color:var(--color-text-secondary)}.wardo-accordion-indicator{order:3;display:flex;transition:transform .15s}.wardo-accordion[data-open=true] .wardo-accordion-indicator{transform:rotate(180deg)}.wardo-accordion button[data-indicator-position=start] .wardo-accordion-indicator{order:-1}.wardo-accordion-panel{padding:0 0 1.25rem;color:var(--color-text-secondary)}
+.wardo-accordion[data-presentation=inset]{padding-inline:1rem;background:var(--color-background-subtle);border-radius:.5rem}.wardo-accordion[data-presentation=outlined]{padding-inline:1rem;border:1px solid var(--color-border-default);border-radius:.5rem}.wardo-accordion-group:has([data-presentation=outlined]){gap:.5rem}
+.wardo-card{background:var(--color-card-filled-surface,var(--color-background-raised));border-radius:1rem;overflow:hidden;border:1px solid var(--color-border-default);font:400 1rem/1.5 var(--font-body)}.wardo-card[data-appearance=filled]{border-color:transparent}.wardo-card[data-appearance=elevated]{box-shadow:0 .25rem 1rem var(--color-card-shadow-raised)}.wardo-card-media img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.wardo-card-content{padding:1.5rem}.wardo-card h3{margin:0 0 .75rem;font:500 1.25rem/1.2 var(--font-heading)}.wardo-card footer{margin-top:1.5rem}
+.wardo-tag{display:inline-flex;align-items:center;gap:.375rem;max-width:100%;padding:.25rem .625rem;border-radius:.375rem;border:1px solid transparent;font:500 .75rem/1.4 var(--font-body);background:var(--color-background-subtle);color:var(--color-text-primary)}
+.wardo-tag[data-tone=brand]{background:var(--color-action-secondary);color:var(--color-action-secondary-foreground)}
+.wardo-tag[data-tone=success]{background:var(--color-feedback-success-background);color:var(--color-feedback-success-readable)}.wardo-tag[data-tone=warning]{background:var(--color-feedback-warning-background);color:var(--color-feedback-warning-readable)}.wardo-tag[data-tone=error]{background:var(--color-feedback-error-background);color:var(--color-feedback-error-readable)}.wardo-tag[data-tone=info]{background:var(--color-feedback-info-background);color:var(--color-feedback-info-readable)}.wardo-tag[data-tone=inverse]{background:var(--color-background-inverse);color:var(--color-text-inverse)}.wardo-tag[data-appearance=outlined]{border-color:currentColor;background:transparent}.wardo-tag[data-appearance=elevated]{box-shadow:0 2px 4px var(--color-card-shadow-raised)}
+.wardo-divider{border:0;border-block-start:1px solid var(--color-separator-default);margin:1.5rem 0}.wardo-link{color:var(--color-text-link);text-underline-offset:.2em;font-family:var(--font-body)}
+@media (prefers-reduced-motion:reduce){.wardo-button,.wardo-switch input,.wardo-switch input::before,.wardo-accordion-indicator{transition:none}.wardo-spinner{animation:none;border-style:dotted}}
+@media (forced-colors:active){.wardo-button{border:1px solid ButtonText}.wardo-switch input{appearance:auto}.wardo-switch input::before{display:none}}
+
+.wardo-button[data-tone=confirmation]:is([data-hierarchy=secondary],[data-hierarchy=tertiary],[data-hierarchy=text]){color:var(--color-feedback-success-text)}
+.wardo-button[data-tone=warning]:is([data-hierarchy=secondary],[data-hierarchy=tertiary],[data-hierarchy=text]){color:var(--color-feedback-warning-text)}
+.wardo-button[data-tone=error]:is([data-hierarchy=secondary],[data-hierarchy=tertiary],[data-hierarchy=text]){color:var(--color-feedback-error-text)}

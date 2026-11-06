@@ -1,0 +1,8 @@
+import type { AnchorHTMLAttributes, HTMLAttributes, ReactNode } from 'react';
+import { cx, type Size } from './shared';
+export interface ContentCardProps extends HTMLAttributes<HTMLElement>{size?:Size;heading?:ReactNode;footer?:ReactNode;media?:ReactNode;appearance?:'filled'|'outlined'|'elevated';}
+export function ContentCard({size='M',heading,footer,media,appearance='outlined',className,children,...props}:ContentCardProps){return <article {...props} className={cx('wardo-card',className)} data-wardo-size={size} data-appearance={appearance}>{media?<div className="wardo-card-media">{media}</div>:null}<div className="wardo-card-content">{heading?<h3>{heading}</h3>:null}{children}{footer?<footer>{footer}</footer>:null}</div></article>;}
+export interface MetadataTagProps extends HTMLAttributes<HTMLSpanElement>{size?:Size;tone?:'neutral'|'brand'|'success'|'warning'|'error'|'info'|'inverse';appearance?:'filled'|'outlined'|'elevated';leadingIcon?:ReactNode;}
+export function MetadataTag({size='M',tone='neutral',appearance='filled',leadingIcon,className,children,...props}:MetadataTagProps){return <span {...props} className={cx('wardo-tag',className)} data-wardo-size={size} data-tone={tone} data-appearance={appearance}>{leadingIcon?<span className="wardo-icon">{leadingIcon}</span>:null}{children}</span>;}
+export function Divider({className,...props}:HTMLAttributes<HTMLHRElement>){return <hr {...props} className={cx('wardo-divider',className)}/>;}
+export function Link({className,...props}:AnchorHTMLAttributes<HTMLAnchorElement>){return <a {...props} className={cx('wardo-link',className)}/>;}

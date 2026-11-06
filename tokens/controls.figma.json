@@ -1,0 +1,83 @@
+[
+  {
+    "id": "VariableID:1529:18",
+    "name": "control/size/min-height",
+    "modes": {
+      "M": 48,
+      "XS": 32,
+      "S": 40,
+      "L": 64,
+      "XL": 72,
+      "2XL": 88,
+      "Chonky": 100,
+      "Hero": 116
+    }
+  },
+  {
+    "id": "VariableID:1529:21",
+    "name": "control/spacing/content",
+    "modes": {
+      "M": 8,
+      "XS": 4,
+      "S": 4,
+      "L": 8,
+      "XL": 12,
+      "2XL": 12,
+      "Chonky": 16,
+      "Hero": 16
+    }
+  },
+  {
+    "id": "VariableID:1529:23",
+    "name": "control/type/label/font-size",
+    "modes": {
+      "M": 16,
+      "XS": 12,
+      "S": 14,
+      "L": 20,
+      "XL": 24,
+      "2XL": 32,
+      "Chonky": 36,
+      "Hero": 40
+    }
+  },
+  {
+    "id": "VariableID:1529:25",
+    "name": "control/type/label/line-height",
+    "modes": {
+      "M": 19.200000762939453,
+      "XS": 14.399999618530273,
+      "S": 16.799999237060547,
+      "L": 24,
+      "XL": 28.799999237060547,
+      "2XL": 38.400001525878906,
+      "Chonky": 43.20000076293945,
+      "Hero": 48
+    }
+  },
+  {
+    "id": "VariableID:1529:55",
+    "name": "control/content/padding-x",
+    "modes": {
+      "Labelled": 24,
+      "Icon": 0
+    }
+  },
+  {
+    "id": "VariableID:1529:56",
+    "name": "control/content/padding-y",
+    "modes": {
+      "Labelled": 12,
+      "Icon": 0
+    }
+  },
+  {
+    "id": "VariableID:1529:46",
+    "name": "control/theme/radius",
+    "modes": {
+      "Normal": 8,
+      "Serious": 4,
+      "Chonky": 256
+    }
+  }
+]

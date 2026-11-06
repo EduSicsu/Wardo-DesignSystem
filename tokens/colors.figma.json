@@ -1,0 +1,1120 @@
+{
+  "modes": [
+    "Wardo Light",
+    "Wardo Dark",
+    "Ocean Light",
+    "Ocean Dark",
+    "Orchid Light",
+    "Orchid Dark",
+    "Ember Light",
+    "Ember Dark",
+    "Cloud Light",
+    "Cloud Dark"
+  ],
+  "tokens": [
+    {
+      "id": "VariableID:49:3",
+      "name": "color/semantic/background/default",
+      "modes": {
+        "Wardo Light": "#f8f2ec",
+        "Wardo Dark": "#161615",
+        "Ocean Light": "#f5f7f9",
+        "Ocean Dark": "#15181e",
+        "Orchid Light": "#f6f6f9",
+        "Orchid Dark": "#17171f",
+        "Ember Light": "#f7f6f7",
+        "Ember Dark": "#1a171c",
+        "Cloud Light": "#f7f7f7",
+        "Cloud Dark": "#121212"
+      }
+    },
+    {
+      "id": "VariableID:49:4",
+      "name": "color/semantic/background/raised",
+      "modes": {
+        "Wardo Light": "#efe6dd",
+        "Wardo Dark": "#2b2926",
+        "Ocean Light": "#fcfcfd",
+        "Ocean Dark": "#232731",
+        "Orchid Light": "#fcfcfd",
+        "Orchid Dark": "#252630",
+        "Ember Light": "#fcfcfc",
+        "Ember Dark": "#2b262c",
+        "Cloud Light": "#ffffff",
+        "Cloud Dark": "#242424"
+      }
+    },
+    {
+      "id": "VariableID:49:5",
+      "name": "color/semantic/background/brand",
+      "modes": {
+        "Wardo Light": "#bad101",
+        "Wardo Dark": "#edf196",
+        "Ocean Light": "#eaf3ff",
+        "Ocean Dark": "#0c254a",
+        "Orchid Light": "#faedff",
+        "Orchid Dark": "#301546",
+        "Ember Light": "#ffe9d8",
+        "Ember Dark": "#591d03",
+        "Cloud Light": "#e8e8e8",
+        "Cloud Dark": "#333333"
+      }
+    },
+    {
+      "id": "VariableID:49:6",
+      "name": "color/semantic/text/primary",
+      "modes": {
+        "Wardo Light": "#161615",
+        "Wardo Dark": "#fffdfc",
+        "Ocean Light": "#15181e",
+        "Ocean Dark": "#fcfcfd",
+        "Orchid Light": "#17171f",
+        "Orchid Dark": "#fcfcfd",
+        "Ember Light": "#1a171c",
+        "Ember Dark": "#fcfcfc",
+        "Cloud Light": "#121212",
+        "Cloud Dark": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:49:7",
+      "name": "color/semantic/text/secondary",
+      "modes": {
+        "Wardo Light": "#2b2926",
+        "Wardo Dark": "#efe6dd",
+        "Ocean Light": "#313745",
+        "Ocean Dark": "#e5e9ef",
+        "Orchid Light": "#353545",
+        "Orchid Dark": "#e8e7ef",
+        "Ember Light": "#3f363e",
+        "Ember Dark": "#e9e7e9",
+        "Cloud Light": "#333333",
+        "Cloud Dark": "#e8e8e8"
+      }
+    },
+    {
+      "id": "VariableID:49:8",
+      "name": "color/semantic/text/brand",
+      "modes": {
+        "Wardo Light": "#3c4406",
+        "Wardo Dark": "#e7f268",
+        "Ocean Light": "#123568",
+        "Ocean Dark": "#d1e5ff",
+        "Orchid Light": "#451e68",
+        "Orchid Dark": "#f1d5ff",
+        "Ember Light": "#853007",
+        "Ember Dark": "#ffd0a6",
+        "Cloud Light": "#242424",
+        "Cloud Dark": "#f7f7f7"
+      }
+    },
+    {
+      "id": "VariableID:49:9",
+      "name": "color/semantic/border/default",
+      "modes": {
+        "Wardo Light": "#534e48a6",
+        "Wardo Dark": "#e6d9cca6",
+        "Ocean Light": "#454c5ea6",
+        "Ocean Dark": "#a6afc3a6",
+        "Orchid Light": "#494a5ea6",
+        "Orchid Dark": "#acacc3a6",
+        "Ember Light": "#564b55a6",
+        "Ember Dark": "#b2acb8a6",
+        "Cloud Light": "#767676a6",
+        "Cloud Dark": "#767676a6"
+      }
+    },
+    {
+      "id": "VariableID:49:10",
+      "name": "color/semantic/action/primary",
+      "modes": {
+        "Wardo Light": "#bad101",
+        "Wardo Dark": "#e7f268",
+        "Ocean Light": "#2061bc",
+        "Ocean Dark": "#abceff",
+        "Orchid Light": "#7b39b5",
+        "Orchid Dark": "#e1b0ff",
+        "Ember Light": "#b3440d",
+        "Ember Dark": "#ffad6c",
+        "Cloud Light": "#242424",
+        "Cloud Dark": "#f7f7f7"
+      }
+    },
+    {
+      "id": "VariableID:49:11",
+      "name": "color/semantic/action/primary-foreground",
+      "modes": {
+        "Wardo Light": "#161615",
+        "Wardo Dark": "#161615",
+        "Ocean Light": "#f9fcff",
+        "Ocean Dark": "#041427",
+        "Orchid Light": "#fef9ff",
+        "Orchid Dark": "#21092f",
+        "Ember Light": "#fff8f2",
+        "Ember Dark": "#341000",
+        "Cloud Light": "#ffffff",
+        "Cloud Dark": "#121212"
+      }
+    },
+    {
+      "id": "VariableID:50:2",
+      "name": "color/semantic/background/sunken",
+      "modes": {
+        "Wardo Light": "#e6d9cc",
+        "Wardo Dark": "#161615",
+        "Ocean Light": "#e5e9ef",
+        "Ocean Dark": "#15181e",
+        "Orchid Light": "#e8e7ef",
+        "Orchid Dark": "#17171f",
+        "Ember Light": "#e9e7e9",
+        "Ember Dark": "#1a171c",
+        "Cloud Light": "#e8e8e8",
+        "Cloud Dark": "#121212"
+      }
+    },
+    {
+      "id": "VariableID:50:3",
+      "name": "color/semantic/background/inverse",
+      "modes": {
+        "Wardo Light": "#2b2926",
+        "Wardo Dark": "#fffdfc",
+        "Ocean Light": "#15181e",
+        "Ocean Dark": "#fcfcfd",
+        "Orchid Light": "#17171f",
+        "Orchid Dark": "#fcfcfd",
+        "Ember Light": "#1a171c",
+        "Ember Dark": "#fcfcfc",
+        "Cloud Light": "#121212",
+        "Cloud Dark": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:50:4",
+      "name": "color/semantic/background/brand-hover",
+      "modes": {
+        "Wardo Light": "#e7f268",
+        "Wardo Dark": "#3c4406",
+        "Ocean Light": "#d1e5ff",
+        "Ocean Dark": "#123568",
+        "Orchid Light": "#f1d5ff",
+        "Orchid Dark": "#451e68",
+        "Ember Light": "#ffd0a6",
+        "Ember Dark": "#853007",
+        "Cloud Light": "#d2d2d2",
+        "Cloud Dark": "#484848"
+      }
+    },
+    {
+      "id": "VariableID:50:5",
+      "name": "color/semantic/text/tertiary",
+      "modes": {
+        "Wardo Light": "#534e48",
+        "Wardo Dark": "#e6d9cc",
+        "Ocean Light": "#454c5e",
+        "Ocean Dark": "#cdd4e0",
+        "Orchid Light": "#494a5e",
+        "Orchid Dark": "#d1d1e0",
+        "Ember Light": "#564b55",
+        "Ember Dark": "#d4d1d7",
+        "Cloud Light": "#484848",
+        "Cloud Dark": "#d2d2d2"
+      }
+    },
+    {
+      "id": "VariableID:50:6",
+      "name": "color/semantic/text/inverse",
+      "modes": {
+        "Wardo Light": "#fffdfc",
+        "Wardo Dark": "#2b2926",
+        "Ocean Light": "#fcfcfd",
+        "Ocean Dark": "#15181e",
+        "Orchid Light": "#fcfcfd",
+        "Orchid Dark": "#17171f",
+        "Ember Light": "#fcfcfc",
+        "Ember Dark": "#1a171c",
+        "Cloud Light": "#ffffff",
+        "Cloud Dark": "#121212"
+      }
+    },
+    {
+      "id": "VariableID:50:7",
+      "name": "color/semantic/text/link",
+      "modes": {
+        "Wardo Light": "#194a91",
+        "Wardo Dark": "#abceff",
+        "Ocean Light": "#123568",
+        "Ocean Dark": "#d1e5ff",
+        "Orchid Light": "#123568",
+        "Orchid Dark": "#d1e5ff",
+        "Ember Light": "#123568",
+        "Ember Dark": "#d1e5ff",
+        "Cloud Light": "#333333",
+        "Cloud Dark": "#e8e8e8"
+      }
+    },
+    {
+      "id": "VariableID:50:8",
+      "name": "color/semantic/border/subtle",
+      "modes": {
+        "Wardo Light": "#91867b8d",
+        "Wardo Dark": "#534e488d",
+        "Ocean Light": "#e5e9ef8d",
+        "Ocean Dark": "#3137458d",
+        "Orchid Light": "#e8e7ef8d",
+        "Orchid Dark": "#3535458d",
+        "Ember Light": "#e9e7e98d",
+        "Ember Dark": "#3f363e8d",
+        "Cloud Light": "#e8e8e88d",
+        "Cloud Dark": "#3333338d"
+      }
+    },
+    {
+      "id": "VariableID:50:9",
+      "name": "color/semantic/border/strong",
+      "modes": {
+        "Wardo Light": "#2b29268d",
+        "Wardo Dark": "#efe6dd8d",
+        "Ocean Light": "#3137458d",
+        "Ocean Dark": "#e5e9ef8d",
+        "Orchid Light": "#3535458d",
+        "Orchid Dark": "#e8e7ef8d",
+        "Ember Light": "#3f363e8d",
+        "Ember Dark": "#e9e7e98d",
+        "Cloud Light": "#3333338d",
+        "Cloud Dark": "#e8e8e88d"
+      }
+    },
+    {
+      "id": "VariableID:50:10",
+      "name": "color/semantic/border/focus",
+      "modes": {
+        "Wardo Light": "#66730457",
+        "Wardo Dark": "#e7f26857",
+        "Ocean Light": "#12356857",
+        "Ocean Dark": "#d1e5ff57",
+        "Orchid Light": "#451e6857",
+        "Orchid Dark": "#f1d5ff57",
+        "Ember Light": "#85300757",
+        "Ember Dark": "#ffd0a657",
+        "Cloud Light": "#24242457",
+        "Cloud Dark": "#f7f7f757"
+      }
+    },
+    {
+      "id": "VariableID:50:11",
+      "name": "color/semantic/action/primary-hover",
+      "modes": {
+        "Wardo Light": "#90a203",
+        "Wardo Dark": "#edf196",
+        "Ocean Light": "#194a91",
+        "Ocean Dark": "#d1e5ff",
+        "Orchid Light": "#602b8d",
+        "Orchid Dark": "#f1d5ff",
+        "Ember Light": "#853007",
+        "Ember Dark": "#ffd0a6",
+        "Cloud Light": "#333333",
+        "Cloud Dark": "#e8e8e8"
+      }
+    },
+    {
+      "id": "VariableID:50:12",
+      "name": "color/semantic/action/secondary",
+      "modes": {
+        "Wardo Light": "#dde3c6",
+        "Wardo Dark": "#30371c",
+        "Ocean Light": "#eaf3ff",
+        "Ocean Dark": "#0c254a",
+        "Orchid Light": "#f0efff",
+        "Orchid Dark": "#211b4b",
+        "Ember Light": "#fff0ef",
+        "Ember Dark": "#4c1618",
+        "Cloud Light": "#e8e8e8",
+        "Cloud Dark": "#333333"
+      }
+    },
+    {
+      "id": "VariableID:50:13",
+      "name": "color/semantic/action/secondary-foreground",
+      "modes": {
+        "Wardo Light": "#202514",
+        "Wardo Dark": "#f0f2e2",
+        "Ocean Light": "#041427",
+        "Ocean Dark": "#f9fcff",
+        "Orchid Light": "#110c2f",
+        "Orchid Dark": "#fbfaff",
+        "Ember Light": "#32090b",
+        "Ember Dark": "#fffaf9",
+        "Cloud Light": "#121212",
+        "Cloud Dark": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:50:14",
+      "name": "color/semantic/state/disabled-background",
+      "modes": {
+        "Wardo Light": "#2424221f",
+        "Wardo Dark": "#ffffff1f",
+        "Ocean Light": "#15181e1f",
+        "Ocean Dark": "#fcfcfd1f",
+        "Orchid Light": "#17171f1f",
+        "Orchid Dark": "#fcfcfd1f",
+        "Ember Light": "#1a171c1f",
+        "Ember Dark": "#fcfcfc1f",
+        "Cloud Light": "#1212121f",
+        "Cloud Dark": "#ffffff1f"
+      }
+    },
+    {
+      "id": "VariableID:50:15",
+      "name": "color/semantic/state/disabled-foreground",
+      "modes": {
+        "Wardo Light": "#24242261",
+        "Wardo Dark": "#ffffff61",
+        "Ocean Light": "#15181e61",
+        "Ocean Dark": "#fcfcfd61",
+        "Orchid Light": "#17171f61",
+        "Orchid Dark": "#fcfcfd61",
+        "Ember Light": "#1a171c61",
+        "Ember Dark": "#fcfcfc61",
+        "Cloud Light": "#12121261",
+        "Cloud Dark": "#ffffff61"
+      }
+    },
+    {
+      "id": "VariableID:50:16",
+      "name": "color/semantic/feedback/success-background",
+      "modes": {
+        "Wardo Light": "#cdefd9",
+        "Wardo Dark": "#0b321e",
+        "Ocean Light": "#cdefd9",
+        "Ocean Dark": "#0b321e",
+        "Orchid Light": "#cdefd9",
+        "Orchid Dark": "#0b321e",
+        "Ember Light": "#cdefd9",
+        "Ember Dark": "#0b321e",
+        "Cloud Light": "#cdefd9",
+        "Cloud Dark": "#0b321e"
+      }
+    },
+    {
+      "id": "VariableID:50:17",
+      "name": "color/semantic/feedback/success-foreground",
+      "modes": {
+        "Wardo Light": "#10472a",
+        "Wardo Dark": "#cdefd9",
+        "Ocean Light": "#10472a",
+        "Ocean Dark": "#eaf9f0",
+        "Orchid Light": "#10472a",
+        "Orchid Dark": "#eaf9f0",
+        "Ember Light": "#10472a",
+        "Ember Dark": "#eaf9f0",
+        "Cloud Light": "#10472a",
+        "Cloud Dark": "#eaf9f0"
+      }
+    },
+    {
+      "id": "VariableID:50:18",
+      "name": "color/semantic/feedback/error-background",
+      "modes": {
+        "Wardo Light": "#ffd9d6",
+        "Wardo Dark": "#4c1618",
+        "Ocean Light": "#ffd9d6",
+        "Ocean Dark": "#4c1618",
+        "Orchid Light": "#ffd9d6",
+        "Orchid Dark": "#4c1618",
+        "Ember Light": "#ffd9d6",
+        "Ember Dark": "#4c1618",
+        "Cloud Light": "#ffd9d6",
+        "Cloud Dark": "#4c1618"
+      }
+    },
+    {
+      "id": "VariableID:50:19",
+      "name": "color/semantic/feedback/error-foreground",
+      "modes": {
+        "Wardo Light": "#6b2021",
+        "Wardo Dark": "#ffd9d6",
+        "Ocean Light": "#6b2021",
+        "Ocean Dark": "#fff0ef",
+        "Orchid Light": "#6b2021",
+        "Orchid Dark": "#fff0ef",
+        "Ember Light": "#6b2021",
+        "Ember Dark": "#fff0ef",
+        "Cloud Light": "#6b2021",
+        "Cloud Dark": "#fff0ef"
+      }
+    },
+    {
+      "id": "VariableID:50:20",
+      "name": "color/semantic/feedback/warning-background",
+      "modes": {
+        "Wardo Light": "#ffd0a6",
+        "Wardo Dark": "#591d03",
+        "Ocean Light": "#ffd0a6",
+        "Ocean Dark": "#591d03",
+        "Orchid Light": "#ffd0a6",
+        "Orchid Dark": "#591d03",
+        "Ember Light": "#ffd0a6",
+        "Ember Dark": "#591d03",
+        "Cloud Light": "#ffd0a6",
+        "Cloud Dark": "#591d03"
+      }
+    },
+    {
+      "id": "VariableID:50:21",
+      "name": "color/semantic/feedback/warning-foreground",
+      "modes": {
+        "Wardo Light": "#853007",
+        "Wardo Dark": "#ffd0a6",
+        "Ocean Light": "#853007",
+        "Ocean Dark": "#ffe9d8",
+        "Orchid Light": "#853007",
+        "Orchid Dark": "#ffe9d8",
+        "Ember Light": "#853007",
+        "Ember Dark": "#ffe9d8",
+        "Cloud Light": "#853007",
+        "Cloud Dark": "#ffe9d8"
+      }
+    },
+    {
+      "id": "VariableID:50:22",
+      "name": "color/semantic/feedback/info-background",
+      "modes": {
+        "Wardo Light": "#d1e5ff",
+        "Wardo Dark": "#0c254a",
+        "Ocean Light": "#d1e5ff",
+        "Ocean Dark": "#0c254a",
+        "Orchid Light": "#d1e5ff",
+        "Orchid Dark": "#0c254a",
+        "Ember Light": "#d1e5ff",
+        "Ember Dark": "#0c254a",
+        "Cloud Light": "#d1e5ff",
+        "Cloud Dark": "#0c254a"
+      }
+    },
+    {
+      "id": "VariableID:50:23",
+      "name": "color/semantic/feedback/info-foreground",
+      "modes": {
+        "Wardo Light": "#123568",
+        "Wardo Dark": "#d1e5ff",
+        "Ocean Light": "#123568",
+        "Ocean Dark": "#eaf3ff",
+        "Orchid Light": "#123568",
+        "Orchid Dark": "#eaf3ff",
+        "Ember Light": "#123568",
+        "Ember Dark": "#eaf3ff",
+        "Cloud Light": "#123568",
+        "Cloud Dark": "#eaf3ff"
+      }
+    },
+    {
+      "id": "VariableID:51:2",
+      "name": "color/semantic/overlay/scrim",
+      "modes": {
+        "Wardo Light": "#0000007a",
+        "Wardo Dark": "#00000099",
+        "Ocean Light": "#00000099",
+        "Ocean Dark": "#00000099",
+        "Orchid Light": "#00000099",
+        "Orchid Dark": "#00000099",
+        "Ember Light": "#00000099",
+        "Ember Dark": "#00000099",
+        "Cloud Light": "#00000099",
+        "Cloud Dark": "#00000099"
+      }
+    },
+    {
+      "id": "VariableID:51:3",
+      "name": "color/semantic/overlay/subtle",
+      "modes": {
+        "Wardo Light": "#24242214",
+        "Wardo Dark": "#ffffff14",
+        "Ocean Light": "#15181e14",
+        "Ocean Dark": "#fcfcfd14",
+        "Orchid Light": "#17171f14",
+        "Orchid Dark": "#fcfcfd14",
+        "Ember Light": "#1a171c14",
+        "Ember Dark": "#fcfcfc14",
+        "Cloud Light": "#12121214",
+        "Cloud Dark": "#ffffff14"
+      }
+    },
+    {
+      "id": "VariableID:51:4",
+      "name": "color/semantic/state/hover",
+      "modes": {
+        "Wardo Light": "#2424220d",
+        "Wardo Dark": "#ffffff0d",
+        "Ocean Light": "#15181e0d",
+        "Ocean Dark": "#fcfcfd0d",
+        "Orchid Light": "#17171f0d",
+        "Orchid Dark": "#fcfcfd0d",
+        "Ember Light": "#1a171c0d",
+        "Ember Dark": "#fcfcfc0d",
+        "Cloud Light": "#1212120d",
+        "Cloud Dark": "#ffffff0d"
+      }
+    },
+    {
+      "id": "VariableID:51:5",
+      "name": "color/semantic/state/pressed",
+      "modes": {
+        "Wardo Light": "#2424221f",
+        "Wardo Dark": "#ffffff29",
+        "Ocean Light": "#15181e1f",
+        "Ocean Dark": "#fcfcfd29",
+        "Orchid Light": "#17171f1f",
+        "Orchid Dark": "#fcfcfd29",
+        "Ember Light": "#1a171c1f",
+        "Ember Dark": "#fcfcfc29",
+        "Cloud Light": "#1212121f",
+        "Cloud Dark": "#ffffff29"
+      }
+    },
+    {
+      "id": "VariableID:51:6",
+      "name": "color/semantic/state/selected",
+      "modes": {
+        "Wardo Light": "#d9f4001f",
+        "Wardo Dark": "#e7f26833",
+        "Ocean Light": "#2061bc1f",
+        "Ocean Dark": "#abceff33",
+        "Orchid Light": "#7b39b51f",
+        "Orchid Dark": "#e1b0ff33",
+        "Ember Light": "#b3440d1f",
+        "Ember Dark": "#ffad6c33",
+        "Cloud Light": "#1212121f",
+        "Cloud Dark": "#ffffff33"
+      }
+    },
+    {
+      "id": "VariableID:51:7",
+      "name": "color/semantic/separator/default",
+      "modes": {
+        "Wardo Light": "#a49f9957",
+        "Wardo Dark": "#f9f2ea57",
+        "Ocean Light": "#454c5e57",
+        "Ocean Dark": "#e5e9ef57",
+        "Orchid Light": "#494a5e57",
+        "Orchid Dark": "#e8e7ef57",
+        "Ember Light": "#564b5557",
+        "Ember Dark": "#e9e7e957",
+        "Cloud Light": "#48484857",
+        "Cloud Dark": "#e8e8e857"
+      }
+    },
+    {
+      "id": "VariableID:206:17",
+      "name": "color/semantic/background/subtle",
+      "modes": {
+        "Wardo Light": "#efe6dd",
+        "Wardo Dark": "#2b2926",
+        "Ocean Light": "#f5f7f9",
+        "Ocean Dark": "#232731",
+        "Orchid Light": "#f6f6f9",
+        "Orchid Dark": "#252630",
+        "Ember Light": "#f7f6f7",
+        "Ember Dark": "#2b262c",
+        "Cloud Light": "#f7f7f7",
+        "Cloud Dark": "#242424"
+      }
+    },
+    {
+      "id": "VariableID:206:18",
+      "name": "color/semantic/text/on-brand",
+      "modes": {
+        "Wardo Light": "#252b02",
+        "Wardo Dark": "#f3f1c4",
+        "Ocean Light": "#041427",
+        "Ocean Dark": "#f9fcff",
+        "Orchid Light": "#21092f",
+        "Orchid Dark": "#fef9ff",
+        "Ember Light": "#341000",
+        "Ember Dark": "#fff8f2",
+        "Cloud Light": "#121212",
+        "Cloud Dark": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:645:17",
+      "name": "color/semantic/background/tertiary",
+      "modes": {
+        "Wardo Light": "#f4e6c3",
+        "Wardo Dark": "#454137",
+        "Ocean Light": "#e8f8fc",
+        "Ocean Dark": "#0a313f",
+        "Orchid Light": "#f9e6c4",
+        "Orchid Dark": "#463306",
+        "Ember Light": "#fbe7e1",
+        "Ember Dark": "#3d190f",
+        "Cloud Light": "#f7f7f7",
+        "Cloud Dark": "#242424"
+      }
+    },
+    {
+      "id": "VariableID:686:17",
+      "name": "color/semantic/text/on-inverse",
+      "modes": {
+        "Wardo Light": "#fffdfc",
+        "Wardo Dark": "#2b2926",
+        "Ocean Light": "#fcfcfd",
+        "Ocean Dark": "#15181e",
+        "Orchid Light": "#fcfcfd",
+        "Orchid Dark": "#17171f",
+        "Ember Light": "#fcfcfc",
+        "Ember Dark": "#1a171c",
+        "Cloud Light": "#ffffff",
+        "Cloud Dark": "#121212"
+      }
+    },
+    {
+      "id": "VariableID:688:17",
+      "name": "color/semantic/action/neutral",
+      "modes": {
+        "Wardo Light": "#161615",
+        "Wardo Dark": "#fffdfc",
+        "Ocean Light": "#15181e",
+        "Ocean Dark": "#fcfcfd",
+        "Orchid Light": "#17171f",
+        "Orchid Dark": "#fcfcfd",
+        "Ember Light": "#1a171c",
+        "Ember Dark": "#fcfcfc",
+        "Cloud Light": "#121212",
+        "Cloud Dark": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:688:18",
+      "name": "color/semantic/action/neutral-foreground",
+      "modes": {
+        "Wardo Light": "#fffdfc",
+        "Wardo Dark": "#2b2926",
+        "Ocean Light": "#fcfcfd",
+        "Ocean Dark": "#15181e",
+        "Orchid Light": "#fcfcfd",
+        "Orchid Dark": "#17171f",
+        "Ember Light": "#fcfcfc",
+        "Ember Dark": "#1a171c",
+        "Cloud Light": "#ffffff",
+        "Cloud Dark": "#121212"
+      }
+    },
+    {
+      "id": "VariableID:693:4795",
+      "name": "color/semantic/background/message-received",
+      "modes": {
+        "Wardo Light": "#d8c7b8",
+        "Wardo Dark": "#534e48",
+        "Ocean Light": "#e5e9ef",
+        "Ocean Dark": "#313745",
+        "Orchid Light": "#e8e7ef",
+        "Orchid Dark": "#353545",
+        "Ember Light": "#e9e7e9",
+        "Ember Dark": "#3f363e",
+        "Cloud Light": "#e8e8e8",
+        "Cloud Dark": "#333333"
+      }
+    },
+    {
+      "id": "VariableID:698:4411",
+      "name": "color/semantic/icon/brand",
+      "modes": {
+        "Wardo Light": "#667304",
+        "Wardo Dark": "#e7f268",
+        "Ocean Light": "#123568",
+        "Ocean Dark": "#d1e5ff",
+        "Orchid Light": "#451e68",
+        "Orchid Dark": "#f1d5ff",
+        "Ember Light": "#853007",
+        "Ember Dark": "#ffd0a6",
+        "Cloud Light": "#333333",
+        "Cloud Dark": "#e8e8e8"
+      }
+    },
+    {
+      "id": "VariableID:698:4413",
+      "name": "color/semantic/text/on-media",
+      "modes": {
+        "Wardo Light": "#ffffff",
+        "Wardo Dark": "#ffffff",
+        "Ocean Light": "#fcfcfd",
+        "Ocean Dark": "#fcfcfd",
+        "Orchid Light": "#fcfcfd",
+        "Orchid Dark": "#fcfcfd",
+        "Ember Light": "#fcfcfc",
+        "Ember Dark": "#fcfcfc",
+        "Cloud Light": "#ffffff",
+        "Cloud Dark": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:870:290",
+      "name": "component/button/foreground/Secondary/Default/Hover",
+      "modes": {
+        "Wardo Light": "#161615",
+        "Wardo Dark": "#e7f268",
+        "Ocean Light": "#123568",
+        "Ocean Dark": "#d1e5ff",
+        "Orchid Light": "#451e68",
+        "Orchid Dark": "#f1d5ff",
+        "Ember Light": "#853007",
+        "Ember Dark": "#ffd0a6",
+        "Cloud Light": "#242424",
+        "Cloud Dark": "#f7f7f7"
+      }
+    },
+    {
+      "id": "VariableID:870:291",
+      "name": "component/button/foreground/Secondary/Default/Pressed",
+      "modes": {
+        "Wardo Light": "#161615",
+        "Wardo Dark": "#e7f268",
+        "Ocean Light": "#123568",
+        "Ocean Dark": "#d1e5ff",
+        "Orchid Light": "#451e68",
+        "Orchid Dark": "#f1d5ff",
+        "Ember Light": "#853007",
+        "Ember Dark": "#ffd0a6",
+        "Cloud Light": "#242424",
+        "Cloud Dark": "#f7f7f7"
+      }
+    },
+    {
+      "id": "VariableID:870:292",
+      "name": "component/button/foreground/Text/Default/Hover",
+      "modes": {
+        "Wardo Light": "#161615",
+        "Wardo Dark": "#e7f268",
+        "Ocean Light": "#123568",
+        "Ocean Dark": "#d1e5ff",
+        "Orchid Light": "#451e68",
+        "Orchid Dark": "#f1d5ff",
+        "Ember Light": "#853007",
+        "Ember Dark": "#ffd0a6",
+        "Cloud Light": "#242424",
+        "Cloud Dark": "#f7f7f7"
+      }
+    },
+    {
+      "id": "VariableID:870:293",
+      "name": "component/button/foreground/Text/Default/Pressed",
+      "modes": {
+        "Wardo Light": "#161615",
+        "Wardo Dark": "#e7f268",
+        "Ocean Light": "#123568",
+        "Ocean Dark": "#d1e5ff",
+        "Orchid Light": "#451e68",
+        "Orchid Dark": "#f1d5ff",
+        "Ember Light": "#853007",
+        "Ember Dark": "#ffd0a6",
+        "Cloud Light": "#242424",
+        "Cloud Dark": "#f7f7f7"
+      }
+    },
+    {
+      "id": "VariableID:988:63714",
+      "name": "color/semantic/state/selected-indicator",
+      "modes": {
+        "Wardo Light": "#3c4406",
+        "Wardo Dark": "#e7f268",
+        "Ocean Light": "#123568",
+        "Ocean Dark": "#d1e5ff",
+        "Orchid Light": "#451e68",
+        "Orchid Dark": "#f1d5ff",
+        "Ember Light": "#853007",
+        "Ember Dark": "#ffd0a6",
+        "Cloud Light": "#242424",
+        "Cloud Dark": "#f7f7f7"
+      }
+    },
+    {
+      "id": "VariableID:1038:16355",
+      "name": "component/input/focus",
+      "modes": {
+        "Wardo Light": "#161615",
+        "Wardo Dark": "#e7f26857",
+        "Ocean Light": "#12356857",
+        "Ocean Dark": "#d1e5ff57",
+        "Orchid Light": "#451e6857",
+        "Orchid Dark": "#f1d5ff57",
+        "Ember Light": "#85300757",
+        "Ember Dark": "#ffd0a657",
+        "Cloud Light": "#24242457",
+        "Cloud Dark": "#f7f7f757"
+      }
+    },
+    {
+      "id": "VariableID:2561:30125",
+      "name": "color/semantic/text/visionOS/on-selected",
+      "modes": {
+        "Wardo Light": "#161615",
+        "Wardo Dark": "#2b2926",
+        "Ocean Light": "#041427",
+        "Ocean Dark": "#fcfcfd",
+        "Orchid Light": "#21092f",
+        "Orchid Dark": "#fcfcfd",
+        "Ember Light": "#1a171c",
+        "Ember Dark": "#fcfcfc",
+        "Cloud Light": "#121212",
+        "Cloud Dark": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:2780:43870",
+      "name": "color/semantic/card/shadow-raised",
+      "modes": {
+        "Wardo Light": "#0809081f",
+        "Wardo Dark": "#0809081f",
+        "Ocean Light": "#0809081f",
+        "Ocean Dark": "#0809081f",
+        "Orchid Light": "#0809081f",
+        "Orchid Dark": "#0809081f",
+        "Ember Light": "#0809081f",
+        "Ember Dark": "#0809081f",
+        "Cloud Light": "#0809081f",
+        "Cloud Dark": "#0809081f"
+      }
+    },
+    {
+      "id": "VariableID:2780:43872",
+      "name": "color/semantic/card/shadow-floating",
+      "modes": {
+        "Wardo Light": "#08090829",
+        "Wardo Dark": "#08090829",
+        "Ocean Light": "#08090829",
+        "Ocean Dark": "#08090829",
+        "Orchid Light": "#08090829",
+        "Orchid Dark": "#08090829",
+        "Ember Light": "#08090829",
+        "Ember Dark": "#08090829",
+        "Cloud Light": "#08090829",
+        "Cloud Dark": "#08090829"
+      }
+    },
+    {
+      "id": "VariableID:2807:46593",
+      "name": "color/semantic/card/state-hover",
+      "modes": {
+        "Wardo Light": "#1616150a",
+        "Wardo Dark": "#fffdfc0a",
+        "Ocean Light": "#15181e0a",
+        "Ocean Dark": "#fcfcfd0a",
+        "Orchid Light": "#17171f0a",
+        "Orchid Dark": "#fcfcfd0a",
+        "Ember Light": "#1a171c0a",
+        "Ember Dark": "#fcfcfc0a",
+        "Cloud Light": "#1212120a",
+        "Cloud Dark": "#ffffff0a"
+      }
+    },
+    {
+      "id": "VariableID:2807:46669",
+      "name": "color/semantic/card/state-pressed",
+      "modes": {
+        "Wardo Light": "#16161514",
+        "Wardo Dark": "#fffdfc14",
+        "Ocean Light": "#15181e14",
+        "Ocean Dark": "#fcfcfd14",
+        "Orchid Light": "#17171f14",
+        "Orchid Dark": "#fcfcfd14",
+        "Ember Light": "#1a171c14",
+        "Ember Dark": "#fcfcfc14",
+        "Cloud Light": "#12121214",
+        "Cloud Dark": "#ffffff14"
+      }
+    },
+    {
+      "id": "VariableID:2807:46713",
+      "name": "color/semantic/card/state-dragged",
+      "modes": {
+        "Wardo Light": "#1616151f",
+        "Wardo Dark": "#fffdfc1f",
+        "Ocean Light": "#15181e1f",
+        "Ocean Dark": "#fcfcfd1f",
+        "Orchid Light": "#17171f1f",
+        "Orchid Dark": "#fcfcfd1f",
+        "Ember Light": "#1a171c1f",
+        "Ember Dark": "#fcfcfc1f",
+        "Cloud Light": "#1212121f",
+        "Cloud Dark": "#ffffff1f"
+      }
+    },
+    {
+      "id": "VariableID:2995:110",
+      "name": "color/semantic/code/keyword",
+      "modes": {
+        "Wardo Light": "#194a91",
+        "Wardo Dark": "#abceff",
+        "Ocean Light": "#194a91",
+        "Ocean Dark": "#abceff",
+        "Orchid Light": "#194a91",
+        "Orchid Dark": "#abceff",
+        "Ember Light": "#194a91",
+        "Ember Dark": "#abceff",
+        "Cloud Light": "#194a91",
+        "Cloud Dark": "#abceff"
+      }
+    },
+    {
+      "id": "VariableID:2995:111",
+      "name": "color/semantic/code/string",
+      "modes": {
+        "Wardo Light": "#176139",
+        "Wardo Dark": "#a4deb9",
+        "Ocean Light": "#176139",
+        "Ocean Dark": "#a4deb9",
+        "Orchid Light": "#176139",
+        "Orchid Dark": "#a4deb9",
+        "Ember Light": "#176139",
+        "Ember Dark": "#a4deb9",
+        "Cloud Light": "#176139",
+        "Cloud Dark": "#a4deb9"
+      }
+    },
+    {
+      "id": "VariableID:2995:112",
+      "name": "color/semantic/code/number",
+      "modes": {
+        "Wardo Light": "#932c2e",
+        "Wardo Dark": "#ffb7b0",
+        "Ocean Light": "#932c2e",
+        "Ocean Dark": "#ffb7b0",
+        "Orchid Light": "#932c2e",
+        "Orchid Dark": "#ffb7b0",
+        "Ember Light": "#932c2e",
+        "Ember Dark": "#ffb7b0",
+        "Cloud Light": "#932c2e",
+        "Cloud Dark": "#ffb7b0"
+      }
+    },
+    {
+      "id": "VariableID:2995:113",
+      "name": "color/semantic/code/function",
+      "modes": {
+        "Wardo Light": "#602b8d",
+        "Wardo Dark": "#e1b0ff",
+        "Ocean Light": "#602b8d",
+        "Ocean Dark": "#e1b0ff",
+        "Orchid Light": "#602b8d",
+        "Orchid Dark": "#e1b0ff",
+        "Ember Light": "#602b8d",
+        "Ember Dark": "#e1b0ff",
+        "Cloud Light": "#602b8d",
+        "Cloud Dark": "#e1b0ff"
+      }
+    },
+    {
+      "id": "VariableID:2995:114",
+      "name": "color/semantic/code/inverse/keyword",
+      "modes": {
+        "Wardo Light": "#abceff",
+        "Wardo Dark": "#194a91",
+        "Ocean Light": "#abceff",
+        "Ocean Dark": "#194a91",
+        "Orchid Light": "#abceff",
+        "Orchid Dark": "#194a91",
+        "Ember Light": "#abceff",
+        "Ember Dark": "#194a91",
+        "Cloud Light": "#abceff",
+        "Cloud Dark": "#194a91"
+      }
+    },
+    {
+      "id": "VariableID:2995:115",
+      "name": "color/semantic/code/inverse/string",
+      "modes": {
+        "Wardo Light": "#a4deb9",
+        "Wardo Dark": "#176139",
+        "Ocean Light": "#a4deb9",
+        "Ocean Dark": "#176139",
+        "Orchid Light": "#a4deb9",
+        "Orchid Dark": "#176139",
+        "Ember Light": "#a4deb9",
+        "Ember Dark": "#176139",
+        "Cloud Light": "#a4deb9",
+        "Cloud Dark": "#176139"
+      }
+    },
+    {
+      "id": "VariableID:2995:116",
+      "name": "color/semantic/code/inverse/number",
+      "modes": {
+        "Wardo Light": "#ffb7b0",
+        "Wardo Dark": "#932c2e",
+        "Ocean Light": "#ffb7b0",
+        "Ocean Dark": "#932c2e",
+        "Orchid Light": "#ffb7b0",
+        "Orchid Dark": "#932c2e",
+        "Ember Light": "#ffb7b0",
+        "Ember Dark": "#932c2e",
+        "Cloud Light": "#ffb7b0",
+        "Cloud Dark": "#932c2e"
+      }
+    },
+    {
+      "id": "VariableID:2995:117",
+      "name": "color/semantic/code/inverse/function",
+      "modes": {
+        "Wardo Light": "#e1b0ff",
+        "Wardo Dark": "#602b8d",
+        "Ocean Light": "#e1b0ff",
+        "Ocean Dark": "#602b8d",
+        "Orchid Light": "#e1b0ff",
+        "Orchid Dark": "#602b8d",
+        "Ember Light": "#e1b0ff",
+        "Ember Dark": "#602b8d",
+        "Cloud Light": "#e1b0ff",
+        "Cloud Dark": "#602b8d"
+      }
+    },
+    {
+      "id": "VariableID:3126:3081",
+      "name": "color/semantic/skeleton/surface",
+      "modes": {
+        "Wardo Light": "#e6d9cc",
+        "Wardo Dark": "#2b2926",
+        "Ocean Light": "#e5e9ef",
+        "Ocean Dark": "#232731",
+        "Orchid Light": "#e8e7ef",
+        "Orchid Dark": "#252630",
+        "Ember Light": "#e9e7e9",
+        "Ember Dark": "#2b262c",
+        "Cloud Light": "#e8e8e8",
+        "Cloud Dark": "#242424"
+      }
+    },
+    {
+      "id": "VariableID:3303:42554",
+      "name": "color/semantic/card/filled-surface",
+      "modes": {
+        "Wardo Light": "#e5dfda",
+        "Wardo Dark": "#2d2d2c",
+        "Ocean Light": "#e2e4e6",
+        "Ocean Dark": "#2c2f34",
+        "Orchid Light": "#e3e3e6",
+        "Orchid Dark": "#2e2e35",
+        "Ember Light": "#e4e3e4",
+        "Ember Dark": "#312e32",
+        "Cloud Light": "#e4e4e4",
+        "Cloud Dark": "#2a2a2a"
+      }
+    },
+    {
+      "id": "VariableID:3303:42555",
+      "name": "color/semantic/card/filled-border",
+      "modes": {
+        "Wardo Light": "#b4b0ab",
+        "Wardo Dark": "#50504f",
+        "Ocean Light": "#b2b4b7",
+        "Ocean Dark": "#4f5156",
+        "Orchid Light": "#b3b3b8",
+        "Orchid Dark": "#505057",
+        "Ember Light": "#b5b3b5",
+        "Ember Dark": "#535054",
+        "Cloud Light": "#b2b2b2",
+        "Cloud Dark": "#4d4d4d"
+      }
+    }
+  ]
+}
