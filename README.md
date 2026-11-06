@@ -13,6 +13,10 @@ npm run dev
 
 Open the local address shown in the terminal. The preview includes theme switching, button states, editable forms, selection controls, and keyboard-operated disclosures. Fonts are bundled locally in the preview; no third-party font requests are needed.
 
+## Coverage — incomplete
+
+Figma Code Connect currently shows **21 of 797 connected (2.6%)**, leaving **776 unconnected**. The code below is an initial implementation, not the complete Wardo design system. The remaining count includes internal building blocks, platform-specific components, and additional public families; it is not a count of 776 distinct React components. See `figma/COVERAGE.md`.
+
 ## What's included
 
 - 18 component connections: Button, ActionChip, Accordion, AccordionGroup, TextField, TextArea, PasswordField, SearchField, NumberField, Select, Checkbox, Switch, RadioGroup, Slider, ContentCard, MetadataTag, Divider, and Link.
