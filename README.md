@@ -1,6 +1,6 @@
 # Wardo Design System
 
-Wardo's web component library, built with React and TypeScript with prepared connections to the [Wardo DS Figma library](https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS).
+Wardo's web component library, built with React and TypeScript with source connections to the [Wardo DS Figma library](https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS).
 
 ## Run the component preview
 
@@ -52,7 +52,7 @@ Pass an accessible name (`aria-label`) to icon-only buttons. Use `selected` for 
 
 ## Figma connection
 
-`figma/mappings.json` identifies each live Figma master and its implementation. The source connections are prepared but are **not active in Figma yet**. Figma rejected both the bulk write and an individual source mapping with an Organization/Enterprise plan restriction. The authenticated account has Starter and Professional plans. Current Figma documentation lists Professional support, so the interface or Figma support must resolve this mismatch before activation. See `figma/STATUS.md`. GitHub integration is optional for manual source links. The Code Connect settings may still show “Connect to GitHub” until the repository browsing integration is authorized separately in Figma.
+`figma/mappings.json` identifies each live Figma master and its implementation. **All 21 source links are saved in Figma Code Connect**: the 18 component families and three icons. Figma's interface confirmed the connections, and connected-tool readback confirms the source references for the public masters and nested icons. Most are file-level connections; the desired export names are also recorded in the registry. The five property-aware templates are prepared and validated, but are not published. Figma's API rejected template writes with an Organization/Enterprise restriction; saving source links through the native Figma UI worked on the existing plan. See `figma/STATUS.md` for the verification and remaining limitation. GitHub integration is optional for manual source links. The Code Connect settings may still show “Connect to GitHub” until the repository browsing integration is authorized separately in Figma.
 
 The two `.figma.ts` templates use Figma's parserless template API, exhaustive variant mappings, and dynamic instance swaps. Hover, pressed, and focus states belong to browser interaction; disabled state maps to the native button attribute. Component definitions and descendant anatomy used during setup are in `figma/context`.
 

@@ -132,6 +132,15 @@
       "templateFile": "figma/IconChevronDown.figma.ts"
     }
   ],
-  "status": "prepared-not-active",
-  "reason": "Figma API rejected connection writes with Organization/Enterprise plan restriction."
+  "status": "source-links-connected",
+  "reason": "Saved in Figma Code Connect UI; API writes remain restricted.",
+  "templateStatus": "prepared-not-published",
+  "verification": {
+    "date": "2026-11-06",
+    "uiConnectedCount": 21,
+    "totalLibraryComponents": 797,
+    "framework": "React",
+    "method": "Native Figma Code Connect interface",
+    "sourceReadback": "Confirmed across 17 public component masters through get_code_connect_map; ActionChip confirmed by UI save and connection count. Three icon links confirmed by UI and nested source readback."
+  }
 }

@@ -1,31 +1,30 @@
 # Figma connection status
 
-Prepared on November 6, 2026. **Connections are not active in Figma yet.**
+**21 source links saved in Figma Code Connect on November 6, 2026.**
 
-The code is available on the repository's `main` branch. `mappings.json` contains 18 component source links and three icon links. Five parserless templates are checked and ready to publish.
+The native Figma interface showed `21 of 797 connected` after saving the 18 implemented component families and three action icons. The other 776 published library components are outside this initial web release and were not connected to unsupported implementations.
 
-## Activation blocker
+## Verification
 
-Both `send_code_connect_mappings` and a single `add_code_connect_map` call were rejected by Figma with: “Code connections can only be made in libraries that are in Organization or Enterprise plans.”
+- Each source entry was submitted through the Code Connect interface. Figma displayed successful connection states and incremented the connected count.
+- The Connected filter showed the saved repository URLs for Accordion, Accordion Group, Action Chip, the icons, Button, Checkbox, Content Card, Divider, and Link.
+- Remote `get_code_connect_map` readback confirmed the expected source files across 17 public component masters, including NumberField. Nested icon instances resolve to `Icon.tsx`.
+- ActionChip's source connection was confirmed by the native UI save and count, but its master and older documentation samples returned no mappings through the readback tool. It has no nested implementation wrapper; that empty response does not establish a missing UI connection.
+- Most connections are file-level (the optional component/export name is absent in remote readback). Desired export names are recorded in `mappings.json`; Accordion has its explicit export name saved. Files with multiple exports remain linked to their source implementation.
+- The Mac locked again during optional detail editing. No reload was performed because Figma also displayed an unsynced canvas-changes banner. The remote readback confirms that source connections persisted independently of that canvas banner.
 
-The connected Figma account has Full seats on Starter and Professional teams. Figma's current [Code Connect UI documentation](https://developers.figma.com/docs/code-connect/code-connect-ui-setup/) lists Professional support (one active library/framework), so this could be a file eligibility, rollout, or API limitation. Do not purchase an upgrade based solely on this error.
+## Remaining limitation: rich snippets
 
-The native Figma interface could not be inspected because the Mac was locked. The alternative in-app browser opened a Figma login screen. No plan, account permissions, library location, or billing settings were changed.
+Five parserless templates are prepared and locally validated: Button, ActionChip, plus, arrow-right, and chevron-down. They are **not published** and `hasTemplate` remains false in remote readback. Source references and property-aware Inspect snippets are separate features.
 
-Figma diagnostic references:
+Both bulk and individual API writes were rejected with an Organization/Enterprise plan restriction. The native interface allowed source connections on the existing plan. No billing, permissions, library location, or account settings were changed; no upgrade was purchased. Figma's [current documentation](https://developers.figma.com/docs/code-connect/code-connect-ui-setup/) lists Professional support.
+
+API diagnostic references, retained for future template publication troubleshooting:
 
 - Bulk connection: `216ce5cd-c240-4984-8990-9a708ac60971`
 - Individual Accordion connection: `7bf088ad-aaa3-4063-a2e7-f03be98651c0`
 
-## Finish in Figma
-
-1. Open Wardo DS in the signed-in Figma application.
-2. Open Dev Mode → Library → Connect components to code.
-3. Try the Accordion mapping first using the source URL below. GitHub authorization is optional for manual links.
-4. If the interface permits it, add the remaining entries from the source-link table. If it shows the same plan restriction, resolve eligibility with Figma support using the diagnostic references above.
-5. Publish the five `.figma.ts` templates with Code Connect CLI or the connected tools after access is available.
-
-Source-file mappings give agents implementation references. Template publication additionally supplies property-aware snippets for Button, ActionChip, and the three icons.
+`ready-to-connect.json` is a prepared API publication payload, not evidence that its templates have been published. Do not replay it blindly over the existing source mappings. The CLI files can be published after template access is available.
 
 ## Source links
 
