@@ -1,8 +1,8 @@
 # Current Figma connection status
 
-**145 of 797 source links saved**, confirmed in the native UI. The newest 124 entries were saved with explicit component names. `expanded-mappings.json` records those saves. The complete published inventory matches all 797 entries, including documentation, archives and device references.
+**198 of 797 source links saved**, confirmed in the native UI. The newest 177 entries were saved with explicit component names. `expanded-mappings.json` and `web-internals-mappings.json` record those saves. The complete published inventory matches all 797 entries, including documentation, archives and device references.
 
-A further 53 web entries and nine first native entries are prepared, not yet saved. Native builds were deferred by the owner. React remains the active framework; the Professional plan supports one active framework. Other native implementation and visual gaps are documented in `native/README.md`.
+One further shared slider adapter is prepared. Nine first native source links are blocked by the framework plan. The native Alert save optimistically increased the count to 199, then rolled back to 198 with “Code Connect is set up for React. Upgrade your plan for more frameworks.” It is not counted as saved. Native builds were deferred by the owner. React remains the active framework; the Professional plan supports one active framework. Other native implementation and visual gaps are documented in `native/README.md`.
 
 The historical initial verification below remains useful for the original 21 entries and the unpublished template limitation.
 

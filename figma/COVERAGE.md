@@ -1,6 +1,6 @@
 # Wardo connection coverage
 
-Last confirmed in Figma: **145 of 797 source connections saved** (18.2%), leaving 652 unconnected. The original 21 have been extended with 124 verified source links. Another 53 implementation-backed web mappings and nine initial native mappings are prepared, not yet saved.
+Last confirmed in Figma: **198 of 797 source connections saved** (24.8%), leaving 599 unconnected. The original 21 have been extended with 177 verified source links. One more shared slider adapter is prepared. Nine initial native links are blocked by the current framework plan.
 
 ## Complete published inventory
 
@@ -30,3 +30,7 @@ Native SwiftUI and Jetpack Compose source packages, semantic color snapshots and
 Figma Professional permits one active framework. React remains active. SwiftUI and Compose cannot all be active alongside React on that plan; see [Figma's framework documentation](https://developers.figma.com/docs/code-connect/code-connect-ui-setup/#connecting-one-component-to-multiple-frameworks). No billing or framework settings have been changed.
 
 Five property-aware templates remain unpublished because API writes reject access. Saved source links are separate from published Inspect snippets. Current per-entry source states are recorded in `expanded-mappings.json`, `web-internals-mappings.json` and `native-mappings.json`.
+
+## Native save rejection observed in the UI
+
+On the native Alert attempt, Figma briefly displayed an optimistic `199 of 797` state and then rolled back to `198 of 797` / Not connected. It displayed: “Code Connect is set up for React. Upgrade your plan for more frameworks.” Neither default nor SwiftUI API readback contained that mapping. The native entry is not counted as saved. No upgrade or active-framework change was made.

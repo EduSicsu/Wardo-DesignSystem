@@ -6,9 +6,10 @@
       "componentName": "NativeAlertModifier",
       "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
       "framework": "SwiftUI",
-      "status": "source-prepared-pending-ui-connection",
+      "status": "blocked-by-framework-plan",
       "nativeBuild": "deferred-by-owner",
-      "activation": "Professional plan allows one active framework; React remains active"
+      "activation": "Not saved; current plan blocks an additional framework",
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
     },
     {
       "nodeId": "2773:44195",
@@ -16,9 +17,10 @@
       "componentName": "NativeActivityView",
       "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
       "framework": "SwiftUI",
-      "status": "source-prepared-pending-ui-connection",
+      "status": "blocked-by-framework-plan",
       "nativeBuild": "deferred-by-owner",
-      "activation": "Professional plan allows one active framework; React remains active"
+      "activation": "Not saved; current plan blocks an additional framework",
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
     },
     {
       "nodeId": "2773:44204",
@@ -26,9 +28,10 @@
       "componentName": "NativeActivityView",
       "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
       "framework": "SwiftUI",
-      "status": "source-prepared-pending-ui-connection",
+      "status": "blocked-by-framework-plan",
       "nativeBuild": "deferred-by-owner",
-      "activation": "Professional plan allows one active framework; React remains active"
+      "activation": "Not saved; current plan blocks an additional framework",
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
     },
     {
       "nodeId": "2773:43627",
@@ -36,9 +39,10 @@
       "componentName": "NativeContextMenuModifier",
       "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
       "framework": "SwiftUI",
-      "status": "source-prepared-pending-ui-connection",
+      "status": "blocked-by-framework-plan",
       "nativeBuild": "deferred-by-owner",
-      "activation": "Professional plan allows one active framework; React remains active"
+      "activation": "Not saved; current plan blocks an additional framework",
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
     },
     {
       "nodeId": "2773:43481",
@@ -46,9 +50,10 @@
       "componentName": "NativeFullScreenSheetModifier",
       "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
       "framework": "SwiftUI",
-      "status": "source-prepared-pending-ui-connection",
+      "status": "blocked-by-framework-plan",
       "nativeBuild": "deferred-by-owner",
-      "activation": "Professional plan allows one active framework; React remains active"
+      "activation": "Not saved; current plan blocks an additional framework",
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
     },
     {
       "nodeId": "2578:56814",
@@ -56,9 +61,10 @@
       "componentName": "WardoSystemIcon",
       "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
       "framework": "SwiftUI",
-      "status": "source-prepared-pending-ui-connection",
+      "status": "blocked-by-framework-plan",
       "nativeBuild": "deferred-by-owner",
-      "activation": "Professional plan allows one active framework; React remains active"
+      "activation": "Not saved; current plan blocks an additional framework",
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
     },
     {
       "nodeId": "2578:56816",
@@ -66,9 +72,10 @@
       "componentName": "WardoSystemIcon",
       "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
       "framework": "SwiftUI",
-      "status": "source-prepared-pending-ui-connection",
+      "status": "blocked-by-framework-plan",
       "nativeBuild": "deferred-by-owner",
-      "activation": "Professional plan allows one active framework; React remains active"
+      "activation": "Not saved; current plan blocks an additional framework",
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
     },
     {
       "nodeId": "2578:56818",
@@ -76,9 +83,10 @@
       "componentName": "WardoSystemIcon",
       "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
       "framework": "SwiftUI",
-      "status": "source-prepared-pending-ui-connection",
+      "status": "blocked-by-framework-plan",
       "nativeBuild": "deferred-by-owner",
-      "activation": "Professional plan allows one active framework; React remains active"
+      "activation": "Not saved; current plan blocks an additional framework",
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
     },
     {
       "nodeId": "2578:56820",
@@ -86,9 +94,10 @@
       "componentName": "WardoSystemIcon",
       "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
       "framework": "SwiftUI",
-      "status": "source-prepared-pending-ui-connection",
+      "status": "blocked-by-framework-plan",
       "nativeBuild": "deferred-by-owner",
-      "activation": "Professional plan allows one active framework; React remains active"
+      "activation": "Not saved; current plan blocks an additional framework",
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
     }
   ],
   "note": "This is the first native source-link batch. Other native public and internal entries remain unconnected. No native build or runtime validation has been performed."

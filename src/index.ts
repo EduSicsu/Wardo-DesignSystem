@@ -19,3 +19,4 @@ export * from './components/Patterns';
 export * from './components/ArtworkIcon';
 export { Radio } from './components/Selection';
 export * from './components/ChipPatterns';
+export * from './components/SliderControl';

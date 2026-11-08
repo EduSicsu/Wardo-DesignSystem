@@ -7,7 +7,8 @@
       "componentName": "LoadingSpinner",
       "source": "src/components/Feedback.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:27085",
@@ -15,7 +16,8 @@
       "componentName": "Button",
       "source": "src/components/Button.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:27140",
@@ -23,7 +25,8 @@
       "componentName": "Button",
       "source": "src/components/Button.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:27195",
@@ -31,7 +34,8 @@
       "componentName": "Button",
       "source": "src/components/Button.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:27250",
@@ -39,7 +43,8 @@
       "componentName": "Button",
       "source": "src/components/Button.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:27305",
@@ -47,7 +52,8 @@
       "componentName": "Button",
       "source": "src/components/Button.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:28420",
@@ -55,7 +61,8 @@
       "componentName": "Button",
       "source": "src/components/Button.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:27665",
@@ -63,7 +70,8 @@
       "componentName": "MenuButton",
       "source": "src/components/Menus.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:45479",
@@ -71,10 +79,11 @@
       "componentName": "ArtworkIcon",
       "source": "src/components/ArtworkIcon.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "name": "menu-chevron-right"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:45481",
@@ -82,10 +91,11 @@
       "componentName": "ArtworkIcon",
       "source": "src/components/ArtworkIcon.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "name": "menu-check"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:46471",
@@ -93,10 +103,11 @@
       "componentName": "ArtworkIcon",
       "source": "src/components/ArtworkIcon.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "name": "menu-chevron-left"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:46477",
@@ -104,10 +115,11 @@
       "componentName": "ArtworkIcon",
       "source": "src/components/ArtworkIcon.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "name": "menu-overflow"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:47451",
@@ -115,10 +127,11 @@
       "componentName": "ArtworkIcon",
       "source": "src/components/ArtworkIcon.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "name": "action-chevron-up"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:22453",
@@ -126,10 +139,11 @@
       "componentName": "ArtworkIcon",
       "source": "src/components/ArtworkIcon.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "name": "action-close"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:44461",
@@ -137,7 +151,8 @@
       "componentName": "MenuActionItem",
       "source": "src/components/Menus.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:45498",
@@ -145,10 +160,11 @@
       "componentName": "MenuActionItem",
       "source": "src/components/Menus.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "dense": true
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1543:62943",
@@ -156,7 +172,8 @@
       "componentName": "ToggleButton",
       "source": "src/components/AdvancedInputs.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1543:64564",
@@ -164,7 +181,8 @@
       "componentName": "ToggleButton",
       "source": "src/components/AdvancedInputs.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1543:66184",
@@ -172,7 +190,8 @@
       "componentName": "ToggleButton",
       "source": "src/components/AdvancedInputs.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1543:66725",
@@ -180,7 +199,8 @@
       "componentName": "ToggleButton",
       "source": "src/components/AdvancedInputs.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1543:67266",
@@ -188,7 +208,8 @@
       "componentName": "ToggleButton",
       "source": "src/components/AdvancedInputs.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1543:67807",
@@ -196,7 +217,8 @@
       "componentName": "ToggleButton",
       "source": "src/components/AdvancedInputs.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2047:33448",
@@ -204,7 +226,8 @@
       "componentName": "Radio",
       "source": "src/components/Selection.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:42950",
@@ -212,10 +235,11 @@
       "componentName": "SelectableChipGroup",
       "source": "src/components/ChipPatterns.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "multiple": false
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:42979",
@@ -223,10 +247,11 @@
       "componentName": "SelectableChipGroup",
       "source": "src/components/ChipPatterns.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "multiple": true
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:43021",
@@ -234,7 +259,8 @@
       "componentName": "TokenField",
       "source": "src/components/AdvancedInputs.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:43040",
@@ -242,7 +268,8 @@
       "componentName": "CollapsibleChipGroup",
       "source": "src/components/ChipPatterns.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:43048",
@@ -250,7 +277,8 @@
       "componentName": "ReorderableTokenField",
       "source": "src/components/ChipPatterns.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2197:38615",
@@ -258,7 +286,8 @@
       "componentName": "NavigationItem",
       "source": "src/components/Navigation.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2197:38783",
@@ -266,7 +295,8 @@
       "componentName": "NavigationItem",
       "source": "src/components/Navigation.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:22103",
@@ -274,7 +304,8 @@
       "componentName": "Toolbar",
       "source": "src/components/Navigation.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2254:45018",
@@ -282,7 +313,8 @@
       "componentName": "NavigationItem",
       "source": "src/components/Navigation.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2254:45329",
@@ -290,7 +322,8 @@
       "componentName": "NavigationItem",
       "source": "src/components/Navigation.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2396:18505",
@@ -298,7 +331,8 @@
       "componentName": "Toolbar",
       "source": "src/components/Navigation.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2396:18524",
@@ -306,7 +340,8 @@
       "componentName": "SearchField",
       "source": "src/components/TextField.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2396:18528",
@@ -314,7 +349,8 @@
       "componentName": "Button",
       "source": "src/components/Button.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2306:12059",
@@ -322,10 +358,11 @@
       "componentName": "TabItem",
       "source": "src/components/Navigation.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "variant": "underline"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2306:12176",
@@ -333,10 +370,11 @@
       "componentName": "TabItem",
       "source": "src/components/Navigation.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "variant": "pill"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2306:12293",
@@ -344,10 +382,11 @@
       "componentName": "TabItem",
       "source": "src/components/Navigation.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "variant": "default"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2254:54832",
@@ -355,7 +394,8 @@
       "componentName": "Tabs",
       "source": "src/components/Navigation.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2903:33843",
@@ -363,7 +403,8 @@
       "componentName": "CarouselItem",
       "source": "src/components/DataDisplay.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "3016:40016",
@@ -371,7 +412,8 @@
       "componentName": "TreeNodeItem",
       "source": "src/components/DataDisplay.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "2994:38398",
@@ -379,7 +421,8 @@
       "componentName": "CodeCopyFeedback",
       "source": "src/components/DataDisplay.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "3004:38618",
@@ -387,7 +430,8 @@
       "componentName": "CodeBlock",
       "source": "src/components/DataDisplay.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "3004:38635",
@@ -395,10 +439,11 @@
       "componentName": "CodeBlock",
       "source": "src/components/DataDisplay.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "inverse": true
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "3034:38926",
@@ -406,7 +451,8 @@
       "componentName": "Recovery",
       "source": "src/components/Patterns.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "3044:38977",
@@ -414,7 +460,8 @@
       "componentName": "TextListItem",
       "source": "src/components/DataDisplay.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "3135:654",
@@ -422,7 +469,8 @@
       "componentName": "FormErrorSummary",
       "source": "src/components/Patterns.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "3137:1539",
@@ -430,7 +478,8 @@
       "componentName": "Recovery",
       "source": "src/components/Patterns.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection"
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "1531:150854",
@@ -438,10 +487,11 @@
       "componentName": "ArtworkIcon",
       "source": "src/components/ArtworkIcon.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "name": "action-bookmark"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "3016:39975",
@@ -449,10 +499,11 @@
       "componentName": "ArtworkIcon",
       "source": "src/components/ArtworkIcon.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "name": "tree-folder"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "3016:39977",
@@ -460,10 +511,11 @@
       "componentName": "ArtworkIcon",
       "source": "src/components/ArtworkIcon.tsx",
       "framework": "React",
-      "status": "implemented-pending-ui-connection",
+      "status": "source-connection-saved",
       "props": {
         "name": "tree-document"
-      }
+      },
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
     },
     {
       "nodeId": "3016:39983",
@@ -471,7 +523,20 @@
       "componentName": "TreeDisclosure",
       "source": "src/components/DataDisplay.tsx",
       "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed source and explicit export with progress increment"
+    },
+    {
+      "nodeId": "2156:36351",
+      "designName": "Slider / Type selector",
+      "componentName": "SliderControl",
+      "source": "src/components/SliderControl.tsx",
+      "framework": "React",
       "status": "implemented-pending-ui-connection"
     }
-  ]
+  ],
+  "lastVerifiedProgress": {
+    "connected": 198,
+    "total": 797
+  }
 }
