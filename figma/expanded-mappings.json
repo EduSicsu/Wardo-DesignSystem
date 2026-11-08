@@ -1,0 +1,1012 @@
+{
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "components": [
+    {
+      "nodeId": "1531:26215",
+      "designName": "Standard button group",
+      "componentName": "ButtonGroup",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:26985",
+      "designName": "Connected button group",
+      "componentName": "ButtonGroup",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2397:9379",
+      "designName": "Split Button",
+      "componentName": "SplitButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:29583",
+      "designName": "Floating Action Button",
+      "componentName": "FloatingActionButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:23260",
+      "designName": "Sign in with Google",
+      "componentName": "ProviderButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:23267",
+      "designName": "Sign in with Apple",
+      "componentName": "ProviderButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:23274",
+      "designName": "Apple Pay",
+      "componentName": "ProviderButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:23281",
+      "designName": "Google Pay",
+      "componentName": "ProviderButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:46903",
+      "designName": "Menu Button",
+      "componentName": "MenuButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:22423",
+      "designName": "FAB Menu",
+      "componentName": "FABMenu",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2009:10406",
+      "designName": "FAB menu",
+      "componentName": "FABMenu",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:46484",
+      "designName": "Menu Pattern / Menu button",
+      "componentName": "MenuButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:46504",
+      "designName": "Menu Pattern / Split",
+      "componentName": "SplitButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:46525",
+      "designName": "Menu Pattern / Overflow",
+      "componentName": "MenuButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:46545",
+      "designName": "Menu Pattern / Context",
+      "componentName": "ContextMenu",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:46568",
+      "designName": "Menu Pattern / Single selection",
+      "componentName": "MenuButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:46588",
+      "designName": "Menu Pattern / Multiple selection",
+      "componentName": "MenuButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:46634",
+      "designName": "Menu Pattern / Submenu",
+      "componentName": "MenuButton",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2397:138274",
+      "designName": "Search Field / Navigation",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:150028",
+      "designName": "Toggle Button / Adaptive",
+      "componentName": "ToggleButton",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:149994",
+      "designName": "Toggle Button",
+      "componentName": "ToggleButton",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:150890",
+      "designName": "Toggle Icon Button / Adaptive",
+      "componentName": "ToggleButton",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:150856",
+      "designName": "Toggle Icon Button",
+      "componentName": "ToggleButton",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2075:63362",
+      "designName": "Segmented control",
+      "componentName": "SegmentSelection",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:151910",
+      "designName": "Segment Selection",
+      "componentName": "SegmentSelection",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:151718",
+      "designName": "Selection Group",
+      "componentName": "SegmentSelection",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:164669",
+      "designName": "Selection List",
+      "componentName": "SelectionList",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:168206",
+      "designName": "Value Picker",
+      "componentName": "ValuePicker",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:170357",
+      "designName": "Autocomplete Combo Box",
+      "componentName": "ComboBox",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:173832",
+      "designName": "Token Field",
+      "componentName": "TokenField",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:178010",
+      "designName": "Range Slider",
+      "componentName": "RangeSlider",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:182379",
+      "designName": "Stepper",
+      "componentName": "Stepper",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:184223",
+      "designName": "Date Picker",
+      "componentName": "DatePicker",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2103:31681",
+      "designName": "Chip / Unified",
+      "componentName": "ActionChip",
+      "source": "src/components/ActionChip.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:42842",
+      "designName": "Chip Group",
+      "componentName": "ChipGroup",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2096:64409",
+      "designName": "Filter chip",
+      "componentName": "FilterChip",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3254:57119",
+      "designName": "Data input / Entry",
+      "componentName": "DataInput",
+      "source": "src/components/Compositions.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3254:57466",
+      "designName": "Data input / Date composition",
+      "componentName": "DateComposition",
+      "source": "src/components/Compositions.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3254:57769",
+      "designName": "Data input / Location",
+      "componentName": "LocationField",
+      "source": "src/components/Compositions.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3256:58164",
+      "designName": "Data input / Postal address",
+      "componentName": "PostalAddress",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3256:58165",
+      "designName": "Data input / Amount with currency",
+      "componentName": "AmountField",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:196957",
+      "designName": "Bottom Navigation Bar",
+      "componentName": "BottomNavigationBar",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:17995",
+      "designName": "Navigation / Adaptive Bottom Navigation Bar",
+      "componentName": "BottomNavigationBar",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:18280",
+      "designName": "Web / Mobile Navigation",
+      "componentName": "BottomNavigationBar",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2197:38973",
+      "designName": "Navigation Bar: Vertical items",
+      "componentName": "SideNavigation",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2197:38950",
+      "designName": "Navigation Bar: Horizontal items",
+      "componentName": "NavigationBar",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2258:11596",
+      "designName": "Web / Sidebar configurations",
+      "componentName": "SideNavigation",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:18472",
+      "designName": "Web / Sidebar",
+      "componentName": "SideNavigation",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2254:45472",
+      "designName": "Navigation Rail: Expanded",
+      "componentName": "NavigationRail",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2254:45681",
+      "designName": "Navigation Rail",
+      "componentName": "NavigationRail",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:198263",
+      "designName": "Side Navigation",
+      "componentName": "SideNavigation",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:203118",
+      "designName": "Navigation Item",
+      "componentName": "NavigationItem",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:18547",
+      "designName": "Navigation / Adaptive Navigation Item",
+      "componentName": "NavigationItem",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:18628",
+      "designName": "Web / Navigation Link",
+      "componentName": "NavigationItem",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:200102",
+      "designName": "Tabs",
+      "componentName": "Tabs",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:18722",
+      "designName": "Navigation / Adaptive Tabs",
+      "componentName": "Tabs",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:19004",
+      "designName": "Web / Panel Tabs",
+      "componentName": "Tabs",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:200587",
+      "designName": "Breadcrumbs",
+      "componentName": "Breadcrumbs",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:19079",
+      "designName": "Web / Breadcrumbs",
+      "componentName": "Breadcrumbs",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:200950",
+      "designName": "Pagination",
+      "componentName": "Pagination",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:19118",
+      "designName": "Web / Pagination",
+      "componentName": "Pagination",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:202027",
+      "designName": "Web Header",
+      "componentName": "WebHeader",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:19353",
+      "designName": "Web / Global Header",
+      "componentName": "WebHeader",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2398:20179",
+      "designName": "Page Indicators",
+      "componentName": "PageIndicators",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2628:11094",
+      "designName": "List Item / Row",
+      "componentName": "ListItem",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2598:7076",
+      "designName": "List Section Header",
+      "componentName": "ListSectionHeader",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2598:7107",
+      "designName": "List Section Footer",
+      "componentName": "ListSectionFooter",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2698:34220",
+      "designName": "Structured List",
+      "componentName": "StructuredList",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3055:40917",
+      "designName": "Structured List / Columns",
+      "componentName": "StructuredList",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:69450",
+      "designName": "Divider",
+      "componentName": "Divider",
+      "source": "src/components/Content.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2603:8960",
+      "designName": "Carousel",
+      "componentName": "Carousel",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2602:8007",
+      "designName": "Data Table",
+      "componentName": "DataTable",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2958:40394",
+      "designName": "Data Table / Pagination",
+      "componentName": "Pagination",
+      "source": "src/components/Navigation.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2602:8501",
+      "designName": "Tree View",
+      "componentName": "TreeView",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2602:8674",
+      "designName": "Code Snippet",
+      "componentName": "CodeSnippet",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2817:116634",
+      "designName": "Suggestion chip",
+      "componentName": "ActionChip",
+      "source": "src/components/ActionChip.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2817:116846",
+      "designName": "Filter chip",
+      "componentName": "FilterChip",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2817:117281",
+      "designName": "Assistive chip",
+      "componentName": "ActionChip",
+      "source": "src/components/ActionChip.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2817:117486",
+      "designName": "Input chip",
+      "componentName": "InputChip",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2817:117708",
+      "designName": "Chip groups",
+      "componentName": "ChipGroup",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2828:33651",
+      "designName": "Metadata Tag Group",
+      "componentName": "ChipGroup",
+      "source": "src/components/AdvancedInputs.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2602:8826",
+      "designName": "Alphabetical Index",
+      "componentName": "AlphabeticalIndex",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2193:37785",
+      "designName": "Index Bar",
+      "componentName": "AlphabeticalIndex",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2591:118924",
+      "designName": "Index Bar",
+      "componentName": "AlphabeticalIndex",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3037:38809",
+      "designName": "Image Slate",
+      "componentName": "ImageSlate",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3040:38117",
+      "designName": "Image Slate / Selectable",
+      "componentName": "ImageSlate",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3034:38910",
+      "designName": "Content Grid",
+      "componentName": "ContentGrid",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3037:39255",
+      "designName": "Lazy Grid",
+      "componentName": "ContentGrid",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3040:38433",
+      "designName": "Collection Grid / Grouped adaptive",
+      "componentName": "ContentGrid",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3044:39130",
+      "designName": "Text List",
+      "componentName": "TextList",
+      "source": "src/components/DataDisplay.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3131:3776",
+      "designName": "Status label / Wardo",
+      "componentName": "StatusLabel",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3087:3648",
+      "designName": "Notification / Wardo",
+      "componentName": "Notification",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3073:42649",
+      "designName": "Notification - Collapsed",
+      "componentName": "Notification",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3073:111009",
+      "designName": "Notification",
+      "componentName": "Notification",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3073:111036",
+      "designName": "Temporary Notices",
+      "componentName": "Snackbar",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3073:43268",
+      "designName": "Snackbar",
+      "componentName": "Snackbar",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2167:84603",
+      "designName": "Linear-determinate progress indicator",
+      "componentName": "ProgressIndicator",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2167:84889",
+      "designName": "Circular-determinate progress indicator",
+      "componentName": "CircularProgressIndicator",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2167:84955",
+      "designName": "Circular-indeterminate progress indicator",
+      "componentName": "CircularProgressIndicator",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2167:85008",
+      "designName": "Linear-indeterminate progress indicator",
+      "componentName": "ProgressIndicator",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2167:84553",
+      "designName": "Loading indicator",
+      "componentName": "LoadingIndicator",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:69442",
+      "designName": "Badge",
+      "componentName": "Badge",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3124:3018",
+      "designName": "Skeleton / Wardo",
+      "componentName": "Skeleton",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3124:2929",
+      "designName": "Skeleton / Shape",
+      "componentName": "Skeleton",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3159:3463",
+      "designName": "Banner / Wardo",
+      "componentName": "Banner",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3159:3912",
+      "designName": "Operation feedback / Wardo",
+      "componentName": "OperationFeedback",
+      "source": "src/components/Feedback.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:62893",
+      "designName": "Menu Surface",
+      "componentName": "MenuSurface",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:69441",
+      "designName": "Menu Divider",
+      "componentName": "MenuDivider",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1465:1917",
+      "designName": "Menu Group Label",
+      "componentName": "MenuGroupLabel",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1465:2007",
+      "designName": "Menu Surface / Web width",
+      "componentName": "MenuSurface",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1465:2008",
+      "designName": "Menu Surface / Grouped",
+      "componentName": "MenuSurface",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:69428",
+      "designName": "Context Menu",
+      "componentName": "ContextMenu",
+      "source": "src/components/Menus.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3188:5512",
+      "designName": "Command Sheet / Wardo",
+      "componentName": "CommandSheet",
+      "source": "src/components/Compositions.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3133:7342",
+      "designName": "Dialog / Wardo",
+      "componentName": "Dialog",
+      "source": "src/components/Overlays.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3133:7602",
+      "designName": "Tooltip / Wardo",
+      "componentName": "Tooltip",
+      "source": "src/components/Overlays.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3073:43507",
+      "designName": "Bottom Sheet / Wardo",
+      "componentName": "BottomSheet",
+      "source": "src/components/Overlays.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3073:43444",
+      "designName": "Side Sheet / Wardo",
+      "componentName": "SideSheet",
+      "source": "src/components/Overlays.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:69451",
+      "designName": "Disclosure Panel",
+      "componentName": "Accordion",
+      "source": "src/components/Accordion.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:69448",
+      "designName": "Modal Drawer",
+      "componentName": "ModalDrawer",
+      "source": "src/components/Overlays.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1159:29",
+      "designName": "Navigation / Icon / events",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "events"
+      }
+    },
+    {
+      "nodeId": "1159:34",
+      "designName": "Navigation / Icon / saved",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "saved"
+      }
+    },
+    {
+      "nodeId": "1159:39",
+      "designName": "Navigation / Icon / notifications",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "notifications"
+      }
+    },
+    {
+      "nodeId": "1159:44",
+      "designName": "Navigation / Icon / profile",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "profile"
+      }
+    },
+    {
+      "nodeId": "3301:152",
+      "designName": "Navigation / Icon / home",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "label": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "home"
+      }
+    }
+  ]
+}

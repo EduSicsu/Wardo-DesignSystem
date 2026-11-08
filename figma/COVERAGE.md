@@ -10,16 +10,13 @@ Figma counts published component sets and standalone components, including inter
 
 The live dialog explicitly lists unconnected Android and Android XR toolbar internals, including toggleable icon buttons, FABs, focus indicators, and toolbar icons. These should not be pointed at an unrelated generic Button implementation solely to improve the counter.
 
-## Gaps against the current code
+## Current expansion
 
-- Actions: button groups, split buttons, FABs and FAB menus, menu actions/patterns, and provider sign-in/payment controls.
-- Inputs: segmented controls, toggles, selection lists, value pickers, autocomplete, token fields, filter/input chips, range sliders, steppers, date pickers, and newer composed data inputs.
-- Navigation: navigation bars, toolbars, tabs, sidebars and related building blocks.
-- Content: structured lists and accessories, list headers/footers, carousels, tables, trees, code snippets, indexes, grids and text lists.
-- Feedback/status and overlays: implementations are absent from the current React package.
-- Assets: only three icons are connected; the full icon and avatar systems are not implemented.
-- Native iOS, Android, visionOS and XR components: no matching native code packages have been built.
-- Existing 21 source links: most are file-level, and the five richer templates are still unpublished.
+124 additional source mappings now have matching React implementations prepared. This expansion includes advanced inputs, navigation, data display, feedback, overlays, menus and five additional exported icons. See `expanded-mappings.json` for per-entry status. Prepared entries are not counted as connected until Figma confirms each save.
+
+The expanded library passed 13 unit checks and 14 browser checks across desktop/mobile, including keyboard navigation, dialog focus, combo selection, table sorting, tree expansion, responsive width and automated WCAG checks in light and dark themes. This is behavioral validation, not a claim of complete visual parity with every platform variant.
+
+Native iOS, Android, visionOS and XR components do not yet have corresponding native packages. Archived and prototype components must be accounted for separately. Five rich Code Connect templates are still unpublished because the API rejects template writes; the native source-link workflow remains available.
 
 ## Correct completion criteria
 

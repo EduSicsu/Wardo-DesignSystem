@@ -1,0 +1,19 @@
+'use client';
+import { useWardoTheme } from './Provider';
+import type { ReactNode, HTMLAttributes } from 'react';
+import { MenuTrigger, Menu, MenuItem as AriaMenuItem, Popover, Button as AriaButton, SubmenuTrigger, Separator, Text, type Key, type Selection } from 'react-aria-components';
+import { Button, type ButtonProps } from './Button';
+import { cx } from './shared';
+export interface MenuEntry {id:string;label:string;description?:string;icon?:ReactNode;disabled?:boolean;href?:string;children?:MenuEntry[];onAction?:()=>void;}
+function entries(items:MenuEntry[],theme:string):ReactNode{return items.map(item=>item.children?<SubmenuTrigger key={item.id}><AriaMenuItem id={item.id} textValue={item.label} className="wardo-menu-item">{item.icon}{item.label}<span aria-hidden="true">›</span></AriaMenuItem><Popover className="wardo-popover" data-wardo-theme={theme}><Menu aria-label={item.label}>{entries(item.children,theme)}</Menu></Popover></SubmenuTrigger>:<AriaMenuItem key={item.id} id={item.id} textValue={item.label} isDisabled={item.disabled} href={item.href} onAction={item.onAction} className="wardo-menu-item">{item.icon}<Text slot="label">{item.label}</Text>{item.description?<Text slot="description">{item.description}</Text>:null}</AriaMenuItem>);}
+export interface MenuButtonProps {label:ReactNode;items:MenuEntry[];onAction?:(key:Key)=>void;selectionMode?:'none'|'single'|'multiple';selectedKeys?:Selection;onSelectionChange?:(keys:Selection)=>void;disabled?:boolean;trigger?:'press'|'longPress'|'contextMenu';}
+export function MenuButton({label,items,onAction,selectionMode='none',selectedKeys,onSelectionChange,disabled,trigger='press'}:MenuButtonProps){const theme=useWardoTheme();return <MenuTrigger trigger={trigger}><AriaButton className="wardo-button" data-hierarchy="secondary" isDisabled={disabled}>{label}</AriaButton><Popover className="wardo-popover" data-wardo-theme={theme}><Menu aria-label={typeof label==='string'?label:'Actions'} onAction={onAction} selectionMode={selectionMode} selectedKeys={selectedKeys} onSelectionChange={onSelectionChange}>{entries(items,theme)}</Menu></Popover></MenuTrigger>;}
+export function ContextMenu(props:MenuButtonProps){return <MenuButton {...props} trigger="contextMenu"/>;}
+export function MenuSurface({children,...props}:HTMLAttributes<HTMLDivElement>){return <div {...props} className={cx('wardo-menu-surface',props.className)}>{children}</div>;}
+export function MenuDivider(){return <Separator className="wardo-divider"/>;}
+export function MenuGroupLabel({children}: {children:ReactNode}){return <div className="wardo-menu-label">{children}</div>;}
+export function SplitButton({children,onClick,menuLabel='More actions',items,...props}:ButtonProps&{items:MenuEntry[];menuLabel?:string}){return <div className="wardo-split-button"><Button {...props} onClick={onClick}>{children}</Button><MenuButton label={menuLabel} items={items} disabled={props.disabled}/></div>;}
+export function FloatingActionButton(props:ButtonProps){return <Button {...props} className={cx('wardo-fab',props.className)}/>;}
+export function FABMenu({label,items,...props}:MenuButtonProps){return <span className="wardo-fab-menu"><MenuButton {...props} label={label} items={items}/></span>;}
+export function ButtonGroup({children,connected=false,label,...props}:HTMLAttributes<HTMLDivElement>&{connected?:boolean;label:string}){return <div {...props} role="group" aria-label={label} className={cx('wardo-button-group',props.className)} data-connected={connected}>{children}</div>;}
+export function ProviderButton({provider,purpose='sign-in',children,...props}:ButtonProps&{provider:'apple'|'google';purpose?:'sign-in'|'pay'}){return <Button {...props} hierarchy="secondary" className={cx('wardo-provider-button',props.className)} data-provider={provider}>{children??(purpose==='pay'?`${provider==='apple'?'Apple':'Google'} Pay`:`Sign in with ${provider==='apple'?'Apple':'Google'}`)}</Button>;}

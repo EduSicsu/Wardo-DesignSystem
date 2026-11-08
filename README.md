@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open the local address shown in the terminal. The preview includes theme switching, button states, editable forms, selection controls, and keyboard-operated disclosures. Fonts are bundled locally in the preview; no third-party font requests are needed.
+Open the local address shown in the terminal. The preview includes theme switching, editable forms, selection controls, keyboard-operated navigation and disclosures. Open `/library` for the expanded gallery. Fonts are bundled locally in the preview; no third-party font requests are needed.
 
 ## Coverage — incomplete
 
@@ -19,38 +19,39 @@ Figma Code Connect currently shows **21 of 797 connected (2.6%)**, leaving **776
 
 ## What's included
 
-- 18 component connections: Button, ActionChip, Accordion, AccordionGroup, TextField, TextArea, PasswordField, SearchField, NumberField, Select, Checkbox, Switch, RadioGroup, Slider, ContentCard, MetadataTag, Divider, and Link.
-- Icon helper with a small set of web icons. This is not a full export of Wardo's Figma icon library.
-- 69 semantic colors exported from live Figma variables across Wardo, Ocean, Orchid, Ember, and Cloud, each in light and dark.
-- Eight Figma control sizes and three conditions: Normal, Serious, and Chonky.
-- Geologica for headings/actions and Source Serif 4 for body text.
-- Native form inputs and keyboard behavior, accessible names and descriptions, validation associations, focus indicators, reduced-motion support, and single/multiple accordion expansion.
-- Full Code Connect templates for Button, ActionChip, plus, arrow-right, and chevron-down icons; source-file mappings for the remaining components.
+The React library now includes navigation bars, sidebars, tabs, breadcrumbs, pagination, toolbars, menus and submenus, split buttons, FABs, segmented controls, autocomplete, selection lists, token fields, range sliders, steppers, date/time inputs, structured lists, sortable tables, expandable trees, carousels, grids, feedback notices, progress indicators, dialogs, sheets and tooltips, in addition to the original controls. `/library` opens the expanded interactive preview.
 
-This is the initial web library. Figma's native iOS, Android, visionOS, toolbar, menu, calendar, table, tree, and other advanced families are not implemented in this release. Mapping a component to source is distinct from publishing a property-aware snippet. The registry explicitly distinguishes the two.
+There are 124 additional implementation-backed source mappings prepared in `figma/expanded-mappings.json`. Each entry records its connection status; prepared mappings are not counted as saved Figma connections. Native iOS, Android and visionOS code packages and legacy/archive entries remain separate outstanding work.
+
+- 69 semantic colors across ten themes, eight control sizes and three conditions.
+- Keyboard-operated composite controls and focus-managed overlays using React Aria.
+- Eight icons exported from Figma artwork plus the original utility icons.
+- Native form controls, reduced motion and left-to-right/right-to-left layout support.
+
+Provider buttons expose callbacks for application integration. They do not perform authentication or payment themselves. Date and time pickers currently use the browser's native inputs. Source links and published property-aware snippets are tracked separately.
 
 ## Use in an application
 
 The package is private and is not published to npm. For local use, install this repository as a file dependency or add it as a workspace package, build it, and import:
 
 ```tsx
-import { Button, TextField, Accordion } from '@wardo/design-system';
+import { Button, TextField, Accordion, WardoProvider } from '@wardo/design-system';
 import '@wardo/design-system/styles.css';
 
 export function Example() {
   return (
-    <div data-wardo-theme="wardo-light">
+    <WardoProvider theme="wardo-light">
       <TextField label="Your name" autoComplete="name" />
       <Button hierarchy="primary">Continue</Button>
       <Accordion title="More information">Helpful details.</Accordion>
-    </div>
+    </WardoProvider>
   );
 }
 ```
 
 Load Geologica and Source Serif 4 in your application. The preview uses the two `@fontsource-variable` packages. The component package supplies fallback font stacks but does not load fonts automatically.
 
-Set `data-wardo-theme` on an ancestor: `wardo-light`, `wardo-dark`, `ocean-light`, `ocean-dark`, `orchid-light`, `orchid-dark`, `ember-light`, `ember-dark`, `cloud-light`, or `cloud-dark`. Controls expose `size` and `condition` props. Use `dir="rtl"` on the component or an ancestor for right-to-left layouts.
+Use `WardoProvider` so popovers and modal portals inherit the selected theme. Supported themes: `wardo-light`, `wardo-dark`, `ocean-light`, `ocean-dark`, `orchid-light`, `orchid-dark`, `ember-light`, `ember-dark`, `cloud-light`, or `cloud-dark`. Controls expose `size` and `condition` props. Use `dir="rtl"` on the component or an ancestor for right-to-left layouts.
 
 Pass an accessible name (`aria-label`) to icon-only buttons. Use `selected` for a toggle button, `busy` during work, and `type="submit"` explicitly for submission. TextField, Checkbox, Switch, Select, RadioGroup, and Slider support native form behavior. Accordion supports both controlled `expanded` and uncontrolled `defaultExpanded`; groups support controlled `openItems` or uncontrolled `defaultOpenItems`.
 

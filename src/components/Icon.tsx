@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react';
-export type IconName = 'plus' | 'arrow-right' | 'bookmark' | 'chevron-down' | 'check' | 'close' | 'search' | 'eye' | 'eye-off';
-const paths: Record<IconName, string> = {
+import { type ReactNode, type SVGProps } from 'react';
+export type IconName = 'plus' | 'arrow-right' | 'bookmark' | 'chevron-down' | 'check' | 'close' | 'search' | 'eye' | 'eye-off' | 'events' | 'saved' | 'notifications' | 'profile' | 'home';
+const paths: Partial<Record<IconName, string>> = {
   plus: 'M12 5v14M5 12h14', 'arrow-right':'M5 12h14m-7-7 7 7-7 7',
   bookmark:'M6 3h12v18l-6-4-6 4V3Z', 'chevron-down':'m6 9 6 6 6-6',
   check:'m5 12 4 4L19 6', close:'m6 6 12 12M6 18 18 6',
@@ -8,6 +8,16 @@ const paths: Record<IconName, string> = {
   eye:'M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12Zm13 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0',
   'eye-off':'m3 3 18 18M10 5c7-1 12 7 12 7a18 18 0 0 1-4 4M6 6a19 19 0 0 0-4 6s3 7 10 7a12 12 0 0 0 5-1M10 10a3 3 0 0 0 4 4'
 };
+const artwork: Partial<Record<IconName, ReactNode>> = {
+"plus": <><path d="M5 12H19M12 5V19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></>,
+"arrow-right": <><path d="M5 12H19M12 19L19 12L12 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></>,
+"chevron-down": <><path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></>,
+"events": <><path d="M8 2V6M16 2V6M3 10H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></>,
+"saved": <><path d="M17 3C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V20C18.9999 20.1751 18.9539 20.3472 18.8665 20.4989C18.7791 20.6506 18.6533 20.7767 18.5019 20.8646C18.3504 20.9525 18.1785 20.9991 18.0034 20.9997C17.8283 21.0003 17.6561 20.9549 17.504 20.868L12.992 18.29C12.6899 18.1174 12.3479 18.0266 12 18.0266C11.6521 18.0266 11.3101 18.1174 11.008 18.29L6.496 20.868C6.34394 20.9549 6.17174 21.0003 5.99662 20.9997C5.8215 20.9991 5.64961 20.9525 5.49814 20.8646C5.34667 20.7767 5.22094 20.6506 5.13352 20.4989C5.0461 20.3472 5.00006 20.1751 5 20V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></>,
+"notifications": <><path d="M10.2682 21C10.4437 21.304 10.6962 21.5565 11.0002 21.732C11.3043 21.9075 11.6491 21.9999 12.0002 21.9999C12.3512 21.9999 12.6961 21.9075 13.0001 21.732C13.3042 21.5565 13.5566 21.304 13.7322 21M3.26225 15.326C3.13161 15.4692 3.0454 15.6472 3.0141 15.8385C2.9828 16.0298 3.00777 16.226 3.08595 16.4034C3.16414 16.5807 3.29218 16.7316 3.4545 16.8375C3.61682 16.9434 3.80642 16.9999 4.00025 17H20.0002C20.194 17.0001 20.3837 16.9438 20.5461 16.8381C20.7085 16.7324 20.8367 16.5817 20.9151 16.4045C20.9935 16.2273 21.0187 16.0311 20.9877 15.8398C20.9566 15.6485 20.8707 15.4703 20.7402 15.327C19.4102 13.956 18.0002 12.499 18.0002 8C18.0002 6.4087 17.3681 4.88258 16.2429 3.75736C15.1177 2.63214 13.5915 2 12.0002 2C10.4089 2 8.88282 2.63214 7.75761 3.75736C6.63239 4.88258 6.00025 6.4087 6.00025 8C6.00025 12.499 4.58925 13.956 3.26225 15.326Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></>,
+"profile": <><path d="M17.925 20.0559C17.7005 18.6458 16.9805 17.3619 15.8943 16.435C14.8081 15.508 13.427 14.9989 11.999 14.999C10.5711 14.9991 9.19005 15.5085 8.10401 16.4356C7.01797 17.3627 6.29818 18.6467 6.07397 20.0569M16 11C16 13.2091 14.2091 15 12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11ZM22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></>,
+"home": <><path d="M15 21V13C15 12.7348 14.8946 12.4804 14.7071 12.2929C14.5196 12.1054 14.2652 12 14 12H10C9.73478 12 9.48043 12.1054 9.29289 12.2929C9.10536 12.4804 9 12.7348 9 13V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M3 10C2.99993 9.70907 3.06333 9.42163 3.18579 9.15772C3.30824 8.89382 3.4868 8.6598 3.709 8.47201L10.709 2.47201C11.07 2.16692 11.5274 1.99953 12 1.99953C12.4726 1.99953 12.93 2.16692 13.291 2.47201L20.291 8.47201C20.5132 8.6598 20.6918 8.89382 20.8142 9.15772C20.9367 9.42163 21.0001 9.70907 21 10V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></>
+};
 export function Icon({ name, ...props }: SVGProps<SVGSVGElement> & { name: IconName }) {
-  return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false" {...props}><path d={paths[name]}/></svg>;
+  return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false" {...props}>{artwork[name] ?? <path d={paths[name]}/>}</svg>;
 }

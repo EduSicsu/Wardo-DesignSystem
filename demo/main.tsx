@@ -4,6 +4,8 @@ import '@fontsource-variable/geologica';
 import '@fontsource-variable/source-serif-4';
 import '../src/styles/styles.css';
 import './preview.css';
+const ExpandedLibrary=React.lazy(()=>import('./ExpandedLibrary').then(module=>({default:module.ExpandedLibrary})));
+
 import { Button, ActionChip, Icon, Accordion, AccordionGroup, TextField, TextArea, PasswordField, SearchField, NumberField, Select, Checkbox, Switch, RadioGroup, Slider, MetadataTag, ContentCard, Divider, Link, type Hierarchy, type Tone } from '../src';
 const themes=['Wardo Light','Wardo Dark','Ocean Light','Ocean Dark','Orchid Light','Orchid Dark','Ember Light','Ember Dark','Cloud Light','Cloud Dark'];
 const slug=(s:string)=>s.toLowerCase().replaceAll(' ','-');
@@ -21,4 +23,4 @@ function App(){
  <section id="use"><div className="section-heading"><h2>05 <span>Use Wardo</span></h2><p>Start with the source, keep the connection.</p></div><p className="use-copy">This repository contains the React library, exported Figma tokens, and component connections. Import the components and stylesheet into your application; load Geologica and Source Serif 4 in your font setup.</p><pre tabIndex={0} aria-label="Component usage example"><code>{'import { Button } from "@wardo/design-system";\nimport "@wardo/design-system/styles.css";\n\n<Button hierarchy="primary">Start creating</Button>'}</code></pre></section>
  <Divider/><footer className="page-footer"><span>Wardo / A shared foundation.</span><a href="https://github.com/EduSicsu/Wardo-DesignSystem">Source & documentation ↗</a></footer></main></div></div>;
 }
-createRoot(document.getElementById('root')!).render(<React.StrictMode><App/></React.StrictMode>);
+createRoot(document.getElementById('root')!).render(<React.StrictMode>{location.pathname==='/library'?<React.Suspense fallback={<p>Loading component library…</p>}><ExpandedLibrary/></React.Suspense>:<App/>}</React.StrictMode>);
