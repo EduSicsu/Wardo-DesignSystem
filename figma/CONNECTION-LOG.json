@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-07",
+  "sourceConnections": 199,
+  "publishedEntries": 797,
+  "addedThisExpansion": 178,
+  "originalSourceConnections": 21,
+  "savedRegistries": [
+    "mappings.json",
+    "expanded-mappings.json",
+    "web-internals-mappings.json"
+  ],
+  "nativeConnectionsSaved": 0,
+  "nativeBlocker": "Code Connect is set up for React. Upgrade your plan for more frameworks.",
+  "nativeBuild": "Deferred by owner",
+  "templatePublication": "Five templates prepared but not published; API rejects access",
+  "checks": {
+    "unit": 15,
+    "browserDesktopAndMobile": 16,
+    "typecheck": "passed",
+    "libraryBuild": "passed",
+    "demoBuild": "passed"
+  },
+  "scope": "Full published inventory verified at 797. Source-link completion is distinct from complete native implementation or all published entries being runtime components.",
+  "nativeConnectionDecision": "Owner chose: Keep React active; defer native connections",
+  "githubChecks": "Passed on commit 15ec072ed6c9d1a6db1d3a18dc106a54e5026d1f"
+}

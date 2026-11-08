@@ -1,6 +1,6 @@
 # Wardo connection coverage
 
-Last confirmed in Figma: **198 of 797 source connections saved** (24.8%), leaving 599 unconnected. The original 21 have been extended with 177 verified source links. One more shared slider adapter is prepared. Nine initial native links are blocked by the current framework plan.
+Last confirmed in Figma: **199 of 797 source connections saved** (25.0%), leaving 598 unconnected. The original 21 have been extended with 178 verified source links, including the shared slider adapter. Nine initial native links are blocked by the current framework plan.
 
 ## Complete published inventory
 
@@ -34,3 +34,7 @@ Five property-aware templates remain unpublished because API writes reject acces
 ## Native save rejection observed in the UI
 
 On the native Alert attempt, Figma briefly displayed an optimistic `199 of 797` state and then rolled back to `198 of 797` / Not connected. It displayed: “Code Connect is set up for React. Upgrade your plan for more frameworks.” Neither default nor SwiftUI API readback contained that mapping. The native entry is not counted as saved. No upgrade or active-framework change was made.
+
+The final React slider-adapter save subsequently increased the confirmed total to **199 of 797**. This final 199 count includes no native source connection; it must not be confused with the rejected native optimistic update described above.
+
+Native connection decision: the owner chose to keep React active and defer native connections. Native sources remain saved with their documented implementation and verification gaps.
