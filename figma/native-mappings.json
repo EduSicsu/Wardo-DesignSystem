@@ -1,0 +1,95 @@
+{
+  "components": [
+    {
+      "nodeId": "2773:45047",
+      "designName": "Native / iOS-iPadOS 26 / Alert",
+      "componentName": "NativeAlertModifier",
+      "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
+      "framework": "SwiftUI",
+      "status": "source-prepared-pending-ui-connection",
+      "nativeBuild": "deferred-by-owner",
+      "activation": "Professional plan allows one active framework; React remains active"
+    },
+    {
+      "nodeId": "2773:44195",
+      "designName": "Native / iOS-iPadOS 26 / Activity View - iPad",
+      "componentName": "NativeActivityView",
+      "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
+      "framework": "SwiftUI",
+      "status": "source-prepared-pending-ui-connection",
+      "nativeBuild": "deferred-by-owner",
+      "activation": "Professional plan allows one active framework; React remains active"
+    },
+    {
+      "nodeId": "2773:44204",
+      "designName": "Native / iOS-iPadOS 26 / Activity View - iPhone",
+      "componentName": "NativeActivityView",
+      "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
+      "framework": "SwiftUI",
+      "status": "source-prepared-pending-ui-connection",
+      "nativeBuild": "deferred-by-owner",
+      "activation": "Professional plan allows one active framework; React remains active"
+    },
+    {
+      "nodeId": "2773:43627",
+      "designName": "Native / iOS-iPadOS 26 / Context Menu",
+      "componentName": "NativeContextMenuModifier",
+      "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
+      "framework": "SwiftUI",
+      "status": "source-prepared-pending-ui-connection",
+      "nativeBuild": "deferred-by-owner",
+      "activation": "Professional plan allows one active framework; React remains active"
+    },
+    {
+      "nodeId": "2773:43481",
+      "designName": "Native / iOS-iPadOS 26 / Sheet - Full Screen - iPhone",
+      "componentName": "NativeFullScreenSheetModifier",
+      "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
+      "framework": "SwiftUI",
+      "status": "source-prepared-pending-ui-connection",
+      "nativeBuild": "deferred-by-owner",
+      "activation": "Professional plan allows one active framework; React remains active"
+    },
+    {
+      "nodeId": "2578:56814",
+      "designName": "Icon / SF Symbols / xmark",
+      "componentName": "WardoSystemIcon",
+      "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
+      "framework": "SwiftUI",
+      "status": "source-prepared-pending-ui-connection",
+      "nativeBuild": "deferred-by-owner",
+      "activation": "Professional plan allows one active framework; React remains active"
+    },
+    {
+      "nodeId": "2578:56816",
+      "designName": "Icon / SF Symbols / eyedropper",
+      "componentName": "WardoSystemIcon",
+      "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
+      "framework": "SwiftUI",
+      "status": "source-prepared-pending-ui-connection",
+      "nativeBuild": "deferred-by-owner",
+      "activation": "Professional plan allows one active framework; React remains active"
+    },
+    {
+      "nodeId": "2578:56818",
+      "designName": "Icon / SF Symbols / chevron.down",
+      "componentName": "WardoSystemIcon",
+      "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
+      "framework": "SwiftUI",
+      "status": "source-prepared-pending-ui-connection",
+      "nativeBuild": "deferred-by-owner",
+      "activation": "Professional plan allows one active framework; React remains active"
+    },
+    {
+      "nodeId": "2578:56820",
+      "designName": "Icon / SF Symbols / plus",
+      "componentName": "WardoSystemIcon",
+      "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
+      "framework": "SwiftUI",
+      "status": "source-prepared-pending-ui-connection",
+      "nativeBuild": "deferred-by-owner",
+      "activation": "Professional plan allows one active framework; React remains active"
+    }
+  ],
+  "note": "This is the first native source-link batch. Other native public and internal entries remain unconnected. No native build or runtime validation has been performed."
+}

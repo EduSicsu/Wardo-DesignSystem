@@ -1,33 +1,32 @@
 # Wardo connection coverage
 
-Rechecked in the native Figma Code Connect dialog on November 6, 2026: **21 of 797 connected**. That is 2.6% coverage and 776 unconnected published entries.
+Last confirmed in Figma: **145 of 797 source connections saved** (18.2%), leaving 652 unconnected. The original 21 have been extended with 124 verified source links. Another 53 implementation-backed web mappings and nine initial native mappings are prepared, not yet saved.
 
-The original implementation stopped at 18 React component families and three icons. That was an implementation scope decision, not a Figma connection limit. It did not fulfill full-library coverage.
+## Complete published inventory
 
-## What the remaining count means
+On November 7, 2026, every nonempty relevant page was queried, excluding variants inside component sets. Of 1,178 on-canvas masters/component sets, **797 are published** (`CURRENT` or `CHANGED`). This exactly matches the Code Connect dialog denominator. See `published-inventory.json`.
 
-Figma counts published component sets and standalone components, including internal building blocks and platform-specific assets. It does not mean there must be 797 separate React exports. Variants within a set are also distinct from these library entries.
+The published audit classification is:
 
-The live dialog explicitly lists unconnected Android and Android XR toolbar internals, including toggleable icon buttons, FABs, focus indicators, and toolbar icons. These should not be pointed at an unrelated generic Button implementation solely to improve the counter.
+| Category | Entries |
+| --- | ---: |
+| Runtime candidates, including native controls and reusable internals | 409 |
+| Archived components | 44 |
+| Documentation and organization assets | 174 |
+| Device references and platform examples | 164 |
+| Wardo example compositions | 6 |
+| Total | 797 |
 
-## Current expansion
+These are audit categories, not Figma connection or Skip statuses. No entry has been marked skipped merely by writing this report. Device bezels, system keyboards and documentation illustrations should not be presented as ordinary application components.
 
-124 additional source mappings now have matching React implementations prepared. This expansion includes advanced inputs, navigation, data display, feedback, overlays, menus and five additional exported icons. See `expanded-mappings.json` for per-entry status. Prepared entries are not counted as connected until Figma confirms each save.
+## Implementations and checks
 
-The expanded library passed 13 unit checks and 14 browser checks across desktop/mobile, including keyboard navigation, dialog focus, combo selection, table sorting, tree expansion, responsive width and automated WCAG checks in light and dark themes. This is behavioral validation, not a claim of complete visual parity with every platform variant.
+The React library covers actions, advanced inputs, navigation, data display, menus, feedback, overlays and recovery/form patterns. Meaningful checks cover keyboard navigation, focus restoration, combo selection, chip ordering, table sorting, tree expansion, responsive width and automated light/dark WCAG checks.
 
-Native iOS, Android, visionOS and XR components do not yet have corresponding native packages. Archived and prototype components must be accounted for separately. Five rich Code Connect templates are still unpublished because the API rejects template writes; the native source-link workflow remains available.
+Native SwiftUI and Jetpack Compose source packages, semantic color snapshots and licensed fonts are in `native`. Native builds and runtime checks were explicitly deferred by the owner. Several custom visionOS layouts and Android XR spatial behavior still require implementation and validation; generic system pickers are not claimed as full visual matches.
 
-## Correct completion criteria
+## Activation and snippets
 
-1. Inventory current public masters, internal components, platform components and legacy/archive entries with their IDs.
-2. Match each eligible entry to an actual implementation, with component names and APIs that correspond to its purpose.
-3. Build missing public component families, runtime behavior and meaningful accessibility checks.
-4. Connect supported public masters and reusable internals to their matching code; explicitly account for native and retired entries.
-5. Verify persisted source links, report implementation coverage separately from raw connection count, and distinguish source links from published templates.
+Figma Professional permits one active framework. React remains active. SwiftUI and Compose cannot all be active alongside React on that plan; see [Figma's framework documentation](https://developers.figma.com/docs/code-connect/code-connect-ui-setup/#connecting-one-component-to-multiple-frameworks). No billing or framework settings have been changed.
 
-No new connections were fabricated during this audit. Full-library coverage remains unfinished.
-
-## Live inventory artifact
-
-[INVENTORY.md](INVENTORY.md) lists the 677 on-canvas masters/component sets found across the six main component pages plus Iconset and Avatars. Of those, 21 match the existing connection registry and 656 do not. This scoped on-canvas count is separate from the published dialog count of 797; archive, toolbar-internal and other pages are not included. `component-inventory.json` contains IDs and machine-readable rows.
+Five property-aware templates remain unpublished because API writes reject access. Saved source links are separate from published Inspect snippets. Current per-entry source states are recorded in `expanded-mappings.json`, `web-internals-mappings.json` and `native-mappings.json`.

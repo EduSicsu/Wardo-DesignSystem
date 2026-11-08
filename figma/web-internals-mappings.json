@@ -1,0 +1,477 @@
+{
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "components": [
+    {
+      "nodeId": "1531:26130",
+      "designName": "Button / Loading spinner",
+      "componentName": "LoadingSpinner",
+      "source": "src/components/Feedback.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:27085",
+      "designName": "Building Blocks/Button group/Connected segments/XSmall",
+      "componentName": "Button",
+      "source": "src/components/Button.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:27140",
+      "designName": "Building Blocks/Button group/Connected segments/Small",
+      "componentName": "Button",
+      "source": "src/components/Button.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:27195",
+      "designName": "Building Blocks/Button group/Connected segments/Medium",
+      "componentName": "Button",
+      "source": "src/components/Button.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:27250",
+      "designName": "Building Blocks/Button group/Connected segments/Large",
+      "componentName": "Button",
+      "source": "src/components/Button.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:27305",
+      "designName": "Building Blocks/Button group/Connected segments/Xlarge",
+      "componentName": "Button",
+      "source": "src/components/Button.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:28420",
+      "designName": "Split Button / Primary action",
+      "componentName": "Button",
+      "source": "src/components/Button.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:27665",
+      "designName": "Split Button / Menu trigger",
+      "componentName": "MenuButton",
+      "source": "src/components/Menus.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:45479",
+      "designName": "Menu icon / chevron-right",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "menu-chevron-right"
+      }
+    },
+    {
+      "nodeId": "1531:45481",
+      "designName": "Menu icon / check",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "menu-check"
+      }
+    },
+    {
+      "nodeId": "1531:46471",
+      "designName": "Menu icon / chevron-left",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "menu-chevron-left"
+      }
+    },
+    {
+      "nodeId": "1531:46477",
+      "designName": "Menu icon / overflow",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "menu-overflow"
+      }
+    },
+    {
+      "nodeId": "1531:47451",
+      "designName": "Action icon / chevron-up",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "action-chevron-up"
+      }
+    },
+    {
+      "nodeId": "1531:22453",
+      "designName": "Action icon / close",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "action-close"
+      }
+    },
+    {
+      "nodeId": "1531:44461",
+      "designName": "Menu Action Item",
+      "componentName": "MenuActionItem",
+      "source": "src/components/Menus.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:45498",
+      "designName": "Menu Action Item / Dense",
+      "componentName": "MenuActionItem",
+      "source": "src/components/Menus.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "dense": true
+      }
+    },
+    {
+      "nodeId": "1543:62943",
+      "designName": "Icon button togglable - tonal",
+      "componentName": "ToggleButton",
+      "source": "src/components/AdvancedInputs.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:64564",
+      "designName": "Icon button togglable - outline",
+      "componentName": "ToggleButton",
+      "source": "src/components/AdvancedInputs.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:66184",
+      "designName": "Toggle button - outline",
+      "componentName": "ToggleButton",
+      "source": "src/components/AdvancedInputs.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:66725",
+      "designName": "Toggle button - tonal",
+      "componentName": "ToggleButton",
+      "source": "src/components/AdvancedInputs.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:67266",
+      "designName": "Toggle button",
+      "componentName": "ToggleButton",
+      "source": "src/components/AdvancedInputs.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1543:67807",
+      "designName": "Icon button togglable",
+      "componentName": "ToggleButton",
+      "source": "src/components/AdvancedInputs.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2047:33448",
+      "designName": "Radio",
+      "componentName": "Radio",
+      "source": "src/components/Selection.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:42950",
+      "designName": "Chip Group / Single selection",
+      "componentName": "SelectableChipGroup",
+      "source": "src/components/ChipPatterns.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "multiple": false
+      }
+    },
+    {
+      "nodeId": "1531:42979",
+      "designName": "Chip Group / Multiple selection",
+      "componentName": "SelectableChipGroup",
+      "source": "src/components/ChipPatterns.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "multiple": true
+      }
+    },
+    {
+      "nodeId": "1531:43021",
+      "designName": "Chip Group / Remove and restore focus",
+      "componentName": "TokenField",
+      "source": "src/components/AdvancedInputs.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:43040",
+      "designName": "Chip Group / Disclosure",
+      "componentName": "CollapsibleChipGroup",
+      "source": "src/components/ChipPatterns.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:43048",
+      "designName": "Chip Group / Reorderable input",
+      "componentName": "ReorderableTokenField",
+      "source": "src/components/ChipPatterns.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2197:38615",
+      "designName": "Building Blocks/Navigation bars/Vertical nav item",
+      "componentName": "NavigationItem",
+      "source": "src/components/Navigation.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2197:38783",
+      "designName": "Building Blocks/Navigation bars/Horizontal nav item",
+      "componentName": "NavigationItem",
+      "source": "src/components/Navigation.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:22103",
+      "designName": "Toolbar / Selection",
+      "componentName": "Toolbar",
+      "source": "src/components/Navigation.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2254:45018",
+      "designName": "Building Blocks/Navigation rail/Vertical nav item",
+      "componentName": "NavigationItem",
+      "source": "src/components/Navigation.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2254:45329",
+      "designName": "Building Blocks/Navigation rail/Horizontal nav item",
+      "componentName": "NavigationItem",
+      "source": "src/components/Navigation.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:18505",
+      "designName": "Sidebar Toolbar",
+      "componentName": "Toolbar",
+      "source": "src/components/Navigation.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:18524",
+      "designName": "Sidebar Search Field",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2396:18528",
+      "designName": "Web / Sidebar close control",
+      "componentName": "Button",
+      "source": "src/components/Button.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2306:12059",
+      "designName": "Tabs / Web / Item / Underline",
+      "componentName": "TabItem",
+      "source": "src/components/Navigation.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "variant": "underline"
+      }
+    },
+    {
+      "nodeId": "2306:12176",
+      "designName": "Tabs / Web / Item / Pill",
+      "componentName": "TabItem",
+      "source": "src/components/Navigation.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "variant": "pill"
+      }
+    },
+    {
+      "nodeId": "2306:12293",
+      "designName": "Tabs / Web / Item / Default",
+      "componentName": "TabItem",
+      "source": "src/components/Navigation.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "variant": "default"
+      }
+    },
+    {
+      "nodeId": "2254:54832",
+      "designName": "Tabs / Web / Content patterns",
+      "componentName": "Tabs",
+      "source": "src/components/Navigation.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2903:33843",
+      "designName": "Carousel Item",
+      "componentName": "CarouselItem",
+      "source": "src/components/DataDisplay.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3016:40016",
+      "designName": "Tree View / Node",
+      "componentName": "TreeNodeItem",
+      "source": "src/components/DataDisplay.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "2994:38398",
+      "designName": "Internal / Code Snippet / Copy feedback",
+      "componentName": "CodeCopyFeedback",
+      "source": "src/components/DataDisplay.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3004:38618",
+      "designName": "Internal / Code Snippet / Code / Auto",
+      "componentName": "CodeBlock",
+      "source": "src/components/DataDisplay.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3004:38635",
+      "designName": "Internal / Code Snippet / Code / Inverse",
+      "componentName": "CodeBlock",
+      "source": "src/components/DataDisplay.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "inverse": true
+      }
+    },
+    {
+      "nodeId": "3034:38926",
+      "designName": "Content Grid / Status",
+      "componentName": "Recovery",
+      "source": "src/components/Patterns.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3044:38977",
+      "designName": "Text List / Item",
+      "componentName": "TextListItem",
+      "source": "src/components/DataDisplay.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3135:654",
+      "designName": "Form error summary / Wardo",
+      "componentName": "FormErrorSummary",
+      "source": "src/components/Patterns.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "3137:1539",
+      "designName": "Recovery / Wardo",
+      "componentName": "Recovery",
+      "source": "src/components/Patterns.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    },
+    {
+      "nodeId": "1531:150854",
+      "designName": "Action icon / bookmark",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "action-bookmark"
+      }
+    },
+    {
+      "nodeId": "3016:39975",
+      "designName": "Internal / Tree View / Icon / Folder",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "tree-folder"
+      }
+    },
+    {
+      "nodeId": "3016:39977",
+      "designName": "Internal / Tree View / Icon / Document",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection",
+      "props": {
+        "name": "tree-document"
+      }
+    },
+    {
+      "nodeId": "3016:39983",
+      "designName": "Internal / Tree View / Disclosure",
+      "componentName": "TreeDisclosure",
+      "source": "src/components/DataDisplay.tsx",
+      "framework": "React",
+      "status": "implemented-pending-ui-connection"
+    }
+  ]
+}

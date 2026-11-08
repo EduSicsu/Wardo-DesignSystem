@@ -14,3 +14,5 @@ export function LoadingIndicator({label='Loading'}:{label?:string}){return <span
 export function Skeleton({width='100%',height='1rem',shape='rectangle',label='Loading content'}:{width?:number|string;height?:number|string;shape?:'rectangle'|'circle';label?:string}){return <span className="wardo-skeleton" role="status" aria-label={label} style={{width,height,borderRadius:shape==='circle'?'50%':'.375rem'}}/>;}
 export function StatusLabel({children,tone='info'}:{children:ReactNode;tone?:FeedbackTone}){return <span className="wardo-status-label" data-tone={tone}>{children}</span>;}
 export function DismissibleNotice(props:Parameters<typeof Banner>[0]){const [visible,setVisible]=useState(true);return visible?<Banner {...props} onDismiss={()=>{setVisible(false);props.onDismiss?.();}}/>:null;}
+
+export function LoadingSpinner({label}:{label?:string}){return <span className="wardo-spinner" role={label?'status':undefined} aria-label={label} aria-hidden={label?undefined:true}/>;}

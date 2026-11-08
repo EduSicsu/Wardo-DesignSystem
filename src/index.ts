@@ -15,3 +15,7 @@ export * from './components/DataDisplay';
 export { WardoProvider, type WardoTheme } from './components/Provider';
 export { CommandSheet, DataInput, DateComposition, LocationField } from './components/Compositions';
 export { Accordion as DisclosurePanel } from './components/Accordion';
+export * from './components/Patterns';
+export * from './components/ArtworkIcon';
+export { Radio } from './components/Selection';
+export * from './components/ChipPatterns';

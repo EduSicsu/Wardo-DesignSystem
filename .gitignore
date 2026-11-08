@@ -6,3 +6,8 @@ test-results/
 .env*
 !.env.example
 .DS_Store
+
+**/.build/
+**/.gradle/
+**/build/
+**/local.properties

@@ -2,9 +2,10 @@ import { readFileSync } from 'node:fs';
 import { Script } from 'node:vm';
 import ts from 'typescript';
 import { describe, expect, it } from 'vitest';
+const compiledTemplates = new Map<string,string>();
 function renderTemplate(file:string, values:Record<string,string|boolean>){
  const source=readFileSync(`figma/${file}.figma.ts`,'utf8');
- const compiled=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText;
+ let compiled=compiledTemplates.get(file);if(!compiled){compiled=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText;compiledTemplates.set(file,compiled);}
  const figma={selectedInstance:{getEnum:(name:string,map:Record<string,unknown>)=>map[String(values[name])],getString:()=>String(values.Label),getBoolean:(name:string)=>Boolean(values[name]),getInstanceSwap:()=>({type:'INSTANCE',executeTemplate:()=>({example:'<Icon name="plus" />'})})},code:(parts:TemplateStringsArray,...values:unknown[])=>parts.reduce((s,p,i)=>s+p+(values[i]??''),'')};
  const exports:Record<string,unknown>={};new Script(compiled).runInNewContext({exports,require:()=>figma});
  return (exports.default as {example:string}).example;

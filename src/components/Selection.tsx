@@ -17,3 +17,5 @@ export function RadioGroup({label,name,value,defaultValue,onValueChange,disabled
 }
 export interface SliderProps extends Omit<InputHTMLAttributes<HTMLInputElement>,'type'|'size'> { label:string; size?:Size; condition?:Condition; }
 export function Slider({label,size='M',condition='normal',id,className,...props}:SliderProps){const generated=useId();const fieldId=id??generated;return <div className={cx('wardo-field',className)} data-wardo-size={size} data-wardo-condition={condition}><label htmlFor={fieldId}>{label}</label><input {...props} id={fieldId} type="range" className="wardo-slider"/></div>;}
+
+export function Radio({label,hint,size='M',condition='normal',className,id,...props}:Omit<CheckboxProps,'indeterminate'>){const generated=useId();const fieldId=id??generated;return <label className={cx('wardo-selection',className)} data-wardo-size={size} data-wardo-condition={condition} htmlFor={fieldId}><input {...props} id={fieldId} type="radio" aria-describedby={[props['aria-describedby'],hint?`${fieldId}-hint`:undefined].filter(Boolean).join(' ')||undefined}/><span>{label}{hint?<small id={`${fieldId}-hint`}>{hint}</small>:null}</span></label>;}

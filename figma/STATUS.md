@@ -1,4 +1,12 @@
-# Figma connection status
+# Current Figma connection status
+
+**145 of 797 source links saved**, confirmed in the native UI. The newest 124 entries were saved with explicit component names. `expanded-mappings.json` records those saves. The complete published inventory matches all 797 entries, including documentation, archives and device references.
+
+A further 53 web entries and nine first native entries are prepared, not yet saved. Native builds were deferred by the owner. React remains the active framework; the Professional plan supports one active framework. Other native implementation and visual gaps are documented in `native/README.md`.
+
+The historical initial verification below remains useful for the original 21 entries and the unpublished template limitation.
+
+# Original source-link verification
 
 **21 source links saved in Figma Code Connect on November 6, 2026.**
 

@@ -15,13 +15,13 @@ Open the local address shown in the terminal. The preview includes theme switchi
 
 ## Coverage — incomplete
 
-Figma Code Connect currently shows **21 of 797 connected (2.6%)**, leaving **776 unconnected**. The code below is an initial implementation, not the complete Wardo design system. The remaining count includes internal building blocks, platform-specific components, and additional public families; it is not a count of 776 distinct React components. See `figma/COVERAGE.md`.
+Figma Code Connect currently shows **145 of 797 connected (18.2%)**, leaving **652 unconnected**. The React library has been expanded substantially; full-library work remains in progress. The remaining count includes internal building blocks, platform-specific components, and additional public families; it is not a count of 776 distinct React components. See `figma/COVERAGE.md`.
 
 ## What's included
 
 The React library now includes navigation bars, sidebars, tabs, breadcrumbs, pagination, toolbars, menus and submenus, split buttons, FABs, segmented controls, autocomplete, selection lists, token fields, range sliders, steppers, date/time inputs, structured lists, sortable tables, expandable trees, carousels, grids, feedback notices, progress indicators, dialogs, sheets and tooltips, in addition to the original controls. `/library` opens the expanded interactive preview.
 
-There are 124 additional implementation-backed source mappings prepared in `figma/expanded-mappings.json`. Each entry records its connection status; prepared mappings are not counted as saved Figma connections. Native iOS, Android and visionOS code packages and legacy/archive entries remain separate outstanding work.
+The 124 additional mappings in `figma/expanded-mappings.json` are saved in Figma. Another 53 web mappings are prepared in `figma/web-internals-mappings.json`. Native SwiftUI and Compose sources are in `native`, with native builds explicitly deferred by the owner; these are not claimed as verified complete native packages.
 
 - 69 semantic colors across ten themes, eight control sizes and three conditions.
 - Keyboard-operated composite controls and focus-managed overlays using React Aria.
@@ -57,9 +57,9 @@ Pass an accessible name (`aria-label`) to icon-only buttons. Use `selected` for 
 
 ## Figma connection
 
-`figma/mappings.json` identifies each live Figma master and its implementation. **All 21 source links are saved in Figma Code Connect**: the 18 component families and three icons. Figma's interface confirmed the connections, and connected-tool readback confirms the source references for the public masters and nested icons. Most are file-level connections; the desired export names are also recorded in the registry. The five property-aware templates are prepared and validated, but are not published. Figma's API rejected template writes with an Organization/Enterprise restriction; saving source links through the native Figma UI worked on the existing plan. See `figma/STATUS.md` for the verification and remaining limitation. GitHub integration is optional for manual source links. The Code Connect settings may still show “Connect to GitHub” until the repository browsing integration is authorized separately in Figma.
+`figma/mappings.json` identifies each live Figma master and its implementation. **145 source links are saved in Figma Code Connect**: the original 21 and 124 additional entries. Figma's interface confirmed the connections, and connected-tool readback confirms the source references for the public masters and nested icons. The new 124 entries include explicit component/export names; most original entries are file-level. Desired names are recorded in the registries. The five property-aware templates are prepared and validated, but are not published. Figma's API rejected template writes with an Organization/Enterprise restriction; saving source links through the native Figma UI worked on the existing plan. See `figma/STATUS.md` for the verification and remaining limitation. GitHub integration is optional for manual source links. The Code Connect settings may still show “Connect to GitHub” until the repository browsing integration is authorized separately in Figma.
 
-The two `.figma.ts` templates use Figma's parserless template API, exhaustive variant mappings, and dynamic instance swaps. Hover, pressed, and focus states belong to browser interaction; disabled state maps to the native button attribute. Component definitions and descendant anatomy used during setup are in `figma/context`.
+The five `.figma.ts` templates use Figma's parserless template API, exhaustive variant mappings, and dynamic instance swaps. Hover, pressed, and focus states belong to browser interaction; disabled state maps to the native button attribute. Component definitions and descendant anatomy used during setup are in `figma/context`.
 
 To inspect templates locally:
 
@@ -69,6 +69,10 @@ npx figma connect parse --outFile /tmp/wardo-code-connect.json
 ```
 
 To republish snippet templates later with the CLI, use your own Figma access token through the `FIGMA_ACCESS_TOKEN` environment variable, then run `npx figma connect publish`. Do not put tokens into files or commits. Source connections and property-aware template publication are separate operations.
+
+## Native platforms
+
+See [`native/README.md`](native/README.md) for the Apple and Android source packages and their current gaps. Figma Professional supports one active framework, so native activation must not silently replace React. Native build and runtime validation have not been performed.
 
 ## Tokens and maintenance
 
