@@ -26,6 +26,12 @@
       "path": "coverage/previews/native/android-xr.png",
       "alt": "Wardo spatial panel and anchored toolbar running in the Android XR emulator",
       "caption": "Android XR sample — panel and toolbar"
+    },
+    {
+      "platform": "Android (XR sample)",
+      "path": "coverage/previews/native/android-toolbar-artwork-scene.png",
+      "alt": "All eight exact Android toolbar glyphs running in the XR sample; their parent controls are reviewed separately.",
+      "caption": "Android toolbar glyphs — rendered XR sample"
     }
   ],
   "entries": [
@@ -4805,7 +4811,9 @@
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/evidence/2026-11-09/vision-controls-family.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
@@ -4862,7 +4870,9 @@
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/evidence/2026-11-09/vision-controls-family.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
@@ -5713,11 +5723,69 @@
         "symbol": "BottomNavigationBar",
         "example": null
       },
-      "alternatives": [],
+      "alternatives": [
+        {
+          "status": "source-available",
+          "framework": "Jetpack Compose",
+          "platforms": [
+            "Android"
+          ],
+          "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+          "symbol": "WardoNavigationBar",
+          "example": "WardoNavigationBar(destinations, selectedId, onSelect, icon = destinationIcon)",
+          "gaps": [
+            "Review phone/tablet safe areas, large text, TalkBack, keyboard focus and full icon/theme variants."
+          ]
+        }
+      ],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "design-properties-recorded",
+        "definitions": {
+          "Platform": {
+            "type": "VARIANT",
+            "defaultValue": "Android",
+            "variantOptions": [
+              "Web",
+              "Android",
+              "iOS",
+              "Android XR",
+              "visionOS"
+            ]
+          },
+          "Layout": {
+            "type": "VARIANT",
+            "defaultValue": "Compact",
+            "variantOptions": [
+              "Compact",
+              "Expanded"
+            ]
+          },
+          "Layout direction": {
+            "type": "VARIANT",
+            "defaultValue": "LTR",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "Platform",
+            "target": "Android alternative",
+            "notes": "Native-derived compact Android source. Other platform configurations remain under review."
+          },
+          {
+            "property": "Layout",
+            "target": "Compact only",
+            "notes": "Expanded and other platform layouts are not claimed by this alternative."
+          },
+          {
+            "property": "Layout direction",
+            "target": "Android: LocalLayoutDirection",
+            "notes": "Native placement and system insets are inherited."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
@@ -5777,24 +5845,49 @@
         ],
         "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
         "symbol": "WardoNavigationBar",
-        "example": "WardoNavigationBar(destinations, selectedId, onSelect, icon = icon)",
-        "gaps": []
+        "example": "WardoNavigationBar(destinations, selectedId, onSelect, icon = destinationIcon)",
+        "gaps": [
+          "Review phone/tablet safe areas, large text, TalkBack, keyboard focus and full icon/theme variants."
+        ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "Layout direction": {
+            "type": "VARIANT",
+            "defaultValue": "LTR",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "Layout direction",
+            "target": "LocalLayoutDirection",
+            "notes": "Native relative placement mirrors destination order, preserving application destination identity and callbacks."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-navigation-family.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android compatibility fixture in XR",
+          "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+          "alt": "Android navigation items and compact bar with caller-owned numbered icons; partial interaction preview."
+        }
+      ]
     },
     {
       "id": "wardo-2396-18141",
@@ -5978,29 +6071,69 @@
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2197-38973",
       "implementation": {
         "status": "source-available",
-        "framework": "React",
+        "framework": "Jetpack Compose",
         "platforms": [
-          "web"
+          "Android"
         ],
-        "source": "src/components/Navigation.tsx",
-        "symbol": "SideNavigation",
-        "example": null
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+        "symbol": "WardoNavigationBar",
+        "example": "WardoNavigationBar(destinations, selectedId, onSelect, icon = destinationIcon)",
+        "gaps": [
+          "Review phone/tablet safe areas, large text, TalkBack, keyboard focus and full icon/theme variants."
+        ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "Nav items": {
+            "type": "VARIANT",
+            "defaultValue": "3",
+            "variantOptions": [
+              "3",
+              "4",
+              "5"
+            ]
+          },
+          "Layout direction": {
+            "type": "VARIANT",
+            "defaultValue": "LTR",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "Nav items",
+            "target": "destinations.size",
+            "notes": "Three to five app-owned destinations, equally weighted by native ShortNavigationBar."
+          },
+          {
+            "property": "Layout direction",
+            "target": "LocalLayoutDirection",
+            "notes": "Native relative placement mirrors destination order, preserving application destination identity and callbacks."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-navigation-family.json"
+        ]
       },
       "connection": {
         "status": "source-connection-saved",
         "framework": "React"
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android compatibility fixture in XR",
+          "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+          "alt": "Android navigation items and compact bar with caller-owned numbered icons; partial interaction preview."
+        }
+      ]
     },
     {
       "id": "wardo-2197-38950",
@@ -8872,11 +9005,111 @@
         "symbol": "NavigationItem",
         "example": null
       },
-      "alternatives": [],
+      "alternatives": [
+        {
+          "status": "source-available",
+          "framework": "Jetpack Compose",
+          "platforms": [
+            "Android"
+          ],
+          "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationItem.kt",
+          "symbol": "WardoNavigationItem",
+          "example": "WardoNavigationItem(selected, onClick, label, icon, layout = WardoNavigationItemLayout.Vertical, badge = unreadCount)",
+          "gaps": [
+            "Only the Android anatomy is implemented by this alternative. Android XR compatibility specimens use this 2D control; native spatial navigation has separate records.",
+            "Verify all themes, badge values, large text, TalkBack and keyboard focus."
+          ]
+        }
+      ],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "design-properties-recorded",
+        "definitions": {
+          "Icon#1118:162": {
+            "type": "INSTANCE_SWAP",
+            "defaultValue": "1159:29"
+          },
+          "Label#1118:163": {
+            "type": "TEXT",
+            "defaultValue": "Events"
+          },
+          "Show badge#1118:164": {
+            "type": "BOOLEAN",
+            "defaultValue": false
+          },
+          "Platform": {
+            "type": "VARIANT",
+            "defaultValue": "Android",
+            "variantOptions": [
+              "Web",
+              "Android",
+              "iOS",
+              "Android XR",
+              "visionOS"
+            ]
+          },
+          "Layout": {
+            "type": "VARIANT",
+            "defaultValue": "Vertical",
+            "variantOptions": [
+              "Vertical",
+              "Horizontal",
+              "Text only"
+            ]
+          },
+          "Current": {
+            "type": "VARIANT",
+            "defaultValue": "false",
+            "variantOptions": [
+              "false",
+              "true"
+            ]
+          },
+          "Layout direction": {
+            "type": "VARIANT",
+            "defaultValue": "LTR",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "Icon#1118:162",
+            "target": "Android: icon content slot",
+            "notes": "Caller owns the icon; the control provides a 24 dp decorative slot and semantic tint."
+          },
+          {
+            "property": "Label#1118:163",
+            "target": "Android: label",
+            "notes": "Caller supplies localized destination text."
+          },
+          {
+            "property": "Show badge#1118:164",
+            "target": "Android: nullable badge",
+            "notes": "A null value omits the badge; badgeContentDescription supports a localized announcement."
+          },
+          {
+            "property": "Platform",
+            "target": "Android alternative",
+            "notes": "Other platform configurations remain under review; no native XR redesign is implied."
+          },
+          {
+            "property": "Layout",
+            "target": "Android: WardoNavigationItemLayout",
+            "notes": "Vertical, Horizontal and TextOnly have separate source geometry and selected treatments."
+          },
+          {
+            "property": "Current",
+            "target": "Android: selected",
+            "notes": "Independent application-owned selection, separate from focus/press/disabled state."
+          },
+          {
+            "property": "Layout direction",
+            "target": "Android: LocalLayoutDirection",
+            "notes": "Inherited native logical layout. Web and Apple mappings remain unresolved."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
@@ -8934,26 +9167,51 @@
         "platforms": [
           "Android"
         ],
-        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
-        "symbol": "WardoNavigationBar",
-        "example": "WardoNavigationBar(destinations, selectedId, onSelect, icon = icon)",
-        "gaps": []
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationItem.kt",
+        "symbol": "WardoNavigationBarItem",
+        "example": "WardoNavigationBarItem(selected = selectedId == destination.id, onClick = { onSelect(destination.id) }, label = destination.label, icon = { DestinationIcon(destination) })",
+        "gaps": [
+          "Verify all themes, TalkBack announcements, keyboard focus, large text and phone/tablet layouts against the source."
+        ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "Layout direction": {
+            "type": "VARIANT",
+            "defaultValue": "LTR",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "Layout direction",
+            "target": "LocalLayoutDirection",
+            "notes": "The outer composition supplies Ltr/Rtl; padding, icon position and text alignment use logical start/end. Selection, content and interactions remain application-owned."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-navigation-family.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android compatibility fixture in XR",
+          "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+          "alt": "Android navigation items and compact bar with caller-owned numbered icons; partial interaction preview."
+        }
+      ]
     },
     {
       "id": "wardo-2396-18581",
@@ -8968,28 +9226,51 @@
         "platforms": [
           "Android"
         ],
-        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
-        "symbol": "WardoNavigationRail",
-        "example": "WardoNavigationRail(destinations, selectedId, onSelect, icon = icon)",
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationItem.kt",
+        "symbol": "WardoRailItem",
+        "example": "WardoRailItem(selected = selectedId == destination.id, onClick = { onSelect(destination.id) }, label = destination.label, icon = { DestinationIcon(destination) })",
         "gaps": [
-          "Expanded and horizontal rail configurations require visual review."
+          "Verify all themes, TalkBack announcements, keyboard focus, large text and phone/tablet layouts against the source."
         ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "Layout direction": {
+            "type": "VARIANT",
+            "defaultValue": "LTR",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "Layout direction",
+            "target": "LocalLayoutDirection",
+            "notes": "The outer composition supplies Ltr/Rtl; padding, icon position and text alignment use logical start/end. Selection, content and interactions remain application-owned."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-navigation-family.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android compatibility fixture in XR",
+          "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+          "alt": "Android navigation items and compact bar with caller-owned numbered icons; partial interaction preview."
+        }
+      ]
     },
     {
       "id": "wardo-2396-18600",
@@ -10437,20 +10718,53 @@
         "platforms": [
           "visionOS"
         ],
-        "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+        "source": "native/apple/Sources/WardoDesignSystem/IndexBar.swift",
         "symbol": "WardoIndexBar",
-        "example": "WardoIndexBar(sections: sectionTitles, navigate: navigate)",
-        "gaps": []
+        "example": "WardoIndexBar(sections: sectionLabels, selection: $visibleSection) { section in scrollProxy.scrollTo(section, anchor: .top) }",
+        "gaps": [
+          "Verify gaze hover, pinch scrubbing and native accessibility on visionOS.",
+          "Review Dynamic Type, localized index labels and keyboard navigation in consuming list compositions."
+        ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "State": {
+            "type": "VARIANT",
+            "defaultValue": "Hover",
+            "variantOptions": [
+              "Idle",
+              "Hover"
+            ]
+          },
+          "Layout direction": {
+            "type": "VARIANT",
+            "defaultValue": "LTR",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "State",
+            "target": "native hover effect",
+            "notes": "Idle/Hover follows the platform interaction lifecycle. Only the narrow raised capsule changes opacity; the letter labels retain their contrast. Gaze state is handled declaratively."
+          },
+          {
+            "property": "Layout direction",
+            "target": "environment(\\.layoutDirection)",
+            "notes": "LTR/RTL changes logical placement and text alignment. Vertical section order and application navigation callbacks remain the supplied order."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/evidence/2026-11-09/vision-controls-family.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
@@ -13285,7 +13599,9 @@
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/evidence/2026-11-09/vision-controls-family.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
@@ -13319,7 +13635,9 @@
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/evidence/2026-11-09/vision-controls-family.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
@@ -15188,33 +15506,41 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1945-10410",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android"
         ],
-        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
-        "symbol": "WardoSymbol",
-        "example": "WardoSymbol(imageVector = applicationIcons.StarBorder, contentDescription = label)",
-        "gaps": [
-          "Provide the matching Material symbol artwork; source geometry and variant verification pending."
-        ]
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/ToolbarArtwork.kt",
+        "symbol": "WardoToolbarArtwork",
+        "example": "WardoToolbarArtwork(WardoToolbarGlyph.Stars, contentDescription = null)",
+        "gaps": []
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
+        "status": "mapped",
         "definitions": {},
         "mappings": []
       },
       "validation": {
-        "status": "pending",
-        "evidence": []
+        "status": "verified",
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-toolbar-artwork.json",
+          "coverage/native-toolbar-assets.json",
+          "coverage/design-context/android-toolbar-glyph-properties.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android (XR sample)",
+          "path": "coverage/previews/native/android-toolbar-artwork-scene.png",
+          "alt": "All eight exact Android toolbar glyphs running in the XR sample; their parent controls are reviewed separately."
+        }
+      ]
     },
     {
       "id": "wardo-1945-10412",
@@ -15224,33 +15550,41 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1945-10412",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android"
         ],
-        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
-        "symbol": "WardoSymbol",
-        "example": "WardoSymbol(imageVector = applicationIcons.Star, contentDescription = label)",
-        "gaps": [
-          "Provide the matching Material symbol artwork; source geometry and variant verification pending."
-        ]
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/ToolbarArtwork.kt",
+        "symbol": "WardoToolbarArtwork",
+        "example": "WardoToolbarArtwork(WardoToolbarGlyph.StarsFilled, contentDescription = null)",
+        "gaps": []
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
+        "status": "mapped",
         "definitions": {},
         "mappings": []
       },
       "validation": {
-        "status": "pending",
-        "evidence": []
+        "status": "verified",
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-toolbar-artwork.json",
+          "coverage/native-toolbar-assets.json",
+          "coverage/design-context/android-toolbar-glyph-properties.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android (XR sample)",
+          "path": "coverage/previews/native/android-toolbar-artwork-scene.png",
+          "alt": "All eight exact Android toolbar glyphs running in the XR sample; their parent controls are reviewed separately."
+        }
+      ]
     },
     {
       "id": "wardo-1945-10484",
@@ -15330,33 +15664,41 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1945-10775",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android"
         ],
-        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
-        "symbol": "WardoSymbol",
-        "example": "WardoSymbol(imageVector = applicationIcons.Share, contentDescription = label)",
-        "gaps": [
-          "Provide the matching Material symbol artwork; source geometry and variant verification pending."
-        ]
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/ToolbarArtwork.kt",
+        "symbol": "WardoToolbarArtwork",
+        "example": "WardoToolbarArtwork(WardoToolbarGlyph.Share, contentDescription = null)",
+        "gaps": []
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
+        "status": "mapped",
         "definitions": {},
         "mappings": []
       },
       "validation": {
-        "status": "pending",
-        "evidence": []
+        "status": "verified",
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-toolbar-artwork.json",
+          "coverage/native-toolbar-assets.json",
+          "coverage/design-context/android-toolbar-glyph-properties.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android (XR sample)",
+          "path": "coverage/previews/native/android-toolbar-artwork-scene.png",
+          "alt": "All eight exact Android toolbar glyphs running in the XR sample; their parent controls are reviewed separately."
+        }
+      ]
     },
     {
       "id": "wardo-1945-10777",
@@ -15366,33 +15708,41 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1945-10777",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android"
         ],
-        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
-        "symbol": "WardoSymbol",
-        "example": "WardoSymbol(imageVector = applicationIcons.Comment, contentDescription = label)",
-        "gaps": [
-          "Provide the matching Material symbol artwork; source geometry and variant verification pending."
-        ]
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/ToolbarArtwork.kt",
+        "symbol": "WardoToolbarArtwork",
+        "example": "WardoToolbarArtwork(WardoToolbarGlyph.Comment, contentDescription = null)",
+        "gaps": []
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
+        "status": "mapped",
         "definitions": {},
         "mappings": []
       },
       "validation": {
-        "status": "pending",
-        "evidence": []
+        "status": "verified",
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-toolbar-artwork.json",
+          "coverage/native-toolbar-assets.json",
+          "coverage/design-context/android-toolbar-glyph-properties.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android (XR sample)",
+          "path": "coverage/previews/native/android-toolbar-artwork-scene.png",
+          "alt": "All eight exact Android toolbar glyphs running in the XR sample; their parent controls are reviewed separately."
+        }
+      ]
     },
     {
       "id": "wardo-1945-10779",
@@ -15402,33 +15752,41 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1945-10779",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android"
         ],
-        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
-        "symbol": "WardoSymbol",
-        "example": "WardoSymbol(imageVector = applicationIcons.Download, contentDescription = label)",
-        "gaps": [
-          "Provide the matching Material symbol artwork; source geometry and variant verification pending."
-        ]
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/ToolbarArtwork.kt",
+        "symbol": "WardoToolbarArtwork",
+        "example": "WardoToolbarArtwork(WardoToolbarGlyph.Download, contentDescription = null)",
+        "gaps": []
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
+        "status": "mapped",
         "definitions": {},
         "mappings": []
       },
       "validation": {
-        "status": "pending",
-        "evidence": []
+        "status": "verified",
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-toolbar-artwork.json",
+          "coverage/native-toolbar-assets.json",
+          "coverage/design-context/android-toolbar-glyph-properties.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android (XR sample)",
+          "path": "coverage/previews/native/android-toolbar-artwork-scene.png",
+          "alt": "All eight exact Android toolbar glyphs running in the XR sample; their parent controls are reviewed separately."
+        }
+      ]
     },
     {
       "id": "wardo-1945-10781",
@@ -15438,33 +15796,41 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1945-10781",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android"
         ],
-        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
-        "symbol": "WardoSymbol",
-        "example": "WardoSymbol(imageVector = applicationIcons.Edit, contentDescription = label)",
-        "gaps": [
-          "Provide the matching Material symbol artwork; source geometry and variant verification pending."
-        ]
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/ToolbarArtwork.kt",
+        "symbol": "WardoToolbarArtwork",
+        "example": "WardoToolbarArtwork(WardoToolbarGlyph.Edit, contentDescription = null)",
+        "gaps": []
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
+        "status": "mapped",
         "definitions": {},
         "mappings": []
       },
       "validation": {
-        "status": "pending",
-        "evidence": []
+        "status": "verified",
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-toolbar-artwork.json",
+          "coverage/native-toolbar-assets.json",
+          "coverage/design-context/android-toolbar-glyph-properties.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android (XR sample)",
+          "path": "coverage/previews/native/android-toolbar-artwork-scene.png",
+          "alt": "All eight exact Android toolbar glyphs running in the XR sample; their parent controls are reviewed separately."
+        }
+      ]
     },
     {
       "id": "wardo-1945-10783",
@@ -15474,33 +15840,41 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1945-10783",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android"
         ],
-        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
-        "symbol": "WardoSymbol",
-        "example": "WardoSymbol(imageVector = applicationIcons.MoreVert, contentDescription = label)",
-        "gaps": [
-          "Provide the matching Material symbol artwork; source geometry and variant verification pending."
-        ]
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/ToolbarArtwork.kt",
+        "symbol": "WardoToolbarArtwork",
+        "example": "WardoToolbarArtwork(WardoToolbarGlyph.MoreVert, contentDescription = null)",
+        "gaps": []
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
+        "status": "mapped",
         "definitions": {},
         "mappings": []
       },
       "validation": {
-        "status": "pending",
-        "evidence": []
+        "status": "verified",
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-toolbar-artwork.json",
+          "coverage/native-toolbar-assets.json",
+          "coverage/design-context/android-toolbar-glyph-properties.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android (XR sample)",
+          "path": "coverage/previews/native/android-toolbar-artwork-scene.png",
+          "alt": "All eight exact Android toolbar glyphs running in the XR sample; their parent controls are reviewed separately."
+        }
+      ]
     },
     {
       "id": "wardo-1945-10785",
@@ -15510,33 +15884,41 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1945-10785",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android"
         ],
-        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
-        "symbol": "WardoSymbol",
-        "example": "WardoSymbol(imageVector = applicationIcons.Image, contentDescription = label)",
-        "gaps": [
-          "Provide the matching Material symbol artwork; source geometry and variant verification pending."
-        ]
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/ToolbarArtwork.kt",
+        "symbol": "WardoToolbarArtwork",
+        "example": "WardoToolbarArtwork(WardoToolbarGlyph.Image, contentDescription = null)",
+        "gaps": []
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
+        "status": "mapped",
         "definitions": {},
         "mappings": []
       },
       "validation": {
-        "status": "pending",
-        "evidence": []
+        "status": "verified",
+        "evidence": [
+          "coverage/evidence/2026-11-09/android-toolbar-artwork.json",
+          "coverage/native-toolbar-assets.json",
+          "coverage/design-context/android-toolbar-glyph-properties.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "Android (XR sample)",
+          "path": "coverage/previews/native/android-toolbar-artwork-scene.png",
+          "alt": "All eight exact Android toolbar glyphs running in the XR sample; their parent controls are reviewed separately."
+        }
+      ]
     },
     {
       "id": "wardo-1908-21970",

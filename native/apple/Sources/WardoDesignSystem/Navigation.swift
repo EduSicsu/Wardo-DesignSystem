@@ -72,13 +72,3 @@ public struct WardoToolbarTitle: View {
         }
     }
 }
-
-public struct WardoIndexBar: View {
-    private let sections: [String]
-    private let navigate: (String) -> Void
-    public init(sections: [String], navigate: @escaping (String) -> Void) { self.sections = sections; self.navigate = navigate }
-    public var body: some View {
-        ScrollView(.vertical) { VStack(spacing: 4) { ForEach(Array(sections.enumerated()), id: \.offset) { _, section in Button(section) { navigate(section) }.buttonStyle(.plain).frame(minWidth: 44, minHeight: 30) } } }
-            .accessibilityLabel("Section index")
-    }
-}

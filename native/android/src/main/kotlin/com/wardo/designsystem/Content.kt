@@ -27,9 +27,6 @@ fun WardoContentGrid(modifier: Modifier = Modifier, minItemWidth: Dp = 160.dp, c
 fun WardoCard(modifier: Modifier = Modifier, content: @Composable ColumnScope.() -> Unit) { Card(modifier, content = content) }
 
 @Composable
-fun WardoDivider(modifier: Modifier = Modifier) { HorizontalDivider(modifier) }
-
-@Composable
 fun WardoBadge(modifier: Modifier = Modifier, content: @Composable RowScope.() -> Unit) { Badge(modifier, content = content) }
 
 @Composable

@@ -19,9 +19,19 @@ test('search and select use a single focus ring and Wardo affordances',async({pa
 test('native sample previews expose nonempty captured images',async({page})=>{
  await page.goto('/coverage');await expect(page.getByRole('heading',{name:'Wardo coverage catalogue'})).toBeVisible();
  await page.getByText('Native sample previews',{exact:true}).click();
- const images=page.locator('.coverage-native-previews img');await expect(images).toHaveCount(4);
+ const images=page.locator('.coverage-native-previews img');await expect(images).toHaveCount(5);
  await images.last().scrollIntoViewIfNeeded();
  await expect.poll(()=>images.evaluateAll(nodes=>nodes.every(node=>(node as HTMLImageElement).complete&&(node as HTMLImageElement).naturalWidth>1&&(node as HTMLImageElement).naturalHeight>1))).toBe(true);
  await expect(page.getByText('Vision Pro sample — rendered scene',{exact:true})).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+test('a verified native glyph retains its separate Figma connection state',async({page})=>{
+ await page.goto('/coverage');
+ await page.getByRole('searchbox',{name:'Find a design or component'}).fill('1945:10775');
+ await page.getByLabel('Platform',{exact:true}).selectOption('Android');
+ const entry=page.locator('article');await expect(entry).toHaveCount(1);
+ await expect(entry.getByRole('link',{name:'WardoToolbarArtwork'})).toBeVisible();
+ await expect(entry.locator('.coverage-states dd').nth(1)).toHaveText('verified');
+ await expect(entry.locator('.coverage-states dd').nth(2)).toHaveText('not connected');
+ await expect(entry.getByRole('img')).toBeVisible();
 });

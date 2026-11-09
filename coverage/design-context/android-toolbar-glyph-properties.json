@@ -1,0 +1,70 @@
+{
+  "figmaFile": "rkJclvwYpmw9ja5vUwkl3P",
+  "date": "2026-11-09",
+  "components": [
+    {
+      "nodeId": "1945:10410",
+      "name": "Toolbar internal / Android / stars",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "properties": {}
+    },
+    {
+      "nodeId": "1945:10412",
+      "name": "Toolbar internal / Android / stars_filled",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "properties": {}
+    },
+    {
+      "nodeId": "1945:10775",
+      "name": "Toolbar internal / Android / share",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "properties": {}
+    },
+    {
+      "nodeId": "1945:10777",
+      "name": "Toolbar internal / Android / comment",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "properties": {}
+    },
+    {
+      "nodeId": "1945:10779",
+      "name": "Toolbar internal / Android / download",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "properties": {}
+    },
+    {
+      "nodeId": "1945:10781",
+      "name": "Toolbar internal / Android / edit",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "properties": {}
+    },
+    {
+      "nodeId": "1945:10783",
+      "name": "Toolbar internal / Android / more_vert",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "properties": {}
+    },
+    {
+      "nodeId": "1945:10785",
+      "name": "Toolbar internal / Android / image",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "properties": {}
+    }
+  ]
+}

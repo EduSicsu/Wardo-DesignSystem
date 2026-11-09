@@ -41,6 +41,7 @@ struct CatalogueView: View {
                     NavigationLink { SidebarExample() } label: { Text("Sidebar example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                     NavigationLink { PagingExample() } label: { Text("Paging example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                     NavigationLink { SliderExample() } label: { Text("Slider variants").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
+                    NavigationLink { SectionIndexExample() } label: { Text("Section index example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                 }
                 Section("Swipe actions") {
                     WardoSwipeActionRow(leading: [.init(id: "archive", title: "Archive", systemImage: "archivebox", action: { notice = "Archived" })], trailing: [.init(id: "delete", title: "Delete", systemImage: "trash", role: .destructive, tint: .red, action: { notice = "Deleted" })]) { Text("Swipe this row") }
@@ -95,7 +96,42 @@ struct SliderExample: View {
             }.disabled(!enabled).environment(\.layoutDirection, rtl ? .rightToLeft : .leftToRight)
             Text("Stepped value: \(Int((stepped * 100).rounded()))%").accessibilityIdentifier("stepped-value")
             Text(editing ? "Editing slider" : "Slider idle").accessibilityIdentifier("slider-editing")
+            Button("Reset stepped value") { stepped = 0 }
         }.padding().navigationTitle("Slider variants")
+    }
+}
+
+struct SectionIndexExample: View {
+    private let sections = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ#").map(String.init)
+    @State private var selection: String? = "A"
+    @State private var rtl = false
+    @State private var enabled = true
+    var body: some View {
+        VStack(spacing: 12) {
+            Toggle("Right-to-left section index", isOn: $rtl)
+            Toggle("Enable section index", isOn: $enabled)
+            ScrollViewReader { proxy in
+                HStack {
+                    ScrollView {
+                        LazyVStack(alignment: .leading, spacing: 16) {
+                            ForEach(sections, id: \.self) { section in
+                                VStack(alignment: .leading) {
+                                    Text("Section \(section)").font(.headline)
+                                    ForEach(1...3, id: \.self) { row in Text("\(section) item \(row)").padding(.vertical, 12) }
+                                }.id(section)
+                            }
+                        }.frame(maxWidth: .infinity, alignment: .leading)
+                    }.frame(height: 466)
+                    WardoIndexBar(sections: sections, selection: $selection) { target in
+                        proxy.scrollTo(target, anchor: .top)
+                    }.disabled(!enabled).accessibilityIdentifier("section-index")
+                }.environment(\.layoutDirection, rtl ? .rightToLeft : .leftToRight)
+                .safeAreaInset(edge: .bottom) {
+                    Button("Go to last section") { selection = "#"; proxy.scrollTo("#", anchor: .top) }
+                }
+            }
+            Text("Selected section: \(selection ?? "None")").accessibilityIdentifier("selected-section")
+        }.padding().navigationTitle("Section index example")
     }
 }
 

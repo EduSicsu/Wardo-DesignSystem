@@ -1,0 +1,22 @@
+{
+  "id": "2532:25434",
+  "name": "Index Bar / visionOS / Index Bars",
+  "properties": {
+    "State": {
+      "type": "VARIANT",
+      "defaultValue": "Hover",
+      "variantOptions": [
+        "Idle",
+        "Hover"
+      ]
+    },
+    "Layout direction": {
+      "type": "VARIANT",
+      "defaultValue": "LTR",
+      "variantOptions": [
+        "LTR",
+        "RTL"
+      ]
+    }
+  }
+}

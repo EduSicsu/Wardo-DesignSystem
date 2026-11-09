@@ -17,4 +17,6 @@ npm run coverage:complete
 
 Verification evidence must name real repository files, describe the tested platform/configuration and variants, and refer to the source revision or hashes it exercised. Build success alone cannot verify design fidelity or accessibility. Screenshots are previews until reviewed against the design and must not silently change validation state. Native sample apps run separately; the web gallery displays captures only.
 
+Evidence paths are checked even while a record is pending. Android toolbar asset checks also verify exact source/resource hashes, 24×24 root dimensions and native callsites. A verified static glyph covers that glyph's geometry and composition boundary; parent button, toolbar and spatial states retain their own records. Native XR scenes must be captured from the device compositor: copying the panel's 2D host window can produce an empty frame.
+
 Keep React active in Figma. Do not create misleading React mappings for native code or infer tested status from the saved connection counter.

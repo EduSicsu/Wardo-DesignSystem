@@ -46,11 +46,11 @@ export async function checkRegistry(registry,{complete=false}={}) {
    if(!entry.validation.evidence.length || !entry.implementation.source || !entry.implementation.example || entry.properties.status!=='mapped') failures.push(`${entry.id}: verified without implementation, example, properties, and evidence`);
    if(entry.implementation.gaps?.length)failures.push(`${entry.id}: verified with unresolved implementation gaps`);
    if(!entry.properties.mappings.length&&Object.keys(entry.properties.definitions).length)failures.push(`${entry.id}: verified with unmapped design properties`);
-   for(const evidence of entry.validation.evidence) {
+  }
+  for(const evidence of entry.validation.evidence) {
     if(!safePath(evidence)){failures.push(`${entry.id}: evidence must be repository-relative`);continue;}
     try { const bytes=await readFile(new URL(evidence,root));if(!bytes.length)failures.push(`${entry.id}: empty evidence ${evidence}`); }
     catch { failures.push(`${entry.id}: missing evidence ${evidence}`); }
-   }
   }
   if(complete&&active&&(entry.implementation.status!=='implemented'||entry.validation.status!=='verified'||entry.properties.status!=='mapped')) failures.push(`${entry.id}: incomplete ${entry.name}`);
  }
@@ -72,6 +72,24 @@ export async function checkRegistry(registry,{complete=false}={}) {
    catch {failures.push(`Missing native slider asset ${path}`);}
   }
  } catch(error) {failures.push(`Invalid native slider asset manifest: ${error.message}`);}
+ try {
+  const manifest=JSON.parse(await readFile(new URL('coverage/native-toolbar-assets.json',root),'utf8'));
+  if(!safePath(manifest.rendererSource))throw new Error('Unsafe renderer source path');
+  const renderer=await readFile(new URL(manifest.rendererSource,root),'utf8');
+  for(const asset of manifest.assets) {
+   for(const [path,hash] of [[asset.source,asset.sourceSha256],[asset.native,asset.nativeSha256]]) {
+    if(!safePath(path)||!/^[a-f0-9]{64}$/.test(hash??'')){failures.push('Invalid Android toolbar asset reference');continue;}
+    try { const bytes=await readFile(new URL(path,root));if(!bytes.length||createHash('sha256').update(bytes).digest('hex')!==hash)failures.push(`Missing or changed Android toolbar asset ${path}`); }
+    catch {failures.push(`Missing Android toolbar asset ${path}`);}
+   }
+   if(!renderer.includes(`R.drawable.${asset.resource}`))failures.push(`Unused Android toolbar resource ${asset.resource}`);
+   const svg=await readFile(new URL(asset.source,root),'utf8');
+   const vector=await readFile(new URL(asset.native,root),'utf8');
+   const svgRoot=svg.match(/<svg\b[^>]*>/)?.[0]??'';
+   const vectorRoot=vector.match(/<vector\b[^>]*>/)?.[0]??'';
+   if(!/\bwidth="24"/.test(svgRoot)||!/\bheight="24"/.test(svgRoot)||!vectorRoot.includes('android:width="24dp"')||!vectorRoot.includes('android:height="24dp"'))failures.push(`Changed Android toolbar root geometry ${asset.resource}`);
+  }
+ } catch(error) {failures.push(`Invalid Android toolbar asset manifest: ${error.message}`);}
  for(const preview of [...(registry.samplePreviews??[]),...registry.entries.flatMap(entry=>entry.previews??[])]) {
   if(!safePath(preview.path)){failures.push(`Unsafe preview path ${preview.path}`);continue;}
   try { const bytes=await readFile(new URL(preview.path,root));if(!bytes.length)failures.push(`Empty preview ${preview.path}`);else if(bytes.length>24&&bytes.subarray(1,4).toString()==='PNG'&&(bytes.readUInt32BE(16)<2||bytes.readUInt32BE(20)<2))failures.push(`Invalid placeholder preview ${preview.path}`); }

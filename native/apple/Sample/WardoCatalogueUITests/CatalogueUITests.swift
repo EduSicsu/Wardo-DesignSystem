@@ -74,6 +74,11 @@ import XCTest
         reveal(link, in: app); link.tap()
         let paging = app.descendants(matching: .any)["Document pages"].firstMatch
         XCTAssertTrue(paging.waitForExistence(timeout: 5))
+        #if os(visionOS)
+        paging.tap()
+        XCTAssertTrue(app.staticTexts["Selected page: 3 of 5"].waitForExistence(timeout: 5))
+        app.buttons["Previous page"].tap(); app.buttons["Previous page"].tap()
+        #endif
         app.buttons["Next page"].tap()
         XCTAssertTrue(app.staticTexts["Selected page: 2 of 5"].exists)
         flip(app.switches["Right-to-left paging"])
@@ -86,8 +91,10 @@ import XCTest
         XCTAssertTrue(app.staticTexts["Selected page: 1 of 2"].exists)
         XCTAssertFalse(app.buttons["Previous page"].isEnabled)
         flip(app.switches["Right-to-left paging"])
+        #if !os(visionOS)
         paging.coordinate(withNormalizedOffset: CGVector(dx: 0.85, dy: 0.5)).tap()
         XCTAssertTrue(app.staticTexts["Selected page: 2 of 2"].waitForExistence(timeout: 5))
+        #endif
         #if !os(visionOS)
         let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); screenshot.name = "Wardo native paging"; screenshot.lifetime = .keepAlways; add(screenshot)
         #endif
@@ -99,26 +106,80 @@ import XCTest
         let slider = app.sliders["Stepped volume"]
         XCTAssertTrue(slider.waitForExistence(timeout: 5))
         for size in ["Large", "Regular", "Small", "Mini"] {
-            app.segmentedControls.buttons[size].tap()
+            let sizeButton = app.segmentedControls.buttons[size]
+            sizeButton.tap()
+            XCTAssertTrue(sizeButton.isSelected)
             XCTAssertGreaterThanOrEqual(slider.frame.height, 44)
-            slider.coordinate(withNormalizedOffset: CGVector(dx: 0.95, dy: 0.5)).tap()
-            XCTAssertTrue(app.staticTexts["Stepped value: 100%"].exists)
-            slider.coordinate(withNormalizedOffset: CGVector(dx: 0.05, dy: 0.5)).tap()
+            #if os(visionOS)
+            app.buttons["Reset stepped value"].tap()
             XCTAssertTrue(app.staticTexts["Stepped value: 0%"].exists)
+            slider.tap()
+            XCTAssertTrue(app.staticTexts["Stepped value: 50%"].exists)
+            #else
+            setSlider(slider, to: 1)
+            XCTAssertTrue(app.staticTexts["Stepped value: 100%"].exists)
+            setSlider(slider, to: 0)
+            XCTAssertTrue(app.staticTexts["Stepped value: 0%"].exists)
+            #endif
         }
         flip(app.switches["Right-to-left sliders"])
+        #if os(visionOS)
+        app.buttons["Reset stepped value"].tap()
+        slider.tap()
+        XCTAssertTrue(app.staticTexts["Stepped value: 50%"].exists)
+        #else
         slider.coordinate(withNormalizedOffset: CGVector(dx: 0.05, dy: 0.5)).tap()
         XCTAssertTrue(app.staticTexts["Stepped value: 100%"].exists)
+        #endif
         XCTAssertTrue(app.staticTexts["Slider idle"].exists)
         flip(app.switches["Enable sliders"])
         XCTAssertFalse(slider.isEnabled)
+    }
+    func testSectionIndexScrubbingNavigatesAndRespectsRTLAndDisabledState() throws {
+        let app = XCUIApplication(); app.launch()
+        let link = app.buttons["Section index example"]
+        reveal(link, in: app); link.tap()
+        let index = app.sliders["section-index"]
+        XCTAssertTrue(index.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(index.frame.width, 44)
+        #if os(visionOS)
+        index.tap()
+        XCTAssertTrue(app.staticTexts["Selected section: N"].waitForExistence(timeout: 5))
+        app.buttons["Go to last section"].tap()
+        XCTAssertEqual(index.value as? String, "#")
+        #else
+        index.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.98)).tap()
+        #endif
+        XCTAssertTrue(app.staticTexts["Selected section: #"].exists)
+        XCTAssertTrue(app.staticTexts["Section #"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Section #"].isHittable)
+        let originalX = index.frame.minX
+        flip(app.switches["Right-to-left section index"])
+        XCTAssertLessThan(index.frame.minX, originalX)
+        #if os(visionOS)
+        index.tap()
+        XCTAssertTrue(app.staticTexts["Selected section: N"].exists)
+        #else
+        index.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.02)).tap()
+        XCTAssertTrue(app.staticTexts["Selected section: A"].exists)
+        #endif
+        flip(app.switches["Enable section index"])
+        XCTAssertFalse(index.isEnabled)
     }
     /// A native switch's label can span its row while the knob remains trailing.
     /// Validate state so a label-only tap cannot masquerade as an RTL/disabled check.
     private func flip(_ toggle: XCUIElement) {
         let before = toggle.value as? String
-        toggle.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5)).tap()
+        let widget = toggle.descendants(matching: .other).firstMatch
+        if widget.exists && widget.frame.width <= 100 {
+            widget.tap()
+        } else {
+            toggle.coordinate(withNormalizedOffset: CGVector(dx: 1, dy: 0.5)).withOffset(CGVector(dx: -min(32, toggle.frame.width / 2), dy: 0)).tap()
+        }
         XCTAssertNotEqual(toggle.value as? String, before, "The sample switch must change state")
+    }
+    private func setSlider(_ slider: XCUIElement, to value: CGFloat) {
+        slider.coordinate(withNormalizedOffset: CGVector(dx: value == 0 ? 0.05 : 0.95, dy: 0.5)).tap()
     }
     private func reveal(_ element: XCUIElement, in app: XCUIApplication) {
         for _ in 0..<8 {

@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-09",
+  "scope": "Partial simulator interaction evidence; full per-entry verification remains pending.",
+  "checks": [
+    {
+      "platform": "visionOS 27.2 / Vision Pro simulator",
+      "result": "passed",
+      "tests": [
+        "testSectionIndexScrubbingNavigatesAndRespectsRTLAndDisabledState",
+        "testSliderSizesStopsDisabledStateAndRTL"
+      ],
+      "evidence": "coverage/evidence/2026-11-09/vision-index-slider-tests.json",
+      "exercises": [
+        "Index center activation navigates to N, external binding navigates to #, RTL moves index to logical trailing side, disabled semantics",
+        "Four slider sizes retain 44-point interaction height; center activation updates application state to 50%; verified RTL and disabled switch state; editing returns idle"
+      ],
+      "limits": [
+        "Center taps do not validate off-center RTL slider direction or continuous scrubbing.",
+        "XCTest cannot obtain thumb geometry for adjust(toNormalizedSliderPosition:) on virtual accessibility representations in visionOS; that attempt failed and is not counted.",
+        "Gaze, pinch comfort, keyboard, VoiceOver and Dynamic Type remain pending."
+      ]
+    },
+    {
+      "platform": "visionOS 27.2 / Vision Pro simulator",
+      "result": "passed",
+      "test": "testPagingUsesApplicationStateAndSupportsRTL",
+      "evidence": "coverage/evidence/2026-11-09/vision-paging-retry-tests.json",
+      "note": "Only the paging test passed in this report. The index/slider adjustment failures in that run were superseded by the separate passing interaction run; they are not counted as passes."
+    },
+    {
+      "platform": "iOS 27.2 / iPhone 18 Pro simulator",
+      "result": "passed",
+      "test": "testSectionIndexScrubbingNavigatesAndRespectsRTLAndDisabledState",
+      "evidence": "coverage/evidence/2026-11-09/iphone-index-tests.json",
+      "exercises": [
+        "Top/bottom pointer activation navigates to A/#",
+        "Scroll callback reveals destination header",
+        "Confirmed RTL switch moves index to leading side",
+        "Disabled slider accessibility state"
+      ],
+      "note": "iPhone compilation initially caught visionOS-only hover methods. Those are now guarded with os(visionOS); pointer hover uses onHover on other targets."
+    },
+    {
+      "platform": "iPadOS27.2 / iPadPro13M5 simulator",
+      "result": "passed",
+      "tests": [
+        "testPagingUsesApplicationStateAndSupportsRTL",
+        "testSectionIndexScrubbingNavigatesAndRespectsRTLAndDisabledState",
+        "testSliderSizesStopsDisabledStateAndRTL"
+      ],
+      "evidence": "coverage/evidence/2026-11-09/ipad-index-paging-sliders-tests.json",
+      "details": "All three selected tests passed. This adds iPad pointer endpoint activation, app-owned navigation/selection, confirmed RTL switch changes, disabled semantics and four slider sizes to the earlier iPhone and visionOS checks. Full per-entry fidelity/accessibility review remains pending."
+    },
+    {
+      "platform": "macOS / Swift6.4 value tests",
+      "result": "passed",
+      "testCount": 13,
+      "evidence": "coverage/evidence/2026-11-09/apple-package-tests.txt",
+      "details": "Includes section-index geometry validation and earlier slider, paging, colour, calendar and semantic-token value checks."
+    }
+  ],
+  "sourceHashes": {
+    "native/apple/Sources/WardoDesignSystem/IndexBar.swift": "e56a4102d7f0f234b1ab143c627f402d296b2a2f9188fbd07f8e5fdb7d1bca90",
+    "native/apple/Sources/WardoDesignSystem/PageControl.swift": "e32bf1d13e0135d13aff389f3dc0eaa39097e492ada843e8c28b89fa23baa66f",
+    "native/apple/Sources/WardoDesignSystem/VisionSlider.swift": "fdccaddbb119781eef08a1a3b4ad66ef3cf58026ea1f2285b556fd55085fd416",
+    "native/apple/Sample/WardoCatalogueUITests/CatalogueUITests.swift": "38374264ceaf278a8f3c556af039941482da20b39ce1d3213fe1a477c2d52100"
+  }
+}

@@ -22,5 +22,11 @@
     "path": "coverage/previews/native/android-xr.png",
     "alt": "Wardo spatial panel and anchored toolbar running in the Android XR emulator",
     "caption": "Android XR sample \u2014 panel and toolbar"
+  },
+  {
+    "platform": "Android (XR sample)",
+    "path": "coverage/previews/native/android-toolbar-artwork-scene.png",
+    "alt": "All eight exact Android toolbar glyphs running in the XR sample; their parent controls are reviewed separately.",
+    "caption": "Android toolbar glyphs \u2014 rendered XR sample"
   }
 ]

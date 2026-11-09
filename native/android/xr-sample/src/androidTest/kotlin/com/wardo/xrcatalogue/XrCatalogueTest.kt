@@ -7,6 +7,10 @@ import android.os.ParcelFileDescriptor
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.v2.createEmptyComposeRule
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.SemanticsProperties
+import android.graphics.Bitmap
+import java.io.File
 import androidx.test.platform.app.InstrumentationRegistry
 import org.junit.*
 import org.junit.Assert.*
@@ -58,5 +62,66 @@ class XrCatalogueTest {
         compose.onNodeWithText("Toggle centered rail").performClick()
         compose.onNodeWithText("Events").performClick().assertIsSelected()
         compose.onNodeWithText("Selected destination: 0").assertExists()
+    }
+    @Test fun androidNavigationItemsExposeIndependentSelectionAndDisabledState() {
+        compose.onNodeWithText("Android navigation item example").performClick()
+        val role = SemanticsMatcher.expectValue(SemanticsProperties.Role, Role.Tab)
+        val rail = compose.onNode(hasText("Rail destination") and role)
+        val bar = compose.onNode(hasText("Bar destination") and role)
+        val text = compose.onNode(hasText("Text destination") and role)
+        rail.assertWidthIsEqualTo(240.dp).assertHeightIsAtLeast(48.dp).assertIsNotSelected().performClick().assertIsSelected()
+        compose.onNodeWithText("Selected item: rail").assertExists()
+        compose.onNodeWithContentDescription("3 unread messages").assertExists()
+        bar.assertWidthIsEqualTo(88.dp).assertHeightIsAtLeast(64.dp).performClick().assertIsSelected()
+        rail.assertIsNotSelected()
+        text.assertWidthIsEqualTo(148.dp).assertHeightIsAtLeast(48.dp).performClick().assertIsSelected()
+        val originalRailX = rail.getUnclippedBoundsInRoot().left
+        compose.onNodeWithText("Toggle item RTL").performClick()
+        assertTrue("Sibling order follows the RTL environment", rail.getUnclippedBoundsInRoot().left > originalRailX)
+        rail.performClick().assertIsSelected()
+        compose.onNodeWithText("Selected item: rail").assertExists()
+        compose.onNodeWithText("Toggle items enabled").performClick()
+        rail.assertIsNotEnabled()
+        bar.assertIsNotEnabled()
+        text.assertIsNotEnabled()
+        bar.performClick()
+        compose.onNodeWithText("Selected item: rail").assertExists()
+    }
+    @Test fun nativeShortNavigationBarSupportsDestinationCountsAndRTL() {
+        compose.onNodeWithText("Android navigation item example").performClick()
+        val role = SemanticsMatcher.expectValue(SemanticsProperties.Role, Role.Tab)
+        for (count in 3..5) {
+            compose.onNodeWithText("$count bar destinations").performClick()
+            val last = compose.onNode(hasText("Native destination ${count - 1}") and role)
+            last.assertHeightIsAtLeast(64.dp).assertWidthIsAtLeast(48.dp)
+            last.assertWidthIsEqualTo((412f / count).dp)
+            last.performClick().assertIsSelected()
+            compose.onNodeWithText("Native bar selection: ${count - 1}").assertExists()
+            compose.onNodeWithText("Native destination $count").assertDoesNotExist()
+            saveBarPreview("android-short-bar-$count-ltr.png")
+        }
+        val first = compose.onNode(hasText("Native destination 0") and role)
+        val originalX = first.getUnclippedBoundsInRoot().left
+        compose.onNodeWithText("Toggle item RTL").performClick()
+        assertTrue("Native bar follows RTL order", first.getUnclippedBoundsInRoot().left > originalX)
+        first.performClick().assertIsSelected()
+        compose.onNodeWithText("Native bar selection: 0").assertExists()
+        saveBarPreview("android-short-bar-5-rtl.png")
+    }
+    private fun saveBarPreview(name: String) {
+        // XR panels are rendered by a separate compositor; PixelCopy of their
+        // 2D host window returns an empty frame. Capture the device scene instead.
+        val image = checkNotNull(instrumentation.uiAutomation.takeScreenshot())
+        File(instrumentation.targetContext.filesDir, name).outputStream().use { output ->
+            assertTrue("Native preview must encode", image.compress(Bitmap.CompressFormat.PNG, 100, output))
+        }
+    }
+    @Test fun exactToolbarArtworkResourcesLoadAndActionsHaveAccessibleNames() {
+        compose.onNodeWithText("Android toolbar artwork example").performClick()
+        for (name in listOf("Stars", "StarsFilled", "Share", "Comment", "Download", "Edit", "MoreVert", "Image")) {
+            compose.onNodeWithContentDescription("Activate $name").assertWidthIsAtLeast(48.dp).assertHeightIsAtLeast(48.dp).performClick()
+            compose.onNodeWithText("Artwork activated: $name").assertExists()
+        }
+        saveBarPreview("android-toolbar-artwork-scene.png")
     }
 }

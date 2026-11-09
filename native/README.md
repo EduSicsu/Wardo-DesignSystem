@@ -46,6 +46,12 @@ Run `npm run tokens` from the repository root to regenerate web, Swift and Kotli
 
 Android's expanded rail uses Material's `WideNavigationRail`, separately from the compact `WardoNavigationRail`. `WardoExpandedNavigationRail` exposes docked/floating surfaces, top/center alignment and application-owned menu, FAB and content slots; `WardoExpandedRailItem` retains native selection and interaction semantics. The XR sample includes a rail exercise inside its spatial panel. Its numbered icon slots exercise caller content; they are not a Figma artwork preview.
 
+`WardoNavigationItem` implements Android's horizontal, vertical and text-only Wardo atoms. `WardoRailItem` and `WardoNavigationBarItem` are individual destinations, separate from whole navigation containers. Selection, labels, icons, badges and callbacks belong to the application. Put sibling custom items in a `selectableGroup`; inherit `LocalLayoutDirection` for RTL. The compact `WardoNavigationBar` uses Material's native `ShortNavigationBar`, with 64 dp minimum content height, shared destination widths and native system insets. Labels may increase its height when text wraps or scales.
+
+`WardoToolbarArtwork(WardoToolbarGlyph.Share)` renders the exact bundled source geometry at 24 dp and inherits native content tint. A null description is decorative; the consuming action supplies its accessible label. All eight SVG sources, converted Android vector resources and hashes are recorded in `coverage/native-toolbar-assets.json`. Static glyph verification does not validate every parent toolbar surface, focus state or toggle configuration. The XR sample contains both the exact artwork and separately labelled 2D navigation compatibility exercises.
+
+`WardoIndexBar` is a compact section scrubber with an optional application-owned selection binding and navigation callback. Its source entry belongs to visionOS. The package and sample also exercise its touch behavior on iPhone and iPad. Gaze interaction, VoiceOver, localized indices and exhaustive Dynamic Type review remain explicit gaps.
+
 `npm run coverage:lookup -- NODE_ID --platform visionOS` finds source, example, review gaps and verification state without requiring an active native framework in Figma. Platform alternatives appear in `/coverage`; native samples run separately from the web gallery.
 
 ## Figma and licenses

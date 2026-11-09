@@ -1,0 +1,91 @@
+{
+  "devices" : [
+    {
+      "architecture" : "arm64",
+      "deviceId" : "1EF32A12-924C-4768-8CE3-79427257B728",
+      "deviceName" : "Apple Vision Pro",
+      "modelName" : "Apple Vision Pro",
+      "osBuildNumber" : "24N120",
+      "osVersion" : "27.2",
+      "platform" : "visionOS Simulator"
+    }
+  ],
+  "testNodes" : [
+    {
+      "children" : [
+        {
+          "children" : [
+            {
+              "children" : [
+                {
+                  "duration" : "31s",
+                  "durationInSeconds" : 31.522499918937683,
+                  "name" : "testPagingUsesApplicationStateAndSupportsRTL()",
+                  "nodeIdentifier" : "CatalogueUITests/testPagingUsesApplicationStateAndSupportsRTL()",
+                  "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests/testPagingUsesApplicationStateAndSupportsRTL",
+                  "nodeType" : "Test Case",
+                  "result" : "Passed"
+                },
+                {
+                  "children" : [
+                    {
+                      "name" : "Failed to synthesize event: Unable to get expected attributes for slider, found {\n    \"XC_kAXXCAttributeMaxScrubberPosition\" =     {\n        X = 0;\n        Y = 0;\n    };\n    \"XC_kAXXCAttributeMinScrubberPosition\" =     {\n        X = 0;\n        Y = 0;\n    };\n}.",
+                      "nodeType" : "Failure Message",
+                      "sourceLocation" : {
+                        "filePath" : "/tmp/wardo-web-validation/native/apple/Sample/WardoCatalogueUITests/CatalogueUITests.swift",
+                        "lineNumber" : 137
+                      }
+                    }
+                  ],
+                  "duration" : "35s",
+                  "durationInSeconds" : 35.701547026634216,
+                  "name" : "testSectionIndexScrubbingNavigatesAndRespectsRTLAndDisabledState()",
+                  "nodeIdentifier" : "CatalogueUITests/testSectionIndexScrubbingNavigatesAndRespectsRTLAndDisabledState()",
+                  "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests/testSectionIndexScrubbingNavigatesAndRespectsRTLAndDisabledState",
+                  "nodeType" : "Test Case",
+                  "result" : "Failed"
+                },
+                {
+                  "children" : [
+                    {
+                      "name" : "Failed to synthesize event: Unable to get expected attributes for slider, found {\n    \"XC_kAXXCAttributeMaxScrubberPosition\" =     {\n        X = 0;\n        Y = 0;\n    };\n    \"XC_kAXXCAttributeMinScrubberPosition\" =     {\n        X = 0;\n        Y = 0;\n    };\n}.",
+                      "nodeType" : "Failure Message",
+                      "sourceLocation" : {
+                        "filePath" : "/tmp/wardo-web-validation/native/apple/Sample/WardoCatalogueUITests/CatalogueUITests.swift",
+                        "lineNumber" : 111
+                      }
+                    }
+                  ],
+                  "duration" : "1m 39s",
+                  "durationInSeconds" : 99.54926300048828,
+                  "name" : "testSliderSizesStopsDisabledStateAndRTL()",
+                  "nodeIdentifier" : "CatalogueUITests/testSliderSizesStopsDisabledStateAndRTL()",
+                  "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests/testSliderSizesStopsDisabledStateAndRTL",
+                  "nodeType" : "Test Case",
+                  "result" : "Failed"
+                }
+              ],
+              "name" : "CatalogueUITests",
+              "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests",
+              "nodeType" : "Test Suite",
+              "result" : "Failed"
+            }
+          ],
+          "name" : "WardoCatalogueUITests",
+          "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests",
+          "nodeType" : "UI test bundle",
+          "result" : "Failed"
+        }
+      ],
+      "name" : "WardoCatalogue",
+      "nodeType" : "Test Plan",
+      "result" : "Failed"
+    }
+  ],
+  "testPlanConfigurations" : [
+    {
+      "configurationId" : "1",
+      "configurationName" : "Test Scheme Action"
+    }
+  ]
+}
