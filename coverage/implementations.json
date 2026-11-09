@@ -7455,21 +7455,18 @@
   },
   "1159:29": {
     "implementation": {
-      "status": "source-available",
+      "status": "implemented",
       "framework": "React",
       "platforms": [
         "web"
       ],
       "source": "src/components/Icon.tsx",
       "symbol": "Icon",
-      "example": "<Icon name=\"events\" width={24} height={24} />",
-      "gaps": [
-        "Review source geometry and semantic tint in the consuming navigation control."
-      ]
+      "example": "<Icon name=\"events\" width={24} height={24} />"
     },
     "alternatives": [
       {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "SwiftUI",
         "platforms": [
           "iOS",
@@ -7478,13 +7475,23 @@
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
         "symbol": "wardoNavigationImage",
-        "example": "wardoNavigationImage(.events).resizable().scaledToFit()",
-        "gaps": [
-          "Verify asset rendering across the native sample targets and semantic parent roles."
-        ]
+        "example": "wardoNavigationImage(.events).resizable().scaledToFit().frame(width: 24, height: 24)",
+        "validation": {
+          "status": "verified",
+          "evidence": [
+            "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+            "coverage/navigation-artwork-assets.json",
+            "coverage/design-context/navigation-artwork-properties.json"
+          ]
+        },
+        "properties": {
+          "status": "mapped",
+          "definitions": {},
+          "mappings": []
+        }
       },
       {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android",
@@ -7493,9 +7500,19 @@
         "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
         "symbol": "WardoNavigationArtwork",
         "example": "WardoNavigationArtwork(WardoNavigationGlyph.Events)",
-        "gaps": [
-          "Compile and exercise the exact vector resources in the native sample."
-        ]
+        "validation": {
+          "status": "verified",
+          "evidence": [
+            "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+            "coverage/navigation-artwork-assets.json",
+            "coverage/design-context/navigation-artwork-properties.json"
+          ]
+        },
+        "properties": {
+          "status": "mapped",
+          "definitions": {},
+          "mappings": []
+        }
       }
     ],
     "properties": {
@@ -7504,30 +7521,45 @@
       "mappings": []
     },
     "validation": {
-      "status": "pending",
+      "status": "verified",
       "evidence": [
+        "coverage/evidence/2026-11-09/navigation-artwork-review.json",
         "coverage/navigation-artwork-assets.json",
         "coverage/design-context/navigation-artwork-properties.json"
       ]
-    }
+    },
+    "previews": [
+      {
+        "platform": "web",
+        "path": "coverage/previews/web/navigation-item-variants.png",
+        "alt": "Four exact navigation glyphs above the web destination matrix"
+      },
+      {
+        "platform": "iOS",
+        "path": "coverage/previews/native/iphone-navigation-items.png",
+        "alt": "Four original navigation SVGs rendered as native Apple template assets"
+      },
+      {
+        "platform": "Android XR",
+        "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+        "alt": "Four exact navigation glyphs in the native 2D compatibility panel"
+      }
+    ]
   },
   "1159:34": {
     "implementation": {
-      "status": "source-available",
+      "status": "implemented",
       "framework": "React",
       "platforms": [
         "web"
       ],
       "source": "src/components/Icon.tsx",
       "symbol": "Icon",
-      "example": "<Icon name=\"saved\" width={24} height={24} />",
-      "gaps": [
-        "Review source geometry and semantic tint in the consuming navigation control."
-      ]
+      "example": "<Icon name=\"saved\" width={24} height={24} />"
     },
     "alternatives": [
       {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "SwiftUI",
         "platforms": [
           "iOS",
@@ -7536,13 +7568,23 @@
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
         "symbol": "wardoNavigationImage",
-        "example": "wardoNavigationImage(.saved).resizable().scaledToFit()",
-        "gaps": [
-          "Verify asset rendering across the native sample targets and semantic parent roles."
-        ]
+        "example": "wardoNavigationImage(.saved).resizable().scaledToFit().frame(width: 24, height: 24)",
+        "validation": {
+          "status": "verified",
+          "evidence": [
+            "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+            "coverage/navigation-artwork-assets.json",
+            "coverage/design-context/navigation-artwork-properties.json"
+          ]
+        },
+        "properties": {
+          "status": "mapped",
+          "definitions": {},
+          "mappings": []
+        }
       },
       {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android",
@@ -7551,9 +7593,19 @@
         "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
         "symbol": "WardoNavigationArtwork",
         "example": "WardoNavigationArtwork(WardoNavigationGlyph.Saved)",
-        "gaps": [
-          "Compile and exercise the exact vector resources in the native sample."
-        ]
+        "validation": {
+          "status": "verified",
+          "evidence": [
+            "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+            "coverage/navigation-artwork-assets.json",
+            "coverage/design-context/navigation-artwork-properties.json"
+          ]
+        },
+        "properties": {
+          "status": "mapped",
+          "definitions": {},
+          "mappings": []
+        }
       }
     ],
     "properties": {
@@ -7562,30 +7614,45 @@
       "mappings": []
     },
     "validation": {
-      "status": "pending",
+      "status": "verified",
       "evidence": [
+        "coverage/evidence/2026-11-09/navigation-artwork-review.json",
         "coverage/navigation-artwork-assets.json",
         "coverage/design-context/navigation-artwork-properties.json"
       ]
-    }
+    },
+    "previews": [
+      {
+        "platform": "web",
+        "path": "coverage/previews/web/navigation-item-variants.png",
+        "alt": "Four exact navigation glyphs above the web destination matrix"
+      },
+      {
+        "platform": "iOS",
+        "path": "coverage/previews/native/iphone-navigation-items.png",
+        "alt": "Four original navigation SVGs rendered as native Apple template assets"
+      },
+      {
+        "platform": "Android XR",
+        "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+        "alt": "Four exact navigation glyphs in the native 2D compatibility panel"
+      }
+    ]
   },
   "1159:39": {
     "implementation": {
-      "status": "source-available",
+      "status": "implemented",
       "framework": "React",
       "platforms": [
         "web"
       ],
       "source": "src/components/Icon.tsx",
       "symbol": "Icon",
-      "example": "<Icon name=\"notifications\" width={24} height={24} />",
-      "gaps": [
-        "Review source geometry and semantic tint in the consuming navigation control."
-      ]
+      "example": "<Icon name=\"notifications\" width={24} height={24} />"
     },
     "alternatives": [
       {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "SwiftUI",
         "platforms": [
           "iOS",
@@ -7594,13 +7661,23 @@
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
         "symbol": "wardoNavigationImage",
-        "example": "wardoNavigationImage(.notifications).resizable().scaledToFit()",
-        "gaps": [
-          "Verify asset rendering across the native sample targets and semantic parent roles."
-        ]
+        "example": "wardoNavigationImage(.notifications).resizable().scaledToFit().frame(width: 24, height: 24)",
+        "validation": {
+          "status": "verified",
+          "evidence": [
+            "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+            "coverage/navigation-artwork-assets.json",
+            "coverage/design-context/navigation-artwork-properties.json"
+          ]
+        },
+        "properties": {
+          "status": "mapped",
+          "definitions": {},
+          "mappings": []
+        }
       },
       {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android",
@@ -7609,9 +7686,19 @@
         "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
         "symbol": "WardoNavigationArtwork",
         "example": "WardoNavigationArtwork(WardoNavigationGlyph.Notifications)",
-        "gaps": [
-          "Compile and exercise the exact vector resources in the native sample."
-        ]
+        "validation": {
+          "status": "verified",
+          "evidence": [
+            "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+            "coverage/navigation-artwork-assets.json",
+            "coverage/design-context/navigation-artwork-properties.json"
+          ]
+        },
+        "properties": {
+          "status": "mapped",
+          "definitions": {},
+          "mappings": []
+        }
       }
     ],
     "properties": {
@@ -7620,30 +7707,45 @@
       "mappings": []
     },
     "validation": {
-      "status": "pending",
+      "status": "verified",
       "evidence": [
+        "coverage/evidence/2026-11-09/navigation-artwork-review.json",
         "coverage/navigation-artwork-assets.json",
         "coverage/design-context/navigation-artwork-properties.json"
       ]
-    }
+    },
+    "previews": [
+      {
+        "platform": "web",
+        "path": "coverage/previews/web/navigation-item-variants.png",
+        "alt": "Four exact navigation glyphs above the web destination matrix"
+      },
+      {
+        "platform": "iOS",
+        "path": "coverage/previews/native/iphone-navigation-items.png",
+        "alt": "Four original navigation SVGs rendered as native Apple template assets"
+      },
+      {
+        "platform": "Android XR",
+        "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+        "alt": "Four exact navigation glyphs in the native 2D compatibility panel"
+      }
+    ]
   },
   "1159:44": {
     "implementation": {
-      "status": "source-available",
+      "status": "implemented",
       "framework": "React",
       "platforms": [
         "web"
       ],
       "source": "src/components/Icon.tsx",
       "symbol": "Icon",
-      "example": "<Icon name=\"profile\" width={24} height={24} />",
-      "gaps": [
-        "Review source geometry and semantic tint in the consuming navigation control."
-      ]
+      "example": "<Icon name=\"profile\" width={24} height={24} />"
     },
     "alternatives": [
       {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "SwiftUI",
         "platforms": [
           "iOS",
@@ -7652,13 +7754,23 @@
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
         "symbol": "wardoNavigationImage",
-        "example": "wardoNavigationImage(.profile).resizable().scaledToFit()",
-        "gaps": [
-          "Verify asset rendering across the native sample targets and semantic parent roles."
-        ]
+        "example": "wardoNavigationImage(.profile).resizable().scaledToFit().frame(width: 24, height: 24)",
+        "validation": {
+          "status": "verified",
+          "evidence": [
+            "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+            "coverage/navigation-artwork-assets.json",
+            "coverage/design-context/navigation-artwork-properties.json"
+          ]
+        },
+        "properties": {
+          "status": "mapped",
+          "definitions": {},
+          "mappings": []
+        }
       },
       {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "Jetpack Compose",
         "platforms": [
           "Android",
@@ -7667,9 +7779,19 @@
         "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
         "symbol": "WardoNavigationArtwork",
         "example": "WardoNavigationArtwork(WardoNavigationGlyph.Profile)",
-        "gaps": [
-          "Compile and exercise the exact vector resources in the native sample."
-        ]
+        "validation": {
+          "status": "verified",
+          "evidence": [
+            "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+            "coverage/navigation-artwork-assets.json",
+            "coverage/design-context/navigation-artwork-properties.json"
+          ]
+        },
+        "properties": {
+          "status": "mapped",
+          "definitions": {},
+          "mappings": []
+        }
       }
     ],
     "properties": {
@@ -7678,10 +7800,281 @@
       "mappings": []
     },
     "validation": {
-      "status": "pending",
+      "status": "verified",
       "evidence": [
+        "coverage/evidence/2026-11-09/navigation-artwork-review.json",
         "coverage/navigation-artwork-assets.json",
         "coverage/design-context/navigation-artwork-properties.json"
+      ]
+    },
+    "previews": [
+      {
+        "platform": "web",
+        "path": "coverage/previews/web/navigation-item-variants.png",
+        "alt": "Four exact navigation glyphs above the web destination matrix"
+      },
+      {
+        "platform": "iOS",
+        "path": "coverage/previews/native/iphone-navigation-items.png",
+        "alt": "Four original navigation SVGs rendered as native Apple template assets"
+      },
+      {
+        "platform": "Android XR",
+        "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+        "alt": "Four exact navigation glyphs in the native 2D compatibility panel"
+      }
+    ]
+  },
+  "2773:45047": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
+      "symbol": "NativeAlertModifier",
+      "example": ".modifier(NativeAlertModifier(\"Edit event\", isPresented: $presented, message: description) { TextField(\"Event name\", text: $name); Button(\"Save\", action: save); Button(\"Cancel\", role: .cancel) {} })",
+      "gaps": [
+        "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
+        "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Show Fields#6214:0": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Show Field 2#6214:3": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Stacked",
+          "variantOptions": [
+            "Side-by-Side",
+            "Stacked"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Show Fields#6214:0",
+          "target": "actions ViewBuilder: conditional TextField/SecureField",
+          "notes": "The application owns field bindings, validation and localized labels."
+        },
+        {
+          "property": "Show Field 2#6214:3",
+          "target": "actions ViewBuilder: optional second field",
+          "notes": "Only add the second field when the fields group is visible."
+        },
+        {
+          "property": "Type",
+          "target": "Native action count/roles in actions builder",
+          "notes": "Side-by-Side and Stacked are system layout outcomes. Supply two or three native actions; the OS adapts their arrangement to labels, text size and device. Never force a fixed visual layout."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/design-context/native-presentation-properties.json",
+        "coverage/design-context/native-presentations.json",
+        "coverage/evidence/2026-11-09/native-presentations-partial.json"
+      ]
+    }
+  },
+  "2773:44195": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
+      "symbol": "NativeActivityView",
+      "example": "Button(\"Share\") { presented = true }.popover(isPresented: $presented, attachmentAnchor: .rect(.bounds), arrowEdge: .bottom) { NativeActivityView(items: items, completion: onComplete) }",
+      "gaps": [
+        "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
+        "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Dark",
+            "Light"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Mode",
+          "target": "preferredColorScheme / inherited system appearance",
+          "notes": "UIKit renders its native iPad popover, dynamic contacts/actions and system materials. Figma sample avatars, app icons and destinations are system reference data, not fixed application assets."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/design-context/native-presentation-properties.json",
+        "coverage/design-context/native-presentations.json",
+        "coverage/evidence/2026-11-09/native-presentations-partial.json"
+      ]
+    }
+  },
+  "2773:44204": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
+      "symbol": "NativeActivityView",
+      "example": "Button(\"Share\") { presented = true }.popover(isPresented: $presented) { NativeActivityView(items: items, completion: onComplete) }",
+      "gaps": [
+        "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
+        "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Dark",
+            "Light"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Mode",
+          "target": "preferredColorScheme / inherited system appearance",
+          "notes": "The anchored popover adapts to the native compact iPhone share sheet. Actual activities depend on supplied items, installed apps and user configuration."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/design-context/native-presentation-properties.json",
+        "coverage/design-context/native-presentations.json",
+        "coverage/evidence/2026-11-09/native-presentations-partial.json"
+      ]
+    }
+  },
+  "2773:43627": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
+      "symbol": "NativeContextMenuPreviewModifier",
+      "example": ".modifier(NativeContextMenuPreviewModifier(items: { Button(\"Save\", action: save); Menu(\"Move\") { Button(\"Archive\", action: archive) } }, preview: { eventPreview }))",
+      "gaps": [
+        "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
+        "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Alignment": {
+          "type": "VARIANT",
+          "defaultValue": "Vertical",
+          "variantOptions": [
+            "Vertical",
+            "Horizontal (iPad only)"
+          ]
+        },
+        "Side": {
+          "type": "VARIANT",
+          "defaultValue": "Leading",
+          "variantOptions": [
+            "Trailing",
+            "Leading"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Alignment",
+          "target": "native contextMenu(menuItems:preview:) adaptive layout",
+          "notes": "The OS chooses a vertical or iPad side-by-side presentation from the source anchor and available space. This specimen is not an application-selectable layout setting."
+        },
+        {
+          "property": "Side",
+          "target": "native source-view anchor and available space",
+          "notes": "Leading/trailing placement belongs to the native context-menu presenter and follows source position and layout direction; do not hardcode offsets."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/design-context/native-presentation-properties.json",
+        "coverage/design-context/native-presentations.json",
+        "coverage/evidence/2026-11-09/native-presentations-partial.json"
+      ]
+    }
+  },
+  "2773:43481": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
+      "symbol": "NativePageSheetModifier",
+      "example": ".modifier(NativePageSheetModifier(isPresented: $presented, onDismiss: onDismiss) { NavigationStack { sheetContent.toolbar { ToolbarItem(placement: .cancellationAction) { Button(\"Close\", systemImage: \"xmark\") { dismiss() } } } } })",
+      "gaps": [
+        "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
+        "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Stacked": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Stacked",
+          "target": "Nested NativePageSheetModifier on presented content",
+          "notes": "False presents the first large page sheet. True presents another sheet from the current sheet, allowing the system to dim and inset the underlying sheet. This is distinct from a fullScreenCover."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/design-context/native-presentation-properties.json",
+        "coverage/design-context/native-presentations.json",
+        "coverage/evidence/2026-11-09/native-presentations-partial.json"
       ]
     }
   }

@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-09",
+  "scope": "Partial execution evidence for five native Apple presentation records. No record is promoted to verified by this report.",
+  "checks": [
+    {
+      "result": "passed",
+      "kind": "iPhone sample build",
+      "log": "/tmp/wardo-native-presentation-build.log"
+    },
+    {
+      "result": "passed",
+      "test": "testNativeActivityPresentsAndCancelsWithoutSending",
+      "seconds": 26.163,
+      "resultBundle": "/tmp/wardo-iphone-native-presentations.xcresult"
+    },
+    {
+      "result": "passed",
+      "test": "testNativeContextMenuUsesPreviewDisabledActionsAndSubmenus",
+      "seconds": 44.007,
+      "resultBundle": "/tmp/wardo-iphone-native-presentations.xcresult"
+    },
+    {
+      "result": "passed",
+      "test": "testNativePageSheetStacksAndRestoresItsPresenter",
+      "seconds": 34.287,
+      "resultBundle": "/tmp/wardo-iphone-native-presentations-retry.xcresult"
+    },
+    {
+      "result": "failed",
+      "test": "testNativeAlertFieldsRolesAndApplicationCallbacks",
+      "details": "Initial fixture could scroll a toggle beneath the navigation bar. Retry corrected this; its Save activation left the alert visible and XCTest\u2019s default interruption handler cancelled it during the next scroll. Added explicit dismissal checking and a second activation if field editing consumes the first. That fixture correction has not been rerun."
+    }
+  ],
+  "pending": [
+    "Rerun alert fixture and investigate further if Save does not dismiss it.",
+    "iPad runtime checks, native dark/RTL/text-scaling checks and final accessibility/visual review.",
+    "Portable native result and screenshot export: automatic approval review could not complete because an account usage limit was reached."
+  ],
+  "sourceHashes": {
+    "native/apple/Sources/WardoDesignSystem/NativePresentation.swift": "225f775e1b11c6700eb2fb27e540304cca32ab81786b7c7705c65507fcb5d0e2",
+    "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift": "000136f2ee52cdc154d4e2baf9d436c773ae235f16675107622729510abaaef2"
+  }
+}

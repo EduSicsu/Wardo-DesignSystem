@@ -63,3 +63,9 @@ The four shared navigation glyphs retain their exact SVG sources in `coverage/as
 React remains active in Figma. The 199 saved links are source connections, not verified implementation counts. Compatible native connection artifacts remain under `figma` for later activation.
 
 Bundled fonts retain their SIL Open Font Licenses in the package resources. No SDK or platform license is accepted by build scripts.
+
+## Native presentation examples
+
+The Apple sample’s **Native presentation examples** screen exercises system alerts with zero, one or two application-bound fields; optional destructive actions; context-menu previews, disabled actions and submenus; and native sharing. iPhone and iPad use an anchored `.popover` for `NativeActivityView`, allowing compact-width adaptation to the native share sheet. The OS supplies contacts, destinations and app icons. `applicationActivities`, exclusions and the completion callback are caller-owned; items are immutable for a single presentation.
+
+`NativePageSheetModifier` maps the iPhone **Sheet - Full Screen** specimen to an actual large page sheet with a system grabber. Present a second sheet from its content to obtain the stacked variant. Include a `NavigationStack` and semantic cancellation/confirmation toolbar placements in the caller’s content. `NativeFullScreenSheetModifier` remains available for consumers that require a true full-screen cover; it is a different presentation. The alert and context-menu layouts adapt to the device and text size: the Figma side/alignment/stacking specimens do not authorize forcing system geometry.

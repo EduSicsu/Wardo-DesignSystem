@@ -15,7 +15,7 @@ Open the local address shown in the terminal. The preview includes theme switchi
 
 ## Coverage — incomplete
 
-The independent catalogue accounts for all **797 published entries**: 414 active component/composition candidates and 383 archive, documentation or device-reference records. Every active entry now has a source candidate. Per-entry property, variant and validation review remains incomplete; source availability does not mean a verified match. Figma remains at **199 saved source connections** with React active.
+The historical inventory records **797 published entries**. At the owner’s request, 33 archived published masters were removed from Figma on 2026-11-09; the current catalogue has **764 entries**: 414 active component/composition candidates and 350 remaining reference records. Twelve published archive masters remain temporarily because active designs use them; no archived runtime implementations are being built. The exact cleanup and dependencies are recorded in `coverage/figma-archive-cleanup.json`. Every active entry now has a source candidate. Per-entry property, variant and validation review remains incomplete; source availability does not mean a verified match. Figma remains at **199 saved source connections** with React active.
 
 Open `/coverage` for searchable records, platform alternatives, examples and explicit gaps, or run:
 

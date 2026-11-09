@@ -1,8 +1,8 @@
 import {readFile,access} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
-const registry=JSON.parse(await readFile('figma/mappings.json','utf8'));
+const registries=await Promise.all(['figma/mappings.json','figma/expanded-mappings.json','figma/web-internals-mappings.json'].map(async path=>JSON.parse(await readFile(path,'utf8'))));
 const ids=new Set();
-for(const entry of [...registry.components,...registry.icons]){
+for(const entry of registries.flatMap(registry=>[...registry.components,...(registry.icons??[])])){
  if(ids.has(entry.nodeId))throw Error(`Duplicate node: ${entry.nodeId}`);ids.add(entry.nodeId);
  await access(entry.source);
  const source=await readFile(entry.source,'utf8');if(!new RegExp(`export (?:function|const) ${entry.componentName}\\b`).test(source))throw Error(`Missing export: ${entry.componentName}`);

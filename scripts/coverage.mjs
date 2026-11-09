@@ -23,7 +23,12 @@ export async function checkRegistry(registry,{complete=false}={}) {
   catch { failures.push(`${id}: missing source ${binding.source}`); }
  };
  const inventory=JSON.parse(await readFile(new URL(registry.inventorySource,root),'utf8'));
- const expected=new Set(inventory.entries.map(e=>e.id)); const seen=new Set();
+ let removedArchiveIds=[];
+ try {removedArchiveIds=JSON.parse(await readFile(new URL('coverage/figma-archive-cleanup.json',root),'utf8')).deletedIds??[];}
+ catch(error){if(error.code!=='ENOENT')failures.push(`Invalid archive cleanup record: ${error.message}`);}
+ const removed=new Set(removedArchiveIds);
+ for(const id of removed)if(!inventory.entries.some(e=>e.id===id&&(e.category==='archived'||id==='1531:22852')))failures.push(`Archive cleanup excludes a non-archived or unknown node ${id}`);
+ const expected=new Set(inventory.entries.filter(e=>!removed.has(e.id)).map(e=>e.id)); const seen=new Set();
  for(const entry of registry.entries) {
   if(seen.has(entry.nodeId)) failures.push(`Duplicate node ${entry.nodeId}`);
   seen.add(entry.nodeId);
@@ -32,7 +37,22 @@ export async function checkRegistry(registry,{complete=false}={}) {
   if(!active && (!entry.reason||!entry.reference?.url)) failures.push(`${entry.id}: missing reference disposition`);
   if(entry.id!==`wardo-${entry.nodeId.replace(':','-')}`)failures.push(`${entry.id}: unstable component identifier`);
   if(entry.implementation.source) await sourceCheck(entry.implementation,entry.id);
-  for(const binding of entry.alternatives??[]) await sourceCheck(binding,entry.id);
+  for(const binding of entry.alternatives??[]) {
+   const id=`${entry.id} alternative ${binding.framework??binding.symbol}`;
+   await sourceCheck(binding,id);
+   if(binding.status==='implemented'&&(!binding.example||binding.gaps?.length))failures.push(`${id}: implemented without a usage example or with unresolved gaps`);
+   if(binding.properties?.status==='mapped') {
+    const mapped=new Set((binding.properties.mappings??[]).map(mapping=>mapping.property));
+    for(const key of Object.keys(binding.properties.definitions??{}))if(!mapped.has(key))failures.push(`${id}: missing property mapping ${key}`);
+    for(const key of mapped)if(!Object.hasOwn(binding.properties.definitions??{},key))failures.push(`${id}: mapping for unknown property ${key}`);
+   }
+   if(binding.validation?.status==='verified'&&(binding.status!=='implemented'||!binding.example||binding.gaps?.length||binding.properties?.status!=='mapped'||!binding.validation.evidence?.length))failures.push(`${id}: verified without implementation, example, properties, and evidence`);
+   for(const evidence of binding.validation?.evidence??[]) {
+    if(!safePath(evidence)){failures.push(`${id}: evidence must be repository-relative`);continue;}
+    try {const bytes=await readFile(new URL(evidence,root));if(!bytes.length)failures.push(`${id}: empty evidence ${evidence}`);}
+    catch {failures.push(`${id}: missing evidence ${evidence}`);}
+   }
+  }
   if(entry.properties.status==='mapped') {
    const mapped=new Set(entry.properties.mappings.map(mapping=>mapping.property));
    for(const key of Object.keys(entry.properties.definitions))if(!mapped.has(key))failures.push(`${entry.id}: missing property mapping ${key}`);
@@ -43,7 +63,7 @@ export async function checkRegistry(registry,{complete=false}={}) {
    if(binding.status!=='implemented'||binding.validation?.status!=='verified'||binding.properties?.status!=='mapped')failures.push(`${entry.id}: incomplete alternative ${binding.framework??binding.symbol}`);
   }
   if(entry.validation.status==='verified') {
-   if(!entry.validation.evidence.length || !entry.implementation.source || !entry.implementation.example || entry.properties.status!=='mapped') failures.push(`${entry.id}: verified without implementation, example, properties, and evidence`);
+   if(entry.implementation.status!=='implemented' || !entry.validation.evidence.length || !entry.implementation.source || !entry.implementation.example || entry.properties.status!=='mapped') failures.push(`${entry.id}: verified without implementation, example, properties, and evidence`);
    if(entry.implementation.gaps?.length)failures.push(`${entry.id}: verified with unresolved implementation gaps`);
    if(!entry.properties.mappings.length&&Object.keys(entry.properties.definitions).length)failures.push(`${entry.id}: verified with unmapped design properties`);
   }

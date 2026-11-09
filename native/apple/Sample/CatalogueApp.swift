@@ -44,6 +44,9 @@ struct CatalogueView: View {
                     NavigationLink { SectionIndexExample() } label: { Text("Section index example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                     NavigationLink { AppleNavigationItemExample() } label: { Text("Apple navigation item example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                 }
+                Section("Presentations") {
+                    NavigationLink { NativePresentationExample() } label: { Text("Native presentation examples").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
+                }
                 Section("Swipe actions") {
                     WardoSwipeActionRow(leading: [.init(id: "archive", title: "Archive", systemImage: "archivebox", action: { notice = "Archived" })], trailing: [.init(id: "delete", title: "Delete", systemImage: "trash", role: .destructive, tint: .red, action: { notice = "Deleted" })]) { Text("Swipe this row") }
                 }
@@ -188,3 +191,103 @@ struct AppleNavigationItemExample: View {
         }.navigationTitle("Wardo destination items")
     }
 }
+
+struct NativePresentationExample: View {
+    @State private var showAlert = false
+    @State private var fields = true
+    @State private var secondField = true
+    @State private var stackedActions = true
+    @State private var title = ""
+    @State private var detail = ""
+    @State private var status = "Ready"
+    @State private var showSheet = false
+    @State private var showActivity = false
+    @State private var dark = false
+    var body: some View {
+        Form {
+            Section("System alert") {
+                Toggle("Include alert fields", isOn: $fields)
+                Toggle("Include second alert field", isOn: $secondField).disabled(!fields)
+                Toggle("Include destructive alert action", isOn: $stackedActions)
+                Button("Present native alert") { showAlert = true }
+                    .modifier(NativeAlertModifier("Edit event", isPresented: $showAlert, message: "Update this event's details.") {
+                        if fields {
+                            TextField("Event name", text: $title)
+                            if secondField { SecureField("Access code", text: $detail) }
+                        }
+                        Button("Save event") { status = "Saved: \(title)" }
+                            .disabled(fields && title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                        if stackedActions { Button("Delete event", role: .destructive) { status = "Deleted event" } }
+                        Button("Cancel", role: .cancel) { status = "Alert cancelled" }
+                    })
+            }
+            Section("Native context menu") {
+                Text("Event context actions")
+                    .frame(maxWidth: .infinity, minHeight: 60)
+                    .contentShape(Rectangle())
+                    .modifier(NativeContextMenuPreviewModifier(items: {
+                        Button("Save to collection", systemImage: "bookmark") { status = "Added to collection" }
+                        Button("Unavailable action", systemImage: "pencil") {}.disabled(true)
+                        Section("More actions") {
+                            Menu("Move event") {
+                                Button("Move to archive") { status = "Moved to archive" }
+                            }
+                            Button("Remove event", systemImage: "trash", role: .destructive) { status = "Removed event" }
+                        }
+                    }, preview: {
+                        Label("Event preview", systemImage: "calendar").padding().frame(minWidth: 220, minHeight: 140)
+                    }))
+            }
+            #if os(iOS)
+            Section("System sheet and sharing") {
+                Button("Present native page sheet") { showSheet = true }
+                    .modifier(NativePageSheetModifier(isPresented: $showSheet, onDismiss: { status = "Page sheet dismissed" }) {
+                        NativePageSheetExample(level: 1)
+                    })
+                Button("Present native share activity") { showActivity = true }
+                    .popover(isPresented: $showActivity, attachmentAnchor: .rect(.bounds), arrowEdge: .bottom) {
+                        NativeActivityView(items: ["Wardo event"], completion: { activity, completed, _, error in
+                            if let error { status = "Share failed: \(error.localizedDescription)" }
+                            else { status = completed ? "Share completed" : "Share cancelled" }
+                        })
+                    }
+            }
+            #endif
+            Section("Appearance") { Toggle("Dark native presentations", isOn: $dark) }
+            Section("Application callback") { Text(status).accessibilityIdentifier("native-presentation-status") }
+        }
+        .preferredColorScheme(dark ? .dark : .light)
+        .navigationTitle("Native presentations")
+    }
+}
+
+#if os(iOS)
+struct NativePageSheetExample: View {
+    @Environment(\.dismiss) private var dismiss
+    @State private var stacked = false
+    @State private var saved = false
+    let level: Int
+    var body: some View {
+        NavigationStack {
+            Form {
+                Text("Sheet level \(level)").accessibilityIdentifier("native-sheet-level")
+                if level == 1 {
+                    Button("Stack another sheet") { stacked = true }
+                        .modifier(NativePageSheetModifier(isPresented: $stacked) { NativePageSheetExample(level: 2) })
+                }
+                Text(saved ? "Sheet changes saved" : "Sheet content")
+            }
+            .navigationTitle("Event details")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Close sheet \(level)", systemImage: "xmark") { dismiss() }
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Save sheet changes", systemImage: "arrow.up") { saved = true }
+                }
+            }
+        }
+    }
+}
+#endif

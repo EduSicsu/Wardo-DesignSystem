@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-09",
+  "scope": "Only the four published static navigation glyphs: events, saved, notifications and profile. Parent navigation controls, system containers and spatial interaction have independent pending records.",
+  "designContract": "coverage/design-context/navigation-artwork-properties.json",
+  "assetManifest": "coverage/navigation-artwork-assets.json",
+  "checks": [
+    {
+      "result": "passed",
+      "kind": "source contract",
+      "details": "Four 24\u00d724 components with no exposed properties. Original SVG resources are retained unchanged for Apple template asset catalogs and converted by the official Svg2Vector tool for Android. Resource hashes, image-set settings and renderer callsites are checked by coverage:check."
+    },
+    {
+      "result": "passed",
+      "kind": "render review",
+      "details": "All four silhouettes and effective 24-unit geometry reviewed against Figma in the Web fixture, iPhone destination fixture and Android XR compatibility scene. Tint belongs to the parent; these glyphs are decorative by default. OS-specific touch/focus behavior is owned by the consuming control, not the artwork."
+    },
+    {
+      "result": "passed",
+      "kind": "platform builds and execution",
+      "details": "Web library/demo and all four Android packages compile. Apple assets compile for iPhone, iPad and visionOS, and all three destination-item tests execute with the exact resources. Android six-test sample class passes with the artwork fixture.",
+      "evidence": [
+        "coverage/evidence/2026-11-09/iphone-navigation-artwork-tests.json",
+        "coverage/evidence/2026-11-09/ipad-navigation-artwork-tests.json",
+        "coverage/evidence/2026-11-09/vision-navigation-artwork-tests.json",
+        "coverage/evidence/2026-11-09/navigation-artwork-android-tests.txt"
+      ]
+    }
+  ],
+  "sourceHashes": {
+    "src/components/Icon.tsx": "74c13086c314cba91804435f80335e27c8abbe36c37f7cb5bf5a68257e90718e",
+    "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift": "6c727b4e71ef0e07f5919235136ed5fed2191ff635fd4498ce1a385c39c94fac",
+    "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt": "19866fe3677f4afe58ad37b6fe2390f098abca0592e24ab303d5849114a32b09"
+  }
+}

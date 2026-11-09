@@ -2,6 +2,8 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 const root = new URL('../', import.meta.url);
 const read = async path => JSON.parse(await readFile(new URL(path, root), 'utf8'));
 const inventory = await read('figma/published-classification.json');
+let removedArchiveIds=new Set();
+try { removedArchiveIds=new Set((await read('coverage/figma-archive-cleanup.json')).deletedIds??[]); } catch(error) { if(error.code!=='ENOENT')throw error; }
 const original = await read('figma/mappings.json');
 const saved = [...original.components, ...(original.icons ?? []), ...(await read('figma/expanded-mappings.json')).components, ...(await read('figma/web-internals-mappings.json')).components];
 const native = (await read('figma/native-mappings.json')).components;
@@ -18,7 +20,7 @@ const referenceReasons = {
  'device-reference': 'Device or operating-system reference; use the platform environment rather than recreating system chrome.'
 };
 const samplePreviews = await read('coverage/previews.json');
-const entries = inventory.entries.map(item => {
+const entries = inventory.entries.filter(item=>!removedArchiveIds.has(item.id)).map(item => {
  const connected = saved.find(map => map.nodeId === item.id);
  const candidate = connected ?? native.find(map => map.nodeId === item.id);
  const override = reviewed[item.id] ?? {};
@@ -38,5 +40,5 @@ const entries = inventory.entries.map(item => {
  };
 });
 await mkdir(new URL('coverage/', root), {recursive:true});
-await writeFile(new URL('coverage/registry.json', root), JSON.stringify({schemaVersion:1,fileKey:original.fileKey,inventorySource:'figma/published-classification.json',samplePreviews,entries},null,2)+'\n');
+await writeFile(new URL('coverage/registry.json', root), JSON.stringify({schemaVersion:1,sourceRef:'codex/wardo-cross-platform-coverage',fileKey:original.fileKey,inventorySource:'figma/published-classification.json',samplePreviews,entries},null,2)+'\n');
 console.log(`Built ${entries.length} coverage records; ${entries.filter(e=>e.connection.status==='source-connection-saved').length} saved Figma source links.`);

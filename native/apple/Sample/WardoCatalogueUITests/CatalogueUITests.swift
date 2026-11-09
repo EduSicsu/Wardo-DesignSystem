@@ -214,6 +214,115 @@ import XCTest
         let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); screenshot.name = "Wardo destination items with large text"; screenshot.lifetime = .keepAlways; add(screenshot)
         #endif
     }
+    func testNativeAlertFieldsRolesAndApplicationCallbacks() throws {
+        let app = XCUIApplication(); app.launch()
+        let link = app.buttons["Native presentation examples"]
+        reveal(link, in: app); link.tap()
+        let present = app.buttons["Present native alert"]
+        XCTAssertTrue(present.waitForExistence(timeout: 5)); present.tap()
+        let alert = app.alerts["Edit event"]
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        XCTAssertFalse(alert.buttons["Save event"].isEnabled)
+        XCTAssertTrue(alert.secureTextFields["Access code"].exists)
+        let name = alert.textFields["Event name"]
+        name.tap(); name.typeText("Ceramics")
+        XCTAssertTrue(alert.buttons["Save event"].isEnabled)
+        alert.buttons["Save event"].tap()
+        // A focused native alert field can consume the first activation while committing editing.
+        let dismissed = XCTNSPredicateExpectation(predicate: NSPredicate(format: "exists == false"), object: alert)
+        if XCTWaiter.wait(for: [dismissed], timeout: 2) != .completed {
+            XCTAssertTrue(alert.buttons["Save event"].isEnabled)
+            alert.buttons["Save event"].tap()
+        }
+        XCTAssertTrue(alert.waitForNonExistence(timeout: 5))
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Saved: Ceramics")
+        reveal(present, in: app)
+        revealAbove(app.switches["Include second alert field"], in: app)
+        flip(app.switches["Include second alert field"])
+        present.tap()
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        XCTAssertFalse(alert.secureTextFields["Access code"].exists)
+        alert.buttons["Delete event"].tap()
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Deleted event")
+        reveal(present, in: app)
+        revealAbove(app.switches["Include alert fields"], in: app)
+        flip(app.switches["Include alert fields"])
+        revealAbove(app.switches["Include destructive alert action"], in: app)
+        flip(app.switches["Include destructive alert action"])
+        present.tap()
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        XCTAssertEqual(alert.textFields.count, 0)
+        XCTAssertFalse(alert.buttons["Delete event"].exists)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = "Native alert without fields"; screenshot.lifetime = .keepAlways; add(screenshot)
+        alert.buttons["Cancel"].tap()
+        XCTAssertTrue(present.waitForExistence(timeout: 5))
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Alert cancelled")
+    }
+    func testNativeContextMenuUsesPreviewDisabledActionsAndSubmenus() throws {
+        let app = XCUIApplication(); app.launch()
+        let link = app.buttons["Native presentation examples"]
+        reveal(link, in: app); link.tap()
+        let source = app.staticTexts["Event context actions"]
+        reveal(source, in: app); source.press(forDuration: 1)
+        let save = app.buttons["Save to collection"]
+        XCTAssertTrue(save.waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons["Unavailable action"].isEnabled)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = "Native context menu with preview"; screenshot.lifetime = .keepAlways; add(screenshot)
+        save.tap()
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Added to collection")
+        reveal(source, in: app); source.press(forDuration: 1)
+        let move = app.buttons["Move event"]
+        XCTAssertTrue(move.waitForExistence(timeout: 5)); move.tap()
+        let archive = app.buttons["Move to archive"]
+        XCTAssertTrue(archive.waitForExistence(timeout: 5)); archive.tap()
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Moved to archive")
+    }
+    #if os(iOS)
+    func testNativePageSheetStacksAndRestoresItsPresenter() throws {
+        let app = XCUIApplication(); app.launch()
+        let link = app.buttons["Native presentation examples"]
+        reveal(link, in: app); link.tap()
+        let present = app.buttons["Present native page sheet"]
+        reveal(present, in: app); present.tap()
+        XCTAssertTrue(app.buttons["Close sheet 1"].waitForExistence(timeout: 5))
+        app.buttons["Save sheet changes"].tap()
+        XCTAssertTrue(app.staticTexts["Sheet changes saved"].exists)
+        app.buttons["Stack another sheet"].tap()
+        XCTAssertTrue(app.buttons["Close sheet 2"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Sheet level 2"].isHittable)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = "Native stacked page sheets"; screenshot.lifetime = .keepAlways; add(screenshot)
+        app.buttons["Close sheet 2"].tap()
+        XCTAssertTrue(app.buttons["Close sheet 1"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Sheet changes saved"].exists)
+        app.buttons["Close sheet 1"].tap()
+        XCTAssertTrue(present.waitForExistence(timeout: 5))
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Page sheet dismissed")
+    }
+    func testNativeActivityPresentsAndCancelsWithoutSending() throws {
+        let app = XCUIApplication(); app.launch()
+        let link = app.buttons["Native presentation examples"]
+        reveal(link, in: app); link.tap()
+        let present = app.buttons["Present native share activity"]
+        reveal(present, in: app); present.tap()
+        let close = app.buttons["Close"].firstMatch
+        XCTAssertTrue(close.waitForExistence(timeout: 10))
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = "Native activity presentation"; screenshot.lifetime = .keepAlways; add(screenshot)
+        close.tap()
+        XCTAssertTrue(present.waitForExistence(timeout: 5))
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Share cancelled")
+    }
+    #endif
     /// A native switch's label can span its row while the knob remains trailing.
     /// Validate state so a label-only tap cannot masquerade as an RTL/disabled check.
     private func flip(_ toggle: XCUIElement) {
@@ -228,6 +337,14 @@ import XCTest
     }
     private func setSlider(_ slider: XCUIElement, to value: CGFloat) {
         slider.coordinate(withNormalizedOffset: CGVector(dx: value == 0 ? 0.05 : 0.95, dy: 0.5)).tap()
+    }
+    private func revealAbove(_ element: XCUIElement, in app: XCUIApplication) {
+        for _ in 0..<8 {
+            if element.exists && element.isHittable && element.frame.minY >= app.navigationBars.firstMatch.frame.maxY { return }
+            let surface = app.collectionViews.firstMatch.exists ? app.collectionViews.firstMatch : app.scrollViews.firstMatch
+            surface.swipeDown()
+        }
+        XCTAssertTrue(element.exists && element.isHittable, "The control above must be reachable")
     }
     private func reveal(_ element: XCUIElement, in app: XCUIApplication) {
         for _ in 0..<8 {

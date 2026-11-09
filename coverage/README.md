@@ -1,6 +1,6 @@
 # Independent coverage registry
 
-`registry.json` accounts for all 797 published Figma nodes. Stable identifiers are `wardo-<node-id-with-hyphens>`. `implementations.json` contains reviewed overrides; `scripts/build-coverage.mjs` deterministically merges them with the published inventory and existing connections. Regenerate with `npm run coverage:build`.
+`registry.json` is generated from the historical 797-node published inventory, excluding the 33 archived published masters removed at the owner’s request. It currently contains 764 records. `figma-archive-cleanup.json` preserves the exact removal audit and remaining active-design dependencies; the original inventory is retained for reconciliation. Two additional unpublished archived prototypes were also removed. Stable identifiers are `wardo-<node-id-with-hyphens>`. `implementations.json` contains reviewed overrides; `scripts/build-coverage.mjs` deterministically merges them with the published inventory and existing connections. Regenerate with `npm run coverage:build`.
 
 Implementation, property review, validation, and Figma connection state are independent. `source-available` indicates a candidate implementation, never a verified match. `alternatives` records other platform implementations of the same design. `gaps` lists unfinished implementation or review work. Archives, documentation, and device references include explicit dispositions and Figma links.
 
@@ -20,3 +20,5 @@ Verification evidence must name real repository files, describe the tested platf
 Evidence paths are checked even while a record is pending. Android toolbar asset checks also verify exact source/resource hashes, 24×24 root dimensions and native callsites. A verified static glyph covers that glyph's geometry and composition boundary; parent button, toolbar and spatial states retain their own records. Native XR scenes must be captured from the device compositor: copying the panel's 2D host window can produce an empty frame.
 
 Keep React active in Figma. Do not create misleading React mappings for native code or infer tested status from the saved connection counter.
+
+Platform filters show each binding’s own implementation and verification state. A React source connection never appears as a native connection. Platform alternatives must provide their own evidence and property mapping before they can pass the completion gate. The source links target the current implementation branch until it is merged.

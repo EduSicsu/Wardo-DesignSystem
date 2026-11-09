@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "sourceRef": "codex/wardo-cross-platform-coverage",
   "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
   "inventorySource": "figma/published-classification.json",
   "samplePreviews": [
@@ -10559,37 +10560,6 @@
       "previews": []
     },
     {
-      "id": "wardo-1531-22852",
-      "nodeId": "1531:22852",
-      "name": "Deprecated · Swipe Action Row",
-      "page": "Navigation",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-22852",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-22852"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
       "id": "wardo-2193-37840",
       "nodeId": "2193:37840",
       "name": "Row with Swipe Actions",
@@ -14509,17 +14479,58 @@
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
         "symbol": "NativeAlertModifier",
-        "example": null
+        "example": ".modifier(NativeAlertModifier(\"Edit event\", isPresented: $presented, message: description) { TextField(\"Event name\", text: $name); Button(\"Save\", action: save); Button(\"Cancel\", role: .cancel) {} })",
+        "gaps": [
+          "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
+          "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
+        ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "Show Fields#6214:0": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "Show Field 2#6214:3": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "Type": {
+            "type": "VARIANT",
+            "defaultValue": "Stacked",
+            "variantOptions": [
+              "Side-by-Side",
+              "Stacked"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "Show Fields#6214:0",
+            "target": "actions ViewBuilder: conditional TextField/SecureField",
+            "notes": "The application owns field bindings, validation and localized labels."
+          },
+          {
+            "property": "Show Field 2#6214:3",
+            "target": "actions ViewBuilder: optional second field",
+            "notes": "Only add the second field when the fields group is visible."
+          },
+          {
+            "property": "Type",
+            "target": "Native action count/roles in actions builder",
+            "notes": "Side-by-Side and Stacked are system layout outcomes. Supply two or three native actions; the OS adapts their arrangement to labels, text size and device. Never force a fixed visual layout."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/design-context/native-presentation-properties.json",
+          "coverage/design-context/native-presentations.json",
+          "coverage/evidence/2026-11-09/native-presentations-partial.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
@@ -14538,22 +14549,44 @@
         "status": "source-available",
         "framework": "SwiftUI",
         "platforms": [
-          "iOS",
           "iPadOS"
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
         "symbol": "NativeActivityView",
-        "example": null
+        "example": "Button(\"Share\") { presented = true }.popover(isPresented: $presented, attachmentAnchor: .rect(.bounds), arrowEdge: .bottom) { NativeActivityView(items: items, completion: onComplete) }",
+        "gaps": [
+          "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
+          "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
+        ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "Mode": {
+            "type": "VARIANT",
+            "defaultValue": "Light",
+            "variantOptions": [
+              "Dark",
+              "Light"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "Mode",
+            "target": "preferredColorScheme / inherited system appearance",
+            "notes": "UIKit renders its native iPad popover, dynamic contacts/actions and system materials. Figma sample avatars, app icons and destinations are system reference data, not fixed application assets."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/design-context/native-presentation-properties.json",
+          "coverage/design-context/native-presentations.json",
+          "coverage/evidence/2026-11-09/native-presentations-partial.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
@@ -14572,22 +14605,44 @@
         "status": "source-available",
         "framework": "SwiftUI",
         "platforms": [
-          "iOS",
-          "iPadOS"
+          "iOS"
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
         "symbol": "NativeActivityView",
-        "example": null
+        "example": "Button(\"Share\") { presented = true }.popover(isPresented: $presented) { NativeActivityView(items: items, completion: onComplete) }",
+        "gaps": [
+          "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
+          "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
+        ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "Mode": {
+            "type": "VARIANT",
+            "defaultValue": "Light",
+            "variantOptions": [
+              "Dark",
+              "Light"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "Mode",
+            "target": "preferredColorScheme / inherited system appearance",
+            "notes": "The anchored popover adapts to the native compact iPhone share sheet. Actual activities depend on supplied items, installed apps and user configuration."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/design-context/native-presentation-properties.json",
+          "coverage/design-context/native-presentations.json",
+          "coverage/evidence/2026-11-09/native-presentations-partial.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
@@ -14610,18 +14665,54 @@
           "iPadOS"
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
-        "symbol": "NativeContextMenuModifier",
-        "example": null
+        "symbol": "NativeContextMenuPreviewModifier",
+        "example": ".modifier(NativeContextMenuPreviewModifier(items: { Button(\"Save\", action: save); Menu(\"Move\") { Button(\"Archive\", action: archive) } }, preview: { eventPreview }))",
+        "gaps": [
+          "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
+          "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
+        ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "Alignment": {
+            "type": "VARIANT",
+            "defaultValue": "Vertical",
+            "variantOptions": [
+              "Vertical",
+              "Horizontal (iPad only)"
+            ]
+          },
+          "Side": {
+            "type": "VARIANT",
+            "defaultValue": "Leading",
+            "variantOptions": [
+              "Trailing",
+              "Leading"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "Alignment",
+            "target": "native contextMenu(menuItems:preview:) adaptive layout",
+            "notes": "The OS chooses a vertical or iPad side-by-side presentation from the source anchor and available space. This specimen is not an application-selectable layout setting."
+          },
+          {
+            "property": "Side",
+            "target": "native source-view anchor and available space",
+            "notes": "Leading/trailing placement belongs to the native context-menu presenter and follows source position and layout direction; do not hardcode offsets."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/design-context/native-presentation-properties.json",
+          "coverage/design-context/native-presentations.json",
+          "coverage/evidence/2026-11-09/native-presentations-partial.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
@@ -14640,22 +14731,44 @@
         "status": "source-available",
         "framework": "SwiftUI",
         "platforms": [
-          "iOS",
-          "iPadOS"
+          "iOS"
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
-        "symbol": "NativeFullScreenSheetModifier",
-        "example": null
+        "symbol": "NativePageSheetModifier",
+        "example": ".modifier(NativePageSheetModifier(isPresented: $presented, onDismiss: onDismiss) { NavigationStack { sheetContent.toolbar { ToolbarItem(placement: .cancellationAction) { Button(\"Close\", systemImage: \"xmark\") { dismiss() } } } } })",
+        "gaps": [
+          "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
+          "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
+        ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "Stacked": {
+            "type": "VARIANT",
+            "defaultValue": "False",
+            "variantOptions": [
+              "True",
+              "False"
+            ]
+          }
+        },
+        "mappings": [
+          {
+            "property": "Stacked",
+            "target": "Nested NativePageSheetModifier on presented content",
+            "notes": "False presents the first large page sheet. True presents another sheet from the current sheet, allowing the system to dim and inset the underlying sheet. This is distinct from a fullScreenCover."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/design-context/native-presentation-properties.json",
+          "coverage/design-context/native-presentations.json",
+          "coverage/evidence/2026-11-09/native-presentations-partial.json"
+        ]
       },
       "connection": {
         "status": "not-connected",
@@ -14770,21 +14883,18 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1159-29",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "React",
         "platforms": [
           "web"
         ],
         "source": "src/components/Icon.tsx",
         "symbol": "Icon",
-        "example": "<Icon name=\"events\" width={24} height={24} />",
-        "gaps": [
-          "Review source geometry and semantic tint in the consuming navigation control."
-        ]
+        "example": "<Icon name=\"events\" width={24} height={24} />"
       },
       "alternatives": [
         {
-          "status": "source-available",
+          "status": "implemented",
           "framework": "SwiftUI",
           "platforms": [
             "iOS",
@@ -14793,13 +14903,23 @@
           ],
           "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
           "symbol": "wardoNavigationImage",
-          "example": "wardoNavigationImage(.events).resizable().scaledToFit()",
-          "gaps": [
-            "Verify asset rendering across the native sample targets and semantic parent roles."
-          ]
+          "example": "wardoNavigationImage(.events).resizable().scaledToFit().frame(width: 24, height: 24)",
+          "validation": {
+            "status": "verified",
+            "evidence": [
+              "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+              "coverage/navigation-artwork-assets.json",
+              "coverage/design-context/navigation-artwork-properties.json"
+            ]
+          },
+          "properties": {
+            "status": "mapped",
+            "definitions": {},
+            "mappings": []
+          }
         },
         {
-          "status": "source-available",
+          "status": "implemented",
           "framework": "Jetpack Compose",
           "platforms": [
             "Android",
@@ -14808,9 +14928,19 @@
           "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
           "symbol": "WardoNavigationArtwork",
           "example": "WardoNavigationArtwork(WardoNavigationGlyph.Events)",
-          "gaps": [
-            "Compile and exercise the exact vector resources in the native sample."
-          ]
+          "validation": {
+            "status": "verified",
+            "evidence": [
+              "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+              "coverage/navigation-artwork-assets.json",
+              "coverage/design-context/navigation-artwork-properties.json"
+            ]
+          },
+          "properties": {
+            "status": "mapped",
+            "definitions": {},
+            "mappings": []
+          }
         }
       ],
       "properties": {
@@ -14819,8 +14949,9 @@
         "mappings": []
       },
       "validation": {
-        "status": "pending",
+        "status": "verified",
         "evidence": [
+          "coverage/evidence/2026-11-09/navigation-artwork-review.json",
           "coverage/navigation-artwork-assets.json",
           "coverage/design-context/navigation-artwork-properties.json"
         ]
@@ -14829,7 +14960,23 @@
         "status": "source-connection-saved",
         "framework": "React"
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "web",
+          "path": "coverage/previews/web/navigation-item-variants.png",
+          "alt": "Four exact navigation glyphs above the web destination matrix"
+        },
+        {
+          "platform": "iOS",
+          "path": "coverage/previews/native/iphone-navigation-items.png",
+          "alt": "Four original navigation SVGs rendered as native Apple template assets"
+        },
+        {
+          "platform": "Android XR",
+          "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+          "alt": "Four exact navigation glyphs in the native 2D compatibility panel"
+        }
+      ]
     },
     {
       "id": "wardo-1159-34",
@@ -14839,21 +14986,18 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1159-34",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "React",
         "platforms": [
           "web"
         ],
         "source": "src/components/Icon.tsx",
         "symbol": "Icon",
-        "example": "<Icon name=\"saved\" width={24} height={24} />",
-        "gaps": [
-          "Review source geometry and semantic tint in the consuming navigation control."
-        ]
+        "example": "<Icon name=\"saved\" width={24} height={24} />"
       },
       "alternatives": [
         {
-          "status": "source-available",
+          "status": "implemented",
           "framework": "SwiftUI",
           "platforms": [
             "iOS",
@@ -14862,13 +15006,23 @@
           ],
           "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
           "symbol": "wardoNavigationImage",
-          "example": "wardoNavigationImage(.saved).resizable().scaledToFit()",
-          "gaps": [
-            "Verify asset rendering across the native sample targets and semantic parent roles."
-          ]
+          "example": "wardoNavigationImage(.saved).resizable().scaledToFit().frame(width: 24, height: 24)",
+          "validation": {
+            "status": "verified",
+            "evidence": [
+              "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+              "coverage/navigation-artwork-assets.json",
+              "coverage/design-context/navigation-artwork-properties.json"
+            ]
+          },
+          "properties": {
+            "status": "mapped",
+            "definitions": {},
+            "mappings": []
+          }
         },
         {
-          "status": "source-available",
+          "status": "implemented",
           "framework": "Jetpack Compose",
           "platforms": [
             "Android",
@@ -14877,9 +15031,19 @@
           "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
           "symbol": "WardoNavigationArtwork",
           "example": "WardoNavigationArtwork(WardoNavigationGlyph.Saved)",
-          "gaps": [
-            "Compile and exercise the exact vector resources in the native sample."
-          ]
+          "validation": {
+            "status": "verified",
+            "evidence": [
+              "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+              "coverage/navigation-artwork-assets.json",
+              "coverage/design-context/navigation-artwork-properties.json"
+            ]
+          },
+          "properties": {
+            "status": "mapped",
+            "definitions": {},
+            "mappings": []
+          }
         }
       ],
       "properties": {
@@ -14888,8 +15052,9 @@
         "mappings": []
       },
       "validation": {
-        "status": "pending",
+        "status": "verified",
         "evidence": [
+          "coverage/evidence/2026-11-09/navigation-artwork-review.json",
           "coverage/navigation-artwork-assets.json",
           "coverage/design-context/navigation-artwork-properties.json"
         ]
@@ -14898,7 +15063,23 @@
         "status": "source-connection-saved",
         "framework": "React"
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "web",
+          "path": "coverage/previews/web/navigation-item-variants.png",
+          "alt": "Four exact navigation glyphs above the web destination matrix"
+        },
+        {
+          "platform": "iOS",
+          "path": "coverage/previews/native/iphone-navigation-items.png",
+          "alt": "Four original navigation SVGs rendered as native Apple template assets"
+        },
+        {
+          "platform": "Android XR",
+          "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+          "alt": "Four exact navigation glyphs in the native 2D compatibility panel"
+        }
+      ]
     },
     {
       "id": "wardo-1159-39",
@@ -14908,21 +15089,18 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1159-39",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "React",
         "platforms": [
           "web"
         ],
         "source": "src/components/Icon.tsx",
         "symbol": "Icon",
-        "example": "<Icon name=\"notifications\" width={24} height={24} />",
-        "gaps": [
-          "Review source geometry and semantic tint in the consuming navigation control."
-        ]
+        "example": "<Icon name=\"notifications\" width={24} height={24} />"
       },
       "alternatives": [
         {
-          "status": "source-available",
+          "status": "implemented",
           "framework": "SwiftUI",
           "platforms": [
             "iOS",
@@ -14931,13 +15109,23 @@
           ],
           "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
           "symbol": "wardoNavigationImage",
-          "example": "wardoNavigationImage(.notifications).resizable().scaledToFit()",
-          "gaps": [
-            "Verify asset rendering across the native sample targets and semantic parent roles."
-          ]
+          "example": "wardoNavigationImage(.notifications).resizable().scaledToFit().frame(width: 24, height: 24)",
+          "validation": {
+            "status": "verified",
+            "evidence": [
+              "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+              "coverage/navigation-artwork-assets.json",
+              "coverage/design-context/navigation-artwork-properties.json"
+            ]
+          },
+          "properties": {
+            "status": "mapped",
+            "definitions": {},
+            "mappings": []
+          }
         },
         {
-          "status": "source-available",
+          "status": "implemented",
           "framework": "Jetpack Compose",
           "platforms": [
             "Android",
@@ -14946,9 +15134,19 @@
           "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
           "symbol": "WardoNavigationArtwork",
           "example": "WardoNavigationArtwork(WardoNavigationGlyph.Notifications)",
-          "gaps": [
-            "Compile and exercise the exact vector resources in the native sample."
-          ]
+          "validation": {
+            "status": "verified",
+            "evidence": [
+              "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+              "coverage/navigation-artwork-assets.json",
+              "coverage/design-context/navigation-artwork-properties.json"
+            ]
+          },
+          "properties": {
+            "status": "mapped",
+            "definitions": {},
+            "mappings": []
+          }
         }
       ],
       "properties": {
@@ -14957,8 +15155,9 @@
         "mappings": []
       },
       "validation": {
-        "status": "pending",
+        "status": "verified",
         "evidence": [
+          "coverage/evidence/2026-11-09/navigation-artwork-review.json",
           "coverage/navigation-artwork-assets.json",
           "coverage/design-context/navigation-artwork-properties.json"
         ]
@@ -14967,7 +15166,23 @@
         "status": "source-connection-saved",
         "framework": "React"
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "web",
+          "path": "coverage/previews/web/navigation-item-variants.png",
+          "alt": "Four exact navigation glyphs above the web destination matrix"
+        },
+        {
+          "platform": "iOS",
+          "path": "coverage/previews/native/iphone-navigation-items.png",
+          "alt": "Four original navigation SVGs rendered as native Apple template assets"
+        },
+        {
+          "platform": "Android XR",
+          "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+          "alt": "Four exact navigation glyphs in the native 2D compatibility panel"
+        }
+      ]
     },
     {
       "id": "wardo-1159-44",
@@ -14977,21 +15192,18 @@
       "category": "runtime-candidate",
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1159-44",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "React",
         "platforms": [
           "web"
         ],
         "source": "src/components/Icon.tsx",
         "symbol": "Icon",
-        "example": "<Icon name=\"profile\" width={24} height={24} />",
-        "gaps": [
-          "Review source geometry and semantic tint in the consuming navigation control."
-        ]
+        "example": "<Icon name=\"profile\" width={24} height={24} />"
       },
       "alternatives": [
         {
-          "status": "source-available",
+          "status": "implemented",
           "framework": "SwiftUI",
           "platforms": [
             "iOS",
@@ -15000,13 +15212,23 @@
           ],
           "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
           "symbol": "wardoNavigationImage",
-          "example": "wardoNavigationImage(.profile).resizable().scaledToFit()",
-          "gaps": [
-            "Verify asset rendering across the native sample targets and semantic parent roles."
-          ]
+          "example": "wardoNavigationImage(.profile).resizable().scaledToFit().frame(width: 24, height: 24)",
+          "validation": {
+            "status": "verified",
+            "evidence": [
+              "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+              "coverage/navigation-artwork-assets.json",
+              "coverage/design-context/navigation-artwork-properties.json"
+            ]
+          },
+          "properties": {
+            "status": "mapped",
+            "definitions": {},
+            "mappings": []
+          }
         },
         {
-          "status": "source-available",
+          "status": "implemented",
           "framework": "Jetpack Compose",
           "platforms": [
             "Android",
@@ -15015,9 +15237,19 @@
           "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
           "symbol": "WardoNavigationArtwork",
           "example": "WardoNavigationArtwork(WardoNavigationGlyph.Profile)",
-          "gaps": [
-            "Compile and exercise the exact vector resources in the native sample."
-          ]
+          "validation": {
+            "status": "verified",
+            "evidence": [
+              "coverage/evidence/2026-11-09/navigation-artwork-review.json",
+              "coverage/navigation-artwork-assets.json",
+              "coverage/design-context/navigation-artwork-properties.json"
+            ]
+          },
+          "properties": {
+            "status": "mapped",
+            "definitions": {},
+            "mappings": []
+          }
         }
       ],
       "properties": {
@@ -15026,8 +15258,9 @@
         "mappings": []
       },
       "validation": {
-        "status": "pending",
+        "status": "verified",
         "evidence": [
+          "coverage/evidence/2026-11-09/navigation-artwork-review.json",
           "coverage/navigation-artwork-assets.json",
           "coverage/design-context/navigation-artwork-properties.json"
         ]
@@ -15036,7 +15269,23 @@
         "status": "source-connection-saved",
         "framework": "React"
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "web",
+          "path": "coverage/previews/web/navigation-item-variants.png",
+          "alt": "Four exact navigation glyphs above the web destination matrix"
+        },
+        {
+          "platform": "iOS",
+          "path": "coverage/previews/native/iphone-navigation-items.png",
+          "alt": "Four original navigation SVGs rendered as native Apple template assets"
+        },
+        {
+          "platform": "Android XR",
+          "path": "coverage/previews/native/android-navigation-compatibility-scene.png",
+          "alt": "Four exact navigation glyphs in the native 2D compatibility panel"
+        }
+      ]
     },
     {
       "id": "wardo-3301-152",
@@ -17609,68 +17858,6 @@
       "previews": []
     },
     {
-      "id": "wardo-1848-9592",
-      "nodeId": "1848:9592",
-      "name": "Legacy / Toolbar / Filters",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9592",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9592"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1848-9595",
-      "nodeId": "1848:9595",
-      "name": "Legacy / Toolbar / Check",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9595",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9595"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
       "id": "wardo-1848-9598",
       "nodeId": "1848:9598",
       "name": "Legacy / Toolbar / Bookmark",
@@ -17795,440 +17982,6 @@
       "previews": []
     },
     {
-      "id": "wardo-1848-9610",
-      "nodeId": "1848:9610",
-      "name": "Legacy / Toolbar / Save",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9610",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9610"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1848-9613",
-      "nodeId": "1848:9613",
-      "name": "Legacy / Toolbar / Plus",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9613",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9613"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1848-9723",
-      "nodeId": "1848:9723",
-      "name": "Legacy / Toolbar / Top Action Group",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9723",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9723"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1848-9817",
-      "nodeId": "1848:9817",
-      "name": "Legacy / Toolbar / Bottom Action Group",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9817",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9817"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1848-9869",
-      "nodeId": "1848:9869",
-      "name": "Legacy / Toolbar / Spatial Action Group",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9869",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9869"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1848-9888",
-      "nodeId": "1848:9888",
-      "name": "Legacy / Toolbar / Title Block",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9888",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9888"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1848-9896",
-      "nodeId": "1848:9896",
-      "name": "Legacy / Toolbar / Page Dot",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9896",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-9896"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1848-10341",
-      "nodeId": "1848:10341",
-      "name": "Legacy / Toolbar / Page Control",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-10341",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-10341"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1848-10345",
-      "nodeId": "1848:10345",
-      "name": "Legacy / Toolbar / Sheet Grabber",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-10345",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1848-10345"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1854-12269",
-      "nodeId": "1854:12269",
-      "name": "Legacy / Toolbar / Search Accessory",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1854-12269",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1854-12269"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1854-12307",
-      "nodeId": "1854:12307",
-      "name": "Legacy / Toolbar / Sheet Actions",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1854-12307",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1854-12307"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1854-12588",
-      "nodeId": "1854:12588",
-      "name": "Legacy / Toolbar / Bottom Bar",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1854-12588",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1854-12588"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1854-12747",
-      "nodeId": "1854:12747",
-      "name": "Legacy / Toolbar / Sheet Header",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1854-12747",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1854-12747"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1856-11454",
-      "nodeId": "1856:11454",
-      "name": "Legacy / Toolbar / Surface",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1856-11454",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1856-11454"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
       "id": "wardo-1531-195428",
       "nodeId": "1531:195428",
       "name": "Top Navigation Bar",
@@ -18291,99 +18044,6 @@
       "previews": []
     },
     {
-      "id": "wardo-1531-195572",
-      "nodeId": "1531:195572",
-      "name": "Android / Top App Bar",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-195572",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-195572"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1531-195574",
-      "nodeId": "1531:195574",
-      "name": "iOS / Navigation Bar",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-195574",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-195574"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1531-195576",
-      "nodeId": "1531:195576",
-      "name": "Web / Page Header",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-195576",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-195576"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
       "id": "wardo-1531-198450",
       "nodeId": "1531:198450",
       "name": "Navigation / Adaptive Side Navigation",
@@ -18394,409 +18054,6 @@
       "reference": {
         "kind": "archived",
         "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-198450"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1531-198452",
-      "nodeId": "1531:198452",
-      "name": "Android / Wide Navigation Rail",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-198452",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-198452"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1531-198454",
-      "nodeId": "1531:198454",
-      "name": "iOS / Sidebar",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-198454",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-198454"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1531-198458",
-      "nodeId": "1531:198458",
-      "name": "Web / Modal Drawer",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-198458",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-198458"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-2254-53748",
-      "nodeId": "2254:53748",
-      "name": "Tabs",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-53748",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-53748"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-2254-53867",
-      "nodeId": "2254:53867",
-      "name": "Primary tabs/Icon and label",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-53867",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-53867"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-2254-53936",
-      "nodeId": "2254:53936",
-      "name": "Primary tabs/Icon only",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-53936",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-53936"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-2254-53997",
-      "nodeId": "2254:53997",
-      "name": "Primary tabs/Label only",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-53997",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-53997"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-2254-54050",
-      "nodeId": "2254:54050",
-      "name": "Secondary tabs/Label only",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-54050",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-54050"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-2254-54099",
-      "nodeId": "2254:54099",
-      "name": "Secondary tabs/Icon and label",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-54099",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2254-54099"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-2824-42103",
-      "nodeId": "2824:42103",
-      "name": "Metadata Tag · Legacy masters",
-      "page": "Archive · Toolbars",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2824-42103",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2824-42103"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-1531-23399",
-      "nodeId": "1531:23399",
-      "name": "Menu Interaction Demo",
-      "page": "Archive · Action Behavior",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-23399",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-23399"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-2772-43197",
-      "nodeId": "2772:43197",
-      "name": "Stacked card",
-      "page": "Archive · Action Behavior",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2772-43197",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2772-43197"
-      },
-      "implementation": {
-        "status": "not-applicable"
-      },
-      "alternatives": [],
-      "properties": {
-        "status": "not-applicable",
-        "definitions": {},
-        "mappings": []
-      },
-      "validation": {
-        "status": "not-applicable",
-        "evidence": []
-      },
-      "connection": {
-        "status": "not-applicable",
-        "framework": null
-      },
-      "previews": []
-    },
-    {
-      "id": "wardo-2772-43270",
-      "nodeId": "2772:43270",
-      "name": "Horizontal card",
-      "page": "Archive · Action Behavior",
-      "category": "archived",
-      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2772-43270",
-      "reason": "Retired design retained for historical reference; excluded from the supported runtime library.",
-      "reference": {
-        "kind": "archived",
-        "url": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2772-43270"
       },
       "implementation": {
         "status": "not-applicable"

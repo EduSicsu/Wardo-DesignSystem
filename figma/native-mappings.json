@@ -42,7 +42,7 @@
     {
       "nodeId": "2773:43627",
       "designName": "Native / iOS-iPadOS 26 / Context Menu",
-      "componentName": "NativeContextMenuModifier",
+      "componentName": "NativeContextMenuPreviewModifier",
       "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
       "framework": "SwiftUI",
       "status": "deferred-by-owner",
@@ -55,7 +55,7 @@
     {
       "nodeId": "2773:43481",
       "designName": "Native / iOS-iPadOS 26 / Sheet - Full Screen - iPhone",
-      "componentName": "NativeFullScreenSheetModifier",
+      "componentName": "NativePageSheetModifier",
       "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
       "framework": "SwiftUI",
       "status": "deferred-by-owner",
