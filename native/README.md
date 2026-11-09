@@ -52,6 +52,10 @@ Android's expanded rail uses Material's `WideNavigationRail`, separately from th
 
 `WardoIndexBar` is a compact section scrubber with an optional application-owned selection binding and navigation callback. Its source entry belongs to visionOS. The package and sample also exercise its touch behavior on iPhone and iPad. Gaze interaction, VoiceOver, localized indices and exhaustive Dynamic Type review remain explicit gaps.
 
+`WardoAppleNavigationItem` implements the canonical Wardo iOS destination atom in vertical, horizontal and text-only layouts. The application supplies selected state, activation, icon content, badge text and its localized accessibility description. It uses native SF typography and button semantics. At accessibility text sizes it uses the available width and scaled icon slots. System tab and split-view containers continue to use `WardoTabView` and `WardoSidebar`.
+
+The four shared navigation glyphs retain their exact SVG sources in `coverage/assets/navigation`. Apple compiles universal template image sets; `wardoNavigationImage(.events).resizable().scaledToFit()` fits a caller-owned slot. Android exposes `WardoNavigationArtwork(WardoNavigationGlyph.Events)`. Both inherit the consuming control's semantic color. Hashes, resource names and image-set settings are checked through `coverage/navigation-artwork-assets.json`.
+
 `npm run coverage:lookup -- NODE_ID --platform visionOS` finds source, example, review gaps and verification state without requiring an active native framework in Figma. Platform alternatives appear in `/coverage`; native samples run separately from the web gallery.
 
 ## Figma and licenses

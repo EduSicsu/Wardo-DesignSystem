@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-09",
+  "scope": "Navigation family checkpoint; remaining per-entry gaps are not waived.",
+  "checks": {
+    "webUnitTests": 33,
+    "browserTests": 38,
+    "androidSampleTests": 6,
+    "applePackageTests": 13,
+    "iPhoneDestinationItemTests": 1,
+    "iPadDestinationItemTests": 1,
+    "visionProDestinationItemTests": 1
+  },
+  "results": "All listed checks passed.",
+  "limits": [
+    "The four new navigation artwork records and their platform alternatives remain pending final review.",
+    "Source availability and successful family checks do not imply complete coverage."
+  ],
+  "sourceHashes": {
+    "src/components/Navigation.tsx": "556593450c07ca111601287aa034501591b516ae098160fc24eb55a61756e2b9",
+    "src/styles/components.css": "40245136aaca2394519a70c6b1254fb030b4d4334eabedb03fb942a8ce3c68d2",
+    "native/apple/Sources/WardoDesignSystem/AppleNavigationItem.swift": "19ec1b0ff3a32b2993c72e61c67fae47372ba561dda0806e75b51d4700165c7a",
+    "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt": "19866fe3677f4afe58ad37b6fe2390f098abca0592e24ab303d5849114a32b09"
+  }
+}

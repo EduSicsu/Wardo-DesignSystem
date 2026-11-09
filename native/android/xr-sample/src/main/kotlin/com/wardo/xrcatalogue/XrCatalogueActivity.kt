@@ -83,8 +83,8 @@ class XrCatalogueActivity : ComponentActivity() {
         Text("Selected item: $selected")
         CompositionLocalProvider(LocalLayoutDirection provides if (rtl) LayoutDirection.Rtl else LayoutDirection.Ltr) {
             Row(Modifier.selectableGroup(), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-                WardoRailItem(selected == "rail", { selected = "rail" }, "Rail destination", icon = { Text("1") }, enabled = enabled, badge = "3", badgeContentDescription = "3 unread messages")
-                WardoNavigationBarItem(selected == "bar", { selected = "bar" }, "Bar destination", icon = { Text("2") }, enabled = enabled)
+                WardoRailItem(selected == "rail", { selected = "rail" }, "Rail destination", icon = { WardoNavigationArtwork(WardoNavigationGlyph.Events) }, enabled = enabled, badge = "3", badgeContentDescription = "3 unread messages")
+                WardoNavigationBarItem(selected == "bar", { selected = "bar" }, "Bar destination", icon = { WardoNavigationArtwork(WardoNavigationGlyph.Saved) }, enabled = enabled)
                 WardoNavigationItem(selected == "text", { selected = "text" }, "Text destination", icon = {}, layout = WardoNavigationItemLayout.TextOnly, enabled = enabled)
             }
         }
@@ -94,6 +94,9 @@ class XrCatalogueActivity : ComponentActivity() {
             (3..5).forEach { count -> WardoButton(hierarchy = WardoHierarchy.Text, onClick = { barCount = count }) { Text("$count bar destinations") } }
         }
         Text("Native bar selection: $barSelected")
+        Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+            WardoNavigationGlyph.entries.forEach { glyph -> WardoNavigationArtwork(glyph) }
+        }
         CompositionLocalProvider(LocalLayoutDirection provides if (rtl) LayoutDirection.Rtl else LayoutDirection.Ltr) {
             WardoNavigationBar(
                 destinations = (0 until barCount).map { WardoDestination("$it", "Native destination $it") },

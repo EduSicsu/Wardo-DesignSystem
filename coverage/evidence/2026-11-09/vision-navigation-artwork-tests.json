@@ -1,0 +1,53 @@
+{
+  "devices" : [
+    {
+      "architecture" : "arm64",
+      "deviceId" : "1EF32A12-924C-4768-8CE3-79427257B728",
+      "deviceName" : "Apple Vision Pro",
+      "modelName" : "Apple Vision Pro",
+      "osBuildNumber" : "24N120",
+      "osVersion" : "27.2",
+      "platform" : "visionOS Simulator"
+    }
+  ],
+  "testNodes" : [
+    {
+      "children" : [
+        {
+          "children" : [
+            {
+              "children" : [
+                {
+                  "duration" : "35s",
+                  "durationInSeconds" : 35.67793798446655,
+                  "name" : "testAppleDestinationItemsExposeSelectionBadgesRTLAndLargeText()",
+                  "nodeIdentifier" : "CatalogueUITests/testAppleDestinationItemsExposeSelectionBadgesRTLAndLargeText()",
+                  "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests/testAppleDestinationItemsExposeSelectionBadgesRTLAndLargeText",
+                  "nodeType" : "Test Case",
+                  "result" : "Passed"
+                }
+              ],
+              "name" : "CatalogueUITests",
+              "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests",
+              "nodeType" : "Test Suite",
+              "result" : "Passed"
+            }
+          ],
+          "name" : "WardoCatalogueUITests",
+          "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests",
+          "nodeType" : "UI test bundle",
+          "result" : "Passed"
+        }
+      ],
+      "name" : "WardoCatalogue",
+      "nodeType" : "Test Plan",
+      "result" : "Passed"
+    }
+  ],
+  "testPlanConfigurations" : [
+    {
+      "configurationId" : "1",
+      "configurationName" : "Test Scheme Action"
+    }
+  ]
+}

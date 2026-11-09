@@ -1,0 +1,53 @@
+{
+  "figmaFile": "rkJclvwYpmw9ja5vUwkl3P",
+  "records": [
+    {
+      "nodeId": "1159:29",
+      "context": [
+        "const imgCalendar = \"[temporary Figma asset download URL omitted]\";\n\nexport default function NavigationIconEvents({ className }: { className?: string }) {\n  return (\n    <div className={className || \"content-stretch flex items-start relative size-[24px]\"} data-node-id=\"1159:29\" data-name=\"Navigation / Icon / events\">\n      <div className=\"flex-[1_0_0] h-full min-w-px relative\" data-node-id=\"1159:27\" data-name=\"calendar\">\n        <img alt=\"\" className=\"absolute block inset-0 max-w-none size-full\" src={imgCalendar} />\n      </div>\n    </div>\n  );\n}",
+        "SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.\n1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens\n2. Convert React syntax to the target framework/library\n3. Transform all Tailwind classes to the target styling system while preserving exact visual design\n4. Follow the project's existing patterns and conventions\nDO NOT install any Tailwind as a dependency unless the user instructs you to do so.\n",
+        "Node ids have been added to the code as data attributes, e.g. `data-node-id=\"1:2\"`.",
+        "Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.\n\n## Navigation / Icon / events\n**Node ID:** 1159:29\n\nSemantic-color adapter using the existing Wardo events vector geometry. Source node 1020:526. Navigation Icon Role determines Default or On indicator foreground; platform and theme aliases remain connected.",
+        "The generated code contains image and SVG URL constants, e.g. const image = '[temporary Figma asset download URL omitted] These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.",
+        "Node “Navigation / Icon / events” (1159:29): No Code Connect mapping labelled “swiftui” was found. Available labels: “React”.",
+        "Provide a matching label to retrieve the associated Code Connect mapping for this node."
+      ]
+    },
+    {
+      "nodeId": "1159:34",
+      "context": [
+        "const imgNavigationIconSaved = \"[temporary Figma asset download URL omitted]\";\n\nexport default function NavigationIconSaved({ className }: { className?: string }) {\n  return (\n    <div className={className || \"relative size-[24px]\"} data-node-id=\"1159:34\" data-name=\"Navigation / Icon / saved\">\n      <img alt=\"\" className=\"absolute block inset-0 max-w-none size-full\" src={imgNavigationIconSaved} />\n    </div>\n  );\n}",
+        "SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.\n1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens\n2. Convert React syntax to the target framework/library\n3. Transform all Tailwind classes to the target styling system while preserving exact visual design\n4. Follow the project's existing patterns and conventions\nDO NOT install any Tailwind as a dependency unless the user instructs you to do so.\n",
+        "Node ids have been added to the code as data attributes, e.g. `data-node-id=\"1:2\"`.",
+        "Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.\n\n## Navigation / Icon / saved\n**Node ID:** 1159:34\n\nSemantic-color adapter using the existing Wardo saved vector geometry. Source node 971:436. Navigation Icon Role determines Default or On indicator foreground; platform and theme aliases remain connected.",
+        "The generated code contains image and SVG URL constants, e.g. const image = '[temporary Figma asset download URL omitted] These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.",
+        "Node “Navigation / Icon / saved” (1159:34): No Code Connect mapping labelled “swiftui” was found. Available labels: “React”.",
+        "Provide a matching label to retrieve the associated Code Connect mapping for this node."
+      ]
+    },
+    {
+      "nodeId": "1159:39",
+      "context": [
+        "const imgNavigationIconNotifications = \"[temporary Figma asset download URL omitted]\";\n\nexport default function NavigationIconNotifications({ className }: { className?: string }) {\n  return (\n    <div className={className || \"relative size-[24px]\"} data-node-id=\"1159:39\" data-name=\"Navigation / Icon / notifications\">\n      <img alt=\"\" className=\"absolute block inset-0 max-w-none size-full\" src={imgNavigationIconNotifications} />\n    </div>\n  );\n}",
+        "SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.\n1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens\n2. Convert React syntax to the target framework/library\n3. Transform all Tailwind classes to the target styling system while preserving exact visual design\n4. Follow the project's existing patterns and conventions\nDO NOT install any Tailwind as a dependency unless the user instructs you to do so.\n",
+        "Node ids have been added to the code as data attributes, e.g. `data-node-id=\"1:2\"`.",
+        "Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.\n\n## Navigation / Icon / notifications\n**Node ID:** 1159:39\n\nSemantic-color adapter using the existing Wardo notifications vector geometry. Source node 1117:3. Navigation Icon Role determines Default or On indicator foreground; platform and theme aliases remain connected.",
+        "The generated code contains image and SVG URL constants, e.g. const image = '[temporary Figma asset download URL omitted] These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.",
+        "Node “Navigation / Icon / notifications” (1159:39): No Code Connect mapping labelled “swiftui” was found. Available labels: “React”.",
+        "Provide a matching label to retrieve the associated Code Connect mapping for this node."
+      ]
+    },
+    {
+      "nodeId": "1159:44",
+      "context": [
+        "const imgNavigationIconProfile = \"[temporary Figma asset download URL omitted]\";\n\nexport default function NavigationIconProfile({ className }: { className?: string }) {\n  return (\n    <div className={className || \"relative size-[24px]\"} data-node-id=\"1159:44\" data-name=\"Navigation / Icon / profile\">\n      <img alt=\"\" className=\"absolute block inset-0 max-w-none size-full\" src={imgNavigationIconProfile} />\n    </div>\n  );\n}",
+        "SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.\n1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens\n2. Convert React syntax to the target framework/library\n3. Transform all Tailwind classes to the target styling system while preserving exact visual design\n4. Follow the project's existing patterns and conventions\nDO NOT install any Tailwind as a dependency unless the user instructs you to do so.\n",
+        "Node ids have been added to the code as data attributes, e.g. `data-node-id=\"1:2\"`.",
+        "Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.\n\n## Navigation / Icon / profile\n**Node ID:** 1159:44\n\nSemantic-color adapter using the existing Wardo profile vector geometry. Source node 1117:5. Navigation Icon Role determines Default or On indicator foreground; platform and theme aliases remain connected.",
+        "The generated code contains image and SVG URL constants, e.g. const image = '[temporary Figma asset download URL omitted] These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.",
+        "Node “Navigation / Icon / profile” (1159:44): No Code Connect mapping labelled “swiftui” was found. Available labels: “React”.",
+        "Provide a matching label to retrieve the associated Code Connect mapping for this node."
+      ]
+    }
+  ]
+}

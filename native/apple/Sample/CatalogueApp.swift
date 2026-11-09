@@ -42,6 +42,7 @@ struct CatalogueView: View {
                     NavigationLink { PagingExample() } label: { Text("Paging example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                     NavigationLink { SliderExample() } label: { Text("Slider variants").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                     NavigationLink { SectionIndexExample() } label: { Text("Section index example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
+                    NavigationLink { AppleNavigationItemExample() } label: { Text("Apple navigation item example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                 }
                 Section("Swipe actions") {
                     WardoSwipeActionRow(leading: [.init(id: "archive", title: "Archive", systemImage: "archivebox", action: { notice = "Archived" })], trailing: [.init(id: "delete", title: "Delete", systemImage: "trash", role: .destructive, tint: .red, action: { notice = "Deleted" })]) { Text("Swipe this row") }
@@ -153,5 +154,37 @@ struct SidebarExample: View {
             }).environment(\.layoutDirection, rtl ? .rightToLeft : .leftToRight)
             Text("Selected: \(selection)").padding().accessibilityIdentifier("sidebar-selection")
         }.navigationTitle("Sidebar example")
+    }
+}
+
+struct AppleNavigationItemExample: View {
+    @Environment(\.wardoTheme) private var theme
+    @State private var selection = "None"
+    @State private var rtl = false
+    @State private var enabled = true
+    @State private var largeText = false
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                Toggle("Right-to-left destination items", isOn: $rtl)
+                Toggle("Enable destination items", isOn: $enabled)
+                Toggle("Large navigation text", isOn: $largeText)
+                VStack(alignment: .leading, spacing: 16) {
+                    WardoAppleNavigationItem("Sidebar destination", layout: .horizontal, selected: selection == "Sidebar", badge: "3", badgeDescription: "3 unread items", action: { selection = "Sidebar" }) { wardoNavigationImage(.events).resizable().scaledToFit() }
+                    WardoAppleNavigationItem("Tab destination", layout: .vertical, selected: selection == "Tab", action: { selection = "Tab" }) { wardoNavigationImage(.saved).resizable().scaledToFit() }
+                    WardoAppleNavigationItem("Text destination", layout: .textOnly, selected: selection == "Text", action: { selection = "Text" }) { EmptyView() }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .dynamicTypeSize(largeText ? .accessibility3 : .large)
+                .environment(\.layoutDirection, rtl ? .rightToLeft : .leftToRight)
+                .disabled(!enabled)
+                Text("Selected destination: \(selection)").accessibilityIdentifier("apple-destination-selection")
+                HStack(spacing: 24) {
+                    ForEach(WardoNavigationGlyph.allCases, id: \.self) { glyph in
+                        wardoNavigationImage(glyph).resizable().scaledToFit().frame(width: 24, height: 24)
+                    }
+                }.foregroundStyle(WardoColorToken.textPrimary.color(in: theme)).accessibilityHidden(true)
+            }.padding()
+        }.navigationTitle("Wardo destination items")
     }
 }

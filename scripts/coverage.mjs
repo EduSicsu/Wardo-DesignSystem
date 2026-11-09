@@ -90,6 +90,21 @@ export async function checkRegistry(registry,{complete=false}={}) {
    if(!/\bwidth="24"/.test(svgRoot)||!/\bheight="24"/.test(svgRoot)||!vectorRoot.includes('android:width="24dp"')||!vectorRoot.includes('android:height="24dp"'))failures.push(`Changed Android toolbar root geometry ${asset.resource}`);
   }
  } catch(error) {failures.push(`Invalid Android toolbar asset manifest: ${error.message}`);}
+ try {
+  const manifest=JSON.parse(await readFile(new URL('coverage/navigation-artwork-assets.json',root),'utf8'));
+  const sources={};for(const [platform,path] of Object.entries(manifest.rendererSources)){if(!safePath(path))throw new Error('Unsafe navigation renderer path');sources[platform]=await readFile(new URL(path,root),'utf8');}
+  for(const asset of manifest.assets) {
+   for(const [path,hash] of [[asset.source,asset.sourceSha256],[asset.apple,asset.sourceSha256],[asset.android,asset.androidSha256]]) {
+    if(!safePath(path)||!/^[a-f0-9]{64}$/.test(hash??'')){failures.push('Invalid navigation artwork reference');continue;}
+    try {const bytes=await readFile(new URL(path,root));if(!bytes.length||createHash('sha256').update(bytes).digest('hex')!==hash)failures.push(`Missing or changed navigation artwork ${path}`);}
+    catch {failures.push(`Missing navigation artwork ${path}`);}
+   }
+   if(!safePath(asset.appleContents))throw new Error('Unsafe image-set metadata path');
+   const contents=JSON.parse(await readFile(new URL(asset.appleContents,root),'utf8'));
+   if(contents.images?.[0]?.filename!==asset.apple.split('/').at(-1)||contents.properties?.['preserves-vector-representation']!==true||contents.properties?.['template-rendering-intent']!=='template')failures.push(`Invalid native image-set configuration ${asset.assetName}`);
+   if(!sources.apple.includes(`"${asset.assetName}"`)||!sources.android.includes(`R.drawable.${asset.resource}`)||!sources.web.includes(`"${asset.name}":`))failures.push(`Unused navigation artwork ${asset.name}`);
+  }
+ } catch(error) {failures.push(`Invalid navigation artwork manifest: ${error.message}`);}
  for(const preview of [...(registry.samplePreviews??[]),...registry.entries.flatMap(entry=>entry.previews??[])]) {
   if(!safePath(preview.path)){failures.push(`Unsafe preview path ${preview.path}`);continue;}
   try { const bytes=await readFile(new URL(preview.path,root));if(!bytes.length)failures.push(`Empty preview ${preview.path}`);else if(bytes.length>24&&bytes.subarray(1,4).toString()==='PNG'&&(bytes.readUInt32BE(16)<2||bytes.readUInt32BE(20)<2))failures.push(`Invalid placeholder preview ${preview.path}`); }

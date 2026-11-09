@@ -1742,17 +1742,47 @@
         "iOS",
         "iPadOS"
       ],
-      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
-      "symbol": "WardoTabView",
-      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "source": "native/apple/Sources/WardoDesignSystem/AppleNavigationItem.swift",
+      "symbol": "WardoAppleNavigationItem",
+      "example": "WardoAppleNavigationItem(\"Events\", layout: .vertical, selected: selectedID == \"events\", action: { selectedID = \"events\" }) { destinationIcon }",
       "gaps": [
-        "Per-entry native accessory, item, and symbol property mapping remains pending."
+        "Review native keyboard/VoiceOver, all theme and badge configurations, source fidelity and surrounding navigation compositions.",
+        "This record is the canonical Wardo destination atom. System TabView and NavigationSplitView compositions have separate records."
       ]
     },
     "validation": {
       "status": "pending",
-      "evidence": []
-    }
+      "evidence": [
+        "coverage/evidence/2026-11-09/apple-navigation-items.json"
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Layout direction",
+          "target": "environment(\\.layoutDirection)",
+          "notes": "Native SwiftUI stack order, leading text alignment and trailing badge placement inherit the caller layout direction. Native SF Pro replaces the unresolved Inter specimen as required by the design contract."
+        }
+      ]
+    },
+    "previews": [
+      {
+        "platform": "iOS",
+        "path": "coverage/previews/native/iphone-navigation-items.png",
+        "alt": "Wardo destination items with exact navigation artwork and RTL selection in the iPhone sample"
+      }
+    ]
   },
   "2309:10953": {
     "implementation": {
@@ -2004,15 +2034,47 @@
         "iOS",
         "iPadOS"
       ],
-      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
-      "symbol": "WardoSidebar",
-      "example": "WardoSidebar(\"Library\", selection: $selectedItem, rows: { rows }, detail: { detail })",
-      "gaps": []
+      "source": "native/apple/Sources/WardoDesignSystem/AppleNavigationItem.swift",
+      "symbol": "WardoAppleNavigationItem",
+      "example": "WardoAppleNavigationItem(\"Events\", layout: .horizontal, selected: selectedID == \"events\", action: { selectedID = \"events\" }) { destinationIcon }",
+      "gaps": [
+        "Review native keyboard/VoiceOver, all theme and badge configurations, source fidelity and surrounding navigation compositions.",
+        "This record is the canonical Wardo destination atom. System TabView and NavigationSplitView compositions have separate records."
+      ]
     },
     "validation": {
       "status": "pending",
-      "evidence": []
-    }
+      "evidence": [
+        "coverage/evidence/2026-11-09/apple-navigation-items.json"
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Layout direction",
+          "target": "environment(\\.layoutDirection)",
+          "notes": "Native SwiftUI stack order, leading text alignment and trailing badge placement inherit the caller layout direction. Native SF Pro replaces the unresolved Inter specimen as required by the design contract."
+        }
+      ]
+    },
+    "previews": [
+      {
+        "platform": "iOS",
+        "path": "coverage/previews/native/iphone-navigation-items.png",
+        "alt": "Wardo destination items with exact navigation artwork and RTL selection in the iPhone sample"
+      }
+    ]
   },
   "2532:26334": {
     "implementation": {
@@ -7143,6 +7205,20 @@
           "Only the Android anatomy is implemented by this alternative. Android XR compatibility specimens use this 2D control; native spatial navigation has separate records.",
           "Verify all themes, badge values, large text, TalkBack and keyboard focus."
         ]
+      },
+      {
+        "status": "source-available",
+        "framework": "SwiftUI",
+        "platforms": [
+          "iOS",
+          "iPadOS"
+        ],
+        "source": "native/apple/Sources/WardoDesignSystem/AppleNavigationItem.swift",
+        "symbol": "WardoAppleNavigationItem",
+        "example": "WardoAppleNavigationItem(\"Events\", layout: .horizontal, selected: selectedID == \"events\", badge: unreadCount, action: { selectedID = \"events\" }) { destinationIcon }",
+        "gaps": [
+          "Keyboard, VoiceOver, all source themes/badges and native containing compositions remain under review."
+        ]
       }
     ],
     "properties": {
@@ -7200,18 +7276,18 @@
       "mappings": [
         {
           "property": "Icon#1118:162",
-          "target": "Android: icon content slot",
-          "notes": "Caller owns the icon; the control provides a 24 dp decorative slot and semantic tint."
+          "target": "React icon / Compose icon / SwiftUI icon content slot",
+          "notes": "Application-owned decorative content, within each platform\u2019s source icon geometry."
         },
         {
           "property": "Label#1118:163",
-          "target": "Android: label",
-          "notes": "Caller supplies localized destination text."
+          "target": "React label / Compose label / SwiftUI title",
+          "notes": "Caller-owned localized destination name; Geologica for Web/Android, native SF Pro for Apple."
         },
         {
           "property": "Show badge#1118:164",
-          "target": "Android: nullable badge",
-          "notes": "A null value omits the badge; badgeContentDescription supports a localized announcement."
+          "target": "Nullable badge value in each platform API",
+          "notes": "Omit the badge with null/nil. Caller supplies localized badge descriptions; Web uses aria-describedby and Apple exposes an accessibility value."
         },
         {
           "property": "Platform",
@@ -7220,19 +7296,32 @@
         },
         {
           "property": "Layout",
-          "target": "Android: WardoNavigationItemLayout",
-          "notes": "Vertical, Horizontal and TextOnly have separate source geometry and selected treatments."
+          "target": "React layout / WardoNavigationItemLayout / WardoAppleNavigationItemLayout",
+          "notes": "Vertical, horizontal and text-only retain platform-specific indicators, selected treatments, fonts and minimum targets."
         },
         {
           "property": "Current",
-          "target": "Android: selected",
-          "notes": "Independent application-owned selection, separate from focus/press/disabled state."
+          "target": "React current / native selected",
+          "notes": "Application-owned selection remains independent of hover, press, focus and disabled state."
         },
         {
           "property": "Layout direction",
-          "target": "Android: LocalLayoutDirection",
-          "notes": "Inherited native logical layout. Web and Apple mappings remain unresolved."
+          "target": "HTML dir / LocalLayoutDirection / SwiftUI layoutDirection",
+          "notes": "Native logical positioning and text alignment follow the caller\u2019s direction; all platform configurations still require visual review."
         }
+      ]
+    },
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Navigation.tsx",
+      "symbol": "NavigationItem",
+      "example": "<NavigationItem id=\"events\" label=\"Events\" href=\"/events\" layout=\"horizontal\" current={currentID === \"events\"} icon={destinationIcon} badge={unreadCount} badgeLabel={unreadDescription} />",
+      "gaps": [
+        "Validate all Web layout, interaction, high-contrast, zoom and theme variants against the source."
       ]
     }
   },
@@ -7361,6 +7450,238 @@
           "target": "Android: LocalLayoutDirection",
           "notes": "Native placement and system insets are inherited."
         }
+      ]
+    }
+  },
+  "1159:29": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "example": "<Icon name=\"events\" width={24} height={24} />",
+      "gaps": [
+        "Review source geometry and semantic tint in the consuming navigation control."
+      ]
+    },
+    "alternatives": [
+      {
+        "status": "source-available",
+        "framework": "SwiftUI",
+        "platforms": [
+          "iOS",
+          "iPadOS",
+          "visionOS"
+        ],
+        "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
+        "symbol": "wardoNavigationImage",
+        "example": "wardoNavigationImage(.events).resizable().scaledToFit()",
+        "gaps": [
+          "Verify asset rendering across the native sample targets and semantic parent roles."
+        ]
+      },
+      {
+        "status": "source-available",
+        "framework": "Jetpack Compose",
+        "platforms": [
+          "Android",
+          "Android XR"
+        ],
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
+        "symbol": "WardoNavigationArtwork",
+        "example": "WardoNavigationArtwork(WardoNavigationGlyph.Events)",
+        "gaps": [
+          "Compile and exercise the exact vector resources in the native sample."
+        ]
+      }
+    ],
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/navigation-artwork-assets.json",
+        "coverage/design-context/navigation-artwork-properties.json"
+      ]
+    }
+  },
+  "1159:34": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "example": "<Icon name=\"saved\" width={24} height={24} />",
+      "gaps": [
+        "Review source geometry and semantic tint in the consuming navigation control."
+      ]
+    },
+    "alternatives": [
+      {
+        "status": "source-available",
+        "framework": "SwiftUI",
+        "platforms": [
+          "iOS",
+          "iPadOS",
+          "visionOS"
+        ],
+        "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
+        "symbol": "wardoNavigationImage",
+        "example": "wardoNavigationImage(.saved).resizable().scaledToFit()",
+        "gaps": [
+          "Verify asset rendering across the native sample targets and semantic parent roles."
+        ]
+      },
+      {
+        "status": "source-available",
+        "framework": "Jetpack Compose",
+        "platforms": [
+          "Android",
+          "Android XR"
+        ],
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
+        "symbol": "WardoNavigationArtwork",
+        "example": "WardoNavigationArtwork(WardoNavigationGlyph.Saved)",
+        "gaps": [
+          "Compile and exercise the exact vector resources in the native sample."
+        ]
+      }
+    ],
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/navigation-artwork-assets.json",
+        "coverage/design-context/navigation-artwork-properties.json"
+      ]
+    }
+  },
+  "1159:39": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "example": "<Icon name=\"notifications\" width={24} height={24} />",
+      "gaps": [
+        "Review source geometry and semantic tint in the consuming navigation control."
+      ]
+    },
+    "alternatives": [
+      {
+        "status": "source-available",
+        "framework": "SwiftUI",
+        "platforms": [
+          "iOS",
+          "iPadOS",
+          "visionOS"
+        ],
+        "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
+        "symbol": "wardoNavigationImage",
+        "example": "wardoNavigationImage(.notifications).resizable().scaledToFit()",
+        "gaps": [
+          "Verify asset rendering across the native sample targets and semantic parent roles."
+        ]
+      },
+      {
+        "status": "source-available",
+        "framework": "Jetpack Compose",
+        "platforms": [
+          "Android",
+          "Android XR"
+        ],
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
+        "symbol": "WardoNavigationArtwork",
+        "example": "WardoNavigationArtwork(WardoNavigationGlyph.Notifications)",
+        "gaps": [
+          "Compile and exercise the exact vector resources in the native sample."
+        ]
+      }
+    ],
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/navigation-artwork-assets.json",
+        "coverage/design-context/navigation-artwork-properties.json"
+      ]
+    }
+  },
+  "1159:44": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "example": "<Icon name=\"profile\" width={24} height={24} />",
+      "gaps": [
+        "Review source geometry and semantic tint in the consuming navigation control."
+      ]
+    },
+    "alternatives": [
+      {
+        "status": "source-available",
+        "framework": "SwiftUI",
+        "platforms": [
+          "iOS",
+          "iPadOS",
+          "visionOS"
+        ],
+        "source": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
+        "symbol": "wardoNavigationImage",
+        "example": "wardoNavigationImage(.profile).resizable().scaledToFit()",
+        "gaps": [
+          "Verify asset rendering across the native sample targets and semantic parent roles."
+        ]
+      },
+      {
+        "status": "source-available",
+        "framework": "Jetpack Compose",
+        "platforms": [
+          "Android",
+          "Android XR"
+        ],
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
+        "symbol": "WardoNavigationArtwork",
+        "example": "WardoNavigationArtwork(WardoNavigationGlyph.Profile)",
+        "gaps": [
+          "Compile and exercise the exact vector resources in the native sample."
+        ]
+      }
+    ],
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/navigation-artwork-assets.json",
+        "coverage/design-context/navigation-artwork-properties.json"
       ]
     }
   }

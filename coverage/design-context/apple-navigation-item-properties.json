@@ -1,0 +1,33 @@
+{
+  "figmaFile": "rkJclvwYpmw9ja5vUwkl3P",
+  "components": [
+    {
+      "nodeId": "2396:18600",
+      "name": "iOS / Tab Bar Item",
+      "properties": {
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      }
+    },
+    {
+      "nodeId": "2396:18617",
+      "name": "iOS / Sidebar Item",
+      "properties": {
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      }
+    }
+  ]
+}

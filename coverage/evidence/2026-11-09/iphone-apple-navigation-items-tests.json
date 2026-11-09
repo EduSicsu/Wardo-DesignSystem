@@ -1,0 +1,53 @@
+{
+  "devices" : [
+    {
+      "architecture" : "arm64",
+      "deviceId" : "A7EACD22-4239-4681-979F-E1DB3EB4D4A7",
+      "deviceName" : "iPhone 18 Pro",
+      "modelName" : "iPhone 18 Pro",
+      "osBuildNumber" : "24B8117",
+      "osVersion" : "27.2",
+      "platform" : "iOS Simulator"
+    }
+  ],
+  "testNodes" : [
+    {
+      "children" : [
+        {
+          "children" : [
+            {
+              "children" : [
+                {
+                  "duration" : "48s",
+                  "durationInSeconds" : 48.841516971588135,
+                  "name" : "testAppleDestinationItemsExposeSelectionBadgesRTLAndLargeText()",
+                  "nodeIdentifier" : "CatalogueUITests/testAppleDestinationItemsExposeSelectionBadgesRTLAndLargeText()",
+                  "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests/testAppleDestinationItemsExposeSelectionBadgesRTLAndLargeText",
+                  "nodeType" : "Test Case",
+                  "result" : "Passed"
+                }
+              ],
+              "name" : "CatalogueUITests",
+              "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests",
+              "nodeType" : "Test Suite",
+              "result" : "Passed"
+            }
+          ],
+          "name" : "WardoCatalogueUITests",
+          "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests",
+          "nodeType" : "UI test bundle",
+          "result" : "Passed"
+        }
+      ],
+      "name" : "WardoCatalogue",
+      "nodeType" : "Test Plan",
+      "result" : "Passed"
+    }
+  ],
+  "testPlanConfigurations" : [
+    {
+      "configurationId" : "1",
+      "configurationName" : "Test Scheme Action"
+    }
+  ]
+}

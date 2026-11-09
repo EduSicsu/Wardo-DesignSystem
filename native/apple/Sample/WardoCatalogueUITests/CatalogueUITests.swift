@@ -166,6 +166,54 @@ import XCTest
         flip(app.switches["Enable section index"])
         XCTAssertFalse(index.isEnabled)
     }
+    func testAppleDestinationItemsExposeSelectionBadgesRTLAndLargeText() throws {
+        let app = XCUIApplication(); app.launch()
+        let link = app.buttons["Apple navigation item example"]
+        reveal(link, in: app); link.tap()
+        let sidebar = app.buttons["Sidebar destination"]
+        let tab = app.buttons["Tab destination"]
+        let text = app.buttons["Text destination"]
+        XCTAssertTrue(sidebar.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(sidebar.frame.height, 44)
+        XCTAssertGreaterThanOrEqual(tab.frame.height, 54)
+        XCTAssertGreaterThanOrEqual(text.frame.height, 44)
+        XCTAssertEqual(sidebar.value as? String, "3 unread items")
+        #if os(visionOS)
+        sidebar.tap()
+        #else
+        sidebar.coordinate(withNormalizedOffset: CGVector(dx: 0.95, dy: 0.5)).tap()
+        #endif
+        XCTAssertTrue(sidebar.isSelected)
+        XCTAssertTrue(app.staticTexts["Selected destination: Sidebar"].exists)
+        tab.tap()
+        XCTAssertTrue(tab.isSelected)
+        XCTAssertFalse(sidebar.isSelected)
+        text.tap()
+        XCTAssertTrue(text.isSelected)
+        XCTAssertTrue(app.staticTexts["Selected destination: Text"].exists)
+        let originalX = sidebar.frame.minX
+        flip(app.switches["Right-to-left destination items"])
+        XCTAssertGreaterThan(sidebar.frame.minX, originalX)
+        sidebar.tap()
+        XCTAssertTrue(sidebar.isSelected)
+        #if !os(visionOS)
+        let normal = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); normal.name = "Wardo destination items selected and RTL"; normal.lifetime = .keepAlways; add(normal)
+        #endif
+        let originalHeight = sidebar.frame.height
+        flip(app.switches["Large navigation text"])
+        XCTAssertGreaterThan(sidebar.frame.height, originalHeight)
+        XCTAssertGreaterThan(sidebar.frame.width, 240)
+        XCTAssertEqual(sidebar.frame.width, text.frame.width, accuracy: 1)
+        flip(app.switches["Enable destination items"])
+        XCTAssertFalse(sidebar.isEnabled)
+        XCTAssertFalse(tab.isEnabled)
+        XCTAssertFalse(text.isEnabled)
+        text.tap()
+        XCTAssertTrue(app.staticTexts["Selected destination: Sidebar"].exists)
+        #if !os(visionOS)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); screenshot.name = "Wardo destination items with large text"; screenshot.lifetime = .keepAlways; add(screenshot)
+        #endif
+    }
     /// A native switch's label can span its row while the knob remains trailing.
     /// Validate state so a label-only tap cannot masquerade as an RTL/disabled check.
     private func flip(_ toggle: XCUIElement) {
@@ -184,10 +232,20 @@ import XCTest
     private func reveal(_ element: XCUIElement, in app: XCUIApplication) {
         for _ in 0..<8 {
             if element.exists && element.isHittable { return }
-            if app.collectionViews.firstMatch.exists { app.collectionViews.firstMatch.swipeUp() }
-            else if app.scrollViews.firstMatch.exists { app.scrollViews.firstMatch.swipeUp() }
-            else { app.swipeUp() }
+            let surface: XCUIElement
+            if app.collectionViews.firstMatch.exists { surface = app.collectionViews.firstMatch }
+            else if app.scrollViews.firstMatch.exists { surface = app.scrollViews.firstMatch }
+            else { surface = app }
+            #if os(visionOS)
+            surface.swipeUp()
+            #else
+            // Centered swipes can land on the catalogue's slider thumbs.
+            let start = surface.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.8))
+            let end = surface.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.2))
+            start.press(forDuration: 0.05, thenDragTo: end)
+            #endif
         }
+        let hierarchy = XCTAttachment(string: app.debugDescription); hierarchy.name = "Unreachable catalogue control"; hierarchy.lifetime = .keepAlways; add(hierarchy)
         XCTAssertTrue(element.exists && element.isHittable, "The control must be reachable by scrolling")
     }
 

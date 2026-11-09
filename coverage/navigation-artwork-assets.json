@@ -1,0 +1,68 @@
+{
+  "figmaFile": "rkJclvwYpmw9ja5vUwkl3P",
+  "androidConverter": "com.android.tools:sdk-common:32.5.0 Svg2Vector; no conversion warnings",
+  "appleProcessing": "Original SVGs in universal template image sets, preserving vector data; compiled by the installed Xcode asset compiler.",
+  "rendererSources": {
+    "apple": "native/apple/Sources/WardoDesignSystem/NavigationArtwork.swift",
+    "android": "native/android/src/main/kotlin/com/wardo/designsystem/NavigationArtwork.kt",
+    "web": "src/components/Icon.tsx"
+  },
+  "assets": [
+    {
+      "nodeId": "1159:29",
+      "name": "events",
+      "source": "coverage/assets/navigation/events.svg",
+      "sourceSha256": "01ec1c6a9be9a2ee186f3c0e5ed0e18760240c0786f5e8ace118ddb1f49cd1d7",
+      "apple": "native/apple/Sources/WardoDesignSystem/Resources/NavigationArtwork.xcassets/WardoNavigationEvents.imageset/events.svg",
+      "assetName": "WardoNavigationEvents",
+      "appleContents": "native/apple/Sources/WardoDesignSystem/Resources/NavigationArtwork.xcassets/WardoNavigationEvents.imageset/Contents.json",
+      "android": "native/android/src/main/res/drawable/wardo_navigation_events.xml",
+      "androidSha256": "239114dae1e3f3c3b12647a3f01da28061f9c42596ad96be4c1b4bdad52899cb",
+      "resource": "wardo_navigation_events",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "1159:34",
+      "name": "saved",
+      "source": "coverage/assets/navigation/saved.svg",
+      "sourceSha256": "ab2022cd678b7186279cb786124e340b7e3ed91601c5a00affa558090635bb10",
+      "apple": "native/apple/Sources/WardoDesignSystem/Resources/NavigationArtwork.xcassets/WardoNavigationSaved.imageset/saved.svg",
+      "assetName": "WardoNavigationSaved",
+      "appleContents": "native/apple/Sources/WardoDesignSystem/Resources/NavigationArtwork.xcassets/WardoNavigationSaved.imageset/Contents.json",
+      "android": "native/android/src/main/res/drawable/wardo_navigation_saved.xml",
+      "androidSha256": "92301034f47185f2c8dd23e07bcce75824d8265b1e5d80c50aba302ba84615ae",
+      "resource": "wardo_navigation_saved",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "1159:39",
+      "name": "notifications",
+      "source": "coverage/assets/navigation/notifications.svg",
+      "sourceSha256": "e95487c34e8b8ac58c6e665dbf69eb05af359dbac7f72603fe9240b336621722",
+      "apple": "native/apple/Sources/WardoDesignSystem/Resources/NavigationArtwork.xcassets/WardoNavigationNotifications.imageset/notifications.svg",
+      "assetName": "WardoNavigationNotifications",
+      "appleContents": "native/apple/Sources/WardoDesignSystem/Resources/NavigationArtwork.xcassets/WardoNavigationNotifications.imageset/Contents.json",
+      "android": "native/android/src/main/res/drawable/wardo_navigation_notifications.xml",
+      "androidSha256": "6e6d5a38512495e380c918c3c1f3fddb711f220a97f66dd601564052eb71dbfd",
+      "resource": "wardo_navigation_notifications",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "1159:44",
+      "name": "profile",
+      "source": "coverage/assets/navigation/profile.svg",
+      "sourceSha256": "26a7bc6555695fef64dac959c0dcb1a9905d09fee62adedf048c45168a1711f9",
+      "apple": "native/apple/Sources/WardoDesignSystem/Resources/NavigationArtwork.xcassets/WardoNavigationProfile.imageset/profile.svg",
+      "assetName": "WardoNavigationProfile",
+      "appleContents": "native/apple/Sources/WardoDesignSystem/Resources/NavigationArtwork.xcassets/WardoNavigationProfile.imageset/Contents.json",
+      "android": "native/android/src/main/res/drawable/wardo_navigation_profile.xml",
+      "androidSha256": "f5deda3fdb6acd5dead98ca98ed93177b4dc918781a0d994371faf12d9ac73e2",
+      "resource": "wardo_navigation_profile",
+      "width": 24,
+      "height": 24
+    }
+  ]
+}
