@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-08",
+  "scope": "Slider-family execution; all design states, VoiceOver, keyboard and visionOS fidelity still require review",
+  "checks": [
+    {
+      "platform": "iOS 27.2 / iPhone 18 Pro",
+      "result": "passed",
+      "test": "testSliderSizesStopsDisabledStateAndRTL",
+      "evidence": "coverage/evidence/2026-11-08/iphone-paging-slider-tests.json",
+      "exercises": [
+        "all four visual sizes retain at least 44-point interaction height",
+        "minimum and maximum taps update application state",
+        "RTL tap direction after confirmed switch change",
+        "disabled native slider accessibility state",
+        "editing callback returns to idle"
+      ]
+    },
+    {
+      "platform": "iOS 27.2 / iPhone 18 Pro",
+      "result": "passed",
+      "test": "testColorPickerCanSelectTabSaveAndClose",
+      "note": "Passed in the preceding selected run; its other slider test failed because sample switches were tapped on their labels. Slider and paging state checks passed after correcting and verifying switch activation."
+    },
+    {
+      "platform": "macOS Swift value tests",
+      "result": "passed",
+      "tests": 11,
+      "note": "Run preceded the final accessibility representation; the later iPhone run compiled and exercised that representation. Quarter-step value assertions passed."
+    }
+  ],
+  "sourceHashes": {
+    "native/apple/Sources/WardoDesignSystem/VisionSlider.swift": "fdccaddbb119781eef08a1a3b4ad66ef3cf58026ea1f2285b556fd55085fd416",
+    "native/apple/Sources/WardoDesignSystem/VisionLabeledSlider.swift": "2a59c6275bf448daa786ad4c6f8faca0910bec0bf602ad59599cfe3311fbbe2f"
+  }
+}

@@ -60,22 +60,15 @@ public struct WardoToolbarButton<Label: View>: View {
 public struct WardoToolbarTitle: View {
     private let title: String
     private let subtitle: String?
-    public init(_ title: String, subtitle: String? = nil) { self.title = title; self.subtitle = subtitle }
-    public var body: some View { VStack(alignment: .leading) { Text(title).font(.headline); if let subtitle { Text(subtitle).font(.subheadline).foregroundStyle(.secondary) } } }
-}
-
-public struct WardoPageControl: View {
-    @Binding private var selection: Int
-    private let count: Int
-    private let label: String
-    public init(_ label: String, selection: Binding<Int>, count: Int) { precondition(count > 0); self.label = label; _selection = selection; self.count = count }
+    private let titleStyle: WardoToolbarTextStyle
+    private let subtitleStyle: WardoToolbarTextStyle
+    public init(_ title: String, subtitle: String? = nil, titleStyle: WardoToolbarTextStyle = .bodyTitle, subtitleStyle: WardoToolbarTextStyle = .subheadlineSubtitle) {
+        self.title = title; self.subtitle = subtitle; self.titleStyle = titleStyle; self.subtitleStyle = subtitleStyle
+    }
     public var body: some View {
-        HStack(spacing: 8) {
-            ForEach(0..<count, id: \.self) { index in
-                Button { selection = index } label: { Circle().fill(selection == index ? Color.primary : Color.secondary).frame(width: 8, height: 8).padding(14) }
-                    .buttonStyle(.plain).accessibilityLabel("\(label), page \(index + 1) of \(count)")
-                    .accessibilityAddTraits(selection == index ? [.isSelected] : [])
-            }
+        VStack(alignment: .leading, spacing: 0) {
+            WardoToolbarText(title, style: titleStyle)
+            if let subtitle { WardoToolbarText(subtitle, style: subtitleStyle) }
         }
     }
 }

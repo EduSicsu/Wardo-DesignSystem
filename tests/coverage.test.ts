@@ -1,0 +1,14 @@
+import { describe,it,expect } from 'vitest';
+// The command is also consumed by coding agents; exercise its actual public lookup interface.
+import { execFileSync } from 'node:child_process';
+const command=(...args:string[])=>JSON.parse(execFileSync(process.execPath,['scripts/coverage.mjs',...args],{encoding:'utf8',stdio:'pipe'}));
+describe('independent component registry',()=>{
+ it('accounts for the published inventory without inflating Figma connections',()=>{const summary=command('summary');expect(summary.total).toBe(797);expect(summary.figmaConnected).toBe(199);expect(summary.active+summary.reference).toBe(summary.total);});
+ it('resolves a node, stable identifier, and Figma URL to the same component',()=>{const node=command('lookup','1531:158362');expect(command('lookup','wardo-1531-158362')).toEqual(node);expect(command('lookup','https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-158362')).toEqual(node);expect(node[0].implementation.symbol).toBe('SearchField');});
+ it('selects a platform alternative while retaining the original binding',()=>{const entry=command('lookup','2277:12775','--platform','Android')[0];expect(entry.implementation.source).toContain('native/android/');expect(entry.alternatives.some((binding:{source:string})=>binding.source.includes('native/apple/'))).toBe(true);expect(entry.alternatives.some((binding:{source:string})=>binding.source===entry.implementation.source)).toBe(false);expect(entry.validation.status).toBe('pending');});
+ it('keeps the deprecated swipe row out of supported runtime coverage',()=>{expect(command('lookup','1531:22852')[0].category).toBe('archived');});
+ it('validates source references and all reference dispositions',()=>{expect(command('check').total).toBe(797);});
+ it('rejects a mapped record that omits a design property',()=>{const result=JSON.parse(execFileSync(process.execPath,['--input-type=module','-e',`import {loadRegistry,checkRegistry} from './scripts/coverage.mjs';const registry=await loadRegistry();const entry=registry.entries.find(e=>e.nodeId==='2598:7033');entry.properties.mappings=entry.properties.mappings.filter(m=>m.property!=='Orientation');console.log(JSON.stringify(await checkRegistry(registry)));`],{encoding:'utf8'}));expect(result.some((failure:string)=>failure.includes('missing property mapping Orientation'))).toBe(true);});
+ it('requires platform alternatives to be independently complete',()=>{const result=JSON.parse(execFileSync(process.execPath,['--input-type=module','-e',`import {loadRegistry,checkRegistry} from './scripts/coverage.mjs';console.log(JSON.stringify(await checkRegistry(await loadRegistry(),{complete:true})));`],{encoding:'utf8'}));expect(result.some((failure:string)=>failure.includes('wardo-2277-12775: incomplete alternative'))).toBe(true);});
+ it('rejects a claim of completion while entries remain unverified',()=>{expect(()=>command('check','--complete')).toThrow();});
+});

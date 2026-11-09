@@ -10,8 +10,8 @@ The published audit classification is:
 
 | Category | Entries |
 | --- | ---: |
-| Runtime candidates, including native controls and reusable internals | 409 |
-| Archived components | 44 |
+| Runtime candidates, including native controls and reusable internals | 408 |
+| Archived components | 45 |
 | Documentation and organization assets | 174 |
 | Device references and platform examples | 164 |
 | Wardo example compositions | 6 |
@@ -23,7 +23,7 @@ These are audit categories, not Figma connection or Skip statuses. No entry has 
 
 The React library covers actions, advanced inputs, navigation, data display, menus, feedback, overlays and recovery/form patterns. Meaningful checks cover keyboard navigation, focus restoration, combo selection, chip ordering, table sorting, tree expansion, responsive width and automated light/dark WCAG checks.
 
-Native SwiftUI and Jetpack Compose source packages, semantic color snapshots and licensed fonts are in `native`. Native builds and runtime checks were explicitly deferred by the owner. Several custom visionOS layouts and Android XR spatial behavior still require implementation and validation; generic system pickers are not claimed as full visual matches.
+Native SwiftUI and Jetpack Compose source packages, semantic color snapshots and licensed fonts are in `native`. Native builds and runtime checks are now included. The custom visionOS slider, calendar and colour picker, and real Android XR spatial panel/toolbar/dialog sources have been added. Platform sample checks and per-entry design validation remain separate. Every active entry has a source candidate in `coverage/registry.json`; unresolved property/variant reviews remain explicit. The deprecated swipe-row reference is archived in the repository catalogue, without changing its Figma status.
 
 ## Activation and snippets
 

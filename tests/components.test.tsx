@@ -4,6 +4,7 @@ import { describe, it, expect, vi } from 'vitest';
 import { Button, ActionChip, Accordion, AccordionGroup, PasswordField, TextField, Checkbox, Switch, RadioGroup } from '../src';
 describe('Actions',()=>{
  it('uses a safe button type inside forms and blocks busy activation',async()=>{const click=vi.fn();const {rerender}=render(<Button onClick={click}>Save</Button>);expect(screen.getByRole('button')).toHaveAttribute('type','button');await userEvent.click(screen.getByRole('button'));expect(click).toHaveBeenCalledOnce();rerender(<Button busy onClick={click}>Save</Button>);expect(screen.getByRole('button')).toBeDisabled();await userEvent.click(screen.getByRole('button'));expect(click).toHaveBeenCalledOnce();});
+ it('preserves application-owned toggle semantics',()=>{const {rerender}=render(<Button aria-pressed={false}>Save</Button>);expect(screen.getByRole('button')).toHaveAttribute('aria-pressed','false');rerender(<Button aria-pressed>Unsave</Button>);expect(screen.getByRole('button')).toHaveAttribute('aria-pressed','true');rerender(<Button>Continue</Button>);expect(screen.getByRole('button')).not.toHaveAttribute('aria-pressed');});
  it('exposes selected chips as toggle buttons',()=>{render(<ActionChip selected>Favorites</ActionChip>);expect(screen.getByRole('button')).toHaveAttribute('aria-pressed','true');});
 });
 describe('Disclosure',()=>{

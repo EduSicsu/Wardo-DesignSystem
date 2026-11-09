@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="3" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-11-09T00:07:19" hostname="localhost">
+  <testsuite name="com.wardo.xrcatalogue.XrCatalogueTest" tests="3" failures="0" errors="0" skipped="0" time="58.229" timestamp="2026-11-09T00:07:19" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="expandedRailSelectionActionsAndRTLRemainApplicationOwned" classname="com.wardo.xrcatalogue.XrCatalogueTest" time="41.722" />
+    <testcase name="spatialDialogConfirmsAndDismisses" classname="com.wardo.xrcatalogue.XrCatalogueTest" time="10.342" />
+    <testcase name="spatialPanelAndOrbiterUpdateApplicationState" classname="com.wardo.xrcatalogue.XrCatalogueTest" time="6.165" />
+  </testsuite>
+</testsuites>

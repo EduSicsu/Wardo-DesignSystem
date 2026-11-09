@@ -31,9 +31,9 @@ public enum WardoFonts {
             }
         }
     }()
-    public static func label(_ size: CGFloat = 17) -> Font {
+    public static func label(_ size: CGFloat = 17, weight: Font.Weight = .semibold, relativeTo: Font.TextStyle = .body) -> Font {
         _ = registered
-        return .custom("Geologica-Thin", size: size, relativeTo: .body).weight(.semibold)
+        return .custom("Geologica-Thin", size: size, relativeTo: relativeTo).weight(weight)
     }
     public static func body(_ size: CGFloat = 17) -> Font {
         _ = registered

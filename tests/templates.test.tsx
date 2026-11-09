@@ -21,8 +21,9 @@ describe('Code Connect templates',()=>{
  const example=renderTemplate(name,values);
  expect(example).not.toContain('undefined');expect(example).not.toContain('[object Object]');expect(example).toContain('leadingIcon={<Icon name="plus" />}');
  expect(example).toContain(`hierarchy="${String(values.Hierarchy).toLowerCase()}"`);
- const parsed=ts.transpileModule(`const example = (${example});`,{compilerOptions:{jsx:ts.JsxEmit.ReactJSX},reportDiagnostics:true});
- expect(parsed.diagnostics?.filter(d=>d.category===ts.DiagnosticCategory.Error)).toEqual([]);
+ const parsed=ts.createSourceFile('example.tsx',`const example = (${example});`,ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX);
+ const diagnostics=(parsed as ts.SourceFile & {parseDiagnostics:readonly ts.Diagnostic[]}).parseDiagnostics;
+ expect(diagnostics.filter(d=>d.category===ts.DiagnosticCategory.Error)).toEqual([]);
  }
  });
 });

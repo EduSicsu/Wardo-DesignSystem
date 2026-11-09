@@ -1,12 +1,11 @@
 plugins {
     id("com.android.library") version "9.5.0"
-    id("org.jetbrains.kotlin.android") version "2.4.10" apply false
     id("org.jetbrains.kotlin.plugin.compose") version "2.4.10"
 }
 
 android {
     namespace = "com.wardo.designsystem"
-    compileSdk = 36
+    compileSdk { version = release(37) { minorApiLevel = 2 } }
     defaultConfig { minSdk = 26 }
     buildFeatures { compose = true }
     compileOptions {

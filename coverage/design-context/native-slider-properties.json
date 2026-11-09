@@ -1,0 +1,227 @@
+[
+  {
+    "id": "2532:28722",
+    "name": "Slider - Segmented / visionOS / Sliders",
+    "properties": {
+      "Show Min/Max#354:41": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Max Symbol#354:122": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Min Symbol#354:203": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Icon / Min#2536:29": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151",
+        "preferredValues": []
+      },
+      "Icon / Max#2536:110": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151",
+        "preferredValues": []
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Large",
+        "variantOptions": [
+          "Mini",
+          "Small",
+          "Regular",
+          "Large"
+        ]
+      },
+      "Value": {
+        "type": "VARIANT",
+        "defaultValue": "100%",
+        "variantOptions": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Pinch",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    }
+  },
+  {
+    "id": "2532:29627",
+    "name": "Slider - Color / visionOS / Sliders",
+    "properties": {
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Large",
+        "variantOptions": [
+          "Large"
+        ]
+      },
+      "Value": {
+        "type": "VARIANT",
+        "defaultValue": "100%",
+        "variantOptions": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Pinch",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Pinch"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    }
+  },
+  {
+    "id": "2532:29673",
+    "name": "Slider - Min/Max Labels / visionOS / Sliders",
+    "properties": {
+      "Min Symbol#356:81": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Max Symbol#356:162": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Icon / Min#2536:191": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151",
+        "preferredValues": []
+      },
+      "Icon / Max#2536:272": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151",
+        "preferredValues": []
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Large",
+        "variantOptions": [
+          "Mini",
+          "Small",
+          "Regular",
+          "Large"
+        ]
+      },
+      "Value": {
+        "type": "VARIANT",
+        "defaultValue": "100%",
+        "variantOptions": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Pinch",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    }
+  },
+  {
+    "id": "2532:30194",
+    "name": "Slider - Default / visionOS / Sliders",
+    "properties": {
+      "Symbol#108:0": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Icon / Symbol#2536:353": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151",
+        "preferredValues": []
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Large",
+        "variantOptions": [
+          "Mini",
+          "Small",
+          "Regular",
+          "Large"
+        ]
+      },
+      "Value": {
+        "type": "VARIANT",
+        "defaultValue": "100%",
+        "variantOptions": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Pinch",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    }
+  }
+]

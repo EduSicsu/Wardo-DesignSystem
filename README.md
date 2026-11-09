@@ -15,13 +15,24 @@ Open the local address shown in the terminal. The preview includes theme switchi
 
 ## Coverage — incomplete
 
-Figma Code Connect currently shows **199 of 797 connected (25.0%)**, leaving **598 unconnected**. The React library has been expanded substantially; full-library work remains in progress. The remaining count includes internal building blocks, platform-specific components, and additional public families; it is not a count of 776 distinct React components. See `figma/COVERAGE.md`.
+The independent catalogue accounts for all **797 published entries**: 414 active component/composition candidates and 383 archive, documentation or device-reference records. Every active entry now has a source candidate. Per-entry property, variant and validation review remains incomplete; source availability does not mean a verified match. Figma remains at **199 saved source connections** with React active.
+
+Open `/coverage` for searchable records, platform alternatives, examples and explicit gaps, or run:
+
+```sh
+npm run coverage:lookup -- 1531:158362
+npm run coverage:lookup -- 2277:12775 --platform Android
+npm run coverage:check
+npm run coverage:complete
+```
+
+The completion check deliberately fails until every active record has implementation, property mappings and verification evidence. See `coverage/WORK-IN-PROGRESS.md` and `native/README.md` for current work and reproducible native checks.
 
 ## What's included
 
 The React library now includes navigation bars, sidebars, tabs, breadcrumbs, pagination, toolbars, menus and submenus, split buttons, FABs, segmented controls, autocomplete, selection lists, token fields, range sliders, steppers, date/time inputs, structured lists, sortable tables, expandable trees, carousels, grids, feedback notices, progress indicators, dialogs, sheets and tooltips, in addition to the original controls. `/library` opens the expanded interactive preview.
 
-The 124 additional mappings in `figma/expanded-mappings.json` are saved in Figma. The next 54 web mappings are also saved in `figma/web-internals-mappings.json`, including the shared slider/range-slider adapter. Native SwiftUI and Compose sources are in `native`, with native builds explicitly deferred by the owner; these are not claimed as verified complete native packages.
+The 124 additional mappings in `figma/expanded-mappings.json` are saved in Figma. The next 54 web mappings are also saved in `figma/web-internals-mappings.json`, including the shared slider/range-slider adapter. Native SwiftUI and Compose sources are in `native`, with dedicated sample applications and native build/runtime checks. Full per-entry native validation remains in progress.
 
 - 69 semantic colors across ten themes, eight control sizes and three conditions.
 - Keyboard-operated composite controls and focus-managed overlays using React Aria.
@@ -94,3 +105,16 @@ The library build emits JavaScript, TypeScript declarations, and `dist/styles.cs
 No npm release, public website deployment, backend, or user data storage is configured.
 
 Native connection decision: the owner chose to keep React active and defer native connections. Native sources remain saved with their documented implementation and verification gaps.
+
+## Example compositions
+
+Open `/examples` for six mobile/desktop Upcoming, Reviews and Messaging reference screens with local artwork. Application callbacks and data can replace the fixture defaults. Example assets are a separate package entry:
+
+```tsx
+import { UpcomingMobileExample } from '@wardo/design-system/examples';
+import '@wardo/design-system/examples.css';
+```
+
+The example stylesheet is emitted as `dist/design-system.css`; core styles remain available through `@wardo/design-system/styles.css`.
+
+For RTL menus, configure the application locale through React Aria’s `I18nProvider` or `MenuButton`’s `locale` prop, and set the content direction with `dir`. Menu triggers support the shared hierarchy, tone, size and condition values, plus leading and trailing icon slots.

@@ -1,0 +1,1060 @@
+[
+  {
+    "id": "2528:22283",
+    "name": "Text Field / visionOS / Input Fields",
+    "description": "Wardo visionOS · Text Field. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Show Cursor#121:0": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Value#519:17": {
+        "type": "TEXT",
+        "defaultValue": "Value"
+      },
+      "Icon / Clear#2529:16": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Typing",
+          "Disabled"
+        ]
+      },
+      "Shape": {
+        "type": "VARIANT",
+        "defaultValue": "Pill",
+        "variantOptions": [
+          "Rounded Rect",
+          "Pill"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:25311",
+    "name": "Secure Field / visionOS / Input Fields",
+    "description": "Wardo visionOS · Secure Field. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Show Cursor#129:17": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Value#519:17": {
+        "type": "TEXT",
+        "defaultValue": "••••••"
+      },
+      "Icon / Clear#2535:57": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Typing",
+          "Disabled"
+        ]
+      },
+      "Shape": {
+        "type": "VARIANT",
+        "defaultValue": "Pill",
+        "variantOptions": [
+          "Rounded Rect",
+          "Pill"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:25348",
+    "name": "Search Field / visionOS / Input Fields",
+    "description": "Wardo visionOS · Search Field. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Show Cursor#129:4": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Value#519:17": {
+        "type": "TEXT",
+        "defaultValue": "Search"
+      },
+      "Icon / Mic#2535:66": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "Icon / Clear#2535:79": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Typing",
+          "Disabled",
+          "Hover+Dwell",
+          "Quicktation"
+        ]
+      },
+      "Shape": {
+        "type": "VARIANT",
+        "defaultValue": "Rounded Rect",
+        "variantOptions": [
+          "Rounded Rect",
+          "Pill"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:27016",
+    "name": "Segmented Control / visionOS / Segmented Controls",
+    "description": "Wardo visionOS · Segmented Control. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Segments": {
+        "type": "VARIANT",
+        "defaultValue": "5",
+        "variantOptions": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "5",
+        "variantOptions": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Disabled",
+          "Enabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:27369",
+    "name": "Internal / Segmented Control Button/Unselected / visionOS / Segmented Controls",
+    "description": "Wardo visionOS · _Segmented Control Button/Unselected. Localized from visionOS 26. Role: internal. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Symbol#128:59": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Show Symbol#128:63": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Label#488:435": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "Icon / 􀓔#2536:0": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:27394",
+    "name": "Internal / Segmented Control Button/Selected / visionOS / Segmented Controls",
+    "description": "Wardo visionOS · _Segmented Control Button/Selected. Localized from visionOS 26. Role: internal. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Symbol#128:67": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Show Symbol#128:71": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Label#488:435": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "Icon / 􀓔#2536:4": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:24975",
+    "name": "Checkbox / visionOS / Checkboxes",
+    "description": "Wardo visionOS · Checkbox. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Icon / 􀆅#2535:36": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Hover",
+        "variantOptions": [
+          "Idle",
+          "Hover"
+        ]
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "True",
+        "variantOptions": [
+          "True",
+          "False"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2040:62076",
+    "name": ".Inputs / Switch / iOS",
+    "description": "Layout direction: LTR | RTL. Switch the outer instance; logical leading/trailing content follows direction. Translation and runtime accessibility are separate.",
+    "properties": {
+      "Show AX Label#6152:0": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Off",
+        "variantOptions": [
+          "Off",
+          "On"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "UNPUBLISHED"
+  },
+  {
+    "id": "2532:24982",
+    "name": "Toggle / visionOS / Toggles",
+    "description": "Wardo visionOS · Toggle. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "On": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "True",
+          "False"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Pinch",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:27007",
+    "name": "Search Tokens / visionOS / Search Tokens",
+    "description": "Wardo visionOS · Search Tokens. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Label#488:0": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Selected",
+        "variantOptions": [
+          "Idle (No Platter)",
+          "Hover",
+          "Selected"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2130:32257",
+    "name": ".Inputs / Slider / Horizontal iOS thickness",
+    "description": "Thickness is independent of Wardo Size. Platform preserves native default; XS 16, S 24, M 40, L 56, XL 96px. Track thickness binds existing scale/value variables. Five value presets. Show ticks and Focus ring are exposed Boolean controls.\nLayout direction: LTR | RTL. Switch the outer instance; logical leading/trailing content follows direction. Translation and runtime accessibility are separate.",
+    "properties": {
+      "Focus ring#2130:184": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Show ticks#2130:185": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Thickness": {
+        "type": "VARIANT",
+        "defaultValue": "Platform",
+        "variantOptions": [
+          "Platform",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      },
+      "Value": {
+        "type": "VARIANT",
+        "defaultValue": "0",
+        "variantOptions": [
+          "0",
+          "25",
+          "50",
+          "75",
+          "100"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "UNPUBLISHED"
+  },
+  {
+    "id": "2130:33310",
+    "name": ".Inputs / Slider / Vertical iOS thickness",
+    "description": "Thickness is independent of Wardo Size. Platform preserves native default; XS 16, S 24, M 40, L 56, XL 96px. Track thickness binds existing scale/value variables. Five value presets. Show ticks and Focus ring are exposed Boolean controls.\nLayout direction: LTR | RTL. Switch the outer instance; logical leading/trailing content follows direction. Translation and runtime accessibility are separate.",
+    "properties": {
+      "Focus ring#2130:370": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Show ticks#2130:371": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Thickness": {
+        "type": "VARIANT",
+        "defaultValue": "Platform",
+        "variantOptions": [
+          "Platform",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      },
+      "Value": {
+        "type": "VARIANT",
+        "defaultValue": "0",
+        "variantOptions": [
+          "0",
+          "25",
+          "50",
+          "75",
+          "100"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "UNPUBLISHED"
+  },
+  {
+    "id": "2532:28722",
+    "name": "Slider - Segmented / visionOS / Sliders",
+    "description": "Wardo visionOS · Slider - Segmented. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Show Min/Max#354:41": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Max Symbol#354:122": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Min Symbol#354:203": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Icon / Min#2536:29": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "Icon / Max#2536:110": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Large",
+        "variantOptions": [
+          "Mini",
+          "Small",
+          "Regular",
+          "Large"
+        ]
+      },
+      "Value": {
+        "type": "VARIANT",
+        "defaultValue": "100%",
+        "variantOptions": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Pinch",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:29627",
+    "name": "Slider - Color / visionOS / Sliders",
+    "description": "Wardo visionOS · Slider - Color. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Large",
+        "variantOptions": [
+          "Large"
+        ]
+      },
+      "Value": {
+        "type": "VARIANT",
+        "defaultValue": "100%",
+        "variantOptions": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Pinch",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Pinch"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:29673",
+    "name": "Slider - Min/Max Labels / visionOS / Sliders",
+    "description": "Wardo visionOS · Slider - Min/Max Labels. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Min Symbol#356:81": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Max Symbol#356:162": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Icon / Min#2536:191": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "Icon / Max#2536:272": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Large",
+        "variantOptions": [
+          "Mini",
+          "Small",
+          "Regular",
+          "Large"
+        ]
+      },
+      "Value": {
+        "type": "VARIANT",
+        "defaultValue": "100%",
+        "variantOptions": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Pinch",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:30194",
+    "name": "Slider - Default / visionOS / Sliders",
+    "description": "Wardo visionOS · Slider - Default. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Symbol#108:0": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Icon / Symbol#2536:353": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151"
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Large",
+        "variantOptions": [
+          "Mini",
+          "Small",
+          "Regular",
+          "Large"
+        ]
+      },
+      "Value": {
+        "type": "VARIANT",
+        "defaultValue": "100%",
+        "variantOptions": [
+          "0%",
+          "25%",
+          "50%",
+          "75%",
+          "100%"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Pinch",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2167:85359",
+    "name": ".Inputs / Stepper / iOS capsule",
+    "description": "",
+    "properties": {},
+    "status": "UNPUBLISHED"
+  },
+  {
+    "id": "2167:85363",
+    "name": ".Inputs / Stepper / iOS decrement",
+    "description": "Layout direction: LTR | RTL. Switch the outer instance; logical leading/trailing content follows direction. Translation and runtime accessibility are separate.",
+    "properties": {
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Pressed",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "UNPUBLISHED"
+  },
+  {
+    "id": "2167:85370",
+    "name": ".Inputs / Stepper / iOS increment",
+    "description": "Layout direction: LTR | RTL. Switch the outer instance; logical leading/trailing content follows direction. Translation and runtime accessibility are separate.",
+    "properties": {
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Pressed",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "UNPUBLISHED"
+  },
+  {
+    "id": "2532:26814",
+    "name": "Internal / Date Picker Days / visionOS / Pickers",
+    "description": "Wardo visionOS · _Date Picker Days. Localized from visionOS 26. Role: internal. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Date#50:2": {
+        "type": "TEXT",
+        "defaultValue": "1"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Hover",
+          "Selected",
+          "Null"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:26823",
+    "name": "Time Picker - Wheels / visionOS / Pickers",
+    "description": "Wardo visionOS · Time Picker - Wheels. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Column 1 - 1#127:1": {
+        "type": "TEXT",
+        "defaultValue": "6"
+      },
+      "Column 1 - 2#127:3": {
+        "type": "TEXT",
+        "defaultValue": "7"
+      },
+      "Column 1 - 3#127:5": {
+        "type": "TEXT",
+        "defaultValue": "8"
+      },
+      "Column 1 - Selected#127:7": {
+        "type": "TEXT",
+        "defaultValue": "9"
+      },
+      "Column 1 - 5#127:9": {
+        "type": "TEXT",
+        "defaultValue": "10"
+      },
+      "Column 1 - 6#127:11": {
+        "type": "TEXT",
+        "defaultValue": "11"
+      },
+      "Column 1 - 7#127:13": {
+        "type": "TEXT",
+        "defaultValue": "12"
+      },
+      "Column 2 - 1#127:15": {
+        "type": "TEXT",
+        "defaultValue": "38"
+      },
+      "Column 2 - 2#127:17": {
+        "type": "TEXT",
+        "defaultValue": "39"
+      },
+      "Column 2 - 3#127:19": {
+        "type": "TEXT",
+        "defaultValue": "40"
+      },
+      "Column 2 - Selected#127:21": {
+        "type": "TEXT",
+        "defaultValue": "41"
+      },
+      "Column 2 - 5#127:23": {
+        "type": "TEXT",
+        "defaultValue": "42"
+      },
+      "Column 2 - 6#127:25": {
+        "type": "TEXT",
+        "defaultValue": "43"
+      },
+      "Column 2 - 7#127:27": {
+        "type": "TEXT",
+        "defaultValue": "44"
+      },
+      "Column 3 - 1#127:29": {
+        "type": "TEXT",
+        "defaultValue": " "
+      },
+      "Column 3 - 2#127:31": {
+        "type": "TEXT",
+        "defaultValue": " "
+      },
+      "Column 3 - 3#127:33": {
+        "type": "TEXT",
+        "defaultValue": " "
+      },
+      "Column 3 - Selected#127:35": {
+        "type": "TEXT",
+        "defaultValue": "AM"
+      },
+      "Column 3 - 5#127:37": {
+        "type": "TEXT",
+        "defaultValue": "PM"
+      },
+      "Column 3 - 6#127:39": {
+        "type": "TEXT",
+        "defaultValue": " "
+      },
+      "Column 3 - 7#127:41": {
+        "type": "TEXT",
+        "defaultValue": " "
+      },
+      "Hover": {
+        "type": "VARIANT",
+        "defaultValue": "Column 3",
+        "variantOptions": [
+          "None",
+          "Column 1",
+          "Column 2",
+          "Column 3"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:26934",
+    "name": "Date Picker - Collapsed / visionOS / Pickers",
+    "description": "Wardo visionOS · Date Picker - Collapsed. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Year#127:43": {
+        "type": "TEXT",
+        "defaultValue": "2023"
+      },
+      "Month#127:44": {
+        "type": "TEXT",
+        "defaultValue": "Jun 5,"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Selected",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:26947",
+    "name": "Time Picker - Collapsed / visionOS / Pickers",
+    "description": "Wardo visionOS · Time Picker - Collapsed. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Time#127:45": {
+        "type": "TEXT",
+        "defaultValue": "9:41 AM"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Disabled",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Selected",
+          "Disabled"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2537:42098",
+    "name": "Date Picker - Expanded / visionOS / Pickers",
+    "description": "Wardo visionOS · Date Picker - Expanded. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Icon / Disclosure#2537:1694": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "906:5841"
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:24999",
+    "name": "Color Picker / visionOS / Color Pickers",
+    "description": "Wardo visionOS · Color Picker. Localized from visionOS 26. Role: public. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Layout direction = LTR | RTL. Gaze and gesture behavior require runtime verification. Color picker correction: centered title and SF Symbol controls, text-only Grid/Spectrum/Sliders segments, paired LTR/RTL gallery. RGB/hex numbers retain orientation.",
+    "properties": {
+      "Icon / 􀆈#2535:41": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "2578:56818"
+      },
+      "Icon / Symbol#2535:45": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "2578:56820"
+      },
+      "Tab": {
+        "type": "VARIANT",
+        "defaultValue": "Sliders",
+        "variantOptions": [
+          "Grid",
+          "Spectrum",
+          "Sliders"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "2532:25291",
+    "name": "Internal / Header Buttons / visionOS / Color Pickers",
+    "description": "Wardo visionOS · _Header Buttons. Localized from visionOS 26. Role: internal. Uses local Wardo purpose tokens, typography and colors. Native source configurations retained. Gaze and gesture behavior require runtime verification.",
+    "properties": {
+      "Symbol#104:0": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Icon / Symbol#2535:49": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "2578:56814"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Hover",
+        "variantOptions": [
+          "Idle (Platter)",
+          "Hover"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  }
+]

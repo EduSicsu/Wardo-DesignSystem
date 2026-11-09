@@ -1,0 +1,121 @@
+import SwiftUI
+import WardoDesignSystem
+
+@main struct WardoCatalogueApp: App {
+    var body: some Scene { WindowGroup { CatalogueView() } }
+}
+struct CatalogueView: View {
+    @State private var theme = WardoTheme.wardoLight
+    @State private var text = "Ceramics"
+    @State private var enabled = true
+    @State private var visionOn = false
+    @State private var checked = true
+    @State private var value = 0.5
+    @State private var color = WardoRGBA(red: 1, green: 85.0 / 255, blue: 5.0 / 255)
+    @State private var swatches = [WardoRGBA(red: 0, green: 0, blue: 0), WardoRGBA(red: 0, green: 0.48, blue: 1), WardoRGBA(red: 0.2, green: 0.78, blue: 0.35)]
+    @State private var showColor = false
+    @State private var alert = false
+    @State private var date = Date()
+    @State private var notice = "Ready"
+    var body: some View {
+        NavigationStack {
+            List {
+                Section("Appearance") {
+                    Picker("Theme", selection: $theme) { ForEach(WardoTheme.allCases, id: \.self) { Text($0.rawValue).tag($0) } }
+                }
+                Section("Actions and inputs") {
+                    WardoButton(action: { notice = "Button activated" }) { Text("Activate") }
+                    WardoSearchField("Find events", text: $text) { notice = "Search: \(text)" }
+                    WardoToggle("Notifications", isOn: $enabled)
+                    Toggle("Vision notifications", isOn: $visionOn).toggleStyle(WardoVisionToggleStyle())
+                    WardoCheckbox("Select reminders", isOn: $checked)
+                    WardoTimePicker("Event time", selection: $date)
+                    WardoSlider("System volume", value: $value)
+                    WardoVisionSlider("Wardo volume", value: $value)
+                    Text("Volume: \(Int(value * 100))%").accessibilityIdentifier("volume-value")
+                    WardoVisionDatePicker("Event date", selection: $date, collapsed: true)
+                    Button("Choose color") { showColor = true }
+                    Button("Show alert") { alert = true }
+                }
+                Section("Navigation") {
+                    NavigationLink { SidebarExample() } label: { Text("Sidebar example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
+                    NavigationLink { PagingExample() } label: { Text("Paging example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
+                    NavigationLink { SliderExample() } label: { Text("Slider variants").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
+                }
+                Section("Swipe actions") {
+                    WardoSwipeActionRow(leading: [.init(id: "archive", title: "Archive", systemImage: "archivebox", action: { notice = "Archived" })], trailing: [.init(id: "delete", title: "Delete", systemImage: "trash", role: .destructive, tint: .red, action: { notice = "Deleted" })]) { Text("Swipe this row") }
+                }
+                Section("Feedback") { WardoProgress("Loading", value: value) }
+            }.navigationTitle("Wardo native catalogue")
+                .safeAreaInset(edge: .bottom) { Text(notice).font(.footnote).frame(maxWidth: .infinity).padding().background(.regularMaterial).accessibilityIdentifier("action-status") }
+                .alert("Wardo alert", isPresented: $alert) { Button("Continue") { notice = "Alert confirmed" }; Button("Cancel", role: .cancel) {} } message: { Text("Native system presentation") }
+                .sheet(isPresented: $showColor) { ScrollView { WardoVisionColorPicker(selection: $color, swatches: $swatches, onClose: { showColor = false }) }.padding() }
+        }.wardoTheme(theme)
+    }
+}
+
+struct PagingExample: View {
+    @State private var page = 0
+    @State private var rtl = false
+    @State private var count = 5
+    var body: some View {
+        VStack(spacing: 20) {
+            Toggle("Right-to-left paging", isOn: $rtl)
+            WardoPageControl("Document pages", selection: $page, count: count)
+                .environment(\.layoutDirection, rtl ? .rightToLeft : .leftToRight)
+            Text("Selected page: \(page + 1) of \(count)").accessibilityIdentifier("paging-selection")
+            HStack {
+                Button("Previous page") { page = max(0, page - 1) }.disabled(page == 0)
+                Button("Next page") { page = min(count - 1, page + 1) }.disabled(page == count - 1)
+            }
+            Button("Use two pages") { count = 2; page = min(page, 1) }
+        }.padding().navigationTitle("Paging example")
+    }
+}
+
+struct SliderExample: View {
+    @State private var size = WardoVisionSliderSize.regular
+    @State private var filled = 0.5
+    @State private var stepped = 0.5
+    @State private var color = 0.5
+    @State private var enabled = true
+    @State private var rtl = false
+    @State private var editing = false
+    var body: some View {
+        VStack(spacing: 20) {
+            Picker("Slider size", selection: $size) {
+                ForEach(WardoVisionSliderSize.allCases, id: \.self) { size in Text(String(describing: size).capitalized).tag(size) }
+            }.pickerStyle(.segmented)
+            Toggle("Enable sliders", isOn: $enabled)
+            Toggle("Right-to-left sliders", isOn: $rtl)
+            VStack(spacing: 16) {
+                WardoVisionLabeledSlider("Filled volume", value: $filled, size: size) { Image(systemName: "speaker.fill").frame(width: 20, height: 20) } maximumValueLabel: { Image(systemName: "speaker.wave.3.fill").frame(width: 20, height: 20) }
+                WardoVisionLabeledSlider("Stepped volume", value: $stepped, size: size, appearance: .segmented, onEditingChanged: { editing = $0 }) { Image(systemName: "speaker.fill").frame(width: 20, height: 20) } maximumValueLabel: { Image(systemName: "speaker.wave.3.fill").frame(width: 20, height: 20) }
+                WardoVisionSlider("Colour mix", value: $color, appearance: .color)
+            }.disabled(!enabled).environment(\.layoutDirection, rtl ? .rightToLeft : .leftToRight)
+            Text("Stepped value: \(Int((stepped * 100).rounded()))%").accessibilityIdentifier("stepped-value")
+            Text(editing ? "Editing slider" : "Slider idle").accessibilityIdentifier("slider-editing")
+        }.padding().navigationTitle("Slider variants")
+    }
+}
+
+struct SidebarExample: View {
+    @State private var selection = "Inbox"
+    @State private var rtl = false
+    @State private var expanded = true
+    var body: some View {
+        VStack(spacing: 0) {
+            Toggle("Right-to-left layout", isOn: $rtl).padding()
+            WardoVisionSidebar("Collections", actions: {
+                Button("Reset") { selection = "Inbox" }
+            }, rows: {
+                WardoVisionSidebarItem("Inbox", counter: "42", selected: selection == "Inbox", action: { selection = "Inbox" }) { Image(systemName: "tray") }.accessibilityIdentifier("sidebar-inbox")
+                WardoVisionSidebarGroup("Library", isExpanded: $expanded) {
+                WardoVisionSidebarItem("Saved", counter: "3", selected: selection == "Saved", action: { selection = "Saved" }) { Image(systemName: "bookmark") }.accessibilityIdentifier("sidebar-saved")
+                WardoVisionSidebarItem("Archive", selected: selection == "Archive", action: { selection = "Archive" }) { Image(systemName: "archivebox") }
+                }
+            }).environment(\.layoutDirection, rtl ? .rightToLeft : .leftToRight)
+            Text("Selected: \(selection)").padding().accessibilityIdentifier("sidebar-selection")
+        }.navigationTitle("Sidebar example")
+    }
+}

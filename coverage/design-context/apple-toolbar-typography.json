@@ -1,0 +1,37 @@
+[
+  {
+    "nodeId": "1908:21078",
+    "typography": [
+      "These styles are contained in the design: Wardo/Toolbar/Preview/34/Bold: Font(family: \"Geologica\", style: Bold, size: 34, weight: 700, lineHeight: 41, letterSpacing: 0.4000000059604645)."
+    ],
+    "properties": "type ToolbarInternalAppleTitleLargeTitleProps = {\n  className?: string;\n  layoutDirection?: \"LTR\" | \"RTL\";\n  mode?: \"Light\" | \"Dark\";\n  title?: string;\n};\n\n"
+  },
+  {
+    "nodeId": "1908:21083",
+    "typography": [
+      "These styles are contained in the design: Wardo/Toolbar/Preview/17/Bold: Font(family: \"Geologica\", style: Bold, size: 17, weight: 700, lineHeight: 22, letterSpacing: -0.4300000071525574)."
+    ],
+    "properties": "type ToolbarInternalAppleTitleBodyProps = {\n  className?: string;\n  layoutDirection?: \"LTR\" | \"RTL\";\n  mode?: \"Light\" | \"Dark\";\n  title?: string;\n};\n\n"
+  },
+  {
+    "nodeId": "1908:21088",
+    "typography": [
+      "These styles are contained in the design: Wardo/Toolbar/Preview/15/Bold: Font(family: \"Geologica\", style: Bold, size: 15, weight: 700, lineHeight: 18, letterSpacing: -0.23000000417232513)."
+    ],
+    "properties": "type ToolbarInternalAppleTitleSubheadlineProps = {\n  className?: string;\n  layoutDirection?: \"LTR\" | \"RTL\";\n  mode?: \"Light\" | \"Dark\";\n  title?: string;\n};\n\n"
+  },
+  {
+    "nodeId": "1908:21093",
+    "typography": [
+      "These styles are contained in the design: Wardo/Toolbar/Preview/15/Medium: Font(family: \"Geologica\", style: Medium, size: 15, weight: 500, lineHeight: 20, letterSpacing: -0.25)."
+    ],
+    "properties": "type ToolbarInternalAppleSubtitleSubheadlineProps = {\n  className?: string;\n  layoutDirection?: \"LTR\" | \"RTL\";\n  mode?: \"Light\" | \"Dark\";\n  subtitle?: string;\n};\n\n"
+  },
+  {
+    "nodeId": "1908:21098",
+    "typography": [
+      "These styles are contained in the design: Wardo/Toolbar/Preview/12/Medium: Font(family: \"Geologica\", style: Medium, size: 12, weight: 500, lineHeight: 14, letterSpacing: 0)."
+    ],
+    "properties": "type ToolbarInternalAppleSubtitleCaptionProps = {\n  className?: string;\n  layoutDirection?: \"LTR\" | \"RTL\";\n  mode?: \"Light\" | \"Dark\";\n  subtitle?: string;\n};\n\n"
+  }
+]

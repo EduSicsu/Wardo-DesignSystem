@@ -1,0 +1,6882 @@
+{
+  "2528:22237": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Actions.swift",
+      "symbol": "WardoVisionButton",
+      "example": "WardoVisionButton(action: onActivate) { Label(\"Continue\", systemImage: \"arrow.right\") }",
+      "gaps": [
+        "Review all native size and symbol configurations against Figma."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:24838": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Actions.swift",
+      "symbol": "WardoVisionButton",
+      "example": "WardoVisionButton(action: onActivate) { Label(\"Continue\", systemImage: \"arrow.right\") }",
+      "gaps": [
+        "Review all native size and symbol configurations against Figma."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:24899": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Actions.swift",
+      "symbol": "WardoVisionButton",
+      "example": "WardoVisionButton(action: onActivate) { Label(\"Continue\", systemImage: \"arrow.right\") }",
+      "gaps": [
+        "Review all native size and symbol configurations against Figma."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:24831": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Actions.swift",
+      "symbol": "WardoLink",
+      "example": "WardoLink(destination: destination) { Text(\"Learn more\") }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:25995": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Actions.swift",
+      "symbol": "WardoMenuItem",
+      "example": "WardoMenuItem(action: onActivate) { Label(\"Action\", systemImage: symbolName) }",
+      "gaps": [
+        "Dropdown and accessory compositions require their own property review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:26328": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Actions.swift",
+      "symbol": "WardoButton",
+      "example": "WardoButton(action: onActivate) { Image(systemName: symbolName) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:25296": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Actions.swift",
+      "symbol": "WardoMenu",
+      "example": "WardoMenu(label: { Text(label) }, items: { menuItems })",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2528:22283": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoTextField",
+      "example": "WardoTextField(\"Value\", text: $value, shape: .pill, clearable: true)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Show Cursor#121:0": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Value#519:17": {
+          "type": "TEXT",
+          "defaultValue": "Value"
+        },
+        "Icon / Clear#2529:16": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Typing",
+            "Disabled"
+          ]
+        },
+        "Shape": {
+          "type": "VARIANT",
+          "defaultValue": "Pill",
+          "variantOptions": [
+            "Rounded Rect",
+            "Pill"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:25311": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoTextField",
+      "example": "WardoTextField(\"Password\", text: $password, secure: true, shape: .pill)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Show Cursor#129:17": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Value#519:17": {
+          "type": "TEXT",
+          "defaultValue": "\u2022\u2022\u2022\u2022\u2022\u2022"
+        },
+        "Icon / Clear#2535:57": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Typing",
+            "Disabled"
+          ]
+        },
+        "Shape": {
+          "type": "VARIANT",
+          "defaultValue": "Pill",
+          "variantOptions": [
+            "Rounded Rect",
+            "Pill"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:25348": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoSearchField",
+      "example": "WardoSearchField(\"Search\", text: $query, onSubmit: search)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Show Cursor#129:4": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Value#519:17": {
+          "type": "TEXT",
+          "defaultValue": "Search"
+        },
+        "Icon / Mic#2535:66": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151"
+        },
+        "Icon / Clear#2535:79": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Typing",
+            "Disabled",
+            "Hover+Dwell",
+            "Quicktation"
+          ]
+        },
+        "Shape": {
+          "type": "VARIANT",
+          "defaultValue": "Rounded Rect",
+          "variantOptions": [
+            "Rounded Rect",
+            "Pill"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:24975": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoVisionCheckboxStyle",
+      "example": "Toggle(\"Selected\", isOn: $selected).toggleStyle(WardoVisionCheckboxStyle())",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Icon / \udbc0\udd85#2535:36": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Hover",
+          "variantOptions": [
+            "Idle",
+            "Hover"
+          ]
+        },
+        "Selected": {
+          "type": "VARIANT",
+          "defaultValue": "True",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:24982": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoVisionToggleStyle",
+      "example": "Toggle(\"Notifications\", isOn: $enabled).toggleStyle(WardoVisionToggleStyle())",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "On": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Pinch",
+            "Disabled"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:27016": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoSegmentedControl",
+      "example": "WardoSegmentedControl(\"Section\", selection: $section) { Text(\"Overview\").tag(0); Text(\"Activity\").tag(1) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Segments": {
+          "type": "VARIANT",
+          "defaultValue": "5",
+          "variantOptions": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        "Selected": {
+          "type": "VARIANT",
+          "defaultValue": "5",
+          "variantOptions": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Disabled",
+            "Enabled"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:27369": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoSegmentedControl",
+      "example": "WardoSegmentedControl(\"Section\", selection: $section) { Text(\"Overview\").tag(0); Text(\"Activity\").tag(1) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Symbol#128:59": {
+          "type": "TEXT",
+          "defaultValue": "\udbc1\udcd4"
+        },
+        "Show Symbol#128:63": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Label#488:435": {
+          "type": "TEXT",
+          "defaultValue": "Label"
+        },
+        "Icon / \udbc1\udcd4#2536:0": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Disabled"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:27394": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoSegmentedControl",
+      "example": "WardoSegmentedControl(\"Section\", selection: $section) { Text(\"Overview\").tag(0); Text(\"Activity\").tag(1) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Symbol#128:67": {
+          "type": "TEXT",
+          "defaultValue": "\udbc1\udcd4"
+        },
+        "Show Symbol#128:71": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Label#488:435": {
+          "type": "TEXT",
+          "defaultValue": "Label"
+        },
+        "Icon / \udbc1\udcd4#2536:4": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Disabled"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:27007": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SwipeActions.swift",
+      "symbol": "WardoChip",
+      "example": "WardoChip(selected: selected, action: onSelect) { Text(label) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Label#488:0": {
+          "type": "TEXT",
+          "defaultValue": "Label"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Selected",
+          "variantOptions": [
+            "Idle (No Platter)",
+            "Hover",
+            "Selected"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:30194": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionSlider.swift",
+      "symbol": "WardoVisionSlider",
+      "example": "WardoVisionSlider(\"Volume\", value: $volume) { Image(systemName: \"speaker.wave.2.fill\") }",
+      "gaps": [
+        "Validate all size/state/direction combinations in the dedicated native sample, including VoiceOver and hardware keyboard input.",
+        "Review hover and pinch geometry, materials and source-specific symbol configurations on visionOS."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Symbol#108:0": {
+          "type": "TEXT",
+          "defaultValue": "\udbc1\udcd4"
+        },
+        "Icon / Symbol#2536:353": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151",
+          "preferredValues": []
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Large",
+          "variantOptions": [
+            "Mini",
+            "Small",
+            "Regular",
+            "Large"
+          ]
+        },
+        "Value": {
+          "type": "VARIANT",
+          "defaultValue": "100%",
+          "variantOptions": [
+            "0%",
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Pinch",
+            "Disabled"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Symbol#108:0",
+          "target": "symbol",
+          "notes": "Supply a semantic native Image(systemName:) in the symbol closure rather than a raw private Unicode glyph."
+        },
+        {
+          "property": "Icon / Symbol#2536:353",
+          "target": "symbol",
+          "notes": "Application-supplied symbol/artwork through the existing view-builder slot."
+        },
+        {
+          "property": "Size",
+          "target": "size",
+          "notes": "Mini/Small/Regular/Large map to 12/16/28/44-point visual tracks; interaction regions retain minimum 44 points. Color source supports Large only."
+        },
+        {
+          "property": "Value",
+          "target": "value",
+          "notes": "0/25/50/75/100% map to the application-owned Double binding, default range 0...1. Segmented interaction snaps to four intervals."
+        },
+        {
+          "property": "State",
+          "target": "disabled / interaction lifecycle",
+          "notes": "Disabled maps to .disabled(true). Hover and Pinch are runtime interaction feedback, not fabricated application state."
+        },
+        {
+          "property": "Layout direction",
+          "target": "environment(\\.layoutDirection)",
+          "notes": "LTR/RTL follows the inherited SwiftUI layout direction; the logical minimum moves with direction."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/slider-family.json"
+      ]
+    }
+  },
+  "2532:28722": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionLabeledSlider.swift",
+      "symbol": "WardoVisionLabeledSlider",
+      "example": "WardoVisionLabeledSlider(\"Volume\", value: $volume, appearance: .segmented) { Image(systemName: \"speaker.fill\").frame(width: 20, height: 20) } maximumValueLabel: { Image(systemName: \"speaker.wave.3.fill\").frame(width: 20, height: 20) }",
+      "gaps": [
+        "Validate all size/state/direction combinations in the dedicated native sample, including VoiceOver and hardware keyboard input.",
+        "Review hover and pinch geometry, materials and source-specific symbol configurations on visionOS."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Show Min/Max#354:41": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Max Symbol#354:122": {
+          "type": "TEXT",
+          "defaultValue": "\udbc1\udcd4"
+        },
+        "Min Symbol#354:203": {
+          "type": "TEXT",
+          "defaultValue": "\udbc1\udcd4"
+        },
+        "Icon / Min#2536:29": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151",
+          "preferredValues": []
+        },
+        "Icon / Max#2536:110": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151",
+          "preferredValues": []
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Large",
+          "variantOptions": [
+            "Mini",
+            "Small",
+            "Regular",
+            "Large"
+          ]
+        },
+        "Value": {
+          "type": "VARIANT",
+          "defaultValue": "100%",
+          "variantOptions": [
+            "0%",
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Pinch",
+            "Disabled"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Show Min/Max#354:41",
+          "target": "minimumValueLabel / maximumValueLabel composition",
+          "notes": "Compose optional additional native SF Symbol views in the endpoint slots; their 32/24/20 sizing follows the reviewed source configuration."
+        },
+        {
+          "property": "Max Symbol#354:122",
+          "target": "maximumValueLabel",
+          "notes": "Supply a semantic native Image(systemName:) by name in the endpoint slot. Never render the raw private Unicode glyph from the Figma property."
+        },
+        {
+          "property": "Min Symbol#354:203",
+          "target": "minimumValueLabel",
+          "notes": "Supply a semantic native Image(systemName:) by name in the endpoint slot. Never render the raw private Unicode glyph from the Figma property."
+        },
+        {
+          "property": "Icon / Min#2536:29",
+          "target": "minimumValueLabel",
+          "notes": "Application-supplied minimum artwork, normally 20 points. Decorative endpoint content is hidden from duplicate accessibility traversal."
+        },
+        {
+          "property": "Icon / Max#2536:110",
+          "target": "maximumValueLabel",
+          "notes": "Application-supplied maximum artwork, normally 20 points. Decorative endpoint content is hidden from duplicate accessibility traversal."
+        },
+        {
+          "property": "Size",
+          "target": "size",
+          "notes": "Mini/Small/Regular/Large map to 12/16/28/44-point visual tracks; interaction regions retain minimum 44 points. Color source supports Large only."
+        },
+        {
+          "property": "Value",
+          "target": "value",
+          "notes": "0/25/50/75/100% map to the application-owned Double binding, default range 0...1. Segmented interaction snaps to four intervals."
+        },
+        {
+          "property": "State",
+          "target": "disabled / interaction lifecycle",
+          "notes": "Disabled maps to .disabled(true). Hover and Pinch are runtime interaction feedback, not fabricated application state."
+        },
+        {
+          "property": "Layout direction",
+          "target": "environment(\\.layoutDirection)",
+          "notes": "LTR/RTL follows the inherited SwiftUI layout direction; the logical minimum moves with direction."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/slider-family.json"
+      ]
+    }
+  },
+  "2532:29627": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionSlider.swift",
+      "symbol": "WardoVisionSlider",
+      "example": "WardoVisionSlider(\"Colour mix\", value: $mix, appearance: .color)",
+      "gaps": [
+        "Validate all size/state/direction combinations in the dedicated native sample, including VoiceOver and hardware keyboard input.",
+        "Review hover and pinch geometry, materials and source-specific symbol configurations on visionOS.",
+        "Validate exact colour gradient endpoints and 32/36/24-point idle/hover/pinch rings, including declarative hover enlargement on visionOS."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Large",
+          "variantOptions": [
+            "Large"
+          ]
+        },
+        "Value": {
+          "type": "VARIANT",
+          "defaultValue": "100%",
+          "variantOptions": [
+            "0%",
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Pinch",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Pinch"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Size",
+          "target": "size",
+          "notes": "Mini/Small/Regular/Large map to 12/16/28/44-point visual tracks; interaction regions retain minimum 44 points. Color source supports Large only."
+        },
+        {
+          "property": "Value",
+          "target": "value",
+          "notes": "0/25/50/75/100% map to the application-owned Double binding, default range 0...1. Segmented interaction snaps to four intervals."
+        },
+        {
+          "property": "State",
+          "target": "disabled / interaction lifecycle",
+          "notes": "Disabled maps to .disabled(true). Hover and Pinch are runtime interaction feedback, not fabricated application state."
+        },
+        {
+          "property": "Layout direction",
+          "target": "environment(\\.layoutDirection)",
+          "notes": "LTR/RTL follows the inherited SwiftUI layout direction; the logical minimum moves with direction."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/slider-family.json"
+      ]
+    }
+  },
+  "2532:29673": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionLabeledSlider.swift",
+      "symbol": "WardoVisionLabeledSlider",
+      "example": "WardoVisionLabeledSlider(\"Volume\", value: $volume) { Image(systemName: \"speaker.fill\").frame(width: 20, height: 20) } maximumValueLabel: { Image(systemName: \"speaker.wave.3.fill\").frame(width: 20, height: 20) }",
+      "gaps": [
+        "Validate all size/state/direction combinations in the dedicated native sample, including VoiceOver and hardware keyboard input.",
+        "Review hover and pinch geometry, materials and source-specific symbol configurations on visionOS."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Min Symbol#356:81": {
+          "type": "TEXT",
+          "defaultValue": "\udbc1\udcd4"
+        },
+        "Max Symbol#356:162": {
+          "type": "TEXT",
+          "defaultValue": "\udbc1\udcd4"
+        },
+        "Icon / Min#2536:191": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151",
+          "preferredValues": []
+        },
+        "Icon / Max#2536:272": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151",
+          "preferredValues": []
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Large",
+          "variantOptions": [
+            "Mini",
+            "Small",
+            "Regular",
+            "Large"
+          ]
+        },
+        "Value": {
+          "type": "VARIANT",
+          "defaultValue": "100%",
+          "variantOptions": [
+            "0%",
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Pinch",
+            "Disabled"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Min Symbol#356:81",
+          "target": "minimumValueLabel",
+          "notes": "Supply a semantic native Image(systemName:) by name in the endpoint slot. Never render the raw private Unicode glyph from the Figma property."
+        },
+        {
+          "property": "Max Symbol#356:162",
+          "target": "maximumValueLabel",
+          "notes": "Supply a semantic native Image(systemName:) by name in the endpoint slot. Never render the raw private Unicode glyph from the Figma property."
+        },
+        {
+          "property": "Icon / Min#2536:191",
+          "target": "minimumValueLabel",
+          "notes": "Application-supplied minimum artwork, normally 20 points. Decorative endpoint content is hidden from duplicate accessibility traversal."
+        },
+        {
+          "property": "Icon / Max#2536:272",
+          "target": "maximumValueLabel",
+          "notes": "Application-supplied maximum artwork, normally 20 points. Decorative endpoint content is hidden from duplicate accessibility traversal."
+        },
+        {
+          "property": "Size",
+          "target": "size",
+          "notes": "Mini/Small/Regular/Large map to 12/16/28/44-point visual tracks; interaction regions retain minimum 44 points. Color source supports Large only."
+        },
+        {
+          "property": "Value",
+          "target": "value",
+          "notes": "0/25/50/75/100% map to the application-owned Double binding, default range 0...1. Segmented interaction snaps to four intervals."
+        },
+        {
+          "property": "State",
+          "target": "disabled / interaction lifecycle",
+          "notes": "Disabled maps to .disabled(true). Hover and Pinch are runtime interaction feedback, not fabricated application state."
+        },
+        {
+          "property": "Layout direction",
+          "target": "environment(\\.layoutDirection)",
+          "notes": "LTR/RTL follows the inherited SwiftUI layout direction; the logical minimum moves with direction."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/slider-family.json"
+      ]
+    }
+  },
+  "2532:26814": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionDatePicker.swift",
+      "symbol": "WardoVisionDatePicker",
+      "example": "WardoVisionDatePicker(\"Date\", selection: $date, collapsed: false)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Date#50:2": {
+          "type": "TEXT",
+          "defaultValue": "1"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Selected",
+            "Null"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:26934": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionDatePicker.swift",
+      "symbol": "WardoVisionDatePicker",
+      "example": "WardoVisionDatePicker(\"Date\", selection: $date, collapsed: false)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Year#127:43": {
+          "type": "TEXT",
+          "defaultValue": "2023"
+        },
+        "Month#127:44": {
+          "type": "TEXT",
+          "defaultValue": "Jun 5,"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Selected",
+            "Disabled"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2537:42098": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionDatePicker.swift",
+      "symbol": "WardoVisionDatePicker",
+      "example": "WardoVisionDatePicker(\"Date\", selection: $date, collapsed: false)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Icon / Disclosure#2537:1694": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "906:5841"
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:26823": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoTimePicker",
+      "example": "WardoTimePicker(\"Time\", selection: $time, presentation: .wheels)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Column 1 - 1#127:1": {
+          "type": "TEXT",
+          "defaultValue": "6"
+        },
+        "Column 1 - 2#127:3": {
+          "type": "TEXT",
+          "defaultValue": "7"
+        },
+        "Column 1 - 3#127:5": {
+          "type": "TEXT",
+          "defaultValue": "8"
+        },
+        "Column 1 - Selected#127:7": {
+          "type": "TEXT",
+          "defaultValue": "9"
+        },
+        "Column 1 - 5#127:9": {
+          "type": "TEXT",
+          "defaultValue": "10"
+        },
+        "Column 1 - 6#127:11": {
+          "type": "TEXT",
+          "defaultValue": "11"
+        },
+        "Column 1 - 7#127:13": {
+          "type": "TEXT",
+          "defaultValue": "12"
+        },
+        "Column 2 - 1#127:15": {
+          "type": "TEXT",
+          "defaultValue": "38"
+        },
+        "Column 2 - 2#127:17": {
+          "type": "TEXT",
+          "defaultValue": "39"
+        },
+        "Column 2 - 3#127:19": {
+          "type": "TEXT",
+          "defaultValue": "40"
+        },
+        "Column 2 - Selected#127:21": {
+          "type": "TEXT",
+          "defaultValue": "41"
+        },
+        "Column 2 - 5#127:23": {
+          "type": "TEXT",
+          "defaultValue": "42"
+        },
+        "Column 2 - 6#127:25": {
+          "type": "TEXT",
+          "defaultValue": "43"
+        },
+        "Column 2 - 7#127:27": {
+          "type": "TEXT",
+          "defaultValue": "44"
+        },
+        "Column 3 - 1#127:29": {
+          "type": "TEXT",
+          "defaultValue": " "
+        },
+        "Column 3 - 2#127:31": {
+          "type": "TEXT",
+          "defaultValue": " "
+        },
+        "Column 3 - 3#127:33": {
+          "type": "TEXT",
+          "defaultValue": " "
+        },
+        "Column 3 - Selected#127:35": {
+          "type": "TEXT",
+          "defaultValue": "AM"
+        },
+        "Column 3 - 5#127:37": {
+          "type": "TEXT",
+          "defaultValue": "PM"
+        },
+        "Column 3 - 6#127:39": {
+          "type": "TEXT",
+          "defaultValue": " "
+        },
+        "Column 3 - 7#127:41": {
+          "type": "TEXT",
+          "defaultValue": " "
+        },
+        "Hover": {
+          "type": "VARIANT",
+          "defaultValue": "Column 3",
+          "variantOptions": [
+            "None",
+            "Column 1",
+            "Column 2",
+            "Column 3"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:26947": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoTimePicker",
+      "example": "WardoTimePicker(\"Time\", selection: $time, presentation: .wheels)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Time#127:45": {
+          "type": "TEXT",
+          "defaultValue": "9:41 AM"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Disabled",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Selected",
+            "Disabled"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:24999": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionColorPicker.swift",
+      "symbol": "WardoVisionColorPicker",
+      "example": "WardoVisionColorPicker(selection: $color, swatches: $savedColors, onClose: close)",
+      "gaps": [
+        "Gaze/pinch, spectrum geometry, and numeric channel field fidelity require visual verification."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Icon / \udbc0\udd88#2535:41": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "2578:56818"
+        },
+        "Icon / Symbol#2535:45": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "2578:56820"
+        },
+        "Tab": {
+          "type": "VARIANT",
+          "defaultValue": "Sliders",
+          "variantOptions": [
+            "Grid",
+            "Spectrum",
+            "Sliders"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:25291": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionColorPicker.swift",
+      "symbol": "WardoVisionColorPicker",
+      "example": "WardoVisionColorPicker(selection: $color, swatches: $savedColors, onClose: close)",
+      "gaps": [
+        "Gaze/pinch, spectrum geometry, and numeric channel field fidelity require visual verification."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Symbol#104:0": {
+          "type": "TEXT",
+          "defaultValue": "\udbc1\udcd4"
+        },
+        "Icon / Symbol#2535:49": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "2578:56814"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Hover",
+          "variantOptions": [
+            "Idle (Platter)",
+            "Hover"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2193:37840": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SwipeActions.swift",
+      "symbol": "WardoSwipeActionRow",
+      "example": "WardoSwipeActionRow(leading: archiveActions, trailing: deleteActions) { Text(title) }",
+      "gaps": [
+        "Verify action shape and 52/68-point variants on device."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2193:37758": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SwipeActions.swift",
+      "symbol": "WardoSwipeActionRow",
+      "example": "WardoSwipeActionRow(leading: archiveActions, trailing: deleteActions) { Text(title) }",
+      "gaps": [
+        "Verify action shape and 52/68-point variants on device."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2193:37738": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SwipeActions.swift",
+      "symbol": "WardoSwipeActionRow",
+      "example": "WardoSwipeActionRow(leading: archiveActions, trailing: deleteActions) { Text(title) }",
+      "gaps": [
+        "Verify action shape and 52/68-point variants on device."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2195:9582": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SwipeActions.swift",
+      "symbol": "WardoSwipeActionRow",
+      "example": "WardoSwipeActionRow(leading: archiveActions, trailing: deleteActions) { Text(title) }",
+      "gaps": [
+        "Verify action shape and 52/68-point variants on device."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2193:37893": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoSection",
+      "example": "WardoSection(title) { rows }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1531:42836": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SwipeActions.swift",
+      "symbol": "WardoChip",
+      "example": "WardoChip(action: onSelect) { Text(label) }",
+      "gaps": [
+        "Android 48dp hit-target mapping requires a separate platform binding."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2209:41300": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Per-entry native accessory, item, and symbol property mapping remains pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2209:41231": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Per-entry native accessory, item, and symbol property mapping remains pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2215:9615": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/TabAccessory.swift",
+      "symbol": "WardoTabBarAccessory",
+      "example": "WardoTabView(selection: $tab) { tabs }.wardoTabBarAccessory { NowPlayingControls() }",
+      "gaps": [
+        "Validate expanded/inline transitions, interactive content, text scaling and RTL on iPhone and iPad."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Placement": {
+          "type": "VARIANT",
+          "variantOptions": [
+            "Above",
+            "Inline"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        },
+        "Accessory content": {
+          "type": "CONTENT_SLOT"
+        }
+      },
+      "mappings": [
+        {
+          "property": "Placement",
+          "target": "Native tabViewBottomAccessory placement",
+          "transform": "System placement follows tab-bar expansion; content can observe EnvironmentValues.tabViewBottomAccessoryPlacement."
+        },
+        {
+          "property": "Layout direction",
+          "target": "EnvironmentValues.layoutDirection"
+        },
+        {
+          "property": "Accessory content",
+          "target": "content view builder"
+        }
+      ]
+    }
+  },
+  "2396:18141": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Per-entry native accessory, item, and symbol property mapping remains pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2396:18192": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Per-entry native accessory, item, and symbol property mapping remains pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2396:18600": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Per-entry native accessory, item, and symbol property mapping remains pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2309:10953": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Per-entry native accessory, item, and symbol property mapping remains pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:54954": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Per-entry native accessory, item, and symbol property mapping remains pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:54965": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Per-entry native accessory, item, and symbol property mapping remains pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10850": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Per-entry native accessory, item, and symbol property mapping remains pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Show Sidebar#2420:1": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Show Tab 3#2524:68": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Show Tab 4#2524:84": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Show Tab 5#2524:100": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Show Tab 6#2524:116": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Show Tab 7#2524:132": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Show Search#2524:157": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        }
+      },
+      "mappings": []
+    }
+  },
+  "1945:10862": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Per-entry native accessory, item, and symbol property mapping remains pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Symbol#5735:7": {
+          "type": "TEXT",
+          "defaultValue": "\udbc3\udc31"
+        },
+        "Selected": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        },
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Dark",
+            "Light"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "1945:10873": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Per-entry native accessory, item, and symbol property mapping remains pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Label#5735:6": {
+          "type": "TEXT",
+          "defaultValue": "Label"
+        },
+        "Selected": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        },
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Dark",
+            "Light"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2258:11408": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoSidebar",
+      "example": "WardoSidebar(\"Library\", selection: $selectedItem, rows: { rows }, detail: { detail })",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:47280": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoSidebar",
+      "example": "WardoSidebar(\"Library\", selection: $selectedItem, rows: { rows }, detail: { detail })",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2396:18617": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoSidebar",
+      "example": "WardoSidebar(\"Library\", selection: $selectedItem, rows: { rows }, detail: { detail })",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:26334": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoNavigationStack",
+      "example": "WardoNavigationStack(title, leading: { leadingActions }, trailing: { trailingActions }, content: { content })",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:26387": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoNavigationStack",
+      "example": "WardoNavigationStack(title, leading: { leadingActions }, trailing: { trailingActions }, content: { content })",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:30516": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbar",
+      "example": "WardoToolbar { actions }",
+      "gaps": [
+        "Review platter, spacing, and item selection variants."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:30530": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbar",
+      "example": "WardoToolbar { actions }",
+      "gaps": [
+        "Review platter, spacing, and item selection variants."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:30539": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbar",
+      "example": "WardoToolbar { actions }",
+      "gaps": [
+        "Review platter, spacing, and item selection variants."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:30617": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbar",
+      "example": "WardoToolbar { actions }",
+      "gaps": [
+        "Review platter, spacing, and item selection variants."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1880:16136": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbar",
+      "example": "WardoToolbar { actions }",
+      "gaps": [
+        "Review platter, spacing, and item selection variants."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1880:16179": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbar",
+      "example": "WardoToolbar { actions }",
+      "gaps": [
+        "Review platter, spacing, and item selection variants."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1880:16113": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbar",
+      "example": "WardoToolbar { actions }",
+      "gaps": [
+        "Review platter, spacing, and item selection variants."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Symbol#104:0": {
+          "type": "TEXT",
+          "defaultValue": "\udbc1\udcd4"
+        },
+        "Tooltip#104:2": {
+          "type": "TEXT",
+          "defaultValue": "Tooltip"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Unselected",
+          "variantOptions": [
+            "Unselected",
+            "Hover",
+            "Hover + Dwell",
+            "Selected",
+            "Disabled"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "1880:16127": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbar",
+      "example": "WardoToolbar { actions }",
+      "gaps": [
+        "Review platter, spacing, and item selection variants."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Title#119:75": {
+          "type": "TEXT",
+          "defaultValue": "Label"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Idle",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Selected"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "1908:21272": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoNavigationStack",
+      "example": "WardoNavigationStack(title, leading: { leading }, trailing: { trailing }, content: { content })",
+      "gaps": [
+        "Top, sheet, bottom, and iPad placements require explicit configuration review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21228": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoNavigationStack",
+      "example": "WardoNavigationStack(title, leading: { leading }, trailing: { trailing }, content: { content })",
+      "gaps": [
+        "Top, sheet, bottom, and iPad placements require explicit configuration review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21329": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoNavigationStack",
+      "example": "WardoNavigationStack(title, leading: { leading }, trailing: { trailing }, content: { content })",
+      "gaps": [
+        "Top, sheet, bottom, and iPad placements require explicit configuration review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21106": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoNavigationStack",
+      "example": "WardoNavigationStack(title, leading: { leading }, trailing: { trailing }, content: { content })",
+      "gaps": [
+        "Top, sheet, bottom, and iPad placements require explicit configuration review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21065": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbarButton",
+      "example": "WardoToolbarButton(action: onActivate) { Label(label, systemImage: symbolName) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:20829": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbarButton",
+      "example": "WardoToolbarButton(action: onActivate) { Label(label, systemImage: symbolName) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:20842": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbarButton",
+      "example": "WardoToolbarButton(action: onActivate) { Label(label, systemImage: symbolName) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:20859": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbarButton",
+      "example": "WardoToolbarButton(action: onActivate) { Label(label, systemImage: symbolName) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21020": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbarButton",
+      "example": "WardoToolbarButton(action: onActivate) { Label(label, systemImage: symbolName) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:20936": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoToolbarButton",
+      "example": "WardoToolbarButton(action: onActivate) { Label(label, systemImage: symbolName) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21078": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/ToolbarTypography.swift",
+      "symbol": "WardoToolbarText",
+      "example": "WardoToolbarText(\"Title\", style: .largeTitle)",
+      "gaps": [
+        "Validate font baselines, truncation, Dynamic Type and RTL inside the native toolbar composition."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21083": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/ToolbarTypography.swift",
+      "symbol": "WardoToolbarText",
+      "example": "WardoToolbarText(\"Title\", style: .bodyTitle)",
+      "gaps": [
+        "Validate font baselines, truncation, Dynamic Type and RTL inside the native toolbar composition."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21088": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/ToolbarTypography.swift",
+      "symbol": "WardoToolbarText",
+      "example": "WardoToolbarText(\"Title\", style: .subheadlineTitle)",
+      "gaps": [
+        "Validate font baselines, truncation, Dynamic Type and RTL inside the native toolbar composition."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21093": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/ToolbarTypography.swift",
+      "symbol": "WardoToolbarText",
+      "example": "WardoToolbarText(\"Subtitle\", style: .subheadlineSubtitle)",
+      "gaps": [
+        "Validate font baselines, truncation, Dynamic Type and RTL inside the native toolbar composition."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21098": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/ToolbarTypography.swift",
+      "symbol": "WardoToolbarText",
+      "example": "WardoToolbarText(\"Subtitle\", style: .captionSubtitle)",
+      "gaps": [
+        "Validate font baselines, truncation, Dynamic Type and RTL inside the native toolbar composition."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:20530": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/PageControl.swift",
+      "symbol": "WardoPageControl",
+      "example": "WardoPageControl(\"Document pages\", selection: $page, count: documents.count)",
+      "gaps": [
+        "Validate native scrubbing, VoiceOver adjustment and compact/regular toolbar composition on iPhone and iPad. Native system geometry is intentionally delegated to UIPageControl."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Dots": {
+          "type": "VARIANT",
+          "defaultValue": "2",
+          "variantOptions": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8+"
+          ]
+        },
+        "Selection": {
+          "type": "VARIANT",
+          "defaultValue": "1",
+          "variantOptions": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Dots",
+          "target": "count",
+          "notes": "2\u20137 map to page count; 8+ requires the actual application page count, not the literal text."
+        },
+        {
+          "property": "Selection",
+          "target": "selection",
+          "notes": "Figma one-based selection maps to zero-based application-owned binding."
+        },
+        {
+          "property": "Layout direction",
+          "target": "environment(\\.layoutDirection)",
+          "notes": "LTR/RTL maps to the environment layout direction; do not reverse application indices."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/paging-family.json"
+      ]
+    },
+    "previews": [
+      {
+        "path": "coverage/previews/native/iphone-paging.png",
+        "platform": "iOS",
+        "alt": "Native iPhone paging sample showing the second page selected after a direct tap; controls and state belong to the sample application."
+      }
+    ]
+  },
+  "1908:21352": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/PageControl.swift",
+      "symbol": "WardoPageDot",
+      "example": "WardoPageDot(selected: true)",
+      "gaps": [
+        "Validate dot paint in light/dark native toolbar compositions."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "Selected": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Mode",
+          "target": "wardoTheme(_:)",
+          "notes": "Inherited light/dark theme; preserves Wardo purpose colours."
+        },
+        {
+          "property": "Selected",
+          "target": "selected",
+          "notes": "False/True maps to a Bool. Decorative dot is hidden from accessibility; use the parent control."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:26513": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/PageControl.swift",
+      "symbol": "WardoVisionPageControl",
+      "example": "WardoVisionPageControl(\"Document pages\", selection: $page, count: documents.count)",
+      "gaps": [
+        "Validate VoiceOver adjustment, hardware keyboard focus and text localization on target devices.",
+        "Review overflow source ambiguity: the visionOS 8+ selection-5 design has ten indicator layers while most overflow variants have eight. Runtime currently uses a bounded eight-page window."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "Dark",
+          "variantOptions": [
+            "Dark"
+          ]
+        },
+        "Dots": {
+          "type": "VARIANT",
+          "defaultValue": "8+",
+          "variantOptions": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8+"
+          ]
+        },
+        "Selection": {
+          "type": "VARIANT",
+          "defaultValue": "8",
+          "variantOptions": [
+            "1",
+            "7",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Mode",
+          "target": "wardoTheme(_:)",
+          "notes": "Inherited light/dark theme; preserves Wardo purpose colours."
+        },
+        {
+          "property": "Dots",
+          "target": "count",
+          "notes": "2\u20137 map to page count; 8+ requires the actual application page count, not the literal text."
+        },
+        {
+          "property": "Selection",
+          "target": "selection",
+          "notes": "Figma one-based selection maps to zero-based application-owned binding."
+        },
+        {
+          "property": "Layout direction",
+          "target": "environment(\\.layoutDirection)",
+          "notes": "LTR/RTL maps to the environment layout direction; do not reverse application indices."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/paging-family.json"
+      ]
+    }
+  },
+  "1908:20876": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoSegmentedControl",
+      "example": "WardoSegmentedControl(\"Section\", selection: $section) { tabs }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:20887": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoSearchField",
+      "example": "WardoSearchField(\"Search\", text: $query, onSubmit: search)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:20896": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoSearchField",
+      "example": "WardoSearchField(\"Search\", text: $query, onSubmit: search)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:20983": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoSearchField",
+      "example": "WardoSearchField(\"Search\", text: $query, onSubmit: search)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:27633": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionSidebar.swift",
+      "symbol": "WardoVisionSidebarGroup",
+      "example": "WardoVisionSidebarGroup(\"Library\", isExpanded: $expanded) { sidebarRows }",
+      "gaps": [
+        "Native disclosure chevrons replace the source placeholder ellipsis; verify expansion accessibility and layout."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Section Heading#131:21": {
+          "type": "TEXT",
+          "defaultValue": "Section Heading"
+        },
+        "Icon / Disclsoure#2536:13": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151",
+          "preferredValues": []
+        },
+        "Open": {
+          "type": "VARIANT",
+          "defaultValue": "True",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Layout direction",
+          "target": "EnvironmentValues.layoutDirection",
+          "transform": {
+            "LTR": "leftToRight",
+            "RTL": "rightToLeft"
+          }
+        },
+        {
+          "property": "Section Heading#131:21",
+          "target": "title"
+        },
+        {
+          "property": "Icon / Disclsoure#2536:13",
+          "target": "disclosure content slot"
+        },
+        {
+          "property": "Open",
+          "target": "isExpanded binding",
+          "transform": {
+            "True": true,
+            "False": false
+          }
+        }
+      ]
+    }
+  },
+  "2532:27640": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionSidebar.swift",
+      "symbol": "WardoVisionSidebarItem",
+      "example": "WardoVisionSidebarItem(\"Saved\", counter: \"3\", selected: selected, action: select) { Image(systemName: \"bookmark\") }",
+      "gaps": [
+        "Exercise all accessory types, selection, hover, text scaling and RTL on visionOS."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Counter#127:46": {
+          "type": "TEXT",
+          "defaultValue": "1"
+        },
+        "Show Counter#127:50": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Icon / Symbol#2536:16": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1531:194151",
+          "preferredValues": []
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Selected",
+          "variantOptions": [
+            "Idle",
+            "Hover",
+            "Selected"
+          ]
+        },
+        "Accessory": {
+          "type": "VARIANT",
+          "defaultValue": "Bitmap Circle",
+          "variantOptions": [
+            "Symbol",
+            "Symbol in circle",
+            "Bitmap Rounded Rect",
+            "Bitmap Circle"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Layout direction",
+          "target": "EnvironmentValues.layoutDirection",
+          "transform": {
+            "LTR": "leftToRight",
+            "RTL": "rightToLeft"
+          }
+        },
+        {
+          "property": "Counter#127:46",
+          "target": "counter"
+        },
+        {
+          "property": "Show Counter#127:50",
+          "target": "counter",
+          "transform": "false \u2192 nil; true \u2192 supplied counter"
+        },
+        {
+          "property": "Icon / Symbol#2536:16",
+          "target": "icon content slot"
+        },
+        {
+          "property": "State",
+          "target": "selected + native hover",
+          "transform": {
+            "Selected": "selected: true",
+            "Idle": "selected: false",
+            "Hover": "runtime hover state while selected: false"
+          }
+        },
+        {
+          "property": "Accessory",
+          "target": "accessory",
+          "transform": {
+            "Symbol": "symbol",
+            "Symbol in circle": "symbolInCircle",
+            "Bitmap Circle": "bitmapCircle",
+            "Bitmap Rounded Rect": "bitmapRoundedRectangle"
+          }
+        }
+      ]
+    }
+  },
+  "2537:35340": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionSidebar.swift",
+      "symbol": "WardoVisionSidebar",
+      "example": "WardoVisionSidebar(\"Collections\", actions: { Button(\"Edit\", action: edit) }, rows: { sidebarRows })",
+      "gaps": [
+        "Review custom header search configurations and list geometry in the visionOS sample."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Layout direction",
+          "target": "EnvironmentValues.layoutDirection",
+          "transform": {
+            "LTR": "leftToRight",
+            "RTL": "rightToLeft"
+          }
+        }
+      ]
+    }
+  },
+  "2532:27823": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionSidebar.swift",
+      "symbol": "WardoVisionSidebar",
+      "example": "WardoVisionSidebar(\"Collections\", actions: { headerActions }, rows: { sidebarRows })",
+      "gaps": [
+        "Complete search header variant configuration and focus restoration."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Show button#127:56": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Button State": {
+          "type": "VARIANT",
+          "defaultValue": "Search",
+          "variantOptions": [
+            "Search",
+            "Hover",
+            "Idle"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Header and Button (Search)",
+          "variantOptions": [
+            "Header and Button (Idle)",
+            "Header and Button (Hover)",
+            "Header and Button (Search)"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": []
+    }
+  },
+  "2532:27837": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/VisionSidebar.swift",
+      "symbol": "WardoVisionSidebarGroup",
+      "example": "WardoVisionSidebarGroup(\"Library\", isExpanded: $expanded) { ForEach(items) { item in sidebarRow(item) } }",
+      "gaps": [
+        "Validate closed and 1\u201316 row compositions with application-owned expansion."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Show Section Header#127:59": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Items": {
+          "type": "VARIANT",
+          "defaultValue": "16",
+          "variantOptions": [
+            "Closed",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Layout direction",
+          "target": "EnvironmentValues.layoutDirection",
+          "transform": {
+            "LTR": "leftToRight",
+            "RTL": "rightToLeft"
+          }
+        },
+        {
+          "property": "Show Section Header#127:59",
+          "target": "showsHeader"
+        },
+        {
+          "property": "Items",
+          "target": "rows + isExpanded binding",
+          "transform": "Closed \u2192 isExpanded false; 1\u201316 \u2192 application-supplied row count with isExpanded true"
+        }
+      ]
+    }
+  },
+  "2528:22312": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Expanded/collapsed tab item variants require property mapping and visual review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2528:22321": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Expanded/collapsed tab item variants require property mapping and visual review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2528:22330": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Expanded/collapsed tab item variants require property mapping and visual review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2528:22335": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Expanded/collapsed tab item variants require property mapping and visual review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2528:22340": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoTabView",
+      "example": "WardoTabView(selection: $selectedTab) { content }",
+      "gaps": [
+        "Expanded/collapsed tab item variants require property mapping and visual review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:25434": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Navigation.swift",
+      "symbol": "WardoIndexBar",
+      "example": "WardoIndexBar(sections: sectionTitles, navigate: navigate)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:25569": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoListRow",
+      "example": "WardoListRow(title, subtitle: subtitle, leading: { leading }, trailing: { trailing })",
+      "gaps": [
+        "Review inset/plain/text-box layout, edit, image, and accessory configurations."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:25584": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoListRow",
+      "example": "WardoListRow(title, subtitle: subtitle, leading: { leading }, trailing: { trailing })",
+      "gaps": [
+        "Review inset/plain/text-box layout, edit, image, and accessory configurations."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:25593": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoListRow",
+      "example": "WardoListRow(title, subtitle: subtitle, leading: { leading }, trailing: { trailing })",
+      "gaps": [
+        "Review inset/plain/text-box layout, edit, image, and accessory configurations."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:25618": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoListRow",
+      "example": "WardoListRow(title, subtitle: subtitle, leading: { leading }, trailing: { trailing })",
+      "gaps": [
+        "Review inset/plain/text-box layout, edit, image, and accessory configurations."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:25731": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoListRow",
+      "example": "WardoListRow(title, subtitle: subtitle, leading: { leading }, trailing: { trailing })",
+      "gaps": [
+        "Review inset/plain/text-box layout, edit, image, and accessory configurations."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:25740": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoListRow",
+      "example": "WardoListRow(title, subtitle: subtitle, leading: { leading }, trailing: { trailing })",
+      "gaps": [
+        "Review inset/plain/text-box layout, edit, image, and accessory configurations."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:25977": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoListRow",
+      "example": "WardoListRow(title, subtitle: subtitle, leading: { leading }, trailing: { trailing })",
+      "gaps": [
+        "Review inset/plain/text-box layout, edit, image, and accessory configurations."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:25414": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoSection",
+      "example": "WardoSection(title, footer: footer) { rows }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2537:30594": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoSection",
+      "example": "WardoSection(title, footer: footer) { rows }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2537:31710": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoSection",
+      "example": "WardoSection(title, footer: footer) { rows }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2537:30591": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoSection",
+      "example": "WardoSection(title, footer: footer) { rows }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2537:30484": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoList",
+      "example": "WardoList { rows }",
+      "gaps": [
+        "Separator geometry is composed by List; per-entry visual verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2537:31706": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoList",
+      "example": "WardoList { rows }",
+      "gaps": [
+        "Separator geometry is composed by List; per-entry visual verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:26436": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoNotification",
+      "example": "WardoNotification(title, message: message, isExpanded: $expanded, preview: { preview }, actions: { actions })",
+      "gaps": [
+        "Review notification provenance, content variants, expanded and collapsed geometry."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2537:33148": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoNotification",
+      "example": "WardoNotification(title, message: message, isExpanded: $expanded, preview: { preview }, actions: { actions })",
+      "gaps": [
+        "Review notification provenance, content variants, expanded and collapsed geometry."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:26451": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoNotification",
+      "example": "WardoNotification(title, message: message, isExpanded: $expanded, preview: { preview }, actions: { actions })",
+      "gaps": [
+        "Review notification provenance, content variants, expanded and collapsed geometry."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:26456": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoNotification",
+      "example": "WardoNotification(title, message: message, isExpanded: $expanded, preview: { preview }, actions: { actions })",
+      "gaps": [
+        "Review notification provenance, content variants, expanded and collapsed geometry."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "3073:42649": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoNotification",
+      "example": "WardoNotification(title, message: message, isExpanded: $expanded, preview: { preview }, actions: { actions })",
+      "gaps": [
+        "Review notification provenance, content variants, expanded and collapsed geometry."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "3073:111009": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoNotification",
+      "example": "WardoNotification(title, message: message, isExpanded: $expanded, preview: { preview }, actions: { actions })",
+      "gaps": [
+        "Review notification provenance, content variants, expanded and collapsed geometry."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:26490": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoNotice",
+      "example": "WardoNotice(message) { actions }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "3073:111036": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoNotice",
+      "example": "WardoNotice(message) { actions }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:26956": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoProgress",
+      "example": "WardoProgress(\"Loading\", value: progress)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:26984": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoProgress",
+      "example": "WardoProgress(\"Loading\", value: progress)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2396:18066": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoNavigationBar",
+      "example": "WardoNavigationBar(destinations, selectedId, onSelect, icon = icon)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2396:18564": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoNavigationBar",
+      "example": "WardoNavigationBar(destinations, selectedId, onSelect, icon = icon)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2258:11193": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoSidebar",
+      "example": "WardoSidebar(destinations, selectedId, onSelect, icon = icon)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:45472": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/ExpandedNavigationRail.kt",
+      "symbol": "WardoExpandedNavigationRail",
+      "example": "WardoExpandedNavigationRail(menu = { MenuAction() }, floatingActionButton = { CreateAction() }) { destinations.forEach { destination -> WardoExpandedRailItem(selected = selectedId == destination.id, onClick = { onSelect(destination.id) }, icon = { DestinationIcon(destination) }, label = { Text(destination.label) }) } }",
+      "gaps": [
+        "Review six-destination section-header variants and long-label/text-scale adaptation.",
+        "Compare native geometry and colour variants to the reviewed source frames on Android phone/tablet; XR panel execution is separate evidence.",
+        "Verify TalkBack traversal, hardware keyboard focus and disabled item handling."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Show Menu#421:0": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Show FAB#10565:34": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Segments#59255:9": {
+          "type": "SLOT",
+          "description": "",
+          "preferredValues": [
+            {
+              "type": "COMPONENT_SET",
+              "key": "731f178bcaab771c713f22e3f24ae9609d5c3ed8"
+            }
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Docked",
+          "variantOptions": [
+            "Docked",
+            "Floating"
+          ]
+        },
+        "Alignment": {
+          "type": "VARIANT",
+          "defaultValue": "Top",
+          "variantOptions": [
+            "Top",
+            "Middle"
+          ]
+        },
+        "Nav items": {
+          "type": "VARIANT",
+          "defaultValue": "3",
+          "variantOptions": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        "Layout direction": {
+          "type": "VARIANT",
+          "defaultValue": "LTR",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Show Menu#421:0",
+          "target": "menu",
+          "notes": "Supply the application menu action slot when true, null when false. Reserved native header regions remain stable."
+        },
+        {
+          "property": "Show FAB#10565:34",
+          "target": "floatingActionButton",
+          "notes": "Supply the application FAB slot when true, null when false. The action and content are application-owned."
+        },
+        {
+          "property": "Segments#59255:9",
+          "target": "content",
+          "notes": "Application composes WardoExpandedRailItem, section labels and destination state."
+        },
+        {
+          "property": "Type",
+          "target": "surface",
+          "notes": "Docked/Floating select transparent/raised native rail surfaces."
+        },
+        {
+          "property": "Alignment",
+          "target": "alignment",
+          "notes": "Top/Middle select native top/center arrangement."
+        },
+        {
+          "property": "Nav items",
+          "target": "content",
+          "notes": "Application content supplies 3\u20136 destinations and any source-specific sections."
+        },
+        {
+          "property": "Layout direction",
+          "target": "LocalLayoutDirection",
+          "notes": "LTR/RTL is inherited from CompositionLocalProvider(LocalLayoutDirection)."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/android-xr-expanded-rail-junit.xml"
+      ]
+    }
+  },
+  "2254:45681": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoNavigationRail",
+      "example": "WardoNavigationRail(destinations, selectedId, onSelect, icon = icon)",
+      "gaps": [
+        "Expanded and horizontal rail configurations require visual review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2396:18581": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoNavigationRail",
+      "example": "WardoNavigationRail(destinations, selectedId, onSelect, icon = icon)",
+      "gaps": [
+        "Expanded and horizontal rail configurations require visual review."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:51881": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoTopAppBar",
+      "example": "WardoTopAppBar(title, navigationIcon = navigation, actions = actions)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22257": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoTopAppBar",
+      "example": "WardoTopAppBar(title, navigationIcon = navigation, actions = actions)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:52057": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoBottomAppBar",
+      "example": "WardoBottomAppBar(actions = actions)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:43970": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoTabs",
+      "example": "WardoTabs(tabs, selectedIndex, onSelect)",
+      "gaps": [
+        "Primary/secondary and icon-only APIs need full variant coverage."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2396:18775": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoTabs",
+      "example": "WardoTabs(tabs, selectedIndex, onSelect)",
+      "gaps": [
+        "Primary/secondary and icon-only APIs need full variant coverage."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2396:18869": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoTabs",
+      "example": "WardoTabs(tabs, selectedIndex, onSelect)",
+      "gaps": [
+        "Primary/secondary and icon-only APIs need full variant coverage."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:44088": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoTabs",
+      "example": "WardoTabs(tabs, selectedIndex, onSelect)",
+      "gaps": [
+        "Primary/secondary and icon-only APIs need full variant coverage."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:44157": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoTabs",
+      "example": "WardoTabs(tabs, selectedIndex, onSelect)",
+      "gaps": [
+        "Primary/secondary and icon-only APIs need full variant coverage."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:44218": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoTabs",
+      "example": "WardoTabs(tabs, selectedIndex, onSelect)",
+      "gaps": [
+        "Primary/secondary and icon-only APIs need full variant coverage."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:44271": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoTabs",
+      "example": "WardoTabs(tabs, selectedIndex, onSelect)",
+      "gaps": [
+        "Primary/secondary and icon-only APIs need full variant coverage."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2254:44320": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt",
+      "symbol": "WardoTabs",
+      "example": "WardoTabs(tabs, selectedIndex, onSelect)",
+      "gaps": [
+        "Primary/secondary and icon-only APIs need full variant coverage."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "3073:109982": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Overlays.kt",
+      "symbol": "WardoDialog",
+      "example": "WardoDialog(title, message, onDismissRequest, onConfirm)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "3073:110003": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Overlays.kt",
+      "symbol": "WardoListDialog",
+      "example": "WardoListDialog(title, onDismissRequest, scrollable = true, actions = actions, content = content)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "3073:110023": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Overlays.kt",
+      "symbol": "WardoListDialog",
+      "example": "WardoListDialog(title, onDismissRequest, scrollable = true, actions = actions, content = content)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2197:40651": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/xr/src/main/kotlin/com/wardo/designsystem/xr/SpatialComponents.kt",
+      "symbol": "WardoSpatialNavigationBar",
+      "example": "WardoSpatialNavigationBar(destinations, selectedId, onSelect, icon)",
+      "gaps": [
+        "XR runtime gaze, gesture, placement, and visual verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": []
+  },
+  "2197:40802": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/xr/src/main/kotlin/com/wardo/designsystem/xr/SpatialComponents.kt",
+      "symbol": "WardoSpatialNavigationBar",
+      "example": "WardoSpatialNavigationBar(destinations, selectedId, onSelect, icon)",
+      "gaps": [
+        "XR runtime gaze, gesture, placement, and visual verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": []
+  },
+  "2197:40376": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/xr/src/main/kotlin/com/wardo/designsystem/xr/SpatialComponents.kt",
+      "symbol": "WardoSpatialNavigationRail",
+      "example": "WardoSpatialNavigationRail(destinations, selectedId, onSelect, icon)",
+      "gaps": [
+        "XR runtime gaze, gesture, placement, and visual verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": []
+  },
+  "2197:40346": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/xr/src/main/kotlin/com/wardo/designsystem/xr/SpatialComponents.kt",
+      "symbol": "WardoSpatialNavigationRail",
+      "example": "WardoSpatialNavigationRail(destinations, selectedId, onSelect, icon)",
+      "gaps": [
+        "XR runtime gaze, gesture, placement, and visual verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": []
+  },
+  "1908:22468": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/xr/src/main/kotlin/com/wardo/designsystem/xr/SpatialComponents.kt",
+      "symbol": "WardoSpatialToolbar",
+      "example": "WardoSpatialToolbar { actions() }",
+      "gaps": [
+        "XR runtime gaze, gesture, placement, and visual verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": [
+      {
+        "path": "coverage/previews/native/android-xr.png",
+        "platform": "Android XR",
+        "alt": "Wardo sample with a spatial panel and anchored toolbar in managed Full Space"
+      }
+    ]
+  },
+  "2254:52009": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/xr/src/main/kotlin/com/wardo/designsystem/xr/SpatialComponents.kt",
+      "symbol": "WardoSpatialToolbar",
+      "example": "WardoSpatialToolbar { actions() }",
+      "gaps": [
+        "XR runtime gaze, gesture, placement, and visual verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": [
+      {
+        "path": "coverage/previews/native/android-xr.png",
+        "platform": "Android XR",
+        "alt": "Wardo sample with a spatial panel and anchored toolbar in managed Full Space"
+      }
+    ]
+  },
+  "3073:110048": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/xr/src/main/kotlin/com/wardo/designsystem/xr/SpatialComponents.kt",
+      "symbol": "WardoSpatialDialog",
+      "example": "WardoSpatialDialog(title, onDismissRequest, actions, content)",
+      "gaps": [
+        "XR runtime gaze, gesture, placement, and visual verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": []
+  },
+  "2396:18947": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Inputs.swift",
+      "symbol": "WardoSegmentedControl",
+      "example": "WardoSegmentedControl(\"Section\", selection: $section) { content }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2276:1867": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "visionOS",
+        "macOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
+      "symbol": "WardoSystemIcon",
+      "example": "WardoSystemIcon(\"chevron.up\")",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2276:1870": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "visionOS",
+        "macOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
+      "symbol": "WardoSystemIcon",
+      "example": "WardoSystemIcon(\"checkmark\")",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2276:1873": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "visionOS",
+        "macOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
+      "symbol": "WardoSystemIcon",
+      "example": "WardoSystemIcon(\"mic\")",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2276:1864": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "visionOS",
+        "macOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
+      "symbol": "WardoSystemIcon",
+      "example": "WardoSystemIcon(\"chevron.backward\")",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2308:11051": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "visionOS",
+        "macOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
+      "symbol": "WardoSystemIcon",
+      "example": "WardoSystemIcon(\"sidebar.left\")",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2308:11055": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "visionOS",
+        "macOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
+      "symbol": "WardoSystemIcon",
+      "example": "WardoSystemIcon(\"magnifyingglass\")",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:24721": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/AppArtwork.swift",
+      "symbol": "WardoAppIcon",
+      "example": "WardoAppIcon(appName, artwork: { Image(applicationIconName) }).accessibilityValue(badgeDescription)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:24726": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/AppArtwork.swift",
+      "symbol": "WardoAppIcon",
+      "example": "WardoAppIcon(appName, artwork: { Image(applicationIconName) }).accessibilityValue(badgeDescription)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:24760": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/AppArtwork.swift",
+      "symbol": "WardoAppIcon",
+      "example": "WardoAppIcon(appName, artwork: { Image(applicationIconName) }).accessibilityValue(badgeDescription)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:24743": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/AppArtwork.swift",
+      "symbol": "WardoIconBadge",
+      "example": "WardoIconBadge(unreadCount, accessibilityLabel: unreadDescription)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:24752": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/AppArtwork.swift",
+      "symbol": "WardoIconBadge",
+      "example": "WardoIconBadge(unreadCount, accessibilityLabel: unreadDescription)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:24776": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/Content.swift",
+      "symbol": "WardoAvatar",
+      "example": "WardoAvatar(personName, size: 44) { Image(avatarName) }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2532:24803": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "visionOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
+      "symbol": "WardoSystemIcon",
+      "example": "WardoSystemIcon(systemImageName, accessibilityLabel: label)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "3073:42687": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Scrim.tsx",
+      "symbol": "NotificationScrim",
+      "example": "<div style={{position:\"relative\"}}><NotificationScrim /></div>",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21103": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
+      "symbol": "NativeSheetModifier",
+      "example": "content.modifier(NativeSheetModifier(isPresented: $presented) { sheet.presentationDragIndicator(.visible) })",
+      "gaps": [
+        "Native sheet supplies the grabber; verify this composed part inside its parent presentation."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10484": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Actions.kt",
+      "symbol": "WardoFloatingActionButton",
+      "example": "WardoFloatingActionButton(onClick) { icon() }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10769": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarIconButton",
+      "example": "WardoToolbarIconButton(onClick, modifier = Modifier.focusRequester(focusRequester)) { icon() }",
+      "gaps": [
+        "The native focus system supplies the indicator; runtime focus appearance remains to be checked."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21970": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarIconButton",
+      "example": "WardoToolbarIconButton(onClick, surface = WardoToolbarSurface.Standard) { icon() }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:21993": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarIconToggle",
+      "example": "WardoToolbarIconToggle(checked, onCheckedChange, surface = WardoToolbarSurface.Standard) { icon() }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22048": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarTextToggle",
+      "example": "WardoToolbarTextToggle(checked, onCheckedChange, label, surface = WardoToolbarSurface.Standard)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22114": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarIconButton",
+      "example": "WardoToolbarIconButton(onClick, surface = WardoToolbarSurface.Vibrant) { icon() }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22137": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarIconToggle",
+      "example": "WardoToolbarIconToggle(checked, onCheckedChange, surface = WardoToolbarSurface.Vibrant) { icon() }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22192": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarTextToggle",
+      "example": "WardoToolbarTextToggle(checked, onCheckedChange, label, surface = WardoToolbarSurface.Vibrant)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22551": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarIconButton",
+      "example": "WardoToolbarIconButton(onClick, surface = WardoToolbarSurface.SurfaceHigh) { icon() }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22574": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarIconToggle",
+      "example": "WardoToolbarIconToggle(checked, onCheckedChange, surface = WardoToolbarSurface.SurfaceHigh) { icon() }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22629": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarTextToggle",
+      "example": "WardoToolbarTextToggle(checked, onCheckedChange, label, surface = WardoToolbarSurface.SurfaceHigh)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22695": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarIconButton",
+      "example": "WardoToolbarIconButton(onClick, surface = WardoToolbarSurface.TertiaryContainer) { icon() }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22718": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarIconToggle",
+      "example": "WardoToolbarIconToggle(checked, onCheckedChange, surface = WardoToolbarSurface.TertiaryContainer) { icon() }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22773": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarTextToggle",
+      "example": "WardoToolbarTextToggle(checked, onCheckedChange, label, surface = WardoToolbarSurface.TertiaryContainer)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22841": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarIconButton",
+      "example": "WardoToolbarIconButton(onClick, surface = WardoToolbarSurface.Surface) { icon() }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22864": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarIconToggle",
+      "example": "WardoToolbarIconToggle(checked, onCheckedChange, surface = WardoToolbarSurface.Surface) { icon() }",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1908:22919": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android XR"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoToolbarTextToggle",
+      "example": "WardoToolbarTextToggle(checked, onCheckedChange, label, surface = WardoToolbarSurface.Surface)",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10410": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoSymbol",
+      "example": "WardoSymbol(imageVector = applicationIcons.StarBorder, contentDescription = label)",
+      "gaps": [
+        "Provide the matching Material symbol artwork; source geometry and variant verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10412": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoSymbol",
+      "example": "WardoSymbol(imageVector = applicationIcons.Star, contentDescription = label)",
+      "gaps": [
+        "Provide the matching Material symbol artwork; source geometry and variant verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10775": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoSymbol",
+      "example": "WardoSymbol(imageVector = applicationIcons.Share, contentDescription = label)",
+      "gaps": [
+        "Provide the matching Material symbol artwork; source geometry and variant verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10777": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoSymbol",
+      "example": "WardoSymbol(imageVector = applicationIcons.Comment, contentDescription = label)",
+      "gaps": [
+        "Provide the matching Material symbol artwork; source geometry and variant verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10779": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoSymbol",
+      "example": "WardoSymbol(imageVector = applicationIcons.Download, contentDescription = label)",
+      "gaps": [
+        "Provide the matching Material symbol artwork; source geometry and variant verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10781": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoSymbol",
+      "example": "WardoSymbol(imageVector = applicationIcons.Edit, contentDescription = label)",
+      "gaps": [
+        "Provide the matching Material symbol artwork; source geometry and variant verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10783": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoSymbol",
+      "example": "WardoSymbol(imageVector = applicationIcons.MoreVert, contentDescription = label)",
+      "gaps": [
+        "Provide the matching Material symbol artwork; source geometry and variant verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10785": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "Jetpack Compose",
+      "platforms": [
+        "Android"
+      ],
+      "source": "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt",
+      "symbol": "WardoSymbol",
+      "example": "WardoSymbol(imageVector = applicationIcons.Image, contentDescription = label)",
+      "gaps": [
+        "Provide the matching Material symbol artwork; source geometry and variant verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:114246": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Menus.tsx",
+      "symbol": "FloatingActionButton",
+      "example": "<FloatingActionButton label=\"Create\" onClick={create} />",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:115665": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "SearchField",
+      "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+      "gaps": [
+        "Internal field parts compose through their SearchField parent; review all nested design properties."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:116248": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "SearchField",
+      "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+      "gaps": [
+        "Internal field parts compose through their SearchField parent; review all nested design properties."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:116855": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "SearchField",
+      "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+      "gaps": [
+        "Internal field parts compose through their SearchField parent; review all nested design properties."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:116910": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "SearchField",
+      "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+      "gaps": [
+        "Internal field parts compose through their SearchField parent; review all nested design properties."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:116967": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "SearchField",
+      "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+      "gaps": [
+        "Internal field parts compose through their SearchField parent; review all nested design properties."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:117079": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "SearchField",
+      "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+      "gaps": [
+        "Internal field parts compose through their SearchField parent; review all nested design properties."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:117087": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "SearchField",
+      "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+      "gaps": [
+        "Internal field parts compose through their SearchField parent; review all nested design properties."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:117076": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "example": "<Icon name=\"search\" />",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:117095": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "example": "<Icon name=\"search\" />",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:117084": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "example": "<Icon name=\"close\" />",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:117097": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "example": "<Icon name=\"close\" />",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:117092": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "example": "<Icon name=\"chevron-down\" />",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1967:117099": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "example": "<Icon name=\"chevron-down\" />",
+      "gaps": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "2277:12775": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/PlatformToolbar.swift",
+      "symbol": "WardoPlatformToolbar",
+      "example": "content.modifier(WardoPlatformToolbar(title, position: .top, leading: { leading }, trailing: { trailing }))",
+      "gaps": [
+        "Verify native bar configurations against each platform and position variant."
+      ]
+    },
+    "alternatives": [
+      {
+        "status": "source-available",
+        "framework": "Jetpack Compose",
+        "platforms": [
+          "Android"
+        ],
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/PlatformToolbar.kt",
+        "symbol": "WardoPlatformToolbar",
+        "example": "WardoPlatformToolbar(title, position = WardoToolbarPosition.Top, navigationIcon = navigation, actions = actions)",
+        "gaps": [
+          "Verify top and bottom app bar configurations."
+        ]
+      }
+    ],
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10384": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/ArtworkIcon.tsx",
+      "symbol": "ArtworkIcon",
+      "example": "<ArtworkIcon name=\"toolbar-save-all\" label=\"save-all\" />",
+      "gaps": [
+        "Exact SVG imported; visual review and per-entry evidence pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10386": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/ArtworkIcon.tsx",
+      "symbol": "ArtworkIcon",
+      "example": "<ArtworkIcon name=\"toolbar-eye\" label=\"eye\" />",
+      "gaps": [
+        "Exact SVG imported; visual review and per-entry evidence pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10388": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/ArtworkIcon.tsx",
+      "symbol": "ArtworkIcon",
+      "example": "<ArtworkIcon name=\"toolbar-circle-ellipsis\" label=\"circle-ellipsis\" />",
+      "gaps": [
+        "Exact SVG imported; visual review and per-entry evidence pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10390": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/ArtworkIcon.tsx",
+      "symbol": "ArtworkIcon",
+      "example": "<ArtworkIcon name=\"toolbar-archive\" label=\"archive\" />",
+      "gaps": [
+        "Exact SVG imported; visual review and per-entry evidence pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10392": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/ArtworkIcon.tsx",
+      "symbol": "ArtworkIcon",
+      "example": "<ArtworkIcon name=\"toolbar-trash-2\" label=\"trash-2\" />",
+      "gaps": [
+        "Exact SVG imported; visual review and per-entry evidence pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10351": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/FlowerArtwork.tsx",
+      "symbol": "FlowerArtwork",
+      "example": "<FlowerArtwork variant=\"flower_1\" alt=\"\" />",
+      "gaps": [
+        "Review all 16 intrinsic artwork variants in toolbar compositions."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10794": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "macOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/WindowScene.swift",
+      "symbol": "WardoWindowScene",
+      "example": "WardoWindowScene(\"Wardo\") { ApplicationContent() }",
+      "gaps": [
+        "Native WindowGroup owns window controls and active/inactive states; macOS runtime verification pending."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "1945:10804": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS"
+      ],
+      "source": "native/apple/Sources/WardoDesignSystem/WindowScene.swift",
+      "symbol": "WardoGlassSurface",
+      "example": "WardoGlassSurface(primary: true) { Image(systemName: \"plus\") }",
+      "gaps": [
+        "Review 48-point glass appearance in light and dark modes."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "665:2414": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "UpcomingMobileExample",
+      "example": "<UpcomingMobileExample />",
+      "gaps": [
+        "Complete design comparison and data/callback contract review; interaction checks do not imply visual parity."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": [
+      {
+        "path": "coverage/previews/web/upcoming-mobile.png",
+        "platform": "web",
+        "alt": "upcoming-mobile implementation preview; visual review in progress"
+      }
+    ]
+  },
+  "665:3693": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "ReviewsMobileExample",
+      "example": "<ReviewsMobileExample />",
+      "gaps": [
+        "Complete design comparison and data/callback contract review; interaction checks do not imply visual parity."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": [
+      {
+        "path": "coverage/previews/web/reviews-mobile.png",
+        "platform": "web",
+        "alt": "reviews-mobile implementation preview; visual review in progress"
+      }
+    ]
+  },
+  "665:5206": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "MessagingMobileExample",
+      "example": "<MessagingMobileExample />",
+      "gaps": [
+        "Complete design comparison and data/callback contract review; interaction checks do not imply visual parity."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": [
+      {
+        "path": "coverage/previews/web/messaging-mobile.png",
+        "platform": "web",
+        "alt": "messaging-mobile implementation preview; visual review in progress"
+      }
+    ]
+  },
+  "677:2291": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "UpcomingWebExample",
+      "example": "<UpcomingWebExample />",
+      "gaps": [
+        "Complete design comparison and data/callback contract review; interaction checks do not imply visual parity."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": [
+      {
+        "path": "coverage/previews/web/upcoming-web.png",
+        "platform": "web",
+        "alt": "upcoming-web implementation preview; visual review in progress"
+      }
+    ]
+  },
+  "677:2891": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "ReviewsWebExample",
+      "example": "<ReviewsWebExample />",
+      "gaps": [
+        "Complete design comparison and data/callback contract review; interaction checks do not imply visual parity."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": [
+      {
+        "path": "coverage/previews/web/reviews-web.png",
+        "platform": "web",
+        "alt": "reviews-web implementation preview; visual review in progress"
+      }
+    ]
+  },
+  "677:3501": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "MessagingWebExample",
+      "example": "<MessagingWebExample />",
+      "gaps": [
+        "Complete design comparison and data/callback contract review; interaction checks do not imply visual parity."
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
+    },
+    "previews": [
+      {
+        "path": "coverage/previews/web/messaging-web.png",
+        "platform": "web",
+        "alt": "messaging-web implementation preview; visual review in progress"
+      }
+    ]
+  },
+  "1531:25362": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Button.tsx",
+      "symbol": "Button",
+      "example": "<Button onClick={onActivate}>Continue</Button>",
+      "gaps": [
+        "Complete per-entry visual and interaction matrix across supported variants, RTL and text scaling."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Label#869:15": {
+          "name": "Label",
+          "type": "TEXT",
+          "key": "Label#869:15"
+        },
+        "Show leading icon#869:16": {
+          "name": "Show leading icon",
+          "type": "BOOLEAN",
+          "key": "Show leading icon#869:16"
+        },
+        "Show trailing icon#869:17": {
+          "name": "Show trailing icon",
+          "type": "BOOLEAN",
+          "key": "Show trailing icon#869:17"
+        },
+        "Leading icon#869:18": {
+          "name": "Leading icon",
+          "type": "INSTANCE_SWAP",
+          "key": "Leading icon#869:18"
+        },
+        "Trailing icon#869:19": {
+          "name": "Trailing icon",
+          "type": "INSTANCE_SWAP",
+          "key": "Trailing icon#869:19"
+        },
+        "Show label#1284:0": {
+          "name": "Show label",
+          "type": "BOOLEAN",
+          "key": "Show label#1284:0"
+        },
+        "Selected#1389:0": {
+          "name": "Selected",
+          "type": "BOOLEAN",
+          "key": "Selected#1389:0"
+        },
+        "Hierarchy": {
+          "name": "Hierarchy",
+          "type": "VARIANT",
+          "key": "Hierarchy",
+          "variantOptions": [
+            "Primary",
+            "Secondary",
+            "Tertiary",
+            "Tonal",
+            "Text"
+          ]
+        },
+        "Tone": {
+          "name": "Tone",
+          "type": "VARIANT",
+          "key": "Tone",
+          "variantOptions": [
+            "Default",
+            "Confirmation",
+            "Warning",
+            "Error",
+            "Neutral"
+          ]
+        },
+        "State": {
+          "name": "State",
+          "type": "VARIANT",
+          "key": "State",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focused",
+            "Disabled"
+          ]
+        },
+        "Layout direction": {
+          "name": "Layout direction",
+          "type": "VARIANT",
+          "key": "Layout direction",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Label#869:15",
+          "target": "children; aria-label when label is hidden"
+        },
+        {
+          "property": "Show leading icon#869:16",
+          "target": "leadingIcon",
+          "transform": "When false, omit the corresponding content slot."
+        },
+        {
+          "property": "Show trailing icon#869:17",
+          "target": "trailingIcon",
+          "transform": "When false, omit the corresponding content slot."
+        },
+        {
+          "property": "Leading icon#869:18",
+          "target": "leadingIcon"
+        },
+        {
+          "property": "Trailing icon#869:19",
+          "target": "trailingIcon"
+        },
+        {
+          "property": "Show label#1284:0",
+          "target": "children + aria-label",
+          "transform": "When false, omit children and supply an accessible name."
+        },
+        {
+          "property": "Selected#1389:0",
+          "target": "selected"
+        },
+        {
+          "property": "Hierarchy",
+          "target": "hierarchy",
+          "transform": {
+            "Primary": "primary",
+            "Secondary": "secondary",
+            "Tertiary": "tertiary",
+            "Tonal": "tonal",
+            "Text": "text"
+          }
+        },
+        {
+          "property": "Tone",
+          "target": "tone",
+          "transform": {
+            "Default": "default",
+            "Confirmation": "confirmation",
+            "Warning": "warning",
+            "Error": "error",
+            "Neutral": "neutral"
+          }
+        },
+        {
+          "property": "State",
+          "target": "disabled + native browser interaction",
+          "transform": {
+            "Default": "enabled resting state",
+            "Hover": ":hover",
+            "Pressed": ":active",
+            "Focused": ":focus-visible",
+            "Disabled": "disabled: true"
+          }
+        },
+        {
+          "property": "Layout direction",
+          "target": "dir",
+          "transform": {
+            "LTR": "ltr",
+            "RTL": "rtl"
+          }
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/family-checks.json"
+      ],
+      "notes": "Family-level web checks are recorded; complete per-entry validation is pending."
+    }
+  },
+  "1531:20475": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/ActionChip.tsx",
+      "symbol": "ActionChip",
+      "example": "<ActionChip onClick={onActivate}>Continue</ActionChip>",
+      "gaps": [
+        "Complete per-entry visual and interaction matrix across supported variants, RTL and text scaling."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Label#871:210": {
+          "name": "Label",
+          "type": "TEXT",
+          "key": "Label#871:210"
+        },
+        "Show leading icon#871:231": {
+          "name": "Show leading icon",
+          "type": "BOOLEAN",
+          "key": "Show leading icon#871:231"
+        },
+        "Show trailing icon#871:252": {
+          "name": "Show trailing icon",
+          "type": "BOOLEAN",
+          "key": "Show trailing icon#871:252"
+        },
+        "Leading icon#871:273": {
+          "name": "Leading icon",
+          "type": "INSTANCE_SWAP",
+          "key": "Leading icon#871:273"
+        },
+        "Trailing icon#871:294": {
+          "name": "Trailing icon",
+          "type": "INSTANCE_SWAP",
+          "key": "Trailing icon#871:294"
+        },
+        "Hierarchy": {
+          "name": "Hierarchy",
+          "type": "VARIANT",
+          "key": "Hierarchy",
+          "variantOptions": [
+            "Tonal",
+            "Text",
+            "Primary",
+            "Secondary",
+            "Tertiary"
+          ]
+        },
+        "Tone": {
+          "name": "Tone",
+          "type": "VARIANT",
+          "key": "Tone",
+          "variantOptions": [
+            "Default",
+            "Confirmation",
+            "Warning",
+            "Error"
+          ]
+        },
+        "State": {
+          "name": "State",
+          "type": "VARIANT",
+          "key": "State",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focused",
+            "Disabled"
+          ]
+        },
+        "Busy": {
+          "name": "Busy",
+          "type": "VARIANT",
+          "key": "Busy",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "Layout direction": {
+          "name": "Layout direction",
+          "type": "VARIANT",
+          "key": "Layout direction",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Label#871:210",
+          "target": "children; aria-label when label is hidden"
+        },
+        {
+          "property": "Show leading icon#871:231",
+          "target": "leadingIcon",
+          "transform": "When false, omit the corresponding content slot."
+        },
+        {
+          "property": "Show trailing icon#871:252",
+          "target": "trailingIcon",
+          "transform": "When false, omit the corresponding content slot."
+        },
+        {
+          "property": "Leading icon#871:273",
+          "target": "leadingIcon"
+        },
+        {
+          "property": "Trailing icon#871:294",
+          "target": "trailingIcon"
+        },
+        {
+          "property": "Hierarchy",
+          "target": "hierarchy",
+          "transform": {
+            "Tonal": "tonal",
+            "Text": "text",
+            "Primary": "primary",
+            "Secondary": "secondary",
+            "Tertiary": "tertiary"
+          }
+        },
+        {
+          "property": "Tone",
+          "target": "tone",
+          "transform": {
+            "Default": "default",
+            "Confirmation": "confirmation",
+            "Warning": "warning",
+            "Error": "error"
+          }
+        },
+        {
+          "property": "State",
+          "target": "disabled + native browser interaction",
+          "transform": {
+            "Default": "enabled resting state",
+            "Hover": ":hover",
+            "Pressed": ":active",
+            "Focused": ":focus-visible",
+            "Disabled": "disabled: true"
+          }
+        },
+        {
+          "property": "Busy",
+          "target": "busy",
+          "transform": {
+            "True": true,
+            "False": false
+          }
+        },
+        {
+          "property": "Layout direction",
+          "target": "dir",
+          "transform": {
+            "LTR": "ltr",
+            "RTL": "rtl"
+          }
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/family-checks.json"
+      ],
+      "notes": "Family-level web checks are recorded; complete per-entry validation is pending."
+    }
+  },
+  "1531:153013": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "TextField",
+      "example": "<TextField label=\"Name\" value={value} onChange={onChange} />",
+      "gaps": [
+        "Complete per-entry visual and interaction matrix across supported variants, RTL and text scaling."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Size": {
+          "name": "Size",
+          "type": "VARIANT",
+          "key": "Size",
+          "variantOptions": [
+            "M",
+            "XS",
+            "S",
+            "L",
+            "XL",
+            "2XL",
+            "Chonky",
+            "Hero"
+          ]
+        },
+        "Condition": {
+          "name": "Condition",
+          "type": "VARIANT",
+          "key": "Condition",
+          "variantOptions": [
+            "Normal",
+            "Serious",
+            "Chonky"
+          ]
+        },
+        "Layout direction": {
+          "name": "Layout direction",
+          "type": "VARIANT",
+          "key": "Layout direction",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Size",
+          "target": "size",
+          "transform": "Exact size name; all eight design sizes are supported."
+        },
+        {
+          "property": "Condition",
+          "target": "condition",
+          "transform": {
+            "Normal": "normal",
+            "Serious": "serious",
+            "Chonky": "chonky"
+          }
+        },
+        {
+          "property": "Layout direction",
+          "target": "dir",
+          "transform": {
+            "LTR": "ltr",
+            "RTL": "rtl"
+          }
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/family-checks.json"
+      ],
+      "notes": "Family-level web checks are recorded; complete per-entry validation is pending."
+    }
+  },
+  "1531:154760": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "TextArea",
+      "example": "<TextArea label=\"Name\" value={value} onChange={onChange} />",
+      "gaps": [
+        "Complete per-entry visual and interaction matrix across supported variants, RTL and text scaling."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Size": {
+          "name": "Size",
+          "type": "VARIANT",
+          "key": "Size",
+          "variantOptions": [
+            "M",
+            "XS",
+            "S",
+            "L",
+            "XL",
+            "2XL",
+            "Chonky",
+            "Hero"
+          ]
+        },
+        "Condition": {
+          "name": "Condition",
+          "type": "VARIANT",
+          "key": "Condition",
+          "variantOptions": [
+            "Normal",
+            "Serious",
+            "Chonky"
+          ]
+        },
+        "Layout direction": {
+          "name": "Layout direction",
+          "type": "VARIANT",
+          "key": "Layout direction",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Size",
+          "target": "size",
+          "transform": "Exact size name; all eight design sizes are supported."
+        },
+        {
+          "property": "Condition",
+          "target": "condition",
+          "transform": {
+            "Normal": "normal",
+            "Serious": "serious",
+            "Chonky": "chonky"
+          }
+        },
+        {
+          "property": "Layout direction",
+          "target": "dir",
+          "transform": {
+            "LTR": "ltr",
+            "RTL": "rtl"
+          }
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/family-checks.json"
+      ],
+      "notes": "Family-level web checks are recorded; complete per-entry validation is pending."
+    }
+  },
+  "1531:156521": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "PasswordField",
+      "example": "<PasswordField label=\"Name\" value={value} onChange={onChange} />",
+      "gaps": [
+        "Complete per-entry visual and interaction matrix across supported variants, RTL and text scaling."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Size": {
+          "name": "Size",
+          "type": "VARIANT",
+          "key": "Size",
+          "variantOptions": [
+            "M",
+            "XS",
+            "S",
+            "L",
+            "XL",
+            "2XL",
+            "Chonky",
+            "Hero"
+          ]
+        },
+        "Condition": {
+          "name": "Condition",
+          "type": "VARIANT",
+          "key": "Condition",
+          "variantOptions": [
+            "Normal",
+            "Serious",
+            "Chonky"
+          ]
+        },
+        "Layout direction": {
+          "name": "Layout direction",
+          "type": "VARIANT",
+          "key": "Layout direction",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Size",
+          "target": "size",
+          "transform": "Exact size name; all eight design sizes are supported."
+        },
+        {
+          "property": "Condition",
+          "target": "condition",
+          "transform": {
+            "Normal": "normal",
+            "Serious": "serious",
+            "Chonky": "chonky"
+          }
+        },
+        {
+          "property": "Layout direction",
+          "target": "dir",
+          "transform": {
+            "LTR": "ltr",
+            "RTL": "rtl"
+          }
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/family-checks.json"
+      ],
+      "notes": "Family-level web checks are recorded; complete per-entry validation is pending."
+    }
+  },
+  "1531:160340": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "NumberField",
+      "example": "<NumberField label=\"Name\" value={value} onChange={onChange} />",
+      "gaps": [
+        "Complete per-entry visual and interaction matrix across supported variants, RTL and text scaling."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Size": {
+          "name": "Size",
+          "type": "VARIANT",
+          "key": "Size",
+          "variantOptions": [
+            "M",
+            "XS",
+            "S",
+            "L",
+            "XL",
+            "2XL",
+            "Chonky",
+            "Hero"
+          ]
+        },
+        "Condition": {
+          "name": "Condition",
+          "type": "VARIANT",
+          "key": "Condition",
+          "variantOptions": [
+            "Normal",
+            "Serious",
+            "Chonky"
+          ]
+        },
+        "Layout direction": {
+          "name": "Layout direction",
+          "type": "VARIANT",
+          "key": "Layout direction",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Size",
+          "target": "size",
+          "transform": "Exact size name; all eight design sizes are supported."
+        },
+        {
+          "property": "Condition",
+          "target": "condition",
+          "transform": {
+            "Normal": "normal",
+            "Serious": "serious",
+            "Chonky": "chonky"
+          }
+        },
+        {
+          "property": "Layout direction",
+          "target": "dir",
+          "transform": {
+            "LTR": "ltr",
+            "RTL": "rtl"
+          }
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/family-checks.json"
+      ],
+      "notes": "Family-level web checks are recorded; complete per-entry validation is pending."
+    }
+  },
+  "1531:166415": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "Select",
+      "example": "<Select label=\"Workspace\" value={workspace} onChange={onWorkspaceChange}><option value=\"personal\">Personal projects</option></Select>",
+      "gaps": [
+        "Complete per-entry visual and interaction matrix across supported variants, RTL and text scaling."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Size": {
+          "name": "Size",
+          "type": "VARIANT",
+          "key": "Size",
+          "variantOptions": [
+            "M",
+            "XS",
+            "S",
+            "L",
+            "XL",
+            "2XL",
+            "Chonky",
+            "Hero"
+          ]
+        },
+        "Condition": {
+          "name": "Condition",
+          "type": "VARIANT",
+          "key": "Condition",
+          "variantOptions": [
+            "Normal",
+            "Serious",
+            "Chonky"
+          ]
+        },
+        "Layout direction": {
+          "name": "Layout direction",
+          "type": "VARIANT",
+          "key": "Layout direction",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Size",
+          "target": "size",
+          "transform": "Exact size name; all eight design sizes are supported."
+        },
+        {
+          "property": "Condition",
+          "target": "condition",
+          "transform": {
+            "Normal": "normal",
+            "Serious": "serious",
+            "Chonky": "chonky"
+          }
+        },
+        {
+          "property": "Layout direction",
+          "target": "dir",
+          "transform": {
+            "LTR": "ltr",
+            "RTL": "rtl"
+          }
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/family-checks.json"
+      ],
+      "notes": "Family-level web checks are recorded; complete per-entry validation is pending."
+    }
+  },
+  "1531:158362": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/TextField.tsx",
+      "symbol": "SearchField",
+      "example": "<SearchField label=\"Search\" value={query} onChange={event => setQuery(event.target.value)} placeholder=\"Find a component\" presentation=\"toolbar-top\" trailingAction={showVoiceSearch ? <Button hierarchy=\"text\" aria-label=\"Voice search\" onClick={onVoiceSearch}>{microphoneIcon}</Button> : undefined} />",
+      "gaps": [
+        "Complete visual review across all sizes and toolbar placements, including microphone composition."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Toolbar value#1850:315": {
+          "name": "Toolbar value",
+          "type": "TEXT",
+          "key": "Toolbar value#1850:315"
+        },
+        "Toolbar placeholder#1850:340": {
+          "name": "Toolbar placeholder",
+          "type": "TEXT",
+          "key": "Toolbar placeholder#1850:340"
+        },
+        "Show microphone#1850:365": {
+          "name": "Show microphone",
+          "type": "BOOLEAN",
+          "key": "Show microphone#1850:365"
+        },
+        "Show clear#1850:390": {
+          "name": "Show clear",
+          "type": "BOOLEAN",
+          "key": "Show clear#1850:390"
+        },
+        "Size": {
+          "name": "Size",
+          "type": "VARIANT",
+          "key": "Size",
+          "variantOptions": [
+            "M",
+            "XS",
+            "S",
+            "L",
+            "XL",
+            "2XL",
+            "Chonky",
+            "Hero"
+          ]
+        },
+        "Condition": {
+          "name": "Condition",
+          "type": "VARIANT",
+          "key": "Condition",
+          "variantOptions": [
+            "Normal",
+            "Serious",
+            "Chonky"
+          ]
+        },
+        "Presentation": {
+          "name": "Presentation",
+          "type": "VARIANT",
+          "key": "Presentation",
+          "variantOptions": [
+            "Field",
+            "Toolbar top",
+            "Toolbar bottom"
+          ]
+        },
+        "Content": {
+          "name": "Content",
+          "type": "VARIANT",
+          "key": "Content",
+          "variantOptions": [
+            "Value",
+            "Placeholder",
+            "Typing"
+          ]
+        },
+        "Layout direction": {
+          "name": "Layout direction",
+          "type": "VARIANT",
+          "key": "Layout direction",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Toolbar value#1850:315",
+          "target": "value + onChange"
+        },
+        {
+          "property": "Toolbar placeholder#1850:340",
+          "target": "placeholder"
+        },
+        {
+          "property": "Show microphone#1850:365",
+          "target": "trailingAction",
+          "transform": "Supply an accessible Button with application-owned voice-search callback and microphone artwork when true; omit when false."
+        },
+        {
+          "property": "Show clear#1850:390",
+          "target": "clearable",
+          "transform": "Clear is shown for nonempty editable values and restores input focus after activation."
+        },
+        {
+          "property": "Size",
+          "target": "size",
+          "transform": "Exact design size name"
+        },
+        {
+          "property": "Condition",
+          "target": "condition",
+          "transform": {
+            "Normal": "normal",
+            "Serious": "serious",
+            "Chonky": "chonky"
+          }
+        },
+        {
+          "property": "Presentation",
+          "target": "presentation",
+          "transform": {
+            "Field": "field",
+            "Toolbar top": "toolbar-top",
+            "Toolbar bottom": "toolbar-bottom"
+          }
+        },
+        {
+          "property": "Content",
+          "target": "value + placeholder + native focus",
+          "transform": {
+            "Value": "Nonempty controlled value",
+            "Placeholder": "Empty controlled value and placeholder",
+            "Typing": "Focused native input and application-owned value"
+          }
+        },
+        {
+          "property": "Layout direction",
+          "target": "dir",
+          "transform": {
+            "LTR": "ltr",
+            "RTL": "rtl"
+          }
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/family-checks.json"
+      ],
+      "notes": "Desktop/mobile focus, clearing, keyboard and automated accessibility checks passed; complete variant validation remains pending."
+    }
+  },
+  "2598:7033": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Content.tsx",
+      "symbol": "Divider",
+      "example": "<Divider orientation=\"vertical\" inset=\"start\" dir=\"rtl\" />",
+      "gaps": [
+        "Review separator paint opacity and all theme appearances against the design before full validation."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Orientation": {
+          "name": "Orientation",
+          "type": "VARIANT",
+          "key": "Orientation",
+          "variantOptions": [
+            "Horizontal",
+            "Vertical"
+          ]
+        },
+        "Inset": {
+          "name": "Inset",
+          "type": "VARIANT",
+          "key": "Inset",
+          "variantOptions": [
+            "None",
+            "Start",
+            "Both"
+          ]
+        },
+        "Layout direction": {
+          "name": "Layout direction",
+          "type": "VARIANT",
+          "key": "Layout direction",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Orientation",
+          "target": "orientation",
+          "transform": {
+            "Horizontal": "horizontal",
+            "Vertical": "vertical"
+          }
+        },
+        {
+          "property": "Inset",
+          "target": "inset",
+          "transform": {
+            "None": "none",
+            "Start": "start",
+            "Both": "both"
+          }
+        },
+        {
+          "property": "Layout direction",
+          "target": "dir",
+          "transform": {
+            "LTR": "ltr",
+            "RTL": "rtl"
+          }
+        }
+      ]
+    },
+    "previews": [
+      {
+        "path": "coverage/previews/web/divider-variants.png",
+        "platform": "web",
+        "alt": "All twelve Divider direction, orientation and inset configurations"
+      }
+    ],
+    "alternatives": [
+      {
+        "status": "source-available",
+        "framework": "SwiftUI",
+        "platforms": [
+          "iOS",
+          "iPadOS",
+          "visionOS",
+          "macOS"
+        ],
+        "source": "native/apple/Sources/WardoDesignSystem/Divider.swift",
+        "symbol": "WardoDivider",
+        "example": "WardoDivider(orientation: .vertical, inset: .start).frame(height: 100)",
+        "gaps": [
+          "Verify native orientation/inset geometry and separator paint in sample applications."
+        ]
+      },
+      {
+        "status": "source-available",
+        "framework": "Jetpack Compose",
+        "platforms": [
+          "Android",
+          "Android XR"
+        ],
+        "source": "native/android/src/main/kotlin/com/wardo/designsystem/Divider.kt",
+        "symbol": "WardoDivider",
+        "example": "WardoDivider(orientation = WardoDividerOrientation.Vertical, inset = WardoDividerInset.Start)",
+        "gaps": [
+          "Verify native orientation/inset geometry and token propagation under each theme."
+        ]
+      }
+    ]
+  },
+  "1531:46903": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/Menus.tsx",
+      "symbol": "MenuButton",
+      "example": "<MenuButton label=\"Options\" hierarchy=\"primary\" tone=\"default\" locale={appLocale} dir={appDirection} items={actions} onAction={onAction} />",
+      "gaps": [
+        "Complete all hierarchy/tone/interaction visual reviews and instance-swap defaults."
+      ]
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {
+        "Label#869:15": {
+          "name": "Label",
+          "type": "TEXT",
+          "key": "Label#869:15"
+        },
+        "Show leading icon#869:16": {
+          "name": "Show leading icon",
+          "type": "BOOLEAN",
+          "key": "Show leading icon#869:16"
+        },
+        "Show trailing icon#869:17": {
+          "name": "Show trailing icon",
+          "type": "BOOLEAN",
+          "key": "Show trailing icon#869:17"
+        },
+        "Leading icon#869:18": {
+          "name": "Leading icon",
+          "type": "INSTANCE_SWAP",
+          "key": "Leading icon#869:18"
+        },
+        "Trailing icon#869:19": {
+          "name": "Trailing icon",
+          "type": "INSTANCE_SWAP",
+          "key": "Trailing icon#869:19"
+        },
+        "Hierarchy": {
+          "name": "Hierarchy",
+          "type": "VARIANT",
+          "key": "Hierarchy",
+          "variantOptions": [
+            "Primary",
+            "Secondary",
+            "Tertiary",
+            "Tonal",
+            "Text"
+          ]
+        },
+        "Tone": {
+          "name": "Tone",
+          "type": "VARIANT",
+          "key": "Tone",
+          "variantOptions": [
+            "Default",
+            "Confirmation",
+            "Warning",
+            "Error"
+          ]
+        },
+        "State": {
+          "name": "State",
+          "type": "VARIANT",
+          "key": "State",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focused",
+            "Disabled"
+          ]
+        },
+        "Layout direction": {
+          "name": "Layout direction",
+          "type": "VARIANT",
+          "key": "Layout direction",
+          "variantOptions": [
+            "LTR",
+            "RTL"
+          ]
+        }
+      },
+      "mappings": [
+        {
+          "property": "Label#869:15",
+          "target": "label"
+        },
+        {
+          "property": "Show leading icon#869:16",
+          "target": "showLeadingIcon",
+          "transform": "Supply leadingIcon with the selected instance artwork when enabled."
+        },
+        {
+          "property": "Show trailing icon#869:17",
+          "target": "showTrailingIcon"
+        },
+        {
+          "property": "Leading icon#869:18",
+          "target": "leadingIcon content slot"
+        },
+        {
+          "property": "Trailing icon#869:19",
+          "target": "trailingIcon content slot",
+          "transform": "Default chevron follows the native menu open state; custom content stays application-owned."
+        },
+        {
+          "property": "Hierarchy",
+          "target": "hierarchy",
+          "transform": {
+            "Primary": "primary",
+            "Secondary": "secondary",
+            "Tertiary": "tertiary",
+            "Tonal": "tonal",
+            "Text": "text"
+          }
+        },
+        {
+          "property": "Tone",
+          "target": "tone",
+          "transform": {
+            "Default": "default",
+            "Confirmation": "confirmation",
+            "Warning": "warning",
+            "Error": "error"
+          }
+        },
+        {
+          "property": "State",
+          "target": "disabled + native browser/React Aria interaction",
+          "transform": {
+            "Default": "resting enabled trigger",
+            "Hover": ":hover",
+            "Pressed": ":active",
+            "Focused": ":focus-visible",
+            "Disabled": "disabled: true"
+          }
+        },
+        {
+          "property": "Layout direction",
+          "target": "dir + application I18nProvider/locale",
+          "transform": "Use the real application locale to align popup direction and keyboard navigation; do not infer a language from RTL alone."
+        }
+      ]
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-08/family-checks.json"
+      ]
+    }
+  }
+}

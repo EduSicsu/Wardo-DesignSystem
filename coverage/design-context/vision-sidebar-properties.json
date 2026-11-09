@@ -1,0 +1,175 @@
+[
+  {
+    "id": "2537:35340",
+    "name": "Sidebar / visionOS / Sidebars",
+    "type": "COMPONENT_SET",
+    "properties": {
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    }
+  },
+  {
+    "id": "2532:27640",
+    "name": "Sidebar Item / visionOS / Sidebars",
+    "type": "COMPONENT_SET",
+    "properties": {
+      "Counter#127:46": {
+        "type": "TEXT",
+        "defaultValue": "1"
+      },
+      "Show Counter#127:50": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Icon / Symbol#2536:16": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151",
+        "preferredValues": []
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Selected",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Selected"
+        ]
+      },
+      "Accessory": {
+        "type": "VARIANT",
+        "defaultValue": "Bitmap Circle",
+        "variantOptions": [
+          "Symbol",
+          "Symbol in circle",
+          "Bitmap Rounded Rect",
+          "Bitmap Circle"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    }
+  },
+  {
+    "id": "2532:27633",
+    "name": "Internal / Section Header / visionOS / Sidebars",
+    "type": "COMPONENT_SET",
+    "properties": {
+      "Section Heading#131:21": {
+        "type": "TEXT",
+        "defaultValue": "Section Heading"
+      },
+      "Icon / Disclsoure#2536:13": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1531:194151",
+        "preferredValues": []
+      },
+      "Open": {
+        "type": "VARIANT",
+        "defaultValue": "True",
+        "variantOptions": [
+          "True",
+          "False"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    }
+  },
+  {
+    "id": "2532:27823",
+    "name": "Internal / Header / visionOS / Sidebars",
+    "type": "COMPONENT_SET",
+    "properties": {
+      "Show button#127:56": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Button State": {
+        "type": "VARIANT",
+        "defaultValue": "Search",
+        "variantOptions": [
+          "Search",
+          "Hover",
+          "Idle"
+        ]
+      },
+      "Type": {
+        "type": "VARIANT",
+        "defaultValue": "Header and Button (Search)",
+        "variantOptions": [
+          "Header and Button (Idle)",
+          "Header and Button (Hover)",
+          "Header and Button (Search)"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    }
+  },
+  {
+    "id": "2532:27837",
+    "name": "Internal / Item Group / visionOS / Sidebars",
+    "type": "COMPONENT_SET",
+    "properties": {
+      "Show Section Header#127:59": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Items": {
+        "type": "VARIANT",
+        "defaultValue": "16",
+        "variantOptions": [
+          "Closed",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    }
+  }
+]

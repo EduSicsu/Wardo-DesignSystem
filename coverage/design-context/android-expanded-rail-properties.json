@@ -1,0 +1,58 @@
+{
+  "id": "2254:45472",
+  "name": "Navigation Rail: Expanded",
+  "properties": {
+    "Show Menu#421:0": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Show FAB#10565:34": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Segments#59255:9": {
+      "type": "SLOT",
+      "description": "",
+      "preferredValues": [
+        {
+          "type": "COMPONENT_SET",
+          "key": "731f178bcaab771c713f22e3f24ae9609d5c3ed8"
+        }
+      ]
+    },
+    "Type": {
+      "type": "VARIANT",
+      "defaultValue": "Docked",
+      "variantOptions": [
+        "Docked",
+        "Floating"
+      ]
+    },
+    "Alignment": {
+      "type": "VARIANT",
+      "defaultValue": "Top",
+      "variantOptions": [
+        "Top",
+        "Middle"
+      ]
+    },
+    "Nav items": {
+      "type": "VARIANT",
+      "defaultValue": "3",
+      "variantOptions": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    "Layout direction": {
+      "type": "VARIANT",
+      "defaultValue": "LTR",
+      "variantOptions": [
+        "LTR",
+        "RTL"
+      ]
+    }
+  }
+}
