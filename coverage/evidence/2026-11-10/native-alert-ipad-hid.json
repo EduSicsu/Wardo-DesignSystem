@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-10T16:55:59.659Z",
+  "format": "wardo-native-alert-hid-v1",
+  "device": "B074B781-3A23-4BAC-81A8-52C17ED7C337",
+  "axeVersion": "1.8.0",
+  "component": "NativeAlertModifier",
+  "sample": "--wardo-native-presentations",
+  "checks": [
+    {
+      "name": "Tab retains the name and enters four characters in the secure field",
+      "result": "passed",
+      "secureValueLength": 4
+    },
+    {
+      "name": "Return, native dismissal and app save callback",
+      "result": "passed",
+      "observed": "Saved: Hardware event"
+    },
+    {
+      "name": "Escape, native dismissal and app cancellation callback",
+      "result": "passed",
+      "observed": "Alert cancelled"
+    }
+  ],
+  "appImageSha256": "9d96afbe9eeff23c949310fa26f556486368cf02e6e6bc3200598b4bb874ac71",
+  "sourceHashes": {
+    "native/apple/Sources/WardoDesignSystem/NativePresentation.swift": "225f775e1b11c6700eb2fb27e540304cca32ab81786b7c7705c65507fcb5d0e2",
+    "native/apple/Sample/CatalogueApp.swift": "e85e4b5cd2b3b3ca5812bea1f8ef2a1d537e15d8546116233be902331c92e112"
+  },
+  "scope": "Physical keyboard behavior only. Other variants, accessibility and appearance have separate UI-test and visual-review evidence."
+}

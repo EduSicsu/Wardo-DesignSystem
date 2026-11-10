@@ -16056,7 +16056,7 @@
       },
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2773-45047",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "SwiftUI",
         "platforms": [
           "iOS",
@@ -16064,11 +16064,7 @@
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
         "symbol": "NativeAlertModifier",
-        "example": ".modifier(NativeAlertModifier(\"Edit event\", isPresented: $presented, message: description) { TextField(\"Event name\", text: $name); Button(\"Save\", action: save); Button(\"Cancel\", role: .cancel) {} })",
-        "gaps": [
-          "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
-          "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
-        ]
+        "example": ".modifier(NativeAlertModifier(\"Edit event\", isPresented: $presented, message: description) { TextField(\"Event name\", text: $name); Button(\"Save\", action: save); Button(\"Cancel\", role: .cancel) {} })"
       },
       "alternatives": [],
       "properties": {
@@ -16114,14 +16110,32 @@
         "evidence": [
           "coverage/design-context/native-presentation-properties.json",
           "coverage/design-context/native-presentations.json",
-          "coverage/evidence/2026-11-09/native-presentations-partial.json"
-        ]
+          "coverage/evidence/2026-11-10/native-presentations-review.json"
+        ],
+        "pendingChecks": [
+          "Manual VoiceOver and physical-device review remain pending.",
+          "Minimum supported OS 26 runtime remains pending; simulator evidence uses OS 27.2.",
+          "iPhone simulator USB-HID Tab/Return/Escape flow remains unresolved; iPad simulator USB-HID checks pass.",
+          "Review long localized action labels and assistive-technology focus restoration."
+        ],
+        "notes": "Native API and composition mapping reviewed; implementation, runtime evidence, exhaustive validation and Figma activation remain separate."
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "iPadOS",
+          "path": "coverage/previews/native/ipad-native-alert-dark.png",
+          "alt": "Native system alert in dark mode in the iPad sample"
+        },
+        {
+          "platform": "iOS",
+          "path": "coverage/previews/native/iphone-native-alert-dark.png",
+          "alt": "Native system alert in dark mode in the iPhone sample"
+        }
+      ]
     },
     {
       "id": "wardo-2773-44195",
@@ -16135,18 +16149,14 @@
       },
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2773-44195",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "SwiftUI",
         "platforms": [
           "iPadOS"
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
         "symbol": "NativeActivityView",
-        "example": "Button(\"Share\") { presented = true }.popover(isPresented: $presented, attachmentAnchor: .rect(.bounds), arrowEdge: .bottom) { NativeActivityView(items: items, completion: onComplete) }",
-        "gaps": [
-          "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
-          "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
-        ]
+        "example": "Button(\"Share\") { presented = true }.popover(isPresented: $presented, attachmentAnchor: .rect(.bounds), arrowEdge: .bottom) { NativeActivityView(items: items, completion: onComplete) }"
       },
       "alternatives": [],
       "properties": {
@@ -16174,14 +16184,27 @@
         "evidence": [
           "coverage/design-context/native-presentation-properties.json",
           "coverage/design-context/native-presentations.json",
-          "coverage/evidence/2026-11-09/native-presentations-partial.json"
-        ]
+          "coverage/evidence/2026-11-10/native-presentations-review.json"
+        ],
+        "pendingChecks": [
+          "Manual VoiceOver and physical-device review remain pending.",
+          "Minimum supported OS 26 runtime remains pending; simulator evidence uses OS 27.2.",
+          "Successful destination/completion/error paths are not exercised; tests open and cancel without sharing.",
+          "Exhaustive dark/RTL/large-text review of the native iPad share popover remains pending."
+        ],
+        "notes": "Native API and composition mapping reviewed; implementation, runtime evidence, exhaustive validation and Figma activation remain separate."
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "iPadOS",
+          "path": "coverage/previews/native/ipad-native-activity.png",
+          "alt": "Native iPad activity popover with a system arrow anchored to the caller button"
+        }
+      ]
     },
     {
       "id": "wardo-2773-44204",
@@ -16195,18 +16218,14 @@
       },
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2773-44204",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "SwiftUI",
         "platforms": [
           "iOS"
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
         "symbol": "NativeActivityView",
-        "example": "Button(\"Share\") { presented = true }.popover(isPresented: $presented) { NativeActivityView(items: items, completion: onComplete) }",
-        "gaps": [
-          "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
-          "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
-        ]
+        "example": "Button(\"Share\") { presented = true }.popover(isPresented: $presented) { NativeActivityView(items: items, completion: onComplete) }"
       },
       "alternatives": [],
       "properties": {
@@ -16234,14 +16253,27 @@
         "evidence": [
           "coverage/design-context/native-presentation-properties.json",
           "coverage/design-context/native-presentations.json",
-          "coverage/evidence/2026-11-09/native-presentations-partial.json"
-        ]
+          "coverage/evidence/2026-11-10/native-presentations-review.json"
+        ],
+        "pendingChecks": [
+          "Manual VoiceOver and physical-device review remain pending.",
+          "Minimum supported OS 26 runtime remains pending; simulator evidence uses OS 27.2.",
+          "Successful destination/completion/error paths are not exercised; tests open and cancel without sharing.",
+          "Exhaustive dark/RTL/large-text review of the native iPhone share sheet remains pending."
+        ],
+        "notes": "Native API and composition mapping reviewed; implementation, runtime evidence, exhaustive validation and Figma activation remain separate."
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "iOS",
+          "path": "coverage/previews/native/iphone-native-activity.png",
+          "alt": "Native iPhone activity sheet; destinations are provided by the installed OS and share item"
+        }
+      ]
     },
     {
       "id": "wardo-2773-43627",
@@ -16255,7 +16287,7 @@
       },
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2773-43627",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "SwiftUI",
         "platforms": [
           "iOS",
@@ -16263,11 +16295,7 @@
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
         "symbol": "NativeContextMenuPreviewModifier",
-        "example": ".modifier(NativeContextMenuPreviewModifier(items: { Button(\"Save\", action: save); Menu(\"Move\") { Button(\"Archive\", action: archive) } }, preview: { eventPreview }))",
-        "gaps": [
-          "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
-          "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
-        ]
+        "example": ".modifier(NativeContextMenuPreviewModifier(items: { Button(\"Save\", action: save); Menu(\"Move\") { Button(\"Archive\", action: archive) } }, preview: { eventPreview }))"
       },
       "alternatives": [],
       "properties": {
@@ -16308,14 +16336,31 @@
         "evidence": [
           "coverage/design-context/native-presentation-properties.json",
           "coverage/design-context/native-presentations.json",
-          "coverage/evidence/2026-11-09/native-presentations-partial.json"
-        ]
+          "coverage/evidence/2026-11-10/native-presentations-review.json"
+        ],
+        "pendingChecks": [
+          "Manual VoiceOver and physical-device review remain pending.",
+          "Minimum supported OS 26 runtime remains pending; simulator evidence uses OS 27.2.",
+          "Review all native adaptive anchor placements, dark/RTL/large text, pointer/keyboard access and assistive-technology focus."
+        ],
+        "notes": "Native API and composition mapping reviewed; implementation, runtime evidence, exhaustive validation and Figma activation remain separate."
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "iOS",
+          "path": "coverage/previews/native/iphone-native-context-menu.png",
+          "alt": "Native context menu with application preview, disabled action, submenu and destructive action"
+        },
+        {
+          "platform": "iPadOS",
+          "path": "coverage/previews/native/ipad-native-context-menu.png",
+          "alt": "Native iPad context menu with palette quick actions and adjacent preview"
+        }
+      ]
     },
     {
       "id": "wardo-2773-43481",
@@ -16329,18 +16374,14 @@
       },
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2773-43481",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "SwiftUI",
         "platforms": [
           "iOS"
         ],
         "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
         "symbol": "NativePageSheetModifier",
-        "example": ".modifier(NativePageSheetModifier(isPresented: $presented, onDismiss: onDismiss) { NavigationStack { sheetContent.toolbar { ToolbarItem(placement: .cancellationAction) { Button(\"Close\", systemImage: \"xmark\") { dismiss() } } } } })",
-        "gaps": [
-          "Complete native light/dark, RTL, larger-text and assistive-technology review; runtime evidence is tracked separately.",
-          "Native execution status and outstanding checks: coverage/evidence/2026-11-09/native-presentations-partial.json"
-        ]
+        "example": ".modifier(NativePageSheetModifier(isPresented: $presented, onDismiss: onDismiss) { NavigationStack { sheetContent.toolbar { ToolbarItem(placement: .cancellationAction) { Button(\"Close\", systemImage: \"xmark\") { dismiss() } } } } })"
       },
       "alternatives": [],
       "properties": {
@@ -16368,14 +16409,26 @@
         "evidence": [
           "coverage/design-context/native-presentation-properties.json",
           "coverage/design-context/native-presentations.json",
-          "coverage/evidence/2026-11-09/native-presentations-partial.json"
-        ]
+          "coverage/evidence/2026-11-10/native-presentations-review.json"
+        ],
+        "pendingChecks": [
+          "Manual VoiceOver and physical-device review remain pending.",
+          "Minimum supported OS 26 runtime remains pending; simulator evidence uses OS 27.2.",
+          "Review interactive swipe dismissal, dark/RTL/large text, long sheet content and assistive-technology focus restoration."
+        ],
+        "notes": "Native API and composition mapping reviewed; implementation, runtime evidence, exhaustive validation and Figma activation remain separate."
       },
       "connection": {
         "status": "not-connected",
         "framework": null
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "iOS",
+          "path": "coverage/previews/native/iphone-native-stacked-sheets.png",
+          "alt": "Nested large native page sheets with cancellation and confirmation toolbar actions"
+        }
+      ]
     },
     {
       "id": "wardo-906-5837",

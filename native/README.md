@@ -70,8 +70,21 @@ The Apple sample’s **Native presentation examples** screen exercises system al
 
 `NativePageSheetModifier` maps the iPhone **Sheet - Full Screen** specimen to an actual large page sheet with a system grabber. Present a second sheet from its content to obtain the stacked variant. Include a `NavigationStack` and semantic cancellation/confirmation toolbar placements in the caller’s content. `NativeFullScreenSheetModifier` remains available for consumers that require a true full-screen cover; it is a different presentation. The alert and context-menu layouts adapt to the device and text size: the Figma side/alignment/stacking specimens do not authorize forcing system geometry.
 
+Native context-menu builders can include `ControlGroup { ... }.controlGroupStyle(.palette)` for the source’s quick-action row, followed by native `Button`, `Section` and `Menu` entries. The sample exercises all of these compositions. Its appearance controls cover dark mode, RTL and accessibility text sizes; native UI audits check descriptions, traits, touch regions and clipping. These automated audits supplement per-entry review and do not stand in for manual assistive-technology checks.
+
 ## Sidebar search
 
 `WardoSidebarSearchField("Search events", text: $query, onSubmit: runSearch, onVoiceSearch: beginVoiceSearch)` implements the native-derived iOS/iPadOS sidebar search. It uses the exact bundled search/microphone vectors and Wardo Geologica/semantic colors. `voiceSearchLabel` is localizable; the application owns any microphone permissions and recognition flow. The component requests no permissions itself. Inherit layout direction and enabled state from the application environment.
 
 The sidebar-search sample exercises controlled queries, submission, voice callback, RTL, disabled state, dark appearance and Dynamic Type. Two tests pass on both iPhone and iPad; the package also compiles and passes 13 tests on macOS. Native manual VoiceOver, hardware keyboard, long localized text and exhaustive source-specimen review remain pending. The microphone uses a 44-point touch target while preserving its 17×22 source artwork. Compatible SwiftUI source metadata is retained in `figma/native-mappings.json`; no native connection was activated.
+
+The `--wardo-native-presentations` launch argument opens the native presentation fixture directly. `--wardo-native-dark`, `--wardo-native-rtl` and `--wardo-native-large-text` expose its appearance controls. The sample inherits the system content size unless its larger-text control is enabled. The scaling regression measures the native alert title; UIKit's iPad input rows remain fixed-height at accessibility sizes.
+
+To exercise actual simulator hardware-key events with an installed AXe CLI and an already-built sample:
+
+```sh
+DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer AXE_BIN=/path/to/axe \
+  node native/apple/Sample/Scripts/check-alert-keyboard.mjs SIMULATOR_ID /tmp/alert-keyboard.json
+```
+
+The driver checks Tab, Return and Escape using synthetic event data. It fails rather than recording success if field values or callbacks differ. iPad passes; iPhone remains unresolved. Native per-entry validation stays pending; see `coverage/evidence/2026-11-10/native-presentations-review.json` for passed checks and limitations. No Figma connections are created by these fixtures.

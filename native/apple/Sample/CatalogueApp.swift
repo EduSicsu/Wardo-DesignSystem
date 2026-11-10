@@ -4,14 +4,16 @@ import WardoDesignSystem
 @main struct WardoCatalogueApp: App {
     var body: some Scene {
         WindowGroup {
-            if ProcessInfo.processInfo.arguments.contains("--wardo-sidebar-search") {
+            if ProcessInfo.processInfo.arguments.contains("--wardo-native-presentations") {
+                NativePresentationSampleRoot()
+            } else if ProcessInfo.processInfo.arguments.contains("--wardo-sidebar-search") {
                 NavigationStack { SidebarSearchExample() }
             } else { CatalogueView() }
         }
     }
 }
 struct CatalogueView: View {
-    @State private var theme = WardoTheme.wardoLight
+    @State private var theme = ProcessInfo.processInfo.arguments.contains("--wardo-native-dark") ? WardoTheme.wardoDark : .wardoLight
     @State private var text = "Ceramics"
     @State private var enabled = true
     @State private var visionOn = false
@@ -52,7 +54,7 @@ struct CatalogueView: View {
                     NavigationLink { AppleNavigationItemExample() } label: { Text("Apple navigation item example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                 }
                 Section("Presentations") {
-                    NavigationLink { NativePresentationExample() } label: { Text("Native presentation examples").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
+                    NavigationLink { NativePresentationExample(theme: $theme) } label: { Text("Native presentation examples").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                 }
                 Section("Swipe actions") {
                     WardoSwipeActionRow(leading: [.init(id: "archive", title: "Archive", systemImage: "archivebox", action: { notice = "Archived" })], trailing: [.init(id: "delete", title: "Delete", systemImage: "trash", role: .destructive, tint: .red, action: { notice = "Deleted" })]) { Text("Swipe this row") }
@@ -63,6 +65,13 @@ struct CatalogueView: View {
                 .alert("Wardo alert", isPresented: $alert) { Button("Continue") { notice = "Alert confirmed" }; Button("Cancel", role: .cancel) {} } message: { Text("Native system presentation") }
                 .sheet(isPresented: $showColor) { ScrollView { WardoVisionColorPicker(selection: $color, swatches: $swatches, onClose: { showColor = false }) }.padding() }
         }.wardoTheme(theme)
+    }
+}
+
+struct NativePresentationSampleRoot: View {
+    @State private var theme = ProcessInfo.processInfo.arguments.contains("--wardo-native-dark") ? WardoTheme.wardoDark : .wardoLight
+    var body: some View {
+        NavigationStack { NativePresentationExample(theme: $theme) }.wardoTheme(theme)
     }
 }
 
@@ -235,6 +244,8 @@ struct AppleNavigationItemExample: View {
 }
 
 struct NativePresentationExample: View {
+    @Binding var theme: WardoTheme
+    @Environment(\.colorScheme) private var colorScheme
     @State private var showAlert = false
     @State private var fields = true
     @State private var secondField = true
@@ -244,23 +255,34 @@ struct NativePresentationExample: View {
     @State private var status = "Ready"
     @State private var showSheet = false
     @State private var showActivity = false
-    @State private var dark = false
+    private var dark: Binding<Bool> {
+        Binding(get: { theme.rawValue.hasSuffix("Dark") }, set: { theme = $0 ? .wardoDark : .wardoLight })
+    }
+    @State private var rtl = ProcessInfo.processInfo.arguments.contains("--wardo-native-rtl")
+    @State private var largeText = ProcessInfo.processInfo.arguments.contains("--wardo-native-large-text")
     var body: some View {
         Form {
             Section("System alert") {
                 Toggle("Include alert fields", isOn: $fields)
                 Toggle("Include second alert field", isOn: $secondField).disabled(!fields)
                 Toggle("Include destructive alert action", isOn: $stackedActions)
-                Button("Present native alert") { showAlert = true }
+                Button { showAlert = true } label: {
+                    Text("Present native alert").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle())
+                }
                     .modifier(NativeAlertModifier("Edit event", isPresented: $showAlert, message: "Update this event's details.") {
                         if fields {
                             TextField("Event name", text: $title)
-                            if secondField { SecureField("Access code", text: $detail) }
+                                .submitLabel(secondField ? .next : .done)
+                                .onSubmit { if !secondField { saveEvent() } }
+                            if secondField {
+                                SecureField("Access code", text: $detail).submitLabel(.done).onSubmit(saveEvent)
+                            }
                         }
-                        Button("Save event") { status = "Saved: \(title)" }
+                        Button("Save event", action: saveEvent)
+                            .keyboardShortcut(.defaultAction)
                             .disabled(fields && title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                         if stackedActions { Button("Delete event", role: .destructive) { status = "Deleted event" } }
-                        Button("Cancel", role: .cancel) { status = "Alert cancelled" }
+                        Button("Cancel", role: .cancel) { status = "Alert cancelled" }.keyboardShortcut(.cancelAction)
                     })
             }
             Section("Native context menu") {
@@ -268,6 +290,11 @@ struct NativePresentationExample: View {
                     .frame(maxWidth: .infinity, minHeight: 60)
                     .contentShape(Rectangle())
                     .modifier(NativeContextMenuPreviewModifier(items: {
+                        ControlGroup {
+                            Button("Favorite event", systemImage: "star") { status = "Event favorited" }
+                            Button("Prioritize event", systemImage: "star") { status = "Event prioritized" }
+                            Button("Remove favorite", systemImage: "star", role: .destructive) { status = "Favorite removed" }
+                        }.controlGroupStyle(.palette).menuActionDismissBehavior(.enabled)
                         Button("Save to collection", systemImage: "bookmark") { status = "Added to collection" }
                         Button("Unavailable action", systemImage: "pencil") {}.disabled(true)
                         Section("More actions") {
@@ -286,20 +313,34 @@ struct NativePresentationExample: View {
                     .modifier(NativePageSheetModifier(isPresented: $showSheet, onDismiss: { status = "Page sheet dismissed" }) {
                         NativePageSheetExample(level: 1)
                     })
-                Button("Present native share activity") { showActivity = true }
+                Button("Present native share activity") { status = "Sharing event"; showActivity = true }
                     .popover(isPresented: $showActivity, attachmentAnchor: .rect(.bounds), arrowEdge: .bottom) {
                         NativeActivityView(items: ["Wardo event"], completion: { activity, completed, _, error in
                             if let error { status = "Share failed: \(error.localizedDescription)" }
                             else { status = completed ? "Share completed" : "Share cancelled" }
                         })
                     }
+                    .onChange(of: showActivity) { _, presented in
+                        if !presented && status == "Sharing event" { status = "Share cancelled" }
+                    }
             }
             #endif
-            Section("Appearance") { Toggle("Dark native presentations", isOn: $dark) }
+            Section("Appearance") {
+                Toggle("Dark native presentations", isOn: dark)
+                Toggle("Right-to-left native presentations", isOn: $rtl)
+                Toggle("Large native presentation text", isOn: $largeText)
+                Text("Native appearance: \(colorScheme == .dark ? "dark" : "light")").accessibilityIdentifier("native-appearance")
+            }
             Section("Application callback") { Text(status).accessibilityIdentifier("native-presentation-status") }
         }
-        .preferredColorScheme(dark ? .dark : .light)
+        .environment(\.layoutDirection, rtl ? .rightToLeft : .leftToRight)
+        .transformEnvironment(\.dynamicTypeSize) { if largeText { $0 = .accessibility2 } }
         .navigationTitle("Native presentations")
+    }
+    private func saveEvent() {
+        guard !fields || !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { return }
+        status = "Saved: \(title)"
+        showAlert = false
     }
 }
 

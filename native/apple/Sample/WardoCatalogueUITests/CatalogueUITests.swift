@@ -265,9 +265,7 @@ import XCTest
         #endif
     }
     func testNativeAlertFieldsRolesAndApplicationCallbacks() throws {
-        let app = XCUIApplication(); app.launch()
-        let link = app.buttons["Native presentation examples"]
-        reveal(link, in: app); link.tap()
+        let app = XCUIApplication(); app.launchArguments = ["--wardo-native-presentations"]; app.launch()
         let present = app.buttons["Present native alert"]
         XCTAssertTrue(present.waitForExistence(timeout: 5)); present.tap()
         let alert = app.alerts["Edit event"]
@@ -277,14 +275,11 @@ import XCTest
         let name = alert.textFields["Event name"]
         name.tap(); name.typeText("Ceramics")
         XCTAssertTrue(alert.buttons["Save event"].isEnabled)
-        alert.buttons["Save event"].tap()
-        // A focused native alert field can consume the first activation while committing editing.
-        let dismissed = XCTNSPredicateExpectation(predicate: NSPredicate(format: "exists == false"), object: alert)
-        if XCTWaiter.wait(for: [dismissed], timeout: 2) != .completed {
-            XCTAssertTrue(alert.buttons["Save event"].isEnabled)
-            alert.buttons["Save event"].tap()
-        }
-        XCTAssertTrue(alert.waitForNonExistence(timeout: 5))
+        let save = alert.buttons["Save event"]
+        let ready = XCTNSPredicateExpectation(predicate: NSPredicate(format: "hittable == true AND enabled == true"), object: save)
+        XCTAssertEqual(XCTWaiter.wait(for: [ready], timeout: 5), .completed)
+        save.tap()
+        XCTAssertTrue(alert.waitForNonExistence(timeout: 5), "Save must dismiss on one activation")
         reveal(app.staticTexts["native-presentation-status"], in: app)
         XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Saved: Ceramics")
         reveal(present, in: app)
@@ -313,9 +308,7 @@ import XCTest
         XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Alert cancelled")
     }
     func testNativeContextMenuUsesPreviewDisabledActionsAndSubmenus() throws {
-        let app = XCUIApplication(); app.launch()
-        let link = app.buttons["Native presentation examples"]
-        reveal(link, in: app); link.tap()
+        let app = XCUIApplication(); app.launchArguments = ["--wardo-native-presentations"]; app.launch()
         let source = app.staticTexts["Event context actions"]
         reveal(source, in: app); source.press(forDuration: 1)
         let save = app.buttons["Save to collection"]
@@ -333,12 +326,20 @@ import XCTest
         XCTAssertTrue(archive.waitForExistence(timeout: 5)); archive.tap()
         reveal(app.staticTexts["native-presentation-status"], in: app)
         XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Moved to archive")
+        revealAbove(source, in: app); source.press(forDuration: 1)
+        let favorite = app.buttons["Favorite event"]
+        XCTAssertTrue(favorite.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(favorite.frame.height, 44)
+        XCTAssertTrue(app.buttons["Prioritize event"].exists)
+        XCTAssertTrue(app.buttons["Remove favorite"].exists)
+        favorite.tap()
+        XCTAssertTrue(favorite.waitForNonExistence(timeout: 5))
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Event favorited")
     }
     #if os(iOS)
     func testNativePageSheetStacksAndRestoresItsPresenter() throws {
-        let app = XCUIApplication(); app.launch()
-        let link = app.buttons["Native presentation examples"]
-        reveal(link, in: app); link.tap()
+        let app = XCUIApplication(); app.launchArguments = ["--wardo-native-presentations"]; app.launch()
         let present = app.buttons["Present native page sheet"]
         reveal(present, in: app); present.tap()
         XCTAssertTrue(app.buttons["Close sheet 1"].waitForExistence(timeout: 5))
@@ -357,17 +358,74 @@ import XCTest
         reveal(app.staticTexts["native-presentation-status"], in: app)
         XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Page sheet dismissed")
     }
-    func testNativeActivityPresentsAndCancelsWithoutSending() throws {
-        let app = XCUIApplication(); app.launch()
-        let link = app.buttons["Native presentation examples"]
-        reveal(link, in: app); link.tap()
+    func testNativePresentationsAdaptToDarkRTLAndLargeText() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wardo-native-presentations", "--wardo-native-dark", "--wardo-native-rtl", "--wardo-native-large-text"]
+        app.launch()
+        let present = app.buttons["Present native alert"]
+        let appearance = app.staticTexts["Native appearance: dark"]
+        reveal(appearance, in: app)
+        XCTAssertTrue(appearance.exists, "The rendered system appearance must be dark, not just the sample toggle")
+        revealAbove(present, in: app)
+        XCTAssertGreaterThanOrEqual(present.frame.height, 44)
+        try app.performAccessibilityAudit(for: [.sufficientElementDescription, .trait, .hitRegion, .textClipped])
+        present.tap()
+        let alert = app.alerts["Edit event"]
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        XCTAssertTrue(alert.textFields["Event name"].exists)
+        XCTAssertTrue(alert.secureTextFields["Access code"].exists)
+        XCTAssertFalse(alert.buttons["Save event"].isEnabled)
+        try app.performAccessibilityAudit(for: [.sufficientElementDescription, .trait, .hitRegion, .textClipped])
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = "Native dark RTL alert with accessibility text"; screenshot.lifetime = .keepAlways; add(screenshot)
+        alert.buttons["Cancel"].tap()
+        XCTAssertTrue(alert.waitForNonExistence(timeout: 5))
+        XCTAssertTrue(present.isHittable)
+    }
+    func testNativeAlertTextRespondsToDynamicType() throws {
+        let app = XCUIApplication(); app.launchArguments = ["--wardo-native-presentations"]; app.launch()
+        let present = app.buttons["Present native alert"]
+        reveal(present, in: app); present.tap()
+        let alert = app.alerts["Edit event"]
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        // UIKit keeps iPad alert input rows at a fixed height even when the
+        // title/message grow. Measure text, not a system-owned input container.
+        let baseline = alert.staticTexts["Edit event"].frame.height
+        alert.buttons["Cancel"].tap()
+        XCTAssertTrue(alert.waitForNonExistence(timeout: 5))
+        app.terminate()
+        // Native alert presentation reads UIKit's preferred content size. A
+        // SwiftUI environment override alone does not reach every iPad alert.
+        app.launchArguments = ["--wardo-native-presentations", "-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"]
+        app.launch()
+        XCTAssertTrue(present.waitForExistence(timeout: 20))
+        present.tap()
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        XCTAssertGreaterThan(alert.staticTexts["Edit event"].frame.height, baseline)
+        alert.buttons["Cancel"].tap()
+    }
+    func testNativeActivityPresentsAndCancelsWithoutSending() throws { try exerciseNativeActivity(dark: false) }
+    func testNativeDarkActivityPresentsAndCancelsWithoutSending() throws { try exerciseNativeActivity(dark: true) }
+    private func exerciseNativeActivity(dark: Bool) throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wardo-native-presentations"]
+        if dark { app.launchArguments.append("--wardo-native-dark") }
+        app.launch()
         let present = app.buttons["Present native share activity"]
         reveal(present, in: app); present.tap()
-        let close = app.buttons["Close"].firstMatch
-        XCTAssertTrue(close.waitForExistence(timeout: 10))
+        let isWidePopover = app.windows.firstMatch.frame.width > 700
+        if isWidePopover {
+            let nativeCopy = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", "Copy")).firstMatch
+            let hierarchy = XCTAttachment(string: app.debugDescription); hierarchy.name = "Native iPad activity hierarchy"; hierarchy.lifetime = .keepAlways; add(hierarchy)
+            XCTAssertTrue(nativeCopy.waitForExistence(timeout: 30))
+        }
+        else { XCTAssertTrue(app.buttons["Close"].firstMatch.waitForExistence(timeout: 30)) }
         let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
-        screenshot.name = "Native activity presentation"; screenshot.lifetime = .keepAlways; add(screenshot)
-        close.tap()
+        screenshot.name = dark ? "Native dark activity presentation" : "Native activity presentation"; screenshot.lifetime = .keepAlways; add(screenshot)
+        if isWidePopover {
+            // Native iPad activity popovers dismiss through their backdrop, without an iPhone close button.
+            app.navigationBars["Native presentations"].staticTexts["Native presentations"].tap()
+        } else { app.buttons["Close"].firstMatch.tap() }
         XCTAssertTrue(present.waitForExistence(timeout: 5))
         reveal(app.staticTexts["native-presentation-status"], in: app)
         XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Share cancelled")
@@ -383,7 +441,10 @@ import XCTest
         } else {
             toggle.coordinate(withNormalizedOffset: CGVector(dx: 1, dy: 0.5)).withOffset(CGVector(dx: -min(32, toggle.frame.width / 2), dy: 0)).tap()
         }
-        XCTAssertNotEqual(toggle.value as? String, before, "The sample switch must change state")
+        let changed = XCTNSPredicateExpectation(predicate: NSPredicate { _, _ in
+            toggle.value as? String != before
+        }, object: toggle)
+        XCTAssertEqual(XCTWaiter.wait(for: [changed], timeout: 5), .completed, "The sample switch must change state")
     }
     private func setSlider(_ slider: XCUIElement, to value: CGFloat) {
         slider.coordinate(withNormalizedOffset: CGVector(dx: value == 0 ? 0.05 : 0.95, dy: 0.5)).tap()
