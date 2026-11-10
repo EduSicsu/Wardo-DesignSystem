@@ -3,9 +3,11 @@ import { createHash } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 const root = new URL('../', import.meta.url);
 export const loadRegistry = async () => JSON.parse(await readFile(new URL('coverage/registry.json',root),'utf8'));
+export const isAppComponent = entry => entry.category==='runtime-candidate' && entry.scope?.status==='included';
 export function summarize(entries) {
- const active=entries.filter(e=>['runtime-candidate','example-composition'].includes(e.category));
- return {total:entries.length,active:active.length,reference:entries.length-active.length,sourceAvailable:active.filter(e=>e.implementation.source).length,validated:active.filter(e=>e.validation.status==='verified').length,figmaConnected:entries.filter(e=>e.connection.status==='source-connection-saved').length,unresolved:active.filter(e=>e.implementation.status!=='implemented'||e.validation.status!=='verified'||e.properties.status!=='mapped').length};
+ const active=entries.filter(isAppComponent);
+ const saved=entries.filter(e=>e.connection.status==='source-connection-saved');
+ return {total:entries.length,active:active.length,reference:entries.length-active.length,sourceAvailable:active.filter(e=>e.implementation.source).length,implemented:active.filter(e=>e.implementation.status==='implemented'&&(e.alternatives??[]).every(binding=>binding.status==='implemented')).length,validated:active.filter(e=>e.validation.status==='verified').length,figmaConnected:saved.filter(isAppComponent).length,figmaSavedTotal:saved.length,outOfScopeConnections:saved.filter(e=>!isAppComponent(e)).length,unresolved:active.filter(e=>e.implementation.status!=='implemented'||e.validation.status!=='verified'||e.properties.status!=='mapped').length};
 }
 export function lookup(entries,query) {
  let node=query;
@@ -23,6 +25,7 @@ export async function checkRegistry(registry,{complete=false}={}) {
   catch { failures.push(`${id}: missing source ${binding.source}`); }
  };
  const inventory=JSON.parse(await readFile(new URL(registry.inventorySource,root),'utf8'));
+ const scopePolicy=JSON.parse(await readFile(new URL(registry.scopeSource,root),'utf8'));
  let removedArchiveIds=[];
  try {removedArchiveIds=JSON.parse(await readFile(new URL('coverage/figma-archive-cleanup.json',root),'utf8')).deletedIds??[];}
  catch(error){if(error.code!=='ENOENT')failures.push(`Invalid archive cleanup record: ${error.message}`);}
@@ -33,7 +36,12 @@ export async function checkRegistry(registry,{complete=false}={}) {
   if(seen.has(entry.nodeId)) failures.push(`Duplicate node ${entry.nodeId}`);
   seen.add(entry.nodeId);
   if(!expected.has(entry.nodeId)) failures.push(`Unknown node ${entry.nodeId}`);
-  const active=['runtime-candidate','example-composition'].includes(entry.category);
+  const active=isAppComponent(entry);
+  if(!entry.scope || !['included','excluded'].includes(entry.scope.status))failures.push(`${entry.id}: missing app scope disposition`);
+  if(scopePolicy.includedCategories.includes(entry.category)&&!active&&entry.scope?.kind!=='unsupported-platform')failures.push(`${entry.id}: app component excluded without a platform disposition`);
+  if(active&&!scopePolicy.includedCategories.includes(entry.category))failures.push(`${entry.id}: non-app category included in runtime coverage`);
+  if(!active&&(entry.implementation.source||entry.alternatives?.length||entry.validation.status!=='not-applicable'))failures.push(`${entry.id}: excluded record has an active implementation or validation target`);
+  if(active&&(/\b(?:Apple Watch|watchOS)\b/i.test(`${entry.name} ${entry.page}`)||[entry.implementation,...(entry.alternatives??[])].some(binding=>binding.platforms?.some(platform=>scopePolicy.excludedPlatforms.includes(platform)))))failures.push(`${entry.id}: unsupported app platform`);
   if(!active && (!entry.reason||!entry.reference?.url)) failures.push(`${entry.id}: missing reference disposition`);
   if(entry.id!==`wardo-${entry.nodeId.replace(':','-')}`)failures.push(`${entry.id}: unstable component identifier`);
   if(entry.implementation.source) await sourceCheck(entry.implementation,entry.id);
@@ -75,15 +83,6 @@ export async function checkRegistry(registry,{complete=false}={}) {
   if(complete&&active&&(entry.implementation.status!=='implemented'||entry.validation.status!=='verified'||entry.properties.status!=='mapped')) failures.push(`${entry.id}: incomplete ${entry.name}`);
  }
  for(const node of expected) if(!seen.has(node)) failures.push(`Missing node ${node}`);
- try {
-  const assets=JSON.parse(await readFile(new URL('coverage/example-assets.json',root),'utf8'));
-  for(const asset of assets.assets??assets) {
-   const path=asset.file??asset.path;
-   if(!safePath(path)){failures.push(`Unsafe asset path ${path}`);continue;}
-   try { const bytes=await readFile(new URL(path,root));if(!bytes.length||asset.sha256&&createHash('sha256').update(bytes).digest('hex')!==asset.sha256)failures.push(`Missing or changed asset ${path}`); }
-   catch {failures.push(`Missing asset ${path}`);}
-  }
- } catch(error) { failures.push(`Invalid example asset manifest: ${error.message}`); }
  try {
   const assets=JSON.parse(await readFile(new URL('coverage/native-slider-assets.json',root),'utf8'));
   for(const asset of assets.assets) for(const [path,hash] of [[asset.source,asset.sourceSha256],[asset.render,asset.renderSha256],[asset.native,asset.renderSha256]]) {

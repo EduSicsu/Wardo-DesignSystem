@@ -13,9 +13,15 @@ npm run dev
 
 Open the local address shown in the terminal. The preview includes theme switching, editable forms, selection controls, keyboard-operated navigation and disclosures. Open `/library` for the expanded gallery. Fonts are bundled locally in the preview; no third-party font requests are needed.
 
-## Coverage — incomplete
+## App component coverage — incomplete
 
-The historical inventory records **797 published entries**. At the owner’s request, 33 archived published masters were removed from Figma on 2026-11-09; the current catalogue has **765 entries**: 568 active component/composition candidates and 197 remaining reference records. Twelve published archive masters remain temporarily because active designs use them; no archived runtime implementations are being built. The exact cleanup and dependencies are recorded in `coverage/figma-archive-cleanup.json`. Every active entry now has a source candidate. Per-entry property, variant and validation review remains incomplete; source availability does not mean a verified match. The registry currently tracks **241 saved React source connections**. The previous 221-entry React count incorrectly excluded 153 `li:` Lucide icon masters as documentation; they are now included as runtime icons. All 153 are implemented through direct official `lucide-react@1.70.0` exports, with nonempty 24×24 rendering and configurable accessible SVG props checked; 14 icon connections are confirmed saved and 139 remain. See `coverage/lucide-connection-progress.json`. This brings the current React-primary inventory to 374 entries. Native activation remains deferred, and source linking does not imply complete implementation/variant validation.
+Only reusable components used inside apps are implementation and connection targets. This includes app controls, reusable compositions, their internal building blocks, and icons such as Lucide. Documentation, showcase/example screens, original UI-kit/device references, archives, and Apple Watch/watchOS are excluded. The policy is versioned in `coverage/scope.json`.
+
+The audit retains 765 published records, but only **562 app components** count toward completion; **203 records are excluded references**. The default `/coverage` view shows app components. Excluded records remain available through the reference filter without implementation requirements or code examples.
+
+There are **235 saved app source links**. The historical Figma records still contain **241 total saved links**, including **six example-screen connections scheduled for removal** in `coverage/connection-cleanup.json`. Figma editing remains deferred, so those links have not been removed or misreported as deleted. The 139 unsaved Lucide links and native activation also remain deferred.
+
+Implementation and validation remain independent: 170 app records are implemented, 12 are verified, and 550 still require validation or implementation work. Existing example screens and native samples may remain development fixtures; they are not production component targets. No Apple Watch implementation is required.
 
 Open `/coverage` for searchable records, platform alternatives, examples and explicit gaps, or run:
 

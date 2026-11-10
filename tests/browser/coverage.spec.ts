@@ -4,8 +4,8 @@ test('coverage catalogue searches the published inventory',async({page})=>{
  await page.goto('/coverage');await expect(page.getByRole('heading',{name:'Wardo coverage catalogue'})).toBeVisible();
  await page.getByRole('searchbox',{name:'Find a design or component'}).fill('1531:158362');
  await expect(page.getByRole('status')).toContainText('1 matching entry');await expect(page.locator('article')).toHaveCount(1);await expect(page.locator('article')).toContainText('SearchField');
- await page.getByRole('button',{name:'Clear search'}).click();await expect(page.getByRole('searchbox')).toBeFocused();await expect(page.getByRole('status')).toContainText('765 matching entries');
- await page.getByLabel('Coverage',{exact:true}).selectOption('references');await expect(page.getByRole('status')).toContainText('197 matching entries');
+ await page.getByRole('button',{name:'Clear search'}).click();await expect(page.getByRole('searchbox')).toBeFocused();await expect(page.getByRole('status')).toContainText('562 matching entries');
+ await page.getByLabel('Coverage',{exact:true}).selectOption('references');await expect(page.getByRole('status')).toContainText('203 matching entries');
  await page.getByLabel('Coverage',{exact:true}).selectOption('all');await page.getByRole('searchbox').fill('no-such-component');await expect(page.getByText('No matching entries. Try a different name or remove a filter.')).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
@@ -55,4 +55,17 @@ test('platform filtering shows native code and its own verification state',async
  await expect(entry).toHaveCount(1);
  await page.getByRole('searchbox').fill('2277:12775');
  await expect(page.locator('article')).toHaveCount(0);
+});
+
+test('app coverage excludes showcase screens while preserving explicit reference records',async({page})=>{
+ await page.goto('/coverage');
+ await expect(page.getByLabel('Coverage',{exact:true})).toHaveValue('apps');
+ await page.getByRole('searchbox',{name:'Find a design or component'}).fill('665:2414');
+ await expect(page.locator('article')).toHaveCount(0);
+ await page.getByLabel('Coverage',{exact:true}).selectOption('references');
+ const entry=page.locator('article');
+ await expect(entry).toHaveCount(1);
+ await expect(entry).toContainText('Showcase or example screen; excluded');
+ await expect(entry.getByRole('region',{name:'React implementation'})).toHaveCount(0);
+ await expect(entry).toContainText('Removal is deferred until Figma editing resumes.');
 });

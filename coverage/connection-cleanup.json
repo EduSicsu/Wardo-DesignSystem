@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-10",
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "status": "deferred-figma-editing",
+  "reason": "User requests only reusable app components, excluding showcase examples and documentation. Figma editing remains deferred by the earlier instruction to continue repository work.",
+  "actions": [
+    {
+      "nodeId": "665:2414",
+      "name": "Wardo/Examples/Upcoming-Mobile",
+      "action": "remove-source-connection",
+      "framework": "React",
+      "expectedSource": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/examples/ExampleScreens.tsx",
+      "status": "pending",
+      "preserveDesignNode": true
+    },
+    {
+      "nodeId": "665:3693",
+      "name": "Wardo/Examples/Reviews-Mobile",
+      "action": "remove-source-connection",
+      "framework": "React",
+      "expectedSource": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/examples/ExampleScreens.tsx",
+      "status": "pending",
+      "preserveDesignNode": true
+    },
+    {
+      "nodeId": "665:5206",
+      "name": "Wardo/Examples/Messaging-Mobile",
+      "action": "remove-source-connection",
+      "framework": "React",
+      "expectedSource": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/examples/ExampleScreens.tsx",
+      "status": "pending",
+      "preserveDesignNode": true
+    },
+    {
+      "nodeId": "677:2291",
+      "name": "Wardo/Examples/Upcoming-Web",
+      "action": "remove-source-connection",
+      "framework": "React",
+      "expectedSource": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/examples/ExampleScreens.tsx",
+      "status": "pending",
+      "preserveDesignNode": true
+    },
+    {
+      "nodeId": "677:2891",
+      "name": "Wardo/Examples/Reviews-Web",
+      "action": "remove-source-connection",
+      "framework": "React",
+      "expectedSource": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/examples/ExampleScreens.tsx",
+      "status": "pending",
+      "preserveDesignNode": true
+    },
+    {
+      "nodeId": "677:3501",
+      "name": "Wardo/Examples/Messaging-Web",
+      "action": "remove-source-connection",
+      "framework": "React",
+      "expectedSource": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/examples/ExampleScreens.tsx",
+      "status": "pending",
+      "preserveDesignNode": true
+    }
+  ]
+}

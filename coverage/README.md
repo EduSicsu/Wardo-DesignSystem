@@ -24,3 +24,7 @@ Keep React active in Figma. Do not create misleading React mappings for native c
 Platform filters show each binding’s own implementation and verification state. A React source connection never appears as a native connection. Platform alternatives must provide their own evidence and property mapping before they can pass the completion gate. The source links target the current implementation branch until it is merged.
 
 Lucide correction: the 153 `li:` masters are runtime icon assets rather than documentation. Their official React exports and exact node identifiers are recorded in `lucide-icons.json`; `lucide-connection-progress.json` records only source links actually confirmed saved. Remaining links are explicit, and no icon is promoted to visually verified just because its package export exists.
+
+App scope is defined by `scope.json`: only reusable runtime components, compositions, internal building blocks, and icons are included. Showcase examples, documentation, original UI-kit/device references, archives, and Apple Watch/watchOS are excluded. The completion gate ignores these references, even if an old reviewed source candidate exists for them. The gallery defaults to app components.
+
+`figmaConnected` counts app links only (235). `figmaSavedTotal` preserves all historically saved links (241), and `outOfScopeConnections` identifies the six example links queued in `connection-cleanup.json`. Figma cleanup remains deferred; no link is counted as removed until that action is actually completed. Example fixtures do not gate app-component completeness.

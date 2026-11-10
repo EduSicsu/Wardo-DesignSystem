@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import registryData from '../coverage/registry.json';
 interface Binding {validation?:{status:string;evidence:string[]}; properties?:{status:string}; status:string; source?:string; symbol?:string; platforms?:string[]; example?:string|null; gaps?:string[]; framework?:string}
-interface CatalogueEntry { id:string; nodeId:string; name:string; page:string; category:string; figmaUrl:string; reason?:string; implementation:Binding; alternatives:Binding[]; properties:{status:string; definitions:unknown; mappings:unknown[]}; validation:{status:string; evidence:string[]}; connection:{status:string;framework?:string|null}; previews:{path:string;alt?:string;platform?:string}[]; }
+interface CatalogueEntry { id:string; nodeId:string; name:string; page:string; category:string; scope:{status:string;kind:string;reason?:string}; figmaUrl:string; reason?:string; implementation:Binding; alternatives:Binding[]; properties:{status:string; definitions:unknown; mappings:unknown[]}; validation:{status:string; evidence:string[]}; connection:{status:string;framework?:string|null;cleanup?:string}; previews:{path:string;alt?:string;platform?:string}[]; }
 interface NativePreview {path:string;platform:string;alt:string;caption:string}
 const registry: {entries:CatalogueEntry[];samplePreviews:NativePreview[]}=registryData;
 import { SearchField, Select, Button } from '../src';
@@ -13,26 +13,26 @@ const isVerified=(entry:CatalogueEntry,binding:Binding)=>binding===entry.impleme
 export function CoverageCatalogue() {
  const [query,setQuery]=useState('');
  const [platform,setPlatform]=useState('all');
- const [state,setState]=useState('all');
+ const [state,setState]=useState('apps');
  const [page,setPage]=useState(0);
  const entries=useMemo(()=>registry.entries.filter(entry=>{
   const bindings=bindingsFor(entry,platform);
   return `${entry.name} ${entry.nodeId} ${entry.id} ${bindings.map(binding=>binding.symbol??'').join(' ')}`.toLowerCase().includes(query.toLowerCase())
    && bindings.length>0
-   && (state==='all'||(state==='references'?!['runtime-candidate','example-composition'].includes(entry.category):state==='validated'?bindings.every(binding=>isVerified(entry,binding)):state==='connected'?entry.connection.status==='source-connection-saved':['runtime-candidate','example-composition'].includes(entry.category)&&bindings.some(binding=>!isVerified(entry,binding))));
+   && (state==='all'||(state==='apps'?entry.scope.status==='included':state==='references'?entry.scope.status!=='included':state==='validated'?entry.scope.status==='included'&&bindings.every(binding=>isVerified(entry,binding)):state==='connected'?entry.scope.status==='included'&&entry.connection.status==='source-connection-saved':entry.scope.status==='included'&&bindings.some(binding=>!isVerified(entry,binding))));
  }),[query,platform,state]);
- const active=registry.entries.filter(e=>['runtime-candidate','example-composition'].includes(e.category));
- const connected=registry.entries.filter(e=>e.connection.status==='source-connection-saved').length;
+ const active=registry.entries.filter(e=>e.scope.status==='included');
+ const connected=active.filter(e=>e.connection.status==='source-connection-saved').length;
  const validated=active.filter(e=>e.validation.status==='verified').length;
  const lastPage=Math.max(0,Math.ceil(entries.length/PAGE_SIZE)-1);
  const current=Math.min(page,lastPage);
  return <main className="coverage-catalogue" data-wardo-theme="wardo-light">
   <a href="/library">← Component gallery</a>
   <h1>Wardo coverage catalogue</h1>
-  <p>Find the implementation for a design across web, Apple, and Android. Source availability, validation, and Figma connections are tracked separately.</p>
-  <dl className="coverage-metrics"><div><dt>Current catalogue entries</dt><dd>{registry.entries.length}</dd></div><div><dt>Active components & examples</dt><dd>{active.length}</dd></div><div><dt>Validated active entries</dt><dd>{validated} / {active.length}</dd></div><div><dt>Saved Figma links</dt><dd>{connected} / {registry.entries.length}</dd></div></dl>
+  <p>Find the implementation for a design across web, Apple, and Android. Only reusable app components are implementation targets. Documentation, showcase examples, device references, and Apple Watch are excluded. Source availability, validation, and Figma connections are tracked separately.</p>
+  <dl className="coverage-metrics"><div><dt>Excluded reference records</dt><dd>{registry.entries.length-active.length}</dd></div><div><dt>App components</dt><dd>{active.length}</dd></div><div><dt>Validated active entries</dt><dd>{validated} / {active.length}</dd></div><div><dt>App source links</dt><dd>{connected} / {active.length}</dd></div></dl>
   <details className="coverage-native-previews"><summary>Native sample previews</summary><p>Running sample applications. Per-entry verification remains recorded separately below.</p><div>{registry.samplePreviews.map(preview=><figure key={preview.path}><a href={previewAssets[`../${preview.path}`]}><img loading="lazy" src={previewAssets[`../${preview.path}`]} alt={preview.alt}/></a><figcaption>{preview.caption}</figcaption></figure>)}</div></details>
-  <div className="coverage-filters"><SearchField label="Find a design or component" placeholder="Name, source symbol, or node ID" value={query} onChange={event=>{setQuery(event.target.value);setPage(0);}}/><Select label="Platform" value={platform} onChange={event=>{setPlatform(event.target.value);setPage(0);}}>{['all','web','iOS','iPadOS','visionOS','Android','Android XR','macOS'].map(p=><option key={p} value={p}>{p==='all'?'All platforms':p}</option>)}</Select><Select label="Coverage" value={state} onChange={event=>{setState(event.target.value);setPage(0);}}><option value="all">All entries</option><option value="pending">Needs validation</option><option value="validated">Validated</option><option value="connected">Connected in Figma</option><option value="references">Reference entries</option></Select></div>
+  <div className="coverage-filters"><SearchField label="Find a design or component" placeholder="Name, source symbol, or node ID" value={query} onChange={event=>{setQuery(event.target.value);setPage(0);}}/><Select label="Platform" value={platform} onChange={event=>{setPlatform(event.target.value);setPage(0);}}>{['all','web','iOS','iPadOS','visionOS','Android','Android XR','macOS'].map(p=><option key={p} value={p}>{p==='all'?'All platforms':p}</option>)}</Select><Select label="Coverage" value={state} onChange={event=>{setState(event.target.value);setPage(0);}}><option value="apps">App components</option><option value="all">All catalogue records</option><option value="pending">Needs validation</option><option value="validated">Validated</option><option value="connected">Connected in Figma</option><option value="references">Reference entries</option></Select></div>
   <p role="status">{entries.length} matching {entries.length===1?'entry':'entries'}. Page {current+1} of {lastPage+1}.</p>
   <div className="coverage-records">{entries.slice(current*PAGE_SIZE,(current+1)*PAGE_SIZE).map(entry=>{
    const bindings=bindingsFor(entry,platform);
@@ -49,6 +49,7 @@ export function CoverageCatalogue() {
      {binding.example&&<pre><code>{binding.example}</code></pre>}
      {!!binding.gaps?.length&&<><p>Outstanding review:</p><ul>{binding.gaps.map(gap=><li key={gap}>{gap}</li>)}</ul></>}
     </section>)}
+    {entry.connection.cleanup&&<p>This existing Figma link is outside app scope. Removal is deferred until Figma editing resumes.</p>}
     {entry.previews.map(preview=><figure key={preview.path}><img src={previewAssets[`../${preview.path}`]} alt={preview.alt??`${entry.name} on ${preview.platform??'native platform'}`}/><figcaption>{preview.platform}</figcaption></figure>)}
     <details><summary>Property mappings and evidence</summary><p>Property review: {entry.properties.status.replaceAll('-',' ')}</p><pre>{JSON.stringify(entry.properties,null,2)}</pre><p>{validation?.evidence.length?validation.evidence.join(', '):'No validation evidence recorded for this platform yet.'}</p></details>
    </article>;
