@@ -534,10 +534,1731 @@
       "framework": "React",
       "status": "source-connection-saved",
       "verification": "Figma UI confirmed React SliderControl source and persisted 199 of 797"
+    },
+    {
+      "nodeId": "665:5206",
+      "designName": "Wardo/Examples/Messaging-Mobile",
+      "componentName": "MessagingMobileExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "677:3501",
+      "designName": "Wardo/Examples/Messaging-Web",
+      "componentName": "MessagingWebExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "665:3693",
+      "designName": "Wardo/Examples/Reviews-Mobile",
+      "componentName": "ReviewsMobileExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "677:2891",
+      "designName": "Wardo/Examples/Reviews-Web",
+      "componentName": "ReviewsWebExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "665:2414",
+      "designName": "Wardo/Examples/Upcoming-Mobile",
+      "componentName": "UpcomingMobileExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "677:2291",
+      "designName": "Wardo/Examples/Upcoming-Web",
+      "componentName": "UpcomingWebExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "1967:117076",
+      "designName": "Toolbar internal / Shared / Icon / search",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "search"
+      }
+    },
+    {
+      "nodeId": "1967:117084",
+      "designName": "Toolbar internal / Shared / Icon / x",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "close"
+      }
+    },
+    {
+      "nodeId": "1967:117092",
+      "designName": "Toolbar internal / Shared / Icon / chevron-down",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "chevron-down"
+      }
+    },
+    {
+      "nodeId": "1967:117095",
+      "designName": "Toolbar internal / Shared / search",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "search"
+      }
+    },
+    {
+      "nodeId": "1967:117097",
+      "designName": "Toolbar internal / Shared / x",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "close"
+      }
+    },
+    {
+      "nodeId": "1967:117099",
+      "designName": "Toolbar internal / Shared / chevron-down",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "chevron-down"
+      }
+    },
+    {
+      "nodeId": "1945:10384",
+      "designName": "Toolbar internal / Shared / save-all",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "toolbar-save-all"
+      }
+    },
+    {
+      "nodeId": "1945:10386",
+      "designName": "Toolbar internal / Shared / eye",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "toolbar-eye"
+      }
+    },
+    {
+      "nodeId": "1945:10388",
+      "designName": "Toolbar internal / Shared / circle-ellipsis",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "toolbar-circle-ellipsis"
+      }
+    },
+    {
+      "nodeId": "1945:10390",
+      "designName": "Toolbar internal / Shared / archive",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "toolbar-archive"
+      }
+    },
+    {
+      "nodeId": "1945:10392",
+      "designName": "Toolbar internal / Shared / trash-2",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "toolbar-trash-2"
+      }
+    },
+    {
+      "nodeId": "1945:10351",
+      "designName": "Toolbar internal / Shared / flower",
+      "componentName": "FlowerArtwork",
+      "source": "src/components/FlowerArtwork.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged."
+    },
+    {
+      "nodeId": "1967:114246",
+      "designName": "Toolbar internal / Shared / Floating Action Button",
+      "componentName": "FloatingActionButton",
+      "source": "src/components/Menus.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged."
+    },
+    {
+      "nodeId": "1967:115665",
+      "designName": "Toolbar internal / Shared / Search Field",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged."
+    },
+    {
+      "nodeId": "3073:42687",
+      "designName": "Overlay",
+      "componentName": "NotificationScrim",
+      "source": "src/components/Scrim.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116248",
+      "designName": "Toolbar internal / Shared / Search Field / State controls",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116855",
+      "designName": "Toolbar internal / Shared / Search Field / Validation controls",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116910",
+      "designName": "Toolbar internal / Shared / Search Field / Value & behavior",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116967",
+      "designName": "Toolbar internal / Shared / Field chrome",
+      "componentName": "FieldChrome",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI read back exact export as Connected; all-pages progress226/765 on2026-11-09. Validation unchanged."
+    },
+    {
+      "nodeId": "1967:117079",
+      "designName": "Toolbar internal / Shared / Field content",
+      "componentName": "FieldContent",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI read back exact export as Connected; all-pages progress226/765 on2026-11-09. Validation unchanged."
+    },
+    {
+      "nodeId": "1967:117087",
+      "designName": "Toolbar internal / Shared / Supporting text",
+      "componentName": "FieldSupportingText",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI read back exact export as Connected; all-pages progress226/765 on2026-11-09. Validation unchanged."
+    },
+    {
+      "nodeId": "3399:29565",
+      "designName": "Icon / Sidebar left",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "props": {
+        "name": "sidebar-left"
+      },
+      "verification": "Figma UI confirmed exact ArtworkIcon export and all-pages227/765 on2026-11-09. Local originalasset24x24; validation remains pending."
+    },
+    {
+      "nodeId": "125:7597",
+      "designName": "li:badge-turkish-lira",
+      "componentName": "BadgeTurkishLira",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7601",
+      "designName": "li:balloon",
+      "componentName": "Balloon",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7607",
+      "designName": "li:banknote-arrow-down",
+      "componentName": "BanknoteArrowDown",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7609",
+      "designName": "li:banknote-arrow-up",
+      "componentName": "BanknoteArrowUp",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7611",
+      "designName": "li:banknote-x",
+      "componentName": "BanknoteX",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7614",
+      "designName": "li:barrel",
+      "componentName": "Barrel",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7623",
+      "designName": "li:battery-plus",
+      "componentName": "BatteryPlus",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7652",
+      "designName": "li:birdhouse",
+      "componentName": "Birdhouse",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7668",
+      "designName": "li:book-alert",
+      "componentName": "BookAlert",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7686",
+      "designName": "li:book-search",
+      "componentName": "BookSearch",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7703",
+      "designName": "li:bottle-wine",
+      "componentName": "BottleWine",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7705",
+      "designName": "li:bow-arrow",
+      "componentName": "BowArrow",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7715",
+      "designName": "li:brick-wall-fire",
+      "componentName": "BrickWallFire",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7717",
+      "designName": "li:brick-wall-shield",
+      "componentName": "BrickWallShield",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI saved the exact React export; subsequent MCPserverreadback confirmed the same symbol and source. 2026-11-09."
+    },
+    {
+      "nodeId": "125:7725",
+      "designName": "li:brush-cleaning",
+      "componentName": "BrushCleaning",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7727",
+      "designName": "li:bubbles",
+      "componentName": "Bubbles",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7759",
+      "designName": "li:calendar-sync",
+      "componentName": "CalendarSync",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7763",
+      "designName": "li:calendars",
+      "componentName": "Calendars",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7771",
+      "designName": "li:cannabis-off",
+      "componentName": "CannabisOff",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7779",
+      "designName": "li:card-sim",
+      "componentName": "CardSim",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7815",
+      "designName": "li:check-line",
+      "componentName": "CheckLine",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7819",
+      "designName": "li:chess-bishop",
+      "componentName": "ChessBishop",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7821",
+      "designName": "li:chess-king",
+      "componentName": "ChessKing",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7823",
+      "designName": "li:chess-knight",
+      "componentName": "ChessKnight",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7825",
+      "designName": "li:chess-pawn",
+      "componentName": "ChessPawn",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7827",
+      "designName": "li:chess-queen",
+      "componentName": "ChessQueen",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7829",
+      "designName": "li:chess-rook",
+      "componentName": "ChessRook",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7882",
+      "designName": "li:circle-pile",
+      "componentName": "CirclePile",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7886",
+      "designName": "li:circle-pound-sterling",
+      "componentName": "CirclePoundSterling",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7892",
+      "designName": "li:circle-small",
+      "componentName": "CircleSmall",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7894",
+      "designName": "li:circle-star",
+      "componentName": "CircleStar",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7905",
+      "designName": "li:clipboard-clock",
+      "componentName": "ClipboardClock",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7932",
+      "designName": "li:clock-check",
+      "componentName": "ClockCheck",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7934",
+      "designName": "li:clock-fading",
+      "componentName": "ClockFading",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7936",
+      "designName": "li:clock-plus",
+      "componentName": "ClockPlus",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7938",
+      "designName": "li:closed-caption",
+      "componentName": "ClosedCaption",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7941",
+      "designName": "li:cloud-alert",
+      "componentName": "CloudAlert",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7943",
+      "designName": "li:cloud-backup",
+      "componentName": "CloudBackup",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7945",
+      "designName": "li:cloud-check",
+      "componentName": "CloudCheck",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7961",
+      "designName": "li:cloud-sync",
+      "componentName": "CloudSync",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:7976",
+      "designName": "li:columns-3-cog",
+      "componentName": "Columns3Cog",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8025",
+      "designName": "li:decimals-arrow-left",
+      "componentName": "DecimalsArrowLeft",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8027",
+      "designName": "li:decimals-arrow-right",
+      "componentName": "DecimalsArrowRight",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8056",
+      "designName": "li:door-closed-locked",
+      "componentName": "DoorClosedLocked",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8065",
+      "designName": "li:drone",
+      "componentName": "Drone",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8068",
+      "designName": "li:droplet-off",
+      "componentName": "DropletOff",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8085",
+      "designName": "li:equal-approximately",
+      "componentName": "EqualApproximately",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8091",
+      "designName": "li:ev-charger",
+      "componentName": "EvCharger",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8112",
+      "designName": "li:file-braces-corner",
+      "componentName": "FileBracesCorner",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8119",
+      "designName": "li:file-check-corner",
+      "componentName": "FileCheckCorner",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8123",
+      "designName": "li:file-code-corner",
+      "componentName": "FileCodeCorner",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8130",
+      "designName": "li:file-headphone",
+      "componentName": "FileHeadphone",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8138",
+      "designName": "li:file-minus-corner",
+      "componentName": "FileMinusCorner",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8144",
+      "designName": "li:file-play",
+      "componentName": "FilePlay",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8147",
+      "designName": "li:file-plus-corner",
+      "componentName": "FilePlusCorner",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8152",
+      "designName": "li:file-search-corner",
+      "componentName": "FileSearchCorner",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8162",
+      "designName": "li:file-type-corner",
+      "componentName": "FileTypeCorner",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8166",
+      "designName": "li:file-video-camera",
+      "componentName": "FileVideoCamera",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8170",
+      "designName": "li:file-x-corner",
+      "componentName": "FileXCorner",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8179",
+      "designName": "li:fishing-hook",
+      "componentName": "FishingHook",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8234",
+      "designName": "li:form",
+      "componentName": "Form",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8242",
+      "designName": "li:funnel",
+      "componentName": "Funnel",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8244",
+      "designName": "li:funnel-plus",
+      "componentName": "FunnelPlus",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8246",
+      "designName": "li:funnel-x",
+      "componentName": "FunnelX",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8255",
+      "designName": "li:gamepad-directional",
+      "componentName": "GamepadDirectional",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8260",
+      "designName": "li:georgian-lari",
+      "componentName": "GeorgianLari",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8265",
+      "designName": "li:git-branch-minus",
+      "componentName": "GitBranchMinus",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8287",
+      "designName": "li:globe-x",
+      "componentName": "GlobeX",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8290",
+      "designName": "li:gpu",
+      "componentName": "Gpu",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8298",
+      "designName": "li:grid-3x2",
+      "componentName": "Grid3x2",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8307",
+      "designName": "li:hamburger",
+      "componentName": "Hamburger",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8312",
+      "designName": "li:hand-fist",
+      "componentName": "HandFist",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8319",
+      "designName": "li:handbag",
+      "componentName": "Handbag",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8327",
+      "designName": "li:hat-glasses",
+      "componentName": "HatGlasses",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8330",
+      "designName": "li:hd",
+      "componentName": "Hd",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8346",
+      "designName": "li:heart-minus",
+      "componentName": "HeartMinus",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8349",
+      "designName": "li:heart-plus",
+      "componentName": "HeartPlus",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8353",
+      "designName": "li:helicopter",
+      "componentName": "Helicopter",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8364",
+      "designName": "li:house-heart",
+      "componentName": "HouseHeart",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8368",
+      "designName": "li:house-wifi",
+      "componentName": "HouseWifi",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8373",
+      "designName": "li:id-card-lanyard",
+      "componentName": "IdCardLanyard",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8382",
+      "designName": "li:image-upscale",
+      "componentName": "ImageUpscale",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8398",
+      "designName": "li:kayak",
+      "componentName": "Kayak",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8417",
+      "designName": "li:laptop-minimal-check",
+      "componentName": "LaptopMinimalCheck",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8424",
+      "designName": "li:layers-plus",
+      "componentName": "LayersPlus",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8441",
+      "designName": "li:line-squiggle",
+      "componentName": "LineSquiggle",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8450",
+      "designName": "li:list-chevrons-down-up",
+      "componentName": "ListChevronsDownUp",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8452",
+      "designName": "li:list-chevrons-up-down",
+      "componentName": "ListChevronsUpDown",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8457",
+      "designName": "li:list-filter-plus",
+      "componentName": "ListFilterPlus",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8499",
+      "designName": "li:map-minus",
+      "componentName": "MapMinus",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8508",
+      "designName": "li:map-pin-pen",
+      "componentName": "MapPinPen",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8515",
+      "designName": "li:map-plus",
+      "componentName": "MapPlus",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8517",
+      "designName": "li:mars",
+      "componentName": "Mars",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8519",
+      "designName": "li:mars-stroke",
+      "componentName": "MarsStroke",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8573",
+      "designName": "li:monitor-cloud",
+      "componentName": "MonitorCloud",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8588",
+      "designName": "li:motorbike",
+      "componentName": "Motorbike",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8596",
+      "designName": "li:mouse-pointer-2-off",
+      "componentName": "MousePointer2Off",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8625",
+      "designName": "li:non-binary",
+      "componentName": "NonBinary",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8657",
+      "designName": "li:panda",
+      "componentName": "Panda",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8667",
+      "designName": "li:panel-left-right-dashed",
+      "componentName": "PanelLeftRightDashed",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8674",
+      "designName": "li:panel-top-bottom-dashed",
+      "componentName": "PanelTopBottomDashed",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8771",
+      "designName": "li:receipt-turkish-lira",
+      "componentName": "ReceiptTurkishLira",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8773",
+      "designName": "li:rectangle-circle",
+      "componentName": "RectangleCircle",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8776",
+      "designName": "li:rectangle-goggles",
+      "componentName": "RectangleGoggles",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8803",
+      "designName": "li:rose",
+      "componentName": "Rose",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8807",
+      "designName": "li:rotate-ccw-key",
+      "componentName": "RotateCcwKey",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8820",
+      "designName": "li:ruler-dimension-line",
+      "componentName": "RulerDimensionLine",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8828",
+      "designName": "li:saudi-riyal",
+      "componentName": "SaudiRiyal",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8840",
+      "designName": "li:scan-heart",
+      "componentName": "ScanHeart",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8849",
+      "designName": "li:scooter",
+      "componentName": "Scooter",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8856",
+      "designName": "li:search-alert",
+      "componentName": "SearchAlert",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8889",
+      "designName": "li:shield-user",
+      "componentName": "ShieldUser",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8900",
+      "designName": "li:shredder",
+      "componentName": "Shredder",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8902",
+      "designName": "li:shrimp",
+      "componentName": "Shrimp",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8932",
+      "designName": "li:soap-dispenser-droplet",
+      "componentName": "SoapDispenserDroplet",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8935",
+      "designName": "li:solar-panel",
+      "componentName": "SolarPanel",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8947",
+      "designName": "li:spline-pointer",
+      "componentName": "SplinePointer",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8950",
+      "designName": "li:spool",
+      "componentName": "Spool",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8952",
+      "designName": "li:spotlight",
+      "componentName": "Spotlight",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8985",
+      "designName": "li:square-dashed-top-solid",
+      "componentName": "SquareDashedTopSolid",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:8999",
+      "designName": "li:square-pause",
+      "componentName": "SquarePause",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9009",
+      "designName": "li:square-round-corner",
+      "componentName": "SquareRoundCorner",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9018",
+      "designName": "li:square-star",
+      "componentName": "SquareStar",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9020",
+      "designName": "li:square-stop",
+      "componentName": "SquareStop",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9026",
+      "designName": "li:squares-exclude",
+      "componentName": "SquaresExclude",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9028",
+      "designName": "li:squares-intersect",
+      "componentName": "SquaresIntersect",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9030",
+      "designName": "li:squares-subtract",
+      "componentName": "SquaresSubtract",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9032",
+      "designName": "li:squares-unite",
+      "componentName": "SquaresUnite",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9035",
+      "designName": "li:squircle-dashed",
+      "componentName": "SquircleDashed",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9047",
+      "designName": "li:stone",
+      "componentName": "Stone",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9105",
+      "designName": "li:text-wrap",
+      "componentName": "TextWrap",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9127",
+      "designName": "li:toilet",
+      "componentName": "Toilet",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9129",
+      "designName": "li:tool-case",
+      "componentName": "ToolCase",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9131",
+      "designName": "li:toolbox",
+      "componentName": "Toolbox",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9145",
+      "designName": "li:transgender",
+      "componentName": "Transgender",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9159",
+      "designName": "li:triangle-dashed",
+      "componentName": "TriangleDashed",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9164",
+      "designName": "li:truck-electric",
+      "componentName": "TruckElectric",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9166",
+      "designName": "li:turkish-lira",
+      "componentName": "TurkishLira",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9168",
+      "designName": "li:turntable",
+      "componentName": "Turntable",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9196",
+      "designName": "li:user-lock",
+      "componentName": "UserLock",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9210",
+      "designName": "li:user-star",
+      "componentName": "UserStar",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9218",
+      "designName": "li:van",
+      "componentName": "Van",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9222",
+      "designName": "li:vector-square",
+      "componentName": "VectorSquare",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9226",
+      "designName": "li:venus",
+      "componentName": "Venus",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9228",
+      "designName": "li:venus-and-mars",
+      "componentName": "VenusAndMars",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9254",
+      "designName": "li:waves-arrow-down",
+      "componentName": "WavesArrowDown",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9256",
+      "designName": "li:waves-arrow-up",
+      "componentName": "WavesArrowUp",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9258",
+      "designName": "li:waves-ladder",
+      "componentName": "WavesLadder",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9265",
+      "designName": "li:weight-tilde",
+      "componentName": "WeightTilde",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9271",
+      "designName": "li:wifi-cog",
+      "componentName": "WifiCog",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9276",
+      "designName": "li:wifi-pen",
+      "componentName": "WifiPen",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9278",
+      "designName": "li:wifi-sync",
+      "componentName": "WifiSync",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
+    },
+    {
+      "nodeId": "125:9282",
+      "designName": "li:wind-arrow-down",
+      "componentName": "WindArrowDown",
+      "source": "src/components/LucideIcons.tsx",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed the explicit source and export, connected state and progress increment on 2026-11-10."
     }
   ],
   "lastVerifiedProgress": {
-    "connected": 199,
-    "total": 797
+    "connected": 227,
+    "total": 765,
+    "date": "2026-11-09",
+    "verification": "Figma all-pages Code Connect UI after the seven remaining historical React entries and the newly added sidebar icon were saved."
+  },
+  "latestPageVerification": {
+    "date": "2026-11-09",
+    "page": "Toolbar internals",
+    "connected": 16,
+    "total": 57,
+    "newConnections": 14
+  },
+  "lucideProgress": {
+    "total": 153,
+    "confirmedSaved": 14,
+    "remaining": 139
   }
 }

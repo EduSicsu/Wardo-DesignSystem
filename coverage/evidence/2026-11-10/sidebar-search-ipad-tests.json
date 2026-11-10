@@ -1,0 +1,43 @@
+{
+  "devicesAndConfigurations": [
+    {
+      "device": {
+        "architecture": "arm64",
+        "deviceId": "B074B781-3A23-4BAC-81A8-52C17ED7C337",
+        "deviceName": "Wardo Search iPad QA",
+        "modelName": "iPad Pro 13-inch (M5)",
+        "osBuildNumber": "24B8117",
+        "osVersion": "27.2",
+        "platform": "iOS Simulator"
+      },
+      "expectedFailures": 0,
+      "failedTests": 0,
+      "passedTests": 2,
+      "skippedTests": 0,
+      "testPlanConfiguration": {
+        "configurationId": "1",
+        "configurationName": "Test Scheme Action"
+      }
+    }
+  ],
+  "environmentDescription": "WardoCatalogue \u00b7 Built with macOS 27.0.1",
+  "expectedFailures": 0,
+  "failedTests": 0,
+  "finishTime": 1794324386.709,
+  "passedTests": 2,
+  "result": "Passed",
+  "runtimeWarnings": [
+    {
+      "issueType": "Runtime Warning",
+      "message": "Update the Info.plist: Support for all orientations will soon be required.",
+      "sourceURL": "file:///Users/eduardooliveiralopes/Documents/ChatGPT/Wardo%20Brand/wardo-design-system/native/apple/Sample/CatalogueApp.swift"
+    }
+  ],
+  "skippedTests": 0,
+  "startTime": 1794324159.863,
+  "statistics": [],
+  "testFailures": [],
+  "title": "Test - WardoCatalogue",
+  "topInsights": [],
+  "totalTestCount": 2
+}

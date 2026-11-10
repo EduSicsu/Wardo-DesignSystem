@@ -16,8 +16,8 @@ fun WardoButton(onClick: () -> Unit, modifier: Modifier = Modifier, enabled: Boo
     when (hierarchy) {
         WardoHierarchy.Primary -> Button(onClick, sized, enabled, shape = shape, content = content)
         WardoHierarchy.Secondary -> FilledTonalButton(onClick, sized, enabled, shape = shape, content = content)
-        WardoHierarchy.Outline -> OutlinedButton(onClick, sized, enabled, shape = shape, content = content)
-        WardoHierarchy.Text -> TextButton(onClick, sized, enabled, shape = shape, content = content)
+        WardoHierarchy.Outline -> OutlinedButton(onClick, sized, enabled, shape = shape, colors = ButtonDefaults.outlinedButtonColors(contentColor = MaterialTheme.colorScheme.onSurface), content = content)
+        WardoHierarchy.Text -> TextButton(onClick, sized, enabled, shape = shape, colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurface), content = content)
     }
 }
 

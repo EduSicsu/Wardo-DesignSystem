@@ -1,0 +1,199 @@
+{
+  "date": "2026-11-08",
+  "scope": "Family-level execution evidence; not full entry or variant validation",
+  "checks": [
+    {
+      "platform": "web",
+      "command": "npm run check",
+      "result": "passed",
+      "unitTests": 25
+    },
+    {
+      "platform": "web desktop/mobile",
+      "command": "npx playwright test",
+      "result": "passed",
+      "browserTests": 24,
+      "note": "Later example layout/icon fixes separately passed 8 targeted checks."
+    },
+    {
+      "platform": "macOS Swift package",
+      "command": "swift test --package-path native/apple",
+      "result": "passed",
+      "tests": 8
+    },
+    {
+      "platform": "Android XR API 34 headset emulator",
+      "command": "./gradlew :xr-sample:connectedDebugAndroidTest",
+      "result": "passed",
+      "tests": 2,
+      "exercises": [
+        "spatial panel activation",
+        "anchored toolbar activation",
+        "spatial dialog confirm and dismissal"
+      ],
+      "limitations": [
+        "No physical headset comfort/gaze validation",
+        "Panel move/resize gestures and navigation variants not exercised"
+      ]
+    },
+    {
+      "platform": "iPhone 18 Pro / iOS 27.2 Simulator",
+      "command": "xcodebuild -project native/apple/Sample/WardoCatalogue.xcodeproj -scheme WardoCatalogue -destination platform=iOS\\ Simulator,id=A7EACD22-4239-4681-979F-E1DB3EB4D4A7 test",
+      "result": "passed",
+      "tests": 4,
+      "exercises": [
+        "button and search state",
+        "alert confirmation",
+        "colour picker tabs and dismissal",
+        "native toggle and checkbox semantics",
+        "sidebar selection, expansion and RTL"
+      ],
+      "limitations": [
+        "No exhaustive variant, VoiceOver, or Dynamic Type validation"
+      ]
+    },
+    {
+      "platform": "iPad Pro 13-inch M5 / iOS 27.2 Simulator",
+      "result": "passed",
+      "tests": 4,
+      "exercises": [
+        "button and search state",
+        "alert confirmation",
+        "colour picker tabs and dismissal",
+        "native toggle/checkbox semantics",
+        "sidebar selection, group collapse/expand and RTL"
+      ],
+      "limitations": [
+        "Per-variant accessibility and appearance review remains pending"
+      ]
+    },
+    {
+      "platform": "Apple Vision Pro / visionOS 27.2 Simulator",
+      "result": "passed across full run and targeted retry",
+      "tests": 4,
+      "exercises": [
+        "alert confirmation",
+        "colour picker tabs and dismissal",
+        "native toggle/checkbox semantics",
+        "sidebar selection, collapse/expand and RTL"
+      ],
+      "note": "Initial sidebar route tap failed; widened NavigationLink label hit region and reran that scenario successfully. Other three scenarios passed in the full run.",
+      "limitations": [
+        "No physical headset gaze/comfort validation",
+        "Full per-entry visual and accessibility review remains pending"
+      ]
+    },
+    {
+      "platform": "web desktop/mobile \u2014 current source",
+      "command": "npm run check; npx playwright test",
+      "result": "passed",
+      "unitTests": 28,
+      "browserTests": 28,
+      "exercises": [
+        "all twelve Divider direction/orientation/inset configurations",
+        "configured menu styling and RTL popup direction",
+        "native menu interaction and focus restoration",
+        "search/dropdown focus, clearing and affordances",
+        "example screen artwork, saves and messaging",
+        "existing web keyboard and automated light/dark accessibility regressions"
+      ],
+      "limitations": [
+        "Full per-entry design/variant validation remains pending"
+      ]
+    }
+  ],
+  "androidXrSources": {
+    "native/android/build.gradle.kts": "ffdf2cf953db631a08c1fbfb0c2f7977bbcf085af5d55b342209bbf7150fd333",
+    "native/android/settings.gradle.kts": "9c1f0fbe3a8e67afa354e334ee0ff339f35925102b9593b0bebdc7572fff4268",
+    "native/android/gradle.properties": "a467f0619f397329e116da1ac68587d5ba35ad2097abb9b2a26212bdcbe7452d",
+    "native/android/xr/build.gradle.kts": "4915065bfc4b52561c72857e4f3d7caa2f5174e6a441afaa65e01083d4b2c885",
+    "native/android/xr/src/main/AndroidManifest.xml": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+    "native/android/xr/src/main/kotlin/com/wardo/designsystem/xr/SpatialComponents.kt": "b18db702cbffbb72ae8f30a37fa85e116fc9ab7f18ca4602e1401a987aa0dd28",
+    "native/android/gradle/wrapper/gradle-wrapper.properties": "a97817ec40d49a64179d0c264fdfa1912b75a393c9d3f7f53448372c3418936a",
+    "native/android/sample/build.gradle.kts": "bef289c37cd414bae5f03742d75a523c8b9c7887869f65323d4a7f213794416d",
+    "native/android/sample/src/androidTest/kotlin/com/wardo/catalogue/CatalogueTest.kt": "60eece0ca82bbe1f25a160cd1ef410c008a269ff9fd8b84beb345dbd8ecdf1e4",
+    "native/android/sample/src/main/AndroidManifest.xml": "db1a732ea022b50fc1692cc6543c897a215e75485b2c8989d26e4b1ff69e14d5",
+    "native/android/sample/src/main/kotlin/com/wardo/catalogue/CatalogueActivity.kt": "097517eeec1a52ae516fb50ba7e17cd58e6d7149f28f65637e7c4c6222568b6f",
+    "native/android/xr-sample/build.gradle.kts": "1887f7a3c015f48ba137d726e44f5a12f3659227b452e86021475913db567888",
+    "native/android/xr-sample/src/androidTest/kotlin/com/wardo/xrcatalogue/XrCatalogueTest.kt": "3020981bcd0a85a936920a461d910b1e89b50e18fcc4cce888953d1414e4e67c",
+    "native/android/xr-sample/src/main/AndroidManifest.xml": "48b878ec7725a6fc6ddd5940d99fb4e18bb59857bb56e8c568a1db5d925e9a75",
+    "native/android/xr-sample/src/main/kotlin/com/wardo/xrcatalogue/XrCatalogueActivity.kt": "3ea06cb757055a033807c52c0bff1526b99cc0d3c18b47daca10da2d71c77e8e",
+    "native/android/src/main/AndroidManifest.xml": "343d5be1ac17cdd45d1a2f2ddc616c509290e655869125a9422a96d88aa66066",
+    "native/android/src/main/kotlin/com/wardo/designsystem/Overlays.kt": "55ff41a06c71cdfed7c7b6bb32f86d3d75f92672db1f69bb01ea6ff071389291",
+    "native/android/src/main/kotlin/com/wardo/designsystem/Inputs.kt": "649731780288a96b9abf20a1cb5e9c7788c598935afed70aed379fbf12a24d05",
+    "native/android/src/main/kotlin/com/wardo/designsystem/Content.kt": "d364d3d03be7fb78ee147c2f6c4ba384a3a515ecc2f3939f4daf127fcdaa2022",
+    "native/android/src/main/kotlin/com/wardo/designsystem/Toolbar.kt": "9958f1a43b5a054a2429cc93a18bcb70ef38f6fd397fa644954784ee1c1991b9",
+    "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt": "c73ec0e7b57350d104edd8379ebcff01621c4cbe592604b18a742642913c7200",
+    "native/android/src/main/kotlin/com/wardo/designsystem/Theme.kt": "a69bf9235013e4f32053a2afbc9a0fc78e2044c1c789f7ddd61ab257dd088349",
+    "native/android/src/main/kotlin/com/wardo/designsystem/PlatformToolbar.kt": "84f306a6f7a594e708f42b54cb978e93bc308333986383c834df71dcf4bff8e0",
+    "native/android/src/main/kotlin/com/wardo/designsystem/Actions.kt": "5357c0d79c5955b3b855f6d3bf9f95d50eef2f54bff702780a23b83e13a3c4b5",
+    "native/android/src/main/kotlin/com/wardo/designsystem/ColorTokens.kt": "65c6f8c5a4ca6d6cb37f7e23004d7bd9d8a43e8364579308529d570bb734baaa"
+  },
+  "appleSources": {
+    "native/apple/Package.swift": "4541cab528d55b85ba1febc4cd7f8da390fbbd3742cb9584726b6634eaabc5e5",
+    "native/apple/Tests/WardoDesignSystemTests/ColorAndSliderTests.swift": "2e2ad332bb8b949d38bb1200c7c747e79c4a099554affec83f16d53fa4f8a1d2",
+    "native/apple/Sample/CatalogueApp.swift": "0f7796d46f5b3df66af55867162f4352840839376add3c2902209bc0aef9fda5",
+    "native/apple/Sample/WardoCatalogueUITests/CatalogueUITests.swift": "40d8badf2c86a50bc0ce8f4d4dab6f30f6cf11549a61b440986608d78b0c3a6f",
+    "native/apple/Sample/WardoCatalogue.xcodeproj/project.pbxproj": "215ff15dc1b45cdc46d0feb319cd63df5f778e190251f6efc4d2f39a2b7a7908",
+    "native/apple/Sample/WardoCatalogue.xcodeproj/xcshareddata/xcschemes/WardoCatalogue.xcscheme": "79b89dba4b09d40a153c1750ecdb1fa97c020e05f9f4564f7f8746295d988653",
+    "native/apple/Sources/WardoDesignSystem/Navigation.swift": "f395fb902d5fae32272342c3b9bf8c4275f3a70c1f945beb455e8f7430f1036b",
+    "native/apple/Sources/WardoDesignSystem/SpectrumSampler.swift": "b3686f3dab27980f99deac2d2f9a803a8df9ad9ea735a82efcb715717dfca864",
+    "native/apple/Sources/WardoDesignSystem/SystemIcon.swift": "9c7d54d0036e361c4bc747d8cf370119688518d0fc4923116ac24a2935b932a2",
+    "native/apple/Sources/WardoDesignSystem/NativePresentation.swift": "8df43600b8f3e3b22229536d6863a338aa572433b2c360a316d8e2960fc548c2",
+    "native/apple/Sources/WardoDesignSystem/TabAccessory.swift": "1983b5f118fcf1fcf312328f75218ea02ad51fe6abe507834a6aadb7db2e8377",
+    "native/apple/Sources/WardoDesignSystem/SwipeActions.swift": "beaa524fa973b20bc7db0618058581ed931c5a16a603e9419553dfd886ad7b23",
+    "native/apple/Sources/WardoDesignSystem/ColorTokens.swift": "35e844aeae1f706f5999009e8d0f1f80e1b7f9dde7954efcbfc50509a9bad6ef",
+    "native/apple/Sources/WardoDesignSystem/Inputs.swift": "f47b20c2b8b68dd6417ba70591af5df1d2331d0a81bc2223de1d957a90557332",
+    "native/apple/Sources/WardoDesignSystem/VisionColorPicker.swift": "fd5f8d4adc0491c63d7e75555b04adb4ea45b81b1e40b0c37bdc1c8859ad5b18",
+    "native/apple/Sources/WardoDesignSystem/VisionDatePicker.swift": "8b78f64f2233884a7c6ff5424d3264518b18355ae3812bb7095b62406852e90d",
+    "native/apple/Sources/WardoDesignSystem/Content.swift": "f1a98ea5de0d87b58dff1b17438d1a865efb68fc1844f5b284c49a850d4a03b8",
+    "native/apple/Sources/WardoDesignSystem/VisionSlider.swift": "efa8c267c521c066e266a16412e18647bf7fa72c3c4e7c29c16ada1f282cc691",
+    "native/apple/Sources/WardoDesignSystem/ColorPalette.swift": "154e3f6102733d763ad85cae4ddc56ffc93ca23c29e8de6985fbe1130b95a489",
+    "native/apple/Sources/WardoDesignSystem/WindowScene.swift": "b8110c8cb9764f24ddb83f360c7c2047adee0652af4fff571a692b3a95efdec3",
+    "native/apple/Sources/WardoDesignSystem/Theme.swift": "e5d740ffd53f0bfb916b9b9962f450146ca7ba425283891ac339b639c49080db",
+    "native/apple/Sources/WardoDesignSystem/PlatformToolbar.swift": "747336bc534b9ec9ac739df129d752f4923cd3a56c65e7d975df7f3fa8bd87d0",
+    "native/apple/Sources/WardoDesignSystem/VisionSidebar.swift": "fa8c7104a4a8d10261d1713eb24aeca59eed7d8272bee3bff7ed881843f63c88",
+    "native/apple/Sources/WardoDesignSystem/Actions.swift": "c9c95e75b21a5853d1489cbbcf84bce365d2e86e6b55b9ab846939266212a5be",
+    "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift": "3e7fea9eec64e5e0cefd116302792c2a3e3cccc18a1830cba752203c023c6319",
+    "native/apple/Sources/WardoDesignSystem/AppArtwork.swift": "f774dc59f1a74884c139acb0ab2fb92f3446c0ebd3e2dc82b1fc9dffd35643d0"
+  },
+  "webSources": {
+    "src/components/Selection.tsx": "64554b5c33ab2c50c92b0c75db61c955535053110e36f582c84a7671a97b5bd2",
+    "src/components/Overlays.tsx": "91e7120c5f06043a8e38b3257f595e822ddf9db771a7a31f7b1f4576f772fcad",
+    "src/components/FlowerArtwork.tsx": "b93b24aeb256350a08ad28fd75511816e73a552c76f3cb5744b13bfd6cec9bc7",
+    "src/components/Icon.tsx": "74c13086c314cba91804435f80335e27c8abbe36c37f7cb5bf5a68257e90718e",
+    "src/components/SliderControl.tsx": "127b65e56de2b100c41ff0cd2882b59cb081757c31d08f46673e5215d45f56ec",
+    "src/components/Content.tsx": "cc24d273003e649e4f781006c1eced39845665a1c91d2348f2796b3882105467",
+    "src/components/Accordion.tsx": "2bbc32c32d9246986f28c42715c311b7c8cb17864680bf96ecf12e15cb249fb3",
+    "src/components/ChipPatterns.tsx": "0256efba982e2b0db5d268b9a8b62aacb6a449492610aa7bd3e381f2952dedd8",
+    "src/components/shared.ts": "f2ca64aea0047c316ed4a91ed13d94f30eca542b64db0a1a54c700ad1d948956",
+    "src/components/Scrim.tsx": "6cc146e81a2044589ba1fe8e2314dadb9e6fe129d9429fa6b16f1594800b0977",
+    "src/components/Patterns.tsx": "f3b7dda7d54e5417be0b95bb9b8fd6be992be20835ba3f12048b536397bb83a1",
+    "src/components/AdvancedInputs.tsx": "788d6e3cb7b2ae40ae39eca1d714ecbeeb07d9e804e5a7da45a2afcce0d1fca8",
+    "src/components/TextField.tsx": "016f9212f2f0ff64d36bb44ab386e95037d27a0785e2254195a825642f305c2e",
+    "src/components/Menus.tsx": "1baefd4700b221c67889593d48c1ec058762a4ed370fc0f373f7e3317407d08b",
+    "src/components/ActionChip.tsx": "7015020af59e2753584a1c61a11f0c5acb124fd680766dd99390258fe8a21f86",
+    "src/components/DataDisplay.tsx": "7b43396861ec01f0cfbdfbcc2822114d9bdcaae588f1f1bd311bf888edb1cf89",
+    "src/components/ArtworkIcon.tsx": "b8ded38c2d335a0f7351c8706635de57ee4ae3ffbc6031f2544f240c254c7d05",
+    "src/components/Feedback.tsx": "52c0cf609b6074420920b3414b1616cc9a3e0d8f2733000b05cdd86ce7d32a0e",
+    "src/components/Button.tsx": "ca249ceae96407ef9ec4b99f3332cfab64784395b214281cc1e59d392d8180b4",
+    "src/components/Navigation.tsx": "59744545869a3a4ba1c8a915ff68459bd0e2fa35b2fcdc6b6316b356500b8b88",
+    "src/components/Compositions.tsx": "d4842c7cca9dfaa935d73bb034def089161fe62959e05db33a30dbeda119a7c8",
+    "src/components/Provider.tsx": "5062d63f8de0ad4b074634de401abd05ec8d418da34deb175905451b6a4ab2a3",
+    "src/styles/styles.css": "fbf31daad86ccf1b337ca5bfd7447c77ffb1439b2004adc2ea26fa15ae3c101d",
+    "src/styles/tokens.css": "8fb18fe09d3c48c75b4056042bfe30abecb9941a468694df69a20866cff6b974",
+    "src/styles/components.css": "b977fd61e81bd537fd44a7f7fbe61f1fa624f7f9c3ad44e284659bd01e72809c",
+    "tests/patterns.test.tsx": "8fb25cb82a5908f015597ca601ef2c618edb7426996ccc5212086b2e892dda42",
+    "tests/coverage.test.ts": "7b60480c5fa687c3cbe67227a99c555a941c2c530177b040319c21d61d22cf97",
+    "tests/fields.test.tsx": "6572620168be194d778414362fcab208dbca8f5464ae7353fe4db55778942660",
+    "tests/setup.ts": "ae4b6b92c8c0f06526032b2dedeb4fb0e93b85af2a138a423386f2e36894a685",
+    "tests/components.test.tsx": "7dcd164e2efd6503098d3bac7e013d2278b0f61ba7c3471e70fa35c5e0467a95",
+    "tests/templates.test.tsx": "42fe3d271aa413ff0d606e425807c2b7eec35ad8e8bb2962d45c301deb5cd6d0",
+    "tests/browser/expanded.spec.ts": "38aa9383b9fb3dd97ee2884dcbeb09079e5402290879b8d8ed7279a28bb77bbc",
+    "tests/browser/examples.spec.ts": "fa64e7e17453e3997491afad002d1006405bd60c4aec7e52729eb2fc8643b802",
+    "tests/browser/coverage.spec.ts": "ddd70d1da8b5b9fc40aa70f27d50d0a87943af6cb8c3eae25e6819fdbc0de956",
+    "tests/browser/menu-variants.spec.ts": "61e5ec14add5e0c7e6381fca960af0f68a67c956a161d92381f9a04652ecefc0",
+    "tests/browser/library.spec.ts": "2999ba7f5661b471885f05fd49521676c39e09cb20326007afea0abb1ec39512",
+    "tests/browser/divider.spec.ts": "1b90a7b42f7adafed2fb2ea6691c2019679232aa6ef64fce0653b45a3749225d"
+  }
+}

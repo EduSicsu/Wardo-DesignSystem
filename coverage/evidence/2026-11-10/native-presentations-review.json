@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-10",
+  "nodes": [
+    "2773:45047",
+    "2773:44195",
+    "2773:44204",
+    "2773:43627",
+    "2773:43481"
+  ],
+  "scope": "Five reusable native app presentation entries only. Sample screens are development fixtures, not production coverage targets. All five remain validation pending.",
+  "implementationReview": [
+    "NativeAlertModifier retains native alert fields/actions and app-owned bindings, validation, callbacks and roles.",
+    "NativeActivityView presents through an anchored popover, adapting to the native iPhone sheet; share items, activities and callbacks remain app-owned.",
+    "NativeContextMenuPreviewModifier preserves preview, disabled and destructive actions, nested menus and native adaptive placement.",
+    "NativePageSheetModifier represents the source large sheet with grabber and nested stacking; it is not a fullScreenCover.",
+    "No experimental input-alert adapter is included; existing public native APIs are preserved."
+  ],
+  "checks": [
+    {
+      "name": "iPhone presentation suite",
+      "evidence": "coverage/evidence/2026-11-10/native-presentations-iphone-tests.json",
+      "result": "Passed",
+      "passed": 7,
+      "failed": 0
+    },
+    {
+      "name": "iPad presentation suite",
+      "evidence": "coverage/evidence/2026-11-10/native-presentations-ipad-tests.json",
+      "result": "Failed",
+      "passed": 6,
+      "failed": 1
+    },
+    {
+      "name": "iPad alert fixture retry with bounded switch-state wait",
+      "evidence": "coverage/evidence/2026-11-10/native-alert-ipad-retry-tests.json",
+      "result": "Passed",
+      "passed": 1,
+      "failed": 0
+    },
+    {
+      "name": "Actual iPad USB-HID Tab/Return/Escape",
+      "result": "passed",
+      "evidence": "coverage/evidence/2026-11-10/native-alert-ipad-hid.json"
+    },
+    {
+      "name": "Actual system Dynamic Type measurement",
+      "result": "passed",
+      "evidence": "coverage/evidence/2026-11-10/native-alert-ipad-system-scaling.json",
+      "observed": "Title height20.5->63.5pt and message18->116.5pt at largest accessibility setting. Native iPad field containers remain35pt. Original simulator setting restored."
+    }
+  ],
+  "coveredInteractions": [
+    "Native alert zero/one/two fields, validation, single-activation save, cancel and destructive callbacks.",
+    "Context preview, disabled action, nested submenu and palette action callback/dismissal.",
+    "Stacked sheets preserve underlying content state and invoke presenter dismissal callback.",
+    "Share sheet/popover open and cancel in light/dark without sending.",
+    "Dark RTL alert and form automated audits: descriptions, traits, hit regions and clipping.",
+    "Native alert title responds to preferred accessibility content size."
+  ],
+  "limitations": [
+    "iPhone real-HID driver failed its two-field assertion (name observed uppercase, secure field still empty); keyboard flow remains unresolved.",
+    "Manual VoiceOver, physical-device and minimum OS26 runtime validation remain pending; these simulator runs use27.2.",
+    "Full dark/RTL/large-text and anchor-placement matrices, interactive dismissal and long localized content remain pending.",
+    "Share destination activation, successful/error completion and real external sharing are not exercised.",
+    "Automated audits and preview captures do not establish exhaustive fidelity or assistive-technology behavior.",
+    "No Figma source links were saved or removed. React remains active; native activation is deferred."
+  ],
+  "initialFailures": [
+    "XCTest named-key injection did not reliably dispatch Return/Escape; actual HID passed on iPad. Discarded unnecessary experimental UIKit adapter.",
+    "A field-height growth assertion failed because UIKit retains35pt iPad alert input rows. Corrected assertion measures native title text; actual system-size measurements independently confirm title/message scaling.",
+    "The concurrent iPad suite had one switch-state fixture failure. The final retry waits for the actual state change; both suite and retry summaries are retained."
+  ],
+  "previews": {
+    "coverage/previews/native/iphone-native-activity.png": {
+      "test": "CatalogueUITests/testNativeActivityPresentsAndCancelsWithoutSending()",
+      "attachment": "Native activity presentation_0_CA41F8CF-B9C9-436A-AF05-5EA2452304D3.png",
+      "source": "C2D81563-C0F9-48B6-AEC3-2E075D277E2B.png"
+    },
+    "coverage/previews/native/iphone-native-context-menu.png": {
+      "test": "CatalogueUITests/testNativeContextMenuUsesPreviewDisabledActionsAndSubmenus()",
+      "attachment": "Native context menu with preview_0_5EC3420A-2C21-475E-B55B-975B667E0642.png",
+      "source": "071A3D03-6A4D-43E4-A126-E1E2FABDE793.png"
+    },
+    "coverage/previews/native/iphone-native-stacked-sheets.png": {
+      "test": "CatalogueUITests/testNativePageSheetStacksAndRestoresItsPresenter()",
+      "attachment": "Native stacked page sheets_0_1D1B5D5A-F1F3-4DE7-9757-653F034C6E2D.png",
+      "source": "630E7EA7-5A93-4216-8595-A6FD3E07A9C8.png"
+    },
+    "coverage/previews/native/iphone-native-alert-dark.png": {
+      "test": "CatalogueUITests/testNativePresentationsAdaptToDarkRTLAndLargeText()",
+      "attachment": "Native dark RTL alert with accessibility text_0_E9D42A0D-761A-4D1D-88B3-3D399F9FC46D.png",
+      "source": "87BCE00B-2ADF-4A83-9DFA-B6C61235F206.png"
+    },
+    "coverage/previews/native/ipad-native-activity.png": {
+      "test": "CatalogueUITests/testNativeActivityPresentsAndCancelsWithoutSending()",
+      "attachment": "Native activity presentation_0_3DE883AE-59F7-446F-8F0F-D79105BADDCD.png",
+      "source": "AE43DA66-8588-4C4E-9D8F-3C31066E40A9.png"
+    },
+    "coverage/previews/native/ipad-native-context-menu.png": {
+      "test": "CatalogueUITests/testNativeContextMenuUsesPreviewDisabledActionsAndSubmenus()",
+      "attachment": "Native context menu with preview_0_322EF47C-027D-4B51-B320-74C14C1816F1.png",
+      "source": "8A40C061-E819-4165-932A-2078C3C15CF5.png"
+    },
+    "coverage/previews/native/ipad-native-stacked-sheets.png": {
+      "test": "CatalogueUITests/testNativePageSheetStacksAndRestoresItsPresenter()",
+      "attachment": "Native stacked page sheets_0_33CEF5F1-13C1-4D66-ABF5-E76BC0442CF5.png",
+      "source": "CBC6442C-92F7-4F00-A22F-84EB97CA4AF3.png"
+    },
+    "coverage/previews/native/ipad-native-alert-dark.png": {
+      "test": "CatalogueUITests/testNativePresentationsAdaptToDarkRTLAndLargeText()",
+      "attachment": "Native dark RTL alert with accessibility text_0_21F64343-1D16-414B-97F2-5CC0DCC38D6D.png",
+      "source": "A03B787E-68FB-406A-9FF7-050A2F8A36AC.png"
+    }
+  },
+  "sourceHashes": {
+    "native/apple/Sources/WardoDesignSystem/NativePresentation.swift": "225f775e1b11c6700eb2fb27e540304cca32ab81786b7c7705c65507fcb5d0e2",
+    "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift": "000136f2ee52cdc154d4e2baf9d436c773ae235f16675107622729510abaaef2",
+    "native/apple/Sample/CatalogueApp.swift": "8a72d6c50499acb4d08cc35e7d0a1eb61237cba67df38e2f4c275e2c254644c5",
+    "native/apple/Sample/WardoCatalogueUITests/CatalogueUITests.swift": "a432eb3dc1be179358864d825e86b33debbaf6c86d42965efc59015d7f47eb87",
+    "native/apple/Sample/Scripts/check-alert-keyboard.mjs": "59b0a72dd037c97e4c8118b22032d62c528ffd5581a96d164f500e2b14e69d3b"
+  },
+  "visualReview": {
+    "result": "reviewed-with-gaps",
+    "details": "Reviewed source native alert/context/activity/sheet specimens and iPhone/iPad captures. Source sheet confirmation arrow and native grabber/stacking retained. Native share destinations differ with OS data; they are not fixed illustration assets. Exhaustive adaptive-anchor and appearance matrices remain pending."
+  }
+}

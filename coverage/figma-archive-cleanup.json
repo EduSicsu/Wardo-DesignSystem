@@ -1,0 +1,1559 @@
+{
+  "date": "2026-11-09",
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "authorization": "User explicitly requested deletion of archived components from Figma.",
+  "status": "partial-cleanup-complete-active-dependencies-retained",
+  "toolbar": {
+    "page": {
+      "id": "1944:10355",
+      "name": "Archive · Toolbars"
+    },
+    "records": [
+      {
+        "id": "1531:21695",
+        "name": "Legacy / Toolbar / Shared",
+        "type": "COMPONENT_SET",
+        "componentCount": 10,
+        "instanceCount": 8,
+        "external": [
+          {
+            "id": "2395:173471",
+            "name": "Selection commands",
+            "pageId": "4:34",
+            "page": "    Navigation",
+            "masterId": "1531:21712"
+          },
+          {
+            "id": "2395:173405",
+            "name": "Selection commands",
+            "pageId": "4:34",
+            "page": "    Navigation",
+            "masterId": "1531:21712"
+          },
+          {
+            "id": "1832:14932",
+            "name": "Selection commands",
+            "pageId": "4:34",
+            "page": "    Navigation",
+            "masterId": "1531:21712"
+          },
+          {
+            "id": "1832:14747",
+            "name": "Selection commands",
+            "pageId": "4:34",
+            "page": "    Navigation",
+            "masterId": "1531:21712"
+          },
+          {
+            "id": "2395:173371",
+            "name": "Selection commands",
+            "pageId": "4:34",
+            "page": "    Navigation",
+            "masterId": "1531:21716"
+          },
+          {
+            "id": "2395:173438",
+            "name": "Selection commands",
+            "pageId": "4:34",
+            "page": "    Navigation",
+            "masterId": "1531:21716"
+          },
+          {
+            "id": "1832:14828",
+            "name": "Selection commands",
+            "pageId": "4:34",
+            "page": "    Navigation",
+            "masterId": "1531:21716"
+          },
+          {
+            "id": "1832:14635",
+            "name": "Selection commands",
+            "pageId": "4:34",
+            "page": "    Navigation",
+            "masterId": "1531:21716"
+          }
+        ]
+      },
+      {
+        "id": "1848:9580",
+        "name": "Legacy / Toolbar / Back",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 30,
+        "external": []
+      },
+      {
+        "id": "1848:9583",
+        "name": "Legacy / Toolbar / Search",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 24,
+        "external": [
+          {
+            "id": "2395:113085",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "2395:112999",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1967:115720",
+            "name": "Search icon",
+            "pageId": "1944:10354",
+            "page": "Toolbar internals",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1967:115735",
+            "name": "Search icon",
+            "pageId": "1944:10354",
+            "page": "Toolbar internals",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "2395:112944",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1850:35773",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "2395:113032",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "2395:112966",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1967:115740",
+            "name": "Search icon",
+            "pageId": "1944:10354",
+            "page": "Toolbar internals",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1850:35881",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1850:35827",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1967:115725",
+            "name": "Search icon",
+            "pageId": "1944:10354",
+            "page": "Toolbar internals",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1850:35854",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1967:115715",
+            "name": "Search icon",
+            "pageId": "1944:10354",
+            "page": "Toolbar internals",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1967:115730",
+            "name": "Search icon",
+            "pageId": "1944:10354",
+            "page": "Toolbar internals",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1850:35800",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "1850:35908",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          },
+          {
+            "id": "2395:113052",
+            "name": "Search icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9583"
+          }
+        ]
+      },
+      {
+        "id": "1848:9586",
+        "name": "Legacy / Toolbar / Close",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 9,
+        "external": [
+          {
+            "id": "I1967:115742;1531:25980",
+            "name": "Leading icon",
+            "pageId": "1944:10354",
+            "page": "Toolbar internals",
+            "masterId": "1848:9586"
+          }
+        ]
+      },
+      {
+        "id": "1848:9589",
+        "name": "Legacy / Toolbar / Microphone",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 9,
+        "external": [
+          {
+            "id": "I1967:115743;1531:25980",
+            "name": "Leading icon",
+            "pageId": "1944:10354",
+            "page": "Toolbar internals",
+            "masterId": "1848:9589"
+          },
+          {
+            "id": "I1967:115733;1531:25980",
+            "name": "Leading icon",
+            "pageId": "1944:10354",
+            "page": "Toolbar internals",
+            "masterId": "1848:9589"
+          },
+          {
+            "id": "I1967:115718;1531:25980",
+            "name": "Leading icon",
+            "pageId": "1944:10354",
+            "page": "Toolbar internals",
+            "masterId": "1848:9589"
+          }
+        ]
+      },
+      {
+        "id": "1848:9592",
+        "name": "Legacy / Toolbar / Filters",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 2,
+        "external": []
+      },
+      {
+        "id": "1848:9595",
+        "name": "Legacy / Toolbar / Check",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 7,
+        "external": []
+      },
+      {
+        "id": "1848:9598",
+        "name": "Legacy / Toolbar / Bookmark",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 20,
+        "external": [
+          {
+            "id": "1850:35729",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "1850:35724",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "1850:35714",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "2395:115763",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "1850:35709",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "2395:114981",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "2395:115773",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "2395:114975",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "2395:115753",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "2395:114993",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "1850:35659",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "2395:115768",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "1850:35719",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "1850:35653",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "1850:35641",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "1850:35635",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "1850:35647",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "2395:115758",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "2395:114987",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          },
+          {
+            "id": "2395:114969",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9598"
+          }
+        ]
+      },
+      {
+        "id": "1848:9601",
+        "name": "Legacy / Toolbar / BookmarkSelected",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 20,
+        "external": [
+          {
+            "id": "2395:115798",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "2395:115788",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "2395:115783",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "1850:35754",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "1850:35744",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "2395:115778",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "2395:115023",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "1850:35739",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "1850:35677",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "2395:115005",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "2395:115017",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "2395:114999",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "1850:35689",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "2395:115793",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "1850:35683",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "1850:35734",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "1850:35671",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "1850:35749",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "2395:115011",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          },
+          {
+            "id": "1850:35665",
+            "name": "Icon",
+            "pageId": "4:33",
+            "page": "    Inputs & selection",
+            "masterId": "1848:9601"
+          }
+        ]
+      },
+      {
+        "id": "1848:9604",
+        "name": "Legacy / Toolbar / More",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 55,
+        "external": []
+      },
+      {
+        "id": "1848:9607",
+        "name": "Legacy / Toolbar / Preview",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 55,
+        "external": []
+      },
+      {
+        "id": "1848:9610",
+        "name": "Legacy / Toolbar / Save",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 33,
+        "external": []
+      },
+      {
+        "id": "1848:9613",
+        "name": "Legacy / Toolbar / Plus",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 8,
+        "external": []
+      },
+      {
+        "id": "1848:9723",
+        "name": "Legacy / Toolbar / Top Action Group",
+        "type": "COMPONENT_SET",
+        "componentCount": 5,
+        "instanceCount": 1,
+        "external": []
+      },
+      {
+        "id": "1848:9817",
+        "name": "Legacy / Toolbar / Bottom Action Group",
+        "type": "COMPONENT_SET",
+        "componentCount": 4,
+        "instanceCount": 2,
+        "external": []
+      },
+      {
+        "id": "1848:9869",
+        "name": "Legacy / Toolbar / Spatial Action Group",
+        "type": "COMPONENT_SET",
+        "componentCount": 4,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "1848:9888",
+        "name": "Legacy / Toolbar / Title Block",
+        "type": "COMPONENT_SET",
+        "componentCount": 5,
+        "instanceCount": 5,
+        "external": []
+      },
+      {
+        "id": "1848:9896",
+        "name": "Legacy / Toolbar / Page Dot",
+        "type": "COMPONENT_SET",
+        "componentCount": 2,
+        "instanceCount": 209,
+        "external": []
+      },
+      {
+        "id": "1848:10341",
+        "name": "Legacy / Toolbar / Page Control",
+        "type": "COMPONENT_SET",
+        "componentCount": 35,
+        "instanceCount": 2,
+        "external": []
+      },
+      {
+        "id": "1848:10345",
+        "name": "Legacy / Toolbar / Sheet Grabber",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 5,
+        "external": []
+      },
+      {
+        "id": "1854:12269",
+        "name": "Legacy / Toolbar / Search Accessory",
+        "type": "COMPONENT_SET",
+        "componentCount": 2,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "1854:12307",
+        "name": "Legacy / Toolbar / Sheet Actions",
+        "type": "COMPONENT_SET",
+        "componentCount": 2,
+        "instanceCount": 10,
+        "external": []
+      },
+      {
+        "id": "1854:12588",
+        "name": "Legacy / Toolbar / Bottom Bar",
+        "type": "COMPONENT_SET",
+        "componentCount": 7,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "1854:12747",
+        "name": "Legacy / Toolbar / Sheet Header",
+        "type": "COMPONENT_SET",
+        "componentCount": 5,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "1856:11454",
+        "name": "Legacy / Toolbar / Surface",
+        "type": "COMPONENT_SET",
+        "componentCount": 22,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "1531:195428",
+        "name": "Top Navigation Bar",
+        "type": "COMPONENT_SET",
+        "componentCount": 46,
+        "instanceCount": 18,
+        "external": []
+      },
+      {
+        "id": "1531:195570",
+        "name": "Navigation / Adaptive Top Navigation Bar",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 1,
+        "external": [
+          {
+            "id": "1531:194249",
+            "name": "Navigation / Adaptive Top Navigation Bar",
+            "pageId": "4:34",
+            "page": "    Navigation",
+            "masterId": "1531:195570"
+          }
+        ]
+      },
+      {
+        "id": "1531:195572",
+        "name": "Android / Top App Bar",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "1531:195574",
+        "name": "iOS / Navigation Bar",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "1531:195576",
+        "name": "Web / Page Header",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "1531:198450",
+        "name": "Navigation / Adaptive Side Navigation",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 1,
+        "external": [
+          {
+            "id": "1531:194255",
+            "name": "Navigation / Adaptive Side Navigation",
+            "pageId": "4:34",
+            "page": "    Navigation",
+            "masterId": "1531:198450"
+          }
+        ]
+      },
+      {
+        "id": "1531:198452",
+        "name": "Android / Wide Navigation Rail",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "1531:198454",
+        "name": "iOS / Sidebar",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "1531:198458",
+        "name": "Web / Modal Drawer",
+        "type": "COMPONENT",
+        "componentCount": 1,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "2254:53748",
+        "name": "Tabs",
+        "type": "COMPONENT_SET",
+        "componentCount": 10,
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "2254:53867",
+        "name": "Primary tabs/Icon and label",
+        "type": "COMPONENT_SET",
+        "componentCount": 8,
+        "instanceCount": 17,
+        "external": []
+      },
+      {
+        "id": "2254:53936",
+        "name": "Primary tabs/Icon only",
+        "type": "COMPONENT_SET",
+        "componentCount": 8,
+        "instanceCount": 17,
+        "external": []
+      },
+      {
+        "id": "2254:53997",
+        "name": "Primary tabs/Label only",
+        "type": "COMPONENT_SET",
+        "componentCount": 8,
+        "instanceCount": 17,
+        "external": []
+      },
+      {
+        "id": "2254:54050",
+        "name": "Secondary tabs/Label only",
+        "type": "COMPONENT_SET",
+        "componentCount": 8,
+        "instanceCount": 17,
+        "external": []
+      },
+      {
+        "id": "2254:54099",
+        "name": "Secondary tabs/Icon and label",
+        "type": "COMPONENT_SET",
+        "componentCount": 8,
+        "instanceCount": 17,
+        "external": []
+      },
+      {
+        "id": "2824:42103",
+        "name": "Metadata Tag · Legacy masters",
+        "type": "COMPONENT_SET",
+        "componentCount": 4,
+        "instanceCount": 0,
+        "external": []
+      }
+    ]
+  },
+  "actions": {
+    "page": {
+      "id": "2017:8340",
+      "name": "Archive · Action Behavior"
+    },
+    "records": [
+      {
+        "id": "1531:23399",
+        "name": "Menu Interaction Demo",
+        "type": "COMPONENT_SET",
+        "instanceCount": 2,
+        "external": []
+      },
+      {
+        "id": "2772:43197",
+        "name": "Stacked card",
+        "type": "COMPONENT_SET",
+        "instanceCount": 0,
+        "external": []
+      },
+      {
+        "id": "2772:43270",
+        "name": "Horizontal card",
+        "type": "COMPONENT_SET",
+        "instanceCount": 0,
+        "external": []
+      }
+    ]
+  },
+  "deprecated": {
+    "id": "1531:22852",
+    "name": "Deprecated · Swipe Action Row",
+    "type": "COMPONENT_SET",
+    "description": "[Wardo navigation source audit · 2026-10-27]\nRole: Deprecated\nPresentation: Historical source\nPlatforms: iOS, iPadOS\nPreserve existing references; use the recommended replacement for new designs.\nRecommended source: https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2193-37840\nCoverage index: https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2511-18990\n[End Wardo navigation source audit]\n\nSuperseded by Row with Swipe Actions (2193:37840). Kept to preserve existing instance references; use the iOS row variants for new work.",
+    "references": []
+  },
+  "graph": [
+    {
+      "id": "1531:21695",
+      "usedByArchived": []
+    },
+    {
+      "id": "1848:9580",
+      "usedByArchived": [
+        "1531:195428",
+        "1854:12588",
+        "1848:9723",
+        "1854:12269"
+      ]
+    },
+    {
+      "id": "1848:9583",
+      "usedByArchived": [
+        "1854:12588",
+        "1854:12269"
+      ]
+    },
+    {
+      "id": "1848:9586",
+      "usedByArchived": [
+        "1854:12747",
+        "1854:12307",
+        "1854:12588"
+      ]
+    },
+    {
+      "id": "1848:9589",
+      "usedByArchived": [
+        "1854:12588",
+        "1854:12269"
+      ]
+    },
+    {
+      "id": "1848:9592",
+      "usedByArchived": [
+        "1854:12588",
+        "1854:12269"
+      ]
+    },
+    {
+      "id": "1848:9595",
+      "usedByArchived": [
+        "1854:12747",
+        "1854:12307",
+        "1854:12588"
+      ]
+    },
+    {
+      "id": "1848:9598",
+      "usedByArchived": []
+    },
+    {
+      "id": "1848:9601",
+      "usedByArchived": []
+    },
+    {
+      "id": "1848:9604",
+      "usedByArchived": [
+        "1531:195428",
+        "1856:11454",
+        "1854:12588",
+        "1848:9723",
+        "1848:9869",
+        "1848:9817"
+      ]
+    },
+    {
+      "id": "1848:9607",
+      "usedByArchived": [
+        "1531:195428",
+        "1856:11454",
+        "1848:9869",
+        "1854:12588",
+        "1848:9723",
+        "1848:9817"
+      ]
+    },
+    {
+      "id": "1848:9610",
+      "usedByArchived": [
+        "1856:11454",
+        "1848:9723",
+        "1848:9869",
+        "1854:12588",
+        "1848:9817"
+      ]
+    },
+    {
+      "id": "1848:9613",
+      "usedByArchived": [
+        "1856:11454"
+      ]
+    },
+    {
+      "id": "1848:9723",
+      "usedByArchived": [
+        "1854:12588"
+      ]
+    },
+    {
+      "id": "1848:9817",
+      "usedByArchived": [
+        "1854:12588"
+      ]
+    },
+    {
+      "id": "1848:9869",
+      "usedByArchived": []
+    },
+    {
+      "id": "1848:9888",
+      "usedByArchived": [
+        "1854:12747"
+      ]
+    },
+    {
+      "id": "1848:9896",
+      "usedByArchived": [
+        "1848:10341",
+        "1854:12588"
+      ]
+    },
+    {
+      "id": "1848:10341",
+      "usedByArchived": [
+        "1854:12588"
+      ]
+    },
+    {
+      "id": "1848:10345",
+      "usedByArchived": [
+        "1854:12747"
+      ]
+    },
+    {
+      "id": "1854:12269",
+      "usedByArchived": []
+    },
+    {
+      "id": "1854:12307",
+      "usedByArchived": [
+        "1854:12747"
+      ]
+    },
+    {
+      "id": "1854:12588",
+      "usedByArchived": []
+    },
+    {
+      "id": "1854:12747",
+      "usedByArchived": []
+    },
+    {
+      "id": "1856:11454",
+      "usedByArchived": []
+    },
+    {
+      "id": "1531:195428",
+      "usedByArchived": [
+        "1531:195570",
+        "1531:195572",
+        "1531:195574",
+        "1531:195576"
+      ]
+    },
+    {
+      "id": "1531:195570",
+      "usedByArchived": []
+    },
+    {
+      "id": "1531:195572",
+      "usedByArchived": []
+    },
+    {
+      "id": "1531:195574",
+      "usedByArchived": []
+    },
+    {
+      "id": "1531:195576",
+      "usedByArchived": []
+    },
+    {
+      "id": "1531:198450",
+      "usedByArchived": []
+    },
+    {
+      "id": "1531:198452",
+      "usedByArchived": []
+    },
+    {
+      "id": "1531:198454",
+      "usedByArchived": []
+    },
+    {
+      "id": "1531:198458",
+      "usedByArchived": []
+    },
+    {
+      "id": "2254:53748",
+      "usedByArchived": []
+    },
+    {
+      "id": "2254:53867",
+      "usedByArchived": [
+        "2254:53748"
+      ]
+    },
+    {
+      "id": "2254:53936",
+      "usedByArchived": [
+        "2254:53748"
+      ]
+    },
+    {
+      "id": "2254:53997",
+      "usedByArchived": [
+        "2254:53748"
+      ]
+    },
+    {
+      "id": "2254:54050",
+      "usedByArchived": [
+        "2254:53748"
+      ]
+    },
+    {
+      "id": "2254:54099",
+      "usedByArchived": [
+        "2254:53748"
+      ]
+    },
+    {
+      "id": "2824:42103",
+      "usedByArchived": []
+    }
+  ],
+  "retainedIds": [
+    "1531:21695",
+    "1848:9583",
+    "1848:9586",
+    "1848:9589",
+    "1848:9598",
+    "1848:9601",
+    "1531:195570",
+    "1531:198450",
+    "1531:195428",
+    "1848:9580",
+    "1848:9604",
+    "1848:9607"
+  ],
+  "plannedRemovals": [
+    "1848:9592",
+    "1848:9595",
+    "1848:9610",
+    "1848:9613",
+    "1848:9723",
+    "1848:9817",
+    "1848:9869",
+    "1848:9888",
+    "1848:9896",
+    "1848:10341",
+    "1848:10345",
+    "1854:12269",
+    "1854:12307",
+    "1854:12588",
+    "1854:12747",
+    "1856:11454",
+    "1531:195572",
+    "1531:195574",
+    "1531:195576",
+    "1531:198452",
+    "1531:198454",
+    "1531:198458",
+    "2254:53748",
+    "2254:53867",
+    "2254:53936",
+    "2254:53997",
+    "2254:54050",
+    "2254:54099",
+    "2824:42103",
+    "1531:23399",
+    "2772:43197",
+    "2772:43270",
+    "1531:22852"
+  ],
+  "deletedIds": [
+    "1531:195572",
+    "1531:195574",
+    "1531:195576",
+    "1531:198452",
+    "1531:198454",
+    "1531:198458",
+    "1848:9592",
+    "1848:9595",
+    "1848:9610",
+    "1848:9613",
+    "1848:10341",
+    "2254:53867",
+    "2254:53936",
+    "2254:53997",
+    "2254:54050",
+    "2254:54099",
+    "1848:9723",
+    "1848:9817",
+    "1848:9869",
+    "1848:9888",
+    "1848:9896",
+    "1848:10345",
+    "1854:12269",
+    "1854:12307",
+    "1854:12588",
+    "1854:12747",
+    "1856:11454",
+    "2254:53748",
+    "2824:42103",
+    "1531:23399",
+    "2772:43197",
+    "2772:43270",
+    "1531:22852"
+  ],
+  "results": {
+    "toolbar": {
+      "removedCount": 29,
+      "removedIds": [
+        "1531:195572",
+        "1531:195574",
+        "1531:195576",
+        "1531:198452",
+        "1531:198454",
+        "1531:198458",
+        "1848:9592",
+        "1848:9595",
+        "1848:9610",
+        "1848:9613",
+        "1848:10341",
+        "2254:53867",
+        "2254:53936",
+        "2254:53997",
+        "2254:54050",
+        "2254:54099",
+        "1848:9723",
+        "1848:9817",
+        "1848:9869",
+        "1848:9888",
+        "1848:9896",
+        "1848:10345",
+        "1854:12269",
+        "1854:12307",
+        "1854:12588",
+        "1854:12747",
+        "1856:11454",
+        "2254:53748",
+        "2824:42103"
+      ],
+      "skippedIds": [],
+      "remaining": [
+        "1848:9592",
+        "1848:9595",
+        "1848:9610",
+        "1848:9613",
+        "1848:9723",
+        "1848:9817",
+        "1848:9869",
+        "1848:9888",
+        "1848:9896",
+        "1848:10341",
+        "1848:10345",
+        "1854:12269",
+        "1854:12307",
+        "1854:12588",
+        "1854:12747",
+        "1856:11454",
+        "1531:195572",
+        "1531:195574",
+        "1531:195576",
+        "1531:198452",
+        "1531:198454",
+        "1531:198458",
+        "2254:53748",
+        "2254:53867",
+        "2254:53936",
+        "2254:53997",
+        "2254:54050",
+        "2254:54099",
+        "2824:42103"
+      ],
+      "retainedIds": [
+        "1531:21695",
+        "1848:9583",
+        "1848:9586",
+        "1848:9589",
+        "1848:9598",
+        "1848:9601",
+        "1531:195570",
+        "1531:198450",
+        "1531:195428",
+        "1848:9580",
+        "1848:9604",
+        "1848:9607"
+      ]
+    },
+    "actions": {
+      "removedCount": 3,
+      "removedIds": [
+        "1531:23399",
+        "2772:43197",
+        "2772:43270"
+      ],
+      "skippedIds": [],
+      "remainingPublishedMasters": [
+        {
+          "id": "2789:78213",
+          "name": ".Archive / Content Card · original Appearance and direction",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "2772:43316",
+          "name": ".Building Blocks/Card states/Outlined",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "2772:43328",
+          "name": ".Building Blocks/Card states/Elevated",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "2772:43340",
+          "name": ".Building Blocks/Card states/Filled",
+          "type": "COMPONENT_SET"
+        }
+      ]
+    },
+    "deprecated": {
+      "removedCount": 1,
+      "removedIds": [
+        "1531:22852"
+      ],
+      "skippedIds": [],
+      "stillOnPage": false
+    },
+    "toolbarAfter": {
+      "pageId": "1944:10355",
+      "masters": [
+        {
+          "id": "1531:21695",
+          "name": "Legacy / Toolbar / Shared",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "1848:9580",
+          "name": "Legacy / Toolbar / Back",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "1848:9583",
+          "name": "Legacy / Toolbar / Search",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "1848:9586",
+          "name": "Legacy / Toolbar / Close",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "1848:9589",
+          "name": "Legacy / Toolbar / Microphone",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "1848:9598",
+          "name": "Legacy / Toolbar / Bookmark",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "1848:9601",
+          "name": "Legacy / Toolbar / BookmarkSelected",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "1848:9604",
+          "name": "Legacy / Toolbar / More",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "1848:9607",
+          "name": "Legacy / Toolbar / Preview",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "1531:195428",
+          "name": "Top Navigation Bar",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "1531:195525",
+          "name": ".Top Navigation Bar / Scenario prototype",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "1531:195570",
+          "name": "Navigation / Adaptive Top Navigation Bar",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "1531:198425",
+          "name": ".Side Navigation / Modal content",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "1531:198427",
+          "name": ".Side Navigation / Disclosure and drawer prototype",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "1531:198450",
+          "name": "Navigation / Adaptive Side Navigation",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "1531:200147",
+          "name": ".Tabs / Panel prototype",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "1531:200183",
+          "name": ".Tabs / Scrollable long-label specimen",
+          "type": "COMPONENT"
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Twelve published archive masters remain because active designs directly or transitively use them. Replace active references before deleting them.",
+    "Additional hidden archive-page masters require the same dependency review.",
+    "Figma saved/published connection counter has not been re-observed after cleanup."
+  ],
+  "hiddenPrototypeDeletions": {
+    "removedCount": 2,
+    "removedIds": [
+      "1531:200147",
+      "1531:200183"
+    ],
+    "skippedIds": [],
+    "stillOnPage": []
+  },
+  "hiddenPrototypeAudit": [
+    {
+      "id": "1531:200147",
+      "name": ".Tabs / Panel prototype",
+      "references": [
+        {
+          "id": "1531:200072",
+          "name": "Interactive tabs",
+          "pageId": "1944:10355",
+          "owners": []
+        },
+        {
+          "id": "1531:200077",
+          "name": "Focused Schedule, selected Overview",
+          "pageId": "1944:10355",
+          "owners": []
+        },
+        {
+          "id": "1531:200083",
+          "name": "Unavailable panel",
+          "pageId": "1944:10355",
+          "owners": []
+        }
+      ]
+    },
+    {
+      "id": "1531:200183",
+      "name": ".Tabs / Scrollable long-label specimen",
+      "references": [
+        {
+          "id": "1531:200088",
+          "name": "Horizontally scrollable tabs",
+          "pageId": "1944:10355",
+          "owners": []
+        }
+      ]
+    }
+  ],
+  "hiddenToolbarDependencies": [
+    {
+      "id": "1531:195525",
+      "name": ".Top Navigation Bar / Scenario prototype",
+      "external": [],
+      "dependencies": [
+        "1531:195428",
+        "1531:203333",
+        "1531:25362",
+        "1531:194151",
+        "2397:138274",
+        "1531:193661",
+        "1531:193641",
+        "2975:52788",
+        "1531:193710",
+        "1531:193657",
+        "2975:52790",
+        "1543:62893",
+        "1531:44461"
+      ]
+    },
+    {
+      "id": "1531:198425",
+      "name": ".Side Navigation / Modal content",
+      "external": [],
+      "dependencies": [
+        "1531:198263",
+        "1531:203333",
+        "1531:25362",
+        "1531:194151",
+        "1531:203231",
+        "1159:29",
+        "1531:203110",
+        "1159:34",
+        "1159:39",
+        "1159:44",
+        "1543:69450",
+        "1531:193645",
+        "2975:52796",
+        "1531:203118"
+      ]
+    },
+    {
+      "id": "1531:198427",
+      "name": ".Side Navigation / Disclosure and drawer prototype",
+      "external": [],
+      "dependencies": [
+        "1531:203333",
+        "1531:25362",
+        "1531:194151",
+        "1531:198263",
+        "1531:203231",
+        "1159:29",
+        "1531:203110",
+        "1159:34",
+        "1159:39",
+        "1159:44",
+        "1543:69450",
+        "1531:193645",
+        "2975:52796",
+        "1531:203118",
+        "1543:69448",
+        "1531:198425"
+      ]
+    },
+    {
+      "id": "1531:200147",
+      "name": ".Tabs / Panel prototype",
+      "external": [],
+      "dependencies": [
+        "2306:12059"
+      ]
+    },
+    {
+      "id": "1531:200183",
+      "name": ".Tabs / Scrollable long-label specimen",
+      "external": [],
+      "dependencies": [
+        "2306:12059"
+      ]
+    }
+  ]
+}

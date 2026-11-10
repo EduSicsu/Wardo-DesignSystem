@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-10",
+  "nodes": [
+    "2396:18524",
+    "2397:138274"
+  ],
+  "scope": "Reusable app search components only; no documentation, example screens or watchOS coverage targets. Sample applications are development fixtures.",
+  "designContracts": [
+    "coverage/design-context/sidebar-search.json",
+    "coverage/design-context/navigation-search.json"
+  ],
+  "assets": [
+    "coverage/sidebar-search-assets.json",
+    "coverage/navigation-search-assets.json"
+  ],
+  "implementationChanges": [
+    "New WardoSidebarSearchField owns no application state beyond native focus. Query, submit and voice-search callbacks belong to the consuming iOS/iPadOS application.",
+    "Native source artwork is bundled in universal template image sets; existing Wardo font and semantic color tokens are reused.",
+    "SearchField navigation presentation retains an accessible hidden label and exact intrinsic 20px source artwork. Canonical 320 by 48 control geometry and icon centers match the Figma specimen.",
+    "TextField direction now applies to its labelled wrapper and native input, so leading and trailing controls mirror together.",
+    "Catalogue separates the saved React source link from a SwiftUI implementation even with no platform filter."
+  ],
+  "checks": [
+    {
+      "name": "iPhone UI interactions",
+      "result": "passed",
+      "tests": 2,
+      "evidence": "coverage/evidence/2026-11-10/sidebar-search-iphone-tests.json"
+    },
+    {
+      "name": "iPad UI interactions",
+      "result": "passed",
+      "tests": 2,
+      "evidence": "coverage/evidence/2026-11-10/sidebar-search-ipad-tests.json"
+    },
+    {
+      "name": "Apple package compatibility",
+      "result": "passed",
+      "tests": 13,
+      "command": "DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --package-path native/apple --scratch-path /tmp/wardo-search-swiftpm"
+    },
+    {
+      "name": "Web source and builds",
+      "result": "passed",
+      "unitTests": 43,
+      "command": "npm run check"
+    },
+    {
+      "name": "Desktop/mobile search and catalogue browser checks",
+      "result": "passed",
+      "checks": 16,
+      "command": "npx playwright test tests/browser/search-fields.spec.ts tests/browser/coverage.spec.ts",
+      "browserPath": "Browser plugin not available; repository Playwright Chromium used.",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 1000
+        },
+        {
+          "width": 390,
+          "height": 844
+        }
+      ],
+      "coverage": [
+        "page identity and nonblank UI",
+        "no page or console errors",
+        "native-versus-React mapping separation",
+        "native sample images load",
+        "320x48 baseline and 20x20 artwork slots",
+        "44px clear target",
+        "keyboard submit, clear and focus restoration",
+        "controlled value and empty placeholder",
+        "RTL physical order",
+        "light and dark appearance",
+        "200% text without horizontal scroll",
+        "automated WCAG 2/2.1 A/AA checks on the search form"
+      ]
+    },
+    {
+      "name": "Visual review",
+      "result": "passed-with-native-review-pending",
+      "details": "Web LTR and dark RTL captures reviewed against the source render, preserving artwork and geometry. iPhone/iPad dark larger-text captures reviewed for layout, image rendering and clipping; exhaustive native specimen fidelity remains pending."
+    }
+  ],
+  "nativeGeometryAccommodation": "A 44x44 microphone hit target moves its center 2.5pt inward from the static sidebar specimen. Its actual artwork remains 17x22. Both search assets remain 21x22.",
+  "limitations": [
+    "No Figma source links were changed; remaining Lucide saves and example-link cleanup remain deferred.",
+    "Native manual VoiceOver, hardware-keyboard behavior, long localized queries and complete light/dark source-specimen comparison are pending. Native entry remains validation pending.",
+    "Web checks exercise Chromium on two viewport sizes; manual assistive-technology speech output and other browser engines were not exercised.",
+    "This review does not validate other SearchField sizes, toolbar presentations, visionOS search or shared internal masters."
+  ],
+  "initialFailures": [
+    "The older simulator records pointed to missing device data. Fresh dedicated devices were created; no existing devices were erased.",
+    "First native tests tapped switch labels rather than knobs. Existing state-verifying switch helper fixed the fixtures; final iPhone and iPad tests passed.",
+    "First web submission assertion was ambiguous between two status roles; scoped to submission text.",
+    "Web RTL test caught a real wrapper-direction bug, now fixed.",
+    "At 200% mobile text, the development example heading overflowed; fixture text now wraps.",
+    "One web unit test exceeded its default timeout while fresh native simulators and browsers ran concurrently; the subsequent complete check passed all 43 tests.",
+    "The first CSS edit targeted the generated stylesheet; the build regenerated it. Moved the edit into components.css, rebuilt, then reran browser checks sequentially. The browser regression now also checks the hidden label.",
+    "Five unpublished native-presentation overrides had been included in the local implementation total. Restored their published pending records and retained the working metadata separately. Published and local catalogue counts now agree at 167 implemented, 13 validated, 549 unresolved."
+  ],
+  "sourceHashes": {
+    "native/apple/Sources/WardoDesignSystem/SidebarSearchField.swift": "4d152d2179a6a6b359d67186c685923b251eed941d12b204d783059b66447a6e",
+    "src/components/TextField.tsx": "f1e32af005f983faa7fb095ab186f988667922314e0c8a7f421706d1bab5d83c",
+    "src/components/ArtworkIcon.tsx": "b12c34d8f023899c7bbc73546040d6a324e754984c05329bf22d8d3e952b8427",
+    "src/styles/styles.css": "223ad40b7089de3af2ee509e1dfd8e4adc98d59807b009e027840d5de675dba6",
+    "src/styles/components.css": "fa0444ab205604be3828caf65c1ffeb0d0a42b1d72d295acdbd7960f62d21fd8"
+  }
+}

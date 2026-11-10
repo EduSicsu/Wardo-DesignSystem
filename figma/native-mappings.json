@@ -7,9 +7,11 @@
       "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
       "framework": "SwiftUI",
       "status": "deferred-by-owner",
-      "nativeBuild": "deferred-by-owner",
+      "nativeBuild": "package-build-passed",
       "activation": "Owner chose to keep React active and defer native connections after the Professional plan rejection",
-      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks.",
+      "buildEvidence": "coverage/evidence/2026-11-08/family-checks.json",
+      "implementationValidation": "pending-per-entry-review"
     },
     {
       "nodeId": "2773:44195",
@@ -18,9 +20,11 @@
       "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
       "framework": "SwiftUI",
       "status": "deferred-by-owner",
-      "nativeBuild": "deferred-by-owner",
+      "nativeBuild": "package-build-passed",
       "activation": "Owner chose to keep React active and defer native connections after the Professional plan rejection",
-      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks.",
+      "buildEvidence": "coverage/evidence/2026-11-08/family-checks.json",
+      "implementationValidation": "pending-per-entry-review"
     },
     {
       "nodeId": "2773:44204",
@@ -29,31 +33,37 @@
       "source": "native/apple/Sources/WardoDesignSystem/NativeActivityView.swift",
       "framework": "SwiftUI",
       "status": "deferred-by-owner",
-      "nativeBuild": "deferred-by-owner",
+      "nativeBuild": "package-build-passed",
       "activation": "Owner chose to keep React active and defer native connections after the Professional plan rejection",
-      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks.",
+      "buildEvidence": "coverage/evidence/2026-11-08/family-checks.json",
+      "implementationValidation": "pending-per-entry-review"
     },
     {
       "nodeId": "2773:43627",
       "designName": "Native / iOS-iPadOS 26 / Context Menu",
-      "componentName": "NativeContextMenuModifier",
+      "componentName": "NativeContextMenuPreviewModifier",
       "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
       "framework": "SwiftUI",
       "status": "deferred-by-owner",
-      "nativeBuild": "deferred-by-owner",
+      "nativeBuild": "package-build-passed",
       "activation": "Owner chose to keep React active and defer native connections after the Professional plan rejection",
-      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks.",
+      "buildEvidence": "coverage/evidence/2026-11-08/family-checks.json",
+      "implementationValidation": "pending-per-entry-review"
     },
     {
       "nodeId": "2773:43481",
       "designName": "Native / iOS-iPadOS 26 / Sheet - Full Screen - iPhone",
-      "componentName": "NativeFullScreenSheetModifier",
+      "componentName": "NativePageSheetModifier",
       "source": "native/apple/Sources/WardoDesignSystem/NativePresentation.swift",
       "framework": "SwiftUI",
       "status": "deferred-by-owner",
-      "nativeBuild": "deferred-by-owner",
+      "nativeBuild": "package-build-passed",
       "activation": "Owner chose to keep React active and defer native connections after the Professional plan rejection",
-      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks.",
+      "buildEvidence": "coverage/evidence/2026-11-08/family-checks.json",
+      "implementationValidation": "pending-per-entry-review"
     },
     {
       "nodeId": "2578:56814",
@@ -62,9 +72,11 @@
       "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
       "framework": "SwiftUI",
       "status": "deferred-by-owner",
-      "nativeBuild": "deferred-by-owner",
+      "nativeBuild": "package-build-passed",
       "activation": "Owner chose to keep React active and defer native connections after the Professional plan rejection",
-      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks.",
+      "buildEvidence": "coverage/evidence/2026-11-08/family-checks.json",
+      "implementationValidation": "pending-per-entry-review"
     },
     {
       "nodeId": "2578:56816",
@@ -73,9 +85,11 @@
       "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
       "framework": "SwiftUI",
       "status": "deferred-by-owner",
-      "nativeBuild": "deferred-by-owner",
+      "nativeBuild": "package-build-passed",
       "activation": "Owner chose to keep React active and defer native connections after the Professional plan rejection",
-      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks.",
+      "buildEvidence": "coverage/evidence/2026-11-08/family-checks.json",
+      "implementationValidation": "pending-per-entry-review"
     },
     {
       "nodeId": "2578:56818",
@@ -84,9 +98,11 @@
       "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
       "framework": "SwiftUI",
       "status": "deferred-by-owner",
-      "nativeBuild": "deferred-by-owner",
+      "nativeBuild": "package-build-passed",
       "activation": "Owner chose to keep React active and defer native connections after the Professional plan rejection",
-      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks.",
+      "buildEvidence": "coverage/evidence/2026-11-08/family-checks.json",
+      "implementationValidation": "pending-per-entry-review"
     },
     {
       "nodeId": "2578:56820",
@@ -95,10 +111,28 @@
       "source": "native/apple/Sources/WardoDesignSystem/SystemIcon.swift",
       "framework": "SwiftUI",
       "status": "deferred-by-owner",
-      "nativeBuild": "deferred-by-owner",
+      "nativeBuild": "package-build-passed",
       "activation": "Owner chose to keep React active and defer native connections after the Professional plan rejection",
-      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks."
+      "verification": "Native Alert briefly showed an optimistic 199 count, then reverted to Not connected and 198. Figma reported: Code Connect is set up for React. Upgrade your plan for more frameworks.",
+      "buildEvidence": "coverage/evidence/2026-11-08/family-checks.json",
+      "implementationValidation": "pending-per-entry-review"
+    },
+    {
+      "nodeId": "2396:18524",
+      "designName": "Sidebar Search Field",
+      "componentName": "WardoSidebarSearchField",
+      "source": "native/apple/Sources/WardoDesignSystem/SidebarSearchField.swift",
+      "framework": "SwiftUI",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "status": "deferred-by-owner",
+      "nativeBuild": "iPhone-iPad-and-macOS-package-builds-passed",
+      "activation": "React remains active; native Figma connection deferred. Independent catalogue resolves the native implementation.",
+      "buildEvidence": "coverage/evidence/2026-11-10/search-family-review.json",
+      "implementationValidation": "manual-native-accessibility-and-complete-specimen-review-pending"
     }
   ],
-  "note": "Native connections and builds are deferred by the owner. Native source modules are saved, with implementation/visual gaps documented in native/README.md. No native connection is counted as saved."
+  "note": "Native Figma connections remain deferred while React is active. Native package builds and sample runtime checks are now included; implementation, variants and per-entry validation remain tracked independently in coverage/registry.json. No native Figma connection is counted as saved."
 }

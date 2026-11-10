@@ -19,8 +19,11 @@ public struct NativeContextMenuModifier<Items: View>: ViewModifier {
 public struct NativeSheetModifier<SheetContent: View>: ViewModifier {
     @Binding private var presented: Bool
     private let sheet: () -> SheetContent
-    public init(isPresented: Binding<Bool>, @ViewBuilder content: @escaping () -> SheetContent) { _presented = isPresented; sheet = content }
-    public func body(content: Content) -> some View { content.sheet(isPresented: $presented) { sheet() } }
+    private let onDismiss: (() -> Void)?
+    public init(isPresented: Binding<Bool>, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> SheetContent) {
+        _presented = isPresented; self.onDismiss = onDismiss; sheet = content
+    }
+    public func body(content: Content) -> some View { content.sheet(isPresented: $presented, onDismiss: onDismiss) { sheet() } }
 }
 
 #if os(iOS) || os(visionOS)
@@ -46,3 +49,35 @@ public struct NativeTooltip<Content: View>: View {
     public init(_ text: String, @ViewBuilder content: () -> Content) { self.text = text; self.content = content() }
     public var body: some View { content.help(text).accessibilityHint(text) }
 }
+
+/// The system chooses the menu's side and orientation from its anchor and available space.
+/// Supply native Buttons, Menus and Sections so roles, disabled state and shortcuts survive.
+public struct NativeContextMenuPreviewModifier<Items: View, Preview: View>: ViewModifier {
+    private let items: () -> Items
+    private let preview: () -> Preview
+    public init(@ViewBuilder items: @escaping () -> Items, @ViewBuilder preview: @escaping () -> Preview) {
+        self.items = items; self.preview = preview
+    }
+    public func body(content: Content) -> some View {
+        content.contextMenu(menuItems: items, preview: preview)
+    }
+}
+
+#if os(iOS)
+/// A large, rounded, dismissible page sheet. Unlike a fullScreenCover it retains
+/// the native grabber and stacked presentation of the iPhone design reference.
+/// Present another instance from the sheet's content to express Stacked=True.
+public struct NativePageSheetModifier<SheetContent: View>: ViewModifier {
+    @Binding private var presented: Bool
+    private let onDismiss: (() -> Void)?
+    private let sheet: () -> SheetContent
+    public init(isPresented: Binding<Bool>, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> SheetContent) {
+        _presented = isPresented; self.onDismiss = onDismiss; sheet = content
+    }
+    public func body(content: Content) -> some View {
+        content.sheet(isPresented: $presented, onDismiss: onDismiss) {
+            sheet().presentationDetents([.large]).presentationDragIndicator(.visible)
+        }
+    }
+}
+#endif

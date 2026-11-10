@@ -1,3 +1,12 @@
+import buttonPlus from '../icons/actions/button-plus.svg';
+import inputSearch from '../icons/inputs/search.svg';
+import inputClear from '../icons/inputs/clear.svg';
+import sidebarLeft from '../icons/sidebar-left.svg';
+import toolbar4 from '../icons/toolbar-trash-2.svg';
+import toolbar3 from '../icons/toolbar-archive.svg';
+import toolbar2 from '../icons/toolbar-circle-ellipsis.svg';
+import toolbar1 from '../icons/toolbar-eye.svg';
+import toolbar0 from '../icons/toolbar-save-all.svg';
 import type { HTMLAttributes } from 'react';
 import svg0 from '../icons/menu-chevron-right.svg';
 import svg1 from '../icons/menu-check.svg';
@@ -11,6 +20,7 @@ import document from '../icons/tree-document.svg';
 import disclosureLTR from '../icons/tree-disclosure-ltr.svg';
 import disclosureRTL from '../icons/tree-disclosure-rtl.svg';
 import disclosureExpanded from '../icons/tree-disclosure-expanded.svg';
-const assets = {'tree-disclosure-ltr':disclosureLTR,'tree-disclosure-rtl':disclosureRTL,'tree-disclosure-expanded':disclosureExpanded,'action-bookmark':bookmark,'tree-folder':folder,'tree-document':document,'menu-chevron-right':svg0,'menu-check':svg1,'menu-chevron-left':svg2,'menu-overflow':svg3,'action-chevron-up':svg4,'action-close':svg5};
+const assets = {'button-plus':buttonPlus,'input-search':inputSearch,'input-clear':inputClear,'sidebar-left':sidebarLeft,'toolbar-save-all':toolbar0,'toolbar-eye':toolbar1,'toolbar-circle-ellipsis':toolbar2,'toolbar-archive':toolbar3,'toolbar-trash-2':toolbar4,'tree-disclosure-ltr':disclosureLTR,'tree-disclosure-rtl':disclosureRTL,'tree-disclosure-expanded':disclosureExpanded,'action-bookmark':bookmark,'tree-folder':folder,'tree-document':document,'menu-chevron-right':svg0,'menu-check':svg1,'menu-chevron-left':svg2,'menu-overflow':svg3,'action-chevron-up':svg4,'action-close':svg5};
+const intrinsic:Partial<Record<keyof typeof assets,[number,number]>>={"button-plus":[20,20],"input-search":[20,20],"input-clear":[20,20],"toolbar-save-all": [22.0, 22.0], "toolbar-eye": [22.001, 15.9988], "toolbar-circle-ellipsis": [22.0, 22.0], "toolbar-archive": [22.0, 20.0], "toolbar-trash-2": [20.0, 22.0]};
 export type ArtworkIconName = keyof typeof assets;
-export function ArtworkIcon({name,label,style,className,...props}:HTMLAttributes<HTMLSpanElement>&{name:ArtworkIconName;label?:string}){const mask=`url("${assets[name]}")`;const width=name==='tree-disclosure-expanded'?9:name.startsWith('tree-disclosure')?5:name.startsWith('tree-')?16:24;const height=name.startsWith('tree-disclosure')?24:width;return <span {...props} className={['wardo-artwork-icon',className].filter(Boolean).join(' ')} data-artwork-icon={name} role={label?'img':undefined} aria-label={label} aria-hidden={label?undefined:true} style={{flex:'none',width,height,backgroundColor:'currentColor',maskImage:mask,WebkitMaskImage:mask,maskSize:'contain',maskRepeat:'no-repeat',...style}}/>;}
+export function ArtworkIcon({name,label,style,className,...props}:HTMLAttributes<HTMLSpanElement>&{name:ArtworkIconName;label?:string}){const mask=`url("${assets[name]}")`;const width=intrinsic[name]?.[0]??(name==='tree-disclosure-expanded'?9:name.startsWith('tree-disclosure')?5:name.startsWith('tree-')?16:24);const height=intrinsic[name]?.[1]??(name.startsWith('tree-disclosure')?24:width);return <span {...props} className={['wardo-artwork-icon',className].filter(Boolean).join(' ')} data-artwork-icon={name} role={label?'img':undefined} aria-label={label} aria-hidden={label?undefined:true} style={{flex:'none',width,height,backgroundColor:'currentColor',maskImage:mask,WebkitMaskImage:mask,maskSize:'contain',maskRepeat:'no-repeat',...style}}/>;}

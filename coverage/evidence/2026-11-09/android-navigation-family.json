@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-09",
+  "scope": "Android 2D navigation item compatibility fixture running inside the XR sample. Native spatial navigation is separate.",
+  "build": {
+    "result": "passed",
+    "packages": [
+      "Android library",
+      "phone sample",
+      "XR library",
+      "XR sample",
+      "XR instrumentation test APK"
+    ],
+    "toolchain": "Java17.0.21+9 / Gradle9.6 / AGP9.5 / Compose BOM2026.09.00"
+  },
+  "runtime": {
+    "result": "passed",
+    "device": "WardoXR API34 AndroidXR emulator, host GPU",
+    "testCount": 4,
+    "junit": "coverage/evidence/2026-11-09/android-navigation-items-junit.xml",
+    "targetedTest": "androidNavigationItemsExposeIndependentSelectionAndDisabledState",
+    "assertions": [
+      "Horizontal240x48minimum; vertical88x64minimum; text-only148x48minimum",
+      "Tab role and application-owned mutually exclusive selection",
+      "Localized badge content description",
+      "Native RTL sibling ordering",
+      "Disabled semantics and suppressed callback"
+    ]
+  },
+  "limits": [
+    "Phone/tablet geometry, TalkBack, keyboard focus, text scaling and exhaustive theme/visual variant review remain pending.",
+    "Caller-supplied numbered icons exercise content slots; this fixture is not an exact Figma icon preview."
+  ],
+  "sourceHashes": {
+    "native/android/src/main/kotlin/com/wardo/designsystem/NavigationItem.kt": "5fb1c80df526b525e1e4a16dd9102fb6ff4f5afc1569f05102fc07dc2e02e34c",
+    "native/android/src/main/kotlin/com/wardo/designsystem/Navigation.kt": "34f63c9ec2a10e90e08f363cc73db86dc4c17ab62f7223cd85f714ed7f3f673d"
+  },
+  "additionalChecks": {
+    "result": "passed",
+    "test": "nativeShortNavigationBarSupportsDestinationCountsAndRTL",
+    "details": "Three, four and five destinations share a fixed412dp bar width, retain native minimum height, update application selection and mirror native placement in RTL. An outer Box prevents Material1.4 from imposing the full caller minimum width on each item. Native text labels can grow the bar for multiline content; safe-area insets stay native.",
+    "evidence": "coverage/evidence/2026-11-09/android-short-navigation-junit.xml",
+    "finalFullClassEvidence": "coverage/evidence/2026-11-09/android-native-final-six-tests.txt"
+  }
+}

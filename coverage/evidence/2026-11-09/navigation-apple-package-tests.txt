@@ -1,0 +1,45 @@
+Building for debugging...
+[Planning deferred tasks]
+[9 / 29]
+[10 / 30] WardoDesignSystem_WardoDesignSystem
+[13 / 28] WardoDesignSystem
+[17 / 32] WardoDesignSystem
+[24 / 34] WardoDesignSystem
+[28 / 34] WardoDesignSystemTests-product
+[32 / 38] WardoDesignSystemTests-product
+[34 / 38] WardoDesignSystemTests-product
+[36 / 38] WardoDesignSystemTests-product
+Build complete! (4,04 secs)
+Test Suite 'All tests' started at 2026-11-09 11:29:53.176.
+Test Suite 'All tests' passed at 2026-11-09 11:29:53.179.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.003) seconds
+􀟈  Test run started.
+􀄵  Testing Library Version: 2403
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Test everySemanticColorResolvesInEveryTheme() started.
+􀟈  Test colorRoundTripsAndPreservesAlpha() started.
+􀟈  Test pagingKeepsSelectionVisibleAndCannotCrossEndpoints() started.
+􀟈  Test colorRemainsBoundedAfterApplicationOwnedMutations() started.
+􀟈  Test boundedColorValues() started.
+􀟈  Test sectionScrubbingRejectsEmptyAndInvalidGeometry() started.
+􀟈  Test sectionScrubbingClampsAtBothEndsAndIncludesTheFinalSymbol() started.
+􀟈  Test sliderSnapsRelativeToLowerBoundWithoutCrossingEndpoints() started.
+􀟈  Test compactPagingMapsVisiblePositionsAndRejectsInvalidGeometry() started.
+􀟈  Test calendarRespectsFirstWeekdayAndLeapYear() started.
+􀟈  Test spectrumHasContinuousHueEndpoints() started.
+􀟈  Test paletteMatchesDesignGrid() started.
+􀟈  Test spectrumSamplesTheExactArtworkAndRespectsOrientation() started.
+􁁛  Test colorRemainsBoundedAfterApplicationOwnedMutations() passed after 0.001 seconds.
+􁁛  Test sectionScrubbingRejectsEmptyAndInvalidGeometry() passed after 0.001 seconds.
+􁁛  Test boundedColorValues() passed after 0.001 seconds.
+􁁛  Test sliderSnapsRelativeToLowerBoundWithoutCrossingEndpoints() passed after 0.001 seconds.
+􁁛  Test spectrumHasContinuousHueEndpoints() passed after 0.001 seconds.
+􁁛  Test compactPagingMapsVisiblePositionsAndRejectsInvalidGeometry() passed after 0.001 seconds.
+􁁛  Test sectionScrubbingClampsAtBothEndsAndIncludesTheFinalSymbol() passed after 0.001 seconds.
+􁁛  Test colorRoundTripsAndPreservesAlpha() passed after 0.001 seconds.
+􁁛  Test paletteMatchesDesignGrid() passed after 0.001 seconds.
+􁁛  Test everySemanticColorResolvesInEveryTheme() passed after 0.001 seconds.
+􁁛  Test pagingKeepsSelectionVisibleAndCannotCrossEndpoints() passed after 0.001 seconds.
+􁁛  Test calendarRespectsFirstWeekdayAndLeapYear() passed after 0.001 seconds.
+􁁛  Test spectrumSamplesTheExactArtworkAndRespectsOrientation() passed after 0.030 seconds.
+􁁛  Test run with 13 tests in 0 suites passed after 0.030 seconds.

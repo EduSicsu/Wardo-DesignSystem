@@ -1,0 +1,480 @@
+import XCTest
+
+@MainActor final class CatalogueUITests: XCTestCase {
+    func testSidebarSearchBindingSubmissionVoiceAndRTL() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wardo-sidebar-search"]
+        app.launch()
+        let search = app.textFields["Search events"]
+        let voice = app.buttons["Voice search"]
+        XCTAssertTrue(search.waitForExistence(timeout: 20))
+        XCTAssertTrue(voice.exists)
+        XCTAssertGreaterThanOrEqual(voice.frame.width, 44)
+        XCTAssertGreaterThanOrEqual(voice.frame.height, 44)
+        XCTAssertGreaterThan(voice.frame.midX, search.frame.midX)
+        search.tap()
+        search.typeText("Books\n")
+        XCTAssertEqual(app.staticTexts["sidebar-search-query"].label, "Query: Books")
+        XCTAssertEqual(app.staticTexts["sidebar-search-status"].label, "Search submitted: Books")
+        voice.tap()
+        XCTAssertEqual(app.staticTexts["sidebar-search-status"].label, "Voice search requested")
+        app.buttons["Set query from application"].tap()
+        XCTAssertEqual(search.value as? String, "Ceramics")
+        app.buttons["Clear query from application"].tap()
+        XCTAssertEqual(search.value as? String, "Search events")
+        flip(app.switches["Right-to-left search"])
+        XCTAssertLessThan(voice.frame.midX, search.frame.midX)
+        flip(app.switches["Disable search"])
+        XCTAssertFalse(search.isEnabled)
+        XCTAssertFalse(voice.isEnabled)
+    }
+
+    func testSidebarSearchDarkAndLargeText() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wardo-sidebar-search"]
+        app.launch()
+        let search = app.textFields["Search events"]
+        XCTAssertTrue(search.waitForExistence(timeout: 20))
+        let initialHeight = search.frame.height
+        flip(app.switches["Dark search appearance"])
+        flip(app.switches["Larger search text"])
+        XCTAssertGreaterThan(search.frame.height, initialHeight)
+        XCTAssertTrue(search.isHittable)
+        XCTAssertTrue(app.buttons["Voice search"].isHittable)
+        XCTAssertLessThanOrEqual(search.frame.maxX, app.frame.maxX)
+        XCTAssertGreaterThanOrEqual(search.frame.minX, app.frame.minX)
+        #if !os(visionOS)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = "Sidebar search dark larger text"
+        screenshot.lifetime = .keepAlways
+        add(screenshot)
+        #endif
+    }
+
+    func testActionsSearchAndPresentation() throws {
+        let app = XCUIApplication(); app.launch()
+        XCTAssertTrue(app.navigationBars["Wardo native catalogue"].waitForExistence(timeout: 20))
+        app.buttons["Activate"].tap()
+        XCTAssertTrue(app.staticTexts["Button activated"].exists)
+        let search = app.textFields["Find events"]
+        XCTAssertTrue(search.exists)
+        search.tap(); search.typeText(" and books\n")
+        reveal(app.buttons["Show alert"], in: app)
+        app.buttons["Show alert"].tap()
+        XCTAssertTrue(app.alerts["Wardo alert"].waitForExistence(timeout: 5))
+        app.alerts.buttons["Continue"].tap()
+        XCTAssertTrue(app.staticTexts["Alert confirmed"].waitForExistence(timeout: 5))
+        #if !os(visionOS)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); screenshot.name = "Native catalogue"; screenshot.lifetime = .keepAlways; add(screenshot)
+        #endif
+    }
+    func testCustomControlsExposeNativeToggleSemantics() throws {
+        let app = XCUIApplication(); app.launch()
+        let toggle = app.switches["Vision notifications"]
+        reveal(toggle, in: app)
+        XCTAssertTrue(toggle.exists)
+        let before = toggle.value as? String
+        toggle.tap()
+        XCTAssertNotEqual(toggle.value as? String, before)
+        let checkbox = app.switches["Select reminders"]
+        reveal(checkbox, in: app)
+        let selected = checkbox.value as? String
+        checkbox.tap()
+        XCTAssertNotEqual(checkbox.value as? String, selected)
+    }
+    func testColorPickerCanSelectTabSaveAndClose() throws {
+        let app = XCUIApplication(); app.launch()
+        let choose = app.buttons["Choose color"]
+        reveal(choose, in: app)
+        choose.tap()
+        XCTAssertTrue(app.buttons["Close color picker"].waitForExistence(timeout: 5))
+        app.segmentedControls.buttons["Sliders"].tap()
+        XCTAssertTrue(app.textFields["RGB Hex Color"].exists)
+        app.segmentedControls.buttons["Spectrum"].tap()
+        XCTAssertTrue(app.sliders["Hue"].exists)
+        app.segmentedControls.buttons["Grid"].tap()
+        app.buttons["Color #000000"].firstMatch.tap()
+        #if !os(visionOS)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); screenshot.name = "Wardo color grid"; screenshot.lifetime = .keepAlways; add(screenshot)
+        #endif
+        app.buttons["Close color picker"].tap()
+        XCTAssertTrue(choose.waitForExistence(timeout: 5))
+    }
+    func testSidebarSelectionAndRTL() throws {
+        let app = XCUIApplication(); app.launch()
+        let link = app.buttons["Sidebar example"]
+        reveal(link, in: app); link.tap()
+        let saved = app.buttons["sidebar-saved"]
+        XCTAssertTrue(saved.waitForExistence(timeout: 5)); saved.tap()
+        XCTAssertTrue(saved.isSelected)
+        XCTAssertTrue(app.staticTexts["Selected: Saved"].exists)
+        app.buttons["Hide Library"].tap()
+        XCTAssertFalse(saved.exists)
+        app.buttons["Show Library"].tap()
+        XCTAssertTrue(saved.exists)
+        let direction = app.switches["Right-to-left layout"]
+        flip(direction)
+        app.buttons["sidebar-inbox"].tap()
+        XCTAssertTrue(app.buttons["sidebar-inbox"].isSelected)
+        XCTAssertTrue(app.staticTexts["Selected: Inbox"].exists)
+    }
+    func testPagingUsesApplicationStateAndSupportsRTL() throws {
+        let app = XCUIApplication(); app.launch()
+        let link = app.buttons["Paging example"]
+        reveal(link, in: app); link.tap()
+        let paging = app.descendants(matching: .any)["Document pages"].firstMatch
+        XCTAssertTrue(paging.waitForExistence(timeout: 5))
+        #if os(visionOS)
+        paging.tap()
+        XCTAssertTrue(app.staticTexts["Selected page: 3 of 5"].waitForExistence(timeout: 5))
+        app.buttons["Previous page"].tap(); app.buttons["Previous page"].tap()
+        #endif
+        app.buttons["Next page"].tap()
+        XCTAssertTrue(app.staticTexts["Selected page: 2 of 5"].exists)
+        flip(app.switches["Right-to-left paging"])
+        app.buttons["Next page"].tap()
+        XCTAssertTrue(app.staticTexts["Selected page: 3 of 5"].exists)
+        app.buttons["Use two pages"].tap()
+        XCTAssertTrue(app.staticTexts["Selected page: 2 of 2"].exists)
+        XCTAssertFalse(app.buttons["Next page"].isEnabled)
+        app.buttons["Previous page"].tap()
+        XCTAssertTrue(app.staticTexts["Selected page: 1 of 2"].exists)
+        XCTAssertFalse(app.buttons["Previous page"].isEnabled)
+        flip(app.switches["Right-to-left paging"])
+        #if !os(visionOS)
+        paging.coordinate(withNormalizedOffset: CGVector(dx: 0.85, dy: 0.5)).tap()
+        XCTAssertTrue(app.staticTexts["Selected page: 2 of 2"].waitForExistence(timeout: 5))
+        #endif
+        #if !os(visionOS)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); screenshot.name = "Wardo native paging"; screenshot.lifetime = .keepAlways; add(screenshot)
+        #endif
+    }
+    func testSliderSizesStopsDisabledStateAndRTL() throws {
+        let app = XCUIApplication(); app.launch()
+        let link = app.buttons["Slider variants"]
+        reveal(link, in: app); link.tap()
+        let slider = app.sliders["Stepped volume"]
+        XCTAssertTrue(slider.waitForExistence(timeout: 5))
+        for size in ["Large", "Regular", "Small", "Mini"] {
+            let sizeButton = app.segmentedControls.buttons[size]
+            sizeButton.tap()
+            XCTAssertTrue(sizeButton.isSelected)
+            XCTAssertGreaterThanOrEqual(slider.frame.height, 44)
+            #if os(visionOS)
+            app.buttons["Reset stepped value"].tap()
+            XCTAssertTrue(app.staticTexts["Stepped value: 0%"].exists)
+            slider.tap()
+            XCTAssertTrue(app.staticTexts["Stepped value: 50%"].exists)
+            #else
+            setSlider(slider, to: 1)
+            XCTAssertTrue(app.staticTexts["Stepped value: 100%"].exists)
+            setSlider(slider, to: 0)
+            XCTAssertTrue(app.staticTexts["Stepped value: 0%"].exists)
+            #endif
+        }
+        flip(app.switches["Right-to-left sliders"])
+        #if os(visionOS)
+        app.buttons["Reset stepped value"].tap()
+        slider.tap()
+        XCTAssertTrue(app.staticTexts["Stepped value: 50%"].exists)
+        #else
+        slider.coordinate(withNormalizedOffset: CGVector(dx: 0.05, dy: 0.5)).tap()
+        XCTAssertTrue(app.staticTexts["Stepped value: 100%"].exists)
+        #endif
+        XCTAssertTrue(app.staticTexts["Slider idle"].exists)
+        flip(app.switches["Enable sliders"])
+        XCTAssertFalse(slider.isEnabled)
+    }
+    func testSectionIndexScrubbingNavigatesAndRespectsRTLAndDisabledState() throws {
+        let app = XCUIApplication(); app.launch()
+        let link = app.buttons["Section index example"]
+        reveal(link, in: app); link.tap()
+        let index = app.sliders["section-index"]
+        XCTAssertTrue(index.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(index.frame.width, 44)
+        #if os(visionOS)
+        index.tap()
+        XCTAssertTrue(app.staticTexts["Selected section: N"].waitForExistence(timeout: 5))
+        app.buttons["Go to last section"].tap()
+        XCTAssertEqual(index.value as? String, "#")
+        #else
+        index.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.98)).tap()
+        #endif
+        XCTAssertTrue(app.staticTexts["Selected section: #"].exists)
+        XCTAssertTrue(app.staticTexts["Section #"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Section #"].isHittable)
+        let originalX = index.frame.minX
+        flip(app.switches["Right-to-left section index"])
+        XCTAssertLessThan(index.frame.minX, originalX)
+        #if os(visionOS)
+        index.tap()
+        XCTAssertTrue(app.staticTexts["Selected section: N"].exists)
+        #else
+        index.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.02)).tap()
+        XCTAssertTrue(app.staticTexts["Selected section: A"].exists)
+        #endif
+        flip(app.switches["Enable section index"])
+        XCTAssertFalse(index.isEnabled)
+    }
+    func testAppleDestinationItemsExposeSelectionBadgesRTLAndLargeText() throws {
+        let app = XCUIApplication(); app.launch()
+        let link = app.buttons["Apple navigation item example"]
+        reveal(link, in: app); link.tap()
+        let sidebar = app.buttons["Sidebar destination"]
+        let tab = app.buttons["Tab destination"]
+        let text = app.buttons["Text destination"]
+        XCTAssertTrue(sidebar.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(sidebar.frame.height, 44)
+        XCTAssertGreaterThanOrEqual(tab.frame.height, 54)
+        XCTAssertGreaterThanOrEqual(text.frame.height, 44)
+        XCTAssertEqual(sidebar.value as? String, "3 unread items")
+        #if os(visionOS)
+        sidebar.tap()
+        #else
+        sidebar.coordinate(withNormalizedOffset: CGVector(dx: 0.95, dy: 0.5)).tap()
+        #endif
+        XCTAssertTrue(sidebar.isSelected)
+        XCTAssertTrue(app.staticTexts["Selected destination: Sidebar"].exists)
+        tab.tap()
+        XCTAssertTrue(tab.isSelected)
+        XCTAssertFalse(sidebar.isSelected)
+        text.tap()
+        XCTAssertTrue(text.isSelected)
+        XCTAssertTrue(app.staticTexts["Selected destination: Text"].exists)
+        let originalX = sidebar.frame.minX
+        flip(app.switches["Right-to-left destination items"])
+        XCTAssertGreaterThan(sidebar.frame.minX, originalX)
+        sidebar.tap()
+        XCTAssertTrue(sidebar.isSelected)
+        #if !os(visionOS)
+        let normal = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); normal.name = "Wardo destination items selected and RTL"; normal.lifetime = .keepAlways; add(normal)
+        #endif
+        let originalHeight = sidebar.frame.height
+        flip(app.switches["Large navigation text"])
+        XCTAssertGreaterThan(sidebar.frame.height, originalHeight)
+        XCTAssertGreaterThan(sidebar.frame.width, 240)
+        XCTAssertEqual(sidebar.frame.width, text.frame.width, accuracy: 1)
+        flip(app.switches["Enable destination items"])
+        XCTAssertFalse(sidebar.isEnabled)
+        XCTAssertFalse(tab.isEnabled)
+        XCTAssertFalse(text.isEnabled)
+        text.tap()
+        XCTAssertTrue(app.staticTexts["Selected destination: Sidebar"].exists)
+        #if !os(visionOS)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); screenshot.name = "Wardo destination items with large text"; screenshot.lifetime = .keepAlways; add(screenshot)
+        #endif
+    }
+    func testNativeAlertFieldsRolesAndApplicationCallbacks() throws {
+        let app = XCUIApplication(); app.launchArguments = ["--wardo-native-presentations"]; app.launch()
+        let present = app.buttons["Present native alert"]
+        XCTAssertTrue(present.waitForExistence(timeout: 5)); present.tap()
+        let alert = app.alerts["Edit event"]
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        XCTAssertFalse(alert.buttons["Save event"].isEnabled)
+        XCTAssertTrue(alert.secureTextFields["Access code"].exists)
+        let name = alert.textFields["Event name"]
+        name.tap(); name.typeText("Ceramics")
+        XCTAssertTrue(alert.buttons["Save event"].isEnabled)
+        let save = alert.buttons["Save event"]
+        let ready = XCTNSPredicateExpectation(predicate: NSPredicate(format: "hittable == true AND enabled == true"), object: save)
+        XCTAssertEqual(XCTWaiter.wait(for: [ready], timeout: 5), .completed)
+        save.tap()
+        XCTAssertTrue(alert.waitForNonExistence(timeout: 5), "Save must dismiss on one activation")
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Saved: Ceramics")
+        reveal(present, in: app)
+        revealAbove(app.switches["Include second alert field"], in: app)
+        flip(app.switches["Include second alert field"])
+        present.tap()
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        XCTAssertFalse(alert.secureTextFields["Access code"].exists)
+        alert.buttons["Delete event"].tap()
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Deleted event")
+        reveal(present, in: app)
+        revealAbove(app.switches["Include alert fields"], in: app)
+        flip(app.switches["Include alert fields"])
+        revealAbove(app.switches["Include destructive alert action"], in: app)
+        flip(app.switches["Include destructive alert action"])
+        present.tap()
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        XCTAssertEqual(alert.textFields.count, 0)
+        XCTAssertFalse(alert.buttons["Delete event"].exists)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = "Native alert without fields"; screenshot.lifetime = .keepAlways; add(screenshot)
+        alert.buttons["Cancel"].tap()
+        XCTAssertTrue(present.waitForExistence(timeout: 5))
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Alert cancelled")
+    }
+    func testNativeContextMenuUsesPreviewDisabledActionsAndSubmenus() throws {
+        let app = XCUIApplication(); app.launchArguments = ["--wardo-native-presentations"]; app.launch()
+        let source = app.staticTexts["Event context actions"]
+        reveal(source, in: app); source.press(forDuration: 1)
+        let save = app.buttons["Save to collection"]
+        XCTAssertTrue(save.waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons["Unavailable action"].isEnabled)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = "Native context menu with preview"; screenshot.lifetime = .keepAlways; add(screenshot)
+        save.tap()
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Added to collection")
+        reveal(source, in: app); source.press(forDuration: 1)
+        let move = app.buttons["Move event"]
+        XCTAssertTrue(move.waitForExistence(timeout: 5)); move.tap()
+        let archive = app.buttons["Move to archive"]
+        XCTAssertTrue(archive.waitForExistence(timeout: 5)); archive.tap()
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Moved to archive")
+        revealAbove(source, in: app); source.press(forDuration: 1)
+        let favorite = app.buttons["Favorite event"]
+        XCTAssertTrue(favorite.waitForExistence(timeout: 5))
+        XCTAssertGreaterThanOrEqual(favorite.frame.height, 44)
+        XCTAssertTrue(app.buttons["Prioritize event"].exists)
+        XCTAssertTrue(app.buttons["Remove favorite"].exists)
+        favorite.tap()
+        XCTAssertTrue(favorite.waitForNonExistence(timeout: 5))
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Event favorited")
+    }
+    #if os(iOS)
+    func testNativePageSheetStacksAndRestoresItsPresenter() throws {
+        let app = XCUIApplication(); app.launchArguments = ["--wardo-native-presentations"]; app.launch()
+        let present = app.buttons["Present native page sheet"]
+        reveal(present, in: app); present.tap()
+        XCTAssertTrue(app.buttons["Close sheet 1"].waitForExistence(timeout: 5))
+        app.buttons["Save sheet changes"].tap()
+        XCTAssertTrue(app.staticTexts["Sheet changes saved"].exists)
+        app.buttons["Stack another sheet"].tap()
+        XCTAssertTrue(app.buttons["Close sheet 2"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Sheet level 2"].isHittable)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = "Native stacked page sheets"; screenshot.lifetime = .keepAlways; add(screenshot)
+        app.buttons["Close sheet 2"].tap()
+        XCTAssertTrue(app.buttons["Close sheet 1"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Sheet changes saved"].exists)
+        app.buttons["Close sheet 1"].tap()
+        XCTAssertTrue(present.waitForExistence(timeout: 5))
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Page sheet dismissed")
+    }
+    func testNativePresentationsAdaptToDarkRTLAndLargeText() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wardo-native-presentations", "--wardo-native-dark", "--wardo-native-rtl", "--wardo-native-large-text"]
+        app.launch()
+        let present = app.buttons["Present native alert"]
+        let appearance = app.staticTexts["Native appearance: dark"]
+        reveal(appearance, in: app)
+        XCTAssertTrue(appearance.exists, "The rendered system appearance must be dark, not just the sample toggle")
+        revealAbove(present, in: app)
+        XCTAssertGreaterThanOrEqual(present.frame.height, 44)
+        try app.performAccessibilityAudit(for: [.sufficientElementDescription, .trait, .hitRegion, .textClipped])
+        present.tap()
+        let alert = app.alerts["Edit event"]
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        XCTAssertTrue(alert.textFields["Event name"].exists)
+        XCTAssertTrue(alert.secureTextFields["Access code"].exists)
+        XCTAssertFalse(alert.buttons["Save event"].isEnabled)
+        try app.performAccessibilityAudit(for: [.sufficientElementDescription, .trait, .hitRegion, .textClipped])
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = "Native dark RTL alert with accessibility text"; screenshot.lifetime = .keepAlways; add(screenshot)
+        alert.buttons["Cancel"].tap()
+        XCTAssertTrue(alert.waitForNonExistence(timeout: 5))
+        XCTAssertTrue(present.isHittable)
+    }
+    func testNativeAlertTextRespondsToDynamicType() throws {
+        let app = XCUIApplication(); app.launchArguments = ["--wardo-native-presentations"]; app.launch()
+        let present = app.buttons["Present native alert"]
+        reveal(present, in: app); present.tap()
+        let alert = app.alerts["Edit event"]
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        // UIKit keeps iPad alert input rows at a fixed height even when the
+        // title/message grow. Measure text, not a system-owned input container.
+        let baseline = alert.staticTexts["Edit event"].frame.height
+        alert.buttons["Cancel"].tap()
+        XCTAssertTrue(alert.waitForNonExistence(timeout: 5))
+        app.terminate()
+        // Native alert presentation reads UIKit's preferred content size. A
+        // SwiftUI environment override alone does not reach every iPad alert.
+        app.launchArguments = ["--wardo-native-presentations", "-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"]
+        app.launch()
+        XCTAssertTrue(present.waitForExistence(timeout: 20))
+        present.tap()
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
+        XCTAssertGreaterThan(alert.staticTexts["Edit event"].frame.height, baseline)
+        alert.buttons["Cancel"].tap()
+    }
+    func testNativeActivityPresentsAndCancelsWithoutSending() throws { try exerciseNativeActivity(dark: false) }
+    func testNativeDarkActivityPresentsAndCancelsWithoutSending() throws { try exerciseNativeActivity(dark: true) }
+    private func exerciseNativeActivity(dark: Bool) throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wardo-native-presentations"]
+        if dark { app.launchArguments.append("--wardo-native-dark") }
+        app.launch()
+        let present = app.buttons["Present native share activity"]
+        reveal(present, in: app); present.tap()
+        let isWidePopover = app.windows.firstMatch.frame.width > 700
+        if isWidePopover {
+            let nativeCopy = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", "Copy")).firstMatch
+            let hierarchy = XCTAttachment(string: app.debugDescription); hierarchy.name = "Native iPad activity hierarchy"; hierarchy.lifetime = .keepAlways; add(hierarchy)
+            XCTAssertTrue(nativeCopy.waitForExistence(timeout: 30))
+        }
+        else { XCTAssertTrue(app.buttons["Close"].firstMatch.waitForExistence(timeout: 30)) }
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = dark ? "Native dark activity presentation" : "Native activity presentation"; screenshot.lifetime = .keepAlways; add(screenshot)
+        if isWidePopover {
+            // Native iPad activity popovers dismiss through their backdrop, without an iPhone close button.
+            app.navigationBars["Native presentations"].staticTexts["Native presentations"].tap()
+        } else { app.buttons["Close"].firstMatch.tap() }
+        XCTAssertTrue(present.waitForExistence(timeout: 5))
+        reveal(app.staticTexts["native-presentation-status"], in: app)
+        XCTAssertEqual(app.staticTexts["native-presentation-status"].label, "Share cancelled")
+    }
+    #endif
+    /// A native switch's label can span its row while the knob remains trailing.
+    /// Validate state so a label-only tap cannot masquerade as an RTL/disabled check.
+    private func flip(_ toggle: XCUIElement) {
+        let before = toggle.value as? String
+        let widget = toggle.descendants(matching: .other).firstMatch
+        if widget.exists && widget.frame.width <= 100 {
+            widget.tap()
+        } else {
+            toggle.coordinate(withNormalizedOffset: CGVector(dx: 1, dy: 0.5)).withOffset(CGVector(dx: -min(32, toggle.frame.width / 2), dy: 0)).tap()
+        }
+        let changed = XCTNSPredicateExpectation(predicate: NSPredicate { _, _ in
+            toggle.value as? String != before
+        }, object: toggle)
+        XCTAssertEqual(XCTWaiter.wait(for: [changed], timeout: 5), .completed, "The sample switch must change state")
+    }
+    private func setSlider(_ slider: XCUIElement, to value: CGFloat) {
+        slider.coordinate(withNormalizedOffset: CGVector(dx: value == 0 ? 0.05 : 0.95, dy: 0.5)).tap()
+    }
+    private func revealAbove(_ element: XCUIElement, in app: XCUIApplication) {
+        for _ in 0..<8 {
+            if element.exists && element.isHittable && element.frame.minY >= app.navigationBars.firstMatch.frame.maxY { return }
+            let surface = app.collectionViews.firstMatch.exists ? app.collectionViews.firstMatch : app.scrollViews.firstMatch
+            surface.swipeDown()
+        }
+        XCTAssertTrue(element.exists && element.isHittable, "The control above must be reachable")
+    }
+    private func reveal(_ element: XCUIElement, in app: XCUIApplication) {
+        for _ in 0..<8 {
+            if element.exists && element.isHittable { return }
+            let surface: XCUIElement
+            if app.collectionViews.firstMatch.exists { surface = app.collectionViews.firstMatch }
+            else if app.scrollViews.firstMatch.exists { surface = app.scrollViews.firstMatch }
+            else { surface = app }
+            #if os(visionOS)
+            surface.swipeUp()
+            #else
+            // Centered swipes can land on the catalogue's slider thumbs.
+            let start = surface.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.8))
+            let end = surface.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.2))
+            start.press(forDuration: 0.05, thenDragTo: end)
+            #endif
+        }
+        let hierarchy = XCTAttachment(string: app.debugDescription); hierarchy.name = "Unreachable catalogue control"; hierarchy.lifetime = .keepAlways; add(hierarchy)
+        XCTAssertTrue(element.exists && element.isHittable, "The control must be reachable by scrolling")
+    }
+
+}

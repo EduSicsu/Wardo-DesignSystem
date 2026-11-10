@@ -2,7 +2,7 @@
 
 **199 of 797 source links saved**, confirmed in the native UI. The newest 178 entries were saved with explicit component names. `expanded-mappings.json` and `web-internals-mappings.json` record those saves. The complete published inventory matches all 797 entries, including documentation, archives and device references.
 
-The shared slider adapter was also saved. Nine first native source links are blocked by the framework plan. The native Alert save optimistically increased the count to 199, then rolled back to 198 with “Code Connect is set up for React. Upgrade your plan for more frameworks.” It is not counted as saved. Native builds were deferred by the owner. React remains the active framework; the Professional plan supports one active framework. Other native implementation and visual gaps are documented in `native/README.md`.
+The shared slider adapter was also saved. Nine first native source links are blocked by the framework plan. The native Alert save optimistically increased the count to 199, then rolled back to 198 with “Code Connect is set up for React. Upgrade your plan for more frameworks.” It is not counted as saved. Native package builds and sample runtime checks are now included; complete per-entry validation remains pending. React remains the active framework; the Professional plan supports one active framework. Other native implementation and visual gaps are documented in `native/README.md`.
 
 The historical initial verification below remains useful for the original 21 entries and the unpublished template limitation.
 
@@ -62,6 +62,6 @@ API diagnostic references, retained for future template publication troubleshoot
 
 ## Final readback note
 
-The ReorderableTokenField source was independently read back from the remote mapping API after Figma reloaded. The native Alert had no matching default/SwiftUI readback and the UI rolled it back, so no native entry is counted. The final 199 total was then confirmed for the React SliderControl save. Native builds and runtime validation remain deferred; the native source packages contain documented implementation and visual gaps.
+The ReorderableTokenField source was independently read back from the remote mapping API after Figma reloaded. The native Alert had no matching default/SwiftUI readback and the UI rolled it back, so no native entry is counted. The final 199 total was then confirmed for the React SliderControl save. Native package builds and sample runtime checks are now included. The native source packages retain explicit per-entry implementation and visual review gaps in coverage/registry.json.
 
 Native connection decision: the owner chose to keep React active and defer native connections. Native sources remain saved with their documented implementation and verification gaps.

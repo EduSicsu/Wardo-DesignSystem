@@ -1,0 +1,751 @@
+[
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgItem1",
+    "file": "src/examples/assets/upcoming-mobile-imgItem1.png",
+    "bytes": 2527511,
+    "sha256": "144845ad526c50b240d657843205a3c4f91f4c711b9a7e8a72b4c7698db8a753"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgItem2",
+    "file": "src/examples/assets/upcoming-mobile-imgItem2.png",
+    "bytes": 2315713,
+    "sha256": "5a4a508136977551fbf44bc8ec4db37db73d552377c3441d267d54685aba8fbb"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgThumbnail",
+    "file": "src/examples/assets/upcoming-mobile-imgThumbnail.png",
+    "bytes": 2210821,
+    "sha256": "c8dd373863afdfb166f902b522d13d0ccd66c2e065331d10bf664712c61c2a42"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgThumbnail1",
+    "file": "src/examples/assets/upcoming-mobile-imgThumbnail1.png",
+    "bytes": 2193136,
+    "sha256": "a92ad78d69022e65f9bcf59e9c512061355c2cd7a0317ac1d05842ebea3cad88"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgThumbnail2",
+    "file": "src/examples/assets/upcoming-mobile-imgThumbnail2.png",
+    "bytes": 3079642,
+    "sha256": "576bb435ea62fa3d2e404c81a10549bc1f2b2e7f9aa9d9caf02aaf85e1a53ad8"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgWifi",
+    "file": "src/examples/assets/upcoming-mobile-imgWifi.svg",
+    "bytes": 422,
+    "sha256": "bbc39c1c96dbc88f404c6e18a14bcaeb0f514aab35cacd538abeae86d37f2064"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgSignal",
+    "file": "src/examples/assets/upcoming-mobile-imgSignal.svg",
+    "bytes": 310,
+    "sha256": "f45d68de35c00e766f33940e2e966da97758593b05108bde36f5b2303c8ed167"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgBattery",
+    "file": "src/examples/assets/upcoming-mobile-imgBattery.svg",
+    "bytes": 617,
+    "sha256": "3ca5aa89b0ebd7e82d42bc007d4326e1c026b5b9f0fc669e673a79365324bbbd"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgCameraCutout",
+    "file": "src/examples/assets/upcoming-mobile-imgCameraCutout.svg",
+    "bytes": 372,
+    "sha256": "89f6fc3a1316b163c281fe06d23c8a2de01e69a2abba7444bafa0d3739ff029c"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgIcon",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon.svg",
+    "bytes": 300,
+    "sha256": "9f8581a1bdef44d2b4c1f618adae8d65bede6afa82d6d148a7b1bf8157b6636e"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgIcon1",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon1.svg",
+    "bytes": 1180,
+    "sha256": "d8a4955ecb964911ad61a9807f006f01d9b59972c61bef780857222d13c5c266"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgIcon2",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon2.svg",
+    "bytes": 846,
+    "sha256": "9d7395c29c1a3fedc16b366e1661e281bf74b208300d7f2cb448520370d07238"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgIcon3",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon3.svg",
+    "bytes": 1098,
+    "sha256": "a19a15ef0ce3715e0fe23988628ac4c85693dfa63bf3d271e6004bdd0cead8a6"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgIcon4",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon4.svg",
+    "bytes": 303,
+    "sha256": "f7070e6ed4142f2bbd2308135544894ff1127c6d969a2f4ef68f9ca1075b13b0"
+  },
+  {
+    "example": "upcoming-mobile",
+    "variable": "imgDivider",
+    "file": "src/examples/assets/upcoming-mobile-imgDivider.svg",
+    "bytes": 320,
+    "sha256": "01850ef8429939100d8834c9d3d59cde08ba3a2af05f89b490e368ebe2815f32"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgImageAlbumArt",
+    "file": "src/examples/assets/upcoming-mobile-imgThumbnail1.png",
+    "bytes": 2193136,
+    "sha256": "a92ad78d69022e65f9bcf59e9c512061355c2cd7a0317ac1d05842ebea3cad88"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgImage",
+    "file": "src/examples/assets/reviews-mobile-imgImage.png",
+    "bytes": 2609982,
+    "sha256": "ae251616c9e3bd9ef5f51a2f08f8b7a99eac58274a2f75b418e6c2ba9c201ffc"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgImage1",
+    "file": "src/examples/assets/upcoming-mobile-imgItem1.png",
+    "bytes": 2527511,
+    "sha256": "144845ad526c50b240d657843205a3c4f91f4c711b9a7e8a72b4c7698db8a753"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgWifi",
+    "file": "src/examples/assets/reviews-mobile-imgWifi.svg",
+    "bytes": 564,
+    "sha256": "81375b5656adac286bec3fb5078c2fb42f8d595b35426e8f66152cb8cb38c25e"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgSignal",
+    "file": "src/examples/assets/reviews-mobile-imgSignal.svg",
+    "bytes": 380,
+    "sha256": "d9d6cb031cc97c2143f7cd4b40be674c250a12cfeb5a379d070875efc921057b"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgBattery",
+    "file": "src/examples/assets/reviews-mobile-imgBattery.svg",
+    "bytes": 613,
+    "sha256": "b383519775069daaddad4df030d6eadf9d32812ffd690e86d63f6effea5ecda6"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgCameraCutout",
+    "file": "src/examples/assets/upcoming-mobile-imgCameraCutout.svg",
+    "bytes": 372,
+    "sha256": "89f6fc3a1316b163c281fe06d23c8a2de01e69a2abba7444bafa0d3739ff029c"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgIcon",
+    "file": "src/examples/assets/reviews-mobile-imgIcon.svg",
+    "bytes": 300,
+    "sha256": "d7c6d9e41ad7b242fc9b58ba6f2b88b42faecc157eba5b99d689d436c261855c"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgIcon1",
+    "file": "src/examples/assets/reviews-mobile-imgIcon1.svg",
+    "bytes": 986,
+    "sha256": "83b21bb183d32371132cf472c2a9000df7e9cfe45afd689fde10f4ac8090fc5a"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgIcon2",
+    "file": "src/examples/assets/reviews-mobile-imgIcon2.svg",
+    "bytes": 1103,
+    "sha256": "4aa652bfa620be042508a281d029fea0a6ddb6ae9b9601acfe0cd12b2524329b"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgIcon3",
+    "file": "src/examples/assets/reviews-mobile-imgIcon3.svg",
+    "bytes": 223,
+    "sha256": "fc2e1d4b69688c61d9360536d87eb5efad0de259585260583565df09979bb6e6"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgIcon4",
+    "file": "src/examples/assets/reviews-mobile-imgIcon4.svg",
+    "bytes": 329,
+    "sha256": "431f7f5fb7e27ac70218c9665ddb0d408aa7f078a54b2e02bfd3f5bdfdc96367"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgReviewStar01",
+    "file": "src/examples/assets/reviews-mobile-imgReviewStar01.svg",
+    "bytes": 403,
+    "sha256": "e6423bb03fd042939c5597fbbdbebdd9326179629a090b58d987c01e07517eb3"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgIcon5",
+    "file": "src/examples/assets/reviews-mobile-imgIcon5.svg",
+    "bytes": 1457,
+    "sha256": "5a2904d629f0a01e0568bad94ac62e5324f04bc259951cf1b3f7a5109aecfa87"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgDivider",
+    "file": "src/examples/assets/reviews-mobile-imgDivider.svg",
+    "bytes": 311,
+    "sha256": "335cc88969993366a19a5ee44a7d1570d61df94cfb863949c614c0b45fd04c59"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgIcon6",
+    "file": "src/examples/assets/reviews-mobile-imgIcon6.svg",
+    "bytes": 1205,
+    "sha256": "bc6999ac2d6e809a96de45a1dd34a62deb41a5d0ab873785d3606473f8bd53a7"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgIcon7",
+    "file": "src/examples/assets/reviews-mobile-imgIcon7.svg",
+    "bytes": 924,
+    "sha256": "0e9760380fb9ab6539df8e8956b170d7f1bd6cd443628c4192e5a96168916e9d"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgIcon8",
+    "file": "src/examples/assets/reviews-mobile-imgIcon8.svg",
+    "bytes": 936,
+    "sha256": "2ebfccd3908b0448b18469e4e513aed770628b9b7f4360d35060926306013381"
+  },
+  {
+    "example": "reviews-mobile",
+    "variable": "imgIcon9",
+    "file": "src/examples/assets/reviews-mobile-imgIcon9.svg",
+    "bytes": 1193,
+    "sha256": "a0ae31305a858e0f0d623f34c79bdcd328e57c68316d0af0c00d594d4b1e7bb0"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgImage",
+    "file": "src/examples/assets/upcoming-mobile-imgItem1.png",
+    "bytes": 2527511,
+    "sha256": "144845ad526c50b240d657843205a3c4f91f4c711b9a7e8a72b4c7698db8a753"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgWifi",
+    "file": "src/examples/assets/upcoming-mobile-imgWifi.svg",
+    "bytes": 422,
+    "sha256": "bbc39c1c96dbc88f404c6e18a14bcaeb0f514aab35cacd538abeae86d37f2064"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgSignal",
+    "file": "src/examples/assets/upcoming-mobile-imgSignal.svg",
+    "bytes": 310,
+    "sha256": "f45d68de35c00e766f33940e2e966da97758593b05108bde36f5b2303c8ed167"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgBattery",
+    "file": "src/examples/assets/upcoming-mobile-imgBattery.svg",
+    "bytes": 617,
+    "sha256": "3ca5aa89b0ebd7e82d42bc007d4326e1c026b5b9f0fc669e673a79365324bbbd"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgCameraCutout",
+    "file": "src/examples/assets/upcoming-mobile-imgCameraCutout.svg",
+    "bytes": 372,
+    "sha256": "89f6fc3a1316b163c281fe06d23c8a2de01e69a2abba7444bafa0d3739ff029c"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgIcon",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon.svg",
+    "bytes": 300,
+    "sha256": "9f8581a1bdef44d2b4c1f618adae8d65bede6afa82d6d148a7b1bf8157b6636e"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgIcon1",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon1.svg",
+    "bytes": 1180,
+    "sha256": "d8a4955ecb964911ad61a9807f006f01d9b59972c61bef780857222d13c5c266"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgIcon2",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon3.svg",
+    "bytes": 1098,
+    "sha256": "a19a15ef0ce3715e0fe23988628ac4c85693dfa63bf3d271e6004bdd0cead8a6"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgAddCircle",
+    "file": "src/examples/assets/messaging-mobile-imgAddCircle.svg",
+    "bytes": 1151,
+    "sha256": "45d478f8c5d8ae2e5bb1ce5f191adb77817a1709a777513c174bcebca3baa392"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgMood",
+    "file": "src/examples/assets/messaging-mobile-imgMood.svg",
+    "bytes": 1906,
+    "sha256": "b6ece6ada4db72983cec46363c7201cf9b4529155dec93c4d39af1db47d4144e"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgIcon3",
+    "file": "src/examples/assets/messaging-mobile-imgIcon3.svg",
+    "bytes": 278,
+    "sha256": "b4f9d735743a8a6abe6d07ef636ec3fc3117f8cac37605322bc750a7fc56b8a4"
+  },
+  {
+    "example": "messaging-mobile",
+    "variable": "imgIcon4",
+    "file": "src/examples/assets/messaging-mobile-imgIcon4.svg",
+    "bytes": 909,
+    "sha256": "d09c13701bcb9b2eec9c7a3f017ab14c0c0b370684110d1d0d03b8ee6197dea2"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgItem1",
+    "file": "src/examples/assets/upcoming-mobile-imgItem1.png",
+    "bytes": 2527511,
+    "sha256": "144845ad526c50b240d657843205a3c4f91f4c711b9a7e8a72b4c7698db8a753"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgItem2",
+    "file": "src/examples/assets/upcoming-mobile-imgItem2.png",
+    "bytes": 2315713,
+    "sha256": "5a4a508136977551fbf44bc8ec4db37db73d552377c3441d267d54685aba8fbb"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgItem3",
+    "file": "src/examples/assets/upcoming-mobile-imgThumbnail.png",
+    "bytes": 2210821,
+    "sha256": "c8dd373863afdfb166f902b522d13d0ccd66c2e065331d10bf664712c61c2a42"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgItem4",
+    "file": "src/examples/assets/upcoming-mobile-imgThumbnail2.png",
+    "bytes": 3079642,
+    "sha256": "576bb435ea62fa3d2e404c81a10549bc1f2b2e7f9aa9d9caf02aaf85e1a53ad8"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgThumbnail",
+    "file": "src/examples/assets/upcoming-mobile-imgThumbnail1.png",
+    "bytes": 2193136,
+    "sha256": "a92ad78d69022e65f9bcf59e9c512061355c2cd7a0317ac1d05842ebea3cad88"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgIcon",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon.svg",
+    "bytes": 300,
+    "sha256": "9f8581a1bdef44d2b4c1f618adae8d65bede6afa82d6d148a7b1bf8157b6636e"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgIcon1",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon1.svg",
+    "bytes": 1180,
+    "sha256": "d8a4955ecb964911ad61a9807f006f01d9b59972c61bef780857222d13c5c266"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgIcon2",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon2.svg",
+    "bytes": 846,
+    "sha256": "9d7395c29c1a3fedc16b366e1661e281bf74b208300d7f2cb448520370d07238"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgIcon3",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon3.svg",
+    "bytes": 1098,
+    "sha256": "a19a15ef0ce3715e0fe23988628ac4c85693dfa63bf3d271e6004bdd0cead8a6"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgIcon4",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon4.svg",
+    "bytes": 303,
+    "sha256": "f7070e6ed4142f2bbd2308135544894ff1127c6d969a2f4ef68f9ca1075b13b0"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgDivider",
+    "file": "src/examples/assets/upcoming-web-imgDivider.svg",
+    "bytes": 311,
+    "sha256": "57acc6b33377ba360525b27b9322b856ea1f18fd9914b4417f1e840c64b8e9b8"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgDivider1",
+    "file": "src/examples/assets/upcoming-web-imgDivider1.svg",
+    "bytes": 311,
+    "sha256": "6d4166f4faa57766bbc733b705bd4a3f5b1b0bc8ec2aed8d239a11e2f8641240"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgIcon5",
+    "file": "src/examples/assets/messaging-mobile-imgIcon3.svg",
+    "bytes": 278,
+    "sha256": "b4f9d735743a8a6abe6d07ef636ec3fc3117f8cac37605322bc750a7fc56b8a4"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgIcon6",
+    "file": "src/examples/assets/upcoming-web-imgIcon6.svg",
+    "bytes": 600,
+    "sha256": "d7147c654455391c6155ccb18ee8990bc1a52432552243c2d953e26c633e4d05"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgIcon7",
+    "file": "src/examples/assets/reviews-mobile-imgIcon6.svg",
+    "bytes": 1205,
+    "sha256": "bc6999ac2d6e809a96de45a1dd34a62deb41a5d0ab873785d3606473f8bd53a7"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgIcon8",
+    "file": "src/examples/assets/reviews-mobile-imgIcon7.svg",
+    "bytes": 924,
+    "sha256": "0e9760380fb9ab6539df8e8956b170d7f1bd6cd443628c4192e5a96168916e9d"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgIcon9",
+    "file": "src/examples/assets/reviews-mobile-imgIcon8.svg",
+    "bytes": 936,
+    "sha256": "2ebfccd3908b0448b18469e4e513aed770628b9b7f4360d35060926306013381"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgIcon10",
+    "file": "src/examples/assets/reviews-mobile-imgIcon9.svg",
+    "bytes": 1193,
+    "sha256": "a0ae31305a858e0f0d623f34c79bdcd328e57c68316d0af0c00d594d4b1e7bb0"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgBack",
+    "file": "src/examples/assets/upcoming-web-imgBack.svg",
+    "bytes": 384,
+    "sha256": "253d9c163b264f5c2272ce8693bf2ac9b1fd609863bff282c2b7b0225d5760e4"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgForward",
+    "file": "src/examples/assets/upcoming-web-imgForward.svg",
+    "bytes": 389,
+    "sha256": "dd4f9f1f41b3717e0a7c248578bc16da05f28b17578652ddb5c24ff4b92529c4"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgRefresh",
+    "file": "src/examples/assets/upcoming-web-imgRefresh.svg",
+    "bytes": 710,
+    "sha256": "8a451cc2b3fb9168787aa1fba30ce96ab1834e84e2cd20f86817982233eb67e9"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgLock",
+    "file": "src/examples/assets/upcoming-web-imgLock.svg",
+    "bytes": 967,
+    "sha256": "765eeec8e2ab04f5d3f87a1b66d78e4d19652cc1cd87b496f4c6d8352835dcee"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgStar",
+    "file": "src/examples/assets/upcoming-web-imgStar.svg",
+    "bytes": 590,
+    "sha256": "bbca0ac0fb5c8f56c6d2802376d63f6bb86a492495291794fd222ada52ab8cd7"
+  },
+  {
+    "example": "upcoming-web",
+    "variable": "imgMore",
+    "file": "src/examples/assets/upcoming-web-imgMore.svg",
+    "bytes": 868,
+    "sha256": "f6e4c70f62141a09ceea7ef33825342d1af7725512dfcc302765d93e96d81596"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgImageAlbumArt",
+    "file": "src/examples/assets/upcoming-mobile-imgThumbnail1.png",
+    "bytes": 2193136,
+    "sha256": "a92ad78d69022e65f9bcf59e9c512061355c2cd7a0317ac1d05842ebea3cad88"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgImage",
+    "file": "src/examples/assets/reviews-mobile-imgImage.png",
+    "bytes": 2609982,
+    "sha256": "ae251616c9e3bd9ef5f51a2f08f8b7a99eac58274a2f75b418e6c2ba9c201ffc"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgImage1",
+    "file": "src/examples/assets/upcoming-mobile-imgItem1.png",
+    "bytes": 2527511,
+    "sha256": "144845ad526c50b240d657843205a3c4f91f4c711b9a7e8a72b4c7698db8a753"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon",
+    "file": "src/examples/assets/messaging-mobile-imgIcon3.svg",
+    "bytes": 278,
+    "sha256": "b4f9d735743a8a6abe6d07ef636ec3fc3117f8cac37605322bc750a7fc56b8a4"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon1",
+    "file": "src/examples/assets/upcoming-web-imgIcon6.svg",
+    "bytes": 600,
+    "sha256": "d7147c654455391c6155ccb18ee8990bc1a52432552243c2d953e26c633e4d05"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon2",
+    "file": "src/examples/assets/reviews-mobile-imgIcon6.svg",
+    "bytes": 1205,
+    "sha256": "bc6999ac2d6e809a96de45a1dd34a62deb41a5d0ab873785d3606473f8bd53a7"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon3",
+    "file": "src/examples/assets/reviews-mobile-imgIcon7.svg",
+    "bytes": 924,
+    "sha256": "0e9760380fb9ab6539df8e8956b170d7f1bd6cd443628c4192e5a96168916e9d"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon4",
+    "file": "src/examples/assets/reviews-mobile-imgIcon8.svg",
+    "bytes": 936,
+    "sha256": "2ebfccd3908b0448b18469e4e513aed770628b9b7f4360d35060926306013381"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon5",
+    "file": "src/examples/assets/reviews-mobile-imgIcon9.svg",
+    "bytes": 1193,
+    "sha256": "a0ae31305a858e0f0d623f34c79bdcd328e57c68316d0af0c00d594d4b1e7bb0"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgBack",
+    "file": "src/examples/assets/upcoming-web-imgBack.svg",
+    "bytes": 384,
+    "sha256": "253d9c163b264f5c2272ce8693bf2ac9b1fd609863bff282c2b7b0225d5760e4"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgForward",
+    "file": "src/examples/assets/upcoming-web-imgForward.svg",
+    "bytes": 389,
+    "sha256": "dd4f9f1f41b3717e0a7c248578bc16da05f28b17578652ddb5c24ff4b92529c4"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgRefresh",
+    "file": "src/examples/assets/upcoming-web-imgRefresh.svg",
+    "bytes": 710,
+    "sha256": "8a451cc2b3fb9168787aa1fba30ce96ab1834e84e2cd20f86817982233eb67e9"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgLock",
+    "file": "src/examples/assets/upcoming-web-imgLock.svg",
+    "bytes": 967,
+    "sha256": "765eeec8e2ab04f5d3f87a1b66d78e4d19652cc1cd87b496f4c6d8352835dcee"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgStar",
+    "file": "src/examples/assets/upcoming-web-imgStar.svg",
+    "bytes": 590,
+    "sha256": "bbca0ac0fb5c8f56c6d2802376d63f6bb86a492495291794fd222ada52ab8cd7"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgMore",
+    "file": "src/examples/assets/upcoming-web-imgMore.svg",
+    "bytes": 868,
+    "sha256": "f6e4c70f62141a09ceea7ef33825342d1af7725512dfcc302765d93e96d81596"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon6",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon.svg",
+    "bytes": 300,
+    "sha256": "9f8581a1bdef44d2b4c1f618adae8d65bede6afa82d6d148a7b1bf8157b6636e"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon7",
+    "file": "src/examples/assets/reviews-mobile-imgIcon1.svg",
+    "bytes": 986,
+    "sha256": "83b21bb183d32371132cf472c2a9000df7e9cfe45afd689fde10f4ac8090fc5a"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon8",
+    "file": "src/examples/assets/reviews-mobile-imgIcon2.svg",
+    "bytes": 1103,
+    "sha256": "4aa652bfa620be042508a281d029fea0a6ddb6ae9b9601acfe0cd12b2524329b"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon9",
+    "file": "src/examples/assets/reviews-mobile-imgIcon3.svg",
+    "bytes": 223,
+    "sha256": "fc2e1d4b69688c61d9360536d87eb5efad0de259585260583565df09979bb6e6"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon10",
+    "file": "src/examples/assets/reviews-mobile-imgIcon4.svg",
+    "bytes": 329,
+    "sha256": "431f7f5fb7e27ac70218c9665ddb0d408aa7f078a54b2e02bfd3f5bdfdc96367"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgReviewStar01",
+    "file": "src/examples/assets/reviews-mobile-imgReviewStar01.svg",
+    "bytes": 403,
+    "sha256": "e6423bb03fd042939c5597fbbdbebdd9326179629a090b58d987c01e07517eb3"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgIcon11",
+    "file": "src/examples/assets/reviews-mobile-imgIcon5.svg",
+    "bytes": 1457,
+    "sha256": "5a2904d629f0a01e0568bad94ac62e5324f04bc259951cf1b3f7a5109aecfa87"
+  },
+  {
+    "example": "reviews-web",
+    "variable": "imgDivider",
+    "file": "src/examples/assets/upcoming-web-imgDivider1.svg",
+    "bytes": 311,
+    "sha256": "6d4166f4faa57766bbc733b705bd4a3f5b1b0bc8ec2aed8d239a11e2f8641240"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgImage",
+    "file": "src/examples/assets/upcoming-mobile-imgItem1.png",
+    "bytes": 2527511,
+    "sha256": "144845ad526c50b240d657843205a3c4f91f4c711b9a7e8a72b4c7698db8a753"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgIcon",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon.svg",
+    "bytes": 300,
+    "sha256": "9f8581a1bdef44d2b4c1f618adae8d65bede6afa82d6d148a7b1bf8157b6636e"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgIcon1",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon1.svg",
+    "bytes": 1180,
+    "sha256": "d8a4955ecb964911ad61a9807f006f01d9b59972c61bef780857222d13c5c266"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgIcon2",
+    "file": "src/examples/assets/upcoming-mobile-imgIcon3.svg",
+    "bytes": 1098,
+    "sha256": "a19a15ef0ce3715e0fe23988628ac4c85693dfa63bf3d271e6004bdd0cead8a6"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgAddCircle",
+    "file": "src/examples/assets/messaging-mobile-imgAddCircle.svg",
+    "bytes": 1151,
+    "sha256": "45d478f8c5d8ae2e5bb1ce5f191adb77817a1709a777513c174bcebca3baa392"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgMood",
+    "file": "src/examples/assets/messaging-mobile-imgMood.svg",
+    "bytes": 1906,
+    "sha256": "b6ece6ada4db72983cec46363c7201cf9b4529155dec93c4d39af1db47d4144e"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgIcon3",
+    "file": "src/examples/assets/messaging-mobile-imgIcon3.svg",
+    "bytes": 278,
+    "sha256": "b4f9d735743a8a6abe6d07ef636ec3fc3117f8cac37605322bc750a7fc56b8a4"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgIcon4",
+    "file": "src/examples/assets/messaging-mobile-imgIcon4.svg",
+    "bytes": 909,
+    "sha256": "d09c13701bcb9b2eec9c7a3f017ab14c0c0b370684110d1d0d03b8ee6197dea2"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgBack",
+    "file": "src/examples/assets/upcoming-web-imgBack.svg",
+    "bytes": 384,
+    "sha256": "253d9c163b264f5c2272ce8693bf2ac9b1fd609863bff282c2b7b0225d5760e4"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgForward",
+    "file": "src/examples/assets/upcoming-web-imgForward.svg",
+    "bytes": 389,
+    "sha256": "dd4f9f1f41b3717e0a7c248578bc16da05f28b17578652ddb5c24ff4b92529c4"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgRefresh",
+    "file": "src/examples/assets/upcoming-web-imgRefresh.svg",
+    "bytes": 710,
+    "sha256": "8a451cc2b3fb9168787aa1fba30ce96ab1834e84e2cd20f86817982233eb67e9"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgLock",
+    "file": "src/examples/assets/upcoming-web-imgLock.svg",
+    "bytes": 967,
+    "sha256": "765eeec8e2ab04f5d3f87a1b66d78e4d19652cc1cd87b496f4c6d8352835dcee"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgStar",
+    "file": "src/examples/assets/upcoming-web-imgStar.svg",
+    "bytes": 590,
+    "sha256": "bbca0ac0fb5c8f56c6d2802376d63f6bb86a492495291794fd222ada52ab8cd7"
+  },
+  {
+    "example": "messaging-web",
+    "variable": "imgMore",
+    "file": "src/examples/assets/upcoming-web-imgMore.svg",
+    "bytes": 868,
+    "sha256": "f6e4c70f62141a09ceea7ef33825342d1af7725512dfcc302765d93e96d81596"
+  }
+]

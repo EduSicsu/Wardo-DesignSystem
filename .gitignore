@@ -11,3 +11,4 @@ test-results/
 **/.gradle/
 **/build/
 **/local.properties
+coverage/WORK-IN-PROGRESS.md

@@ -1,0 +1,20 @@
+import type { ImgHTMLAttributes } from 'react';
+import flower1 from '../icons/flower_1.svg';
+import flower2 from '../icons/flower_2.svg';
+import flower3 from '../icons/flower_3.svg';
+import flower4 from '../icons/flower_4.svg';
+import flower5 from '../icons/flower_5.svg';
+import flower6 from '../icons/flower_6.svg';
+import flower7 from '../icons/flower_7.svg';
+import flower8 from '../icons/flower_8.svg';
+import flower9 from '../icons/flower_9.svg';
+import flower10 from '../icons/flower_10.svg';
+import flower11 from '../icons/flower_11.svg';
+import flower12 from '../icons/flower_12.svg';
+import flower13 from '../icons/flower_13.svg';
+import flower14 from '../icons/flower_14.svg';
+import flower15 from '../icons/flower_15.svg';
+import flower16 from '../icons/flower_16.svg';
+const flowers={flower_1:flower1,flower_2:flower2,flower_3:flower3,flower_4:flower4,flower_5:flower5,flower_6:flower6,flower_7:flower7,flower_8:flower8,flower_9:flower9,flower_10:flower10,flower_11:flower11,flower_12:flower12,flower_13:flower13,flower_14:flower14,flower_15:flower15,flower_16:flower16};
+export type FlowerVariant=keyof typeof flowers;
+export function FlowerArtwork({variant="flower_1",alt="",...props}:Omit<ImgHTMLAttributes<HTMLImageElement>,"src"|"width"|"height">&{variant?:FlowerVariant}){return <img {...props} src={flowers[variant]} alt={alt}/>;}

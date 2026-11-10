@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-10",
+  "purpose": "Connect and implement reusable components used inside applications.",
+  "includedCategories": ["runtime-candidate"],
+  "excludedPlatforms": ["watchOS"],
+  "excludedCategories": {
+    "example-composition": "Showcase or example screen; excluded from the app component implementation and connection target.",
+    "documentation": "Documentation or library organization asset; excluded from application runtime coverage.",
+    "device-reference": "Device, operating-system chrome, example, or original UI-kit reference; use the supported app component rather than duplicating this reference.",
+    "archived": "Retired design; excluded from supported app components."
+  },
+  "notes": [
+    "Keep reusable app controls, compositions, internal building blocks, and icons, including the li: Lucide icons.",
+    "Retain web, iOS, iPadOS, visionOS, Android, Android XR, and existing macOS app bindings.",
+    "Examples and native sample applications may remain as development fixtures; they are not app component coverage targets.",
+    "Preserve excluded inventory records for audit. Do not delete design documentation as part of this scope change.",
+    "Figma editing remains deferred. Existing out-of-scope source links require cleanup when that work resumes."
+  ]
+}

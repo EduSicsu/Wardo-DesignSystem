@@ -1,0 +1,113 @@
+[
+  {
+    "id": "1908:20530",
+    "name": "Toolbar internal / Apple / Page control",
+    "properties": {
+      "Dots": {
+        "type": "VARIANT",
+        "defaultValue": "2",
+        "variantOptions": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8+"
+        ]
+      },
+      "Selection": {
+        "type": "VARIANT",
+        "defaultValue": "1",
+        "variantOptions": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    }
+  },
+  {
+    "id": "1908:21352",
+    "name": "Toolbar internal / Apple / Page Dots",
+    "properties": {
+      "Mode": {
+        "type": "VARIANT",
+        "defaultValue": "Light",
+        "variantOptions": [
+          "Light",
+          "Dark"
+        ]
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      }
+    }
+  },
+  {
+    "id": "2532:26513",
+    "name": "Page Control / visionOS / Page Controls",
+    "properties": {
+      "Mode": {
+        "type": "VARIANT",
+        "defaultValue": "Dark",
+        "variantOptions": [
+          "Dark"
+        ]
+      },
+      "Dots": {
+        "type": "VARIANT",
+        "defaultValue": "8+",
+        "variantOptions": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8+"
+        ]
+      },
+      "Selection": {
+        "type": "VARIANT",
+        "defaultValue": "8",
+        "variantOptions": [
+          "1",
+          "7",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "8"
+        ]
+      },
+      "Layout direction": {
+        "type": "VARIANT",
+        "defaultValue": "LTR",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    }
+  }
+]

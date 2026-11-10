@@ -1,0 +1,5 @@
+import {useState} from 'react';
+import {Select} from '../src';
+import {UpcomingMobileExample,UpcomingWebExample,ReviewsMobileExample,ReviewsWebExample,MessagingMobileExample,MessagingWebExample} from '../src/examples/ExampleScreens';
+const examples={'upcoming-mobile':UpcomingMobileExample,'upcoming-web':UpcomingWebExample,'reviews-mobile':ReviewsMobileExample,'reviews-web':ReviewsWebExample,'messaging-mobile':MessagingMobileExample,'messaging-web':MessagingWebExample};
+export function ExamplesGallery(){const [selected,setSelected]=useState<keyof typeof examples>('upcoming-mobile');const Example=examples[selected];return <main style={{padding:'24px',maxWidth:'1200px',margin:'auto'}}><a href="/coverage">← Coverage catalogue</a><h1>Wardo example screens</h1><div style={{maxWidth:'360px',marginBottom:'24px'}}><Select label="Example screen" value={selected} onChange={event=>setSelected(event.target.value as keyof typeof examples)}>{Object.keys(examples).map(name=><option key={name} value={name}>{name.replaceAll('-',' ')}</option>)}</Select></div><Example key={selected}/></main>;}

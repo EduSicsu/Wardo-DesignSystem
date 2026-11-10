@@ -1,0 +1,48 @@
+{
+  "renderer": "@resvg/resvg-js 2.6.2",
+  "figmaFile": "rkJclvwYpmw9ja5vUwkl3P",
+  "nodes": [
+    "2532:28920",
+    "2532:29146",
+    "2532:29372",
+    "2532:29598"
+  ],
+  "assets": [
+    {
+      "size": 3,
+      "source": "coverage/assets/sliders/stop-3.svg",
+      "sourceSha256": "e94d9ea892c56abc060336f5b877550fb095dc7c8268d5cf437974c75a9632ce",
+      "render": "coverage/assets/sliders/stop-3@3x.png",
+      "renderSha256": "81c9b55d4e71cd0acf7097ea99572ec13dbc3e228cd06b3077d6980041fd7b32",
+      "scale": 3,
+      "native": "native/apple/Sources/WardoDesignSystem/Resources/Sliders/stop-3@3x.png"
+    },
+    {
+      "size": 4,
+      "source": "coverage/assets/sliders/stop-4.svg",
+      "sourceSha256": "e13a431575c0120df93426f4caf73b3916128385e77503e177251c9c7f3e44a7",
+      "render": "coverage/assets/sliders/stop-4@3x.png",
+      "renderSha256": "85b0417a5893b48c691a645660923a29e86129de7237add2cdacbbd4e83afe9c",
+      "scale": 3,
+      "native": "native/apple/Sources/WardoDesignSystem/Resources/Sliders/stop-4@3x.png"
+    },
+    {
+      "size": 6,
+      "source": "coverage/assets/sliders/stop-6.svg",
+      "sourceSha256": "6cc4673ecf4800f888e0a951b685ef38f1783773a0cc0cc21f60160122e94ab4",
+      "render": "coverage/assets/sliders/stop-6@3x.png",
+      "renderSha256": "f3dd0d6e37638415d748163d934319db8eada2bb77e2c08d02837151dc6f0083",
+      "scale": 3,
+      "native": "native/apple/Sources/WardoDesignSystem/Resources/Sliders/stop-6@3x.png"
+    },
+    {
+      "size": 8,
+      "source": "coverage/assets/sliders/stop-8.svg",
+      "sourceSha256": "b58e90f953128e5e17a2b209dbf87c0ea8ec79a013eb43280c0c649e823fd432",
+      "render": "coverage/assets/sliders/stop-8@3x.png",
+      "renderSha256": "0b17883283800a2de428dfc90f1e60537ff2a62e00b88b9c77da47750dccc95c",
+      "scale": 3,
+      "native": "native/apple/Sources/WardoDesignSystem/Resources/Sliders/stop-8@3x.png"
+    }
+  ]
+}

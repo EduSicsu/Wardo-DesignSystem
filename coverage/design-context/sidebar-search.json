@@ -1,0 +1,102 @@
+[
+  {
+    "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+    "nodeId": "2396:18524",
+    "name": "Sidebar Search Field",
+    "properties": {
+      "Layout direction": {
+        "name": "Layout direction",
+        "type": "VARIANT",
+        "key": "Layout direction",
+        "variantOptions": [
+          "LTR",
+          "RTL"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[Search Field]": {
+        "type": "INSTANCE",
+        "name": "Search Field",
+        "mainComponentName": "_Search Field",
+        "references": {},
+        "properties": {
+          "Search Term#5657:0": {
+            "name": "Search Term",
+            "type": "TEXT",
+            "key": "Search Term#5657:0"
+          },
+          "Mode": {
+            "name": "Mode",
+            "type": "VARIANT",
+            "key": "Mode",
+            "variantOptions": [
+              "Dark",
+              "Light"
+            ]
+          },
+          "State": {
+            "name": "State",
+            "type": "VARIANT",
+            "key": "State",
+            "variantOptions": [
+              "Placeholder",
+              "Typing",
+              "Value"
+            ]
+          },
+          "Layout direction": {
+            "name": "Layout direction",
+            "type": "VARIANT",
+            "key": "Layout direction",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ]
+          }
+        },
+        "descendants": {
+          "TEXT[Search]": {
+            "type": "TEXT",
+            "name": "Search",
+            "nodeId": "2254:47353",
+            "textContent": "Search",
+            "references": {
+              "characters": "Search Term#5657:0"
+            },
+            "variants": [
+              "Mode=Dark, State=Typing, Layout direction=LTR",
+              "Mode=Dark, State=Value, Layout direction=LTR",
+              "Mode=Dark, State=Placeholder, Layout direction=LTR",
+              "Mode=Light, State=Typing, Layout direction=LTR",
+              "Mode=Light, State=Value, Layout direction=LTR",
+              "Mode=Light, State=Placeholder, Layout direction=LTR",
+              "Mode=Dark, State=Typing, Layout direction=RTL",
+              "Mode=Dark, State=Value, Layout direction=RTL",
+              "Mode=Dark, State=Placeholder, Layout direction=RTL",
+              "Mode=Light, State=Typing, Layout direction=RTL",
+              "Mode=Light, State=Value, Layout direction=RTL",
+              "Mode=Light, State=Placeholder, Layout direction=RTL",
+              "Mode=Dark, State=Typing, Layout direction=LTR",
+              "Mode=Dark, State=Value, Layout direction=LTR",
+              "Mode=Dark, State=Placeholder, Layout direction=LTR",
+              "Mode=Light, State=Typing, Layout direction=LTR",
+              "Mode=Light, State=Value, Layout direction=LTR",
+              "Mode=Light, State=Placeholder, Layout direction=LTR",
+              "Mode=Dark, State=Typing, Layout direction=RTL",
+              "Mode=Dark, State=Value, Layout direction=RTL",
+              "Mode=Dark, State=Placeholder, Layout direction=RTL",
+              "Mode=Light, State=Typing, Layout direction=RTL",
+              "Mode=Light, State=Value, Layout direction=RTL",
+              "Mode=Light, State=Placeholder, Layout direction=RTL"
+            ]
+          }
+        },
+        "variants": [
+          "Layout direction=LTR",
+          "Layout direction=RTL"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,774 @@
+{
+  "schemaVersion": 1,
+  "package": "lucide-react",
+  "version": "1.70.0",
+  "documentation": "https://lucide.dev/guide/react",
+  "source": "src/components/LucideIcons.tsx",
+  "icons": [
+    {
+      "nodeId": "125:7597",
+      "name": "li:badge-turkish-lira",
+      "symbol": "BadgeTurkishLira"
+    },
+    {
+      "nodeId": "125:7601",
+      "name": "li:balloon",
+      "symbol": "Balloon"
+    },
+    {
+      "nodeId": "125:7607",
+      "name": "li:banknote-arrow-down",
+      "symbol": "BanknoteArrowDown"
+    },
+    {
+      "nodeId": "125:7609",
+      "name": "li:banknote-arrow-up",
+      "symbol": "BanknoteArrowUp"
+    },
+    {
+      "nodeId": "125:7611",
+      "name": "li:banknote-x",
+      "symbol": "BanknoteX"
+    },
+    {
+      "nodeId": "125:7614",
+      "name": "li:barrel",
+      "symbol": "Barrel"
+    },
+    {
+      "nodeId": "125:7623",
+      "name": "li:battery-plus",
+      "symbol": "BatteryPlus"
+    },
+    {
+      "nodeId": "125:7652",
+      "name": "li:birdhouse",
+      "symbol": "Birdhouse"
+    },
+    {
+      "nodeId": "125:7668",
+      "name": "li:book-alert",
+      "symbol": "BookAlert"
+    },
+    {
+      "nodeId": "125:7686",
+      "name": "li:book-search",
+      "symbol": "BookSearch"
+    },
+    {
+      "nodeId": "125:7703",
+      "name": "li:bottle-wine",
+      "symbol": "BottleWine"
+    },
+    {
+      "nodeId": "125:7705",
+      "name": "li:bow-arrow",
+      "symbol": "BowArrow"
+    },
+    {
+      "nodeId": "125:7715",
+      "name": "li:brick-wall-fire",
+      "symbol": "BrickWallFire"
+    },
+    {
+      "nodeId": "125:7717",
+      "name": "li:brick-wall-shield",
+      "symbol": "BrickWallShield"
+    },
+    {
+      "nodeId": "125:7725",
+      "name": "li:brush-cleaning",
+      "symbol": "BrushCleaning"
+    },
+    {
+      "nodeId": "125:7727",
+      "name": "li:bubbles",
+      "symbol": "Bubbles"
+    },
+    {
+      "nodeId": "125:7759",
+      "name": "li:calendar-sync",
+      "symbol": "CalendarSync"
+    },
+    {
+      "nodeId": "125:7763",
+      "name": "li:calendars",
+      "symbol": "Calendars"
+    },
+    {
+      "nodeId": "125:7771",
+      "name": "li:cannabis-off",
+      "symbol": "CannabisOff"
+    },
+    {
+      "nodeId": "125:7779",
+      "name": "li:card-sim",
+      "symbol": "CardSim"
+    },
+    {
+      "nodeId": "125:7815",
+      "name": "li:check-line",
+      "symbol": "CheckLine"
+    },
+    {
+      "nodeId": "125:7819",
+      "name": "li:chess-bishop",
+      "symbol": "ChessBishop"
+    },
+    {
+      "nodeId": "125:7821",
+      "name": "li:chess-king",
+      "symbol": "ChessKing"
+    },
+    {
+      "nodeId": "125:7823",
+      "name": "li:chess-knight",
+      "symbol": "ChessKnight"
+    },
+    {
+      "nodeId": "125:7825",
+      "name": "li:chess-pawn",
+      "symbol": "ChessPawn"
+    },
+    {
+      "nodeId": "125:7827",
+      "name": "li:chess-queen",
+      "symbol": "ChessQueen"
+    },
+    {
+      "nodeId": "125:7829",
+      "name": "li:chess-rook",
+      "symbol": "ChessRook"
+    },
+    {
+      "nodeId": "125:7882",
+      "name": "li:circle-pile",
+      "symbol": "CirclePile"
+    },
+    {
+      "nodeId": "125:7886",
+      "name": "li:circle-pound-sterling",
+      "symbol": "CirclePoundSterling"
+    },
+    {
+      "nodeId": "125:7892",
+      "name": "li:circle-small",
+      "symbol": "CircleSmall"
+    },
+    {
+      "nodeId": "125:7894",
+      "name": "li:circle-star",
+      "symbol": "CircleStar"
+    },
+    {
+      "nodeId": "125:7905",
+      "name": "li:clipboard-clock",
+      "symbol": "ClipboardClock"
+    },
+    {
+      "nodeId": "125:7932",
+      "name": "li:clock-check",
+      "symbol": "ClockCheck"
+    },
+    {
+      "nodeId": "125:7934",
+      "name": "li:clock-fading",
+      "symbol": "ClockFading"
+    },
+    {
+      "nodeId": "125:7936",
+      "name": "li:clock-plus",
+      "symbol": "ClockPlus"
+    },
+    {
+      "nodeId": "125:7938",
+      "name": "li:closed-caption",
+      "symbol": "ClosedCaption"
+    },
+    {
+      "nodeId": "125:7941",
+      "name": "li:cloud-alert",
+      "symbol": "CloudAlert"
+    },
+    {
+      "nodeId": "125:7943",
+      "name": "li:cloud-backup",
+      "symbol": "CloudBackup"
+    },
+    {
+      "nodeId": "125:7945",
+      "name": "li:cloud-check",
+      "symbol": "CloudCheck"
+    },
+    {
+      "nodeId": "125:7961",
+      "name": "li:cloud-sync",
+      "symbol": "CloudSync"
+    },
+    {
+      "nodeId": "125:7976",
+      "name": "li:columns-3-cog",
+      "symbol": "Columns3Cog"
+    },
+    {
+      "nodeId": "125:8025",
+      "name": "li:decimals-arrow-left",
+      "symbol": "DecimalsArrowLeft"
+    },
+    {
+      "nodeId": "125:8027",
+      "name": "li:decimals-arrow-right",
+      "symbol": "DecimalsArrowRight"
+    },
+    {
+      "nodeId": "125:8056",
+      "name": "li:door-closed-locked",
+      "symbol": "DoorClosedLocked"
+    },
+    {
+      "nodeId": "125:8065",
+      "name": "li:drone",
+      "symbol": "Drone"
+    },
+    {
+      "nodeId": "125:8068",
+      "name": "li:droplet-off",
+      "symbol": "DropletOff"
+    },
+    {
+      "nodeId": "125:8085",
+      "name": "li:equal-approximately",
+      "symbol": "EqualApproximately"
+    },
+    {
+      "nodeId": "125:8091",
+      "name": "li:ev-charger",
+      "symbol": "EvCharger"
+    },
+    {
+      "nodeId": "125:8112",
+      "name": "li:file-braces-corner",
+      "symbol": "FileBracesCorner"
+    },
+    {
+      "nodeId": "125:8119",
+      "name": "li:file-check-corner",
+      "symbol": "FileCheckCorner"
+    },
+    {
+      "nodeId": "125:8123",
+      "name": "li:file-code-corner",
+      "symbol": "FileCodeCorner"
+    },
+    {
+      "nodeId": "125:8130",
+      "name": "li:file-headphone",
+      "symbol": "FileHeadphone"
+    },
+    {
+      "nodeId": "125:8138",
+      "name": "li:file-minus-corner",
+      "symbol": "FileMinusCorner"
+    },
+    {
+      "nodeId": "125:8144",
+      "name": "li:file-play",
+      "symbol": "FilePlay"
+    },
+    {
+      "nodeId": "125:8147",
+      "name": "li:file-plus-corner",
+      "symbol": "FilePlusCorner"
+    },
+    {
+      "nodeId": "125:8152",
+      "name": "li:file-search-corner",
+      "symbol": "FileSearchCorner"
+    },
+    {
+      "nodeId": "125:8162",
+      "name": "li:file-type-corner",
+      "symbol": "FileTypeCorner"
+    },
+    {
+      "nodeId": "125:8166",
+      "name": "li:file-video-camera",
+      "symbol": "FileVideoCamera"
+    },
+    {
+      "nodeId": "125:8170",
+      "name": "li:file-x-corner",
+      "symbol": "FileXCorner"
+    },
+    {
+      "nodeId": "125:8179",
+      "name": "li:fishing-hook",
+      "symbol": "FishingHook"
+    },
+    {
+      "nodeId": "125:8234",
+      "name": "li:form",
+      "symbol": "Form"
+    },
+    {
+      "nodeId": "125:8242",
+      "name": "li:funnel",
+      "symbol": "Funnel"
+    },
+    {
+      "nodeId": "125:8244",
+      "name": "li:funnel-plus",
+      "symbol": "FunnelPlus"
+    },
+    {
+      "nodeId": "125:8246",
+      "name": "li:funnel-x",
+      "symbol": "FunnelX"
+    },
+    {
+      "nodeId": "125:8255",
+      "name": "li:gamepad-directional",
+      "symbol": "GamepadDirectional"
+    },
+    {
+      "nodeId": "125:8260",
+      "name": "li:georgian-lari",
+      "symbol": "GeorgianLari"
+    },
+    {
+      "nodeId": "125:8265",
+      "name": "li:git-branch-minus",
+      "symbol": "GitBranchMinus"
+    },
+    {
+      "nodeId": "125:8287",
+      "name": "li:globe-x",
+      "symbol": "GlobeX"
+    },
+    {
+      "nodeId": "125:8290",
+      "name": "li:gpu",
+      "symbol": "Gpu"
+    },
+    {
+      "nodeId": "125:8298",
+      "name": "li:grid-3x2",
+      "symbol": "Grid3x2"
+    },
+    {
+      "nodeId": "125:8307",
+      "name": "li:hamburger",
+      "symbol": "Hamburger"
+    },
+    {
+      "nodeId": "125:8312",
+      "name": "li:hand-fist",
+      "symbol": "HandFist"
+    },
+    {
+      "nodeId": "125:8319",
+      "name": "li:handbag",
+      "symbol": "Handbag"
+    },
+    {
+      "nodeId": "125:8327",
+      "name": "li:hat-glasses",
+      "symbol": "HatGlasses"
+    },
+    {
+      "nodeId": "125:8330",
+      "name": "li:hd",
+      "symbol": "Hd"
+    },
+    {
+      "nodeId": "125:8346",
+      "name": "li:heart-minus",
+      "symbol": "HeartMinus"
+    },
+    {
+      "nodeId": "125:8349",
+      "name": "li:heart-plus",
+      "symbol": "HeartPlus"
+    },
+    {
+      "nodeId": "125:8353",
+      "name": "li:helicopter",
+      "symbol": "Helicopter"
+    },
+    {
+      "nodeId": "125:8364",
+      "name": "li:house-heart",
+      "symbol": "HouseHeart"
+    },
+    {
+      "nodeId": "125:8368",
+      "name": "li:house-wifi",
+      "symbol": "HouseWifi"
+    },
+    {
+      "nodeId": "125:8373",
+      "name": "li:id-card-lanyard",
+      "symbol": "IdCardLanyard"
+    },
+    {
+      "nodeId": "125:8382",
+      "name": "li:image-upscale",
+      "symbol": "ImageUpscale"
+    },
+    {
+      "nodeId": "125:8398",
+      "name": "li:kayak",
+      "symbol": "Kayak"
+    },
+    {
+      "nodeId": "125:8417",
+      "name": "li:laptop-minimal-check",
+      "symbol": "LaptopMinimalCheck"
+    },
+    {
+      "nodeId": "125:8424",
+      "name": "li:layers-plus",
+      "symbol": "LayersPlus"
+    },
+    {
+      "nodeId": "125:8441",
+      "name": "li:line-squiggle",
+      "symbol": "LineSquiggle"
+    },
+    {
+      "nodeId": "125:8450",
+      "name": "li:list-chevrons-down-up",
+      "symbol": "ListChevronsDownUp"
+    },
+    {
+      "nodeId": "125:8452",
+      "name": "li:list-chevrons-up-down",
+      "symbol": "ListChevronsUpDown"
+    },
+    {
+      "nodeId": "125:8457",
+      "name": "li:list-filter-plus",
+      "symbol": "ListFilterPlus"
+    },
+    {
+      "nodeId": "125:8499",
+      "name": "li:map-minus",
+      "symbol": "MapMinus"
+    },
+    {
+      "nodeId": "125:8508",
+      "name": "li:map-pin-pen",
+      "symbol": "MapPinPen"
+    },
+    {
+      "nodeId": "125:8515",
+      "name": "li:map-plus",
+      "symbol": "MapPlus"
+    },
+    {
+      "nodeId": "125:8517",
+      "name": "li:mars",
+      "symbol": "Mars"
+    },
+    {
+      "nodeId": "125:8519",
+      "name": "li:mars-stroke",
+      "symbol": "MarsStroke"
+    },
+    {
+      "nodeId": "125:8573",
+      "name": "li:monitor-cloud",
+      "symbol": "MonitorCloud"
+    },
+    {
+      "nodeId": "125:8588",
+      "name": "li:motorbike",
+      "symbol": "Motorbike"
+    },
+    {
+      "nodeId": "125:8596",
+      "name": "li:mouse-pointer-2-off",
+      "symbol": "MousePointer2Off"
+    },
+    {
+      "nodeId": "125:8625",
+      "name": "li:non-binary",
+      "symbol": "NonBinary"
+    },
+    {
+      "nodeId": "125:8657",
+      "name": "li:panda",
+      "symbol": "Panda"
+    },
+    {
+      "nodeId": "125:8667",
+      "name": "li:panel-left-right-dashed",
+      "symbol": "PanelLeftRightDashed"
+    },
+    {
+      "nodeId": "125:8674",
+      "name": "li:panel-top-bottom-dashed",
+      "symbol": "PanelTopBottomDashed"
+    },
+    {
+      "nodeId": "125:8771",
+      "name": "li:receipt-turkish-lira",
+      "symbol": "ReceiptTurkishLira"
+    },
+    {
+      "nodeId": "125:8773",
+      "name": "li:rectangle-circle",
+      "symbol": "RectangleCircle"
+    },
+    {
+      "nodeId": "125:8776",
+      "name": "li:rectangle-goggles",
+      "symbol": "RectangleGoggles"
+    },
+    {
+      "nodeId": "125:8803",
+      "name": "li:rose",
+      "symbol": "Rose"
+    },
+    {
+      "nodeId": "125:8807",
+      "name": "li:rotate-ccw-key",
+      "symbol": "RotateCcwKey"
+    },
+    {
+      "nodeId": "125:8820",
+      "name": "li:ruler-dimension-line",
+      "symbol": "RulerDimensionLine"
+    },
+    {
+      "nodeId": "125:8828",
+      "name": "li:saudi-riyal",
+      "symbol": "SaudiRiyal"
+    },
+    {
+      "nodeId": "125:8840",
+      "name": "li:scan-heart",
+      "symbol": "ScanHeart"
+    },
+    {
+      "nodeId": "125:8849",
+      "name": "li:scooter",
+      "symbol": "Scooter"
+    },
+    {
+      "nodeId": "125:8856",
+      "name": "li:search-alert",
+      "symbol": "SearchAlert"
+    },
+    {
+      "nodeId": "125:8889",
+      "name": "li:shield-user",
+      "symbol": "ShieldUser"
+    },
+    {
+      "nodeId": "125:8900",
+      "name": "li:shredder",
+      "symbol": "Shredder"
+    },
+    {
+      "nodeId": "125:8902",
+      "name": "li:shrimp",
+      "symbol": "Shrimp"
+    },
+    {
+      "nodeId": "125:8932",
+      "name": "li:soap-dispenser-droplet",
+      "symbol": "SoapDispenserDroplet"
+    },
+    {
+      "nodeId": "125:8935",
+      "name": "li:solar-panel",
+      "symbol": "SolarPanel"
+    },
+    {
+      "nodeId": "125:8947",
+      "name": "li:spline-pointer",
+      "symbol": "SplinePointer"
+    },
+    {
+      "nodeId": "125:8950",
+      "name": "li:spool",
+      "symbol": "Spool"
+    },
+    {
+      "nodeId": "125:8952",
+      "name": "li:spotlight",
+      "symbol": "Spotlight"
+    },
+    {
+      "nodeId": "125:8985",
+      "name": "li:square-dashed-top-solid",
+      "symbol": "SquareDashedTopSolid"
+    },
+    {
+      "nodeId": "125:8999",
+      "name": "li:square-pause",
+      "symbol": "SquarePause"
+    },
+    {
+      "nodeId": "125:9009",
+      "name": "li:square-round-corner",
+      "symbol": "SquareRoundCorner"
+    },
+    {
+      "nodeId": "125:9018",
+      "name": "li:square-star",
+      "symbol": "SquareStar"
+    },
+    {
+      "nodeId": "125:9020",
+      "name": "li:square-stop",
+      "symbol": "SquareStop"
+    },
+    {
+      "nodeId": "125:9026",
+      "name": "li:squares-exclude",
+      "symbol": "SquaresExclude"
+    },
+    {
+      "nodeId": "125:9028",
+      "name": "li:squares-intersect",
+      "symbol": "SquaresIntersect"
+    },
+    {
+      "nodeId": "125:9030",
+      "name": "li:squares-subtract",
+      "symbol": "SquaresSubtract"
+    },
+    {
+      "nodeId": "125:9032",
+      "name": "li:squares-unite",
+      "symbol": "SquaresUnite"
+    },
+    {
+      "nodeId": "125:9035",
+      "name": "li:squircle-dashed",
+      "symbol": "SquircleDashed"
+    },
+    {
+      "nodeId": "125:9047",
+      "name": "li:stone",
+      "symbol": "Stone"
+    },
+    {
+      "nodeId": "125:9105",
+      "name": "li:text-wrap",
+      "symbol": "TextWrap"
+    },
+    {
+      "nodeId": "125:9127",
+      "name": "li:toilet",
+      "symbol": "Toilet"
+    },
+    {
+      "nodeId": "125:9129",
+      "name": "li:tool-case",
+      "symbol": "ToolCase"
+    },
+    {
+      "nodeId": "125:9131",
+      "name": "li:toolbox",
+      "symbol": "Toolbox"
+    },
+    {
+      "nodeId": "125:9145",
+      "name": "li:transgender",
+      "symbol": "Transgender"
+    },
+    {
+      "nodeId": "125:9159",
+      "name": "li:triangle-dashed",
+      "symbol": "TriangleDashed"
+    },
+    {
+      "nodeId": "125:9164",
+      "name": "li:truck-electric",
+      "symbol": "TruckElectric"
+    },
+    {
+      "nodeId": "125:9166",
+      "name": "li:turkish-lira",
+      "symbol": "TurkishLira"
+    },
+    {
+      "nodeId": "125:9168",
+      "name": "li:turntable",
+      "symbol": "Turntable"
+    },
+    {
+      "nodeId": "125:9196",
+      "name": "li:user-lock",
+      "symbol": "UserLock"
+    },
+    {
+      "nodeId": "125:9210",
+      "name": "li:user-star",
+      "symbol": "UserStar"
+    },
+    {
+      "nodeId": "125:9218",
+      "name": "li:van",
+      "symbol": "Van"
+    },
+    {
+      "nodeId": "125:9222",
+      "name": "li:vector-square",
+      "symbol": "VectorSquare"
+    },
+    {
+      "nodeId": "125:9226",
+      "name": "li:venus",
+      "symbol": "Venus"
+    },
+    {
+      "nodeId": "125:9228",
+      "name": "li:venus-and-mars",
+      "symbol": "VenusAndMars"
+    },
+    {
+      "nodeId": "125:9254",
+      "name": "li:waves-arrow-down",
+      "symbol": "WavesArrowDown"
+    },
+    {
+      "nodeId": "125:9256",
+      "name": "li:waves-arrow-up",
+      "symbol": "WavesArrowUp"
+    },
+    {
+      "nodeId": "125:9258",
+      "name": "li:waves-ladder",
+      "symbol": "WavesLadder"
+    },
+    {
+      "nodeId": "125:9265",
+      "name": "li:weight-tilde",
+      "symbol": "WeightTilde"
+    },
+    {
+      "nodeId": "125:9271",
+      "name": "li:wifi-cog",
+      "symbol": "WifiCog"
+    },
+    {
+      "nodeId": "125:9276",
+      "name": "li:wifi-pen",
+      "symbol": "WifiPen"
+    },
+    {
+      "nodeId": "125:9278",
+      "name": "li:wifi-sync",
+      "symbol": "WifiSync"
+    },
+    {
+      "nodeId": "125:9282",
+      "name": "li:wind-arrow-down",
+      "symbol": "WindArrowDown"
+    }
+  ]
+}

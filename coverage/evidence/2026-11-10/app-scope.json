@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-10",
+  "request": "Only reusable components used inside applications; no documentation, showcase examples, original device/UI-kit references, archives, or Apple Watch/watchOS.",
+  "scopePolicy": "coverage/scope.json",
+  "counts": {
+    "inventory": 765,
+    "appComponents": 562,
+    "excludedReferences": 203,
+    "appSourceLinks": 235,
+    "historicalSavedLinks": 241,
+    "outOfScopeSavedLinks": 6
+  },
+  "checks": [
+    {
+      "result": "passed",
+      "kind": "web unit tests",
+      "count": 41
+    },
+    {
+      "result": "passed",
+      "kind": "targeted registry and rendered catalogue unit tests",
+      "count": 15
+    },
+    {
+      "result": "passed",
+      "kind": "desktop/mobile catalogue browser checks",
+      "count": 12
+    },
+    {
+      "result": "passed",
+      "kind": "type checking and library/demo builds"
+    },
+    {
+      "result": "passed",
+      "kind": "app source export checks",
+      "count": 235
+    },
+    {
+      "result": "passed",
+      "kind": "registry scope guards",
+      "details": "Examples have no active implementation target. App bindings cannot introduce watchOS. Excluded examples do not count toward the completion gate."
+    }
+  ],
+  "browser": {
+    "route": "http://127.0.0.1:5173/coverage",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "runner": "Project Playwright; Browser plugin not available."
+  },
+  "figma": {
+    "editing": "deferred",
+    "cleanup": "coverage/connection-cleanup.json",
+    "sourceLinksRemoved": 0
+  },
+  "preserved": "Lucide icons and reusable controls/internal building blocks remain app scope. Existing examples remain optional development fixtures and compatibility APIs."
+}

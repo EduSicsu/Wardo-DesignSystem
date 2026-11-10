@@ -1,0 +1,107 @@
+{
+  "figmaFile": "rkJclvwYpmw9ja5vUwkl3P",
+  "converter": {
+    "class": "com.android.ide.common.vectordrawable.Svg2Vector",
+    "package": "com.android.tools:sdk-common:32.5.0",
+    "diagnostics": "All eight converted without warnings; source files and 24x24 root dimensions retained."
+  },
+  "rendererSource": "native/android/src/main/kotlin/com/wardo/designsystem/ToolbarArtwork.kt",
+  "assets": [
+    {
+      "nodeId": "1945:10410",
+      "name": "stars",
+      "source": "coverage/assets/android-toolbar/stars.svg",
+      "sourceSha256": "32104697a63746e20e751f548b6e066700d11978f69cbdee74786ffdf5eb923b",
+      "native": "native/android/src/main/res/drawable/wardo_toolbar_stars.xml",
+      "nativeSha256": "489efc93e1d310ea3ceb0f1f09ba11536dddabd712c88a639b4cf8ddd3e3fb92",
+      "resource": "wardo_toolbar_stars",
+      "enumCase": "Stars",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "1945:10412",
+      "name": "stars-filled",
+      "source": "coverage/assets/android-toolbar/stars-filled.svg",
+      "sourceSha256": "e47729fc174a366551526ecada03cf7299f6d75e67c6d30bd505e3fdecc20e60",
+      "native": "native/android/src/main/res/drawable/wardo_toolbar_stars_filled.xml",
+      "nativeSha256": "4ee9bb75450c680682f967fcc13d99bbec0d08c8b58c362ef7f3192c5d7fc26e",
+      "resource": "wardo_toolbar_stars_filled",
+      "enumCase": "StarsFilled",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "1945:10775",
+      "name": "share",
+      "source": "coverage/assets/android-toolbar/share.svg",
+      "sourceSha256": "5a4af4d1fc2063aa1a4fac9e38c8f0b547866ecf0125d1daee43dd2aad07e0bc",
+      "native": "native/android/src/main/res/drawable/wardo_toolbar_share.xml",
+      "nativeSha256": "65b7efe327600dbc15cb0ba45e64e69c209c9b94e21f0f2175ef5d04d5f77aa5",
+      "resource": "wardo_toolbar_share",
+      "enumCase": "Share",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "1945:10777",
+      "name": "comment",
+      "source": "coverage/assets/android-toolbar/comment.svg",
+      "sourceSha256": "ba0d4ce945e47840be1091d6791cd700353e72d792139072713ffeb3ffe64d1c",
+      "native": "native/android/src/main/res/drawable/wardo_toolbar_comment.xml",
+      "nativeSha256": "ccd4eb6de52de33f7e501b7948e082c40fd45a3d9390a1212c1eb028b90c2fd3",
+      "resource": "wardo_toolbar_comment",
+      "enumCase": "Comment",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "1945:10779",
+      "name": "download",
+      "source": "coverage/assets/android-toolbar/download.svg",
+      "sourceSha256": "d63168a5c5d76b73969003bb42cfb931f2cdbb6bdc64f2a8da7dbd9dd5c0366d",
+      "native": "native/android/src/main/res/drawable/wardo_toolbar_download.xml",
+      "nativeSha256": "0ffd8237d785bc982bc4091ae38d4bd73c6d4e50ce73db490ab1c656b0e8e325",
+      "resource": "wardo_toolbar_download",
+      "enumCase": "Download",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "1945:10781",
+      "name": "edit",
+      "source": "coverage/assets/android-toolbar/edit.svg",
+      "sourceSha256": "e98a4d2f9cbc77db74519580adbebc6d9e46668524f5a1f65b4d0c16097366a3",
+      "native": "native/android/src/main/res/drawable/wardo_toolbar_edit.xml",
+      "nativeSha256": "366bf38c2d11f8b3326a14309e4671aaa78db6a42c2f6193055d0db09eaf56b3",
+      "resource": "wardo_toolbar_edit",
+      "enumCase": "Edit",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "1945:10783",
+      "name": "more-vert",
+      "source": "coverage/assets/android-toolbar/more-vert.svg",
+      "sourceSha256": "462aff06436e13efa8ca6a3b259f1746c014f98686d6502fa189c87e867bb50f",
+      "native": "native/android/src/main/res/drawable/wardo_toolbar_more_vert.xml",
+      "nativeSha256": "239f238c7030ba6eef78b2a57c592b4f51b9306e2dedf73f17e77fb9ed898256",
+      "resource": "wardo_toolbar_more_vert",
+      "enumCase": "MoreVert",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "nodeId": "1945:10785",
+      "name": "image",
+      "source": "coverage/assets/android-toolbar/image.svg",
+      "sourceSha256": "0af22994607c19e9593af0b7ab808461b2ab87f90469ea3dd3f388d82f95b89a",
+      "native": "native/android/src/main/res/drawable/wardo_toolbar_image.xml",
+      "nativeSha256": "06d406fb578779b946704e61837c22ef71093c45a5d6ad09a350c6878466fe8a",
+      "resource": "wardo_toolbar_image",
+      "enumCase": "Image",
+      "width": 24,
+      "height": 24
+    }
+  ]
+}

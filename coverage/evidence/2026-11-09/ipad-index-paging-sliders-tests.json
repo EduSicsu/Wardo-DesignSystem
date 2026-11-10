@@ -1,0 +1,91 @@
+{
+  "devices" : [
+    {
+      "architecture" : "arm64",
+      "deviceId" : "0F4845B1-FBBE-418B-B01A-82C4ECF77DC1",
+      "deviceName" : "iPad Pro 13-inch (M5)",
+      "modelName" : "iPad Pro 13-inch (M5)",
+      "osBuildNumber" : "24B8117",
+      "osVersion" : "27.2",
+      "platform" : "iOS Simulator"
+    }
+  ],
+  "testNodes" : [
+    {
+      "children" : [
+        {
+          "children" : [
+            {
+              "children" : [
+                {
+                  "children" : [
+                    {
+                      "name" : "Update the Info.plist: Support for all orientations will soon be required.",
+                      "nodeType" : "Runtime Warning",
+                      "sourceLocation" : {
+                        "filePath" : "/tmp/wardo-web-validation/native/apple/Sample/CatalogueApp.swift",
+                        "lineNumber" : 0
+                      }
+                    }
+                  ],
+                  "duration" : "41s",
+                  "durationInSeconds" : 41.852936029434204,
+                  "name" : "testPagingUsesApplicationStateAndSupportsRTL()",
+                  "nodeIdentifier" : "CatalogueUITests/testPagingUsesApplicationStateAndSupportsRTL()",
+                  "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests/testPagingUsesApplicationStateAndSupportsRTL",
+                  "nodeType" : "Test Case",
+                  "result" : "Passed"
+                },
+                {
+                  "duration" : "1m 5s",
+                  "durationInSeconds" : 65.81350100040436,
+                  "name" : "testSectionIndexScrubbingNavigatesAndRespectsRTLAndDisabledState()",
+                  "nodeIdentifier" : "CatalogueUITests/testSectionIndexScrubbingNavigatesAndRespectsRTLAndDisabledState()",
+                  "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests/testSectionIndexScrubbingNavigatesAndRespectsRTLAndDisabledState",
+                  "nodeType" : "Test Case",
+                  "result" : "Passed"
+                },
+                {
+                  "children" : [
+                    {
+                      "name" : "Update the Info.plist: Support for all orientations will soon be required.",
+                      "nodeType" : "Runtime Warning",
+                      "sourceLocation" : {
+                        "filePath" : "/tmp/wardo-web-validation/native/apple/Sample/CatalogueApp.swift",
+                        "lineNumber" : 0
+                      }
+                    }
+                  ],
+                  "duration" : "44s",
+                  "durationInSeconds" : 44.51084899902344,
+                  "name" : "testSliderSizesStopsDisabledStateAndRTL()",
+                  "nodeIdentifier" : "CatalogueUITests/testSliderSizesStopsDisabledStateAndRTL()",
+                  "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests/testSliderSizesStopsDisabledStateAndRTL",
+                  "nodeType" : "Test Case",
+                  "result" : "Passed"
+                }
+              ],
+              "name" : "CatalogueUITests",
+              "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests/CatalogueUITests",
+              "nodeType" : "Test Suite",
+              "result" : "Passed"
+            }
+          ],
+          "name" : "WardoCatalogueUITests",
+          "nodeIdentifierURL" : "test://com.apple.xcode/WardoCatalogue/WardoCatalogueUITests",
+          "nodeType" : "UI test bundle",
+          "result" : "Passed"
+        }
+      ],
+      "name" : "WardoCatalogue",
+      "nodeType" : "Test Plan",
+      "result" : "Passed"
+    }
+  ],
+  "testPlanConfigurations" : [
+    {
+      "configurationId" : "1",
+      "configurationName" : "Test Scheme Action"
+    }
+  ]
+}

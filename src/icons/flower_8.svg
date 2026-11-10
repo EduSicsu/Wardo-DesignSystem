@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Toolbar internal / Shared / flower" clip-path="url(#clip0_0_38)">
+<path id="Vector" d="M180 40C180 17.9086 144.183 2.50894e-05 100 2.70207e-05C55.8172 2.8952e-05 20 17.9086 20 40C20 51.947 30.4751 62.6706 47.0835 70C30.4751 77.3295 20 88.0531 20 100C20 111.947 30.4751 122.671 47.0835 130C30.4751 137.329 20 148.053 20 160C20 182.091 55.8172 200 100 200C144.183 200 180 182.091 180 160C180 148.053 169.525 137.329 152.917 130C169.525 122.671 180 111.947 180 100C180 88.0531 169.525 77.3295 152.917 70C169.525 62.6706 180 51.947 180 40Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_0_38">
+<rect width="200" height="200" fill="white"/>
+</clipPath>
+</defs>
+</svg>

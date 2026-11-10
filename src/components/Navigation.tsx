@@ -1,10 +1,24 @@
 'use client';
-import type { HTMLAttributes, ReactNode } from 'react';
+import { useId, type AnchorHTMLAttributes, type HTMLAttributes, type ReactNode } from 'react';
 import { Tabs as AriaTabs, TabList, Tab, TabPanel, Toolbar as AriaToolbar, type Key, type TabProps } from 'react-aria-components';
 import { Button } from './Button';
 import { cx } from './shared';
-export interface NavigationEntry { id:string; label:string; href:string; icon?:ReactNode; disabled?:boolean; }
-export function NavigationItem({label,href,icon,current,disabled}:NavigationEntry&{current?:boolean}){return <a className="wardo-navigation-item" href={disabled?undefined:href} aria-current={current?'page':undefined} aria-disabled={disabled||undefined}>{icon}{label}</a>;}
+export interface NavigationEntry { id:string; label:string; href:string; icon?:ReactNode; disabled?:boolean; badge?:string|number|null; badgeLabel?:string; }
+export type NavigationItemLayout = 'vertical' | 'horizontal' | 'text-only';
+export type NavigationItemProps = NavigationEntry & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'children' | 'href' | 'id'> & {current?:boolean; layout?:NavigationItemLayout};
+export function NavigationItem({id: _destinationId,label,href,icon,current,disabled,badge,badgeLabel,layout='horizontal',className,onClick,...props}:NavigationItemProps) {
+ const badgeId=useId();
+ const hasBadge=badge!=null;
+ const description=[props['aria-describedby'],hasBadge?badgeId:undefined].filter(Boolean).join(' ')||undefined;
+ return <a {...props} className={cx('wardo-navigation-item',className)} data-layout={layout}
+  href={disabled?undefined:href} role={disabled?'link':props.role} tabIndex={disabled?-1:props.tabIndex}
+  aria-current={current?'page':undefined} aria-disabled={disabled||undefined} aria-describedby={description}
+  onClick={event=>{if(disabled){event.preventDefault();return;}onClick?.(event);}}>
+  {icon!=null&&layout!=='text-only'?<span className="wardo-navigation-indicator" aria-hidden="true"><span className="wardo-navigation-icon">{icon}</span></span>:null}
+  <span className="wardo-navigation-label">{label}</span>
+  {hasBadge?<><span className="wardo-navigation-badge" aria-hidden="true">{badge}</span><span id={badgeId} hidden>{badgeLabel??badge}</span></>:null}
+ </a>;
+}
 export function NavigationBar({items,current,label='Main navigation',vertical=false,className,...props}:HTMLAttributes<HTMLElement>&{items:NavigationEntry[];current?:string;label?:string;vertical?:boolean}){return <nav {...props} className={cx('wardo-navigation',className)} aria-label={label} data-vertical={vertical}>{items.map(item=><NavigationItem key={item.id} {...item} current={current===item.id}/>)}</nav>;}
 export function BottomNavigationBar(props:Parameters<typeof NavigationBar>[0]){return <NavigationBar {...props} className={cx('wardo-bottom-navigation',props.className)}/>;}
 export function SideNavigation(props:Parameters<typeof NavigationBar>[0]){return <NavigationBar {...props} vertical className={cx('wardo-side-navigation',props.className)}/>;}

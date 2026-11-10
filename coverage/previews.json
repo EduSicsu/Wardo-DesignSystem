@@ -1,0 +1,32 @@
+[
+  {
+    "platform": "iOS",
+    "path": "coverage/previews/native/iphone-colour-grid.png",
+    "alt": "Custom Wardo colour picker in the iPhone sample",
+    "caption": "iPhone sample \u2014 colour grid"
+  },
+  {
+    "platform": "iPadOS",
+    "path": "coverage/previews/native/ipad-colour-grid.png",
+    "alt": "Custom Wardo colour picker in the iPad sample",
+    "caption": "iPad sample \u2014 colour grid"
+  },
+  {
+    "platform": "visionOS",
+    "path": "coverage/previews/native/visionos-devicehub.png",
+    "alt": "Wardo catalogue rendered in the Vision Pro simulated environment in Device Hub",
+    "caption": "Vision Pro sample \u2014 rendered scene"
+  },
+  {
+    "platform": "Android XR",
+    "path": "coverage/previews/native/android-xr.png",
+    "alt": "Wardo spatial panel and anchored toolbar running in the Android XR emulator",
+    "caption": "Android XR sample \u2014 panel and toolbar"
+  },
+  {
+    "platform": "Android (XR sample)",
+    "path": "coverage/previews/native/android-toolbar-artwork-scene.png",
+    "alt": "All eight exact Android toolbar glyphs running in the XR sample; their parent controls are reviewed separately.",
+    "caption": "Android toolbar glyphs \u2014 rendered XR sample"
+  }
+]

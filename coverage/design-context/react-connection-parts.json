@@ -1,0 +1,664 @@
+{
+  "date": "2026-11-09",
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "scope": "Exact exposed properties for source connection review; state/variant validation remains pending.",
+  "records": [
+    {
+      "id": "3073:42687",
+      "name": "Overlay",
+      "type": "COMPONENT_SET",
+      "w": 140,
+      "h": 260,
+      "description": "",
+      "definitions": {
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      },
+      "children": [
+        {
+          "id": "3073:42688",
+          "name": "Mode=Dark",
+          "type": "COMPONENT",
+          "w": 100,
+          "h": 100,
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.25,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            },
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.05000000074505806,
+              "blendMode": "LINEAR_BURN",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "3073:42689",
+          "name": "Mode=Light",
+          "type": "COMPONENT",
+          "w": 100,
+          "h": 100,
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.25,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            },
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.05000000074505806,
+              "blendMode": "LINEAR_BURN",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "boundVariables": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1967:116248",
+      "name": "Toolbar internal / Shared / Search Field / State controls",
+      "type": "COMPONENT_SET",
+      "w": 1920,
+      "h": 1624,
+      "description": "",
+      "definitions": {
+        "Read-only#1247:47": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Enabled",
+          "variantOptions": [
+            "Enabled",
+            "Hovered",
+            "Pressed",
+            "Focused",
+            "Disabled"
+          ]
+        },
+        "Appearance": {
+          "type": "VARIANT",
+          "defaultValue": "Outlined",
+          "variantOptions": [
+            "Outlined",
+            "Filled"
+          ]
+        },
+        "Feedback": {
+          "type": "VARIANT",
+          "defaultValue": "None",
+          "variantOptions": [
+            "None",
+            "Positive",
+            "Error"
+          ]
+        }
+      },
+      "children": [
+        {
+          "id": "1967:116249",
+          "name": "State=Enabled, Appearance=Outlined, Feedback=None",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 108,
+          "fill": []
+        },
+        {
+          "id": "1967:116252",
+          "name": "State=Enabled, Appearance=Outlined, Feedback=Positive",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 136,
+          "fill": []
+        },
+        {
+          "id": "1967:116255",
+          "name": "State=Enabled, Appearance=Outlined, Feedback=Error",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 136,
+          "fill": []
+        },
+        {
+          "id": "1967:116258",
+          "name": "State=Enabled, Appearance=Filled, Feedback=None",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 108,
+          "fill": []
+        },
+        {
+          "id": "1967:116261",
+          "name": "State=Enabled, Appearance=Filled, Feedback=Positive",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 136,
+          "fill": []
+        },
+        {
+          "id": "1967:116264",
+          "name": "State=Enabled, Appearance=Filled, Feedback=Error",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 136,
+          "fill": []
+        },
+        {
+          "id": "1967:116267",
+          "name": "State=Hovered, Appearance=Outlined, Feedback=None",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 108,
+          "fill": []
+        },
+        {
+          "id": "1967:116270",
+          "name": "State=Hovered, Appearance=Outlined, Feedback=Positive",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 136,
+          "fill": []
+        }
+      ]
+    },
+    {
+      "id": "1967:116855",
+      "name": "Toolbar internal / Shared / Search Field / Validation controls",
+      "type": "COMPONENT_SET",
+      "w": 1920,
+      "h": 184,
+      "description": "",
+      "definitions": {
+        "Positive message#1247:41": {
+          "type": "TEXT",
+          "defaultValue": "Search criteria confirmed."
+        },
+        "Error message#1247:42": {
+          "type": "TEXT",
+          "defaultValue": "Enter a valid event name or location."
+        },
+        "Feedback": {
+          "type": "VARIANT",
+          "defaultValue": "None",
+          "variantOptions": [
+            "None",
+            "Positive",
+            "Error"
+          ]
+        }
+      },
+      "children": [
+        {
+          "id": "1967:116856",
+          "name": "Feedback=None",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 108,
+          "fill": []
+        },
+        {
+          "id": "1967:116858",
+          "name": "Feedback=Positive",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 136,
+          "fill": []
+        },
+        {
+          "id": "1967:116864",
+          "name": "Feedback=Error",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 136,
+          "fill": []
+        }
+      ]
+    },
+    {
+      "id": "1967:116910",
+      "name": "Toolbar internal / Shared / Search Field / Value & behavior",
+      "type": "COMPONENT_SET",
+      "w": 1744,
+      "h": 153,
+      "description": "Enter a query to find content. Offer suggestions when they help users choose a useful query. Enter submits where explicit search is used; Escape dismisses suggestions; clearing restores the empty query. Announce result changes in the runtime.",
+      "definitions": {
+        "Label#1023:46": {
+          "type": "TEXT",
+          "defaultValue": "Find events"
+        },
+        "Required#1023:47": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Feedback": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Error"
+          ]
+        },
+        "Content": {
+          "type": "VARIANT",
+          "defaultValue": "Filled",
+          "variantOptions": [
+            "Filled",
+            "Empty"
+          ]
+        }
+      },
+      "children": [
+        {
+          "id": "1967:116911",
+          "name": "Feedback=Default, Content=Filled",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 108,
+          "fill": []
+        },
+        {
+          "id": "1967:116916",
+          "name": "Feedback=Default, Content=Empty",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 108,
+          "fill": []
+        },
+        {
+          "id": "1967:116921",
+          "name": "Feedback=Error, Content=Filled",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 108,
+          "fill": []
+        },
+        {
+          "id": "1967:116926",
+          "name": "Feedback=Error, Content=Empty",
+          "type": "COMPONENT",
+          "w": 400,
+          "h": 108,
+          "fill": []
+        }
+      ]
+    },
+    {
+      "id": "1967:116967",
+      "name": "Toolbar internal / Shared / Field chrome",
+      "type": "COMPONENT_SET",
+      "w": 1920,
+      "h": 336,
+      "description": "",
+      "definitions": {
+        "Show leading icon#1231:0": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Leading icon#1231:1": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1967:117076",
+          "preferredValues": []
+        },
+        "Show trailing icon#1231:2": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Trailing icon#1231:3": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1967:117092",
+          "preferredValues": []
+        },
+        "Appearance": {
+          "type": "VARIANT",
+          "defaultValue": "Outlined",
+          "variantOptions": [
+            "Outlined",
+            "Filled"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focused",
+            "Disabled",
+            "Read-only"
+          ]
+        }
+      },
+      "children": [
+        {
+          "id": "1967:116968",
+          "name": "Appearance=Outlined, State=Default",
+          "type": "COMPONENT",
+          "w": 320,
+          "h": 48,
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9725490212440491,
+                "g": 0.9490196108818054,
+                "b": 0.9254902005195618
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:49:3"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "1967:116972",
+          "name": "Appearance=Outlined, State=Hover",
+          "type": "COMPONENT",
+          "w": 320,
+          "h": 48,
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9372549057006836,
+                "g": 0.9019607901573181,
+                "b": 0.8666666746139526
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:206:17"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "1967:116976",
+          "name": "Appearance=Outlined, State=Pressed",
+          "type": "COMPONENT",
+          "w": 320,
+          "h": 48,
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9372549057006836,
+                "g": 0.9019607901573181,
+                "b": 0.8666666746139526
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:49:4"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "1967:116980",
+          "name": "Appearance=Outlined, State=Focused",
+          "type": "COMPONENT",
+          "w": 320,
+          "h": 48,
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9725490212440491,
+                "g": 0.9490196108818054,
+                "b": 0.9254902005195618
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:49:3"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "1967:116984",
+          "name": "Appearance=Outlined, State=Disabled",
+          "type": "COMPONENT",
+          "w": 320,
+          "h": 48,
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.11999999731779099,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.1411764770746231,
+                "g": 0.1411764770746231,
+                "b": 0.13333334028720856
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:50:14"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "1967:116988",
+          "name": "Appearance=Outlined, State=Read-only",
+          "type": "COMPONENT",
+          "w": 320,
+          "h": 48,
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9725490212440491,
+                "g": 0.9490196108818054,
+                "b": 0.9254902005195618
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:49:3"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "1967:116992",
+          "name": "Appearance=Filled, State=Default",
+          "type": "COMPONENT",
+          "w": 320,
+          "h": 48,
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9019607901573181,
+                "g": 0.8509804010391235,
+                "b": 0.800000011920929
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:50:2"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "1967:116996",
+          "name": "Appearance=Filled, State=Hover",
+          "type": "COMPONENT",
+          "w": 320,
+          "h": 48,
+          "fill": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9372549057006836,
+                "g": 0.9019607901573181,
+                "b": 0.8666666746139526
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:49:4"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1967:117079",
+      "name": "Toolbar internal / Shared / Field content",
+      "type": "COMPONENT_SET",
+      "w": 1920,
+      "h": 67.19999694824219,
+      "description": "",
+      "definitions": {
+        "Value#1231:4": {
+          "type": "TEXT",
+          "defaultValue": "Eduardo Lopes"
+        },
+        "Placeholder#1231:5": {
+          "type": "TEXT",
+          "defaultValue": "Enter your name"
+        },
+        "Content": {
+          "type": "VARIANT",
+          "defaultValue": "Filled",
+          "variantOptions": [
+            "Filled",
+            "Empty"
+          ]
+        }
+      },
+      "children": [
+        {
+          "id": "1967:117080",
+          "name": "Content=Filled",
+          "type": "COMPONENT",
+          "w": 240,
+          "h": 19.200000762939453,
+          "fill": []
+        },
+        {
+          "id": "1967:117082",
+          "name": "Content=Empty",
+          "type": "COMPONENT",
+          "w": 240,
+          "h": 19.200000762939453,
+          "fill": []
+        }
+      ]
+    },
+    {
+      "id": "1967:117087",
+      "name": "Toolbar internal / Shared / Supporting text",
+      "type": "COMPONENT_SET",
+      "w": 1920,
+      "h": 68,
+      "description": "",
+      "definitions": {
+        "Supporting text#1231:6": {
+          "type": "TEXT",
+          "defaultValue": "Your name appears on your profile."
+        },
+        "Feedback": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Error"
+          ]
+        }
+      },
+      "children": [
+        {
+          "id": "1967:117088",
+          "name": "Feedback=Default",
+          "type": "COMPONENT",
+          "w": 320,
+          "h": 20,
+          "fill": []
+        },
+        {
+          "id": "1967:117090",
+          "name": "Feedback=Error",
+          "type": "COMPONENT",
+          "w": 320,
+          "h": 20,
+          "fill": []
+        }
+      ]
+    }
+  ]
+}

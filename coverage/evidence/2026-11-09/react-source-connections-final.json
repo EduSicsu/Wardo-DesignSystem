@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-09",
+  "scope": "Finish the seven remaining historical React source links and the newly published sidebar icon; no implementation or validation promotion.",
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "inventorySnapshot": "figma/published-classification-2026-11-09.json",
+  "reactPrimaryEntries": 221,
+  "reactPrimaryEntriesWithSavedSource": 221,
+  "missingReactSourceConnections": 0,
+  "figmaAllPages": {
+    "connected": 227,
+    "total": 765,
+    "observedIn": "Figma Code Connect UI"
+  },
+  "connections": [
+    {
+      "nodeId": "3073:42687",
+      "designName": "Overlay",
+      "componentName": "NotificationScrim",
+      "source": "src/components/Scrim.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116248",
+      "designName": "Toolbar internal / Shared / Search Field / State controls",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116855",
+      "designName": "Toolbar internal / Shared / Search Field / Validation controls",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116910",
+      "designName": "Toolbar internal / Shared / Search Field / Value & behavior",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116967",
+      "designName": "Toolbar internal / Shared / Field chrome",
+      "componentName": "FieldChrome",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI read back exact export as Connected; all-pages progress226/765 on2026-11-09. Validation unchanged."
+    },
+    {
+      "nodeId": "1967:117079",
+      "designName": "Toolbar internal / Shared / Field content",
+      "componentName": "FieldContent",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI read back exact export as Connected; all-pages progress226/765 on2026-11-09. Validation unchanged."
+    },
+    {
+      "nodeId": "1967:117087",
+      "designName": "Toolbar internal / Shared / Supporting text",
+      "componentName": "FieldSupportingText",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI read back exact export as Connected; all-pages progress226/765 on2026-11-09. Validation unchanged."
+    },
+    {
+      "nodeId": "3399:29565",
+      "designName": "Icon / Sidebar left",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "props": {
+        "name": "sidebar-left"
+      },
+      "verification": "Figma UI confirmed exact ArtworkIcon export and all-pages227/765 on2026-11-09. Local originalasset24x24; validation remains pending."
+    }
+  ],
+  "checks": [
+    "All 227 mapping source/export checks passed.",
+    "Current registry checks passed.",
+    "36 web unit tests, type checking and library/demo builds passed after field-part refactor and exact sidebar asset integration.",
+    "Existing source changes passed GitHub CI before the final data update."
+  ],
+  "limitations": [
+    "Per-entry implementation and validation status remain separate and incomplete.",
+    "The MCP map readback confirms both Overlay variants and the new sidebar icon. Six field masters still listed in published Code Connect UI return an empty MCP map after the Toolbar internals page disappeared; their exact saved UI source links and independent repository catalogue remain available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "1543:69450",
+  "name": "Divider",
+  "type": "COMPONENT",
+  "width": 320,
+  "height": 1,
+  "opacity": 1,
+  "fills": [
+    {
+      "type": "SOLID",
+      "visible": true,
+      "opacity": 0.3400000035762787,
+      "blendMode": "NORMAL",
+      "color": {
+        "r": 0.6431372761726379,
+        "g": 0.6235294342041016,
+        "b": 0.6000000238418579
+      },
+      "boundVariables": {
+        "color": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:51:7"
+        }
+      }
+    }
+  ],
+  "boundVariables": {
+    "height": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:45:56"
+    },
+    "fills": [
+      {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:51:7"
+      }
+    ]
+  },
+  "children": []
+}

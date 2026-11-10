@@ -1,0 +1,25 @@
+{
+  "componentNodeId": "2397:138274",
+  "variantNodeId": "1531:158411",
+  "renderer": "src/components/ArtworkIcon.tsx",
+  "assets": [
+    {
+      "source": "src/icons/inputs/search.svg",
+      "assetName": "input-search",
+      "sha256": "a5d03f8b5895f789a734d3c2ab6e559e308e70861f945276fd81ed50fa381e78",
+      "width": 20,
+      "height": 20
+    },
+    {
+      "source": "src/icons/inputs/clear.svg",
+      "assetName": "input-clear",
+      "sha256": "2b8ea7a791059cda95f684c9c15c431c1ba69c5cb473cedb10f65a70667c28db",
+      "width": 20,
+      "height": 20
+    }
+  ],
+  "notes": [
+    "Original Figma SVGs retained unchanged and rendered as currentColor masks at their intrinsic 20 by 20 geometry.",
+    "The clear button uses a 44 by 44 hit target. Logical end padding compensates for the larger target while keeping the source icon center."
+  ]
+}

@@ -30,7 +30,9 @@ public struct WardoButtonStyle: ButtonStyle {
             .overlay { if hierarchy == .outline { Capsule().stroke(WardoColorToken.borderStrong.color(in: theme)) } }
             .opacity(enabled ? (configuration.isPressed ? 0.72 : 1) : 0.45)
             .contentShape(Capsule())
+            #if !os(macOS)
             .hoverEffect(.highlight)
+            #endif
     }
 }
 

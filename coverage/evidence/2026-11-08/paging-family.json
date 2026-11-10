@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-08",
+  "scope": "Paging family checks; not exhaustive entry/variant or accessibility certification",
+  "checks": [
+    {
+      "platform": "iOS 27.2 / iPhone 18 Pro",
+      "result": "passed",
+      "test": "testPagingUsesApplicationStateAndSupportsRTL",
+      "exercises": [
+        "application-owned selection",
+        "direct page-control taps",
+        "RTL changes",
+        "shrinking page counts",
+        "bounds and disabled navigation actions"
+      ],
+      "artifact": "coverage/evidence/2026-11-08/iphone-paging-slider-tests.json",
+      "note": "Retry asserts that each RTL switch actually changes state before exercising the control."
+    },
+    {
+      "platform": "macOS / Swift package",
+      "result": "passed",
+      "testCount": 11,
+      "exercises": [
+        "page-window bounds",
+        "large page collections",
+        "nearest visible tap target",
+        "invalid geometry"
+      ]
+    },
+    {
+      "platform": "visionOS",
+      "result": "interrupted-before-execution",
+      "reason": "Test runner stalled after compiling; no paging test executed. Requires a clean retry."
+    }
+  ],
+  "sourceHashes": {
+    "native/apple/Sources/WardoDesignSystem/PageControl.swift": "e32bf1d13e0135d13aff389f3dc0eaa39097e492ada843e8c28b89fa23baa66f",
+    "native/apple/Tests/WardoDesignSystemTests/PageControlTests.swift": "ece56adbc90f8ec99400905c61084349290dc5eebb1ba3b3aecf64a81bae252d"
+  }
+}

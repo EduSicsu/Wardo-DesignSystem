@@ -1,0 +1,186 @@
+{
+  "date": "2026-11-09",
+  "scope": "Twenty additional React source connections, saved through Figma Code Connect UI. No implementation or validation promotion.",
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "sourceRef": "codex/wardo-cross-platform-coverage",
+  "pages": [
+    {
+      "name": "Templates & examples",
+      "before": 0,
+      "after": 6,
+      "total": 6
+    },
+    {
+      "name": "Toolbar internals",
+      "before": 2,
+      "after": 16,
+      "total": 57
+    }
+  ],
+  "historicalFullFileReading": {
+    "connected": 199,
+    "total": 797,
+    "note": "Before archive cleanup; current full-file denominator not rechecked."
+  },
+  "repositorySavedSourceLinks": 219,
+  "checks": {
+    "sourceExports": "All 219 mapping source/export checks passed.",
+    "registry": "764 records checked; implementation and validation statuses unchanged.",
+    "regressions": "11 registry tests passed."
+  },
+  "connections": [
+    {
+      "nodeId": "665:5206",
+      "name": "Wardo/Examples/Messaging-Mobile",
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "MessagingMobileExample"
+    },
+    {
+      "nodeId": "677:3501",
+      "name": "Wardo/Examples/Messaging-Web",
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "MessagingWebExample"
+    },
+    {
+      "nodeId": "665:3693",
+      "name": "Wardo/Examples/Reviews-Mobile",
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "ReviewsMobileExample"
+    },
+    {
+      "nodeId": "677:2891",
+      "name": "Wardo/Examples/Reviews-Web",
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "ReviewsWebExample"
+    },
+    {
+      "nodeId": "665:2414",
+      "name": "Wardo/Examples/Upcoming-Mobile",
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "UpcomingMobileExample"
+    },
+    {
+      "nodeId": "677:2291",
+      "name": "Wardo/Examples/Upcoming-Web",
+      "source": "src/examples/ExampleScreens.tsx",
+      "symbol": "UpcomingWebExample"
+    },
+    {
+      "nodeId": "1967:117076",
+      "name": "Toolbar internal / Shared / Icon / search",
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "props": {
+        "name": "search"
+      }
+    },
+    {
+      "nodeId": "1967:117084",
+      "name": "Toolbar internal / Shared / Icon / x",
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "props": {
+        "name": "close"
+      }
+    },
+    {
+      "nodeId": "1967:117092",
+      "name": "Toolbar internal / Shared / Icon / chevron-down",
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "props": {
+        "name": "chevron-down"
+      }
+    },
+    {
+      "nodeId": "1967:117095",
+      "name": "Toolbar internal / Shared / search",
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "props": {
+        "name": "search"
+      }
+    },
+    {
+      "nodeId": "1967:117097",
+      "name": "Toolbar internal / Shared / x",
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "props": {
+        "name": "close"
+      }
+    },
+    {
+      "nodeId": "1967:117099",
+      "name": "Toolbar internal / Shared / chevron-down",
+      "source": "src/components/Icon.tsx",
+      "symbol": "Icon",
+      "props": {
+        "name": "chevron-down"
+      }
+    },
+    {
+      "nodeId": "1945:10384",
+      "name": "Toolbar internal / Shared / save-all",
+      "source": "src/components/ArtworkIcon.tsx",
+      "symbol": "ArtworkIcon",
+      "props": {
+        "name": "toolbar-save-all"
+      }
+    },
+    {
+      "nodeId": "1945:10386",
+      "name": "Toolbar internal / Shared / eye",
+      "source": "src/components/ArtworkIcon.tsx",
+      "symbol": "ArtworkIcon",
+      "props": {
+        "name": "toolbar-eye"
+      }
+    },
+    {
+      "nodeId": "1945:10388",
+      "name": "Toolbar internal / Shared / circle-ellipsis",
+      "source": "src/components/ArtworkIcon.tsx",
+      "symbol": "ArtworkIcon",
+      "props": {
+        "name": "toolbar-circle-ellipsis"
+      }
+    },
+    {
+      "nodeId": "1945:10390",
+      "name": "Toolbar internal / Shared / archive",
+      "source": "src/components/ArtworkIcon.tsx",
+      "symbol": "ArtworkIcon",
+      "props": {
+        "name": "toolbar-archive"
+      }
+    },
+    {
+      "nodeId": "1945:10392",
+      "name": "Toolbar internal / Shared / trash-2",
+      "source": "src/components/ArtworkIcon.tsx",
+      "symbol": "ArtworkIcon",
+      "props": {
+        "name": "toolbar-trash-2"
+      }
+    },
+    {
+      "nodeId": "1945:10351",
+      "name": "Toolbar internal / Shared / flower",
+      "source": "src/components/FlowerArtwork.tsx",
+      "symbol": "FlowerArtwork"
+    },
+    {
+      "nodeId": "1967:114246",
+      "name": "Toolbar internal / Shared / Floating Action Button",
+      "source": "src/components/Menus.tsx",
+      "symbol": "FloatingActionButton"
+    },
+    {
+      "nodeId": "1967:115665",
+      "name": "Toolbar internal / Shared / Search Field",
+      "source": "src/components/TextField.tsx",
+      "symbol": "SearchField"
+    }
+  ]
+}

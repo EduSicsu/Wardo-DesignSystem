@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+ <uses-feature android:name="android.software.xr.api.spatial" android:required="true"/>
+ <application android:label="Wardo XR Catalogue" android:theme="@android:style/Theme.Material.Light.NoActionBar">
+  <activity android:name=".XrCatalogueActivity" android:exported="true">
+   <property android:name="android.window.PROPERTY_XR_ACTIVITY_START_MODE" android:value="XR_ACTIVITY_START_MODE_FULL_SPACE_MANAGED"/>
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+  </activity>
+ </application>
+</manifest>

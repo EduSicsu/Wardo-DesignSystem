@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="4" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-11-09T13:56:28" hostname="localhost">
+  <testsuite name="com.wardo.xrcatalogue.XrCatalogueTest" tests="4" failures="0" errors="0" skipped="0" time="7.764" timestamp="2026-11-09T13:56:28" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="expandedRailSelectionActionsAndRTLRemainApplicationOwned" classname="com.wardo.xrcatalogue.XrCatalogueTest" time="3.138" />
+    <testcase name="spatialDialogConfirmsAndDismisses" classname="com.wardo.xrcatalogue.XrCatalogueTest" time="2.107" />
+    <testcase name="androidNavigationItemsExposeIndependentSelectionAndDisabledState" classname="com.wardo.xrcatalogue.XrCatalogueTest" time="1.887" />
+    <testcase name="spatialPanelAndOrbiterUpdateApplicationState" classname="com.wardo.xrcatalogue.XrCatalogueTest" time="0.632" />
+  </testsuite>
+</testsuites>

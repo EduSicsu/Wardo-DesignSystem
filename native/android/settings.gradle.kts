@@ -4,3 +4,7 @@ dependencyResolutionManagement {
     repositories { google(); mavenCentral() }
 }
 rootProject.name = "WardoDesignSystem"
+include(":sample")
+include(":xr")
+
+include(":xr-sample")

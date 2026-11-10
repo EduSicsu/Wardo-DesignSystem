@@ -1,0 +1,37 @@
+{
+  "figmaFile": "rkJclvwYpmw9ja5vUwkl3P",
+  "components": [
+    {
+      "nodeId": "1159:29",
+      "name": "Navigation / Icon / events",
+      "width": 24,
+      "height": 24,
+      "type": "COMPONENT",
+      "properties": {}
+    },
+    {
+      "nodeId": "1159:34",
+      "name": "Navigation / Icon / saved",
+      "width": 24,
+      "height": 24,
+      "type": "COMPONENT",
+      "properties": {}
+    },
+    {
+      "nodeId": "1159:39",
+      "name": "Navigation / Icon / notifications",
+      "width": 24,
+      "height": 24,
+      "type": "COMPONENT",
+      "properties": {}
+    },
+    {
+      "nodeId": "1159:44",
+      "name": "Navigation / Icon / profile",
+      "width": 24,
+      "height": 24,
+      "type": "COMPONENT",
+      "properties": {}
+    }
+  ]
+}

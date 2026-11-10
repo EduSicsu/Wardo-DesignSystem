@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-09",
+  "scope": "The eight static Android toolbar glyph definitions only. Parent button surfaces, focus/toggle states, and native spatial navigation retain separate coverage records.",
+  "figmaProperties": "coverage/design-context/android-toolbar-glyph-properties.json",
+  "sourceAssets": "coverage/native-toolbar-assets.json",
+  "checks": [
+    {
+      "result": "passed",
+      "kind": "source contract",
+      "details": "All eight Figma entries are static 24x24 components with no exposed properties or variants. Exact SVGs retained; official Android Svg2Vector conversion completed without warnings. All SVG and native resource root dimensions and hashes are checked by coverage:check."
+    },
+    {
+      "result": "passed",
+      "kind": "native build",
+      "details": "Android library, phone sample, XR library, XR sample and instrumentation APK compiled with the pinned toolchain."
+    },
+    {
+      "result": "passed",
+      "kind": "runtime",
+      "test": "exactToolbarArtworkResourcesLoadAndActionsHaveAccessibleNames",
+      "details": "All eight resources load and render. Named native actions have at least 48dp targets and update caller-owned state. The full six-test class passed after the sample text-contrast correction.",
+      "evidence": "coverage/evidence/2026-11-09/android-native-final-six-tests.txt"
+    },
+    {
+      "result": "passed",
+      "kind": "visual source review",
+      "evidence": "coverage/previews/native/android-toolbar-artwork-scene.png",
+      "details": "Reviewed all eight rendered silhouettes against their individual Figma screenshots: outlined/filled stars, share, comment, download, edit, more-vertical and image. Native vector resources retain the source geometry. XR world capture is used because 2D host-window PixelCopy returned blank frames."
+    },
+    {
+      "result": "passed",
+      "kind": "composition boundary",
+      "details": "Glyph rendering is fixed at24dp and independent of font size and layout direction. Color inherits LocalContentColor (or explicit caller tint) for native parent states; a null description is decorative. Destination labels, focus, toggles and screen-reader announcements belong to the consuming native control. These entries have no intrinsic interaction or state variants."
+    }
+  ],
+  "sourceHashes": {
+    "native/android/src/main/kotlin/com/wardo/designsystem/ToolbarArtwork.kt": "7acfc191f07861ea7eee483c655e64fe3bef70fed69330b56892e25bd5093259",
+    "native/android/xr-sample/src/main/kotlin/com/wardo/xrcatalogue/XrCatalogueActivity.kt": "98ad36a787998faaa531f25e820a022a18983ad50235c6b31ea4f258d800c9b1",
+    "native/android/xr-sample/src/androidTest/kotlin/com/wardo/xrcatalogue/XrCatalogueTest.kt": "bd5051fb8bcd1688ef9402208f1b8039b6ddbc3e21020447f66e260d2d867d5f"
+  },
+  "previewSha256": "1f198159c54a4a0c2a00fdcf195115c08d55fd72b734a024151607899448b9ac"
+}

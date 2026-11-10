@@ -1,0 +1,6 @@
+
+com.wardo.xrcatalogue.XrCatalogueTest:......
+
+Time: 22.261
+
+OK (6 tests)

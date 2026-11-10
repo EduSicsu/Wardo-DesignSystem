@@ -13,15 +13,32 @@ npm run dev
 
 Open the local address shown in the terminal. The preview includes theme switching, editable forms, selection controls, keyboard-operated navigation and disclosures. Open `/library` for the expanded gallery. Fonts are bundled locally in the preview; no third-party font requests are needed.
 
-## Coverage — incomplete
+## App component coverage — incomplete
 
-Figma Code Connect currently shows **199 of 797 connected (25.0%)**, leaving **598 unconnected**. The React library has been expanded substantially; full-library work remains in progress. The remaining count includes internal building blocks, platform-specific components, and additional public families; it is not a count of 776 distinct React components. See `figma/COVERAGE.md`.
+Only reusable components used inside apps are implementation and connection targets. This includes app controls, reusable compositions, their internal building blocks, and icons such as Lucide. Documentation, showcase/example screens, original UI-kit/device references, archives, and Apple Watch/watchOS are excluded. The policy is versioned in `coverage/scope.json`.
+
+The audit retains 765 published records, but only **562 app components** count toward completion; **203 records are excluded references**. The default `/coverage` view shows app components. Excluded records remain available through the reference filter without implementation requirements or code examples.
+
+There are **374 saved app source links**. The historical Figma records still contain **380 total saved links**, including **six example-screen connections scheduled for removal** in `coverage/connection-cleanup.json`. All 153 Lucide source connections are now saved and confirmed. The user resumed connection work and requested skipped entries remain untouched; the six existing example links have not been removed. React remains active and native activation remains deferred.
+
+Implementation and validation remain independent: 172 app records are implemented, 13 are verified, and 549 still require validation or implementation work. Existing example screens and native samples may remain development fixtures; they are not production component targets. No Apple Watch implementation is required.
+
+Open `/coverage` for searchable records, platform alternatives, examples and explicit gaps, or run:
+
+```sh
+npm run coverage:lookup -- 1531:158362
+npm run coverage:lookup -- 2277:12775 --platform Android
+npm run coverage:check
+npm run coverage:complete
+```
+
+The completion check deliberately fails until every active record has implementation, property mappings and verification evidence. See `coverage/WORK-IN-PROGRESS.md` and `native/README.md` for current work and reproducible native checks.
 
 ## What's included
 
 The React library now includes navigation bars, sidebars, tabs, breadcrumbs, pagination, toolbars, menus and submenus, split buttons, FABs, segmented controls, autocomplete, selection lists, token fields, range sliders, steppers, date/time inputs, structured lists, sortable tables, expandable trees, carousels, grids, feedback notices, progress indicators, dialogs, sheets and tooltips, in addition to the original controls. `/library` opens the expanded interactive preview.
 
-The 124 additional mappings in `figma/expanded-mappings.json` are saved in Figma. The next 54 web mappings are also saved in `figma/web-internals-mappings.json`, including the shared slider/range-slider adapter. Native SwiftUI and Compose sources are in `native`, with native builds explicitly deferred by the owner; these are not claimed as verified complete native packages.
+The 124 additional mappings in `figma/expanded-mappings.json` are saved in Figma. The next 54 web mappings are also saved in `figma/web-internals-mappings.json`, including the shared slider/range-slider adapter. Native SwiftUI and Compose sources are in `native`, with dedicated sample applications and native build/runtime checks. Full per-entry native validation remains in progress.
 
 - 69 semantic colors across ten themes, eight control sizes and three conditions.
 - Keyboard-operated composite controls and focus-managed overlays using React Aria.
@@ -72,7 +89,7 @@ To republish snippet templates later with the CLI, use your own Figma access tok
 
 ## Native platforms
 
-See [`native/README.md`](native/README.md) for the Apple and Android source packages and their current gaps. Figma Professional supports one active framework, so native activation must not silently replace React. Native build and runtime validation have not been performed.
+See [`native/README.md`](native/README.md) for the Apple and Android source packages and their current gaps. Figma Professional supports one active framework, so native activation must not silently replace React. Native build and runtime evidence is tracked per entry; complete cross-platform validation remains pending.
 
 ## Tokens and maintenance
 
@@ -94,3 +111,22 @@ The library build emits JavaScript, TypeScript declarations, and `dist/styles.cs
 No npm release, public website deployment, backend, or user data storage is configured.
 
 Native connection decision: the owner chose to keep React active and defer native connections. Native sources remain saved with their documented implementation and verification gaps.
+
+## Example compositions
+
+Open `/examples` for six mobile/desktop Upcoming, Reviews and Messaging reference screens with local artwork. Application callbacks and data can replace the fixture defaults. Example assets are a separate package entry:
+
+```tsx
+import { UpcomingMobileExample } from '@wardo/design-system/examples';
+import '@wardo/design-system/examples.css';
+```
+
+The example stylesheet is emitted as `dist/design-system.css`; core styles remain available through `@wardo/design-system/styles.css`.
+
+For RTL menus, configure the application locale through React Aria’s `I18nProvider` or `MenuButton`’s `locale` prop, and set the content direction with `dir`. Menu triggers support the shared hierarchy, tone, size and condition values, plus leading and trailing icon slots.
+
+## App search components
+
+`SearchField` supports `presentation="navigation"` for compact navigation chrome with an accessible hidden label, exact 20px source artwork, and native keyboard clearing/focus behavior. Set `dir` on the component to mirror the complete field. `/search-fields` provides its app-owned query, submit, disabled, theme and RTL examples.
+
+Figma Sidebar Search Field `2396:18524` belongs to iOS/iPadOS and now resolves to `WardoSidebarSearchField`, independently of its historical React source link. It exposes application-owned query, submit and voice-search callbacks. Its iPhone/iPad samples and native review limitations are recorded in `coverage/evidence/2026-11-10/search-family-review.json`.

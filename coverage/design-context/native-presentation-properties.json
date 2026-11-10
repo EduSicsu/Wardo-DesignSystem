@@ -1,0 +1,167 @@
+{
+  "date": "2026-11-09",
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "records": [
+    {
+      "id": "2773:45047",
+      "name": "Native / iOS-iPadOS 26 / Alert",
+      "type": "COMPONENT_SET",
+      "definitions": {
+        "Show Fields#6214:0": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Show Field 2#6214:3": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Stacked",
+          "variantOptions": [
+            "Side-by-Side",
+            "Stacked"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "2773:45048",
+          "name": "Type=Side-by-Side",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "2773:45061",
+          "name": "Type=Stacked",
+          "type": "COMPONENT"
+        }
+      ]
+    },
+    {
+      "id": "2773:44195",
+      "name": "Native / iOS-iPadOS 26 / Activity View - iPad",
+      "type": "COMPONENT_SET",
+      "definitions": {
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Dark",
+            "Light"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "2773:44196",
+          "name": "Mode=Dark",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "2773:44200",
+          "name": "Mode=Light",
+          "type": "COMPONENT"
+        }
+      ]
+    },
+    {
+      "id": "2773:44204",
+      "name": "Native / iOS-iPadOS 26 / Activity View - iPhone",
+      "type": "COMPONENT_SET",
+      "definitions": {
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Dark",
+            "Light"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "2773:44205",
+          "name": "Mode=Dark",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "2773:44253",
+          "name": "Mode=Light",
+          "type": "COMPONENT"
+        }
+      ]
+    },
+    {
+      "id": "2773:43627",
+      "name": "Native / iOS-iPadOS 26 / Context Menu",
+      "type": "COMPONENT_SET",
+      "definitions": {
+        "Alignment": {
+          "type": "VARIANT",
+          "defaultValue": "Vertical",
+          "variantOptions": [
+            "Vertical",
+            "Horizontal (iPad only)"
+          ]
+        },
+        "Side": {
+          "type": "VARIANT",
+          "defaultValue": "Leading",
+          "variantOptions": [
+            "Trailing",
+            "Leading"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "2773:43628",
+          "name": "Alignment=Horizontal (iPad only), Side=Trailing",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "2773:43633",
+          "name": "Alignment=Horizontal (iPad only), Side=Leading",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "2773:43638",
+          "name": "Alignment=Vertical, Side=Trailing",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "2773:43643",
+          "name": "Alignment=Vertical, Side=Leading",
+          "type": "COMPONENT"
+        }
+      ]
+    },
+    {
+      "id": "2773:43481",
+      "name": "Native / iOS-iPadOS 26 / Sheet - Full Screen - iPhone",
+      "type": "COMPONENT_SET",
+      "definitions": {
+        "Stacked": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "2773:43482",
+          "name": "Stacked=True",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "2773:43487",
+          "name": "Stacked=False",
+          "type": "COMPONENT"
+        }
+      ]
+    }
+  ]
+}

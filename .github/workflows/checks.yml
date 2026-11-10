@@ -10,6 +10,10 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm run tokens:check
+      - run: npm run coverage:build
+      - run: git diff --exit-code -- coverage/registry.json
+      - run: npm run coverage:check
       - run: npm run check
       - run: npm run figma:check
       - run: npx playwright install --with-deps chromium

@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-09",
+  "scope": "Partial execution evidence for canonical iOS/iPadOS destination atoms; native system tab/split-view containers are separate components.",
+  "checks": [
+    {
+      "result": "passed",
+      "platform": "iOS27.2 / iPhone18Pro",
+      "test": "testAppleDestinationItemsExposeSelectionBadgesRTLAndLargeText",
+      "evidence": "coverage/evidence/2026-11-09/iphone-navigation-artwork-tests.json"
+    },
+    {
+      "result": "passed",
+      "platform": "iPadOS27.2 / iPadPro13M5",
+      "test": "testAppleDestinationItemsExposeSelectionBadgesRTLAndLargeText",
+      "evidence": "coverage/evidence/2026-11-09/ipad-navigation-artwork-tests.json"
+    },
+    {
+      "result": "passed",
+      "platform": "visionOS27.2 / VisionPro simulator",
+      "test": "testAppleDestinationItemsExposeSelectionBadgesRTLAndLargeText",
+      "evidence": "coverage/evidence/2026-11-09/vision-navigation-artwork-tests.json",
+      "scope": "Canonical 2D Apple destination atom; native spatial navigation remains separate."
+    }
+  ],
+  "pending": [
+    "Full source theme/badge/focus fidelity, native keyboard and VoiceOver review remain pending."
+  ],
+  "sourceHashes": {
+    "native/apple/Sources/WardoDesignSystem/AppleNavigationItem.swift": "19ec1b0ff3a32b2993c72e61c67fae47372ba561dda0806e75b51d4700165c7a"
+  },
+  "details": [
+    "Native button selection and badge value, full-row touch targets, callback ownership and disabled activation suppression checked.",
+    "RTL placement and larger text checked on iPhone and iPad. Accessibility text sizes now use available width and scaled icon slots.",
+    "Exact navigation SVG resources render in the native sample; native system tab/split-view compositions retain separate records."
+  ]
+}

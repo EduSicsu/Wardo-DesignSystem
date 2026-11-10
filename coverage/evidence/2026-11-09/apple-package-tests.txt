@@ -1,0 +1,61 @@
+Building for debugging...
+[Pre-planning 1 / 124]
+[Planning deferred tasks]
+[52 / 77]
+[53 / 78] WardoDesignSystem
+[61 / 153]
+[66 / 153]
+[74 / 153]
+[76 / 153]
+[77 / 153]
+[83 / 153]
+[85 / 153]
+[88 / 153]
+[94 / 153]
+[99 / 153]
+[100 / 153]
+[112 / 153]
+[113 / 153]
+[117 / 153]
+[118 / 153]
+[128 / 153] WardoDesignSystem
+[129 / 153] WardoDesignSystem
+[143 / 154] WardoDesignSystemTests-product
+[144 / 162]
+[151 / 162] WardoDesignSystemTests-product
+[156 / 162] WardoDesignSystemTests-product
+[158 / 162] WardoDesignSystemTests-product
+Build complete! (11,49 secs)
+Test Suite 'All tests' started at 2026-11-09 10:22:24.087.
+Test Suite 'All tests' passed at 2026-11-09 10:22:24.090.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.003) seconds
+􀟈  Test run started.
+􀄵  Testing Library Version: 2403
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Test calendarRespectsFirstWeekdayAndLeapYear() started.
+􀟈  Test sectionScrubbingRejectsEmptyAndInvalidGeometry() started.
+􀟈  Test everySemanticColorResolvesInEveryTheme() started.
+􀟈  Test spectrumSamplesTheExactArtworkAndRespectsOrientation() started.
+􀟈  Test sliderSnapsRelativeToLowerBoundWithoutCrossingEndpoints() started.
+􀟈  Test compactPagingMapsVisiblePositionsAndRejectsInvalidGeometry() started.
+􀟈  Test paletteMatchesDesignGrid() started.
+􀟈  Test colorRemainsBoundedAfterApplicationOwnedMutations() started.
+􀟈  Test colorRoundTripsAndPreservesAlpha() started.
+􀟈  Test boundedColorValues() started.
+􀟈  Test spectrumHasContinuousHueEndpoints() started.
+􀟈  Test sectionScrubbingClampsAtBothEndsAndIncludesTheFinalSymbol() started.
+􀟈  Test pagingKeepsSelectionVisibleAndCannotCrossEndpoints() started.
+􁁛  Test boundedColorValues() passed after 0.001 seconds.
+􁁛  Test sliderSnapsRelativeToLowerBoundWithoutCrossingEndpoints() passed after 0.001 seconds.
+􁁛  Test colorRoundTripsAndPreservesAlpha() passed after 0.001 seconds.
+􁁛  Test spectrumHasContinuousHueEndpoints() passed after 0.001 seconds.
+􁁛  Test sectionScrubbingClampsAtBothEndsAndIncludesTheFinalSymbol() passed after 0.001 seconds.
+􁁛  Test colorRemainsBoundedAfterApplicationOwnedMutations() passed after 0.001 seconds.
+􁁛  Test compactPagingMapsVisiblePositionsAndRejectsInvalidGeometry() passed after 0.001 seconds.
+􁁛  Test sectionScrubbingRejectsEmptyAndInvalidGeometry() passed after 0.001 seconds.
+􁁛  Test calendarRespectsFirstWeekdayAndLeapYear() passed after 0.001 seconds.
+􁁛  Test pagingKeepsSelectionVisibleAndCannotCrossEndpoints() passed after 0.001 seconds.
+􁁛  Test paletteMatchesDesignGrid() passed after 0.001 seconds.
+􁁛  Test everySemanticColorResolvesInEveryTheme() passed after 0.001 seconds.
+􁁛  Test spectrumSamplesTheExactArtworkAndRespectsOrientation() passed after 0.019 seconds.
+􁁛  Test run with 13 tests in 0 suites passed after 0.019 seconds.

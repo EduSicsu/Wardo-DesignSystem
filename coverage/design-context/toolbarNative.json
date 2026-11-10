@@ -1,0 +1,817 @@
+[
+  {
+    "id": "1945:10850",
+    "name": "Toolbar internal / Apple / Tab Bar - iPad",
+    "description": "",
+    "properties": {
+      "Show Sidebar#2420:1": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Show Tab 3#2524:68": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Show Tab 4#2524:84": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Show Tab 5#2524:100": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Show Tab 6#2524:116": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Show Tab 7#2524:132": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Show Search#2524:157": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10862",
+    "name": "Toolbar internal / Apple / Tab Bar Button - iPad - Symbol",
+    "description": "",
+    "properties": {
+      "Symbol#5735:7": {
+        "type": "TEXT",
+        "defaultValue": "􀰱"
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "True",
+          "False"
+        ]
+      },
+      "Mode": {
+        "type": "VARIANT",
+        "defaultValue": "Light",
+        "variantOptions": [
+          "Dark",
+          "Light"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10873",
+    "name": "Toolbar internal / Apple / Tab Bar Button - iPad - Text",
+    "description": "",
+    "properties": {
+      "Label#5735:6": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "True",
+          "False"
+        ]
+      },
+      "Mode": {
+        "type": "VARIANT",
+        "defaultValue": "Light",
+        "variantOptions": [
+          "Dark",
+          "Light"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10410",
+    "name": "Toolbar internal / Android / stars",
+    "description": "",
+    "properties": {},
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10412",
+    "name": "Toolbar internal / Android / stars_filled",
+    "description": "",
+    "properties": {},
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10484",
+    "name": "Toolbar internal / Android / FAB",
+    "description": "Floating action buttons (FABs) help people take primary actions on a screen. The FAB appears in front of all other content on screen, and is recognizable for its rounded shape and icon in the center. Medium FABs are recommended to use as the default FAB site.\n\n\nUse a FAB for the most common or important action on a screen\nMake sure the icon in a FAB is clear and understandable\nFABs persist on the screen when content is scrolling",
+    "properties": {
+      "Show focus indicator#58687:2812": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Icon#69457:42": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Medium",
+          "Large"
+        ]
+      },
+      "Color": {
+        "type": "VARIANT",
+        "defaultValue": "Primary container",
+        "variantOptions": [
+          "Primary container",
+          "Secondary container",
+          "Tertiary container",
+          "Primary",
+          "Secondary",
+          "Tertiary"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10769",
+    "name": "Toolbar internal / Android / Focus indicator",
+    "description": "",
+    "properties": {},
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10775",
+    "name": "Toolbar internal / Android / share",
+    "description": "",
+    "properties": {},
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10777",
+    "name": "Toolbar internal / Android / comment",
+    "description": "",
+    "properties": {},
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10779",
+    "name": "Toolbar internal / Android / download",
+    "description": "",
+    "properties": {},
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10781",
+    "name": "Toolbar internal / Android / edit",
+    "description": "",
+    "properties": {},
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10783",
+    "name": "Toolbar internal / Android / more_vert",
+    "description": "",
+    "properties": {},
+    "status": "CURRENT"
+  },
+  {
+    "id": "1945:10785",
+    "name": "Toolbar internal / Android / image",
+    "description": "",
+    "properties": {},
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:21970",
+    "name": "Toolbar internal / Android / Building Blocks/Standard/Icon button",
+    "description": "",
+    "properties": {
+      "Icon#58694:3035": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Show focus indicator#58699:3237": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:21993",
+    "name": "Toolbar internal / Android / Building Blocks/Standard/Icon button toggleable",
+    "description": "",
+    "properties": {
+      "Icon#58694:3013": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10410"
+      },
+      "Icon (selected)#58694:3024": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Show focus indicator#58699:3243": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22048",
+    "name": "Toolbar internal / Android / Building Blocks/Standard/Button toggleable",
+    "description": "",
+    "properties": {
+      "Show icon#58694:2958": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Icon (selected)#58694:2969": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Icon#58694:2980": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10410"
+      },
+      "Label text#58694:2991": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "Show focus indicator#58699:3271": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22114",
+    "name": "Toolbar internal / Android / Building Blocks/Vibrant/Icon button",
+    "description": "",
+    "properties": {
+      "Icon#58694:3107": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Show focus indicator#58699:3265": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22137",
+    "name": "Toolbar internal / Android / Building Blocks/Vibrant/Icon button toggleable",
+    "description": "",
+    "properties": {
+      "Icon#58694:3085": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10410"
+      },
+      "Icon (selected)#58694:3096": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Show focus indicator#58699:3254": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22192",
+    "name": "Toolbar internal / Android / Building Blocks/Vibrant/Button toggleable",
+    "description": "",
+    "properties": {
+      "Label text#58694:3041": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "Show icon#58694:3052": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Icon#58694:3063": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10410"
+      },
+      "Icon (selected)#58694:3074": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Show focus indicator#58699:3282": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22551",
+    "name": "Toolbar internal / Android XR / Building Blocks/Surface high/Icon button",
+    "description": "",
+    "properties": {
+      "Icon#58694:3035": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Show focus indicator#58699:3237": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22574",
+    "name": "Toolbar internal / Android XR / Building Blocks/Surface high/Icon button toggleable",
+    "description": "",
+    "properties": {
+      "Icon#58694:3013": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10410"
+      },
+      "Show focus indicator#58699:3243": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Icon (selected)#58825:44": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22629",
+    "name": "Toolbar internal / Android XR / Building Blocks/Surface high/Button toggleable",
+    "description": "",
+    "properties": {
+      "Show icon#58694:2958": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Icon#58694:2980": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10410"
+      },
+      "Label text#58694:2991": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "Show focus indicator#58699:3271": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Icon (selected)#58825:11": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22695",
+    "name": "Toolbar internal / Android XR / Building Blocks/Tertiary container/Icon button",
+    "description": "",
+    "properties": {
+      "Icon#58694:3035": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Show focus indicator#58699:3237": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22718",
+    "name": "Toolbar internal / Android XR / Building Blocks/Tertiary container/Icon button toggleable",
+    "description": "",
+    "properties": {
+      "Icon#58694:3013": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10410"
+      },
+      "Show focus indicator#58699:3243": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Icon (selected)#58825:55": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22773",
+    "name": "Toolbar internal / Android XR / Building Blocks/Tertiary container/Button toggleable",
+    "description": "",
+    "properties": {
+      "Show icon#58694:2958": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Icon#58694:2980": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10410"
+      },
+      "Label text#58694:2991": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "Show focus indicator#58699:3271": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Icon (selected)#58824:0": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22841",
+    "name": "Toolbar internal / Android XR / Building Blocks/Surface/Icon button",
+    "description": "",
+    "properties": {
+      "Show Focus indicator#7061:0": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Icon#58694:3035": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22864",
+    "name": "Toolbar internal / Android XR / Building Blocks/Surface/Icon button toggleable",
+    "description": "",
+    "properties": {
+      "Icon#58694:3013": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10410"
+      },
+      "Show focus indicator#58699:3243": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Icon (selected)#58825:33": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1908:22919",
+    "name": "Toolbar internal / Android XR / Building Blocks/Surface/Button toggleable",
+    "description": "",
+    "properties": {
+      "Show icon#58694:2958": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Icon#58694:2980": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10410"
+      },
+      "Label text#58694:2991": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "Show focus indicator#58699:3271": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Icon (selected)#58825:22": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "1945:10412"
+      },
+      "Selected": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Enabled",
+        "variantOptions": [
+          "Enabled",
+          "Hovered",
+          "Focused",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1880:16113",
+    "name": "Toolbar internal / visionOS / Buttons - Symbols",
+    "description": "",
+    "properties": {
+      "Symbol#104:0": {
+        "type": "TEXT",
+        "defaultValue": "􀓔"
+      },
+      "Tooltip#104:2": {
+        "type": "TEXT",
+        "defaultValue": "Tooltip"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Unselected",
+        "variantOptions": [
+          "Unselected",
+          "Hover",
+          "Hover + Dwell",
+          "Selected",
+          "Disabled"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  },
+  {
+    "id": "1880:16127",
+    "name": "Toolbar internal / visionOS / Buttons - Text",
+    "description": "",
+    "properties": {
+      "Title#119:75": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Idle",
+        "variantOptions": [
+          "Idle",
+          "Hover",
+          "Selected"
+        ]
+      }
+    },
+    "status": "CURRENT"
+  }
+]
