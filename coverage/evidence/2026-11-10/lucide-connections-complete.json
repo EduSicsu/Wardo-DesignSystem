@@ -1,0 +1,1544 @@
+{
+  "date": "2026-11-10",
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "totalIcons": 153,
+  "savedIcons": 153,
+  "apiConfirmed": 101,
+  "uiConfirmedWithoutApiReadback": [
+    {
+      "nodeId": "125:8319",
+      "name": "li:handbag",
+      "symbol": "Handbag",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8327",
+      "name": "li:hat-glasses",
+      "symbol": "HatGlasses",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8330",
+      "name": "li:hd",
+      "symbol": "Hd",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8346",
+      "name": "li:heart-minus",
+      "symbol": "HeartMinus",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8353",
+      "name": "li:helicopter",
+      "symbol": "Helicopter",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8364",
+      "name": "li:house-heart",
+      "symbol": "HouseHeart",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8368",
+      "name": "li:house-wifi",
+      "symbol": "HouseWifi",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8373",
+      "name": "li:id-card-lanyard",
+      "symbol": "IdCardLanyard",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8382",
+      "name": "li:image-upscale",
+      "symbol": "ImageUpscale",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8441",
+      "name": "li:line-squiggle",
+      "symbol": "LineSquiggle",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8450",
+      "name": "li:list-chevrons-down-up",
+      "symbol": "ListChevronsDownUp",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8457",
+      "name": "li:list-filter-plus",
+      "symbol": "ListFilterPlus",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8499",
+      "name": "li:map-minus",
+      "symbol": "MapMinus",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8517",
+      "name": "li:mars",
+      "symbol": "Mars",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8519",
+      "name": "li:mars-stroke",
+      "symbol": "MarsStroke",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8588",
+      "name": "li:motorbike",
+      "symbol": "Motorbike",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8625",
+      "name": "li:non-binary",
+      "symbol": "NonBinary",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8657",
+      "name": "li:panda",
+      "symbol": "Panda",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8667",
+      "name": "li:panel-left-right-dashed",
+      "symbol": "PanelLeftRightDashed",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8771",
+      "name": "li:receipt-turkish-lira",
+      "symbol": "ReceiptTurkishLira",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8776",
+      "name": "li:rectangle-goggles",
+      "symbol": "RectangleGoggles",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8803",
+      "name": "li:rose",
+      "symbol": "Rose",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8820",
+      "name": "li:ruler-dimension-line",
+      "symbol": "RulerDimensionLine",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8828",
+      "name": "li:saudi-riyal",
+      "symbol": "SaudiRiyal",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8840",
+      "name": "li:scan-heart",
+      "symbol": "ScanHeart",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8889",
+      "name": "li:shield-user",
+      "symbol": "ShieldUser",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8900",
+      "name": "li:shredder",
+      "symbol": "Shredder",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8932",
+      "name": "li:soap-dispenser-droplet",
+      "symbol": "SoapDispenserDroplet",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8947",
+      "name": "li:spline-pointer",
+      "symbol": "SplinePointer",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8952",
+      "name": "li:spotlight",
+      "symbol": "Spotlight",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8985",
+      "name": "li:square-dashed-top-solid",
+      "symbol": "SquareDashedTopSolid",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:8999",
+      "name": "li:square-pause",
+      "symbol": "SquarePause",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9009",
+      "name": "li:square-round-corner",
+      "symbol": "SquareRoundCorner",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9018",
+      "name": "li:square-star",
+      "symbol": "SquareStar",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9026",
+      "name": "li:squares-exclude",
+      "symbol": "SquaresExclude",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9032",
+      "name": "li:squares-unite",
+      "symbol": "SquaresUnite",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9035",
+      "name": "li:squircle-dashed",
+      "symbol": "SquircleDashed",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9047",
+      "name": "li:stone",
+      "symbol": "Stone",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9127",
+      "name": "li:toilet",
+      "symbol": "Toilet",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9131",
+      "name": "li:toolbox",
+      "symbol": "Toolbox",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9145",
+      "name": "li:transgender",
+      "symbol": "Transgender",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9164",
+      "name": "li:truck-electric",
+      "symbol": "TruckElectric",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9166",
+      "name": "li:turkish-lira",
+      "symbol": "TurkishLira",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9196",
+      "name": "li:user-lock",
+      "symbol": "UserLock",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9218",
+      "name": "li:van",
+      "symbol": "Van",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9226",
+      "name": "li:venus",
+      "symbol": "Venus",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9228",
+      "name": "li:venus-and-mars",
+      "symbol": "VenusAndMars",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9254",
+      "name": "li:waves-arrow-down",
+      "symbol": "WavesArrowDown",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9258",
+      "name": "li:waves-ladder",
+      "symbol": "WavesLadder",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9265",
+      "name": "li:weight-tilde",
+      "symbol": "WeightTilde",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9271",
+      "name": "li:wifi-cog",
+      "symbol": "WifiCog",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    },
+    {
+      "nodeId": "125:9278",
+      "name": "li:wifi-sync",
+      "symbol": "WifiSync",
+      "reason": "You've reached the Figma MCP tool call limit for your Full seat on the Professional plan. Upgrade your seat or plan for more tool calls. Use the whoami tool for more plan details. Learn more: https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/"
+    }
+  ],
+  "apiMappings": [
+    {
+      "nodeId": "125:7597",
+      "name": "li:badge-turkish-lira",
+      "symbol": "BadgeTurkishLira",
+      "saved": true,
+      "mapping": {
+        "componentName": "BadgeTurkishLira",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7601",
+      "name": "li:balloon",
+      "symbol": "Balloon",
+      "saved": true,
+      "mapping": {
+        "componentName": "Balloon",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7607",
+      "name": "li:banknote-arrow-down",
+      "symbol": "BanknoteArrowDown",
+      "saved": true,
+      "mapping": {
+        "componentName": "BanknoteArrowDown",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7609",
+      "name": "li:banknote-arrow-up",
+      "symbol": "BanknoteArrowUp",
+      "saved": true,
+      "mapping": {
+        "componentName": "BanknoteArrowUp",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7611",
+      "name": "li:banknote-x",
+      "symbol": "BanknoteX",
+      "saved": true,
+      "mapping": {
+        "componentName": "BanknoteX",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7614",
+      "name": "li:barrel",
+      "symbol": "Barrel",
+      "saved": true,
+      "mapping": {
+        "componentName": "Barrel",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7623",
+      "name": "li:battery-plus",
+      "symbol": "BatteryPlus",
+      "saved": true,
+      "mapping": {
+        "componentName": "BatteryPlus",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7652",
+      "name": "li:birdhouse",
+      "symbol": "Birdhouse",
+      "saved": true,
+      "mapping": {
+        "componentName": "Birdhouse",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7668",
+      "name": "li:book-alert",
+      "symbol": "BookAlert",
+      "saved": true,
+      "mapping": {
+        "componentName": "BookAlert",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7686",
+      "name": "li:book-search",
+      "symbol": "BookSearch",
+      "saved": true,
+      "mapping": {
+        "componentName": "BookSearch",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7703",
+      "name": "li:bottle-wine",
+      "symbol": "BottleWine",
+      "saved": true,
+      "mapping": {
+        "componentName": "BottleWine",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7705",
+      "name": "li:bow-arrow",
+      "symbol": "BowArrow",
+      "saved": true,
+      "mapping": {
+        "componentName": "BowArrow",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7715",
+      "name": "li:brick-wall-fire",
+      "symbol": "BrickWallFire",
+      "saved": true,
+      "mapping": {
+        "componentName": "BrickWallFire",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7717",
+      "name": "li:brick-wall-shield",
+      "symbol": "BrickWallShield",
+      "saved": true,
+      "mapping": {
+        "componentName": "BrickWallShield",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7725",
+      "name": "li:brush-cleaning",
+      "symbol": "BrushCleaning",
+      "saved": true,
+      "mapping": {
+        "componentName": "BrushCleaning",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7727",
+      "name": "li:bubbles",
+      "symbol": "Bubbles",
+      "saved": true,
+      "mapping": {
+        "componentName": "Bubbles",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7759",
+      "name": "li:calendar-sync",
+      "symbol": "CalendarSync",
+      "saved": true,
+      "mapping": {
+        "componentName": "CalendarSync",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7763",
+      "name": "li:calendars",
+      "symbol": "Calendars",
+      "saved": true,
+      "mapping": {
+        "componentName": "Calendars",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7771",
+      "name": "li:cannabis-off",
+      "symbol": "CannabisOff",
+      "saved": true,
+      "mapping": {
+        "componentName": "CannabisOff",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7779",
+      "name": "li:card-sim",
+      "symbol": "CardSim",
+      "saved": true,
+      "mapping": {
+        "componentName": "CardSim",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7815",
+      "name": "li:check-line",
+      "symbol": "CheckLine",
+      "saved": true,
+      "mapping": {
+        "componentName": "CheckLine",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7819",
+      "name": "li:chess-bishop",
+      "symbol": "ChessBishop",
+      "saved": true,
+      "mapping": {
+        "componentName": "ChessBishop",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7821",
+      "name": "li:chess-king",
+      "symbol": "ChessKing",
+      "saved": true,
+      "mapping": {
+        "componentName": "ChessKing",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7823",
+      "name": "li:chess-knight",
+      "symbol": "ChessKnight",
+      "saved": true,
+      "mapping": {
+        "componentName": "ChessKnight",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7825",
+      "name": "li:chess-pawn",
+      "symbol": "ChessPawn",
+      "saved": true,
+      "mapping": {
+        "componentName": "ChessPawn",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7827",
+      "name": "li:chess-queen",
+      "symbol": "ChessQueen",
+      "saved": true,
+      "mapping": {
+        "componentName": "ChessQueen",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7829",
+      "name": "li:chess-rook",
+      "symbol": "ChessRook",
+      "saved": true,
+      "mapping": {
+        "componentName": "ChessRook",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7882",
+      "name": "li:circle-pile",
+      "symbol": "CirclePile",
+      "saved": true,
+      "mapping": {
+        "componentName": "CirclePile",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7886",
+      "name": "li:circle-pound-sterling",
+      "symbol": "CirclePoundSterling",
+      "saved": true,
+      "mapping": {
+        "componentName": "CirclePoundSterling",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7892",
+      "name": "li:circle-small",
+      "symbol": "CircleSmall",
+      "saved": true,
+      "mapping": {
+        "componentName": "CircleSmall",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7894",
+      "name": "li:circle-star",
+      "symbol": "CircleStar",
+      "saved": true,
+      "mapping": {
+        "componentName": "CircleStar",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7905",
+      "name": "li:clipboard-clock",
+      "symbol": "ClipboardClock",
+      "saved": true,
+      "mapping": {
+        "componentName": "ClipboardClock",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7932",
+      "name": "li:clock-check",
+      "symbol": "ClockCheck",
+      "saved": true,
+      "mapping": {
+        "componentName": "ClockCheck",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7934",
+      "name": "li:clock-fading",
+      "symbol": "ClockFading",
+      "saved": true,
+      "mapping": {
+        "componentName": "ClockFading",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7936",
+      "name": "li:clock-plus",
+      "symbol": "ClockPlus",
+      "saved": true,
+      "mapping": {
+        "componentName": "ClockPlus",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7938",
+      "name": "li:closed-caption",
+      "symbol": "ClosedCaption",
+      "saved": true,
+      "mapping": {
+        "componentName": "ClosedCaption",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7941",
+      "name": "li:cloud-alert",
+      "symbol": "CloudAlert",
+      "saved": true,
+      "mapping": {
+        "componentName": "CloudAlert",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7943",
+      "name": "li:cloud-backup",
+      "symbol": "CloudBackup",
+      "saved": true,
+      "mapping": {
+        "componentName": "CloudBackup",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7945",
+      "name": "li:cloud-check",
+      "symbol": "CloudCheck",
+      "saved": true,
+      "mapping": {
+        "componentName": "CloudCheck",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7961",
+      "name": "li:cloud-sync",
+      "symbol": "CloudSync",
+      "saved": true,
+      "mapping": {
+        "componentName": "CloudSync",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:7976",
+      "name": "li:columns-3-cog",
+      "symbol": "Columns3Cog",
+      "saved": true,
+      "mapping": {
+        "componentName": "Columns3Cog",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8025",
+      "name": "li:decimals-arrow-left",
+      "symbol": "DecimalsArrowLeft",
+      "saved": true,
+      "mapping": {
+        "componentName": "DecimalsArrowLeft",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8027",
+      "name": "li:decimals-arrow-right",
+      "symbol": "DecimalsArrowRight",
+      "saved": true,
+      "mapping": {
+        "componentName": "DecimalsArrowRight",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8056",
+      "name": "li:door-closed-locked",
+      "symbol": "DoorClosedLocked",
+      "saved": true,
+      "mapping": {
+        "componentName": "DoorClosedLocked",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8065",
+      "name": "li:drone",
+      "symbol": "Drone",
+      "saved": true,
+      "mapping": {
+        "componentName": "Drone",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8068",
+      "name": "li:droplet-off",
+      "symbol": "DropletOff",
+      "saved": true,
+      "mapping": {
+        "componentName": "DropletOff",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8085",
+      "name": "li:equal-approximately",
+      "symbol": "EqualApproximately",
+      "saved": true,
+      "mapping": {
+        "componentName": "EqualApproximately",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8091",
+      "name": "li:ev-charger",
+      "symbol": "EvCharger",
+      "saved": true,
+      "mapping": {
+        "componentName": "EvCharger",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8112",
+      "name": "li:file-braces-corner",
+      "symbol": "FileBracesCorner",
+      "saved": true,
+      "mapping": {
+        "componentName": "FileBracesCorner",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8119",
+      "name": "li:file-check-corner",
+      "symbol": "FileCheckCorner",
+      "saved": true,
+      "mapping": {
+        "componentName": "FileCheckCorner",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8123",
+      "name": "li:file-code-corner",
+      "symbol": "FileCodeCorner",
+      "saved": true,
+      "mapping": {
+        "componentName": "FileCodeCorner",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8130",
+      "name": "li:file-headphone",
+      "symbol": "FileHeadphone",
+      "saved": true,
+      "mapping": {
+        "componentName": "FileHeadphone",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8138",
+      "name": "li:file-minus-corner",
+      "symbol": "FileMinusCorner",
+      "saved": true,
+      "mapping": {
+        "componentName": "FileMinusCorner",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8144",
+      "name": "li:file-play",
+      "symbol": "FilePlay",
+      "saved": true,
+      "mapping": {
+        "componentName": "FilePlay",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8147",
+      "name": "li:file-plus-corner",
+      "symbol": "FilePlusCorner",
+      "saved": true,
+      "mapping": {
+        "componentName": "FilePlusCorner",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8152",
+      "name": "li:file-search-corner",
+      "symbol": "FileSearchCorner",
+      "saved": true,
+      "mapping": {
+        "componentName": "FileSearchCorner",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8162",
+      "name": "li:file-type-corner",
+      "symbol": "FileTypeCorner",
+      "saved": true,
+      "mapping": {
+        "componentName": "FileTypeCorner",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8166",
+      "name": "li:file-video-camera",
+      "symbol": "FileVideoCamera",
+      "saved": true,
+      "mapping": {
+        "componentName": "FileVideoCamera",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8170",
+      "name": "li:file-x-corner",
+      "symbol": "FileXCorner",
+      "saved": true,
+      "mapping": {
+        "componentName": "FileXCorner",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8179",
+      "name": "li:fishing-hook",
+      "symbol": "FishingHook",
+      "saved": true,
+      "mapping": {
+        "componentName": "FishingHook",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8234",
+      "name": "li:form",
+      "symbol": "Form",
+      "saved": true,
+      "mapping": {
+        "componentName": "Form",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8242",
+      "name": "li:funnel",
+      "symbol": "Funnel",
+      "saved": true,
+      "mapping": {
+        "componentName": "Funnel",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8244",
+      "name": "li:funnel-plus",
+      "symbol": "FunnelPlus",
+      "saved": true,
+      "mapping": {
+        "componentName": "FunnelPlus",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8246",
+      "name": "li:funnel-x",
+      "symbol": "FunnelX",
+      "saved": true,
+      "mapping": {
+        "componentName": "FunnelX",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8255",
+      "name": "li:gamepad-directional",
+      "symbol": "GamepadDirectional",
+      "saved": true,
+      "mapping": {
+        "componentName": "GamepadDirectional",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8260",
+      "name": "li:georgian-lari",
+      "symbol": "GeorgianLari",
+      "saved": true,
+      "mapping": {
+        "componentName": "GeorgianLari",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8265",
+      "name": "li:git-branch-minus",
+      "symbol": "GitBranchMinus",
+      "saved": true,
+      "mapping": {
+        "componentName": "GitBranchMinus",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8287",
+      "name": "li:globe-x",
+      "symbol": "GlobeX",
+      "saved": true,
+      "mapping": {
+        "componentName": "GlobeX",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8290",
+      "name": "li:gpu",
+      "symbol": "Gpu",
+      "saved": true,
+      "mapping": {
+        "componentName": "Gpu",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8298",
+      "name": "li:grid-3x2",
+      "symbol": "Grid3x2",
+      "saved": true,
+      "mapping": {
+        "componentName": "Grid3x2",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8307",
+      "name": "li:hamburger",
+      "symbol": "Hamburger",
+      "saved": true,
+      "mapping": {
+        "componentName": "Hamburger",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8312",
+      "name": "li:hand-fist",
+      "symbol": "HandFist",
+      "saved": true,
+      "mapping": {
+        "componentName": "HandFist",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8349",
+      "name": "li:heart-plus",
+      "symbol": "HeartPlus",
+      "saved": true,
+      "mapping": {
+        "componentName": "HeartPlus",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8398",
+      "name": "li:kayak",
+      "symbol": "Kayak",
+      "saved": true,
+      "mapping": {
+        "componentName": "Kayak",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8417",
+      "name": "li:laptop-minimal-check",
+      "symbol": "LaptopMinimalCheck",
+      "saved": true,
+      "mapping": {
+        "componentName": "LaptopMinimalCheck",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8424",
+      "name": "li:layers-plus",
+      "symbol": "LayersPlus",
+      "saved": true,
+      "mapping": {
+        "componentName": "LayersPlus",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8452",
+      "name": "li:list-chevrons-up-down",
+      "symbol": "ListChevronsUpDown",
+      "saved": true,
+      "mapping": {
+        "componentName": "ListChevronsUpDown",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8508",
+      "name": "li:map-pin-pen",
+      "symbol": "MapPinPen",
+      "saved": true,
+      "mapping": {
+        "componentName": "MapPinPen",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8515",
+      "name": "li:map-plus",
+      "symbol": "MapPlus",
+      "saved": true,
+      "mapping": {
+        "componentName": "MapPlus",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8573",
+      "name": "li:monitor-cloud",
+      "symbol": "MonitorCloud",
+      "saved": true,
+      "mapping": {
+        "componentName": "MonitorCloud",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8596",
+      "name": "li:mouse-pointer-2-off",
+      "symbol": "MousePointer2Off",
+      "saved": true,
+      "mapping": {
+        "componentName": "MousePointer2Off",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8674",
+      "name": "li:panel-top-bottom-dashed",
+      "symbol": "PanelTopBottomDashed",
+      "saved": true,
+      "mapping": {
+        "componentName": "PanelTopBottomDashed",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8773",
+      "name": "li:rectangle-circle",
+      "symbol": "RectangleCircle",
+      "saved": true,
+      "mapping": {
+        "componentName": "RectangleCircle",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8807",
+      "name": "li:rotate-ccw-key",
+      "symbol": "RotateCcwKey",
+      "saved": true,
+      "mapping": {
+        "componentName": "RotateCcwKey",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8849",
+      "name": "li:scooter",
+      "symbol": "Scooter",
+      "saved": true,
+      "mapping": {
+        "componentName": "Scooter",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8856",
+      "name": "li:search-alert",
+      "symbol": "SearchAlert",
+      "saved": true,
+      "mapping": {
+        "componentName": "SearchAlert",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8902",
+      "name": "li:shrimp",
+      "symbol": "Shrimp",
+      "saved": true,
+      "mapping": {
+        "componentName": "Shrimp",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8935",
+      "name": "li:solar-panel",
+      "symbol": "SolarPanel",
+      "saved": true,
+      "mapping": {
+        "componentName": "SolarPanel",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:8950",
+      "name": "li:spool",
+      "symbol": "Spool",
+      "saved": true,
+      "mapping": {
+        "componentName": "Spool",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9020",
+      "name": "li:square-stop",
+      "symbol": "SquareStop",
+      "saved": true,
+      "mapping": {
+        "componentName": "SquareStop",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9028",
+      "name": "li:squares-intersect",
+      "symbol": "SquaresIntersect",
+      "saved": true,
+      "mapping": {
+        "componentName": "SquaresIntersect",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9030",
+      "name": "li:squares-subtract",
+      "symbol": "SquaresSubtract",
+      "saved": true,
+      "mapping": {
+        "componentName": "SquaresSubtract",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9105",
+      "name": "li:text-wrap",
+      "symbol": "TextWrap",
+      "saved": true,
+      "mapping": {
+        "componentName": "TextWrap",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9129",
+      "name": "li:tool-case",
+      "symbol": "ToolCase",
+      "saved": true,
+      "mapping": {
+        "componentName": "ToolCase",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9159",
+      "name": "li:triangle-dashed",
+      "symbol": "TriangleDashed",
+      "saved": true,
+      "mapping": {
+        "componentName": "TriangleDashed",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9168",
+      "name": "li:turntable",
+      "symbol": "Turntable",
+      "saved": true,
+      "mapping": {
+        "componentName": "Turntable",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9210",
+      "name": "li:user-star",
+      "symbol": "UserStar",
+      "saved": true,
+      "mapping": {
+        "componentName": "UserStar",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9222",
+      "name": "li:vector-square",
+      "symbol": "VectorSquare",
+      "saved": true,
+      "mapping": {
+        "componentName": "VectorSquare",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9256",
+      "name": "li:waves-arrow-up",
+      "symbol": "WavesArrowUp",
+      "saved": true,
+      "mapping": {
+        "componentName": "WavesArrowUp",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9276",
+      "name": "li:wifi-pen",
+      "symbol": "WifiPen",
+      "saved": true,
+      "mapping": {
+        "componentName": "WifiPen",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    },
+    {
+      "nodeId": "125:9282",
+      "name": "li:wind-arrow-down",
+      "symbol": "WindArrowDown",
+      "saved": true,
+      "mapping": {
+        "componentName": "WindArrowDown",
+        "source": "https://github.com/EduSicsu/Wardo-DesignSystem/blob/codex/wardo-cross-platform-coverage/src/components/LucideIcons.tsx",
+        "version": "unknown",
+        "hasTemplate": false
+      }
+    }
+  ],
+  "figmaSavedTotal": 380,
+  "appSavedTotal": 374,
+  "skippedEntries": "Untouched at the user's request",
+  "validation": "Source links only; implementation/visual/interaction verification statuses are unchanged.",
+  "notes": [
+    "Figma UI confirmed each new source/export with Connected state and progress increments from243 to380 in this continuation; BrushCleaning and Bubbles had already increased241 to243.",
+    "One batch timed out after five saves; recovery observed345/765 and Spotlight still unconnected, then resumed safely.",
+    "Figma API readback hit the Professional seat MCP call limit. No subscription or active-framework change was made."
+  ]
+}

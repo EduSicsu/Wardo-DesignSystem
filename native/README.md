@@ -60,7 +60,7 @@ The four shared navigation glyphs retain their exact SVG sources in `coverage/as
 
 ## Figma and licenses
 
-React remains active in Figma. The catalogue records 235 saved app source links and six historical example links pending cleanup; these are source connections, not verified implementation counts. Compatible native connection artifacts remain under `figma` for later activation.
+React remains active in Figma. The catalogue records 374 saved app source links and six historical example links pending cleanup; these are source connections, not verified implementation counts. Compatible native connection artifacts remain under `figma` for later activation.
 
 Bundled fonts retain their SIL Open Font Licenses in the package resources. No SDK or platform license is accepted by build scripts.
 

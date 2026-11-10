@@ -19,7 +19,7 @@ Only reusable components used inside apps are implementation and connection targ
 
 The audit retains 765 published records, but only **562 app components** count toward completion; **203 records are excluded references**. The default `/coverage` view shows app components. Excluded records remain available through the reference filter without implementation requirements or code examples.
 
-There are **235 saved app source links**. The historical Figma records still contain **241 total saved links**, including **six example-screen connections scheduled for removal** in `coverage/connection-cleanup.json`. Figma editing remains deferred, so those links have not been removed or misreported as deleted. The 139 unsaved Lucide links and native activation also remain deferred.
+There are **374 saved app source links**. The historical Figma records still contain **380 total saved links**, including **six example-screen connections scheduled for removal** in `coverage/connection-cleanup.json`. All 153 Lucide source connections are now saved and confirmed. The user resumed connection work and requested skipped entries remain untouched; the six existing example links have not been removed. React remains active and native activation remains deferred.
 
 Implementation and validation remain independent: 172 app records are implemented, 13 are verified, and 549 still require validation or implementation work. Existing example screens and native samples may remain development fixtures; they are not production component targets. No Apple Watch implementation is required.
 
