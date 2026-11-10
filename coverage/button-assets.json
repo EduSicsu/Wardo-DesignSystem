@@ -1,0 +1,18 @@
+{
+  "componentNodeId": "1531:25362",
+  "variantNodeId": "1531:25363",
+  "renderer": "src/components/ArtworkIcon.tsx",
+  "assets": [
+    {
+      "source": "src/icons/actions/button-plus.svg",
+      "assetName": "button-plus",
+      "sha256": "f24cf3d2225bf8d5d53f25f434a533ebeede54d1db247068c0b60d4dd2c50e04",
+      "width": 20,
+      "height": 20
+    }
+  ],
+  "notes": [
+    "Unmodified Figma plus artwork, rendered through the existing currentColor mask renderer in the supplied 20 by 20 slot.",
+    "Icons remain caller-owned slots in the public Button API. This asset is the source specimen used in the development fixture."
+  ]
+}

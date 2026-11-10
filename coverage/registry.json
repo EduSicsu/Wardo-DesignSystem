@@ -224,9 +224,16 @@
       "validation": {
         "status": "pending",
         "evidence": [
-          "coverage/evidence/2026-11-08/family-checks.json"
+          "coverage/evidence/2026-11-08/family-checks.json",
+          "coverage/design-context/button-tertiary.json",
+          "coverage/evidence/2026-11-10/button-tertiary-review.json"
         ],
-        "notes": "Family-level web checks are recorded; complete per-entry validation is pending."
+        "notes": "Targeted default-tone tertiary fill corrected and exercised on desktop/mobile. The full Button family remains implementation and validation pending.",
+        "pendingChecks": [
+          "Complete hierarchy/tone/state, selected and icon-only matrices across supported sizes, themes and layout directions.",
+          "Review source Neutral-tone hover/pressed opaque overlays before claiming full source fidelity.",
+          "Review exact selected-indicator and focus-ring geometry against the native CSS states."
+        ]
       },
       "connection": {
         "status": "source-connection-saved",

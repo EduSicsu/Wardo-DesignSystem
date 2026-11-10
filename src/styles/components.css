@@ -13,6 +13,7 @@
 .wardo-button[data-hierarchy=tonal]{background:var(--color-action-secondary);color:var(--color-action-secondary-foreground)}
 .wardo-button:not([data-tone=default]):not([data-hierarchy=primary]){color:var(--action-fg)}
 .wardo-button:not([data-tone=default])[data-hierarchy=tonal]{background:var(--action-bg)}
+.wardo-button[data-hierarchy=tertiary][data-tone=default]:not(:disabled){background:var(--color-action-neutral);color:var(--color-action-neutral-foreground);border-color:transparent}
 .wardo-button:not(:disabled):hover::after{background:var(--color-state-hover)}
 .wardo-button[data-hierarchy=primary][data-tone=default]:not(:disabled):hover{background:var(--color-action-primary-hover)}
 .wardo-button:not(:disabled):active::after{background:var(--color-state-pressed)}

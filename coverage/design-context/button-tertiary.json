@@ -1,0 +1,50 @@
+{
+  "nodeId": "1531:25362",
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "sourceUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-25670",
+  "reviewedVariantNodes": [
+    "1531:25363",
+    "1531:25370",
+    "1531:25377",
+    "1531:25385",
+    "1531:25393",
+    "1531:25516",
+    "1531:25670",
+    "1531:25824",
+    "1531:25978",
+    "1531:25400",
+    "1531:25438",
+    "1531:25476",
+    "3238:10935"
+  ],
+  "target": {
+    "nodeId": "1531:25670",
+    "hierarchy": "Tertiary",
+    "tone": "Default",
+    "fill": "color/semantic/action/neutral",
+    "foreground": "color/semantic/action/neutral-foreground",
+    "border": "none",
+    "sizeMode": "M",
+    "width": 130,
+    "height": 48,
+    "iconSlot": {
+      "width": 20,
+      "height": 20
+    },
+    "contentGap": 8,
+    "horizontalPadding": 24,
+    "label": {
+      "font": "Geologica",
+      "weight": 500,
+      "fontSize": 16,
+      "lineHeight": 19.2
+    },
+    "layoutDirection": "Leading/trailing slots follow reading direction; artwork and text remain upright."
+  },
+  "scope": "Targeted resting-state default-tone tertiary correction only. Other native browser states are exercised for basic behavior, not claimed as exhaustive source fidelity.",
+  "notes": [
+    "Size and theme are modes; width is Hug/Fill resizing. Application state and callbacks remain caller-owned.",
+    "The source Neutral-tone hover/pressed rows contain opaque overlays that obscure text in the fresh parent render. These source variants require review before the full Button family can be declared complete. Figma editing remains deferred.",
+    "Default-tertiary source uses neutral filled styling, unlike the transparent styling previously applied by components.css."
+  ]
+}

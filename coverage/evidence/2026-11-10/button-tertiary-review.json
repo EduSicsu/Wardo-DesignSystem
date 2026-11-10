@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-10",
+  "nodeId": "1531:25362",
+  "targetVariantNodeId": "1531:25670",
+  "scope": "Default-tone tertiary app Button resting appearance plus bounded browser interactions. Full Button implementation and validation remain pending.",
+  "designContract": "coverage/design-context/button-tertiary.json",
+  "assetManifest": "coverage/button-assets.json",
+  "change": "Corrected the default tertiary button from transparent styling to the Wardo neutral filled action and foreground. Disabled styling remains separate. Public Button API is unchanged.",
+  "environment": {
+    "flow": "/buttons -> activate the tertiary Button with Enter -> application callback updates, focus remains, then inspect RTL/dark/disabled/text scaling.",
+    "browser": "Chromium",
+    "browserPlugin": "Browser plugin not available; repository Playwright used.",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "Web types, unit tests and library/demo builds",
+      "result": "passed",
+      "tests": 43,
+      "command": "npm run check"
+    },
+    {
+      "name": "Desktop/mobile targeted button browser checks",
+      "result": "passed",
+      "tests": 2,
+      "command": "npx playwright test tests/browser/buttons.spec.ts",
+      "coverage": [
+        "Page identity, meaningful content and no relevant console/page errors.",
+        "130 by 48 default M source specimen, with exact 20 by 20 plus asset and reading-direction order.",
+        "Neutral light/dark resting fill and foreground.",
+        "Native Enter activation updates the consuming application callback and retains focus.",
+        "Visible keyboard focus treatment.",
+        "Disabled native control blocks pointer activation and keeps disabled colors.",
+        "RTL, dark appearance, enabled state restored and 200% text without horizontal page scroll.",
+        "Automated WCAG2/2.1 A/AA audit of the development fixture."
+      ]
+    },
+    {
+      "name": "Visual review",
+      "result": "passed-with-family-review-pending",
+      "details": "Compared targeted light specimen to the fresh source tertiary variant: neutral fill, contrasting Geologica label, exact plus shape and slot geometry match. Dark/RTL and scaled captures reviewed for readability and layout. Other variants are not implied validated."
+    }
+  ],
+  "initialFailures": [
+    "Theme-color assertion ran before the existing150ms CSS transition completed; test now waits for settled colors.",
+    "The new fixture initially omitted its theme surface, exposing dark text colors on a browser-white background. Applied the provider background/text semantic tokens and reran its contrast checks.",
+    "Scaled screenshot was initially captured during the disabled-to-enabled transition; test now verifies enabled state and settled colors first."
+  ],
+  "previews": {
+    "coverage/previews/button-tertiary-light.png": "7e3a6449ee1d8ca528584f58d07623ae2e2f2c110a5d3dfdc07250f05cd56481",
+    "coverage/previews/button-tertiary-dark-rtl.png": "cc631b9f0908ba6fd8816edbfa40af2087b02885fbeced0425f50481345c23fd"
+  },
+  "limitations": [
+    "Button remains source-available/validation-pending; this scoped fix does not add to the implemented or fully validated counts.",
+    "Other hierarchies/tones, selected indicators, focus-ring pixel geometry, eight size modes and ten themes still need exhaustive review.",
+    "The source Neutral-tone hover/pressed opaque-overlay issue requires review; no Figma edits were made.",
+    "Manual screen-reader speech and other browser engines were not exercised."
+  ],
+  "sourceHashes": {
+    "src/styles/components.css": "3be49ef65c120fd3a9fb7759d4d9f6f14daf675d7e60c502c312d68d8130f88a",
+    "src/styles/styles.css": "3aab34992091159b8a842242bf0dd582a517203dc6f256ed68b3d27386900e9e",
+    "src/components/ArtworkIcon.tsx": "3c80e231ba7aaeb3e5bf8f60693b3dc1e8787ac788ef4b315242e2d398c9d9ed",
+    "src/icons/actions/button-plus.svg": "f24cf3d2225bf8d5d53f25f434a533ebeede54d1db247068c0b60d4dd2c50e04",
+    "demo/ButtonGallery.tsx": "76fc32c01c58669af1372d61a3071c3edea3479780ee0b7c7a1f2ed01b29df64",
+    "tests/browser/buttons.spec.ts": "59c21f0c06e5cadabd76e3ff8be9f99ae8434c0a51dd8f3f741a5294b1715274"
+  }
+}

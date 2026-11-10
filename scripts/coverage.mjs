@@ -124,7 +124,7 @@ export async function checkRegistry(registry,{complete=false}={}) {
    if(!sources.apple.includes(`"${asset.assetName}"`)||!sources.android.includes(`R.drawable.${asset.resource}`)||!sources.web.includes(`"${asset.name}":`))failures.push(`Unused navigation artwork ${asset.name}`);
   }
  } catch(error) {failures.push(`Invalid navigation artwork manifest: ${error.message}`);}
- for(const manifestPath of ['coverage/sidebar-search-assets.json','coverage/navigation-search-assets.json']) {
+ for(const manifestPath of ['coverage/sidebar-search-assets.json','coverage/navigation-search-assets.json','coverage/button-assets.json']) {
   try {
    const manifest=JSON.parse(await readFile(new URL(manifestPath,root),'utf8'));
    if(!safePath(manifest.renderer))throw new Error('Unsafe search renderer');
