@@ -24,3 +24,5 @@ export * from './components/SliderControl';
 export { NotificationScrim, type NotificationScrimProps } from './components/Scrim';
 
 export * from './components/FlowerArtwork';
+
+export * from './components/LucideIcons';
