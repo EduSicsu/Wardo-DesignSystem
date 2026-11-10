@@ -3,7 +3,7 @@
   "package": "lucide-react",
   "version": "1.70.0",
   "documentation": "https://lucide.dev/guide/react",
-  "source": "src/components/LucideIcons.ts",
+  "source": "src/components/LucideIcons.tsx",
   "icons": [
     {
       "nodeId": "125:7597",
