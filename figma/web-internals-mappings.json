@@ -767,12 +767,96 @@
       "framework": "React",
       "status": "source-connection-saved",
       "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged."
+    },
+    {
+      "nodeId": "3073:42687",
+      "designName": "Overlay",
+      "componentName": "NotificationScrim",
+      "source": "src/components/Scrim.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116248",
+      "designName": "Toolbar internal / Shared / Search Field / State controls",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116855",
+      "designName": "Toolbar internal / Shared / Search Field / Validation controls",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116910",
+      "designName": "Toolbar internal / Shared / Search Field / Value & behavior",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Saved and read back as Connected in Figma all-pages Code Connect UI on 2026-11-09. Source connection only."
+    },
+    {
+      "nodeId": "1967:116967",
+      "designName": "Toolbar internal / Shared / Field chrome",
+      "componentName": "FieldChrome",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI read back exact export as Connected; all-pages progress226/765 on2026-11-09. Validation unchanged."
+    },
+    {
+      "nodeId": "1967:117079",
+      "designName": "Toolbar internal / Shared / Field content",
+      "componentName": "FieldContent",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI read back exact export as Connected; all-pages progress226/765 on2026-11-09. Validation unchanged."
+    },
+    {
+      "nodeId": "1967:117087",
+      "designName": "Toolbar internal / Shared / Supporting text",
+      "componentName": "FieldSupportingText",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI read back exact export as Connected; all-pages progress226/765 on2026-11-09. Validation unchanged."
+    },
+    {
+      "nodeId": "3399:29565",
+      "designName": "Icon / Sidebar left",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "props": {
+        "name": "sidebar-left"
+      },
+      "verification": "Figma UI confirmed exact ArtworkIcon export and all-pages227/765 on2026-11-09. Local originalasset24x24; validation remains pending."
     }
   ],
   "lastVerifiedProgress": {
-    "connected": 199,
-    "total": 797,
-    "note": "Historical full-file UI reading before archive cleanup. Twenty additional connections verified on 2026-11-09 by per-page counts: examples6/6; toolbar internals16/57. Current repository mapping total219; current full-file Figma denominator not rechecked."
+    "connected": 227,
+    "total": 765,
+    "date": "2026-11-09",
+    "verification": "Figma all-pages Code Connect UI after the seven remaining historical React entries and the newly added sidebar icon were saved."
   },
   "latestPageVerification": {
     "date": "2026-11-09",

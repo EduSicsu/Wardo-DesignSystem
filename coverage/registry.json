@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceRef": "codex/wardo-cross-platform-coverage",
   "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
-  "inventorySource": "figma/published-classification.json",
+  "inventorySource": "figma/published-classification-2026-11-09.json",
   "samplePreviews": [
     {
       "platform": "iOS",
@@ -13294,8 +13294,17 @@
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
+        "status": "design-properties-recorded",
+        "definitions": {
+          "Mode": {
+            "type": "VARIANT",
+            "defaultValue": "Light",
+            "variantOptions": [
+              "Light",
+              "Dark"
+            ]
+          }
+        },
         "mappings": []
       },
       "validation": {
@@ -13303,8 +13312,8 @@
         "evidence": []
       },
       "connection": {
-        "status": "not-connected",
-        "framework": null
+        "status": "source-connection-saved",
+        "framework": "React"
       },
       "previews": []
     },
@@ -17304,8 +17313,41 @@
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
+        "status": "design-properties-recorded",
+        "definitions": {
+          "Read-only#1247:47": {
+            "type": "BOOLEAN",
+            "defaultValue": false
+          },
+          "State": {
+            "type": "VARIANT",
+            "defaultValue": "Enabled",
+            "variantOptions": [
+              "Enabled",
+              "Hovered",
+              "Pressed",
+              "Focused",
+              "Disabled"
+            ]
+          },
+          "Appearance": {
+            "type": "VARIANT",
+            "defaultValue": "Outlined",
+            "variantOptions": [
+              "Outlined",
+              "Filled"
+            ]
+          },
+          "Feedback": {
+            "type": "VARIANT",
+            "defaultValue": "None",
+            "variantOptions": [
+              "None",
+              "Positive",
+              "Error"
+            ]
+          }
+        },
         "mappings": []
       },
       "validation": {
@@ -17313,8 +17355,8 @@
         "evidence": []
       },
       "connection": {
-        "status": "not-connected",
-        "framework": null
+        "status": "source-connection-saved",
+        "framework": "React"
       },
       "previews": []
     },
@@ -17340,8 +17382,26 @@
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
+        "status": "design-properties-recorded",
+        "definitions": {
+          "Positive message#1247:41": {
+            "type": "TEXT",
+            "defaultValue": "Search criteria confirmed."
+          },
+          "Error message#1247:42": {
+            "type": "TEXT",
+            "defaultValue": "Enter a valid event name or location."
+          },
+          "Feedback": {
+            "type": "VARIANT",
+            "defaultValue": "None",
+            "variantOptions": [
+              "None",
+              "Positive",
+              "Error"
+            ]
+          }
+        },
         "mappings": []
       },
       "validation": {
@@ -17349,8 +17409,8 @@
         "evidence": []
       },
       "connection": {
-        "status": "not-connected",
-        "framework": null
+        "status": "source-connection-saved",
+        "framework": "React"
       },
       "previews": []
     },
@@ -17376,8 +17436,33 @@
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
+        "status": "design-properties-recorded",
+        "definitions": {
+          "Label#1023:46": {
+            "type": "TEXT",
+            "defaultValue": "Find events"
+          },
+          "Required#1023:47": {
+            "type": "BOOLEAN",
+            "defaultValue": false
+          },
+          "Feedback": {
+            "type": "VARIANT",
+            "defaultValue": "Default",
+            "variantOptions": [
+              "Default",
+              "Error"
+            ]
+          },
+          "Content": {
+            "type": "VARIANT",
+            "defaultValue": "Filled",
+            "variantOptions": [
+              "Filled",
+              "Empty"
+            ]
+          }
+        },
         "mappings": []
       },
       "validation": {
@@ -17385,8 +17470,8 @@
         "evidence": []
       },
       "connection": {
-        "status": "not-connected",
-        "framework": null
+        "status": "source-connection-saved",
+        "framework": "React"
       },
       "previews": []
     },
@@ -17404,16 +17489,55 @@
           "web"
         ],
         "source": "src/components/TextField.tsx",
-        "symbol": "SearchField",
-        "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+        "symbol": "FieldChrome",
+        "example": "<div className=\"wardo-field\"><label htmlFor=\"query\">Search</label><FieldChrome leadingIcon={<Icon name=\"search\" />}><FieldContent id=\"query\" type=\"search\" value={query} onChange={onChange} /></FieldChrome></div>",
         "gaps": [
-          "Internal field parts compose through their SearchField parent; review all nested design properties."
+          "Native input behavior and field associations are shared with TextField; full visual state/variant review remains pending."
         ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
+        "status": "design-properties-recorded",
+        "definitions": {
+          "Show leading icon#1231:0": {
+            "type": "BOOLEAN",
+            "defaultValue": false
+          },
+          "Leading icon#1231:1": {
+            "type": "INSTANCE_SWAP",
+            "defaultValue": "1967:117076",
+            "preferredValues": []
+          },
+          "Show trailing icon#1231:2": {
+            "type": "BOOLEAN",
+            "defaultValue": false
+          },
+          "Trailing icon#1231:3": {
+            "type": "INSTANCE_SWAP",
+            "defaultValue": "1967:117092",
+            "preferredValues": []
+          },
+          "Appearance": {
+            "type": "VARIANT",
+            "defaultValue": "Outlined",
+            "variantOptions": [
+              "Outlined",
+              "Filled"
+            ]
+          },
+          "State": {
+            "type": "VARIANT",
+            "defaultValue": "Default",
+            "variantOptions": [
+              "Default",
+              "Hover",
+              "Pressed",
+              "Focused",
+              "Disabled",
+              "Read-only"
+            ]
+          }
+        },
         "mappings": []
       },
       "validation": {
@@ -17421,8 +17545,8 @@
         "evidence": []
       },
       "connection": {
-        "status": "not-connected",
-        "framework": null
+        "status": "source-connection-saved",
+        "framework": "React"
       },
       "previews": []
     },
@@ -17474,16 +17598,33 @@
           "web"
         ],
         "source": "src/components/TextField.tsx",
-        "symbol": "SearchField",
-        "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+        "symbol": "FieldContent",
+        "example": "<FieldContent aria-label=\"Search\" type=\"search\" value={query} placeholder=\"Find events\" onChange={onChange} />",
         "gaps": [
-          "Internal field parts compose through their SearchField parent; review all nested design properties."
+          "Native input behavior and field associations are shared with TextField; full visual state/variant review remains pending."
         ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
+        "status": "design-properties-recorded",
+        "definitions": {
+          "Value#1231:4": {
+            "type": "TEXT",
+            "defaultValue": "Eduardo Lopes"
+          },
+          "Placeholder#1231:5": {
+            "type": "TEXT",
+            "defaultValue": "Enter your name"
+          },
+          "Content": {
+            "type": "VARIANT",
+            "defaultValue": "Filled",
+            "variantOptions": [
+              "Filled",
+              "Empty"
+            ]
+          }
+        },
         "mappings": []
       },
       "validation": {
@@ -17491,8 +17632,8 @@
         "evidence": []
       },
       "connection": {
-        "status": "not-connected",
-        "framework": null
+        "status": "source-connection-saved",
+        "framework": "React"
       },
       "previews": []
     },
@@ -17544,16 +17685,29 @@
           "web"
         ],
         "source": "src/components/TextField.tsx",
-        "symbol": "SearchField",
-        "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+        "symbol": "FieldSupportingText",
+        "example": "<FieldSupportingText id=\"search-help\">Enter an event name or location.</FieldSupportingText>",
         "gaps": [
-          "Internal field parts compose through their SearchField parent; review all nested design properties."
+          "Native input behavior and field associations are shared with TextField; full visual state/variant review remains pending."
         ]
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
+        "status": "design-properties-recorded",
+        "definitions": {
+          "Supporting text#1231:6": {
+            "type": "TEXT",
+            "defaultValue": "Your name appears on your profile."
+          },
+          "Feedback": {
+            "type": "VARIANT",
+            "defaultValue": "Default",
+            "variantOptions": [
+              "Default",
+              "Error"
+            ]
+          }
+        },
         "mappings": []
       },
       "validation": {
@@ -17561,8 +17715,8 @@
         "evidence": []
       },
       "connection": {
-        "status": "not-connected",
-        "framework": null
+        "status": "source-connection-saved",
+        "framework": "React"
       },
       "previews": []
     },
@@ -28867,6 +29021,42 @@
       "connection": {
         "status": "not-applicable",
         "framework": null
+      },
+      "previews": []
+    },
+    {
+      "id": "wardo-3399-29565",
+      "nodeId": "3399:29565",
+      "name": "Icon / Sidebar left",
+      "page": "Navigation",
+      "category": "runtime-candidate",
+      "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=3399-29565",
+      "implementation": {
+        "status": "source-available",
+        "framework": "React",
+        "platforms": [
+          "web"
+        ],
+        "source": "src/components/ArtworkIcon.tsx",
+        "symbol": "ArtworkIcon",
+        "example": "<ArtworkIcon name=\"sidebar-left\" />",
+        "gaps": [
+          "Exact downloaded24x24 asset is used; parent header layout and full visual/accessibility verification remain pending."
+        ]
+      },
+      "alternatives": [],
+      "properties": {
+        "status": "design-properties-recorded",
+        "definitions": {},
+        "mappings": []
+      },
+      "validation": {
+        "status": "pending",
+        "evidence": []
+      },
+      "connection": {
+        "status": "source-connection-saved",
+        "framework": "React"
       },
       "previews": []
     }

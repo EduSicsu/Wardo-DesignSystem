@@ -212,7 +212,7 @@
         },
         "Value#519:17": {
           "type": "TEXT",
-          "defaultValue": "\u2022\u2022\u2022\u2022\u2022\u2022"
+          "defaultValue": "••••••"
         },
         "Icon / Clear#2535:57": {
           "type": "INSTANCE_SWAP",
@@ -334,7 +334,7 @@
     "properties": {
       "status": "design-properties-recorded",
       "definitions": {
-        "Icon / \udbc0\udd85#2535:36": {
+        "Icon / 􀆅#2535:36": {
           "type": "INSTANCE_SWAP",
           "defaultValue": "1531:194151"
         },
@@ -496,7 +496,7 @@
       "definitions": {
         "Symbol#128:59": {
           "type": "TEXT",
-          "defaultValue": "\udbc1\udcd4"
+          "defaultValue": "􀓔"
         },
         "Show Symbol#128:63": {
           "type": "BOOLEAN",
@@ -506,7 +506,7 @@
           "type": "TEXT",
           "defaultValue": "Label"
         },
-        "Icon / \udbc1\udcd4#2536:0": {
+        "Icon / 􀓔#2536:0": {
           "type": "INSTANCE_SWAP",
           "defaultValue": "1531:194151"
         },
@@ -552,7 +552,7 @@
       "definitions": {
         "Symbol#128:67": {
           "type": "TEXT",
-          "defaultValue": "\udbc1\udcd4"
+          "defaultValue": "􀓔"
         },
         "Show Symbol#128:71": {
           "type": "BOOLEAN",
@@ -562,7 +562,7 @@
           "type": "TEXT",
           "defaultValue": "Label"
         },
-        "Icon / \udbc1\udcd4#2536:4": {
+        "Icon / 􀓔#2536:4": {
           "type": "INSTANCE_SWAP",
           "defaultValue": "1531:194151"
         },
@@ -651,7 +651,7 @@
       "definitions": {
         "Symbol#108:0": {
           "type": "TEXT",
-          "defaultValue": "\udbc1\udcd4"
+          "defaultValue": "􀓔"
         },
         "Icon / Symbol#2536:353": {
           "type": "INSTANCE_SWAP",
@@ -762,11 +762,11 @@
         },
         "Max Symbol#354:122": {
           "type": "TEXT",
-          "defaultValue": "\udbc1\udcd4"
+          "defaultValue": "􀓔"
         },
         "Min Symbol#354:203": {
           "type": "TEXT",
-          "defaultValue": "\udbc1\udcd4"
+          "defaultValue": "􀓔"
         },
         "Icon / Min#2536:29": {
           "type": "INSTANCE_SWAP",
@@ -978,11 +978,11 @@
       "definitions": {
         "Min Symbol#356:81": {
           "type": "TEXT",
-          "defaultValue": "\udbc1\udcd4"
+          "defaultValue": "􀓔"
         },
         "Max Symbol#356:162": {
           "type": "TEXT",
-          "defaultValue": "\udbc1\udcd4"
+          "defaultValue": "􀓔"
         },
         "Icon / Min#2536:191": {
           "type": "INSTANCE_SWAP",
@@ -1400,7 +1400,7 @@
     "properties": {
       "status": "design-properties-recorded",
       "definitions": {
-        "Icon / \udbc0\udd88#2535:41": {
+        "Icon / 􀆈#2535:41": {
           "type": "INSTANCE_SWAP",
           "defaultValue": "2578:56818"
         },
@@ -1452,7 +1452,7 @@
       "definitions": {
         "Symbol#104:0": {
           "type": "TEXT",
-          "defaultValue": "\udbc1\udcd4"
+          "defaultValue": "􀓔"
         },
         "Icon / Symbol#2535:49": {
           "type": "INSTANCE_SWAP",
@@ -1922,7 +1922,7 @@
       "definitions": {
         "Symbol#5735:7": {
           "type": "TEXT",
-          "defaultValue": "\udbc3\udc31"
+          "defaultValue": "􀰱"
         },
         "Selected": {
           "type": "VARIANT",
@@ -2247,7 +2247,7 @@
       "definitions": {
         "Symbol#104:0": {
           "type": "TEXT",
-          "defaultValue": "\udbc1\udcd4"
+          "defaultValue": "􀓔"
         },
         "Tooltip#104:2": {
           "type": "TEXT",
@@ -2652,7 +2652,7 @@
         {
           "property": "Dots",
           "target": "count",
-          "notes": "2\u20137 map to page count; 8+ requires the actual application page count, not the literal text."
+          "notes": "2–7 map to page count; 8+ requires the actual application page count, not the literal text."
         },
         {
           "property": "Selection",
@@ -2803,7 +2803,7 @@
         {
           "property": "Dots",
           "target": "count",
-          "notes": "2\u20137 map to page count; 8+ requires the actual application page count, not the literal text."
+          "notes": "2–7 map to page count; 8+ requires the actual application page count, not the literal text."
         },
         {
           "property": "Selection",
@@ -3049,7 +3049,7 @@
         {
           "property": "Show Counter#127:50",
           "target": "counter",
-          "transform": "false \u2192 nil; true \u2192 supplied counter"
+          "transform": "false → nil; true → supplied counter"
         },
         {
           "property": "Icon / Symbol#2536:16",
@@ -3185,7 +3185,7 @@
       "symbol": "WardoVisionSidebarGroup",
       "example": "WardoVisionSidebarGroup(\"Library\", isExpanded: $expanded) { ForEach(items) { item in sidebarRow(item) } }",
       "gaps": [
-        "Validate closed and 1\u201316 row compositions with application-owned expansion."
+        "Validate closed and 1–16 row compositions with application-owned expansion."
       ]
     },
     "validation": {
@@ -3247,7 +3247,7 @@
         {
           "property": "Items",
           "target": "rows + isExpanded binding",
-          "transform": "Closed \u2192 isExpanded false; 1\u201316 \u2192 application-supplied row count with isExpanded true"
+          "transform": "Closed → isExpanded false; 1–16 → application-supplied row count with isExpanded true"
         }
       ]
     }
@@ -4041,7 +4041,7 @@
         {
           "property": "Nav items",
           "target": "content",
-          "notes": "Application content supplies 3\u20136 destinations and any source-specific sections."
+          "notes": "Application content supplies 3–6 destinations and any source-specific sections."
         },
         {
           "property": "Layout direction",
@@ -4802,6 +4802,20 @@
     "validation": {
       "status": "pending",
       "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        }
+      },
+      "mappings": []
     }
   },
   "1908:21103": {
@@ -5432,6 +5446,44 @@
     "validation": {
       "status": "pending",
       "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Read-only#1247:47": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Enabled",
+          "variantOptions": [
+            "Enabled",
+            "Hovered",
+            "Pressed",
+            "Focused",
+            "Disabled"
+          ]
+        },
+        "Appearance": {
+          "type": "VARIANT",
+          "defaultValue": "Outlined",
+          "variantOptions": [
+            "Outlined",
+            "Filled"
+          ]
+        },
+        "Feedback": {
+          "type": "VARIANT",
+          "defaultValue": "None",
+          "variantOptions": [
+            "None",
+            "Positive",
+            "Error"
+          ]
+        }
+      },
+      "mappings": []
     }
   },
   "1967:116855": {
@@ -5451,6 +5503,29 @@
     "validation": {
       "status": "pending",
       "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Positive message#1247:41": {
+          "type": "TEXT",
+          "defaultValue": "Search criteria confirmed."
+        },
+        "Error message#1247:42": {
+          "type": "TEXT",
+          "defaultValue": "Enter a valid event name or location."
+        },
+        "Feedback": {
+          "type": "VARIANT",
+          "defaultValue": "None",
+          "variantOptions": [
+            "None",
+            "Positive",
+            "Error"
+          ]
+        }
+      },
+      "mappings": []
     }
   },
   "1967:116910": {
@@ -5470,6 +5545,36 @@
     "validation": {
       "status": "pending",
       "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Label#1023:46": {
+          "type": "TEXT",
+          "defaultValue": "Find events"
+        },
+        "Required#1023:47": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Feedback": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Error"
+          ]
+        },
+        "Content": {
+          "type": "VARIANT",
+          "defaultValue": "Filled",
+          "variantOptions": [
+            "Filled",
+            "Empty"
+          ]
+        }
+      },
+      "mappings": []
     }
   },
   "1967:116967": {
@@ -5480,15 +5585,59 @@
         "web"
       ],
       "source": "src/components/TextField.tsx",
-      "symbol": "SearchField",
-      "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+      "symbol": "FieldChrome",
+      "example": "<div className=\"wardo-field\"><label htmlFor=\"query\">Search</label><FieldChrome leadingIcon={<Icon name=\"search\" />}><FieldContent id=\"query\" type=\"search\" value={query} onChange={onChange} /></FieldChrome></div>",
       "gaps": [
-        "Internal field parts compose through their SearchField parent; review all nested design properties."
+        "Native input behavior and field associations are shared with TextField; full visual state/variant review remains pending."
       ]
     },
     "validation": {
       "status": "pending",
       "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Show leading icon#1231:0": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Leading icon#1231:1": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1967:117076",
+          "preferredValues": []
+        },
+        "Show trailing icon#1231:2": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Trailing icon#1231:3": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "1967:117092",
+          "preferredValues": []
+        },
+        "Appearance": {
+          "type": "VARIANT",
+          "defaultValue": "Outlined",
+          "variantOptions": [
+            "Outlined",
+            "Filled"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Pressed",
+            "Focused",
+            "Disabled",
+            "Read-only"
+          ]
+        }
+      },
+      "mappings": []
     }
   },
   "1967:117079": {
@@ -5499,15 +5648,37 @@
         "web"
       ],
       "source": "src/components/TextField.tsx",
-      "symbol": "SearchField",
-      "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+      "symbol": "FieldContent",
+      "example": "<FieldContent aria-label=\"Search\" type=\"search\" value={query} placeholder=\"Find events\" onChange={onChange} />",
       "gaps": [
-        "Internal field parts compose through their SearchField parent; review all nested design properties."
+        "Native input behavior and field associations are shared with TextField; full visual state/variant review remains pending."
       ]
     },
     "validation": {
       "status": "pending",
       "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Value#1231:4": {
+          "type": "TEXT",
+          "defaultValue": "Eduardo Lopes"
+        },
+        "Placeholder#1231:5": {
+          "type": "TEXT",
+          "defaultValue": "Enter your name"
+        },
+        "Content": {
+          "type": "VARIANT",
+          "defaultValue": "Filled",
+          "variantOptions": [
+            "Filled",
+            "Empty"
+          ]
+        }
+      },
+      "mappings": []
     }
   },
   "1967:117087": {
@@ -5518,15 +5689,33 @@
         "web"
       ],
       "source": "src/components/TextField.tsx",
-      "symbol": "SearchField",
-      "example": "<SearchField label=\"Search\" value={query} onChange={onChange} presentation=\"toolbar-top\" hint={hint} />",
+      "symbol": "FieldSupportingText",
+      "example": "<FieldSupportingText id=\"search-help\">Enter an event name or location.</FieldSupportingText>",
       "gaps": [
-        "Internal field parts compose through their SearchField parent; review all nested design properties."
+        "Native input behavior and field associations are shared with TextField; full visual state/variant review remains pending."
       ]
     },
     "validation": {
       "status": "pending",
       "evidence": []
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {
+        "Supporting text#1231:6": {
+          "type": "TEXT",
+          "defaultValue": "Your name appears on your profile."
+        },
+        "Feedback": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Error"
+          ]
+        }
+      },
+      "mappings": []
     }
   },
   "1967:117076": {
@@ -7277,7 +7466,7 @@
         {
           "property": "Icon#1118:162",
           "target": "React icon / Compose icon / SwiftUI icon content slot",
-          "notes": "Application-owned decorative content, within each platform\u2019s source icon geometry."
+          "notes": "Application-owned decorative content, within each platform’s source icon geometry."
         },
         {
           "property": "Label#1118:163",
@@ -7307,7 +7496,7 @@
         {
           "property": "Layout direction",
           "target": "HTML dir / LocalLayoutDirection / SwiftUI layoutDirection",
-          "notes": "Native logical positioning and text alignment follow the caller\u2019s direction; all platform configurations still require visual review."
+          "notes": "Native logical positioning and text alignment follow the caller’s direction; all platform configurations still require visual review."
         }
       ]
     },
@@ -8076,6 +8265,30 @@
         "coverage/design-context/native-presentations.json",
         "coverage/evidence/2026-11-09/native-presentations-partial.json"
       ]
+    }
+  },
+  "3399:29565": {
+    "implementation": {
+      "status": "source-available",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/ArtworkIcon.tsx",
+      "symbol": "ArtworkIcon",
+      "example": "<ArtworkIcon name=\"sidebar-left\" />",
+      "gaps": [
+        "Exact downloaded24x24 asset is used; parent header layout and full visual/accessibility verification remain pending."
+      ]
+    },
+    "properties": {
+      "status": "design-properties-recorded",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": []
     }
   }
 }
