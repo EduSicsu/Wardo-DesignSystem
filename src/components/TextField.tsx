@@ -1,17 +1,29 @@
 'use client';
-import { useId, useRef, useState, type InputHTMLAttributes, type ReactNode, type TextareaHTMLAttributes, type SelectHTMLAttributes, type Ref } from 'react';
+import { useId, useRef, useState, type HTMLAttributes, type InputHTMLAttributes, type ReactNode, type TextareaHTMLAttributes, type SelectHTMLAttributes, type Ref } from 'react';
 import { Button } from './Button';
 import { Icon } from './Icon';
 import { cx, type Condition, type Size } from './shared';
 export interface FieldBase { label: string; hint?: ReactNode; error?: ReactNode; size?: Size; condition?: Condition; appearance?: 'outlined'|'filled'; }
 export interface TextFieldProps extends Omit<InputHTMLAttributes<HTMLInputElement>,'size'>, FieldBase { leadingIcon?: ReactNode; trailingAction?: ReactNode; inputRef?: Ref<HTMLInputElement>; }
+/** Field construction part. Compose inside TextField's labelled field shell. */
+export function FieldChrome({leadingIcon,trailingAction,children,className,...props}:HTMLAttributes<HTMLDivElement>&{leadingIcon?:ReactNode;trailingAction?:ReactNode}) {
+  return <div {...props} className={cx('wardo-field-control',className)}>{leadingIcon?<span className="wardo-icon">{leadingIcon}</span>:null}{children}{trailingAction}</div>;
+}
+/** Native editable content; its owner supplies the label, value, and callbacks. */
+export function FieldContent({inputRef,...props}:InputHTMLAttributes<HTMLInputElement>&{inputRef?:Ref<HTMLInputElement>}) {
+  return <input {...props} ref={inputRef}/>;
+}
+/** Supporting content is associated with its input through aria-describedby. */
+export function FieldSupportingText({className,...props}:HTMLAttributes<HTMLDivElement>) {
+  return <div {...props} className={cx('wardo-field-message',className)}/>;
+}
 export function TextField({label,hint,error,size='M',condition='normal',appearance='outlined',id,className,leadingIcon,trailingAction,inputRef,...props}:TextFieldProps) {
   const autoId=useId(); const fieldId=id??autoId; const messageId=`${fieldId}-message`;
   const described=[props['aria-describedby'], error || hint ? messageId : undefined].filter(Boolean).join(' ')||undefined;
   return <div className={cx('wardo-field',className)} data-wardo-size={size} data-wardo-condition={condition} data-appearance={appearance} data-invalid={!!error}>
     <label htmlFor={fieldId}>{label}{props.required ? <span aria-hidden="true"> *</span>:null}</label>
-    <div className="wardo-field-control">{leadingIcon?<span className="wardo-icon">{leadingIcon}</span>:null}<input {...props} ref={inputRef} id={fieldId} aria-invalid={error?true:props['aria-invalid']} aria-describedby={described}/>{trailingAction}</div>
-    {error||hint ? <div className="wardo-field-message" id={messageId}>{error||hint}</div>:null}
+    <FieldChrome leadingIcon={leadingIcon} trailingAction={trailingAction}><FieldContent {...props} inputRef={inputRef} id={fieldId} aria-invalid={error?true:props['aria-invalid']} aria-describedby={described}/></FieldChrome>
+    {error||hint ? <FieldSupportingText id={messageId}>{error||hint}</FieldSupportingText>:null}
   </div>;
 }
 export function PasswordField(props:Omit<TextFieldProps,'type'|'trailingAction'>) {
