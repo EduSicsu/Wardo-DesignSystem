@@ -8,6 +8,14 @@ describe('independent component registry',()=>{
  it('rejects implementations attached to excluded example records',()=>{const result=JSON.parse(execFileSync(process.execPath,['--input-type=module','-e',`import {loadRegistry,checkRegistry} from './scripts/coverage.mjs';const registry=await loadRegistry();registry.entries.find(e=>e.nodeId==='665:2414').implementation={status:'source-available',source:'src/examples/ExampleScreens.tsx',symbol:'UpcomingMobileExample'};console.log(JSON.stringify(await checkRegistry(registry)));`],{encoding:'utf8'}));expect(result.some((failure:string)=>failure.includes('excluded record has an active implementation'))).toBe(true);});
  it('rejects Apple Watch bindings in app coverage',()=>{const result=JSON.parse(execFileSync(process.execPath,['--input-type=module','-e',`import {loadRegistry,checkRegistry} from './scripts/coverage.mjs';const registry=await loadRegistry();registry.entries.find(e=>e.nodeId==='1531:158362').implementation.platforms=['watchOS'];console.log(JSON.stringify(await checkRegistry(registry)));`],{encoding:'utf8'}));expect(result.some((failure:string)=>failure.includes('unsupported app platform'))).toBe(true);});
  it('resolves a node, stable identifier, and Figma URL to the same component',()=>{const node=command('lookup','1531:158362');expect(command('lookup','wardo-1531-158362')).toEqual(node);expect(command('lookup','https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=1531-158362')).toEqual(node);expect(node[0].implementation.symbol).toBe('SearchField');});
+ it('resolves native sidebar search to SwiftUI while preserving its historical React link',()=>{
+  const entry=command('lookup','2396:18524','--platform','iPadOS')[0];
+  expect(entry.implementation.symbol).toBe('WardoSidebarSearchField');
+  expect(entry.implementation.framework).toBe('SwiftUI');
+  expect(entry.properties.status).toBe('mapped');
+  expect(entry.connection.framework).toBe('React');
+  expect(()=>command('lookup','2396:18524','--platform','web')).toThrow();
+ });
  it('selects a platform alternative while retaining the original binding',()=>{const entry=command('lookup','2277:12775','--platform','Android')[0];expect(entry.implementation.source).toContain('native/android/');expect(entry.alternatives.some((binding:{source:string})=>binding.source.includes('native/apple/'))).toBe(true);expect(entry.alternatives.some((binding:{source:string})=>binding.source===entry.implementation.source)).toBe(false);expect(entry.validation.status).toBe('pending');});
  it('omits the archived swipe row deleted at the owner’s request',()=>{expect(()=>command('lookup','1531:22852')).toThrow();});
  it('validates source references and all reference dispositions',()=>{expect(command('check').total).toBe(765);});

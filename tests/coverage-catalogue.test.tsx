@@ -3,6 +3,16 @@ import userEvent from '@testing-library/user-event';
 import { expect, it } from 'vitest';
 import { CoverageCatalogue } from '../demo/CoverageCatalogue';
 
+it('does not present a historical React link as a native connection in the default view', async () => {
+  const user = userEvent.setup();
+  render(<CoverageCatalogue />);
+  await user.type(screen.getByRole('searchbox', { name: 'Find a design or component' }), '2396:18524');
+  expect(screen.getByRole('link', { name: 'WardoSidebarSearchField' })).toBeInTheDocument();
+  expect(screen.queryByRole('region', { name: 'React implementation' })).not.toBeInTheDocument();
+  expect(screen.getByText('A React source connection is saved separately for this design.')).toBeInTheDocument();
+  expect(within(screen.getByRole('article')).getByText('not connected')).toBeInTheDocument();
+});
+
 it('shows the selected native implementation and keeps React connections separate', async () => {
   const user = userEvent.setup();
   render(<CoverageCatalogue />);

@@ -21,7 +21,7 @@ The audit retains 765 published records, but only **562 app components** count t
 
 There are **235 saved app source links**. The historical Figma records still contain **241 total saved links**, including **six example-screen connections scheduled for removal** in `coverage/connection-cleanup.json`. Figma editing remains deferred, so those links have not been removed or misreported as deleted. The 139 unsaved Lucide links and native activation also remain deferred.
 
-Implementation and validation remain independent: 170 app records are implemented, 12 are verified, and 550 still require validation or implementation work. Existing example screens and native samples may remain development fixtures; they are not production component targets. No Apple Watch implementation is required.
+Implementation and validation remain independent: 167 app records are implemented, 13 are verified, and 549 still require validation or implementation work. Existing example screens and native samples may remain development fixtures; they are not production component targets. No Apple Watch implementation is required.
 
 Open `/coverage` for searchable records, platform alternatives, examples and explicit gaps, or run:
 
@@ -89,7 +89,7 @@ To republish snippet templates later with the CLI, use your own Figma access tok
 
 ## Native platforms
 
-See [`native/README.md`](native/README.md) for the Apple and Android source packages and their current gaps. Figma Professional supports one active framework, so native activation must not silently replace React. Native build and runtime validation have not been performed.
+See [`native/README.md`](native/README.md) for the Apple and Android source packages and their current gaps. Figma Professional supports one active framework, so native activation must not silently replace React. Native build and runtime evidence is tracked per entry; complete cross-platform validation remains pending.
 
 ## Tokens and maintenance
 
@@ -124,3 +124,9 @@ import '@wardo/design-system/examples.css';
 The example stylesheet is emitted as `dist/design-system.css`; core styles remain available through `@wardo/design-system/styles.css`.
 
 For RTL menus, configure the application locale through React Aria’s `I18nProvider` or `MenuButton`’s `locale` prop, and set the content direction with `dir`. Menu triggers support the shared hierarchy, tone, size and condition values, plus leading and trailing icon slots.
+
+## App search components
+
+`SearchField` supports `presentation="navigation"` for compact navigation chrome with an accessible hidden label, exact 20px source artwork, and native keyboard clearing/focus behavior. Set `dir` on the component to mirror the complete field. `/search-fields` provides its app-owned query, submit, disabled, theme and RTL examples.
+
+Figma Sidebar Search Field `2396:18524` belongs to iOS/iPadOS and now resolves to `WardoSidebarSearchField`, independently of its historical React source link. It exposes application-owned query, submit and voice-search callbacks. Its iPhone/iPad samples and native review limitations are recorded in `coverage/evidence/2026-11-10/search-family-review.json`.

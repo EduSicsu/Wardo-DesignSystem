@@ -1,0 +1,40 @@
+{
+  "fileKey": "rkJclvwYpmw9ja5vUwkl3P",
+  "componentNodeId": "2396:18524",
+  "internalNodeId": "2254:47348",
+  "renderer": "native/apple/Sources/WardoDesignSystem/SidebarSearchField.swift",
+  "assets": [
+    {
+      "nodeId": "2257:11637",
+      "source": "coverage/assets/sidebar-search/search-ltr.svg",
+      "apple": "native/apple/Sources/WardoDesignSystem/Resources/SidebarSearchArtwork.xcassets/WardoSidebarSearchLTR.imageset/search-ltr.svg",
+      "assetName": "WardoSidebarSearchLTR",
+      "sha256": "4c7142709ee5674527f7a8a1c3dca51056c193d14722da5dd1cea5ff89bbb20c",
+      "width": 21,
+      "height": 22
+    },
+    {
+      "nodeId": "2395:178886",
+      "source": "coverage/assets/sidebar-search/search-rtl.svg",
+      "apple": "native/apple/Sources/WardoDesignSystem/Resources/SidebarSearchArtwork.xcassets/WardoSidebarSearchRTL.imageset/search-rtl.svg",
+      "assetName": "WardoSidebarSearchRTL",
+      "sha256": "006cc3c8447466860fb3d7e158c9ac5950dd881aeec624830cc316999be2a416",
+      "width": 21,
+      "height": 22
+    },
+    {
+      "nodeId": "2257:11640",
+      "source": "coverage/assets/sidebar-search/microphone-ltr.svg",
+      "apple": "native/apple/Sources/WardoDesignSystem/Resources/SidebarSearchArtwork.xcassets/WardoSidebarMicrophone.imageset/microphone-ltr.svg",
+      "assetName": "WardoSidebarMicrophone",
+      "sha256": "8a7abc8e8607314f269f6c5546a142fb334c4bb8ac6568597b0ef12770dbeee9",
+      "width": 17,
+      "height": 22
+    }
+  ],
+  "notes": [
+    "LTR and RTL microphone source downloads have identical hashes; one universal template image is shared.",
+    "Search artwork uses distinct exact LTR/RTL source assets; no SF Symbol substitution.",
+    "The microphone keeps its 17 by 22 artwork inside a 44 by 44 interaction target. The native target moves its center 2.5 points inward compared with the static design."
+  ]
+}

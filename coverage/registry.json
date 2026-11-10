@@ -2626,24 +2626,174 @@
       },
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2397-138274",
       "implementation": {
-        "status": "source-available",
+        "status": "implemented",
         "framework": "React",
         "platforms": [
           "web"
         ],
         "source": "src/components/TextField.tsx",
         "symbol": "SearchField",
-        "example": null
+        "example": "<SearchField label=\"Search events\" presentation=\"navigation\" value={query} onChange={event => setQuery(event.target.value)} placeholder=\"Search events\" dir={isRTL ? \"rtl\" : \"ltr\"} />",
+        "gaps": []
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "Layout direction": {
+            "name": "Layout direction",
+            "type": "VARIANT",
+            "key": "Layout direction",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ]
+          },
+          "INSTANCE[Search entry / shared Inputs chrome]/Show leading icon#1231:0": {
+            "name": "Show leading icon",
+            "type": "BOOLEAN",
+            "key": "Show leading icon#1231:0",
+            "owner": "INSTANCE[Search entry / shared Inputs chrome]"
+          },
+          "INSTANCE[Search entry / shared Inputs chrome]/Leading icon#1231:1": {
+            "name": "Leading icon",
+            "type": "INSTANCE_SWAP",
+            "key": "Leading icon#1231:1",
+            "owner": "INSTANCE[Search entry / shared Inputs chrome]"
+          },
+          "INSTANCE[Search entry / shared Inputs chrome]/Show trailing icon#1231:2": {
+            "name": "Show trailing icon",
+            "type": "BOOLEAN",
+            "key": "Show trailing icon#1231:2",
+            "owner": "INSTANCE[Search entry / shared Inputs chrome]"
+          },
+          "INSTANCE[Search entry / shared Inputs chrome]/Trailing icon#1231:3": {
+            "name": "Trailing icon",
+            "type": "INSTANCE_SWAP",
+            "key": "Trailing icon#1231:3",
+            "owner": "INSTANCE[Search entry / shared Inputs chrome]"
+          },
+          "INSTANCE[Search entry / shared Inputs chrome]/Appearance": {
+            "name": "Appearance",
+            "type": "VARIANT",
+            "key": "Appearance",
+            "variantOptions": [
+              "Outlined"
+            ],
+            "owner": "INSTANCE[Search entry / shared Inputs chrome]"
+          },
+          "INSTANCE[Search entry / shared Inputs chrome]/State": {
+            "name": "State",
+            "type": "VARIANT",
+            "key": "State",
+            "variantOptions": [
+              "Default"
+            ],
+            "owner": "INSTANCE[Search entry / shared Inputs chrome]"
+          },
+          "INSTANCE[Search entry / shared Inputs chrome]/Layout direction": {
+            "name": "Layout direction",
+            "type": "VARIANT",
+            "key": "Layout direction",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ],
+            "owner": "INSTANCE[Search entry / shared Inputs chrome]"
+          },
+          "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]/Value#1231:4": {
+            "name": "Value",
+            "type": "TEXT",
+            "key": "Value#1231:4",
+            "owner": "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]"
+          },
+          "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]/Placeholder#1231:5": {
+            "name": "Placeholder",
+            "type": "TEXT",
+            "key": "Placeholder#1231:5",
+            "owner": "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]"
+          },
+          "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]/Content": {
+            "name": "Content",
+            "type": "VARIANT",
+            "key": "Content",
+            "variantOptions": [
+              "Filled"
+            ],
+            "owner": "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]"
+          },
+          "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]/Layout direction": {
+            "name": "Layout direction",
+            "type": "VARIANT",
+            "key": "Layout direction",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ],
+            "owner": "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]"
+          }
+        },
+        "mappings": [
+          {
+            "property": "Layout direction",
+            "target": "dir",
+            "transform": {
+              "LTR": "ltr",
+              "RTL": "rtl"
+            }
+          },
+          {
+            "property": "INSTANCE[Search entry / shared Inputs chrome]/Show leading icon#1231:0",
+            "target": "leadingIcon: null to hide; default exact artwork otherwise"
+          },
+          {
+            "property": "INSTANCE[Search entry / shared Inputs chrome]/Leading icon#1231:1",
+            "target": "leadingIcon content slot"
+          },
+          {
+            "property": "INSTANCE[Search entry / shared Inputs chrome]/Show trailing icon#1231:2",
+            "target": "clearable"
+          },
+          {
+            "property": "INSTANCE[Search entry / shared Inputs chrome]/Trailing icon#1231:3",
+            "target": "trailingAction with clearable=false for a custom application-owned action"
+          },
+          {
+            "property": "INSTANCE[Search entry / shared Inputs chrome]/Appearance",
+            "target": "appearance=\"outlined\""
+          },
+          {
+            "property": "INSTANCE[Search entry / shared Inputs chrome]/State",
+            "target": "Native hover, focus and disabled attributes"
+          },
+          {
+            "property": "INSTANCE[Search entry / shared Inputs chrome]/Layout direction",
+            "target": "Inherited dir"
+          },
+          {
+            "property": "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]/Value#1231:4",
+            "target": "value + onChange"
+          },
+          {
+            "property": "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]/Placeholder#1231:5",
+            "target": "placeholder"
+          },
+          {
+            "property": "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]/Content",
+            "target": "Application-owned value and placeholder"
+          },
+          {
+            "property": "INSTANCE[Search entry / shared Inputs chrome]/INSTANCE[Content]/Layout direction",
+            "target": "Inherited dir"
+          }
+        ]
       },
       "validation": {
-        "status": "pending",
-        "evidence": []
+        "status": "verified",
+        "evidence": [
+          "coverage/evidence/2026-11-10/search-family-review.json"
+        ],
+        "notes": "Supported LTR/RTL navigation configurations reviewed against Figma. Exact 20px source artwork, 320×48 baseline, keyboard submit/clear/focus, controlled state, disabled state, light/dark appearance, 200% text and automated accessibility checked on desktop/mobile Chromium. Manual screen-reader speech output and additional browser engines were not exercised."
       },
       "connection": {
         "status": "source-connection-saved",
@@ -9244,30 +9394,131 @@
       },
       "figmaUrl": "https://www.figma.com/design/rkJclvwYpmw9ja5vUwkl3P/Wardo-DS?node-id=2396-18524",
       "implementation": {
-        "status": "source-available",
-        "framework": "React",
+        "status": "implemented",
+        "framework": "SwiftUI",
         "platforms": [
-          "web"
+          "iOS",
+          "iPadOS"
         ],
-        "source": "src/components/TextField.tsx",
-        "symbol": "SearchField",
-        "example": null
+        "source": "native/apple/Sources/WardoDesignSystem/SidebarSearchField.swift",
+        "symbol": "WardoSidebarSearchField",
+        "example": "WardoSidebarSearchField(\"Search events\", text: $query, onSubmit: runSearch, onVoiceSearch: beginVoiceSearch)\n    .environment(\\.layoutDirection, isRTL ? .rightToLeft : .leftToRight)",
+        "gaps": []
       },
       "alternatives": [],
       "properties": {
-        "status": "pending-review",
-        "definitions": {},
-        "mappings": []
+        "status": "mapped",
+        "definitions": {
+          "Layout direction": {
+            "name": "Layout direction",
+            "type": "VARIANT",
+            "key": "Layout direction",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ]
+          },
+          "Search Field.Search Term#5657:0": {
+            "name": "Search Term",
+            "type": "TEXT",
+            "key": "Search Term#5657:0",
+            "owner": "_Search Field"
+          },
+          "Search Field.Mode": {
+            "name": "Mode",
+            "type": "VARIANT",
+            "key": "Mode",
+            "variantOptions": [
+              "Dark",
+              "Light"
+            ],
+            "owner": "_Search Field"
+          },
+          "Search Field.State": {
+            "name": "State",
+            "type": "VARIANT",
+            "key": "State",
+            "variantOptions": [
+              "Placeholder",
+              "Typing",
+              "Value"
+            ],
+            "owner": "_Search Field"
+          },
+          "Search Field.Layout direction": {
+            "name": "Layout direction",
+            "type": "VARIANT",
+            "key": "Layout direction",
+            "variantOptions": [
+              "LTR",
+              "RTL"
+            ],
+            "owner": "_Search Field"
+          }
+        },
+        "mappings": [
+          {
+            "property": "Layout direction",
+            "target": "environment(\\.layoutDirection)",
+            "transform": {
+              "LTR": ".leftToRight",
+              "RTL": ".rightToLeft"
+            }
+          },
+          {
+            "property": "Search Field.Search Term#5657:0",
+            "target": "text: Binding<String> + title",
+            "transform": "The application owns entered text; the localized title is the empty-state prompt and accessible name."
+          },
+          {
+            "property": "Search Field.Mode",
+            "target": "wardoTheme(_:) + preferred color scheme",
+            "transform": {
+              "Dark": ".wardoDark",
+              "Light": ".wardoLight"
+            }
+          },
+          {
+            "property": "Search Field.State",
+            "target": "Native TextField value and focus",
+            "transform": {
+              "Placeholder": "Empty application binding",
+              "Typing": "Focused native editor; live caret and editing are provided by SwiftUI",
+              "Value": "Nonempty application binding"
+            }
+          },
+          {
+            "property": "Search Field.Layout direction",
+            "target": "Inherited environment(\\.layoutDirection)",
+            "transform": "The outer direction controls both icon assets and logical leading/trailing layout."
+          }
+        ]
       },
       "validation": {
         "status": "pending",
-        "evidence": []
+        "evidence": [
+          "coverage/evidence/2026-11-10/search-family-review.json",
+          "coverage/evidence/2026-11-10/sidebar-search-iphone-tests.json",
+          "coverage/evidence/2026-11-10/sidebar-search-ipad-tests.json"
+        ],
+        "notes": "Native platform ownership confirmed by the public and internal component descriptions. A historical generic React source link remains saved; it does not establish native implementation coverage. iPhone and iPad interaction, RTL, disabled, callback, touch-target and Dynamic Type tests passed. Manual VoiceOver, hardware keyboard, long localized queries and all source specimen comparisons remain pending."
       },
       "connection": {
         "status": "source-connection-saved",
         "framework": "React"
       },
-      "previews": []
+      "previews": [
+        {
+          "platform": "iOS",
+          "path": "coverage/previews/sidebar-search-iphone.png",
+          "alt": "iPhone sidebar search development fixture — dark appearance and larger text"
+        },
+        {
+          "platform": "iPadOS",
+          "path": "coverage/previews/sidebar-search-ipad.png",
+          "alt": "iPad sidebar search development fixture — dark appearance and larger text"
+        }
+      ]
     },
     {
       "id": "wardo-2396-18528",

@@ -1,5 +1,21 @@
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+test('native sidebar search keeps its historical React link separate in the default view',async({page},testInfo)=>{
+ const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));page.on('console',message=>{if(message.type()==='error')errors.push(message.text());});
+ await page.goto('/coverage');await expect(page).toHaveTitle('Wardo — Component library');
+ await expect(page.getByRole('heading',{name:'Wardo coverage catalogue'})).toBeVisible();
+ await page.getByRole('searchbox',{name:'Find a design or component'}).fill('2396:18524');
+ const entry=page.getByRole('article');await expect(entry).toHaveCount(1);
+ await expect(entry.getByRole('link',{name:'WardoSidebarSearchField'})).toBeVisible();
+ await expect(entry.getByRole('region',{name:'React implementation'})).toHaveCount(0);
+ await expect(entry.locator('.coverage-states dd').nth(2)).toHaveText('not connected');
+ await expect(entry.getByText('A React source connection is saved separately for this design.')).toBeVisible();
+ await page.getByLabel('Platform',{exact:true}).selectOption('iPadOS');
+ await expect(entry.getByRole('link',{name:'WardoSidebarSearchField'})).toBeVisible();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.screenshot({path:`/tmp/wardo-sidebar-search-catalogue-${testInfo.project.name}.png`});
+ expect(errors).toEqual([]);
+});
 test('coverage catalogue searches the published inventory',async({page})=>{
  await page.goto('/coverage');await expect(page.getByRole('heading',{name:'Wardo coverage catalogue'})).toBeVisible();
  await page.getByRole('searchbox',{name:'Find a design or component'}).fill('1531:158362');

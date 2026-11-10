@@ -107,7 +107,11 @@
 .wardo-field-clear{display:inline-flex;align-items:center;justify-content:center;flex:none;min-width:44px;min-height:44px;padding:0;border:0;border-radius:var(--control-theme-radius);background:transparent;color:var(--color-text-primary);cursor:pointer}
 .wardo-field-clear:focus-visible{outline:3px solid var(--color-border-focus);outline-offset:-3px}.wardo-field-clear:disabled{color:var(--color-state-disabled-foreground);cursor:not-allowed}
 .wardo-select-control{position:relative;min-width:0}.wardo-select-control select{appearance:none;-webkit-appearance:none;padding-inline-end:3rem;cursor:pointer}.wardo-select-chevron{position:absolute;inset-inline-end:1rem;top:50%;transform:translateY(-50%);display:flex;pointer-events:none}.wardo-select-control:has(select:disabled) .wardo-select-chevron{color:var(--color-state-disabled-foreground)}.wardo-select-control:has(select[multiple]) .wardo-select-chevron{display:none}
-.wardo-search--toolbar-top>label,.wardo-search--toolbar-bottom>label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}.wardo-search--toolbar-top{--control-size-min-height:44px}.wardo-search--toolbar-bottom{--control-size-min-height:48px}
+.wardo-search--toolbar-top>label,.wardo-search--toolbar-bottom>label,.wardo-search--navigation>label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}.wardo-search--toolbar-top{--control-size-min-height:44px}.wardo-search--toolbar-bottom{--control-size-min-height:48px}
+.wardo-search--navigation{--control-size-min-height:46px}
+.wardo-search--navigation .wardo-field-control{padding-inline:var(--control-content-padding-x)}
+.wardo-search--navigation .wardo-field-control:has(.wardo-field-clear){padding-inline-end:calc(var(--control-content-padding-x) - 12px)}
+.wardo-search--navigation input[type=search]{font-size:1rem;line-height:1.5}
 @media(forced-colors:active){.wardo-select-control select{appearance:auto}.wardo-select-chevron{display:none}.wardo-field-control:has(input:focus-visible){outline-color:Highlight}}
 
 .wardo-divider{--wardo-divider-inset:16px;flex-shrink:0}

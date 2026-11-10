@@ -124,6 +124,26 @@ export async function checkRegistry(registry,{complete=false}={}) {
    if(!sources.apple.includes(`"${asset.assetName}"`)||!sources.android.includes(`R.drawable.${asset.resource}`)||!sources.web.includes(`"${asset.name}":`))failures.push(`Unused navigation artwork ${asset.name}`);
   }
  } catch(error) {failures.push(`Invalid navigation artwork manifest: ${error.message}`);}
+ for(const manifestPath of ['coverage/sidebar-search-assets.json','coverage/navigation-search-assets.json']) {
+  try {
+   const manifest=JSON.parse(await readFile(new URL(manifestPath,root),'utf8'));
+   if(!safePath(manifest.renderer))throw new Error('Unsafe search renderer');
+   const renderer=await readFile(new URL(manifest.renderer,root),'utf8');
+   for(const asset of manifest.assets) {
+    if(!/^[a-f0-9]{64}$/.test(asset.sha256??''))throw new Error('Invalid search asset hash');
+    for(const path of [asset.source,asset.apple].filter(Boolean)) {
+     if(!safePath(path))throw new Error('Unsafe search asset');
+     const bytes=await readFile(new URL(path,root));
+     if(!bytes.length||createHash('sha256').update(bytes).digest('hex')!==asset.sha256)failures.push(`Missing or changed search artwork ${path}`);
+    }
+    if(asset.apple) {
+     const contents=JSON.parse(await readFile(new URL(asset.apple.replace(/[^/]+$/,'Contents.json'),root),'utf8'));
+     if(contents.images?.[0]?.filename!==asset.apple.split('/').at(-1)||contents.properties?.['preserves-vector-representation']!==true||contents.properties?.['template-rendering-intent']!=='template')failures.push(`Invalid search image set ${asset.assetName}`);
+    }
+    if(!renderer.includes(asset.assetName))failures.push(`Unused search artwork ${asset.assetName}`);
+   }
+  } catch(error) {failures.push(`Invalid search artwork manifest ${manifestPath}: ${error.message}`);}
+ }
  for(const preview of [...(registry.samplePreviews??[]),...registry.entries.flatMap(entry=>entry.previews??[])]) {
   if(!safePath(preview.path)){failures.push(`Unsafe preview path ${preview.path}`);continue;}
   try { const bytes=await readFile(new URL(preview.path,root));if(!bytes.length)failures.push(`Empty preview ${preview.path}`);else if(bytes.length>24&&bytes.subarray(1,4).toString()==='PNG'&&(bytes.readUInt32BE(16)<2||bytes.readUInt32BE(20)<2))failures.push(`Invalid placeholder preview ${preview.path}`); }

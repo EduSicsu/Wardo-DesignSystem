@@ -38,7 +38,7 @@ export function CoverageCatalogue() {
    const bindings=bindingsFor(entry,platform);
    const implementation=bindings[0];
    const validation=implementation===entry.implementation?entry.validation:implementation.validation;
-   const separateConnection=platform!=='all'&&entry.connection.status==='source-connection-saved'&&implementation.framework!==entry.connection.framework;
+   const separateConnection=entry.connection.status==='source-connection-saved'&&implementation.framework!==entry.connection.framework;
    return <article key={entry.id} id={entry.id}><div className="coverage-record-heading"><h2>{entry.name}</h2><a href={entry.figmaUrl}>Open in Figma ↗</a></div><p>{entry.page} · {entry.nodeId} · {entry.category.replaceAll('-',' ')}</p>
     {'reason' in entry&&<p>{entry.reason}</p>}
     <dl className="coverage-states"><div><dt>Implementation</dt><dd>{implementation.status.replaceAll('-',' ')}</dd></div><div><dt>Validation</dt><dd>{validation?.status??'pending'}</dd></div><div><dt>Figma</dt><dd>{separateConnection?'not connected':entry.connection.status.replaceAll('-',' ')}</dd></div></dl>

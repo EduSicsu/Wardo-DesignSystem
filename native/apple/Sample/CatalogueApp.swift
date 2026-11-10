@@ -2,7 +2,13 @@ import SwiftUI
 import WardoDesignSystem
 
 @main struct WardoCatalogueApp: App {
-    var body: some Scene { WindowGroup { CatalogueView() } }
+    var body: some Scene {
+        WindowGroup {
+            if ProcessInfo.processInfo.arguments.contains("--wardo-sidebar-search") {
+                NavigationStack { SidebarSearchExample() }
+            } else { CatalogueView() }
+        }
+    }
 }
 struct CatalogueView: View {
     @State private var theme = WardoTheme.wardoLight
@@ -38,6 +44,7 @@ struct CatalogueView: View {
                     Button("Show alert") { alert = true }
                 }
                 Section("Navigation") {
+                    NavigationLink { SidebarSearchExample() } label: { Text("Sidebar search example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                     NavigationLink { SidebarExample() } label: { Text("Sidebar example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                     NavigationLink { PagingExample() } label: { Text("Paging example").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
                     NavigationLink { SliderExample() } label: { Text("Slider variants").frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 44).contentShape(Rectangle()) }
@@ -56,6 +63,41 @@ struct CatalogueView: View {
                 .alert("Wardo alert", isPresented: $alert) { Button("Continue") { notice = "Alert confirmed" }; Button("Cancel", role: .cancel) {} } message: { Text("Native system presentation") }
                 .sheet(isPresented: $showColor) { ScrollView { WardoVisionColorPicker(selection: $color, swatches: $swatches, onClose: { showColor = false }) }.padding() }
         }.wardoTheme(theme)
+    }
+}
+
+struct SidebarSearchExample: View {
+    @State private var query = ""
+    @State private var rtl = false
+    @State private var disabled = false
+    @State private var largeText = false
+    @State private var dark = false
+    @State private var status = "Ready"
+    var body: some View {
+        Form {
+            Section("Native sidebar search") {
+                WardoSidebarSearchField("Search events", text: $query, onSubmit: {
+                    status = "Search submitted: \(query)"
+                }, onVoiceSearch: {
+                    status = "Voice search requested"
+                })
+                .environment(\.layoutDirection, rtl ? .rightToLeft : .leftToRight)
+                .dynamicTypeSize(largeText ? .accessibility3 : .large)
+                .disabled(disabled)
+                Text("Query: \(query)").accessibilityIdentifier("sidebar-search-query")
+                Text(status).accessibilityIdentifier("sidebar-search-status")
+            }
+            Section("Appearance and behavior") {
+                Toggle("Right-to-left search", isOn: $rtl)
+                Toggle("Disable search", isOn: $disabled)
+                Toggle("Larger search text", isOn: $largeText)
+                Toggle("Dark search appearance", isOn: $dark)
+                Button("Set query from application") { query = "Ceramics" }
+                Button("Clear query from application") { query = "" }
+            }
+        }
+        .navigationTitle("Sidebar search")
+        .wardoTheme(dark ? .wardoDark : .wardoLight)
     }
 }
 

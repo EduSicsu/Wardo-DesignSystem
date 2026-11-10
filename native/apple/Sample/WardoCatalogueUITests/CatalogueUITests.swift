@@ -1,6 +1,56 @@
 import XCTest
 
 @MainActor final class CatalogueUITests: XCTestCase {
+    func testSidebarSearchBindingSubmissionVoiceAndRTL() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wardo-sidebar-search"]
+        app.launch()
+        let search = app.textFields["Search events"]
+        let voice = app.buttons["Voice search"]
+        XCTAssertTrue(search.waitForExistence(timeout: 20))
+        XCTAssertTrue(voice.exists)
+        XCTAssertGreaterThanOrEqual(voice.frame.width, 44)
+        XCTAssertGreaterThanOrEqual(voice.frame.height, 44)
+        XCTAssertGreaterThan(voice.frame.midX, search.frame.midX)
+        search.tap()
+        search.typeText("Books\n")
+        XCTAssertEqual(app.staticTexts["sidebar-search-query"].label, "Query: Books")
+        XCTAssertEqual(app.staticTexts["sidebar-search-status"].label, "Search submitted: Books")
+        voice.tap()
+        XCTAssertEqual(app.staticTexts["sidebar-search-status"].label, "Voice search requested")
+        app.buttons["Set query from application"].tap()
+        XCTAssertEqual(search.value as? String, "Ceramics")
+        app.buttons["Clear query from application"].tap()
+        XCTAssertEqual(search.value as? String, "Search events")
+        flip(app.switches["Right-to-left search"])
+        XCTAssertLessThan(voice.frame.midX, search.frame.midX)
+        flip(app.switches["Disable search"])
+        XCTAssertFalse(search.isEnabled)
+        XCTAssertFalse(voice.isEnabled)
+    }
+
+    func testSidebarSearchDarkAndLargeText() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--wardo-sidebar-search"]
+        app.launch()
+        let search = app.textFields["Search events"]
+        XCTAssertTrue(search.waitForExistence(timeout: 20))
+        let initialHeight = search.frame.height
+        flip(app.switches["Dark search appearance"])
+        flip(app.switches["Larger search text"])
+        XCTAssertGreaterThan(search.frame.height, initialHeight)
+        XCTAssertTrue(search.isHittable)
+        XCTAssertTrue(app.buttons["Voice search"].isHittable)
+        XCTAssertLessThanOrEqual(search.frame.maxX, app.frame.maxX)
+        XCTAssertGreaterThanOrEqual(search.frame.minX, app.frame.minX)
+        #if !os(visionOS)
+        let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        screenshot.name = "Sidebar search dark larger text"
+        screenshot.lifetime = .keepAlways
+        add(screenshot)
+        #endif
+    }
+
     func testActionsSearchAndPresentation() throws {
         let app = XCUIApplication(); app.launch()
         XCTAssertTrue(app.navigationBars["Wardo native catalogue"].waitForExistence(timeout: 20))
