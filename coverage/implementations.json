@@ -8290,5 +8290,4136 @@
       "status": "pending",
       "evidence": []
     }
+  },
+  "125:7597": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BadgeTurkishLira",
+      "example": "<BadgeTurkishLira aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7601": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Balloon",
+      "example": "<Balloon aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7607": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BanknoteArrowDown",
+      "example": "<BanknoteArrowDown aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7609": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BanknoteArrowUp",
+      "example": "<BanknoteArrowUp aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7611": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BanknoteX",
+      "example": "<BanknoteX aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7614": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Barrel",
+      "example": "<Barrel aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7623": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BatteryPlus",
+      "example": "<BatteryPlus aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7652": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Birdhouse",
+      "example": "<Birdhouse aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7668": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BookAlert",
+      "example": "<BookAlert aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7686": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BookSearch",
+      "example": "<BookSearch aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7703": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BottleWine",
+      "example": "<BottleWine aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7705": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BowArrow",
+      "example": "<BowArrow aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7715": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BrickWallFire",
+      "example": "<BrickWallFire aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7717": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BrickWallShield",
+      "example": "<BrickWallShield aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7725": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "BrushCleaning",
+      "example": "<BrushCleaning aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7727": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Bubbles",
+      "example": "<Bubbles aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7759": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CalendarSync",
+      "example": "<CalendarSync aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7763": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Calendars",
+      "example": "<Calendars aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7771": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CannabisOff",
+      "example": "<CannabisOff aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7779": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CardSim",
+      "example": "<CardSim aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7815": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CheckLine",
+      "example": "<CheckLine aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7819": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ChessBishop",
+      "example": "<ChessBishop aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7821": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ChessKing",
+      "example": "<ChessKing aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7823": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ChessKnight",
+      "example": "<ChessKnight aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7825": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ChessPawn",
+      "example": "<ChessPawn aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7827": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ChessQueen",
+      "example": "<ChessQueen aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7829": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ChessRook",
+      "example": "<ChessRook aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7882": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CirclePile",
+      "example": "<CirclePile aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7886": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CirclePoundSterling",
+      "example": "<CirclePoundSterling aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7892": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CircleSmall",
+      "example": "<CircleSmall aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7894": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CircleStar",
+      "example": "<CircleStar aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7905": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ClipboardClock",
+      "example": "<ClipboardClock aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7932": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ClockCheck",
+      "example": "<ClockCheck aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7934": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ClockFading",
+      "example": "<ClockFading aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7936": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ClockPlus",
+      "example": "<ClockPlus aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7938": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ClosedCaption",
+      "example": "<ClosedCaption aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7941": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CloudAlert",
+      "example": "<CloudAlert aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7943": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CloudBackup",
+      "example": "<CloudBackup aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7945": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CloudCheck",
+      "example": "<CloudCheck aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7961": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "CloudSync",
+      "example": "<CloudSync aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:7976": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Columns3Cog",
+      "example": "<Columns3Cog aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8025": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "DecimalsArrowLeft",
+      "example": "<DecimalsArrowLeft aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8027": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "DecimalsArrowRight",
+      "example": "<DecimalsArrowRight aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8056": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "DoorClosedLocked",
+      "example": "<DoorClosedLocked aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8065": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Drone",
+      "example": "<Drone aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8068": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "DropletOff",
+      "example": "<DropletOff aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8085": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "EqualApproximately",
+      "example": "<EqualApproximately aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8091": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "EvCharger",
+      "example": "<EvCharger aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8112": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FileBracesCorner",
+      "example": "<FileBracesCorner aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8119": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FileCheckCorner",
+      "example": "<FileCheckCorner aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8123": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FileCodeCorner",
+      "example": "<FileCodeCorner aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8130": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FileHeadphone",
+      "example": "<FileHeadphone aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8138": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FileMinusCorner",
+      "example": "<FileMinusCorner aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8144": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FilePlay",
+      "example": "<FilePlay aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8147": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FilePlusCorner",
+      "example": "<FilePlusCorner aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8152": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FileSearchCorner",
+      "example": "<FileSearchCorner aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8162": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FileTypeCorner",
+      "example": "<FileTypeCorner aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8166": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FileVideoCamera",
+      "example": "<FileVideoCamera aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8170": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FileXCorner",
+      "example": "<FileXCorner aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8179": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FishingHook",
+      "example": "<FishingHook aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8234": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Form",
+      "example": "<Form aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8242": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Funnel",
+      "example": "<Funnel aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8244": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FunnelPlus",
+      "example": "<FunnelPlus aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8246": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "FunnelX",
+      "example": "<FunnelX aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8255": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "GamepadDirectional",
+      "example": "<GamepadDirectional aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8260": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "GeorgianLari",
+      "example": "<GeorgianLari aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8265": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "GitBranchMinus",
+      "example": "<GitBranchMinus aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8287": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "GlobeX",
+      "example": "<GlobeX aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8290": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Gpu",
+      "example": "<Gpu aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8298": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Grid3x2",
+      "example": "<Grid3x2 aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8307": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Hamburger",
+      "example": "<Hamburger aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8312": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "HandFist",
+      "example": "<HandFist aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8319": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Handbag",
+      "example": "<Handbag aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8327": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "HatGlasses",
+      "example": "<HatGlasses aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8330": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Hd",
+      "example": "<Hd aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8346": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "HeartMinus",
+      "example": "<HeartMinus aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8349": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "HeartPlus",
+      "example": "<HeartPlus aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8353": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Helicopter",
+      "example": "<Helicopter aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8364": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "HouseHeart",
+      "example": "<HouseHeart aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8368": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "HouseWifi",
+      "example": "<HouseWifi aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8373": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "IdCardLanyard",
+      "example": "<IdCardLanyard aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8382": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ImageUpscale",
+      "example": "<ImageUpscale aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8398": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Kayak",
+      "example": "<Kayak aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8417": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "LaptopMinimalCheck",
+      "example": "<LaptopMinimalCheck aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8424": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "LayersPlus",
+      "example": "<LayersPlus aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8441": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "LineSquiggle",
+      "example": "<LineSquiggle aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8450": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ListChevronsDownUp",
+      "example": "<ListChevronsDownUp aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8452": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ListChevronsUpDown",
+      "example": "<ListChevronsUpDown aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8457": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ListFilterPlus",
+      "example": "<ListFilterPlus aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8499": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "MapMinus",
+      "example": "<MapMinus aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8508": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "MapPinPen",
+      "example": "<MapPinPen aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8515": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "MapPlus",
+      "example": "<MapPlus aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8517": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Mars",
+      "example": "<Mars aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8519": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "MarsStroke",
+      "example": "<MarsStroke aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8573": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "MonitorCloud",
+      "example": "<MonitorCloud aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8588": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Motorbike",
+      "example": "<Motorbike aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8596": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "MousePointer2Off",
+      "example": "<MousePointer2Off aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8625": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "NonBinary",
+      "example": "<NonBinary aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8657": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Panda",
+      "example": "<Panda aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8667": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "PanelLeftRightDashed",
+      "example": "<PanelLeftRightDashed aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8674": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "PanelTopBottomDashed",
+      "example": "<PanelTopBottomDashed aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8771": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ReceiptTurkishLira",
+      "example": "<ReceiptTurkishLira aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8773": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "RectangleCircle",
+      "example": "<RectangleCircle aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8776": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "RectangleGoggles",
+      "example": "<RectangleGoggles aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8803": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Rose",
+      "example": "<Rose aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8807": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "RotateCcwKey",
+      "example": "<RotateCcwKey aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8820": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "RulerDimensionLine",
+      "example": "<RulerDimensionLine aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8828": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SaudiRiyal",
+      "example": "<SaudiRiyal aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8840": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ScanHeart",
+      "example": "<ScanHeart aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8849": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Scooter",
+      "example": "<Scooter aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8856": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SearchAlert",
+      "example": "<SearchAlert aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8889": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ShieldUser",
+      "example": "<ShieldUser aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8900": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Shredder",
+      "example": "<Shredder aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8902": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Shrimp",
+      "example": "<Shrimp aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8932": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SoapDispenserDroplet",
+      "example": "<SoapDispenserDroplet aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8935": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SolarPanel",
+      "example": "<SolarPanel aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8947": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SplinePointer",
+      "example": "<SplinePointer aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8950": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Spool",
+      "example": "<Spool aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8952": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Spotlight",
+      "example": "<Spotlight aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8985": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SquareDashedTopSolid",
+      "example": "<SquareDashedTopSolid aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:8999": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SquarePause",
+      "example": "<SquarePause aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9009": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SquareRoundCorner",
+      "example": "<SquareRoundCorner aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9018": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SquareStar",
+      "example": "<SquareStar aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9020": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SquareStop",
+      "example": "<SquareStop aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9026": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SquaresExclude",
+      "example": "<SquaresExclude aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9028": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SquaresIntersect",
+      "example": "<SquaresIntersect aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9030": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SquaresSubtract",
+      "example": "<SquaresSubtract aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9032": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SquaresUnite",
+      "example": "<SquaresUnite aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9035": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "SquircleDashed",
+      "example": "<SquircleDashed aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9047": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Stone",
+      "example": "<Stone aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9105": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "TextWrap",
+      "example": "<TextWrap aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9127": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Toilet",
+      "example": "<Toilet aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9129": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "ToolCase",
+      "example": "<ToolCase aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9131": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Toolbox",
+      "example": "<Toolbox aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9145": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Transgender",
+      "example": "<Transgender aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9159": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "TriangleDashed",
+      "example": "<TriangleDashed aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9164": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "TruckElectric",
+      "example": "<TruckElectric aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9166": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "TurkishLira",
+      "example": "<TurkishLira aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9168": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Turntable",
+      "example": "<Turntable aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9196": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "UserLock",
+      "example": "<UserLock aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9210": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "UserStar",
+      "example": "<UserStar aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9218": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Van",
+      "example": "<Van aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9222": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "VectorSquare",
+      "example": "<VectorSquare aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9226": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "Venus",
+      "example": "<Venus aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9228": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "VenusAndMars",
+      "example": "<VenusAndMars aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9254": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "WavesArrowDown",
+      "example": "<WavesArrowDown aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9256": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "WavesArrowUp",
+      "example": "<WavesArrowUp aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9258": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "WavesLadder",
+      "example": "<WavesLadder aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9265": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "WeightTilde",
+      "example": "<WeightTilde aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9271": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "WifiCog",
+      "example": "<WifiCog aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9276": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "WifiPen",
+      "example": "<WifiPen aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9278": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "WifiSync",
+      "example": "<WifiSync aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
+  },
+  "125:9282": {
+    "implementation": {
+      "status": "implemented",
+      "framework": "React",
+      "platforms": [
+        "web"
+      ],
+      "source": "src/components/LucideIcons.tsx",
+      "symbol": "WindArrowDown",
+      "example": "<WindArrowDown aria-hidden=\"true\" />",
+      "gaps": []
+    },
+    "properties": {
+      "status": "mapped",
+      "definitions": {},
+      "mappings": []
+    },
+    "validation": {
+      "status": "pending",
+      "evidence": [
+        "coverage/evidence/2026-11-09/lucide-source-checkpoint.json"
+      ],
+      "pendingChecks": [
+        "Compare imported Figma glyph geometry with the pinned official package before marking visually verified."
+      ]
+    }
   }
 }

@@ -5,7 +5,7 @@ test('coverage catalogue searches the published inventory',async({page})=>{
  await page.getByRole('searchbox',{name:'Find a design or component'}).fill('1531:158362');
  await expect(page.getByRole('status')).toContainText('1 matching entry');await expect(page.locator('article')).toHaveCount(1);await expect(page.locator('article')).toContainText('SearchField');
  await page.getByRole('button',{name:'Clear search'}).click();await expect(page.getByRole('searchbox')).toBeFocused();await expect(page.getByRole('status')).toContainText('765 matching entries');
- await page.getByLabel('Coverage',{exact:true}).selectOption('references');await expect(page.getByRole('status')).toContainText('350 matching entries');
+ await page.getByLabel('Coverage',{exact:true}).selectOption('references');await expect(page.getByRole('status')).toContainText('197 matching entries');
  await page.getByLabel('Coverage',{exact:true}).selectOption('all');await page.getByRole('searchbox').fill('no-such-component');await expect(page.getByText('No matching entries. Try a different name or remove a filter.')).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });

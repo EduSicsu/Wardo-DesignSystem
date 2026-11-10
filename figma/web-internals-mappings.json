@@ -850,6 +850,146 @@
         "name": "sidebar-left"
       },
       "verification": "Figma UI confirmed exact ArtworkIcon export and all-pages227/765 on2026-11-09. Local originalasset24x24; validation remains pending."
+    },
+    {
+      "nodeId": "125:7597",
+      "designName": "li:badge-turkish-lira",
+      "componentName": "BadgeTurkishLira",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7601",
+      "designName": "li:balloon",
+      "componentName": "Balloon",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7607",
+      "designName": "li:banknote-arrow-down",
+      "componentName": "BanknoteArrowDown",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7609",
+      "designName": "li:banknote-arrow-up",
+      "componentName": "BanknoteArrowUp",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7611",
+      "designName": "li:banknote-x",
+      "componentName": "BanknoteX",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7614",
+      "designName": "li:barrel",
+      "componentName": "Barrel",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7623",
+      "designName": "li:battery-plus",
+      "componentName": "BatteryPlus",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7652",
+      "designName": "li:birdhouse",
+      "componentName": "Birdhouse",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7668",
+      "designName": "li:book-alert",
+      "componentName": "BookAlert",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7686",
+      "designName": "li:book-search",
+      "componentName": "BookSearch",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7703",
+      "designName": "li:bottle-wine",
+      "componentName": "BottleWine",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7705",
+      "designName": "li:bow-arrow",
+      "componentName": "BowArrow",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7715",
+      "designName": "li:brick-wall-fire",
+      "componentName": "BrickWallFire",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
+    },
+    {
+      "nodeId": "125:7717",
+      "designName": "li:brick-wall-shield",
+      "componentName": "BrickWallShield",
+      "source": "src/components/LucideIcons.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Exact React export and source confirmed by Figma UI save and subsequent MCP server readback on 2026-11-09."
     }
   ],
   "lastVerifiedProgress": {
@@ -864,5 +1004,10 @@
     "connected": 16,
     "total": 57,
     "newConnections": 14
+  },
+  "lucideProgress": {
+    "total": 153,
+    "confirmedSaved": 14,
+    "remaining": 139
   }
 }

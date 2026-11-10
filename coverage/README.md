@@ -22,3 +22,5 @@ Evidence paths are checked even while a record is pending. Android toolbar asset
 Keep React active in Figma. Do not create misleading React mappings for native code or infer tested status from the saved connection counter.
 
 Platform filters show each binding’s own implementation and verification state. A React source connection never appears as a native connection. Platform alternatives must provide their own evidence and property mapping before they can pass the completion gate. The source links target the current implementation branch until it is merged.
+
+Lucide correction: the 153 `li:` masters are runtime icon assets rather than documentation. Their official React exports and exact node identifiers are recorded in `lucide-icons.json`; `lucide-connection-progress.json` records only source links actually confirmed saved. Remaining links are explicit, and no icon is promoted to visually verified just because its package export exists.
