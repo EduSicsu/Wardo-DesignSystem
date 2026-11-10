@@ -534,10 +534,251 @@
       "framework": "React",
       "status": "source-connection-saved",
       "verification": "Figma UI confirmed React SliderControl source and persisted 199 of 797"
+    },
+    {
+      "nodeId": "665:5206",
+      "designName": "Wardo/Examples/Messaging-Mobile",
+      "componentName": "MessagingMobileExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "677:3501",
+      "designName": "Wardo/Examples/Messaging-Web",
+      "componentName": "MessagingWebExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "665:3693",
+      "designName": "Wardo/Examples/Reviews-Mobile",
+      "componentName": "ReviewsMobileExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "677:2891",
+      "designName": "Wardo/Examples/Reviews-Web",
+      "componentName": "ReviewsWebExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "665:2414",
+      "designName": "Wardo/Examples/Upcoming-Mobile",
+      "componentName": "UpcomingMobileExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "677:2291",
+      "designName": "Wardo/Examples/Upcoming-Web",
+      "componentName": "UpcomingWebExample",
+      "source": "src/examples/ExampleScreens.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React export and Templates & examples progress 6 of 6 connected on 2026-11-09. Source link only; implementation validation remains pending."
+    },
+    {
+      "nodeId": "1967:117076",
+      "designName": "Toolbar internal / Shared / Icon / search",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "search"
+      }
+    },
+    {
+      "nodeId": "1967:117084",
+      "designName": "Toolbar internal / Shared / Icon / x",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "close"
+      }
+    },
+    {
+      "nodeId": "1967:117092",
+      "designName": "Toolbar internal / Shared / Icon / chevron-down",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "chevron-down"
+      }
+    },
+    {
+      "nodeId": "1967:117095",
+      "designName": "Toolbar internal / Shared / search",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "search"
+      }
+    },
+    {
+      "nodeId": "1967:117097",
+      "designName": "Toolbar internal / Shared / x",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "close"
+      }
+    },
+    {
+      "nodeId": "1967:117099",
+      "designName": "Toolbar internal / Shared / chevron-down",
+      "componentName": "Icon",
+      "source": "src/components/Icon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "chevron-down"
+      }
+    },
+    {
+      "nodeId": "1945:10384",
+      "designName": "Toolbar internal / Shared / save-all",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "toolbar-save-all"
+      }
+    },
+    {
+      "nodeId": "1945:10386",
+      "designName": "Toolbar internal / Shared / eye",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "toolbar-eye"
+      }
+    },
+    {
+      "nodeId": "1945:10388",
+      "designName": "Toolbar internal / Shared / circle-ellipsis",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "toolbar-circle-ellipsis"
+      }
+    },
+    {
+      "nodeId": "1945:10390",
+      "designName": "Toolbar internal / Shared / archive",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "toolbar-archive"
+      }
+    },
+    {
+      "nodeId": "1945:10392",
+      "designName": "Toolbar internal / Shared / trash-2",
+      "componentName": "ArtworkIcon",
+      "source": "src/components/ArtworkIcon.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged.",
+      "props": {
+        "name": "toolbar-trash-2"
+      }
+    },
+    {
+      "nodeId": "1945:10351",
+      "designName": "Toolbar internal / Shared / flower",
+      "componentName": "FlowerArtwork",
+      "source": "src/components/FlowerArtwork.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged."
+    },
+    {
+      "nodeId": "1967:114246",
+      "designName": "Toolbar internal / Shared / Floating Action Button",
+      "componentName": "FloatingActionButton",
+      "source": "src/components/Menus.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged."
+    },
+    {
+      "nodeId": "1967:115665",
+      "designName": "Toolbar internal / Shared / Search Field",
+      "componentName": "SearchField",
+      "source": "src/components/TextField.tsx",
+      "sourceRef": "codex/wardo-cross-platform-coverage",
+      "framework": "React",
+      "status": "source-connection-saved",
+      "verification": "Figma UI confirmed exact React source/export and Toolbar internals progress 16 of 57 connected on 2026-11-09. Source link only; validation status unchanged."
     }
   ],
   "lastVerifiedProgress": {
     "connected": 199,
-    "total": 797
+    "total": 797,
+    "note": "Historical full-file UI reading before archive cleanup. Twenty additional connections verified on 2026-11-09 by per-page counts: examples6/6; toolbar internals16/57. Current repository mapping total219; current full-file Figma denominator not rechecked."
+  },
+  "latestPageVerification": {
+    "date": "2026-11-09",
+    "page": "Toolbar internals",
+    "connected": 16,
+    "total": 57,
+    "newConnections": 14
   }
 }
